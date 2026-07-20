@@ -8,4 +8,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
 </Project>

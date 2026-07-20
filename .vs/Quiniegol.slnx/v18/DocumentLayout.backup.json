@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
+              "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\clases\\Tecnicas de prog\\Quiniegol\\Quiniegol\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Downloads\\clases\\Tecnicas de prog\\Quiniegol\\Quiniegol\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\clases\\Tecnicas de prog\\Quiniegol\\Quiniegol\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T21:07:26.741Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
