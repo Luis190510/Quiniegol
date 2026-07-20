@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\luisa\\Quiniegol\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\partido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|C:\\Users\\luisa\\Quiniegol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -47,6 +67,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeToolTip": "Views\\FrmUsuarios.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:53:15.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmUsuarios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmUsuarios.cs [Design]",
+              "RelativeToolTip": "Views\\FrmUsuarios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:47:30.292Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:44:33.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "usuarios.json",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\usuarios.json",
+              "RelativeDocumentMoniker": "Data\\usuarios.json",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Data\\usuarios.json",
+              "RelativeToolTip": "Data\\usuarios.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-20T00:42:58.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JsonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Repositories\\JsonRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\JsonRepository.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Repositories\\JsonRepository.cs",
+              "RelativeToolTip": "Repositories\\JsonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:39:16.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Notificacion.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Notificacion.cs",
               "RelativeDocumentMoniker": "Models\\Notificacion.cs",
@@ -59,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Quiniela.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Quiniela.cs",
               "RelativeDocumentMoniker": "Models\\Quiniela.cs",
@@ -67,12 +151,11 @@
               "RelativeToolTip": "Models\\Quiniela.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:12:55.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T00:12:55.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Anotador.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Anotador.cs",
               "RelativeDocumentMoniker": "Models\\Anotador.cs",
@@ -80,12 +163,11 @@
               "RelativeToolTip": "Models\\Anotador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:11:04.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T00:11:04.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Pronostico.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Pronostico.cs",
               "RelativeDocumentMoniker": "Models\\Pronostico.cs",
@@ -93,12 +175,11 @@
               "RelativeToolTip": "Models\\Pronostico.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:51.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T00:05:51.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Partido.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Partido.cs",
               "RelativeDocumentMoniker": "Models\\Partido.cs",
@@ -106,12 +187,11 @@
               "RelativeToolTip": "Models\\Partido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:39.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T00:05:39.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Seleccion.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Seleccion.cs",
               "RelativeDocumentMoniker": "Models\\Seleccion.cs",
@@ -119,12 +199,11 @@
               "RelativeToolTip": "Models\\Seleccion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:30.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T00:05:30.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -132,20 +211,18 @@
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-19T23:09:34.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-19T23:09:34.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T21:07:26.741Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-14T21:07:26.741Z"
             }
           ]
         }

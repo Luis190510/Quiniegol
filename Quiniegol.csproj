@@ -9,12 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Data\" />
+    <None Remove="Data\usuarios.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\usuarios.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Utilities\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>
