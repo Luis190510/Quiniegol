@@ -11,6 +11,37 @@ namespace Quiniegol.Views
 {
     public partial class FrmUsuarios : Form
     {
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _usuarioController.RegistrarUsuario(
+                    txtNombre.Text,
+                    cmbPais.Text
+                );
+
+                MessageBox.Show(
+                    "Usuario registrado correctamente.",
+                    "Registro exitoso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                txtNombre.Clear();
+                cmbPais.SelectedIndex = -1;
+
+                CargarUsuarios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "No fue posible registrar el usuario",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+            }
+        }
         private readonly UsuarioController _usuarioController;
 
         public FrmUsuarios()

@@ -78,7 +78,7 @@
             btnRegistrar.TabIndex = 4;
             btnRegistrar.Text = "Registrar usuario";
             btnRegistrar.UseVisualStyleBackColor = true;
-            btnRegistrar.Click += button1_Click;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // dgvUsuarios
             // 

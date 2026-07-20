@@ -1,37 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luisa\\Quiniegol\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\anotador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\anotador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\anotador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\seleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\seleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\seleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\pronostico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\pronostico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\pronostico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\partido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\partido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\partido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -47,105 +75,184 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Notificacion.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Notificacion.cs",
-              "RelativeDocumentMoniker": "Models\\Notificacion.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Notificacion.cs",
-              "RelativeToolTip": "Models\\Notificacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:13:25.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Quiniela.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Quiniela.cs",
-              "RelativeDocumentMoniker": "Models\\Quiniela.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Quiniela.cs",
-              "RelativeToolTip": "Models\\Quiniela.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:12:55.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Anotador.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Anotador.cs",
-              "RelativeDocumentMoniker": "Models\\Anotador.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Anotador.cs",
-              "RelativeToolTip": "Models\\Anotador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:11:04.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Pronostico.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Pronostico.cs",
-              "RelativeDocumentMoniker": "Models\\Pronostico.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Pronostico.cs",
-              "RelativeToolTip": "Models\\Pronostico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:51.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Partido.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Partido.cs",
-              "RelativeDocumentMoniker": "Models\\Partido.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Partido.cs",
-              "RelativeToolTip": "Models\\Partido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:39.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Seleccion.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Seleccion.cs",
-              "RelativeDocumentMoniker": "Models\\Seleccion.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Seleccion.cs",
-              "RelativeToolTip": "Models\\Seleccion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:05:30.31Z",
+              "WhenOpened": "2026-07-20T18:15:49.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Title": "FrmUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\FrmUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.Designer.cs",
+              "RelativeToolTip": "Views\\FrmUsuarios.Designer.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAFAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-19T23:09:34.423Z",
+              "WhenOpened": "2026-07-20T17:45:43.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeToolTip": "Views\\FrmUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:53:15.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\FrmUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:47:30.292Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:44:33.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "usuarios.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Data\\usuarios.json",
+              "RelativeDocumentMoniker": "Data\\usuarios.json",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Data\\usuarios.json",
+              "RelativeToolTip": "Data\\usuarios.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-20T00:42:58.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JsonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Repositories\\JsonRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\JsonRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Repositories\\JsonRepository.cs",
+              "RelativeToolTip": "Repositories\\JsonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:39:16.889Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Notificacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Notificacion.cs",
+              "RelativeDocumentMoniker": "Models\\Notificacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Notificacion.cs",
+              "RelativeToolTip": "Models\\Notificacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:13:25.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Quiniela.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Quiniela.cs",
+              "RelativeDocumentMoniker": "Models\\Quiniela.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Quiniela.cs",
+              "RelativeToolTip": "Models\\Quiniela.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:12:55.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Anotador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Anotador.cs",
+              "RelativeDocumentMoniker": "Models\\Anotador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Anotador.cs",
+              "RelativeToolTip": "Models\\Anotador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:11:04.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pronostico.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Pronostico.cs",
+              "RelativeDocumentMoniker": "Models\\Pronostico.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Pronostico.cs",
+              "RelativeToolTip": "Models\\Pronostico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:05:51.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Partido.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Partido.cs",
+              "RelativeDocumentMoniker": "Models\\Partido.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Partido.cs",
+              "RelativeToolTip": "Models\\Partido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:05:39.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Seleccion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Seleccion.cs",
+              "RelativeDocumentMoniker": "Models\\Seleccion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Seleccion.cs",
+              "RelativeToolTip": "Models\\Seleccion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T00:05:30.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T23:09:34.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\luisa\\Quiniegol\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T21:07:26.741Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-14T21:07:26.741Z"
             }
           ]
         }
