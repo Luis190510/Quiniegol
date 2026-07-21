@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quiniegol")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ce99e2a859012b147f73cde929b2be820879aba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5213349bd96ef7389dee46286cef82f56969f772")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quiniegol")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quiniegol")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

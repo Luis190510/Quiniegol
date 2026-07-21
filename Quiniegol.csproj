@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\selecciones.json" />
     <None Remove="Data\usuarios.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Data\selecciones.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\usuarios.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
