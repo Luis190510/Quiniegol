@@ -30,12 +30,13 @@
         {
             lblTitulo = new Label();
             btnUsuarios = new Button();
+            btnSelecciones = new Button();
             SuspendLayout();
             // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(410, 53);
+            lblTitulo.Location = new Point(322, 40);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(100, 15);
             lblTitulo.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // btnUsuarios
             // 
-            btnUsuarios.Location = new Point(410, 95);
+            btnUsuarios.Location = new Point(375, 85);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(103, 52);
             btnUsuarios.TabIndex = 1;
@@ -52,11 +53,22 @@
             btnUsuarios.UseVisualStyleBackColor = true;
             btnUsuarios.Click += btnUsuarios_Click;
             // 
+            // btnSelecciones
+            // 
+            btnSelecciones.Location = new Point(219, 95);
+            btnSelecciones.Name = "btnSelecciones";
+            btnSelecciones.Size = new Size(111, 32);
+            btnSelecciones.TabIndex = 2;
+            btnSelecciones.Text = "Ver selecciones";
+            btnSelecciones.UseVisualStyleBackColor = true;
+            btnSelecciones.Click += btnSelecciones_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 411);
+            Controls.Add(btnSelecciones);
             Controls.Add(btnUsuarios);
             Controls.Add(lblTitulo);
             Name = "FrmPrincipal";
@@ -70,5 +82,6 @@
 
         private Label lblTitulo;
         private Button btnUsuarios;
+        private Button btnSelecciones;
     }
 }

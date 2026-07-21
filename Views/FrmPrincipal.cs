@@ -32,5 +32,16 @@ namespace Quiniegol.Views
                 formulario.ShowDialog();
             }
         }
+
+        private void btnSelecciones_Click(object sender, EventArgs e)
+        {
+            private void btnSelecciones_Click(object sender, EventArgs e)
+        {
+            using (FrmSelecciones formulario = new FrmSelecciones())
+            {
+                formulario.ShowDialog();
+            }
+        }
+    }
     }
 }
