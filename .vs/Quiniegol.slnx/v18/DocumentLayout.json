@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\views\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:repositories\\jsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\usuario\\downloads\\quiniegol\\quiniegol\\models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,11 +78,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "Views\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmPrincipal.cs",
+              "RelativeToolTip": "Views\\FrmPrincipal.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T21:56:06.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "Views\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\FrmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T21:50:29.122Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -82,11 +115,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T18:15:49.539Z"
+              "WhenOpened": "2026-07-20T18:15:49.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FrmUsuarios.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.Designer.cs",
               "RelativeDocumentMoniker": "Views\\FrmUsuarios.Designer.cs",
@@ -99,20 +133,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FrmUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
               "ToolTip": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
               "RelativeToolTip": "Views\\FrmUsuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-20T00:53:15.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FrmUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Views\\FrmUsuarios.cs",
               "RelativeDocumentMoniker": "Views\\FrmUsuarios.cs",
@@ -124,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
@@ -136,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "usuarios.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Data\\usuarios.json",
               "RelativeDocumentMoniker": "Data\\usuarios.json",
@@ -148,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "JsonRepository.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Repositories\\JsonRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\JsonRepository.cs",
@@ -160,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Notificacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Notificacion.cs",
               "RelativeDocumentMoniker": "Models\\Notificacion.cs",
@@ -168,11 +202,12 @@
               "RelativeToolTip": "Models\\Notificacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T00:13:25.578Z"
+              "WhenOpened": "2026-07-20T00:13:25.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Quiniela.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Quiniela.cs",
               "RelativeDocumentMoniker": "Models\\Quiniela.cs",
@@ -184,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Anotador.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Anotador.cs",
               "RelativeDocumentMoniker": "Models\\Anotador.cs",
@@ -196,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Pronostico.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Pronostico.cs",
               "RelativeDocumentMoniker": "Models\\Pronostico.cs",
@@ -208,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Partido.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Partido.cs",
               "RelativeDocumentMoniker": "Models\\Partido.cs",
@@ -220,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Seleccion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Seleccion.cs",
               "RelativeDocumentMoniker": "Models\\Seleccion.cs",
@@ -232,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -244,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
