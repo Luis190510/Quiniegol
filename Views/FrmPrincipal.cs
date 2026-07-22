@@ -17,12 +17,10 @@ namespace Quiniegol.Views
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -35,8 +33,6 @@ namespace Quiniegol.Views
 
         private void btnSelecciones_Click(object sender, EventArgs e)
         {
-            private void btnSelecciones_Click(object sender, EventArgs e)
-        {
             using (FrmSelecciones formulario = new FrmSelecciones())
             {
                 formulario.ShowDialog();
@@ -44,4 +40,3 @@ namespace Quiniegol.Views
         }
     }
     }
-}
