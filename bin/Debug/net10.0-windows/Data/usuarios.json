@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Luis Alonso",
+    "PaisPreferido": "Espa\u00F1a",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 2,
+    "Nombre": "Alberto Porras",
+    "PaisPreferido": "Brasil",
+    "Puntos": 0,
+    "Insignias": []
+  }
+]
