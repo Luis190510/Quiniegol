@@ -40,11 +40,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(59, 38);
+            label1.Location = new Point(29, 38);
             label1.Name = "label1";
             label1.Size = new Size(54, 15);
             label1.TabIndex = 0;
             label1.Text = "Nombre:";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -57,7 +58,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(59, 90);
+            txtNombre.Location = new Point(12, 64);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 2;
@@ -65,14 +66,14 @@
             // cmbPais
             // 
             cmbPais.FormattingEnabled = true;
-            cmbPais.Location = new Point(187, 90);
+            cmbPais.Location = new Point(130, 64);
             cmbPais.Name = "cmbPais";
             cmbPais.Size = new Size(121, 23);
             cmbPais.TabIndex = 3;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(265, 34);
+            btnRegistrar.Location = new Point(47, 115);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(153, 23);
             btnRegistrar.TabIndex = 4;
@@ -83,9 +84,9 @@
             // dgvUsuarios
             // 
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(424, 30);
+            dgvUsuarios.Location = new Point(279, 12);
             dgvUsuarios.Name = "dgvUsuarios";
-            dgvUsuarios.Size = new Size(240, 150);
+            dgvUsuarios.Size = new Size(509, 405);
             dgvUsuarios.TabIndex = 5;
             // 
             // FrmUsuarios

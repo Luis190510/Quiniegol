@@ -38,5 +38,35 @@ namespace Quiniegol.Views
                 formulario.ShowDialog();
             }
         }
+
+        private void btnPartidos_Click(object sender, EventArgs e)
+        {
+            using (FrmPartidos formulario = new FrmPartidos())
+            {
+                formulario.ShowDialog();
+            }
+        }
+
+        private void btnFechaSimulada_Click(object sender, EventArgs e)
+        {
+            using (
+       FrmFechaSimulada formulario =
+           new FrmFechaSimulada()
+        )
+            {
+                formulario.ShowDialog();
+            }
+        }
+
+        private void btnPronosticos_Click(object sender,EventArgs e)
+        {
+            using (
+                FrmPronosticos formulario =
+                    new FrmPronosticos()
+            )
+            {
+                formulario.ShowDialog();
+            }
+        }
     }
-    }
+}

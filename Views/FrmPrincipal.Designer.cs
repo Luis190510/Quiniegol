@@ -31,6 +31,9 @@
             lblTitulo = new Label();
             btnUsuarios = new Button();
             btnSelecciones = new Button();
+            btnPartidos = new Button();
+            btnFechaSimulada = new Button();
+            btnPronosticos = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -63,11 +66,44 @@
             btnSelecciones.UseVisualStyleBackColor = true;
             btnSelecciones.Click += btnSelecciones_Click;
             // 
+            // btnPartidos
+            // 
+            btnPartidos.Location = new Point(219, 186);
+            btnPartidos.Name = "btnPartidos";
+            btnPartidos.Size = new Size(130, 23);
+            btnPartidos.TabIndex = 3;
+            btnPartidos.Text = "Gestión de partidos";
+            btnPartidos.UseVisualStyleBackColor = true;
+            btnPartidos.Click += btnPartidos_Click;
+            // 
+            // btnFechaSimulada
+            // 
+            btnFechaSimulada.Location = new Point(375, 177);
+            btnFechaSimulada.Name = "btnFechaSimulada";
+            btnFechaSimulada.Size = new Size(130, 40);
+            btnFechaSimulada.TabIndex = 4;
+            btnFechaSimulada.Text = "Cambiar fecha simulada";
+            btnFechaSimulada.UseVisualStyleBackColor = true;
+            btnFechaSimulada.Click += btnFechaSimulada_Click;
+            // 
+            // btnPronosticos
+            // 
+            btnPronosticos.Location = new Point(292, 239);
+            btnPronosticos.Name = "btnPronosticos";
+            btnPronosticos.Size = new Size(130, 39);
+            btnPronosticos.TabIndex = 5;
+            btnPronosticos.Text = "Gestión de pronósticos";
+            btnPronosticos.UseVisualStyleBackColor = true;
+            btnPronosticos.Click += btnPronosticos_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 411);
+            Controls.Add(btnPronosticos);
+            Controls.Add(btnFechaSimulada);
+            Controls.Add(btnPartidos);
             Controls.Add(btnSelecciones);
             Controls.Add(btnUsuarios);
             Controls.Add(lblTitulo);
@@ -83,5 +119,8 @@
         private Label lblTitulo;
         private Button btnUsuarios;
         private Button btnSelecciones;
+        private Button btnPartidos;
+        private Button btnFechaSimulada;
+        private Button btnPronosticos;
     }
 }

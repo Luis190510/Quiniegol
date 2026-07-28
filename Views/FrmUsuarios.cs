@@ -53,6 +53,7 @@ namespace Quiniegol.Views
             cmbPais.Items.AddRange(new object[]
             {
                 "Argentina",
+                "Arabia Saudita",
                 "Australia",
                 "Austria",
                 "Bélgica",
@@ -109,6 +110,11 @@ namespace Quiniegol.Views
             dgvUsuarios.DataSource = null;
             dgvUsuarios.DataSource =
                 _usuarioController.ObtenerUsuarios();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

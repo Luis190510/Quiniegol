@@ -1,0 +1,1042 @@
+[
+  {
+    "Id": 1,
+    "SeleccionLocalId": 1,
+    "SeleccionVisitanteId": 2,
+    "FechaHora": "2026-06-11T13:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 2,
+    "SeleccionLocalId": 3,
+    "SeleccionVisitanteId": 4,
+    "FechaHora": "2026-06-11T17:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 3,
+    "SeleccionLocalId": 5,
+    "SeleccionVisitanteId": 6,
+    "FechaHora": "2026-06-12T13:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 4,
+    "SeleccionLocalId": 13,
+    "SeleccionVisitanteId": 14,
+    "FechaHora": "2026-06-12T17:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 5,
+    "SeleccionLocalId": 7,
+    "SeleccionVisitanteId": 8,
+    "FechaHora": "2026-06-13T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 6,
+    "SeleccionLocalId": 9,
+    "SeleccionVisitanteId": 10,
+    "FechaHora": "2026-06-13T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 7,
+    "SeleccionLocalId": 11,
+    "SeleccionVisitanteId": 12,
+    "FechaHora": "2026-06-13T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 8,
+    "SeleccionLocalId": 15,
+    "SeleccionVisitanteId": 16,
+    "FechaHora": "2026-06-13T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 9,
+    "SeleccionLocalId": 17,
+    "SeleccionVisitanteId": 18,
+    "FechaHora": "2026-06-14T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 10,
+    "SeleccionLocalId": 21,
+    "SeleccionVisitanteId": 22,
+    "FechaHora": "2026-06-14T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 11,
+    "SeleccionLocalId": 19,
+    "SeleccionVisitanteId": 20,
+    "FechaHora": "2026-06-14T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 12,
+    "SeleccionLocalId": 23,
+    "SeleccionVisitanteId": 24,
+    "FechaHora": "2026-06-14T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 13,
+    "SeleccionLocalId": 29,
+    "SeleccionVisitanteId": 30,
+    "FechaHora": "2026-06-15T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 14,
+    "SeleccionLocalId": 25,
+    "SeleccionVisitanteId": 26,
+    "FechaHora": "2026-06-15T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 15,
+    "SeleccionLocalId": 31,
+    "SeleccionVisitanteId": 32,
+    "FechaHora": "2026-06-15T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 16,
+    "SeleccionLocalId": 27,
+    "SeleccionVisitanteId": 28,
+    "FechaHora": "2026-06-15T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 17,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 34,
+    "FechaHora": "2026-06-16T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 18,
+    "SeleccionLocalId": 35,
+    "SeleccionVisitanteId": 36,
+    "FechaHora": "2026-06-16T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 19,
+    "SeleccionLocalId": 37,
+    "SeleccionVisitanteId": 38,
+    "FechaHora": "2026-06-16T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 20,
+    "SeleccionLocalId": 39,
+    "SeleccionVisitanteId": 40,
+    "FechaHora": "2026-06-16T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 21,
+    "SeleccionLocalId": 41,
+    "SeleccionVisitanteId": 42,
+    "FechaHora": "2026-06-17T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 22,
+    "SeleccionLocalId": 45,
+    "SeleccionVisitanteId": 46,
+    "FechaHora": "2026-06-17T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 23,
+    "SeleccionLocalId": 47,
+    "SeleccionVisitanteId": 48,
+    "FechaHora": "2026-06-17T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 24,
+    "SeleccionLocalId": 43,
+    "SeleccionVisitanteId": 44,
+    "FechaHora": "2026-06-17T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 25,
+    "SeleccionLocalId": 1,
+    "SeleccionVisitanteId": 3,
+    "FechaHora": "2026-06-18T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 26,
+    "SeleccionLocalId": 4,
+    "SeleccionVisitanteId": 2,
+    "FechaHora": "2026-06-18T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 27,
+    "SeleccionLocalId": 5,
+    "SeleccionVisitanteId": 7,
+    "FechaHora": "2026-06-18T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 28,
+    "SeleccionLocalId": 8,
+    "SeleccionVisitanteId": 6,
+    "FechaHora": "2026-06-18T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 29,
+    "SeleccionLocalId": 9,
+    "SeleccionVisitanteId": 11,
+    "FechaHora": "2026-06-19T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 30,
+    "SeleccionLocalId": 12,
+    "SeleccionVisitanteId": 10,
+    "FechaHora": "2026-06-19T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 31,
+    "SeleccionLocalId": 13,
+    "SeleccionVisitanteId": 15,
+    "FechaHora": "2026-06-19T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 32,
+    "SeleccionLocalId": 16,
+    "SeleccionVisitanteId": 14,
+    "FechaHora": "2026-06-19T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 33,
+    "SeleccionLocalId": 17,
+    "SeleccionVisitanteId": 19,
+    "FechaHora": "2026-06-20T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 34,
+    "SeleccionLocalId": 20,
+    "SeleccionVisitanteId": 18,
+    "FechaHora": "2026-06-20T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 35,
+    "SeleccionLocalId": 21,
+    "SeleccionVisitanteId": 23,
+    "FechaHora": "2026-06-20T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 36,
+    "SeleccionLocalId": 24,
+    "SeleccionVisitanteId": 22,
+    "FechaHora": "2026-06-20T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 37,
+    "SeleccionLocalId": 25,
+    "SeleccionVisitanteId": 27,
+    "FechaHora": "2026-06-21T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 38,
+    "SeleccionLocalId": 28,
+    "SeleccionVisitanteId": 26,
+    "FechaHora": "2026-06-21T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 39,
+    "SeleccionLocalId": 29,
+    "SeleccionVisitanteId": 31,
+    "FechaHora": "2026-06-21T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 40,
+    "SeleccionLocalId": 32,
+    "SeleccionVisitanteId": 30,
+    "FechaHora": "2026-06-21T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 41,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 35,
+    "FechaHora": "2026-06-22T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 42,
+    "SeleccionLocalId": 36,
+    "SeleccionVisitanteId": 34,
+    "FechaHora": "2026-06-22T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 43,
+    "SeleccionLocalId": 37,
+    "SeleccionVisitanteId": 39,
+    "FechaHora": "2026-06-22T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 44,
+    "SeleccionLocalId": 40,
+    "SeleccionVisitanteId": 38,
+    "FechaHora": "2026-06-22T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 45,
+    "SeleccionLocalId": 41,
+    "SeleccionVisitanteId": 43,
+    "FechaHora": "2026-06-23T09:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 46,
+    "SeleccionLocalId": 44,
+    "SeleccionVisitanteId": 42,
+    "FechaHora": "2026-06-23T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 47,
+    "SeleccionLocalId": 45,
+    "SeleccionVisitanteId": 47,
+    "FechaHora": "2026-06-23T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 48,
+    "SeleccionLocalId": 48,
+    "SeleccionVisitanteId": 46,
+    "FechaHora": "2026-06-23T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 49,
+    "SeleccionLocalId": 4,
+    "SeleccionVisitanteId": 1,
+    "FechaHora": "2026-06-24T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 50,
+    "SeleccionLocalId": 2,
+    "SeleccionVisitanteId": 3,
+    "FechaHora": "2026-06-24T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 51,
+    "SeleccionLocalId": 8,
+    "SeleccionVisitanteId": 5,
+    "FechaHora": "2026-06-24T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 52,
+    "SeleccionLocalId": 6,
+    "SeleccionVisitanteId": 7,
+    "FechaHora": "2026-06-24T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 53,
+    "SeleccionLocalId": 12,
+    "SeleccionVisitanteId": 9,
+    "FechaHora": "2026-06-25T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 54,
+    "SeleccionLocalId": 10,
+    "SeleccionVisitanteId": 11,
+    "FechaHora": "2026-06-25T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 55,
+    "SeleccionLocalId": 16,
+    "SeleccionVisitanteId": 13,
+    "FechaHora": "2026-06-25T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 56,
+    "SeleccionLocalId": 14,
+    "SeleccionVisitanteId": 15,
+    "FechaHora": "2026-06-25T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 57,
+    "SeleccionLocalId": 20,
+    "SeleccionVisitanteId": 17,
+    "FechaHora": "2026-06-26T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 58,
+    "SeleccionLocalId": 18,
+    "SeleccionVisitanteId": 19,
+    "FechaHora": "2026-06-26T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 59,
+    "SeleccionLocalId": 24,
+    "SeleccionVisitanteId": 21,
+    "FechaHora": "2026-06-26T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 60,
+    "SeleccionLocalId": 22,
+    "SeleccionVisitanteId": 23,
+    "FechaHora": "2026-06-26T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 61,
+    "SeleccionLocalId": 28,
+    "SeleccionVisitanteId": 25,
+    "FechaHora": "2026-06-27T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 62,
+    "SeleccionLocalId": 26,
+    "SeleccionVisitanteId": 27,
+    "FechaHora": "2026-06-27T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 63,
+    "SeleccionLocalId": 32,
+    "SeleccionVisitanteId": 29,
+    "FechaHora": "2026-06-27T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 64,
+    "SeleccionLocalId": 30,
+    "SeleccionVisitanteId": 31,
+    "FechaHora": "2026-06-27T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 65,
+    "SeleccionLocalId": 36,
+    "SeleccionVisitanteId": 33,
+    "FechaHora": "2026-06-26T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 66,
+    "SeleccionLocalId": 34,
+    "SeleccionVisitanteId": 35,
+    "FechaHora": "2026-06-26T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 67,
+    "SeleccionLocalId": 40,
+    "SeleccionVisitanteId": 37,
+    "FechaHora": "2026-06-27T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 68,
+    "SeleccionLocalId": 38,
+    "SeleccionVisitanteId": 39,
+    "FechaHora": "2026-06-27T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 69,
+    "SeleccionLocalId": 44,
+    "SeleccionVisitanteId": 41,
+    "FechaHora": "2026-06-28T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 70,
+    "SeleccionLocalId": 42,
+    "SeleccionVisitanteId": 43,
+    "FechaHora": "2026-06-28T12:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 71,
+    "SeleccionLocalId": 48,
+    "SeleccionVisitanteId": 45,
+    "FechaHora": "2026-06-28T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 72,
+    "SeleccionLocalId": 46,
+    "SeleccionVisitanteId": 47,
+    "FechaHora": "2026-06-28T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 73,
+    "SeleccionLocalId": 2,
+    "SeleccionVisitanteId": 5,
+    "FechaHora": "2026-06-29T06:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 74,
+    "SeleccionLocalId": 9,
+    "SeleccionVisitanteId": 22,
+    "FechaHora": "2026-06-29T17:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 75,
+    "SeleccionLocalId": 17,
+    "SeleccionVisitanteId": 14,
+    "FechaHora": "2026-06-29T20:30:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 76,
+    "SeleccionLocalId": 21,
+    "SeleccionVisitanteId": 10,
+    "FechaHora": "2026-06-30T01:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 77,
+    "SeleccionLocalId": 19,
+    "SeleccionVisitanteId": 36,
+    "FechaHora": "2026-06-30T17:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 78,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 23,
+    "FechaHora": "2026-06-30T21:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 79,
+    "SeleccionLocalId": 1,
+    "SeleccionVisitanteId": 20,
+    "FechaHora": "2026-07-01T01:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 80,
+    "SeleccionLocalId": 45,
+    "SeleccionVisitanteId": 42,
+    "FechaHora": "2026-07-01T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 81,
+    "SeleccionLocalId": 25,
+    "SeleccionVisitanteId": 34,
+    "FechaHora": "2026-07-01T20:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 82,
+    "SeleccionLocalId": 13,
+    "SeleccionVisitanteId": 6,
+    "FechaHora": "2026-07-02T00:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 83,
+    "SeleccionLocalId": 29,
+    "SeleccionVisitanteId": 39,
+    "FechaHora": "2026-07-02T19:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 84,
+    "SeleccionLocalId": 41,
+    "SeleccionVisitanteId": 46,
+    "FechaHora": "2026-07-02T23:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 85,
+    "SeleccionLocalId": 8,
+    "SeleccionVisitanteId": 38,
+    "FechaHora": "2026-07-03T03:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 86,
+    "SeleccionLocalId": 15,
+    "SeleccionVisitanteId": 26,
+    "FechaHora": "2026-07-03T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 87,
+    "SeleccionLocalId": 37,
+    "SeleccionVisitanteId": 30,
+    "FechaHora": "2026-07-03T22:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 88,
+    "SeleccionLocalId": 44,
+    "SeleccionVisitanteId": 47,
+    "FechaHora": "2026-07-04T01:30:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 89,
+    "SeleccionLocalId": 14,
+    "SeleccionVisitanteId": 33,
+    "FechaHora": "2026-07-04T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 90,
+    "SeleccionLocalId": 5,
+    "SeleccionVisitanteId": 10,
+    "FechaHora": "2026-07-04T17:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 91,
+    "SeleccionLocalId": 9,
+    "SeleccionVisitanteId": 36,
+    "FechaHora": "2026-07-05T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 92,
+    "SeleccionLocalId": 1,
+    "SeleccionVisitanteId": 45,
+    "FechaHora": "2026-07-05T19:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 93,
+    "SeleccionLocalId": 41,
+    "SeleccionVisitanteId": 29,
+    "FechaHora": "2026-07-06T13:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 94,
+    "SeleccionLocalId": 13,
+    "SeleccionVisitanteId": 25,
+    "FechaHora": "2026-07-06T18:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 95,
+    "SeleccionLocalId": 37,
+    "SeleccionVisitanteId": 26,
+    "FechaHora": "2026-07-07T10:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 96,
+    "SeleccionLocalId": 8,
+    "SeleccionVisitanteId": 44,
+    "FechaHora": "2026-07-07T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 97,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 10,
+    "FechaHora": "2026-07-09T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 98,
+    "SeleccionLocalId": 29,
+    "SeleccionVisitanteId": 25,
+    "FechaHora": "2026-07-10T13:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 99,
+    "SeleccionLocalId": 36,
+    "SeleccionVisitanteId": 45,
+    "FechaHora": "2026-07-11T15:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 100,
+    "SeleccionLocalId": 37,
+    "SeleccionVisitanteId": 8,
+    "FechaHora": "2026-07-11T19:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 101,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 29,
+    "FechaHora": "2026-07-14T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 102,
+    "SeleccionLocalId": 45,
+    "SeleccionVisitanteId": 37,
+    "FechaHora": "2026-07-15T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 103,
+    "SeleccionLocalId": 33,
+    "SeleccionVisitanteId": 45,
+    "FechaHora": "2026-07-18T16:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  },
+  {
+    "Id": 104,
+    "SeleccionLocalId": 29,
+    "SeleccionVisitanteId": 37,
+    "FechaHora": "2026-07-19T14:00:00",
+    "GolesLocal": null,
+    "GolesVisitante": null,
+    "Estado": "Pendiente",
+    "Anotadores": []
+  }
+]

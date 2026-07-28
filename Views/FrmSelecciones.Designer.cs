@@ -37,7 +37,7 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(251, 75);
+            lblTitulo.Location = new Point(12, 20);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(139, 15);
             lblTitulo.TabIndex = 0;
@@ -48,15 +48,15 @@
             dgvSelecciones.AllowUserToAddRows = false;
             dgvSelecciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvSelecciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSelecciones.Location = new Point(440, 48);
+            dgvSelecciones.Location = new Point(174, 20);
             dgvSelecciones.Name = "dgvSelecciones";
             dgvSelecciones.ReadOnly = true;
-            dgvSelecciones.Size = new Size(240, 150);
+            dgvSelecciones.Size = new Size(614, 418);
             dgvSelecciones.TabIndex = 1;
             // 
             // btnCerrar
             // 
-            btnCerrar.Location = new Point(273, 122);
+            btnCerrar.Location = new Point(26, 128);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(75, 23);
             btnCerrar.TabIndex = 2;
