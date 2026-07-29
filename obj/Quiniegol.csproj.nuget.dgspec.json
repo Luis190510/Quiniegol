@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj": {}
+    "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Quiniegol.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj": {
+    "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Quiniegol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Quiniegol.csproj",
         "projectName": "Quiniegol",
-        "projectPath": "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj",
-        "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisa\\Quiniegol\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\Quiniegol.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Downloads\\Quiniegol\\Quiniegol\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
