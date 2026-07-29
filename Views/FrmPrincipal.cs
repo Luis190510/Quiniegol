@@ -85,5 +85,15 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnQuinielas_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmQuinielas formulario =
+                new FrmQuinielas();
+
+            formulario.ShowDialog();
+        }
     }
 }

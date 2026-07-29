@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\luisa\\Quiniegol\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\views\\frmquinielas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmquinielas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\controllers\\quinielacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:controllers\\quinielacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\data\\quinielas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:data\\quinielas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:models\\quiniela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|c:\\users\\luisa\\quiniegol\\views\\frmhistorialpronosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|C:\\Users\\luisa\\Quiniegol\\views\\frmhistorialpronosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E80FE557-59D5-03FD-57BE-BBFDF6B86192}|Quiniegol.csproj|solutionrelative:views\\frmhistorialpronosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -103,6 +115,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmQuinielas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmQuinielas.cs",
+              "RelativeDocumentMoniker": "Views\\FrmQuinielas.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmQuinielas.cs [Design]*",
+              "RelativeToolTip": "Views\\FrmQuinielas.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T04:41:32.22Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuinielaController.cs",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\QuinielaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuinielaController.cs",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Controllers\\QuinielaController.cs",
+              "RelativeToolTip": "Controllers\\QuinielaController.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAcwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T03:57:22.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "quinielas.json",
+              "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\quinielas.json",
+              "RelativeDocumentMoniker": "Data\\quinielas.json",
+              "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Data\\quinielas.json",
+              "RelativeToolTip": "Data\\quinielas.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-29T03:51:11.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Quiniela.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\Quiniela.cs",
               "RelativeDocumentMoniker": "Models\\Quiniela.cs",
@@ -110,36 +159,33 @@
               "RelativeToolTip": "Models\\Quiniela.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T03:44:57.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T03:44:57.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FrmHistorialPronosticos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmHistorialPronosticos.cs",
               "RelativeDocumentMoniker": "Views\\FrmHistorialPronosticos.cs",
               "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmHistorialPronosticos.cs [Design]",
               "RelativeToolTip": "Views\\FrmHistorialPronosticos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T02:52:05.944Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-29T02:52:05.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FrmPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\FrmPrincipal.cs",
               "ToolTip": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmPrincipal.cs [Design]",
               "RelativeToolTip": "Views\\FrmPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T00:20:42.566Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-29T00:20:42.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FrmHistorialPronosticos.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmHistorialPronosticos.cs",
               "RelativeDocumentMoniker": "Views\\FrmHistorialPronosticos.cs",
@@ -147,12 +193,11 @@
               "RelativeToolTip": "Views\\FrmHistorialPronosticos.cs",
               "ViewState": "AgIAAJYAAAAAAAAAAAAtwJoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T02:54:34.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T02:54:34.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "usuarios.json",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\usuarios.json",
               "RelativeDocumentMoniker": "Data\\usuarios.json",
@@ -160,12 +205,11 @@
               "RelativeToolTip": "Data\\usuarios.json",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T00:59:44.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T00:59:44.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "FrmHistorialPronosticos.Designer.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmHistorialPronosticos.Designer.cs",
               "RelativeDocumentMoniker": "Views\\FrmHistorialPronosticos.Designer.cs",
@@ -173,12 +217,11 @@
               "RelativeToolTip": "Views\\FrmHistorialPronosticos.Designer.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAYwC4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T03:26:18.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T03:26:18.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HistorialPronosticoController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\HistorialPronosticoController.cs",
               "RelativeDocumentMoniker": "Controllers\\HistorialPronosticoController.cs",
@@ -186,12 +229,11 @@
               "RelativeToolTip": "Controllers\\HistorialPronosticoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T03:24:49.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T03:24:49.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "FrmPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\FrmPrincipal.cs",
@@ -199,12 +241,11 @@
               "RelativeToolTip": "Views\\FrmPrincipal.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAtwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T03:08:05.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T03:08:05.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "namespace Quiniegol.Models",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\namespace Quiniegol.Models",
               "RelativeDocumentMoniker": "Controllers\\namespace Quiniegol.Models",
@@ -212,12 +253,11 @@
               "RelativeToolTip": "Controllers\\namespace Quiniegol.Models",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-29T01:56:46.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T01:56:46.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "HistorialPronosticoItem.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Models\\HistorialPronosticoItem.cs",
               "RelativeDocumentMoniker": "Models\\HistorialPronosticoItem.cs",
@@ -225,12 +265,11 @@
               "RelativeToolTip": "Models\\HistorialPronosticoItem.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAwwBYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T01:55:56.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T01:55:56.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "pronosticos.json",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\pronosticos.json",
               "RelativeDocumentMoniker": "Data\\pronosticos.json",
@@ -238,12 +277,11 @@
               "RelativeToolTip": "Data\\pronosticos.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T00:59:50.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T00:59:50.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "resultados2026.json",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\resultados2026.json",
               "RelativeDocumentMoniker": "Data\\resultados2026.json",
@@ -255,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "selecciones.json",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\selecciones.json",
               "RelativeDocumentMoniker": "Data\\selecciones.json",
@@ -267,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "partidos.json",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Data\\partidos.json",
               "RelativeDocumentMoniker": "Data\\partidos.json",
@@ -279,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "RutaDatosService.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Services\\RutaDatosService.cs",
               "RelativeDocumentMoniker": "Services\\RutaDatosService.cs",
@@ -291,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "SeleccionController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\SeleccionController.cs",
               "RelativeDocumentMoniker": "Controllers\\SeleccionController.cs",
@@ -303,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PuntajeController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\PuntajeController.cs",
               "RelativeDocumentMoniker": "Controllers\\PuntajeController.cs",
@@ -315,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "PartidoController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\PartidoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PartidoController.cs",
@@ -327,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "PronosticoController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\PronosticoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PronosticoController.cs",
@@ -339,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
@@ -351,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "FrmRanking.cs [Design]",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmRanking.cs",
               "RelativeDocumentMoniker": "Views\\FrmRanking.cs",
@@ -362,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "FrmRanking.cs",
               "DocumentMoniker": "C:\\Users\\luisa\\Quiniegol\\Views\\FrmRanking.cs",
               "RelativeDocumentMoniker": "Views\\FrmRanking.cs",

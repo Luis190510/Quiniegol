@@ -1,1 +1,14 @@
-﻿
+[
+  {
+    "Id": 1,
+    "Nombre": "Room 1",
+    "Descripcion": "Para novatos",
+    "Tipo": "Privada",
+    "IntegrantesIds": [
+      2,
+      8,
+      5,
+      4
+    ]
+  }
+]

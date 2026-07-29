@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Data\partidos.json" />
     <None Remove="Data\pronosticos.json" />
+    <None Remove="Data\quinielas.json" />
     <None Remove="Data\resultados2026.json" />
     <None Remove="Data\selecciones.json" />
     <None Remove="Data\usuarios.json" />
@@ -23,6 +24,7 @@
     <Content Include="Data\pronosticos.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\quinielas.json" />
     <Content Include="Data\resultados2026.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
