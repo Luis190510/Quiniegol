@@ -25,6 +25,9 @@
     <Compile Update="Views\FrmRanking.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\FrmRankingPrivado.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\FrmSelecciones.cs">
       <SubType>Form</SubType>
     </Compile>

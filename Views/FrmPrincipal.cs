@@ -95,5 +95,15 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnRankingPrivado_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmRankingPrivado formulario =
+                new FrmRankingPrivado();
+
+            formulario.ShowDialog();
+        }
     }
 }

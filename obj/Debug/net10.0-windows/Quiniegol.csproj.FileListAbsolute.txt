@@ -99,3 +99,4 @@ C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\ref\Quiniegol.dll
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmRanking.resources
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmHistorialPronosticos.resources
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmQuinielas.resources
+C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmRankingPrivado.resources

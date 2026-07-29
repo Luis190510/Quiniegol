@@ -37,6 +37,7 @@
             btnRanking = new Button();
             btnHistorialPronosticos = new Button();
             btnQuinielas = new Button();
+            btnRankingPrivado = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -128,12 +129,23 @@
             btnQuinielas.Text = "Quinielas privadas";
             btnQuinielas.UseVisualStyleBackColor = true;
             btnQuinielas.Click += btnQuinielas_Click;
+            //
+            // btnRankingPrivado
+            //
+            btnRankingPrivado.Location = new Point(496, 316);
+            btnRankingPrivado.Name = "btnRankingPrivado";
+            btnRankingPrivado.Size = new Size(164, 38);
+            btnRankingPrivado.TabIndex = 9;
+            btnRankingPrivado.Text = "Ranking privado";
+            btnRankingPrivado.UseVisualStyleBackColor = true;
+            btnRankingPrivado.Click += btnRankingPrivado_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 411);
+            Controls.Add(btnRankingPrivado);
             Controls.Add(btnQuinielas);
             Controls.Add(btnHistorialPronosticos);
             Controls.Add(btnRanking);
@@ -161,5 +173,6 @@
         private Button btnRanking;
         private Button btnHistorialPronosticos;
         private Button btnQuinielas;
+        private Button btnRankingPrivado;
     }
 }
