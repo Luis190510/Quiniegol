@@ -2,9 +2,11 @@
 {
     public class Anotador
     {
-        public string NombreJugador { get; set; } = string.Empty;
+        public int Id { get; set; }
 
         public int SeleccionId { get; set; }
+
+        public string NombreJugador { get; set; } = "";
 
         public int Minuto { get; set; }
     }

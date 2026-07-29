@@ -40,6 +40,7 @@
             btnRankingPrivado = new Button();
             btnEstadisticas = new Button();
             btnInformacionPartidos = new Button();
+            btnDetallePartido = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -161,12 +162,23 @@
             btnInformacionPartidos.Text = "Información de partidos";
             btnInformacionPartidos.UseVisualStyleBackColor = true;
             btnInformacionPartidos.Click += btnInformacionPartidos_Click;
+            //
+            // btnDetallePartido
+            //
+            btnDetallePartido.Location = new Point(496, 375);
+            btnDetallePartido.Name = "btnDetallePartido";
+            btnDetallePartido.Size = new Size(164, 38);
+            btnDetallePartido.TabIndex = 12;
+            btnDetallePartido.Text = "Detalle de partidos";
+            btnDetallePartido.UseVisualStyleBackColor = true;
+            btnDetallePartido.Click += btnDetallePartido_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 461);
+            Controls.Add(btnDetallePartido);
             Controls.Add(btnInformacionPartidos);
             Controls.Add(btnEstadisticas);
             Controls.Add(btnRankingPrivado);
@@ -200,5 +212,6 @@
         private Button btnRankingPrivado;
         private Button btnEstadisticas;
         private Button btnInformacionPartidos;
+        private Button btnDetallePartido;
     }
 }

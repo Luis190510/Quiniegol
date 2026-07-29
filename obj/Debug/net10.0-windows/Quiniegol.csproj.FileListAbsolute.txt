@@ -102,3 +102,4 @@ C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmQuinielas.
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmRankingPrivado.resources
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmEstadisticas.resources
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmInformacionPartidos.resources
+C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmDetallePartido.resources

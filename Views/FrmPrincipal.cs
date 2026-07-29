@@ -125,5 +125,15 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnDetallePartido_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmDetallePartido formulario =
+                new FrmDetallePartido();
+
+            formulario.ShowDialog();
+        }
     }
 }

@@ -15,6 +15,7 @@
     <None Remove="Data\resultados2026.json" />
     <None Remove="Data\selecciones.json" />
     <None Remove="Data\usuarios.json" />
+    <None Remove="Images\Banderas\*.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +33,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\usuarios.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Banderas\*.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
