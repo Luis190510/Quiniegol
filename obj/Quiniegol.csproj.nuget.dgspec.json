@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj": {}
+    "C:\\Users\\danne\\Desktop\\quiniegol\\Quiniegol v2.0\\Quiniegol\\Quiniegol.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj": {
+    "C:\\Users\\danne\\Desktop\\quiniegol\\Quiniegol v2.0\\Quiniegol\\Quiniegol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj",
+        "projectUniqueName": "C:\\Users\\danne\\Desktop\\quiniegol\\Quiniegol v2.0\\Quiniegol\\Quiniegol.csproj",
         "projectName": "Quiniegol",
-        "projectPath": "C:\\Users\\luisa\\Quiniegol\\Quiniegol.csproj",
-        "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisa\\Quiniegol\\obj\\",
+        "projectPath": "C:\\Users\\danne\\Desktop\\quiniegol\\Quiniegol v2.0\\Quiniegol\\Quiniegol.csproj",
+        "packagesPath": "C:\\Users\\danne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danne\\Desktop\\quiniegol\\Quiniegol v2.0\\Quiniegol\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

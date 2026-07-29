@@ -7,6 +7,7 @@ using System.Linq;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
 using Quiniegol.Services;
+using Quiniegol.Strategies;
 
 namespace Quiniegol.Controllers
 {
@@ -20,6 +21,9 @@ namespace Quiniegol.Controllers
 
         private readonly PartidoController
             _partidoController;
+
+        private readonly CalculadoraPuntajeService
+            _calculadoraPuntaje;
 
         public PuntajeController()
         {
@@ -45,6 +49,9 @@ namespace Quiniegol.Controllers
 
             _partidoController =
                 new PartidoController();
+
+            _calculadoraPuntaje =
+                new CalculadoraPuntajeService();
         }
 
         public void CalcularTodosLosPuntajes()
@@ -86,8 +93,8 @@ namespace Quiniegol.Controllers
                     continue;
                 }
 
-                pronostico.PuntosObtenidos =
-                    CalcularPuntosPronostico(
+                    pronostico.PuntosObtenidos =
+                    _calculadoraPuntaje.Calcular(
                         pronostico,
                         partido
                     );
@@ -113,67 +120,6 @@ namespace Quiniegol.Controllers
             _usuarioRepository.GuardarTodos(
                 usuarios
             );
-        }
-
-        private int CalcularPuntosPronostico(
-            Pronostico pronostico,
-            Partido partido)
-        {
-            int golesLocalReal =
-                partido.GolesLocal ?? 0;
-
-            int golesVisitanteReal =
-                partido.GolesVisitante ?? 0;
-
-            bool marcadorExacto =
-                pronostico.GolesLocalPronosticados ==
-                golesLocalReal &&
-                pronostico.GolesVisitantePronosticados ==
-                golesVisitanteReal;
-
-            if (marcadorExacto)
-            {
-                return 5;
-            }
-
-            int resultadoPronosticado =
-                ObtenerTipoResultado(
-                    pronostico
-                        .GolesLocalPronosticados,
-                    pronostico
-                        .GolesVisitantePronosticados
-                );
-
-            int resultadoReal =
-                ObtenerTipoResultado(
-                    golesLocalReal,
-                    golesVisitanteReal
-                );
-
-            if (resultadoPronosticado ==
-                resultadoReal)
-            {
-                return 2;
-            }
-
-            return 0;
-        }
-
-        private int ObtenerTipoResultado(
-            int golesLocal,
-            int golesVisitante)
-        {
-            if (golesLocal > golesVisitante)
-            {
-                return 1;
-            }
-
-            if (golesLocal < golesVisitante)
-            {
-                return 2;
-            }
-
-            return 0;
         }
 
         public List<RankingItem> ObtenerRanking()
