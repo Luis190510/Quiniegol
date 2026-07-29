@@ -10,6 +10,9 @@
     <Compile Update="Views\FrmEstadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\FrmFaseFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\FrmFechaSimulada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmSelecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\FrmTablaGrupos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\FrmUsuarios.cs">

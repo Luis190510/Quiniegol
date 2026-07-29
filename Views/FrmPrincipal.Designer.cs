@@ -41,6 +41,8 @@
             btnEstadisticas = new Button();
             btnInformacionPartidos = new Button();
             btnDetallePartido = new Button();
+            btnTablaGrupos = new Button();
+            btnFaseFinal = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -172,12 +174,34 @@
             btnDetallePartido.Text = "Detalle de partidos";
             btnDetallePartido.UseVisualStyleBackColor = true;
             btnDetallePartido.Click += btnDetallePartido_Click;
+            //
+            // btnTablaGrupos
+            //
+            btnTablaGrupos.Location = new Point(124, 375);
+            btnTablaGrupos.Name = "btnTablaGrupos";
+            btnTablaGrupos.Size = new Size(164, 38);
+            btnTablaGrupos.TabIndex = 13;
+            btnTablaGrupos.Text = "Tabla de grupos";
+            btnTablaGrupos.UseVisualStyleBackColor = true;
+            btnTablaGrupos.Click += btnTablaGrupos_Click;
+            //
+            // btnFaseFinal
+            //
+            btnFaseFinal.Location = new Point(310, 425);
+            btnFaseFinal.Name = "btnFaseFinal";
+            btnFaseFinal.Size = new Size(164, 38);
+            btnFaseFinal.TabIndex = 14;
+            btnFaseFinal.Text = "Cruces de fase final";
+            btnFaseFinal.UseVisualStyleBackColor = true;
+            btnFaseFinal.Click += btnFaseFinal_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 461);
+            ClientSize = new Size(784, 511);
+            Controls.Add(btnFaseFinal);
+            Controls.Add(btnTablaGrupos);
             Controls.Add(btnDetallePartido);
             Controls.Add(btnInformacionPartidos);
             Controls.Add(btnEstadisticas);
@@ -213,5 +237,7 @@
         private Button btnEstadisticas;
         private Button btnInformacionPartidos;
         private Button btnDetallePartido;
+        private Button btnTablaGrupos;
+        private Button btnFaseFinal;
     }
 }

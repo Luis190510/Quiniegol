@@ -135,5 +135,25 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnTablaGrupos_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmTablaGrupos formulario =
+                new FrmTablaGrupos();
+
+            formulario.ShowDialog();
+        }
+
+        private void btnFaseFinal_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmFaseFinal formulario =
+                new FrmFaseFinal();
+
+            formulario.ShowDialog();
+        }
     }
 }
