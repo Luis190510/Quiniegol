@@ -39,6 +39,7 @@
             btnQuinielas = new Button();
             btnRankingPrivado = new Button();
             btnEstadisticas = new Button();
+            btnInformacionPartidos = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -150,12 +151,23 @@
             btnEstadisticas.Text = "Estadísticas";
             btnEstadisticas.UseVisualStyleBackColor = true;
             btnEstadisticas.Click += btnEstadisticas_Click;
+            //
+            // btnInformacionPartidos
+            //
+            btnInformacionPartidos.Location = new Point(310, 375);
+            btnInformacionPartidos.Name = "btnInformacionPartidos";
+            btnInformacionPartidos.Size = new Size(164, 38);
+            btnInformacionPartidos.TabIndex = 11;
+            btnInformacionPartidos.Text = "Información de partidos";
+            btnInformacionPartidos.UseVisualStyleBackColor = true;
+            btnInformacionPartidos.Click += btnInformacionPartidos_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 411);
+            ClientSize = new Size(784, 461);
+            Controls.Add(btnInformacionPartidos);
             Controls.Add(btnEstadisticas);
             Controls.Add(btnRankingPrivado);
             Controls.Add(btnQuinielas);
@@ -187,5 +199,6 @@
         private Button btnQuinielas;
         private Button btnRankingPrivado;
         private Button btnEstadisticas;
+        private Button btnInformacionPartidos;
     }
 }
