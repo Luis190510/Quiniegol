@@ -105,5 +105,15 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnEstadisticas_Click(
+            object sender,
+            EventArgs e)
+        {
+            using FrmEstadisticas formulario =
+                new FrmEstadisticas();
+
+            formulario.ShowDialog();
+        }
     }
 }

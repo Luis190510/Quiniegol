@@ -43,5 +43,4172 @@
     "GolesVisitantePronosticados": 1,
     "FechaRegistro": "2026-05-28T19:27:35.013",
     "PuntosObtenidos": 5
+  },
+  {
+    "Id": 6,
+    "UsuarioId": 1,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 7,
+    "UsuarioId": 1,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T13:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 8,
+    "UsuarioId": 1,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 9,
+    "UsuarioId": 1,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 10,
+    "UsuarioId": 1,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 11,
+    "UsuarioId": 1,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 12,
+    "UsuarioId": 1,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 13,
+    "UsuarioId": 1,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 14,
+    "UsuarioId": 1,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 15,
+    "UsuarioId": 1,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 16,
+    "UsuarioId": 1,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 17,
+    "UsuarioId": 2,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 18,
+    "UsuarioId": 2,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 19,
+    "UsuarioId": 2,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 20,
+    "UsuarioId": 2,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T09:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 21,
+    "UsuarioId": 2,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 22,
+    "UsuarioId": 2,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 23,
+    "UsuarioId": 2,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 24,
+    "UsuarioId": 2,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 25,
+    "UsuarioId": 2,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 26,
+    "UsuarioId": 2,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 27,
+    "UsuarioId": 2,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-13T01:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 28,
+    "UsuarioId": 3,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 29,
+    "UsuarioId": 3,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 30,
+    "UsuarioId": 3,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 31,
+    "UsuarioId": 3,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 32,
+    "UsuarioId": 3,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 33,
+    "UsuarioId": 3,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 34,
+    "UsuarioId": 3,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 35,
+    "UsuarioId": 3,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 36,
+    "UsuarioId": 3,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 37,
+    "UsuarioId": 3,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 38,
+    "UsuarioId": 3,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 39,
+    "UsuarioId": 4,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 40,
+    "UsuarioId": 4,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 41,
+    "UsuarioId": 4,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 42,
+    "UsuarioId": 4,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 43,
+    "UsuarioId": 4,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 44,
+    "UsuarioId": 4,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 45,
+    "UsuarioId": 4,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 46,
+    "UsuarioId": 4,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 47,
+    "UsuarioId": 4,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 48,
+    "UsuarioId": 4,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 49,
+    "UsuarioId": 4,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 50,
+    "UsuarioId": 5,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 51,
+    "UsuarioId": 5,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 52,
+    "UsuarioId": 5,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 53,
+    "UsuarioId": 5,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 54,
+    "UsuarioId": 5,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 55,
+    "UsuarioId": 5,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 56,
+    "UsuarioId": 5,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 57,
+    "UsuarioId": 5,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 58,
+    "UsuarioId": 5,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 59,
+    "UsuarioId": 5,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 60,
+    "UsuarioId": 5,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 61,
+    "UsuarioId": 5,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-13T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 62,
+    "UsuarioId": 6,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 63,
+    "UsuarioId": 6,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 64,
+    "UsuarioId": 6,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 65,
+    "UsuarioId": 6,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 66,
+    "UsuarioId": 6,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T10:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 67,
+    "UsuarioId": 6,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 68,
+    "UsuarioId": 6,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 69,
+    "UsuarioId": 6,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 70,
+    "UsuarioId": 6,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T11:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 71,
+    "UsuarioId": 6,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 72,
+    "UsuarioId": 6,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 73,
+    "UsuarioId": 6,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 74,
+    "UsuarioId": 7,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T13:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 75,
+    "UsuarioId": 7,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 76,
+    "UsuarioId": 7,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 77,
+    "UsuarioId": 7,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 78,
+    "UsuarioId": 7,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 79,
+    "UsuarioId": 7,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 80,
+    "UsuarioId": 7,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 81,
+    "UsuarioId": 7,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 82,
+    "UsuarioId": 7,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 83,
+    "UsuarioId": 7,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 84,
+    "UsuarioId": 7,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 85,
+    "UsuarioId": 7,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 86,
+    "UsuarioId": 8,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 87,
+    "UsuarioId": 8,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 88,
+    "UsuarioId": 8,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 89,
+    "UsuarioId": 8,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 90,
+    "UsuarioId": 8,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 91,
+    "UsuarioId": 8,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 92,
+    "UsuarioId": 8,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 93,
+    "UsuarioId": 8,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 94,
+    "UsuarioId": 8,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 95,
+    "UsuarioId": 8,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 96,
+    "UsuarioId": 8,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 97,
+    "UsuarioId": 9,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 98,
+    "UsuarioId": 9,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 99,
+    "UsuarioId": 9,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T14:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 100,
+    "UsuarioId": 9,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 101,
+    "UsuarioId": 9,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 102,
+    "UsuarioId": 9,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 103,
+    "UsuarioId": 9,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 104,
+    "UsuarioId": 9,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 105,
+    "UsuarioId": 9,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 106,
+    "UsuarioId": 9,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 107,
+    "UsuarioId": 9,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 108,
+    "UsuarioId": 9,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 109,
+    "UsuarioId": 10,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 110,
+    "UsuarioId": 10,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 111,
+    "UsuarioId": 10,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 112,
+    "UsuarioId": 10,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 113,
+    "UsuarioId": 10,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 114,
+    "UsuarioId": 10,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 115,
+    "UsuarioId": 10,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 116,
+    "UsuarioId": 10,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 117,
+    "UsuarioId": 10,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 118,
+    "UsuarioId": 10,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 119,
+    "UsuarioId": 10,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 120,
+    "UsuarioId": 10,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 121,
+    "UsuarioId": 11,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 122,
+    "UsuarioId": 11,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 123,
+    "UsuarioId": 11,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 124,
+    "UsuarioId": 11,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 125,
+    "UsuarioId": 11,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 126,
+    "UsuarioId": 11,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 127,
+    "UsuarioId": 11,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 128,
+    "UsuarioId": 11,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 129,
+    "UsuarioId": 11,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 130,
+    "UsuarioId": 11,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 131,
+    "UsuarioId": 11,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 132,
+    "UsuarioId": 11,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 133,
+    "UsuarioId": 12,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 134,
+    "UsuarioId": 12,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 135,
+    "UsuarioId": 12,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 136,
+    "UsuarioId": 12,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 137,
+    "UsuarioId": 12,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 138,
+    "UsuarioId": 12,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 139,
+    "UsuarioId": 12,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 140,
+    "UsuarioId": 12,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 141,
+    "UsuarioId": 12,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 142,
+    "UsuarioId": 12,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 143,
+    "UsuarioId": 12,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 144,
+    "UsuarioId": 12,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 145,
+    "UsuarioId": 13,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 146,
+    "UsuarioId": 13,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 147,
+    "UsuarioId": 13,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 148,
+    "UsuarioId": 13,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 149,
+    "UsuarioId": 13,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 150,
+    "UsuarioId": 13,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 151,
+    "UsuarioId": 13,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 152,
+    "UsuarioId": 13,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 153,
+    "UsuarioId": 13,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 154,
+    "UsuarioId": 13,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 155,
+    "UsuarioId": 13,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 156,
+    "UsuarioId": 13,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 157,
+    "UsuarioId": 14,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 158,
+    "UsuarioId": 14,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 159,
+    "UsuarioId": 14,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 160,
+    "UsuarioId": 14,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 161,
+    "UsuarioId": 14,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T09:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 162,
+    "UsuarioId": 14,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 163,
+    "UsuarioId": 14,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 164,
+    "UsuarioId": 14,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 165,
+    "UsuarioId": 14,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T09:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 166,
+    "UsuarioId": 14,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 167,
+    "UsuarioId": 14,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 168,
+    "UsuarioId": 14,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 169,
+    "UsuarioId": 15,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 170,
+    "UsuarioId": 15,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T00:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 171,
+    "UsuarioId": 15,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 172,
+    "UsuarioId": 15,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 173,
+    "UsuarioId": 15,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 174,
+    "UsuarioId": 15,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 175,
+    "UsuarioId": 15,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 176,
+    "UsuarioId": 15,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 177,
+    "UsuarioId": 15,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 178,
+    "UsuarioId": 15,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 179,
+    "UsuarioId": 15,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 180,
+    "UsuarioId": 15,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 181,
+    "UsuarioId": 16,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 182,
+    "UsuarioId": 16,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 183,
+    "UsuarioId": 16,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 184,
+    "UsuarioId": 16,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 185,
+    "UsuarioId": 16,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 186,
+    "UsuarioId": 16,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 187,
+    "UsuarioId": 16,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 188,
+    "UsuarioId": 16,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 189,
+    "UsuarioId": 16,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 190,
+    "UsuarioId": 16,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 191,
+    "UsuarioId": 16,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 192,
+    "UsuarioId": 16,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-13T02:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 193,
+    "UsuarioId": 17,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 194,
+    "UsuarioId": 17,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 195,
+    "UsuarioId": 17,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 196,
+    "UsuarioId": 17,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 197,
+    "UsuarioId": 17,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 198,
+    "UsuarioId": 17,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 199,
+    "UsuarioId": 17,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 200,
+    "UsuarioId": 17,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 201,
+    "UsuarioId": 17,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 202,
+    "UsuarioId": 17,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 203,
+    "UsuarioId": 17,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 204,
+    "UsuarioId": 17,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 205,
+    "UsuarioId": 18,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 206,
+    "UsuarioId": 18,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 207,
+    "UsuarioId": 18,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 208,
+    "UsuarioId": 18,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 209,
+    "UsuarioId": 18,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 210,
+    "UsuarioId": 18,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 211,
+    "UsuarioId": 18,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 212,
+    "UsuarioId": 18,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 213,
+    "UsuarioId": 18,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 214,
+    "UsuarioId": 18,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 215,
+    "UsuarioId": 18,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 216,
+    "UsuarioId": 18,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-13T03:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 217,
+    "UsuarioId": 19,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 218,
+    "UsuarioId": 19,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 219,
+    "UsuarioId": 19,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 220,
+    "UsuarioId": 19,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 221,
+    "UsuarioId": 19,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 222,
+    "UsuarioId": 19,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 223,
+    "UsuarioId": 19,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 224,
+    "UsuarioId": 19,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 225,
+    "UsuarioId": 19,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T09:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 226,
+    "UsuarioId": 19,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 227,
+    "UsuarioId": 19,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 228,
+    "UsuarioId": 19,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 229,
+    "UsuarioId": 20,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 230,
+    "UsuarioId": 20,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T02:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 231,
+    "UsuarioId": 20,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 232,
+    "UsuarioId": 20,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 233,
+    "UsuarioId": 20,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 234,
+    "UsuarioId": 20,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 235,
+    "UsuarioId": 20,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 236,
+    "UsuarioId": 20,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 237,
+    "UsuarioId": 20,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 238,
+    "UsuarioId": 20,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 239,
+    "UsuarioId": 20,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 240,
+    "UsuarioId": 20,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 241,
+    "UsuarioId": 21,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 242,
+    "UsuarioId": 21,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 243,
+    "UsuarioId": 21,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 244,
+    "UsuarioId": 21,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 245,
+    "UsuarioId": 21,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 246,
+    "UsuarioId": 21,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 247,
+    "UsuarioId": 21,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 248,
+    "UsuarioId": 21,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 249,
+    "UsuarioId": 21,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 250,
+    "UsuarioId": 21,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 251,
+    "UsuarioId": 21,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 252,
+    "UsuarioId": 21,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 253,
+    "UsuarioId": 22,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 254,
+    "UsuarioId": 22,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T01:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 255,
+    "UsuarioId": 22,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 256,
+    "UsuarioId": 22,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 257,
+    "UsuarioId": 22,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 258,
+    "UsuarioId": 22,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 259,
+    "UsuarioId": 22,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 260,
+    "UsuarioId": 22,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 261,
+    "UsuarioId": 22,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 262,
+    "UsuarioId": 22,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 263,
+    "UsuarioId": 22,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 264,
+    "UsuarioId": 22,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 265,
+    "UsuarioId": 23,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 266,
+    "UsuarioId": 23,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 267,
+    "UsuarioId": 23,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T14:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 268,
+    "UsuarioId": 23,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 269,
+    "UsuarioId": 23,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 270,
+    "UsuarioId": 23,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 271,
+    "UsuarioId": 23,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 272,
+    "UsuarioId": 23,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T03:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 273,
+    "UsuarioId": 23,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 274,
+    "UsuarioId": 23,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 275,
+    "UsuarioId": 23,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 276,
+    "UsuarioId": 23,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 277,
+    "UsuarioId": 24,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 278,
+    "UsuarioId": 24,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 279,
+    "UsuarioId": 24,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 280,
+    "UsuarioId": 24,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 281,
+    "UsuarioId": 24,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 282,
+    "UsuarioId": 24,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 283,
+    "UsuarioId": 24,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 284,
+    "UsuarioId": 24,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 285,
+    "UsuarioId": 24,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 286,
+    "UsuarioId": 24,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 287,
+    "UsuarioId": 24,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 288,
+    "UsuarioId": 24,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 289,
+    "UsuarioId": 25,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 290,
+    "UsuarioId": 25,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 291,
+    "UsuarioId": 25,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 292,
+    "UsuarioId": 25,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 293,
+    "UsuarioId": 25,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 294,
+    "UsuarioId": 25,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 295,
+    "UsuarioId": 25,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 296,
+    "UsuarioId": 25,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 297,
+    "UsuarioId": 25,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 298,
+    "UsuarioId": 25,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 299,
+    "UsuarioId": 25,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 300,
+    "UsuarioId": 25,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 301,
+    "UsuarioId": 26,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 302,
+    "UsuarioId": 26,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 303,
+    "UsuarioId": 26,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 304,
+    "UsuarioId": 26,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 305,
+    "UsuarioId": 26,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 306,
+    "UsuarioId": 26,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 307,
+    "UsuarioId": 26,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 308,
+    "UsuarioId": 26,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 309,
+    "UsuarioId": 26,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 310,
+    "UsuarioId": 26,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 311,
+    "UsuarioId": 26,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 312,
+    "UsuarioId": 26,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 313,
+    "UsuarioId": 27,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 314,
+    "UsuarioId": 27,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 315,
+    "UsuarioId": 27,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 316,
+    "UsuarioId": 27,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 317,
+    "UsuarioId": 27,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 318,
+    "UsuarioId": 27,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 319,
+    "UsuarioId": 27,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 320,
+    "UsuarioId": 27,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 321,
+    "UsuarioId": 27,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 322,
+    "UsuarioId": 27,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 323,
+    "UsuarioId": 27,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 324,
+    "UsuarioId": 27,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 325,
+    "UsuarioId": 28,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 326,
+    "UsuarioId": 28,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 327,
+    "UsuarioId": 28,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 328,
+    "UsuarioId": 28,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 329,
+    "UsuarioId": 28,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 330,
+    "UsuarioId": 28,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 331,
+    "UsuarioId": 28,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 332,
+    "UsuarioId": 28,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 333,
+    "UsuarioId": 28,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 334,
+    "UsuarioId": 28,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 335,
+    "UsuarioId": 28,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 336,
+    "UsuarioId": 28,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 337,
+    "UsuarioId": 29,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 338,
+    "UsuarioId": 29,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 339,
+    "UsuarioId": 29,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 340,
+    "UsuarioId": 29,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 341,
+    "UsuarioId": 29,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 342,
+    "UsuarioId": 29,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 343,
+    "UsuarioId": 29,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 344,
+    "UsuarioId": 29,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 345,
+    "UsuarioId": 29,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 346,
+    "UsuarioId": 29,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 347,
+    "UsuarioId": 29,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 348,
+    "UsuarioId": 29,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 349,
+    "UsuarioId": 30,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 350,
+    "UsuarioId": 30,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 351,
+    "UsuarioId": 30,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 352,
+    "UsuarioId": 30,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 353,
+    "UsuarioId": 30,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 354,
+    "UsuarioId": 30,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 355,
+    "UsuarioId": 30,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 356,
+    "UsuarioId": 30,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 357,
+    "UsuarioId": 30,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 358,
+    "UsuarioId": 30,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 359,
+    "UsuarioId": 30,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 360,
+    "UsuarioId": 30,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 361,
+    "UsuarioId": 31,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 362,
+    "UsuarioId": 31,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 363,
+    "UsuarioId": 31,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 364,
+    "UsuarioId": 31,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 365,
+    "UsuarioId": 31,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 366,
+    "UsuarioId": 31,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 367,
+    "UsuarioId": 31,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 368,
+    "UsuarioId": 31,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 369,
+    "UsuarioId": 31,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 370,
+    "UsuarioId": 31,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 371,
+    "UsuarioId": 31,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 372,
+    "UsuarioId": 31,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 373,
+    "UsuarioId": 32,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 374,
+    "UsuarioId": 32,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 375,
+    "UsuarioId": 32,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 376,
+    "UsuarioId": 32,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 377,
+    "UsuarioId": 32,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 378,
+    "UsuarioId": 32,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 379,
+    "UsuarioId": 32,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 380,
+    "UsuarioId": 32,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T02:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 381,
+    "UsuarioId": 32,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 382,
+    "UsuarioId": 32,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 383,
+    "UsuarioId": 32,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 384,
+    "UsuarioId": 32,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 385,
+    "UsuarioId": 33,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 386,
+    "UsuarioId": 33,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 387,
+    "UsuarioId": 33,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 388,
+    "UsuarioId": 33,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 389,
+    "UsuarioId": 33,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T10:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 390,
+    "UsuarioId": 33,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 391,
+    "UsuarioId": 33,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 392,
+    "UsuarioId": 33,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 393,
+    "UsuarioId": 33,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 394,
+    "UsuarioId": 33,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 395,
+    "UsuarioId": 33,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 396,
+    "UsuarioId": 33,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 397,
+    "UsuarioId": 34,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 398,
+    "UsuarioId": 34,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 399,
+    "UsuarioId": 34,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 400,
+    "UsuarioId": 34,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 401,
+    "UsuarioId": 34,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 402,
+    "UsuarioId": 34,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 403,
+    "UsuarioId": 34,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 404,
+    "UsuarioId": 34,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 405,
+    "UsuarioId": 34,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 406,
+    "UsuarioId": 34,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T14:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 407,
+    "UsuarioId": 34,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 408,
+    "UsuarioId": 34,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 409,
+    "UsuarioId": 35,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 410,
+    "UsuarioId": 35,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 411,
+    "UsuarioId": 35,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T13:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 412,
+    "UsuarioId": 35,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T02:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 413,
+    "UsuarioId": 35,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 414,
+    "UsuarioId": 35,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 415,
+    "UsuarioId": 35,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 416,
+    "UsuarioId": 35,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T02:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 417,
+    "UsuarioId": 35,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T09:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 418,
+    "UsuarioId": 35,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 419,
+    "UsuarioId": 35,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T15:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 420,
+    "UsuarioId": 35,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 421,
+    "UsuarioId": 36,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 422,
+    "UsuarioId": 36,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 423,
+    "UsuarioId": 36,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 424,
+    "UsuarioId": 36,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 425,
+    "UsuarioId": 36,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 426,
+    "UsuarioId": 36,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 427,
+    "UsuarioId": 36,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 428,
+    "UsuarioId": 36,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T19:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 429,
+    "UsuarioId": 36,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 430,
+    "UsuarioId": 36,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 431,
+    "UsuarioId": 36,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 432,
+    "UsuarioId": 36,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T21:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 433,
+    "UsuarioId": 37,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 434,
+    "UsuarioId": 37,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T21:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 435,
+    "UsuarioId": 37,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 436,
+    "UsuarioId": 37,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-10T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 437,
+    "UsuarioId": 37,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T14:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 438,
+    "UsuarioId": 37,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 439,
+    "UsuarioId": 37,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T17:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 440,
+    "UsuarioId": 37,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T23:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 441,
+    "UsuarioId": 37,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 442,
+    "UsuarioId": 37,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T12:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 443,
+    "UsuarioId": 37,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 444,
+    "UsuarioId": 37,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-13T03:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 445,
+    "UsuarioId": 38,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-09T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 446,
+    "UsuarioId": 38,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 447,
+    "UsuarioId": 38,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-10T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 448,
+    "UsuarioId": 38,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 449,
+    "UsuarioId": 38,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T11:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 450,
+    "UsuarioId": 38,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T13:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 451,
+    "UsuarioId": 38,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T15:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 452,
+    "UsuarioId": 38,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-12T00:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 453,
+    "UsuarioId": 38,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T09:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 454,
+    "UsuarioId": 38,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-12T18:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 455,
+    "UsuarioId": 38,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 456,
+    "UsuarioId": 38,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 457,
+    "UsuarioId": 39,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-09T22:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 458,
+    "UsuarioId": 39,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-09T17:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 459,
+    "UsuarioId": 39,
+    "PartidoId": 3,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T22:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 460,
+    "UsuarioId": 39,
+    "PartidoId": 4,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 3,
+    "FechaRegistro": "2026-06-11T01:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 461,
+    "UsuarioId": 39,
+    "PartidoId": 5,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T10:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 462,
+    "UsuarioId": 39,
+    "PartidoId": 6,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-11T12:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 463,
+    "UsuarioId": 39,
+    "PartidoId": 7,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 464,
+    "UsuarioId": 39,
+    "PartidoId": 8,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-11T20:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 465,
+    "UsuarioId": 39,
+    "PartidoId": 9,
+    "GolesLocalPronosticados": 1,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-12T16:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 466,
+    "UsuarioId": 39,
+    "PartidoId": 10,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T19:00:00",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 467,
+    "UsuarioId": 39,
+    "PartidoId": 11,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-12T23:00:00",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 468,
+    "UsuarioId": 39,
+    "PartidoId": 12,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 2,
+    "FechaRegistro": "2026-06-13T00:00:00",
+    "PuntosObtenidos": 2
   }
 ]

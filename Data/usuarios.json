@@ -3,56 +3,280 @@
     "Id": 1,
     "Nombre": "Luis Alonso",
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 2,
+    "Puntos": 8,
     "Insignias": []
   },
   {
     "Id": 2,
     "Nombre": "Alberto Porras",
     "PaisPreferido": "Brasil",
-    "Puntos": 5,
+    "Puntos": 15,
     "Insignias": []
   },
   {
     "Id": 3,
     "Nombre": "Marco Porras",
     "PaisPreferido": "Cabo Verde",
-    "Puntos": 2,
+    "Puntos": 12,
     "Insignias": []
   },
   {
     "Id": 4,
     "Nombre": "Xavi Hernandes",
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 0,
+    "Puntos": 11,
     "Insignias": []
   },
   {
     "Id": 5,
     "Nombre": "Oscar Ulate",
     "PaisPreferido": "Inglaterra",
-    "Puntos": 0,
+    "Puntos": 4,
     "Insignias": []
   },
   {
     "Id": 6,
     "Nombre": "Fabiola Carvajal",
     "PaisPreferido": "Austria",
-    "Puntos": 0,
+    "Puntos": 6,
     "Insignias": []
   },
   {
     "Id": 7,
     "Nombre": "Oliver Atom",
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 0,
+    "Puntos": 13,
     "Insignias": []
   },
   {
     "Id": 8,
     "Nombre": "Bruno Salazar",
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 5,
+    "Puntos": 7,
+    "Insignias": []
+  },
+  {
+    "Id": 9,
+    "Nombre": "Camila Rodr\u00EDguez",
+    "PaisPreferido": "Canad\u00E1",
+    "Puntos": 4,
+    "Insignias": []
+  },
+  {
+    "Id": 10,
+    "Nombre": "Mateo Gonz\u00E1lez",
+    "PaisPreferido": "Colombia",
+    "Puntos": 2,
+    "Insignias": []
+  },
+  {
+    "Id": 11,
+    "Nombre": "Valentina Mart\u00EDnez",
+    "PaisPreferido": "Congo DR",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 12,
+    "Nombre": "Santiago L\u00F3pez",
+    "PaisPreferido": "Corea del Sur",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 13,
+    "Nombre": "Sof\u00EDa Hern\u00E1ndez",
+    "PaisPreferido": "Costa de Marfil",
+    "Puntos": 8,
+    "Insignias": []
+  },
+  {
+    "Id": 14,
+    "Nombre": "Sebasti\u00E1n P\u00E9rez",
+    "PaisPreferido": "Croacia",
+    "Puntos": 10,
+    "Insignias": []
+  },
+  {
+    "Id": 15,
+    "Nombre": "Isabella Garc\u00EDa",
+    "PaisPreferido": "Curazao",
+    "Puntos": 21,
+    "Insignias": []
+  },
+  {
+    "Id": 16,
+    "Nombre": "Nicol\u00E1s S\u00E1nchez",
+    "PaisPreferido": "Ecuador",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 17,
+    "Nombre": "Mariana Ram\u00EDrez",
+    "PaisPreferido": "Egipto",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 18,
+    "Nombre": "Diego Torres",
+    "PaisPreferido": "Escocia",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 19,
+    "Nombre": "Luciana Flores",
+    "PaisPreferido": "Eslovaquia",
+    "Puntos": 10,
+    "Insignias": []
+  },
+  {
+    "Id": 20,
+    "Nombre": "Alejandro Vargas",
+    "PaisPreferido": "Espa\u00F1a",
+    "Puntos": 19,
+    "Insignias": []
+  },
+  {
+    "Id": 21,
+    "Nombre": "Gabriela Castillo",
+    "PaisPreferido": "Estados Unidos",
+    "Puntos": 15,
+    "Insignias": []
+  },
+  {
+    "Id": 22,
+    "Nombre": "Daniel Romero",
+    "PaisPreferido": "Francia",
+    "Puntos": 12,
+    "Insignias": []
+  },
+  {
+    "Id": 23,
+    "Nombre": "Paula Mendoza",
+    "PaisPreferido": "Gales",
+    "Puntos": 10,
+    "Insignias": []
+  },
+  {
+    "Id": 24,
+    "Nombre": "Andr\u00E9s Silva",
+    "PaisPreferido": "Ghana",
+    "Puntos": 9,
+    "Insignias": []
+  },
+  {
+    "Id": 25,
+    "Nombre": "Natalia Herrera",
+    "PaisPreferido": "Hait\u00ED",
+    "Puntos": 18,
+    "Insignias": []
+  },
+  {
+    "Id": 26,
+    "Nombre": "Javier Morales",
+    "PaisPreferido": "Inglaterra",
+    "Puntos": 7,
+    "Insignias": []
+  },
+  {
+    "Id": 27,
+    "Nombre": "Carolina Rojas",
+    "PaisPreferido": "Ir\u00E1n",
+    "Puntos": 2,
+    "Insignias": []
+  },
+  {
+    "Id": 28,
+    "Nombre": "Fernando Castro",
+    "PaisPreferido": "Irak",
+    "Puntos": 4,
+    "Insignias": []
+  },
+  {
+    "Id": 29,
+    "Nombre": "Andrea Ortiz",
+    "PaisPreferido": "Jap\u00F3n",
+    "Puntos": 7,
+    "Insignias": []
+  },
+  {
+    "Id": 30,
+    "Nombre": "Ricardo Navarro",
+    "PaisPreferido": "Jordania",
+    "Puntos": 10,
+    "Insignias": []
+  },
+  {
+    "Id": 31,
+    "Nombre": "Daniela Medina",
+    "PaisPreferido": "Marruecos",
+    "Puntos": 10,
+    "Insignias": []
+  },
+  {
+    "Id": 32,
+    "Nombre": "Emiliano Cruz",
+    "PaisPreferido": "M\u00E9xico",
+    "Puntos": 14,
+    "Insignias": []
+  },
+  {
+    "Id": 33,
+    "Nombre": "Renata Jim\u00E9nez",
+    "PaisPreferido": "Noruega",
+    "Puntos": 7,
+    "Insignias": []
+  },
+  {
+    "Id": 34,
+    "Nombre": "Tom\u00E1s Cabrera",
+    "PaisPreferido": "Nueva Zelanda",
+    "Puntos": 8,
+    "Insignias": []
+  },
+  {
+    "Id": 35,
+    "Nombre": "Julieta \u00C1lvarez",
+    "PaisPreferido": "Pa\u00EDses Bajos",
+    "Puntos": 8,
+    "Insignias": []
+  },
+  {
+    "Id": 36,
+    "Nombre": "Felipe Acosta",
+    "PaisPreferido": "Panam\u00E1",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 37,
+    "Nombre": "Martina Reyes",
+    "PaisPreferido": "Paraguay",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 38,
+    "Nombre": "Juan Salazar",
+    "PaisPreferido": "Portugal",
+    "Puntos": 21,
+    "Insignias": []
+  },
+  {
+    "Id": 39,
+    "Nombre": "Elena Fuentes",
+    "PaisPreferido": "Qatar",
+    "Puntos": 6,
+    "Insignias": []
+  },
+  {
+    "Id": 40,
+    "Nombre": "Miguel Dom\u00EDnguez",
+    "PaisPreferido": "Rep\u00FAblica Checa",
+    "Puntos": 0,
     "Insignias": []
   }
 ]
