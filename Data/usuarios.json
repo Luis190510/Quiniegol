@@ -11,7 +11,10 @@
     "Nombre": "Alberto Porras",
     "PaisPreferido": "Brasil",
     "Puntos": 15,
-    "Insignias": []
+    "Insignias": [
+      "L\u00EDder de quiniela: Room 1",
+      "L\u00EDder de quiniela: Amigos del Mundial"
+    ]
   },
   {
     "Id": 3,
@@ -32,7 +35,9 @@
     "Nombre": "Oscar Ulate",
     "PaisPreferido": "Inglaterra",
     "Puntos": 4,
-    "Insignias": []
+    "Insignias": [
+      "Peor de quiniela: Room 1"
+    ]
   },
   {
     "Id": 6,
@@ -81,7 +86,11 @@
     "Nombre": "Santiago L\u00F3pez",
     "PaisPreferido": "Corea del Sur",
     "Puntos": 0,
-    "Insignias": []
+    "Insignias": [
+      "Peor del ranking global",
+      "Peor de quiniela: Amigos del Mundial",
+      "Peor de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 13,
@@ -102,28 +111,38 @@
     "Nombre": "Isabella Garc\u00EDa",
     "PaisPreferido": "Curazao",
     "Puntos": 21,
-    "Insignias": []
+    "Insignias": [
+      "L\u00EDder global",
+      "L\u00EDder de quiniela: Expertos del F\u00FAtbol",
+      "L\u00EDder de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 16,
     "Nombre": "Nicol\u00E1s S\u00E1nchez",
     "PaisPreferido": "Ecuador",
     "Puntos": 6,
-    "Insignias": []
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 17,
     "Nombre": "Mariana Ram\u00EDrez",
     "PaisPreferido": "Egipto",
     "Puntos": 6,
-    "Insignias": []
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 18,
     "Nombre": "Diego Torres",
     "PaisPreferido": "Escocia",
     "Puntos": 6,
-    "Insignias": []
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 19,
@@ -144,7 +163,9 @@
     "Nombre": "Gabriela Castillo",
     "PaisPreferido": "Estados Unidos",
     "Puntos": 15,
-    "Insignias": []
+    "Insignias": [
+      "Rey de los empates"
+    ]
   },
   {
     "Id": 22,
@@ -172,7 +193,9 @@
     "Nombre": "Natalia Herrera",
     "PaisPreferido": "Hait\u00ED",
     "Puntos": 18,
-    "Insignias": []
+    "Insignias": [
+      "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 26,
@@ -186,7 +209,9 @@
     "Nombre": "Carolina Rojas",
     "PaisPreferido": "Ir\u00E1n",
     "Puntos": 2,
-    "Insignias": []
+    "Insignias": [
+      "Peor de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 28,
@@ -263,7 +288,9 @@
     "Nombre": "Juan Salazar",
     "PaisPreferido": "Portugal",
     "Puntos": 21,
-    "Insignias": []
+    "Insignias": [
+      "L\u00EDder global"
+    ]
   },
   {
     "Id": 39,
@@ -277,6 +304,8 @@
     "Nombre": "Miguel Dom\u00EDnguez",
     "PaisPreferido": "Rep\u00FAblica Checa",
     "Puntos": 0,
-    "Insignias": []
+    "Insignias": [
+      "Peor del ranking global"
+    ]
   }
 ]

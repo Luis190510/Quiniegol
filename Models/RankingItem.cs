@@ -15,5 +15,7 @@ namespace Quiniegol.Models
         public string PaisPreferido { get; set; } = "";
 
         public int Puntos { get; set; }
+
+        public string Insignias { get; set; } = "";
     }
 }

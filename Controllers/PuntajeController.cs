@@ -211,7 +211,13 @@ namespace Quiniegol.Controllers
                         Nombre = usuario.Nombre,
                         PaisPreferido =
                             usuario.PaisPreferido,
-                        Puntos = usuario.Puntos
+                        Puntos = usuario.Puntos,
+                        Insignias =
+                            string.Join(
+                                ", ",
+                                usuario.Insignias ??
+                                new List<string>()
+                            )
                     };
 
                 ranking.Add(filaRanking);

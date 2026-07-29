@@ -2,6 +2,7 @@ using System;
 using System.Windows.Forms;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
@@ -13,6 +14,9 @@ namespace Quiniegol.Views
         private readonly RankingPrivadoController
             _rankingController;
 
+        private readonly InsigniaService
+            _insigniaService;
+
         public FrmRankingPrivado()
         {
             InitializeComponent();
@@ -22,6 +26,9 @@ namespace Quiniegol.Views
 
             _rankingController =
                 new RankingPrivadoController();
+
+            _insigniaService =
+                new InsigniaService();
 
             CargarQuinielas();
         }
@@ -58,6 +65,9 @@ namespace Quiniegol.Views
 
                     return;
                 }
+
+                _insigniaService
+                    .RecalcularInsignias();
 
                 var ranking =
                     _rankingController
@@ -121,6 +131,12 @@ namespace Quiniegol.Views
             {
                 dgvRanking.Columns["Puntos"]
                     .HeaderText = "Puntos";
+            }
+
+            if (dgvRanking.Columns["Insignias"] != null)
+            {
+                dgvRanking.Columns["Insignias"]
+                    .HeaderText = "Insignias";
             }
         }
 
