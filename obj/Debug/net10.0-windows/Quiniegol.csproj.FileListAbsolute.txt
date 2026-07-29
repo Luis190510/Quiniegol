@@ -73,11 +73,6 @@ C:\Users\luisa\Downloads\Clases\2 cuatri 2026\Tecnicas\New folder\Quiniegol\obj\
 C:\Users\luisa\Downloads\Clases\2 cuatri 2026\Tecnicas\New folder\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.genruntimeconfig.cache
 C:\Users\luisa\Downloads\Clases\2 cuatri 2026\Tecnicas\New folder\Quiniegol\obj\Debug\net10.0-windows\ref\Quiniegol.dll
 C:\Users\luisa\Downloads\Clases\2 cuatri 2026\Tecnicas\New folder\Quiniegol\bin\Debug\net10.0-windows\Data\resultados2026.json
-C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Data\partidos.json
-C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Data\pronosticos.json
-C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Data\resultados2026.json
-C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Data\selecciones.json
-C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Data\usuarios.json
 C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Quiniegol.exe
 C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Quiniegol.deps.json
 C:\Users\luisa\Quiniegol\bin\Debug\net10.0-windows\Quiniegol.runtimeconfig.json
@@ -101,3 +96,4 @@ C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\refint\Quiniegol.dll
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.pdb
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.genruntimeconfig.cache
 C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\ref\Quiniegol.dll
+C:\Users\luisa\Quiniegol\obj\Debug\net10.0-windows\Quiniegol.Views.FrmRanking.resources

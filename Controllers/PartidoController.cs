@@ -23,17 +23,15 @@ namespace Quiniegol.Controllers
 
         public PartidoController()
         {
-            string rutaPartidos = Path.Combine(
-                AppContext.BaseDirectory,
-                "Data",
+            string rutaPartidos =
+                RutaDatosService.ObtenerRuta(
                 "partidos.json"
             );
 
-            string rutaResultados = Path.Combine(
-                AppContext.BaseDirectory,
-                "Data",
-                "resultados2026.json"
-            );
+            string rutaResultados =
+                RutaDatosService.ObtenerRuta(
+                    "resultados2026.json"
+                );
 
             _partidoRepository =
                 new JsonRepository<Partido>(

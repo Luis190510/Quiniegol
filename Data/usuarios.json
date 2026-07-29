@@ -1,1 +1,58 @@
-﻿[]
+[
+  {
+    "Id": 1,
+    "Nombre": "Luis Alonso",
+    "PaisPreferido": "Espa\u00F1a",
+    "Puntos": 2,
+    "Insignias": []
+  },
+  {
+    "Id": 2,
+    "Nombre": "Alberto Porras",
+    "PaisPreferido": "Brasil",
+    "Puntos": 5,
+    "Insignias": []
+  },
+  {
+    "Id": 3,
+    "Nombre": "Marco Porras",
+    "PaisPreferido": "Cabo Verde",
+    "Puntos": 2,
+    "Insignias": []
+  },
+  {
+    "Id": 4,
+    "Nombre": "Xavi Hernandes",
+    "PaisPreferido": "Espa\u00F1a",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 5,
+    "Nombre": "Oscar Ulate",
+    "PaisPreferido": "Inglaterra",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 6,
+    "Nombre": "Fabiola Carvajal",
+    "PaisPreferido": "Austria",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 7,
+    "Nombre": "Oliver Atom",
+    "PaisPreferido": "Jap\u00F3n",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 8,
+    "Nombre": "Bruno Salazar",
+    "PaisPreferido": "Estados Unidos",
+    "Puntos": 5,
+    "Insignias": []
+  }
+]

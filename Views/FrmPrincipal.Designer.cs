@@ -34,6 +34,7 @@
             btnPartidos = new Button();
             btnFechaSimulada = new Button();
             btnPronosticos = new Button();
+            btnRanking = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -96,11 +97,22 @@
             btnPronosticos.UseVisualStyleBackColor = true;
             btnPronosticos.Click += btnPronosticos_Click;
             // 
+            // btnRanking
+            // 
+            btnRanking.Location = new Point(525, 95);
+            btnRanking.Name = "btnRanking";
+            btnRanking.Size = new Size(143, 36);
+            btnRanking.TabIndex = 6;
+            btnRanking.Text = "Ranking global";
+            btnRanking.UseVisualStyleBackColor = true;
+            btnRanking.Click += btnRanking_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 411);
+            Controls.Add(btnRanking);
             Controls.Add(btnPronosticos);
             Controls.Add(btnFechaSimulada);
             Controls.Add(btnPartidos);
@@ -122,5 +134,6 @@
         private Button btnPartidos;
         private Button btnFechaSimulada;
         private Button btnPronosticos;
+        private Button btnRanking;
     }
 }

@@ -24,10 +24,9 @@ namespace Quiniegol.Controllers
 
         public PronosticoController()
         {
-            string rutaArchivo = Path.Combine(
-                AppContext.BaseDirectory,
-                "Data",
-                "pronosticos.json"
+            string rutaArchivo =
+                RutaDatosService.ObtenerRuta(
+                   "pronosticos.json"
             );
 
             _pronosticoRepository =

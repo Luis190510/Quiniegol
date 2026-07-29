@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
+using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
@@ -12,9 +13,8 @@ namespace Quiniegol.Controllers
 
         public SeleccionController()
         {
-            string rutaArchivo = Path.Combine(
-                AppContext.BaseDirectory,
-                "Data",
+            string rutaArchivo =
+                RutaDatosService.ObtenerRuta(
                 "selecciones.json"
             );
 

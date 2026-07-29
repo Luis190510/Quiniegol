@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Quiniegol.Views;
 
 namespace Quiniegol.Views
 {
@@ -58,7 +59,7 @@ namespace Quiniegol.Views
             }
         }
 
-        private void btnPronosticos_Click(object sender,EventArgs e)
+        private void btnPronosticos_Click(object sender, EventArgs e)
         {
             using (
                 FrmPronosticos formulario =
@@ -67,6 +68,14 @@ namespace Quiniegol.Views
             {
                 formulario.ShowDialog();
             }
+        }
+
+        private void btnRanking_Click(object sender, EventArgs e)
+        {
+            using FrmRanking formulario =
+                new FrmRanking();
+
+            formulario.ShowDialog();
         }
     }
 }

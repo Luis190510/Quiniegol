@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
+using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
@@ -13,11 +14,10 @@ namespace Quiniegol.Controllers
 
         public UsuarioController()
         {
-            string rutaArchivo = Path.Combine(
-                AppContext.BaseDirectory,
-                "Data",
-                "usuarios.json"
-            );
+            string rutaArchivo =
+              RutaDatosService.ObtenerRuta(
+               "usuarios.json"
+        );
 
             _usuarioRepository =
                 new JsonRepository<Usuario>(rutaArchivo);

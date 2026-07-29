@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "Id": 1,
+    "UsuarioId": 1,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T17:05:05.244",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 2,
+    "UsuarioId": 2,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 0,
+    "FechaRegistro": "2026-06-10T18:56:40.93",
+    "PuntosObtenidos": 5
+  },
+  {
+    "Id": 3,
+    "UsuarioId": 3,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 3,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T18:56:40.93",
+    "PuntosObtenidos": 2
+  },
+  {
+    "Id": 4,
+    "UsuarioId": 4,
+    "PartidoId": 1,
+    "GolesLocalPronosticados": 0,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-06-10T18:56:40.93",
+    "PuntosObtenidos": 0
+  },
+  {
+    "Id": 5,
+    "UsuarioId": 8,
+    "PartidoId": 2,
+    "GolesLocalPronosticados": 2,
+    "GolesVisitantePronosticados": 1,
+    "FechaRegistro": "2026-05-28T19:27:35.013",
+    "PuntosObtenidos": 5
+  }
+]
