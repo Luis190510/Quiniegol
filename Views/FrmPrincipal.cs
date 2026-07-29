@@ -77,5 +77,13 @@ namespace Quiniegol.Views
 
             formulario.ShowDialog();
         }
+
+        private void btnHistorialPronosticos_Click(object sender, EventArgs e)
+        {
+            using FrmHistorialPronosticos formulario =
+                new FrmHistorialPronosticos();
+
+            formulario.ShowDialog();
+        }
     }
 }

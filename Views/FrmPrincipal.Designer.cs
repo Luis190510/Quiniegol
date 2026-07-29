@@ -35,6 +35,7 @@
             btnFechaSimulada = new Button();
             btnPronosticos = new Button();
             btnRanking = new Button();
+            btnHistorialPronosticos = new Button();
             SuspendLayout();
             // 
             // lblTitulo
@@ -107,11 +108,22 @@
             btnRanking.UseVisualStyleBackColor = true;
             btnRanking.Click += btnRanking_Click;
             // 
+            // btnHistorialPronosticos
+            // 
+            btnHistorialPronosticos.Location = new Point(455, 240);
+            btnHistorialPronosticos.Name = "btnHistorialPronosticos";
+            btnHistorialPronosticos.Size = new Size(150, 38);
+            btnHistorialPronosticos.TabIndex = 7;
+            btnHistorialPronosticos.Text = "Historial de pronosticos";
+            btnHistorialPronosticos.UseVisualStyleBackColor = true;
+            btnHistorialPronosticos.Click += btnHistorialPronosticos_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 411);
+            Controls.Add(btnHistorialPronosticos);
             Controls.Add(btnRanking);
             Controls.Add(btnPronosticos);
             Controls.Add(btnFechaSimulada);
@@ -135,5 +147,6 @@
         private Button btnFechaSimulada;
         private Button btnPronosticos;
         private Button btnRanking;
+        private Button btnHistorialPronosticos;
     }
 }
