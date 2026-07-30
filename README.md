@@ -132,18 +132,6 @@ La solución aplica:
 - Manejo de excepciones y validaciones.
 - Revisión mediante Sonar.
 
-## Documentación
-
-La documentación de entrega se encuentra en:
-
-```text
-Documentacion/
-├── Quiniegol_Documentacion_Tecnica.pdf
-├── Entregable_1.pdf
-├── Registro_Pruebas.txt
-└── Evidencias/
-```
-
 ## Gestión del proyecto
 
 - **Repositorio:** https://github.com/Luis190510/Quiniegol.git
