@@ -14,6 +14,9 @@ namespace Quiniegol.Models
 
         public string Tipo { get; set; } = "Privada";
 
+        /// <summary>Identifica a quien puede administrar la quiniela.</summary>
+        public int CreadorUsuarioId { get; set; }
+
         public List<int> IntegrantesIds { get; set; } =
             new List<int>();
     }

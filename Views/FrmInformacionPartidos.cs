@@ -51,34 +51,34 @@ namespace Quiniegol.Views
         private void ConfigurarColumnas(
             DataGridView tabla)
         {
-            if (tabla.Columns["PartidoId"] != null)
+            if (tabla.Columns["PartidoId"]
+                is DataGridViewColumn columnaId)
             {
-                tabla.Columns["PartidoId"]
-                    .Visible = false;
+                columnaId.Visible = false;
             }
 
-            if (tabla.Columns["FechaHora"] != null)
+            if (tabla.Columns["FechaHora"]
+                is DataGridViewColumn columnaFecha)
             {
-                tabla.Columns["FechaHora"]
-                    .HeaderText = "Fecha y hora";
+                columnaFecha.HeaderText = "Fecha y hora";
             }
 
-            if (tabla.Columns["Partido"] != null)
+            if (tabla.Columns["Partido"]
+                is DataGridViewColumn columnaPartido)
             {
-                tabla.Columns["Partido"]
-                    .HeaderText = "Partido";
+                columnaPartido.HeaderText = "Partido";
             }
 
-            if (tabla.Columns["Estado"] != null)
+            if (tabla.Columns["Estado"]
+                is DataGridViewColumn columnaEstado)
             {
-                tabla.Columns["Estado"]
-                    .HeaderText = "Estado";
+                columnaEstado.HeaderText = "Estado";
             }
 
-            if (tabla.Columns["Marcador"] != null)
+            if (tabla.Columns["Marcador"]
+                is DataGridViewColumn columnaMarcador)
             {
-                tabla.Columns["Marcador"]
-                    .HeaderText = "Marcador";
+                columnaMarcador.HeaderText = "Marcador";
             }
         }
 

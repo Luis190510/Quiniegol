@@ -116,7 +116,7 @@ namespace Quiniegol.Services
                  indice < clasificados.Count;
                  indice++)
             {
-                clasificados[indice].Semilla =
+                clasificados[indice].PosicionClasificacion =
                     indice + 1;
             }
 

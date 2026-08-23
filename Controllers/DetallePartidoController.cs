@@ -15,6 +15,9 @@ namespace Quiniegol.Controllers
         private readonly JsonRepository<Seleccion>
             _seleccionRepository;
 
+        private readonly JsonRepository<GoleadorReal>
+            _goleadorRepository;
+
         public DetallePartidoController()
         {
             _partidoController =
@@ -24,6 +27,13 @@ namespace Quiniegol.Controllers
                 new JsonRepository<Seleccion>(
                     RutaDatosService.ObtenerRuta(
                         "selecciones.json"
+                    )
+                );
+
+            _goleadorRepository =
+                new JsonRepository<GoleadorReal>(
+                    RutaDatosService.ObtenerRuta(
+                        "goleadores2026.json"
                     )
                 );
         }
@@ -100,28 +110,29 @@ namespace Quiniegol.Controllers
                     : "Pendiente";
 
             List<AnotadorVistaItem> anotadores =
-                (partido.Anotadores ??
-                 new List<Anotador>())
-                .OrderBy(anotador =>
-                    anotador.Minuto
-                )
-                .Select(anotador =>
+                GoleadoresPartidoService
+                    .ObtenerVisibles(
+                        partido,
+                        _goleadorRepository.ObtenerTodos())
+                    .OrderBy(goleador =>
+                        ExtraerMinuto(goleador.Minuto))
+                    .Select(goleador =>
                     new AnotadorVistaItem
                     {
-                        AnotadorId =
-                            anotador.Id,
+                        SeleccionId =
+                            goleador.SeleccionId,
 
                         Jugador =
-                            anotador.NombreJugador,
+                            goleador.Jugador,
 
                         Seleccion =
                             ObtenerNombre(
                                 selecciones,
-                                anotador.SeleccionId
+                                goleador.SeleccionId
                             ),
 
                         Minuto =
-                            anotador.Minuto
+                            goleador.Minuto
                     }
                 )
                 .ToList();
@@ -152,28 +163,17 @@ namespace Quiniegol.Controllers
             };
         }
 
-        public void AgregarAnotador(
-            int partidoId,
-            int seleccionId,
-            string nombreJugador,
-            int minuto)
+        private static int ExtraerMinuto(string minuto)
         {
-            _partidoController.AgregarAnotador(
-                partidoId,
-                seleccionId,
-                nombreJugador,
-                minuto
+            string parteNumerica = new(
+                (minuto ?? string.Empty)
+                    .TakeWhile(char.IsDigit)
+                    .ToArray()
             );
-        }
 
-        public void EliminarAnotador(
-            int partidoId,
-            int anotadorId)
-        {
-            _partidoController.EliminarAnotador(
-                partidoId,
-                anotadorId
-            );
+            return int.TryParse(parteNumerica, out int valor)
+                ? valor
+                : int.MaxValue;
         }
 
         private string ObtenerNombre(

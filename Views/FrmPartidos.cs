@@ -45,15 +45,17 @@ namespace Quiniegol.Views
             dgvPartidos.DataSource =
                 _partidoController.ObtenerPartidos();
 
-            if (dgvPartidos.Columns["FechaHora"] != null)
+            if (dgvPartidos.Columns["FechaHora"]
+                is DataGridViewColumn columnaFecha)
             {
-                dgvPartidos.Columns["FechaHora"]
-                    .DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
+                columnaFecha.DefaultCellStyle.Format =
+                    "dd/MM/yyyy HH:mm";
             }
 
-            if (dgvPartidos.Columns["Anotadores"] != null)
+            if (dgvPartidos.Columns["Anotadores"]
+                is DataGridViewColumn columnaAnotadores)
             {
-                dgvPartidos.Columns["Anotadores"].Visible = false;
+                columnaAnotadores.Visible = false;
             }
         }
 

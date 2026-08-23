@@ -64,15 +64,15 @@ namespace Quiniegol.Views
 
         private void ConfigurarColumnas()
         {
-            if (dgvTabla.Columns["SeleccionId"] != null)
+            if (dgvTabla.Columns["SeleccionId"]
+                is DataGridViewColumn columnaId)
             {
-                dgvTabla.Columns["SeleccionId"]
-                    .Visible = false;
+                columnaId.Visible = false;
             }
 
             CambiarTitulo(
                 "Posicion",
-                "Pos."
+                "Posición"
             );
 
             CambiarTitulo(
@@ -82,53 +82,58 @@ namespace Quiniegol.Views
 
             CambiarTitulo(
                 "PartidosJugados",
-                "PJ"
+                "Partidos jugados"
             );
 
             CambiarTitulo(
                 "PartidosGanados",
-                "PG"
+                "Partidos ganados"
             );
 
             CambiarTitulo(
                 "PartidosEmpatados",
-                "PE"
+                "Partidos empatados"
             );
 
             CambiarTitulo(
                 "PartidosPerdidos",
-                "PP"
+                "Partidos perdidos"
             );
 
             CambiarTitulo(
                 "GolesFavor",
-                "GF"
+                "Goles a favor"
             );
 
             CambiarTitulo(
                 "GolesContra",
-                "GC"
+                "Goles en contra"
             );
 
             CambiarTitulo(
                 "DiferenciaGoles",
-                "DG"
+                "Diferencia de goles"
             );
 
             CambiarTitulo(
                 "Puntos",
-                "PTS"
+                "Puntos"
             );
+
+            dgvTabla.ColumnHeadersDefaultCellStyle.WrapMode =
+                DataGridViewTriState.True;
+            dgvTabla.ColumnHeadersHeightSizeMode =
+                DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         }
 
         private void CambiarTitulo(
             string nombreColumna,
             string titulo)
         {
-            if (dgvTabla.Columns[nombreColumna] != null)
+            if (dgvTabla.Columns[nombreColumna]
+                is DataGridViewColumn columna)
             {
-                dgvTabla.Columns[nombreColumna]
-                    .HeaderText = titulo;
+                columna.HeaderText = titulo;
             }
         }
 

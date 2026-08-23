@@ -1,119 +1,91 @@
-﻿namespace Quiniegol.Views
+namespace Quiniegol.Views
 {
     partial class FrmUsuarios
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null!;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing)
             {
-                components.Dispose();
+                components?.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            txtNombre = new TextBox();
-            cmbPais = new ComboBox();
+            lblTitulo = new Label();
             btnRegistrar = new Button();
             dgvUsuarios = new DataGridView();
+            btnCerrar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(29, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Nombre:";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(144, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 15);
-            label2.TabIndex = 1;
-            label2.Text = "País favorito:";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point(12, 64);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(100, 23);
-            txtNombre.TabIndex = 2;
-            // 
-            // cmbPais
-            // 
-            cmbPais.FormattingEnabled = true;
-            cmbPais.Location = new Point(130, 64);
-            cmbPais.Name = "cmbPais";
-            cmbPais.Size = new Size(121, 23);
-            cmbPais.TabIndex = 3;
-            // 
+            //
+            // lblTitulo
+            //
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            lblTitulo.Location = new Point(24, 22);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(203, 28);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Usuarios registrados";
+            //
             // btnRegistrar
-            // 
-            btnRegistrar.Location = new Point(47, 115);
+            //
+            btnRegistrar.Location = new Point(719, 22);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(153, 23);
-            btnRegistrar.TabIndex = 4;
-            btnRegistrar.Text = "Registrar usuario";
+            btnRegistrar.Size = new Size(178, 32);
+            btnRegistrar.TabIndex = 1;
+            btnRegistrar.Text = "Registrar nuevo usuario";
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
-            // 
+            //
             // dgvUsuarios
-            // 
+            //
+            dgvUsuarios.AllowUserToAddRows = false;
+            dgvUsuarios.AllowUserToDeleteRows = false;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(279, 12);
+            dgvUsuarios.Location = new Point(24, 72);
             dgvUsuarios.Name = "dgvUsuarios";
-            dgvUsuarios.Size = new Size(509, 405);
-            dgvUsuarios.TabIndex = 5;
-            // 
+            dgvUsuarios.ReadOnly = true;
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.Size = new Size(873, 372);
+            dgvUsuarios.TabIndex = 2;
+            //
+            // btnCerrar
+            //
+            btnCerrar.Location = new Point(793, 459);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(104, 30);
+            btnCerrar.TabIndex = 3;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            //
             // FrmUsuarios
-            // 
+            //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(922, 511);
+            Controls.Add(btnCerrar);
             Controls.Add(dgvUsuarios);
             Controls.Add(btnRegistrar);
-            Controls.Add(cmbPais);
-            Controls.Add(txtNombre);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblTitulo);
             Name = "FrmUsuarios";
-            Text = "FrmUsuarios";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Gestión de usuarios";
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
-
-        private Label label1;
-        private Label label2;
-        private TextBox txtNombre;
-        private ComboBox cmbPais;
-        private Button btnRegistrar;
-        private DataGridView dgvUsuarios;
+        private Label lblTitulo = null!;
+        private Button btnRegistrar = null!;
+        private DataGridView dgvUsuarios = null!;
+        private Button btnCerrar = null!;
     }
 }

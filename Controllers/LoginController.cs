@@ -1,50 +1,89 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using Quiniegol.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
-
     /// <summary>
-    /// Controller para la clase publica Login
+    /// Valida las credenciales y registra nuevas cuentas.
     /// </summary>
     public class LoginController
     {
-        public UsuarioController UsuarioController { get; set; }
-        public LoginController(UsuarioController usuarioController)
-        {  
-            this.UsuarioController = usuarioController;
-            this.UsuarioController.Load();   ///necesitamos conectar esto con el repositorio de usuarios
+        private readonly UsuarioController _usuarioController;
+
+        /// <summary>Inicializa el controlador con el archivo del proyecto.</summary>
+        public LoginController()
+            : this(new UsuarioController())
+        {
         }
 
         /// <summary>
-        /// validacion de credenciales para login
+        /// Inicializa el controlador con una fuente de usuarios específica.
         /// </summary>
-        /// <param name="username"></param>
-        /// <param name="password"></param>
-        /// <returns>True if login is successful, otherwiser False</returns>
-        public bool Login(string username, string password)
-        { 
-            foreach (var element in UsuarioController, ) ///referencia al valor que agreguemos en linea 18 ()
-            {
-                if ((element.Username == user || element.Email == user) && element.Password == password)
-                { 
-                return true;
-                }
-
-            }
-
-            return false;
-
-         }
-
-        public bool Register(string name, string username, string password, string email)
+        /// <param name="usuarioController">Controlador que administra las cuentas.</param>
+        public LoginController(UsuarioController usuarioController)
         {
-            var newUser = new username (name, username, password, email, "0");
-            return this.UsuarioController.SaveUser(newUser);
+            _usuarioController = usuarioController ??
+                throw new ArgumentNullException(nameof(usuarioController));
         }
 
+        /// <summary>
+        /// Obtiene la cuenta activa asociada con las credenciales indicadas.
+        /// </summary>
+        /// <param name="identificador">Nombre de usuario o correo.</param>
+        /// <param name="contrasena">Contraseña proporcionada.</param>
+        /// <returns>La cuenta autenticada o <see langword="null"/>.</returns>
+        public Usuario? Autenticar(
+            string identificador,
+            string contrasena)
+        {
+            if (string.IsNullOrWhiteSpace(identificador) ||
+                string.IsNullOrEmpty(contrasena))
+            {
+                return null;
+            }
+
+            Usuario? usuario = _usuarioController
+                .ObtenerUsuarios()
+                .FirstOrDefault(elemento =>
+                    elemento.Activo &&
+                    (elemento.NombreUsuario.Equals(
+                        identificador.Trim(),
+                        StringComparison.OrdinalIgnoreCase) ||
+                     elemento.Correo.Equals(
+                        identificador.Trim(),
+                        StringComparison.OrdinalIgnoreCase)));
+
+            return usuario != null &&
+                ContrasenaService.Verificar(
+                    contrasena,
+                    usuario.ContrasenaHash)
+                ? usuario
+                : null;
+        }
+
+        /// <summary>Indica si las credenciales son válidas.</summary>
+        public bool Login(
+            string identificador,
+            string contrasena)
+        {
+            return Autenticar(identificador, contrasena) != null;
+        }
+
+        /// <summary>Registra una cuenta participante con contraseña elegida.</summary>
+        public Usuario RegistrarCuenta(
+            string nombre,
+            string paisPreferido,
+            string nombreUsuario,
+            string correo,
+            string contrasena)
+        {
+            return _usuarioController.RegistrarUsuarioPublico(
+                nombre,
+                paisPreferido,
+                nombreUsuario,
+                correo,
+                contrasena
+            );
+        }
     }
 }

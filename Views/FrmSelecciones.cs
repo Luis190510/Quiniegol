@@ -30,9 +30,10 @@ namespace Quiniegol.Views
                 dgvSelecciones.DataSource =
                     _seleccionController.ObtenerSelecciones();
 
-                if (dgvSelecciones.Columns["RutaBandera"] != null)
+                if (dgvSelecciones.Columns["RutaBandera"]
+                    is DataGridViewColumn columnaBandera)
                 {
-                    dgvSelecciones.Columns["RutaBandera"].Visible = false;
+                    columnaBandera.Visible = false;
                 }
             }
             catch (Exception ex)
@@ -51,9 +52,5 @@ namespace Quiniegol.Views
             Close();
         }
 
-        private void btnCerrar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

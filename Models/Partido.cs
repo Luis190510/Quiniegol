@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace Quiniegol.Models
 {
     public class Partido
@@ -18,7 +16,5 @@ namespace Quiniegol.Models
         public int? GolesVisitante { get; set; }
 
         public string Estado { get; set; } = "Pendiente";
-
-        public List<Anotador> Anotadores { get; set; } = new();
     }
 }

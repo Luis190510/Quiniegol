@@ -9,7 +9,7 @@ Quiniegol es una aplicación de escritorio desarrollada en **C# con Windows Form
 - Registro y consulta de usuarios.
 - Carga de selecciones y partidos desde JSON.
 - Fecha simulada para controlar partidos pendientes, en curso y finalizados.
-- Registro de pronósticos únicamente antes del inicio del partido.
+- Registro de marcador y posibles goleadores únicamente antes del inicio del partido.
 - Resultados reales separados del calendario para evitar mostrarlos anticipadamente.
 - Cálculo de puntajes:
   - **5 puntos** por marcador exacto.
@@ -17,13 +17,13 @@ Quiniegol es una aplicación de escritorio desarrollada en **C# con Windows Form
   - **0 puntos** cuando el resultado es incorrecto.
 - Historial de pronósticos por usuario.
 - Ranking global.
-- Creación y gestión de quinielas privadas.
+- Creación, autoinscripción por nombre exacto y gestión de quinielas privadas.
 - Ranking interno por quiniela.
 - Insignias positivas y de vergüenza.
 - Timeline de notificaciones por quiniela.
 - Estadísticas por rango de fechas.
 - Consulta de últimos partidos y próximos encuentros.
-- Banderas y anotadores.
+- Banderas y goleadores oficiales, protegidos por la fecha simulada.
 - Tablas de grupos y cruces de fase final.
 
 ## Se utilizo:
@@ -61,6 +61,7 @@ Quiniegol/
 - `RutaDatosService` mantiene los archivos editables en la carpeta `Data` de la raíz del proyecto.
 - `FechaSimuladaService` comparte una misma fecha entre los módulos.
 - `partidos.json` contiene el calendario y `resultados2026.json` contiene los marcadores reales.
+- `goleadores2026.json` contiene una copia local de los goles oficiales del torneo.
 - El patrón **Strategy** permite separar las reglas de 5, 2 y 0 puntos.
 
 ## Requisitos
@@ -86,7 +87,7 @@ git clone https://github.com/Luis190510/Quiniegol.git
 git checkout master
 ```
 
-3. Abre `Quiniegol.sln` en Visual Studio.
+3. Abre `Quiniegol.slnx` en Visual Studio.
 4. Selecciona **Compilar > Recompilar solución** o usa `Ctrl + Shift + B`.
 5. Confirma que la solución compile sin errores.
 6. Ejecuta con `F5`.
@@ -101,22 +102,63 @@ Data/
 ├── selecciones.json
 ├── partidos.json
 ├── resultados2026.json
+├── goleadores2026.json
 ├── pronosticos.json
-├── quinielas.json
-└── timeline.json
+└── quinielas.json
 ```
 
 Los archivos JSON se configuran para trabajar directamente desde la carpeta del proyecto y no desde una copia temporal de `bin/Debug`.
 
 ## Uso básico
 
-1. Define una fecha desde **Fecha simulada**.
-2. Registra o selecciona un usuario.
-3. Abre **Pronósticos** y selecciona un partido pendiente.
-4. Guarda el marcador pronosticado.
+1. Inicia sesión con una cuenta existente.
+2. Ajusta la fecha de prueba desde **Ajustar fecha (pasado/futuro)** cuando
+   necesites simular el momento anterior o posterior a un partido.
+3. Si eres participante, abre **Pronósticos** y selecciona un partido pendiente.
+4. Guarda el marcador y, opcionalmente, los posibles goleadores.
 5. Adelanta la fecha simulada hasta después del partido.
 6. Abre el **Ranking global** para recalcular los puntos.
-7. Consulta el historial, las quinielas privadas, el ranking privado y las estadísticas.
+7. Consulta el historial, la actividad de tus quinielas, el ranking privado y las estadísticas.
+
+### Acceso inicial
+
+Al abrir por primera vez los datos de la Parte 1, la aplicación completa las
+credenciales que faltaban sin guardar contraseñas en texto plano:
+
+- Administrador: `admin` / `Admin123!`
+- Usuarios existentes: nombre normalizado (por ejemplo, `alberto.porras`) /
+  `Quiniegol123!`
+
+La contraseña anterior solo se asigna durante la migración de usuarios de la
+Parte 1. Toda cuenta nueva debe indicar nombre completo, país favorito, nombre
+de usuario, correo y una contraseña propia desde **Crear una cuenta** en la
+pantalla de inicio de sesión. El registro público siempre crea participantes y
+nunca cuentas administrativas.
+
+El administrador puede gestionar usuarios, partidos y resultados. La fecha
+simulada es una herramienta de prueba disponible para todas las cuentas. Cada
+participante solo puede crear pronósticos con su propia
+identidad y consultar las quinielas privadas donde figure como integrante. El
+administrador puede consultar cualquier quiniela para labores de soporte.
+
+Para unirse, el participante puede seleccionar el nombre de una quiniela
+disponible. Antes de inscribirse, la aplicación no revela su descripción,
+integrantes, ranking, pronósticos ni actividad.
+
+### Fuente de los goleadores del Mundial 2026
+
+La copia local de `goleadores2026.json` fue obtenida el 23 de agosto de 2026
+del servicio oficial de FIFA. Los partidos se asociaron por sus dos selecciones,
+no por el número de partido, y se validaron los 308 goles de los 104 encuentros
+contra los marcadores de `resultados2026.json`. Se incluyeron goles normales,
+penales durante el partido y autogoles; se excluyeron los penales de desempate.
+
+- Calendario oficial: `https://api.fifa.com/api/v3/calendar/matches?idCompetition=17&idSeason=285023&language=en&count=500`
+- Cronología oficial: `https://api.fifa.com/api/v3/timelines/{idPartidoFifa}?language=en`
+
+La pantalla **Detalle de partidos** solo consulta esta información cuando el
+estado calculado con la fecha simulada es **Finalizado**. Antes de ese momento
+no expone marcador ni goleadores futuros.
 
 ## Calidad del código
 
@@ -133,6 +175,15 @@ La solución aplica:
 - Revisión mediante Sonar.
 
 ## Documentación
+
+El código nuevo utiliza comentarios XML compatibles con Doxygen. Para generar
+la documentación HTML, instala Doxygen y ejecuta desde la raíz:
+
+```bash
+doxygen Doxyfile
+```
+
+El resultado se genera en `docs/doxygen/html` y no debe editarse manualmente.
 
 La documentación de entrega se encuentra en:
 

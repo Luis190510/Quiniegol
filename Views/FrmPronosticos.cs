@@ -1,5 +1,7 @@
 ﻿using Quiniegol.Controllers;
 
+using Quiniegol.Services;
+
 namespace Quiniegol.Views
 {
     public partial class FrmPronosticos : Form
@@ -44,14 +46,17 @@ namespace Quiniegol.Views
 
         private void CargarUsuarios()
         {
-            var usuarios =
-                _usuarioController.ObtenerUsuarios();
+            var usuarios = new[]
+            {
+                SesionUsuarioService.UsuarioActual
+            };
 
             cmbUsuario.DataSource = null;
             cmbUsuario.DataSource = usuarios;
             cmbUsuario.DisplayMember = "Nombre";
             cmbUsuario.ValueMember = "Id";
-            cmbUsuario.SelectedIndex = -1;
+            cmbUsuario.SelectedIndex = 0;
+            cmbUsuario.Enabled = false;
         }
 
         private void CargarPartidos()
@@ -141,6 +146,18 @@ namespace Quiniegol.Views
                                 partido.SeleccionVisitanteId,
                                 selecciones)}";
 
+                    string nombreLocal = partido == null
+                        ? "Local"
+                        : ObtenerNombreSeleccion(
+                            partido.SeleccionLocalId,
+                            selecciones);
+
+                    string nombreVisitante = partido == null
+                        ? "Visitante"
+                        : ObtenerNombreSeleccion(
+                            partido.SeleccionVisitanteId,
+                            selecciones);
+
                     return new
                     {
                         pronostico.Id,
@@ -156,6 +173,12 @@ namespace Quiniegol.Views
                             $"{pronostico.GolesLocalPronosticados}" +
                             $" - " +
                             $"{pronostico.GolesVisitantePronosticados}",
+
+                        Goleadores =
+                            GoleadoresPronosticoService.Formatear(
+                                pronostico,
+                                nombreLocal,
+                                nombreVisitante),
 
                         Fecha =
                             pronostico.FechaRegistro,
@@ -215,7 +238,9 @@ namespace Quiniegol.Views
                         usuarioId,
                         partidoId,
                         golesLocal,
-                        golesVisitante
+                        golesVisitante,
+                        SepararGoleadores(txtGoleadoresLocal.Text),
+                        SepararGoleadores(txtGoleadoresVisitante.Text)
                     );
 
                 MessageBox.Show(
@@ -227,6 +252,8 @@ namespace Quiniegol.Views
 
                 nudGolesLocal.Value = 0;
                 nudGolesVisitante.Value = 0;
+                txtGoleadoresLocal.Clear();
+                txtGoleadoresVisitante.Clear();
 
                 CargarDatos();
             }
@@ -246,6 +273,49 @@ namespace Quiniegol.Views
             EventArgs e)
         {
             CargarDatos();
+        }
+
+        private static IEnumerable<string> SepararGoleadores(string texto)
+        {
+            return (texto ?? string.Empty)
+                .Split(
+                    new[] { '\r', '\n', ',', ';' },
+                    StringSplitOptions.RemoveEmptyEntries |
+                    StringSplitOptions.TrimEntries);
+        }
+
+        private void cmbPartido_SelectedIndexChanged(
+            object sender,
+            EventArgs e)
+        {
+            if (cmbPartido.SelectedValue == null ||
+                !int.TryParse(
+                    cmbPartido.SelectedValue.ToString(),
+                    out int partidoId))
+            {
+                lblGoleadoresLocal.Text =
+                    "Posibles goleadores del equipo local:";
+                lblGoleadoresVisitante.Text =
+                    "Posibles goleadores del equipo visitante:";
+                return;
+            }
+
+            var partido = _partidoController
+                .ObtenerPartidos()
+                .FirstOrDefault(elemento => elemento.Id == partidoId);
+            var selecciones = _seleccionController.ObtenerSelecciones();
+
+            if (partido == null)
+            {
+                return;
+            }
+
+            lblGoleadoresLocal.Text =
+                $"Posibles goleadores de " +
+                $"{ObtenerNombreSeleccion(partido.SeleccionLocalId, selecciones)}:";
+            lblGoleadoresVisitante.Text =
+                $"Posibles goleadores de " +
+                $"{ObtenerNombreSeleccion(partido.SeleccionVisitanteId, selecciones)}:";
         }
 
         private void btnCerrar_Click(

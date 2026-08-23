@@ -23,6 +23,10 @@ namespace Quiniegol.Services
             FechaActual = DateTime.Now;
         }
 
+        /// <summary>
+        /// Cambia la fecha usada para probar pronósticos y resultados sin
+        /// modificar la fecha real del equipo.
+        /// </summary>
         public void CambiarFecha(DateTime nuevaFecha)
         {
             FechaActual = nuevaFecha;

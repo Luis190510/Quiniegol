@@ -129,47 +129,12 @@ namespace Quiniegol.Controllers
             List<Usuario> usuarios =
                 _usuarioRepository.ObtenerTodos();
 
-            List<Usuario> usuariosOrdenados =
-                usuarios
-                    .OrderByDescending(
-                        usuario => usuario.Puntos
-                    )
-                    .ThenBy(
-                        usuario => usuario.Nombre
-                    )
-                    .ToList();
-
-            List<RankingItem> ranking =
-                new List<RankingItem>();
-
-            for (int indice = 0;
-                 indice < usuariosOrdenados.Count;
-                 indice++)
-            {
-                Usuario usuario =
-                    usuariosOrdenados[indice];
-
-                RankingItem filaRanking =
-                    new RankingItem
-                    {
-                        Posicion = indice + 1,
-                        UsuarioId = usuario.Id,
-                        Nombre = usuario.Nombre,
-                        PaisPreferido =
-                            usuario.PaisPreferido,
-                        Puntos = usuario.Puntos,
-                        Insignias =
-                            string.Join(
-                                ", ",
-                                usuario.Insignias ??
-                                new List<string>()
-                            )
-                    };
-
-                ranking.Add(filaRanking);
-            }
-
-            return ranking;
+            return RankingService.Crear(
+                usuarios.Where(usuario =>
+                    usuario.Rol == RolUsuario.Usuario),
+                usuario => VisibilidadInsigniasService
+                    .ObtenerGlobales(usuario.Insignias)
+            );
         }
     }
 }

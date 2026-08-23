@@ -66,75 +66,24 @@ namespace Quiniegol.Controllers
                 );
             }
 
-            List<Usuario> usuariosOrdenados =
+            AccesoQuinielaService.ExigirConsulta(
+                quiniela,
+                SesionUsuarioService.UsuarioActual
+            );
+
+            IEnumerable<Usuario> integrantes =
                 _usuarioRepository
                     .ObtenerTodos()
                     .Where(usuario =>
-                        quiniela.IntegrantesIds.Contains(
-                            usuario.Id
-                        )
-                    )
-                    .OrderByDescending(usuario =>
-                        usuario.Puntos
-                    )
-                    .ThenBy(usuario =>
-                        usuario.Nombre
-                    )
-                    .ToList();
+                        usuario.Rol == RolUsuario.Usuario &&
+                        quiniela.IntegrantesIds.Contains(usuario.Id));
 
-            List<RankingItem> ranking =
-                new List<RankingItem>();
-
-            int posicionActual = 0;
-            int? puntosAnteriores = null;
-
-            for (int indice = 0;
-                 indice < usuariosOrdenados.Count;
-                 indice++)
-            {
-                Usuario usuario =
-                    usuariosOrdenados[indice];
-
-                if (!puntosAnteriores.HasValue ||
-                    usuario.Puntos !=
-                    puntosAnteriores.Value)
-                {
-                    posicionActual = indice + 1;
-                }
-
-                RankingItem fila =
-                    new RankingItem
-                    {
-                        Posicion =
-                            posicionActual,
-
-                        UsuarioId =
-                            usuario.Id,
-
-                        Nombre =
-                            usuario.Nombre,
-
-                        PaisPreferido =
-                            usuario.PaisPreferido,
-
-                        Puntos =
-                            usuario.Puntos,
-
-                        Insignias =
-                            string.Join(
-                                ", ",
-                                usuario.Insignias ??
-                                new List<string>()
-                            )
-                    };
-
-                ranking.Add(fila);
-
-                puntosAnteriores =
-                    usuario.Puntos;
-            }
-
-            return ranking;
+            return RankingService.Crear(
+                integrantes,
+                usuario => VisibilidadInsigniasService.ObtenerDeQuiniela(
+                    usuario.Insignias,
+                    quiniela.Nombre)
+            );
         }
     }
 }

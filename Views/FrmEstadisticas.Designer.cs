@@ -60,7 +60,8 @@ namespace Quiniegol.Views
             //
             // dtpDesde
             //
-            dtpDesde.Format = DateTimePickerFormat.Short;
+            dtpDesde.CustomFormat = "dd/MM/yyyy";
+            dtpDesde.Format = DateTimePickerFormat.Custom;
             dtpDesde.Location = new Point(74, 65);
             dtpDesde.Name = "dtpDesde";
             dtpDesde.Size = new Size(137, 23);
@@ -77,7 +78,8 @@ namespace Quiniegol.Views
             //
             // dtpHasta
             //
-            dtpHasta.Format = DateTimePickerFormat.Short;
+            dtpHasta.CustomFormat = "dd/MM/yyyy";
+            dtpHasta.Format = DateTimePickerFormat.Custom;
             dtpHasta.Location = new Point(284, 65);
             dtpHasta.Name = "dtpHasta";
             dtpHasta.Size = new Size(137, 23);

@@ -31,6 +31,8 @@ namespace Quiniegol.Views
                 dtpFechaSimulada.Value
             );
 
+            new InsigniaService().RecalcularInsignias();
+
             MostrarFechaActual();
 
             MessageBox.Show(

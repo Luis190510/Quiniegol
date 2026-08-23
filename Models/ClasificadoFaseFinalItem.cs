@@ -2,7 +2,8 @@ namespace Quiniegol.Models
 {
     public class ClasificadoFaseFinalItem
     {
-        public int Semilla { get; set; }
+        /// <summary>Posición obtenida al ordenar a los clasificados.</summary>
+        public int PosicionClasificacion { get; set; }
 
         public int SeleccionId { get; set; }
 

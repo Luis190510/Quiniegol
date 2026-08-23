@@ -45,9 +45,14 @@ namespace Quiniegol.Views
             btnVerIntegrantes = new Button();
             cmbQuiniela = new ComboBox();
             lblQuiniela = new Label();
+            grpUnirse = new GroupBox();
+            btnUnirse = new Button();
+            cmbQuinielaDisponible = new ComboBox();
+            lblNombreQuinielaUnirse = new Label();
             btnCerrar = new Button();
             grpCrearQuiniela.SuspendLayout();
             grpIntegrantes.SuspendLayout();
+            grpUnirse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvIntegrantes).BeginInit();
             SuspendLayout();
             // 
@@ -214,6 +219,7 @@ namespace Quiniegol.Views
             cmbQuiniela.Name = "cmbQuiniela";
             cmbQuiniela.Size = new Size(387, 23);
             cmbQuiniela.TabIndex = 1;
+            cmbQuiniela.SelectedIndexChanged += cmbQuiniela_SelectedIndexChanged;
             // 
             // lblQuiniela
             // 
@@ -224,9 +230,49 @@ namespace Quiniegol.Views
             lblQuiniela.TabIndex = 0;
             lblQuiniela.Text = "Quiniela:";
             // 
+            // grpUnirse
+            // 
+            grpUnirse.Controls.Add(btnUnirse);
+            grpUnirse.Controls.Add(cmbQuinielaDisponible);
+            grpUnirse.Controls.Add(lblNombreQuinielaUnirse);
+            grpUnirse.Location = new Point(18, 548);
+            grpUnirse.Name = "grpUnirse";
+            grpUnirse.Size = new Size(750, 88);
+            grpUnirse.TabIndex = 2;
+            grpUnirse.TabStop = false;
+            grpUnirse.Text = "Unirse a una quiniela privada";
+            // 
+            // btnUnirse
+            // 
+            btnUnirse.Location = new Point(538, 44);
+            btnUnirse.Name = "btnUnirse";
+            btnUnirse.Size = new Size(190, 27);
+            btnUnirse.TabIndex = 2;
+            btnUnirse.Text = "Unirme a la quiniela";
+            btnUnirse.UseVisualStyleBackColor = true;
+            btnUnirse.Click += btnUnirse_Click;
+            // 
+            // cmbQuinielaDisponible
+            // 
+            cmbQuinielaDisponible.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbQuinielaDisponible.FormattingEnabled = true;
+            cmbQuinielaDisponible.Location = new Point(22, 47);
+            cmbQuinielaDisponible.Name = "cmbQuinielaDisponible";
+            cmbQuinielaDisponible.Size = new Size(497, 23);
+            cmbQuinielaDisponible.TabIndex = 1;
+            // 
+            // lblNombreQuinielaUnirse
+            // 
+            lblNombreQuinielaUnirse.AutoSize = true;
+            lblNombreQuinielaUnirse.Location = new Point(22, 25);
+            lblNombreQuinielaUnirse.Name = "lblNombreQuinielaUnirse";
+            lblNombreQuinielaUnirse.Size = new Size(193, 15);
+            lblNombreQuinielaUnirse.TabIndex = 0;
+            lblNombreQuinielaUnirse.Text = "Seleccione una quiniela disponible:";
+            // 
             // btnCerrar
             // 
-            btnCerrar.Location = new Point(812, 552);
+            btnCerrar.Location = new Point(812, 586);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(149, 29);
             btnCerrar.TabIndex = 2;
@@ -236,12 +282,12 @@ namespace Quiniegol.Views
             // 
             // FrmQuinielas
             // 
-            AcceptButton = btnCrearQuiniela;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCerrar;
-            ClientSize = new Size(979, 598);
+            ClientSize = new Size(979, 654);
             Controls.Add(btnCerrar);
+            Controls.Add(grpUnirse);
             Controls.Add(grpIntegrantes);
             Controls.Add(grpCrearQuiniela);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -254,6 +300,8 @@ namespace Quiniegol.Views
             grpCrearQuiniela.PerformLayout();
             grpIntegrantes.ResumeLayout(false);
             grpIntegrantes.PerformLayout();
+            grpUnirse.ResumeLayout(false);
+            grpUnirse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvIntegrantes).EndInit();
             ResumeLayout(false);
         }
@@ -277,6 +325,10 @@ namespace Quiniegol.Views
         private Button btnVerIntegrantes;
         private ComboBox cmbQuiniela;
         private Label lblQuiniela;
+        private GroupBox grpUnirse;
+        private Button btnUnirse;
+        private ComboBox cmbQuinielaDisponible;
+        private Label lblNombreQuinielaUnirse;
         private Button btnCerrar;
     }
 }

@@ -48,6 +48,16 @@ namespace Quiniegol.Controllers
         public List<HistorialPronosticoItem>
             ObtenerPorUsuario(int usuarioId)
         {
+            Usuario usuarioActual = SesionUsuarioService.UsuarioActual;
+
+            if (!SesionUsuarioService.EsAdministrador &&
+                usuarioId != usuarioActual.Id)
+            {
+                throw new UnauthorizedAccessException(
+                    "Solo puede consultar su propio historial."
+                );
+            }
+
             if (usuarioId <= 0)
             {
                 throw new ArgumentException(
@@ -135,6 +145,12 @@ namespace Quiniegol.Controllers
                             $"{pronostico.GolesLocalPronosticados}" +
                             " - " +
                             $"{pronostico.GolesVisitantePronosticados}",
+
+                        GoleadoresPronosticados =
+                            GoleadoresPronosticoService.Formatear(
+                                pronostico,
+                                nombreLocal,
+                                nombreVisitante),
 
                         ResultadoReal =
                             resultadoReal,

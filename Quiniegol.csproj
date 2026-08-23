@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Tests\**\*.cs" />
     <None Remove="Data\partidos.json" />
+    <None Remove="Data\goleadores2026.json" />
     <None Remove="Data\pronosticos.json" />
     <None Remove="Data\quinielas.json" />
     <None Remove="Data\resultados2026.json" />
@@ -20,6 +22,9 @@
 
   <ItemGroup>
     <Content Include="Data\partidos.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\goleadores2026.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\pronosticos.json">

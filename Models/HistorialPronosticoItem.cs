@@ -14,6 +14,8 @@ namespace Quiniegol.Models
 
         public string MarcadorPronosticado { get; set; } = "";
 
+        public string GoleadoresPronosticados { get; set; } = "";
+
         public string ResultadoReal { get; set; } = "";
 
         public string Estado { get; set; } = "";

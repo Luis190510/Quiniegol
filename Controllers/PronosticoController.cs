@@ -46,15 +46,42 @@ namespace Quiniegol.Controllers
 
         public List<Pronostico> ObtenerPronosticos()
         {
-            return _pronosticoRepository.ObtenerTodos();
+            Usuario usuarioActual = SesionUsuarioService.UsuarioActual;
+            List<Pronostico> pronosticos =
+                _pronosticoRepository.ObtenerTodos();
+
+            return SesionUsuarioService.EsAdministrador
+                ? pronosticos
+                : pronosticos
+                    .Where(pronostico =>
+                        pronostico.UsuarioId == usuarioActual.Id)
+                    .ToList();
         }
 
         public void RegistrarPronostico(
             int usuarioId,
             int partidoId,
             int golesLocal,
-            int golesVisitante)
+            int golesVisitante,
+            IEnumerable<string>? goleadoresLocal = null,
+            IEnumerable<string>? goleadoresVisitante = null)
         {
+            Usuario usuarioActual = SesionUsuarioService.UsuarioActual;
+
+            if (SesionUsuarioService.EsAdministrador)
+            {
+                throw new UnauthorizedAccessException(
+                    "El administrador no participa en los pronósticos."
+                );
+            }
+
+            if (usuarioId != usuarioActual.Id)
+            {
+                throw new UnauthorizedAccessException(
+                    "No puede registrar un pronóstico a nombre de otra persona."
+                );
+            }
+
             if (usuarioId <= 0)
             {
                 throw new ArgumentException(
@@ -146,7 +173,12 @@ namespace Quiniegol.Controllers
                 GolesVisitantePronosticados =
                     golesVisitante,
                 FechaRegistro = _fechaService.FechaActual,
-                PuntosObtenidos = null
+                PuntosObtenidos = null,
+                GoleadoresLocalPronosticados =
+                    GoleadoresPronosticoService.Normalizar(goleadoresLocal),
+                GoleadoresVisitantePronosticados =
+                    GoleadoresPronosticoService.Normalizar(goleadoresVisitante),
+                GoleadoresConfirmados = true
             };
 
             pronosticos.Add(nuevoPronostico);

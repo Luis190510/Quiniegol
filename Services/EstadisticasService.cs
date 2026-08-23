@@ -78,17 +78,6 @@ namespace Quiniegol.Services
             _puntajeController
                 .CalcularTodosLosPuntajes();
 
-            List<Pronostico> pronosticos =
-                _pronosticoRepository
-                    .ObtenerTodos()
-                    .Where(pronostico =>
-                        pronostico.FechaRegistro >=
-                        inicio &&
-                        pronostico.FechaRegistro <=
-                        final
-                    )
-                    .ToList();
-
             List<Partido> partidos =
                 _partidoController
                     .ObtenerPartidos();
@@ -100,6 +89,12 @@ namespace Quiniegol.Services
                         partido.FechaHora <= final
                     )
                     .ToList();
+
+            List<Pronostico> pronosticos =
+                FiltrarPronosticosDePartidos(
+                    _pronosticoRepository.ObtenerTodos(),
+                    partidosRango
+                );
 
             List<Usuario> usuarios =
                 _usuarioRepository.ObtenerTodos();
@@ -187,6 +182,30 @@ namespace Quiniegol.Services
                 new EstadisticaItem
                 {
                     Estadistica =
+                        "Equipo(s) con más goles",
+
+                    Resultado =
+                        EstadisticasGolesService.ObtenerConMasGoles(
+                            partidosRango,
+                            selecciones
+                        )
+                },
+
+                new EstadisticaItem
+                {
+                    Estadistica =
+                        "Equipo(s) con menos goles",
+
+                    Resultado =
+                        EstadisticasGolesService.ObtenerConMenosGoles(
+                            partidosRango,
+                            selecciones
+                        )
+                },
+
+                new EstadisticaItem
+                {
+                    Estadistica =
                         "Promedio de goles por partido",
 
                     Resultado =
@@ -195,6 +214,30 @@ namespace Quiniegol.Services
                         )
                 }
             };
+        }
+
+        /// <summary>
+        /// Conserva los pronósticos de los partidos incluidos en el rango.
+        /// La fecha relevante para las estadísticas es la del encuentro,
+        /// aunque el pronóstico se haya registrado días antes.
+        /// </summary>
+        public static List<Pronostico>
+            FiltrarPronosticosDePartidos(
+                IEnumerable<Pronostico> pronosticos,
+                IEnumerable<Partido> partidosRango)
+        {
+            HashSet<int> partidosIds =
+                partidosRango
+                    .Select(partido => partido.Id)
+                    .ToHashSet();
+
+            return pronosticos
+                .Where(pronostico =>
+                    partidosIds.Contains(
+                        pronostico.PartidoId
+                    )
+                )
+                .ToList();
         }
 
         private string ObtenerEquipoMasApostado(

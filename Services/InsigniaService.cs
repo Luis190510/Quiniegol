@@ -106,6 +106,11 @@ namespace Quiniegol.Services
             List<Partido> partidos =
                 _partidoController.ObtenerPartidos();
 
+            List<Usuario> participantes = usuarios
+                .Where(usuario =>
+                    usuario.Rol == RolUsuario.Usuario)
+                .ToList();
+
             foreach (Usuario usuario in usuarios)
             {
                 usuario.Insignias ??=
@@ -116,24 +121,24 @@ namespace Quiniegol.Services
                 );
             }
 
-            AsignarLiderGlobal(usuarios);
+            AsignarLiderGlobal(participantes);
 
-            AsignarPeorGlobal(usuarios);
+            AsignarPeorGlobal(participantes);
 
             AsignarReyDeLosEmpates(
-                usuarios,
+                participantes,
                 pronosticos,
                 partidos
             );
 
             AsignarRachas(
-                usuarios,
+                participantes,
                 pronosticos,
                 partidos
             );
 
             AsignarInsigniasPorQuiniela(
-                usuarios,
+                participantes,
                 quinielas
             );
 

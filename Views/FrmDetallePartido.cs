@@ -95,16 +95,14 @@ namespace Quiniegol.Views
                 _detalleActual.RutaBanderaVisitante
             );
 
-            dgvAnotadores.DataSource = null;
-
-            dgvAnotadores.DataSource =
-                _detalleActual.Anotadores;
-
-            ConfigurarColumnasAnotadores();
-
             cmbSeleccionAnotador.DataSource =
                 new[]
                 {
+                    new SeleccionOpcionItem
+                    {
+                        SeleccionId = 0,
+                        Nombre = "Todas las selecciones"
+                    },
                     new SeleccionOpcionItem
                     {
                         SeleccionId =
@@ -139,17 +137,30 @@ namespace Quiniegol.Views
             cmbSeleccionAnotador.Enabled =
                 partidoFinalizado;
 
-            txtJugador.Enabled =
-                partidoFinalizado;
+            lblGoleadores.Text = partidoFinalizado
+                ? "Goleadores oficiales del partido"
+                : "Los goleadores aparecerán cuando el partido finalice " +
+                  "según la fecha simulada.";
 
-            nudMinuto.Enabled =
-                partidoFinalizado;
+            MostrarAnotadores(0);
+        }
 
-            btnAgregarAnotador.Enabled =
-                partidoFinalizado;
+        private void MostrarAnotadores(int seleccionId)
+        {
+            if (_detalleActual == null)
+            {
+                return;
+            }
 
-            btnEliminarAnotador.Enabled =
-                partidoFinalizado;
+            var anotadores = _detalleActual.Anotadores
+                .Where(anotador =>
+                    seleccionId == 0 ||
+                    anotador.SeleccionId == seleccionId)
+                .ToList();
+
+            dgvAnotadores.DataSource = null;
+            dgvAnotadores.DataSource = anotadores;
+            ConfigurarColumnasAnotadores();
         }
 
         private void CargarBandera(
@@ -190,28 +201,23 @@ namespace Quiniegol.Views
 
         private void ConfigurarColumnasAnotadores()
         {
-            if (dgvAnotadores.Columns["AnotadorId"] != null)
+            if (dgvAnotadores.Columns["SeleccionId"]
+                is DataGridViewColumn columnaId)
             {
-                dgvAnotadores.Columns["AnotadorId"]
-                    .Visible = false;
+                columnaId.Visible = false;
             }
 
-            if (dgvAnotadores.Columns["Jugador"] != null)
-            {
-                dgvAnotadores.Columns["Jugador"]
-                    .HeaderText = "Jugador";
-            }
+            CambiarTituloAnotador("Jugador", "Jugador");
+            CambiarTituloAnotador("Seleccion", "Selección");
+            CambiarTituloAnotador("Minuto", "Minuto");
+        }
 
-            if (dgvAnotadores.Columns["Seleccion"] != null)
+        private void CambiarTituloAnotador(string nombre, string titulo)
+        {
+            if (dgvAnotadores.Columns[nombre]
+                is DataGridViewColumn columna)
             {
-                dgvAnotadores.Columns["Seleccion"]
-                    .HeaderText = "Selección";
-            }
-
-            if (dgvAnotadores.Columns["Minuto"] != null)
-            {
-                dgvAnotadores.Columns["Minuto"]
-                    .HeaderText = "Minuto";
+                columna.HeaderText = titulo;
             }
         }
 
@@ -234,100 +240,14 @@ namespace Quiniegol.Views
             }
         }
 
-        private void btnAgregarAnotador_Click(
+        private void cmbSeleccionAnotador_SelectedIndexChanged(
             object sender,
             EventArgs e)
         {
-            try
+            if (cmbSeleccionAnotador.SelectedItem
+                is SeleccionOpcionItem seleccion)
             {
-                if (_detalleActual == null)
-                {
-                    throw new InvalidOperationException(
-                        "Primero debe cargar un partido."
-                    );
-                }
-
-                if (cmbSeleccionAnotador.SelectedItem
-                    is not SeleccionOpcionItem seleccion)
-                {
-                    throw new InvalidOperationException(
-                        "Debe seleccionar una selección."
-                    );
-                }
-
-                _detalleController.AgregarAnotador(
-                    _detalleActual.PartidoId,
-                    seleccion.SeleccionId,
-                    txtJugador.Text,
-                    (int)nudMinuto.Value
-                );
-
-                MessageBox.Show(
-                    "El anotador fue registrado.",
-                    "Registro correcto",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-
-                txtJugador.Clear();
-                nudMinuto.Value = 1;
-
-                CargarDetalle();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    ex.Message,
-                    "No se pudo agregar",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
-            }
-        }
-
-        private void btnEliminarAnotador_Click(
-            object sender,
-            EventArgs e)
-        {
-            try
-            {
-                if (_detalleActual == null)
-                {
-                    throw new InvalidOperationException(
-                        "Primero debe cargar un partido."
-                    );
-                }
-
-                if (dgvAnotadores.CurrentRow?.DataBoundItem
-                    is not AnotadorVistaItem anotador)
-                {
-                    throw new InvalidOperationException(
-                        "Debe seleccionar un anotador."
-                    );
-                }
-
-                _detalleController.EliminarAnotador(
-                    _detalleActual.PartidoId,
-                    anotador.AnotadorId
-                );
-
-                MessageBox.Show(
-                    "El anotador fue eliminado.",
-                    "Registro eliminado",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-
-                CargarDetalle();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    ex.Message,
-                    "No se pudo eliminar",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
+                MostrarAnotadores(seleccion.SeleccionId);
             }
         }
 

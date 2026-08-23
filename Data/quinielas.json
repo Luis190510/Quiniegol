@@ -4,6 +4,7 @@
     "Nombre": "Room 1",
     "Descripcion": "Para novatos",
     "Tipo": "Privada",
+    "CreadorUsuarioId": 2,
     "IntegrantesIds": [
       2,
       8,
@@ -16,6 +17,7 @@
     "Nombre": "Amigos del Mundial",
     "Descripcion": "Quiniela privada generada para pruebas.",
     "Tipo": "Privada",
+    "CreadorUsuarioId": 1,
     "IntegrantesIds": [
       1,
       2,
@@ -36,6 +38,7 @@
     "Nombre": "Expertos del F\u00FAtbol",
     "Descripcion": "Quiniela privada generada para pruebas.",
     "Tipo": "Privada",
+    "CreadorUsuarioId": 8,
     "IntegrantesIds": [
       8,
       9,
@@ -56,6 +59,7 @@
     "Nombre": "Quiniela Tica",
     "Descripcion": "Quiniela privada generada para pruebas.",
     "Tipo": "Privada",
+    "CreadorUsuarioId": 15,
     "IntegrantesIds": [
       15,
       16,
@@ -76,6 +80,7 @@
     "Nombre": "Fan\u00E1ticos 2026",
     "Descripcion": "Quiniela privada generada para pruebas.",
     "Tipo": "Privada",
+    "CreadorUsuarioId": 22,
     "IntegrantesIds": [
       22,
       23,
