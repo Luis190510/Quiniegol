@@ -28,8 +28,37 @@ namespace Quiniegol.Views
                 $"{FechaSimuladaService.Instancia.FechaActual:dd/MM/yyyy HH:mm}";
             grpAdministracion.Visible = esAdministrador;
             btnPronosticos.Visible = !esAdministrador;
+            grpInsignias.Visible = !esAdministrador;
+
+            if (!esAdministrador)
+            {
+                List<string> insignias = new InsigniaService()
+                    .ObtenerInsigniasDeUsuario(usuario.Id);
+                txtInsignias.Text = FormatearInsignias(insignias);
+            }
 
             ReorganizarSecciones();
+        }
+
+        private static string FormatearInsignias(IEnumerable<string> insignias)
+        {
+            List<string> globales = VisibilidadInsigniasService
+                .ObtenerGlobales(insignias)
+                .ToList();
+            List<string> privadas = VisibilidadInsigniasService
+                .ObtenerPrivadas(insignias)
+                .ToList();
+
+            return $"Globales: {FormatearGrupo(globales)}" +
+                Environment.NewLine +
+                $"Privadas: {FormatearGrupo(privadas)}";
+        }
+
+        private static string FormatearGrupo(IReadOnlyCollection<string> insignias)
+        {
+            return insignias.Count == 0
+                ? "Ninguna todavía"
+                : string.Join(" | ", insignias);
         }
 
         private void ReorganizarSecciones()
@@ -45,7 +74,15 @@ namespace Quiniegol.Views
             }
 
             grpParticipacion.Top = siguientePosicion;
-            grpTorneo.Top = grpParticipacion.Bottom + separacion;
+            siguientePosicion = grpParticipacion.Bottom + separacion;
+
+            if (grpInsignias.Visible)
+            {
+                grpInsignias.Top = siguientePosicion;
+                siguientePosicion = grpInsignias.Bottom + separacion;
+            }
+
+            grpTorneo.Top = siguientePosicion;
             ClientSize = new Size(920, grpTorneo.Bottom + 24);
         }
 

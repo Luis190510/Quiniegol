@@ -14,12 +14,15 @@ namespace Quiniegol.Services
             "Líder global",
             "Peor del ranking global",
             "Rey de los empates",
-            "Racha de 10 aciertos"
+            "Racha de 10 aciertos",
+            "Precisión goleadora",
+            "Cazagoleadores"
         };
 
         private readonly JsonRepository<Usuario> _usuarioRepository;
         private readonly JsonRepository<Pronostico> _pronosticoRepository;
         private readonly JsonRepository<Quiniela> _quinielaRepository;
+        private readonly JsonRepository<GoleadorReal> _goleadorRepository;
         private readonly PartidoController _partidoController;
         private readonly PuntajeController _puntajeController;
 
@@ -31,6 +34,8 @@ namespace Quiniegol.Services
                 RutaDatosService.ObtenerRuta("pronosticos.json"));
             _quinielaRepository = new JsonRepository<Quiniela>(
                 RutaDatosService.ObtenerRuta("quinielas.json"));
+            _goleadorRepository = new JsonRepository<GoleadorReal>(
+                RutaDatosService.ObtenerRuta("goleadores2026.json"));
             _partidoController = new PartidoController();
             _puntajeController = new PuntajeController();
         }
@@ -50,6 +55,14 @@ namespace Quiniegol.Services
                     "Usuario con al menos 10 aciertos consecutivos.",
                     "Positiva"),
                 CrearInsignia(
+                    "Precisión goleadora",
+                    "Usuario con más cantidades de goles exactas acertadas por equipo.",
+                    "Positiva"),
+                CrearInsignia(
+                    "Cazagoleadores",
+                    "Usuario con más jugadores goleadores acertados.",
+                    "Positiva"),
+                CrearInsignia(
                     "Peor del ranking global", "Usuario con menor puntaje global.", "Vergüenza")
             };
         }
@@ -67,10 +80,18 @@ namespace Quiniegol.Services
                 .ToList();
             List<Pronostico> pronosticos = _pronosticoRepository.ObtenerTodos();
             List<Quiniela> quinielas = _quinielaRepository.ObtenerTodos();
+            List<GoleadorReal> goleadores = _goleadorRepository.ObtenerTodos();
             Dictionary<int, Partido> partidosPorId = _partidoController.ObtenerPartidos()
                 .ToDictionary(partido => partido.Id);
             Dictionary<int, Usuario> participantesPorId = participantes
                 .ToDictionary(usuario => usuario.Id);
+            HashSet<int> participantesConResultados = pronosticos
+                .Where(pronostico => pronostico.PuntosObtenidos.HasValue)
+                .Select(pronostico => pronostico.UsuarioId)
+                .ToHashSet();
+            List<Usuario> participantesEvaluados = participantes
+                .Where(usuario => participantesConResultados.Contains(usuario.Id))
+                .ToList();
 
             foreach (Usuario usuario in usuarios)
             {
@@ -78,13 +99,44 @@ namespace Quiniegol.Services
                 usuario.Insignias.RemoveAll(EsInsigniaAutomatica);
             }
 
-            AsignarExtremoGlobal(participantes, esMayor: true);
-            AsignarExtremoGlobal(participantes, esMayor: false);
+            AsignarExtremoGlobal(participantesEvaluados, esMayor: true);
+            AsignarExtremoGlobal(participantesEvaluados, esMayor: false);
             AsignarReyDeLosEmpates(participantesPorId, pronosticos, partidosPorId);
             AsignarRachas(participantes, pronosticos, partidosPorId);
-            AsignarInsigniasPorQuiniela(participantesPorId, quinielas);
+            Dictionary<int, int> golesExactos =
+                MetricasInsigniasService.ContarGolesExactos(
+                    pronosticos,
+                    partidosPorId);
+            Dictionary<int, int> goleadoresAcertados =
+                MetricasInsigniasService.ContarGoleadoresAcertados(
+                    pronosticos,
+                    partidosPorId,
+                    goleadores);
+            AsignarGanadoresDeMetrica(
+                participantesPorId,
+                golesExactos,
+                "Precisión goleadora");
+            AsignarGanadoresDeMetrica(
+                participantesPorId,
+                goleadoresAcertados,
+                "Cazagoleadores");
+            AsignarInsigniasPorQuiniela(
+                participantesPorId,
+                quinielas,
+                participantesConResultados,
+                golesExactos,
+                goleadoresAcertados);
 
             _usuarioRepository.GuardarTodos(usuarios);
+        }
+
+        /// <summary>Obtiene las insignias actuales de un participante.</summary>
+        public List<string> ObtenerInsigniasDeUsuario(int usuarioId)
+        {
+            return _usuarioRepository.ObtenerTodos()
+                .FirstOrDefault(usuario => usuario.Id == usuarioId)?
+                .Insignias?
+                .ToList() ?? new List<string>();
         }
 
         private static Insignia CrearInsignia(string nombre, string descripcion, string tipo)
@@ -96,7 +148,9 @@ namespace Quiniegol.Services
         {
             return InsigniasGlobales.Contains(insignia) ||
                 insignia.StartsWith("Líder de quiniela:") ||
-                insignia.StartsWith("Peor de quiniela:");
+                insignia.StartsWith("Peor de quiniela:") ||
+                insignia.StartsWith("Precisión goleadora de quiniela:") ||
+                insignia.StartsWith("Cazagoleadores de quiniela:");
         }
 
         private static void AsignarExtremoGlobal(List<Usuario> usuarios, bool esMayor)
@@ -194,12 +248,17 @@ namespace Quiniegol.Services
 
         private static void AsignarInsigniasPorQuiniela(
             IReadOnlyDictionary<int, Usuario> usuarios,
-            IEnumerable<Quiniela> quinielas)
+            IEnumerable<Quiniela> quinielas,
+            IReadOnlySet<int> participantesConResultados,
+            IReadOnlyDictionary<int, int> golesExactos,
+            IReadOnlyDictionary<int, int> goleadoresAcertados)
         {
             foreach (Quiniela quiniela in quinielas)
             {
                 List<Usuario> integrantes = quiniela.IntegrantesIds
-                    .Where(usuarios.ContainsKey)
+                    .Where(id =>
+                        usuarios.ContainsKey(id) &&
+                        participantesConResultados.Contains(id))
                     .Select(id => usuarios[id])
                     .ToList();
                 if (integrantes.Count == 0)
@@ -212,6 +271,69 @@ namespace Quiniegol.Services
                 {
                     AsignarExtremoQuiniela(integrantes, quiniela.Nombre, esMayor: false);
                 }
+
+                AsignarGanadoresDeMetricaQuiniela(
+                    integrantes,
+                    golesExactos,
+                    "Precisión goleadora de quiniela",
+                    quiniela.Nombre);
+                AsignarGanadoresDeMetricaQuiniela(
+                    integrantes,
+                    goleadoresAcertados,
+                    "Cazagoleadores de quiniela",
+                    quiniela.Nombre);
+            }
+        }
+
+        private static void AsignarGanadoresDeMetrica(
+            IReadOnlyDictionary<int, Usuario> usuarios,
+            IReadOnlyDictionary<int, int> resultados,
+            string insignia)
+        {
+            List<KeyValuePair<int, int>> participantes = resultados
+                .Where(resultado =>
+                    resultado.Value > 0 &&
+                    usuarios.ContainsKey(resultado.Key))
+                .ToList();
+            if (participantes.Count == 0)
+            {
+                return;
+            }
+
+            int mayorCantidad = participantes.Max(resultado => resultado.Value);
+            foreach (KeyValuePair<int, int> resultado in participantes.Where(
+                resultado => resultado.Value == mayorCantidad))
+            {
+                AgregarInsignia(usuarios[resultado.Key], insignia);
+            }
+        }
+
+        private static void AsignarGanadoresDeMetricaQuiniela(
+            IEnumerable<Usuario> integrantes,
+            IReadOnlyDictionary<int, int> resultados,
+            string nombreInsignia,
+            string nombreQuiniela)
+        {
+            Dictionary<int, Usuario> integrantesPorId = integrantes
+                .ToDictionary(usuario => usuario.Id);
+            List<KeyValuePair<int, int>> resultadosDeQuiniela = resultados
+                .Where(resultado =>
+                    resultado.Value > 0 &&
+                    integrantesPorId.ContainsKey(resultado.Key))
+                .ToList();
+            if (resultadosDeQuiniela.Count == 0)
+            {
+                return;
+            }
+
+            int mayorCantidad = resultadosDeQuiniela.Max(
+                resultado => resultado.Value);
+            foreach (KeyValuePair<int, int> resultado in resultadosDeQuiniela.Where(
+                resultado => resultado.Value == mayorCantidad))
+            {
+                AgregarInsignia(
+                    integrantesPorId[resultado.Key],
+                    $"{nombreInsignia}: {nombreQuiniela}");
             }
         }
 

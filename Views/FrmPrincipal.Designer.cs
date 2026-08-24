@@ -33,6 +33,8 @@ namespace Quiniegol.Views
             btnQuinielas = new Button();
             btnRankingPrivado = new Button();
             btnTimeline = new Button();
+            grpInsignias = new GroupBox();
+            txtInsignias = new TextBox();
             grpTorneo = new GroupBox();
             flpTorneo = new FlowLayoutPanel();
             btnSelecciones = new Button();
@@ -45,6 +47,7 @@ namespace Quiniegol.Views
             flpAdministracion.SuspendLayout();
             grpParticipacion.SuspendLayout();
             flpParticipacion.SuspendLayout();
+            grpInsignias.SuspendLayout();
             grpTorneo.SuspendLayout();
             flpTorneo.SuspendLayout();
             SuspendLayout();
@@ -246,11 +249,35 @@ namespace Quiniegol.Views
             btnTimeline.UseVisualStyleBackColor = true;
             btnTimeline.Click += btnTimeline_Click;
             //
+            // grpInsignias
+            //
+            grpInsignias.Controls.Add(txtInsignias);
+            grpInsignias.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            grpInsignias.Location = new Point(24, 334);
+            grpInsignias.Name = "grpInsignias";
+            grpInsignias.Size = new Size(872, 110);
+            grpInsignias.TabIndex = 5;
+            grpInsignias.TabStop = false;
+            grpInsignias.Text = "Mis insignias";
+            //
+            // txtInsignias
+            //
+            txtInsignias.BackColor = SystemColors.Control;
+            txtInsignias.BorderStyle = BorderStyle.None;
+            txtInsignias.Font = new Font("Segoe UI", 9F);
+            txtInsignias.Location = new Point(16, 25);
+            txtInsignias.Multiline = true;
+            txtInsignias.Name = "txtInsignias";
+            txtInsignias.ReadOnly = true;
+            txtInsignias.ScrollBars = ScrollBars.Vertical;
+            txtInsignias.Size = new Size(840, 70);
+            txtInsignias.TabIndex = 0;
+            //
             // grpTorneo
             //
             grpTorneo.Controls.Add(flpTorneo);
             grpTorneo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpTorneo.Location = new Point(24, 334);
+            grpTorneo.Location = new Point(24, 458);
             grpTorneo.Name = "grpTorneo";
             grpTorneo.Size = new Size(872, 132);
             grpTorneo.TabIndex = 5;
@@ -348,8 +375,9 @@ namespace Quiniegol.Views
             //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(920, 492);
+            ClientSize = new Size(920, 616);
             Controls.Add(grpTorneo);
+            Controls.Add(grpInsignias);
             Controls.Add(grpParticipacion);
             Controls.Add(grpAdministracion);
             Controls.Add(btnCerrarSesion);
@@ -365,6 +393,8 @@ namespace Quiniegol.Views
             flpAdministracion.ResumeLayout(false);
             grpParticipacion.ResumeLayout(false);
             flpParticipacion.ResumeLayout(false);
+            grpInsignias.ResumeLayout(false);
+            grpInsignias.PerformLayout();
             grpTorneo.ResumeLayout(false);
             flpTorneo.ResumeLayout(false);
             ResumeLayout(false);
@@ -388,6 +418,8 @@ namespace Quiniegol.Views
         private Button btnQuinielas = null!;
         private Button btnRankingPrivado = null!;
         private Button btnTimeline = null!;
+        private GroupBox grpInsignias = null!;
+        private TextBox txtInsignias = null!;
         private GroupBox grpTorneo = null!;
         private FlowLayoutPanel flpTorneo = null!;
         private Button btnSelecciones = null!;

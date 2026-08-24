@@ -20,6 +20,7 @@ Quiniegol es una aplicación de escritorio desarrollada en **C# con Windows Form
 - Creación, autoinscripción por nombre exacto y gestión de quinielas privadas.
 - Ranking interno por quiniela.
 - Insignias positivas y de vergüenza.
+- Dashboard con insignias globales y privadas en secciones separadas.
 - Timeline de notificaciones por quiniela.
 - Estadísticas por rango de fechas.
 - Consulta de últimos partidos y próximos encuentros.
@@ -140,6 +141,27 @@ simulada es una herramienta de prueba disponible para todas las cuentas. Cada
 participante solo puede crear pronósticos con su propia
 identidad y consultar las quinielas privadas donde figure como integrante. El
 administrador puede consultar cualquier quiniela para labores de soporte.
+
+### Reglas de insignias
+
+Las insignias globales se comparan entre todos los participantes y solo se
+muestran en el dashboard y el ranking global. Las insignias privadas se
+calculan de manera independiente entre los integrantes de cada quiniela y solo
+aparecen en el dashboard del participante y en el ranking de esa quiniela.
+
+- **Líder global / Líder de quiniela:** mayor puntaje del ámbito correspondiente.
+- **Peor del ranking / Peor de quiniela:** menor puntaje cuando compiten al menos
+  dos participantes.
+- **Rey de los empates:** mayor cantidad de empates acertados globalmente.
+- **Racha de 10 aciertos:** al menos diez pronósticos acertados consecutivos.
+- **Precisión goleadora:** mayor cantidad de goles locales o visitantes
+  acertados exactamente. Un marcador totalmente exacto aporta dos aciertos.
+- **Cazagoleadores:** mayor cantidad de jugadores goleadores pronosticados
+  correctamente; cada jugador cuenta una vez por partido.
+
+Las reglas **Precisión goleadora** y **Cazagoleadores** también se otorgan dentro
+de cada quiniela privada, comparando únicamente a sus integrantes. Si existe un
+empate por el mejor valor, todos los participantes empatados reciben la insignia.
 
 Para unirse, el participante puede seleccionar el nombre de una quiniela
 disponible. Antes de inscribirse, la aplicación no revela su descripción,

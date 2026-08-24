@@ -10,8 +10,12 @@ namespace Quiniegol.Tests
         {
             "Líder global",
             "Rey de los empates",
+            "Precisión goleadora",
+            "Cazagoleadores",
             "Líder de quiniela: Amigos",
-            "Peor de quiniela: Oficina"
+            "Peor de quiniela: Oficina",
+            "Precisión goleadora de quiniela: Amigos",
+            "Cazagoleadores de quiniela: Oficina"
         };
 
         [TestMethod]
@@ -22,7 +26,13 @@ namespace Quiniegol.Tests
                 .ToList();
 
             CollectionAssert.AreEquivalent(
-                new[] { "Líder global", "Rey de los empates" },
+                new[]
+                {
+                    "Líder global",
+                    "Rey de los empates",
+                    "Precisión goleadora",
+                    "Cazagoleadores"
+                },
                 visibles
             );
         }
@@ -35,9 +45,31 @@ namespace Quiniegol.Tests
                 .ToList();
 
             CollectionAssert.AreEqual(
-                new[] { "Líder de quiniela: Amigos" },
+                new[]
+                {
+                    "Líder de quiniela: Amigos",
+                    "Precisión goleadora de quiniela: Amigos"
+                },
                 visibles
             );
+        }
+
+        [TestMethod]
+        public void DashboardPuedeSepararInsigniasGlobalesYPrivadas()
+        {
+            List<string> globales = VisibilidadInsigniasService
+                .ObtenerGlobales(Insignias)
+                .ToList();
+            List<string> privadas = VisibilidadInsigniasService
+                .ObtenerPrivadas(Insignias)
+                .ToList();
+
+            Assert.IsFalse(globales.Any(insignia =>
+                insignia.Contains("de quiniela:")));
+            Assert.IsTrue(privadas.All(insignia =>
+                insignia.Contains("de quiniela:")));
+            Assert.AreEqual(4, globales.Count);
+            Assert.AreEqual(4, privadas.Count);
         }
     }
 }
