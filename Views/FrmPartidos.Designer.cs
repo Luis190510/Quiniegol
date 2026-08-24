@@ -101,7 +101,6 @@
             dtpFechaHora.ShowUpDown = true;
             dtpFechaHora.Size = new Size(200, 23);
             dtpFechaHora.TabIndex = 5;
-            dtpFechaHora.ValueChanged += dtpFechaHora_ValueChanged;
             // 
             // btnRegistrarPartido
             // 

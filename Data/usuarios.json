@@ -9,7 +9,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 8,
+    "Puntos": 78,
     "Insignias": []
   },
   {
@@ -22,11 +22,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Brasil",
-    "Puntos": 15,
-    "Insignias": [
-      "L\u00EDder de quiniela: Room 1",
-      "L\u00EDder de quiniela: Amigos del Mundial"
-    ]
+    "Puntos": 84,
+    "Insignias": []
   },
   {
     "Id": 3,
@@ -38,7 +35,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Cabo Verde",
-    "Puntos": 12,
+    "Puntos": 88,
     "Insignias": []
   },
   {
@@ -51,8 +48,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 11,
-    "Insignias": []
+    "Puntos": 85,
+    "Insignias": [
+      "L\u00EDder de quiniela: Room 1"
+    ]
   },
   {
     "Id": 5,
@@ -64,7 +63,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 4,
+    "Puntos": 74,
     "Insignias": [
       "Peor de quiniela: Room 1"
     ]
@@ -79,7 +78,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Austria",
-    "Puntos": 6,
+    "Puntos": 75,
     "Insignias": []
   },
   {
@@ -92,8 +91,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 13,
-    "Insignias": []
+    "Puntos": 89,
+    "Insignias": [
+      "L\u00EDder de quiniela: Amigos del Mundial"
+    ]
   },
   {
     "Id": 8,
@@ -105,7 +106,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 7,
+    "Puntos": 81,
     "Insignias": []
   },
   {
@@ -113,12 +114,12 @@
     "Nombre": "Camila Rodr\u00EDguez",
     "NombreUsuario": "camila.rodriguez",
     "Correo": "camila.rodriguez@quinegol.local",
-    "ContrasenaHash": "PBKDF2-SHA256$100000$1mVB\u002BtEVZkS\u002BC7GzE9N1IA==$BJdj9oZmwOlXumNL/L0lc0H31YZFzf\u002BJQq\u002Ba2hYNh70=",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$fCpo7UAaC1eMYqtOIcT\u002BrQ==$DTu2agckDTACcJ285qdYcTXAmHovpnEletcWOjSJ5uo=",
     "Rol": "Usuario",
     "Activo": true,
-    "DebeCambiarContrasena": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Canad\u00E1",
-    "Puntos": 4,
+    "Puntos": 74,
     "Insignias": []
   },
   {
@@ -131,8 +132,11 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Colombia",
-    "Puntos": 2,
-    "Insignias": []
+    "Puntos": 71,
+    "Insignias": [
+      "Peor de quiniela: Amigos del Mundial",
+      "Peor de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 11,
@@ -144,7 +148,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Congo DR",
-    "Puntos": 6,
+    "Puntos": 82,
     "Insignias": []
   },
   {
@@ -157,12 +161,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Corea del Sur",
-    "Puntos": 0,
-    "Insignias": [
-      "Peor del ranking global",
-      "Peor de quiniela: Amigos del Mundial",
-      "Peor de quiniela: Expertos del F\u00FAtbol"
-    ]
+    "Puntos": 74,
+    "Insignias": []
   },
   {
     "Id": 13,
@@ -174,7 +174,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Costa de Marfil",
-    "Puntos": 8,
+    "Puntos": 78,
     "Insignias": []
   },
   {
@@ -187,7 +187,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Croacia",
-    "Puntos": 10,
+    "Puntos": 79,
     "Insignias": []
   },
   {
@@ -200,7 +200,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Curazao",
-    "Puntos": 21,
+    "Puntos": 97,
     "Insignias": [
       "L\u00EDder global",
       "L\u00EDder de quiniela: Expertos del F\u00FAtbol",
@@ -217,10 +217,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ecuador",
-    "Puntos": 6,
-    "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
-    ]
+    "Puntos": 80,
+    "Insignias": []
   },
   {
     "Id": 17,
@@ -232,10 +230,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Egipto",
-    "Puntos": 6,
-    "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
-    ]
+    "Puntos": 76,
+    "Insignias": []
   },
   {
     "Id": 18,
@@ -247,7 +243,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Escocia",
-    "Puntos": 6,
+    "Puntos": 75,
     "Insignias": [
       "Peor de quiniela: Quiniela Tica"
     ]
@@ -262,7 +258,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Eslovaquia",
-    "Puntos": 10,
+    "Puntos": 86,
     "Insignias": []
   },
   {
@@ -275,7 +271,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 19,
+    "Puntos": 93,
     "Insignias": []
   },
   {
@@ -288,7 +284,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 15,
+    "Puntos": 85,
     "Insignias": [
       "Rey de los empates"
     ]
@@ -303,7 +299,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Francia",
-    "Puntos": 12,
+    "Puntos": 81,
     "Insignias": []
   },
   {
@@ -316,7 +312,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Gales",
-    "Puntos": 10,
+    "Puntos": 86,
     "Insignias": []
   },
   {
@@ -329,7 +325,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ghana",
-    "Puntos": 9,
+    "Puntos": 83,
     "Insignias": []
   },
   {
@@ -342,7 +338,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Hait\u00ED",
-    "Puntos": 18,
+    "Puntos": 88,
     "Insignias": [
       "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
     ]
@@ -357,8 +353,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 7,
-    "Insignias": []
+    "Puntos": 76,
+    "Insignias": [
+      "Peor de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 27,
@@ -370,10 +368,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ir\u00E1n",
-    "Puntos": 2,
-    "Insignias": [
-      "Peor de quiniela: Fan\u00E1ticos 2026"
-    ]
+    "Puntos": 78,
+    "Insignias": []
   },
   {
     "Id": 28,
@@ -385,7 +381,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Irak",
-    "Puntos": 4,
+    "Puntos": 78,
     "Insignias": []
   },
   {
@@ -398,7 +394,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 7,
+    "Puntos": 77,
     "Insignias": []
   },
   {
@@ -411,7 +407,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Jordania",
-    "Puntos": 10,
+    "Puntos": 79,
     "Insignias": []
   },
   {
@@ -424,7 +420,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Marruecos",
-    "Puntos": 10,
+    "Puntos": 86,
     "Insignias": []
   },
   {
@@ -437,8 +433,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "M\u00E9xico",
-    "Puntos": 14,
-    "Insignias": []
+    "Puntos": 88,
+    "Insignias": [
+      "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 33,
@@ -450,7 +448,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Noruega",
-    "Puntos": 7,
+    "Puntos": 77,
     "Insignias": []
   },
   {
@@ -463,7 +461,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Nueva Zelanda",
-    "Puntos": 8,
+    "Puntos": 77,
     "Insignias": []
   },
   {
@@ -476,7 +474,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Pa\u00EDses Bajos",
-    "Puntos": 8,
+    "Puntos": 84,
     "Insignias": []
   },
   {
@@ -489,7 +487,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Panam\u00E1",
-    "Puntos": 6,
+    "Puntos": 80,
     "Insignias": []
   },
   {
@@ -502,7 +500,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Paraguay",
-    "Puntos": 6,
+    "Puntos": 76,
     "Insignias": []
   },
   {
@@ -515,10 +513,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Portugal",
-    "Puntos": 21,
-    "Insignias": [
-      "L\u00EDder global"
-    ]
+    "Puntos": 90,
+    "Insignias": []
   },
   {
     "Id": 39,
@@ -530,7 +526,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Qatar",
-    "Puntos": 6,
+    "Puntos": 82,
     "Insignias": []
   },
   {
@@ -553,10 +549,10 @@
     "Nombre": "Administrador",
     "NombreUsuario": "admin",
     "Correo": "admin@quinegol.local",
-    "ContrasenaHash": "PBKDF2-SHA256$100000$DYwv5dARmC2ft0mapbBnwQ==$jxIqurgY3cXSWj4QbePGHTH75hoko94ZdTfsB0ke/7c=",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$W8y3sILz9GN1GvDQvas3eA==$0JofQYVC\u002BDxPPe2gHZWrt8FyxcDiujp2XmqOyvwwm/w=",
     "Rol": "Administrador",
     "Activo": true,
-    "DebeCambiarContrasena": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Sin definir",
     "Puntos": 0,
     "Insignias": []

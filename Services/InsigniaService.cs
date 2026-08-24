@@ -38,7 +38,7 @@ namespace Quiniegol.Services
         /// <summary>
         /// Devuelve el catálogo de insignias globales disponibles.
         /// </summary>
-        public List<Insignia> ObtenerCatalogo()
+        public static List<Insignia> ObtenerCatalogo()
         {
             return new List<Insignia>
             {

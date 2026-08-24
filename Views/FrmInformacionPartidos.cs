@@ -48,7 +48,7 @@ namespace Quiniegol.Views
             );
         }
 
-        private void ConfigurarColumnas(
+        private static void ConfigurarColumnas(
             DataGridView tabla)
         {
             if (tabla.Columns["PartidoId"]

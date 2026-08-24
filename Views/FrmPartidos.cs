@@ -220,9 +220,5 @@ namespace Quiniegol.Views
             }
         }
 
-        private void dtpFechaHora_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -55,7 +55,7 @@ namespace Quiniegol.Views
             lblTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             lblTitulo.Location = new Point(24, 18);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(218, 32);
+            lblTitulo.Size = new Size(214, 32);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Sistema Quinegol";
             //
@@ -65,7 +65,7 @@ namespace Quiniegol.Views
             lblSesion.ForeColor = Color.DimGray;
             lblSesion.Location = new Point(26, 58);
             lblSesion.Name = "lblSesion";
-            lblSesion.Size = new Size(45, 15);
+            lblSesion.Size = new Size(50, 15);
             lblSesion.TabIndex = 1;
             lblSesion.Text = "Usuario:";
             //
@@ -75,7 +75,7 @@ namespace Quiniegol.Views
             lblFechaSimulada.ForeColor = Color.DimGray;
             lblFechaSimulada.Location = new Point(350, 58);
             lblFechaSimulada.Name = "lblFechaSimulada";
-            lblFechaSimulada.Size = new Size(97, 15);
+            lblFechaSimulada.Size = new Size(92, 15);
             lblFechaSimulada.TabIndex = 2;
             lblFechaSimulada.Text = "Fecha simulada:";
             //
@@ -138,7 +138,7 @@ namespace Quiniegol.Views
             // btnFechaSimulada
             //
             btnFechaSimulada.Font = new Font("Segoe UI", 9F);
-            btnFechaSimulada.Location = new Point(423, 11);
+            btnFechaSimulada.Location = new Point(15, 11);
             btnFechaSimulada.Margin = new Padding(7);
             btnFechaSimulada.Name = "btnFechaSimulada";
             btnFechaSimulada.Size = new Size(190, 40);
@@ -177,7 +177,7 @@ namespace Quiniegol.Views
             // btnPronosticos
             //
             btnPronosticos.Font = new Font("Segoe UI", 9F);
-            btnPronosticos.Location = new Point(15, 11);
+            btnPronosticos.Location = new Point(219, 11);
             btnPronosticos.Margin = new Padding(7);
             btnPronosticos.Name = "btnPronosticos";
             btnPronosticos.Size = new Size(190, 40);
@@ -189,7 +189,7 @@ namespace Quiniegol.Views
             // btnHistorialPronosticos
             //
             btnHistorialPronosticos.Font = new Font("Segoe UI", 9F);
-            btnHistorialPronosticos.Location = new Point(219, 11);
+            btnHistorialPronosticos.Location = new Point(423, 11);
             btnHistorialPronosticos.Margin = new Padding(7);
             btnHistorialPronosticos.Name = "btnHistorialPronosticos";
             btnHistorialPronosticos.Size = new Size(190, 40);
@@ -201,7 +201,7 @@ namespace Quiniegol.Views
             // btnRanking
             //
             btnRanking.Font = new Font("Segoe UI", 9F);
-            btnRanking.Location = new Point(423, 11);
+            btnRanking.Location = new Point(627, 11);
             btnRanking.Margin = new Padding(7);
             btnRanking.Name = "btnRanking";
             btnRanking.Size = new Size(190, 40);
@@ -213,7 +213,7 @@ namespace Quiniegol.Views
             // btnQuinielas
             //
             btnQuinielas.Font = new Font("Segoe UI", 9F);
-            btnQuinielas.Location = new Point(627, 11);
+            btnQuinielas.Location = new Point(15, 65);
             btnQuinielas.Margin = new Padding(7);
             btnQuinielas.Name = "btnQuinielas";
             btnQuinielas.Size = new Size(190, 40);
@@ -225,7 +225,7 @@ namespace Quiniegol.Views
             // btnRankingPrivado
             //
             btnRankingPrivado.Font = new Font("Segoe UI", 9F);
-            btnRankingPrivado.Location = new Point(15, 65);
+            btnRankingPrivado.Location = new Point(219, 65);
             btnRankingPrivado.Margin = new Padding(7);
             btnRankingPrivado.Name = "btnRankingPrivado";
             btnRankingPrivado.Size = new Size(190, 40);
@@ -237,7 +237,7 @@ namespace Quiniegol.Views
             // btnTimeline
             //
             btnTimeline.Font = new Font("Segoe UI", 9F);
-            btnTimeline.Location = new Point(219, 65);
+            btnTimeline.Location = new Point(423, 65);
             btnTimeline.Margin = new Padding(7);
             btnTimeline.Name = "btnTimeline";
             btnTimeline.Size = new Size(190, 40);
@@ -316,7 +316,7 @@ namespace Quiniegol.Views
             btnEstadisticas.Name = "btnEstadisticas";
             btnEstadisticas.Size = new Size(190, 40);
             btnEstadisticas.TabIndex = 3;
-            btnEstadisticas.Text = "Estadísticas";
+            btnEstadisticas.Text = "Reportes";
             btnEstadisticas.UseVisualStyleBackColor = true;
             btnEstadisticas.Click += btnEstadisticas_Click;
             //

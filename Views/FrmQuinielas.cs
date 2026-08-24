@@ -100,11 +100,16 @@ namespace Quiniegol.Views
             btnAgregarIntegrante.Enabled = puedeAdministrar;
             btnQuitarIntegrante.Enabled = puedeAdministrar;
 
-            grpIntegrantes.Text = SesionUsuarioService.EsAdministrador
-                ? "Administrar integrantes"
-                : puedeAdministrar
+            if (SesionUsuarioService.EsAdministrador)
+            {
+                grpIntegrantes.Text = "Administrar integrantes";
+            }
+            else
+            {
+                grpIntegrantes.Text = puedeAdministrar
                     ? "Mis quinielas privadas (puede administrar esta)"
                     : "Mis quinielas privadas";
+            }
         }
 
         private void CargarQuinielasDisponibles()
