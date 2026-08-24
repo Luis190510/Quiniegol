@@ -1,0 +1,2390 @@
+Clase-20260819_180240-Meeting Recording
+August 19, 2026, 12:02AM
+3h 4m 51s
+
+LUIS FELIPE MORA UMAÑA started transcription
+
+LUIS FELIPE MORA UMAÑA   0:05
+Vamos a ver.
+Temos administrativos y quiero, si quiero que veamos.
+Este ahí deben estar viendo la pantalla, esa es la parte de sí, a uno ya está la fecha de la próxima semana.
+Para revisiones, este si quieren empezar a anotarse.
+Y este sí, por aquí va el.
+porque el asunto si igual si alguien no tuviera campo siguiendo la carrera campo no sé digamos este igual a veces Entonces este me avisan verdad me por un correcto ahí y lo vemos verdad
+Voy en sí.
+
+TAYRON ALONSO SALAS NUÑEZ   0:56
+Going.
+
+Adrian Vinicio Chaves Marin   0:58
+Está bien.
+
+LUIS FELIPE MORA UMAÑA   1:03
+Igual, bueno, si alguien tuviera campanas, a ver qué tal.
+Pero fui yo que se lo agregué.
+Este igual si aliento era bueno, ya vi que las 5 entonces estoy bien. Si nos vamos viendo igual ahí Eric, si se van adelantando, si hay huecos o así de adelantamos un toque, verdad? Pero vamos viendo a ver cómo se va comportando la la situación.
+Que vean este toquecito nada más para abrir el.
+Para abrirla el Visor Studio antes, bueno.
+¿Quieres que viéramos Gold Dog hoy?
+Eso es algo sumamente rápido y nos va a tomar en acaso 15 minutos de tiempo, entonces este es bastante fácil de usar.
+Quisiera saber si dudas preguntas de la clase pasada, cómo les fue con el quiz.
+
+TAYRON ALONSO SALAS NUÑEZ   2:03
+Yo tuve problemas por el sonar, me costó copilar al principio para poder hacer los testing y me fui a ir revisando y todo. Tenía que eliminarlo de algunas partes porque hacía el llamado como 2 veces una instalación y yo te pongo por fuera. Eso era lo que me daba error para ya poder copilar y empezar los testeos.
+
+LUIS FELIPE MORA UMAÑA   2:23
+Okay, that was.
+Pero sí.
+Pero está bien.
+
+TAYRON ALONSO SALAS NUÑEZ   2:29
+Sí, al final sí, que casi que respándola, pero se dio.
+
+LUIS FELIPE MORA UMAÑA   2:37
+Bing.
+Luis Alonso, cómo fue con el quiz.
+
+LUIS ALONSO ESPINOZA BONILLA   2:42
+Bien por dicha, sí, este al principio cuando sí la recopilar me daba como un errorcillo, pero ya luego ese sí me funcionó bien ahí.
+sí lo puede hacer por dicho.
+
+LUIS FELIPE MORA UMAÑA   3:00
+Okey, buenísimo.
+Cómo le fue, please?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   3:06
+Good.
+Todo bien, profe, igual tu compañero ahí tenía un error y buscando sí, igual me indicaba ahí algo en una línea de zona.
+Pero todo bien.
+
+LUIS FELIPE MORA UMAÑA   3:22
+Hello.
+David, cuéntame.
+
+DAVID MOISES GOMEZ MORA   3:26
+No.
+Pero buenas noches, está bien.
+
+LUIS FELIPE MORA UMAÑA   3:29
+Estoy en seco moto.
+
+DAVID MOISES GOMEZ MORA   3:31
+Todo bien, todo bien, profe, es que no sé si usted vio el mensaje que yo le puse, es que me hablaron un toque, yo tarde yendo el bus, entonces no sé para por aquello de la presentación, no sé si me daba chance, serlo más tarde con Felipe o hora de últimos.
+
+LUIS FELIPE MORA UMAÑA   3:46
+Todo bien, no se preocupe, no este mensaje, pero todo bien.
+
+DAVID MOISES GOMEZ MORA   3:50
+Ok, bueno, muchas gracias, cualquier cosa ya le dije.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   3:54
+Vale.
+
+DAVID MOISES GOMEZ MORA   3:55
+El.
+
+LUIS FELIPE MORA UMAÑA   3:59
+Okay.
+sacamos una revisión rápida del proyecto a ver cómo van ya última semana este más que todo hoy me interesa saber si tienen algún bloqueo
+Entonces para que no se enfoquemos un poquito en eso, pues hemos ahí rápidamente.
+Y me cuentan, empezamos ahí con Felipe y David aquí a las 2:00.
+
+DAVID MOISES GOMEZ MORA   4:32
+¿De ahí probé, si me escucha, verdad?
+
+LUIS FELIPE MORA UMAÑA   4:35
+sí.
+
+DAVID MOISES GOMEZ MORA   4:37
+Bien, nosotros nos ha ido dentro de lo que se puede, bien un poco un poco desvelado, porque sí hemos tenido que meterle bastante, pero de momento nos ha ido muy bien. Ya estuvimos.
+Haciendo revisencillas ahí ya generales y arreglando unas. ¿Se acuerda que la vez pasada de dicho no nos había funcionado lo de los cruces finales?
+
+LUIS FELIPE MORA UMAÑA   5:00
+Ajá.
+
+DAVID MOISES GOMEZ MORA   5:01
+Ahí estuvimos, tuvimos que meterle un poco a eso y estamos intentando pulir un toque de eso porque todavía no nos no nos resulta, pero ya creo que ya no sale en esta noche.
+
+LUIS FELIPE MORA UMAÑA   5:14
+Cooking.
+
+DAVID MOISES GOMEZ MORA   5:14
+No.
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   5:16
+Vale que sí.
+Sí, este.
+Bueno, hace rato ya no, ya no existía.
+Luis Alonso y Daniel.
+You.
+
+DANNEL ROBERTO QUESADA SOLANO   5:43
+Gracias, profe. Bueno, rápido, ya nos ponemos al día casi que con las cosillas que nos habían fallado de la parte anterior del proyecto y ya iniciamos la parte de estar traveseando con.
+Con estos forms, honestamente, sin ponernos ahí muy exquisitos, y ahorita lo que sigue es empezar a ver si podemos jalar los servicios, inyectar los servicios, porque.
+Nos sirve a la parte visual.
+Yes.
+
+LUIS FELIPE MORA UMAÑA   6:19
+Okay, buenísimo.
+
+DANNEL ROBERTO QUESADA SOLANO   6:21
+I.
+
+LUIS FELIPE MORA UMAÑA   6:23
+Este Albert.
+
+ALBERT DAYAN BRENES CARPIO   6:27
+si yo lo que he implementado es los reportes las estadísticas las insignias las notificaciones Y todavía me falta el mantenimiento de los usuarios del reseteo del password y y el testeo y la documentación Entonces espero que me dé chance
+
+LUIS FELIPE MORA UMAÑA   6:48
+Okay.
+Ariandy.
+
+ARIADNY MARIA NUÑEZ GODINEZ   6:56
+Profe, yo ya pasé los.
+Perdón, es como que se llegó MS. Ya pasé la parte visual, o sea, ya la hice. Lo que estaba terminando de pasar en los documentos, que se vieran, que se viera login, que se viera el menú y demás. Ya lo terminé y estaba empezando a ver si podía pasar la.
+La Los archivos al.
+Hoy ando batiadísima, perdón, profe a la base de datos.
+
+LUIS FELIPE MORA UMAÑA   7:28
+Killer.
+
+ARIADNY MARIA NUÑEZ GODINEZ   7:30
+Te voy a correr a la base a esa es la palabra. Ahí voy, quito a poquito. Se me ha hecho un poquito enredo, pero lo principal ya lo tengo.
+
+LUIS FELIPE MORA UMAÑA   7:39
+Sí, ok, eso es lo importante.
+Este clean.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   7:47
+Y profe, en mi caso, pues estoy con la parte de la autenticación y también con la parte visual. La documentación ya también ya la había completado por dicha y ya por dicha esta semana ya tengo más tiempo para meterme con el proyecto y bloqueos. No, por el momento no.
+No.
+
+LUIS FELIPE MORA UMAÑA   8:07
+Okay, perfecto.
+Eric.
+
+ERICK ANDRES DELGADO ARAYA   8:12
+Yo ya pude terminar igual lo que es a nivel visual, las páginas y ya estoy ahorita trabajando en lo que es igual el mantenimiento de usuarios y el usuario administrador para proceder con lo demás, con la descarga de archivos, con los testing y eso.
+Y de momento no tengo ningún bloque.
+
+LUIS FELIPE MORA UMAÑA   8:32
+Sí.
+Okay, many simple.
+Este Eric.
+
+ERICK ANDRES DELGADO ARAYA   8:45
+Dale, le acabo de comentar, pero.
+
+LUIS FELIPE MORA UMAÑA   8:47
+sí, sorry, sorry, es que no voy a él.
+
+ERICK ANDRES DELGADO ARAYA   8:49
+Thank you, thanks.
+
+LUIS FELIPE MORA UMAÑA   8:50
+No muy el puntero.
+Este tiro, perdón.
+
+TAYRON ALONSO SALAS NUÑEZ   8:55
+A profe mía, está divertido, tuve un pequeño problema, todo se me jodió literalmente. El proyecto, el original para hacer para hablar las dependencias a este otro con Blazer no me lo no estaba funcionando. Tuve que hacer como.
+
+LUIS FELIPE MORA UMAÑA   9:00
+Nice.
+
+TAYRON ALONSO SALAS NUÑEZ   9:10
+Como un proyecto adicional y copiar lo que eran los modelos.
+La parte de la data y los controladores para que ese me funcionara para lo que es la dependencia. Y de momento sí me lo jaló, pero no logro hacer como que ingrese los datos para Dell GON para poder hacer la autentificación de usuario y me pueda loguear. Entonces estoy trabajando en esa parte.
+Y ya no me funciona tampoco el de el MCD, entonces tengo que revisar todo eso.
+Eso sería parte de mi bloqueo actual.
+
+LUIS FELIPE MORA UMAÑA   9:45
+Okay.
+O K, si hay algo en lo que le pueda ayudar, me avisa y lo vamos a ver al final de la clase.
+Kendal.
+
+KENDALL JOSUE MATA SANCHEZ   9:58
+Este sí, profe, yo este pude migrar el sistema Windows a de a Blazor. Este también implementé ya el inicio de sesión con los roles de usuarios y administrador y avancé con los partidos, pronósticos y notificaciones. Y yo creo que esta semana quiero hacer.
+Este los reportes por rol, este quiero hacer también el ranking, las insignias, también descargar reportes y comenzar las pruebas unitarias. Ahorita después de la clase me pongo a realizar eso y de momento estoy todo, no he tenido bloqueos así grandes, todo bien.
+
+LUIS FELIPE MORA UMAÑA   10:39
+Ok, perfecto.
+Y este Andy.
+
+Kaik Andy Yocks Sandoval   10:46
+Buenas noches, profe, ¿cómo está?
+
+LUIS FELIPE MORA UMAÑA   10:49
+Being second, la.
+
+Kaik Andy Yocks Sandoval   10:51
+bien bueno de mi parte yo tuve que picky pana de cero por varias razones Entonces ya pasé a la parte del blazer por dicha y ahí estamos pues comenzando ya avanzando bastante con
+Y con lo del Play Store y esas cosas, tanto el Win, Win, Win, y todas esas cosas. E igual forma no ha tenido bloqueos. Sí, cualquier cosa este en estos días llegara aparecer, yo le escribo un correo, pero no, ahí vamos gracias a Dios.
+
+LUIS FELIPE MORA UMAÑA   11:30
+Okay.
+Es cualquier cosa.
+Next.
+¿Qué antes de pasar con los dígame?
+
+Adrian Vinicio Chaves Marin   11:40
+Okay.
+Disculpe, falté yo.
+
+LUIS FELIPE MORA UMAÑA   11:44
+Sí, no lo llamé.
+
+Adrian Vinicio Chaves Marin   11:46
+no me brincó, seguro cuando dijo Eric.
+
+LUIS FELIPE MORA UMAÑA   11:51
+Sí, probablemente sí, probablemente ese era el nombre que tenía en la cabeza y por eso llamé 2 veces a Eric.
+
+Adrian Vinicio Chaves Marin   11:57
+Bueno, ya por mi parte, profe, este trabajé. Bueno, voy finalizando con los con las vistas y he trabajado un poquillo ya con la idea de bueno, cómo haber montado la base de datos y este qué más por ahí.
+No hay trabajando con el login, trabajando con el login para ver cómo hago la parte de registro más que todo, pero todo bien.
+
+LUIS FELIPE MORA UMAÑA   12:24
+Ok, ok, bueno, entonces bloqueado ninguno.
+
+Adrian Vinicio Chaves Marin   12:27
+No, I want a problem.
+
+LUIS FELIPE MORA UMAÑA   12:29
+Buenísimo, Adrián, muchas gracias y sorry que me gustara.
+Okey, vamos a ver 7:15 sobrados, tenemos 15 minuticos.
+Now.
+Hay una herramienta.
+muy interesante que se llama doxygen Hay un montón de herramientas en línea para esto Hay un montón de cosas para esto verdad no sé de la que yo sé doxygen verdad Pero si le genera curiosidad este de ustedes la pueden pueden investigar ahí algo que se llama no sé diferente verdad
+Tiene soporte a múltiples lenguajes múltiples formatos, verdad? Siempre y cuando se mantenga la documentación estándar y eso es por eso es tan importante. Documentar bien el código y mantener los estándares, verdad? Si ustedes vienen aquí descargan la herramienta, verdad? Van a descargar aquí el nuevecito.
+El macito se va a descargar aquí, es un pequeño Excel.
+Okay.
+Es un pequeño exe, ese yo creo que es tanto que se yo viejo, vamos a ver.
+¿Qué estará?
+Exacto.
+No sale con el último, pero bueno, entonces sí es tonto que sí, yo viejo, si es del año pasado, no hay que ser tan viejo. Entonces vean qué bonito este ustedes ejecutan esto.
+A él le dicen que sí, mira, ya lo tienes.
+Entonces se instalan el majito, se ven aquí.
+Y aquí está el bendito wizard del.
+¿Delma, verdad? Aquí este tengo que seleccionar el directorio, verdad, donde lo voy a ejecutar.
+El directorio es el directorio de mi repositorio.
+Aquí tenemos la carpeta dox, está vacía, bajarle aquí.
+Y vamos a correr aquí.
+Entonces, el nombre del proyecto se va a llamar este Class Project.
+Aquí pueden poner ahí este, no sé.
+Thanks.
+This.
+Y la versión verdad esa es la versión 1.0 no es más siquiera la versión uno es la 0.0.1 digamos y le puedo poner un loguito ahí en la.
+de la compañía por ahí el ojo de la de la aplicación el directorio donde está el código exactamente lo mismo le vamos a decir que escanear recursivamente y este donde queremos que ponga la documentación y donde queremos que ponga la documentación va a ser literalmente
+And docs.
+Aquí va a caer la documentación.
+Le vamos a dar siguiente este todos los documentos, verdad, o entities.
+o si solamente las perdón Si todos los documentos si solamente los documentos o si todas las entidades verdad aquí hay un montón de cosas más este incluir referencias verdad el código que eso también es importante y aquí este dice más más verdad lo más parece Ah no aquí está optimized para C#
+entonces una vez seleccionado esto queremos ver digamos el el output verdad este HTML, un navigation panel este el preprocess podemos cambiar aquí el color el serve function si queremos agregarle LaTeX verdad o PDF este y aquí otras dotbook verdad que también es otra
+Que también es otra este otro, digamos, se me hace una páginita ahí donde se sube todas las documentaciones, es muy parecida a Gitbook.
+Entonces un formato este si queremos diagramas, esto va a durar un poquito más, ¿verdad? Este vamos a hacerlo aquí para el diagrama de clases nada más.
+Y el estrella más.
+Entonces le damos siguiente y nos vamos a ron, ¿verdad? Aquí no tenemos este.
+Ningún comando.
+Siempre se me olvida porque es que no puede darle este.
+Es que.
+Y.
+Yeah.
+proyecto ta ta ta ha el modo
+Este.
+Este.
+Y este.
+A veces me está sobrando.
+Sí, vamos a la configuración.
+No.
+Claro.
+Yeah.
+No sé, usted sabe que siempre es algo que me pasa que se me olvida aquí el.
+El mae over de nuevo.
+I'm sorry.
+
+Adrian Vinicio Chaves Marin   17:48
+Ese check no hay que marcarlo, bro, el check que salía ahí.
+
+LUIS FELIPE MORA UMAÑA   17:50
+No, no, eso no.
+No, este.
+¿Será este aquí el tema?
+Creo que sí es estar.
+Está un poquito de que tenerle cariño.
+¿Y no sé si como lo máximo y yo ahí, verdad? Pero.
+Este es aquí.
+Estoy aquí sin laptek.
+Diagramas.
+No hablen este.
+Yeah, Q.
+Yeah.
+¿Qué es este?
+Aquí está bien que era este el select de aquí China.
+Y vámonos.
+Ni siquiera, ajá.
+Es este aquí que no reconoce el parámetro porque es sostenido aquí.
+Y vámonos, ahora sí.
+Sí, es que no era aquí, era aquí, y con este my night.
+verán es así como la aplicación más moderna verdad Entonces una vez terminado esto de hecho digamos hay una hora muy tales que usted le puede poner aquí digamos este
+Modo experto, ¿verdad? Y usted le tira aquí los.
+este y le puede tirar las hojas de estilo verdad Hay un montón de cosas verdad para que para que el más siga ahí como un como un estándar de documentación verdad Y si ustedes Ven aquí está toda la documentación lo ven todo esto es la documentación por aquí hay una cierto que se llama Index
+Que es el input.
+Y como podemos ver aquí.
+Esto es la generación hoy.
+Este es el main páginas relacionadas, no hay mucho.
+¿Este toda la lista de paquetes, verdad? Estos son los todos los paquetes que tenemos dentro del o los namespaces que tenemos, verdad, dentro del maicito, verdad? Por niveles y todo agrupados, este toda la clase, las clases que tenemos lo en.
+con su respectiva documentación Verdad que es lo que hace el Data el Data handler verdad contrato para las operaciones no sé qué tenemos este esta parte examples y aquí tenemos esto verdad hereda de este la la interfaz
+Y este métodos públicos. Tenemos el chat count que cuenta caracteres. Tenemos el get index que cuenta caracteres. Este no tiene documentación aparentemente.
+Ahora sí, son malos elementos.
+Y Daisy, así está el.
+¿El detalle, verdad? Así podemos ver este elementos públicos, ninguno, bueno, el link.
+Y aquí podemos ver, por ejemplo, cuando tenemos el handler, verdad, vemos aquí la documentación pública del API.
+Y este parámetros que retorna.
+¿Parámetros que retorna una pequeña descripción, verdad? Todo está, digamos, también a como esté en el código, ¿verdad?
+Y pues aquí está lo que en controller, por ejemplo.
+No sé, hay un montón de cosas que no sé si nosotros vemos aquí.
+Por aquí está este lo que quería que viera era también el.
+Aquí está el índice, caso que yo tenga que buscar algo, la jerarquía, verdad?
+Por ejemplo, aquí están los farms, verdad?
+¿Y este qué más? Bueno, las clasicitas de test por aquí.
+Membler is.
+Funtions.
+Varios.
+Propelis, no hay.
+y si vemos aquí bueno eso es lo mismo del otro lado a dónde era que tirar el diagrama de clave será que lo quité
+Que para.
+De nuevo, Same.
+Vamos aquí.
+En diagramas, vamos a estar aquí.
+Diagrama de clases es este.
+He on us.
+Index y que tenemos cito por aquí debería estar en el diagrama clave, pero si es que mi pantalla no me va a verlo.
+Aquí están todos los paquetes, por ejemplo, las clases, la documentación, este, la lista, y dice la jerarquía, que va, que no me sale del bendito.
+el 23 gr lo ven y así como tengamos niveles así podemos aproparlos verdad porque muchas veces tenemos muchos niveles pero lo que no veo es el
+Es el bendito diagrama, por ahí tiene que andar.
+pero si al final todo esto como ustedes pueden ver por aquí todo esto es puro html todo esto se puede editar se puede mejorar
+¿Y esto no le puede agregar ahí cositas, verdad? Digamos para que el mago busque ahí las.
+Pues casi lo que no me generó el.
+en la parte de los grafiquitos pero sí genera ahí toda la parte de los grafos y demás la verdad porque aquí hora salir en la consola
+Ah mira si no tengo instalado graphics el que el que genera el los grafos es otro detalle pero sí como ustedes pueden ver por aquí más o menos así está el arroz
+Entonces, por ejemplo, este no sé.
+Si yo veo aquí bus con System, punto io, punto file, pas.
+Y vemos esta documentación.
+Es una cosa muy similar a lo que estamos viendo.
+Del otro lado ya lo cerré.
+Venga, si iremos aquí, por ejemplo, este.
+March es un delegante, se lo promete tanto él.
+This is alone.
+Y es el que quiero ver.
+No, entonces performance, qué ejemplos, remarks.
+Fields methods es que quiero ver quiero uno de un método
+Aquí está lo ven todo este parámetros returns la descripción y como les digo, hay herramientas que generó un poquito más, verdad? Por ejemplo, hasta que genera ejemplos, verdad? Usted puede inyectarle eso a los al mismo código, verdad? Pero la idea es que ustedes vean que este de con solamente.
+de documentar bien el código, ustedes no tienen que trabajar en la documentación del API y se genera literalmente solo.
+¿Verdad? Entonces, este ahí lo tienen.
+¿Qué tal Oen?
+No.
+
+LUIS ALONSO ESPINOZA BONILLA   26:39
+A Barcelón, sí, hay que aprender a usarlo bien.
+
+LUIS FELIPE MORA UMAÑA   26:45
+Sí, a todos los como de que más también me come, es cochinada, pero pues es un toquecillo como.
+Bueno, no es el más tuanis, verdad, en cuanto a interfaces y llamadas, verdad. Probablemente hay otros por ahí en el mercado.
+Pero ya saben que existe uno, que todo se puede manejar desde aquí, ¿verdad? Esto es importante para que escanee recursivamente todos los folders, ¿verdad? A partir de acá, y no solamente sacar por el primer nivel de folders. Pero sí, eso es lo bonito de esto.
+¿Cómo lo ve, qué le parece?
+
+Adrian Vinicio Chaves Marin   27:30
+Profe, yo le voy a preguntar ahí que en ese caso que no se pudo usar ese otro es cuál hay que descargar la graphics.
+
+LUIS FELIPE MORA UMAÑA   27:38
+Sí.
+
+Adrian Vinicio Chaves Marin   27:40
+Eso es para, yo creo que nada es un trabajo que se vea como los.
+
+LUIS FELIPE MORA UMAÑA   27:42
+List.
+
+Adrian Vinicio Chaves Marin   27:45
+Creo que se llaman grafos es de Facebook, creo que era de la aplicación de Facebook.
+
+LUIS FELIPE MORA UMAÑA   27:47
+Sí, señor.
+Sí, señor.
+
+Adrian Vinicio Chaves Marin   27:53
+No, pero está muy interesante, claro.
+
+LUIS FELIPE MORA UMAÑA   27:58
+A ver si paste se me da.
+Are you looking?
+Mhm.
+Bill, let text.
+Stern, no.
+Dot un poco.
+Thank you all later.
+Vamos a ver.
+Ven por ejemplo aquí.
+Quiero algún guarnings porque te los aseguro no se siguen los estándares.
+asegurar la documental
+También cualquier al dos puedo ser.
+Aquí hay que generes este, pero.
+Quiero ver cuántas penes hay.
+Yeah, you know.
+Twist, twist, twist.
+Mr. Key Aven.
+Creo que tomé el VML, eso es general, el VML.
+Medio feo, pero.
+Pero eso lo generaron, bueno.
+Pero sí, ahí lo tienen.
+por si gusta usarlo, este, las cosillas siempre son actuales, digamos, con solo pone documentar un API es más fácil generar las cosas, verdad que.
+que hacerlas lo mismo verdad de por sí como una buena documentación del código.
+Todo esto se genera pacto.
+Bueno, pues si nos pegamos aquí.
+Este creo que era este.
+Yeah, it is all this thing.
+De llegar a lo ven, aquí está toda la parte de la documentación.
+es prácticamente la misma documentación que está al otro lado, verdad? Y adelante y eso es lo fácil de esto, verdad que no tenemos que matarnos mucho ahí para para hacer eso una vez hayamos hecho bien el brete de generar una buena documentación.
+Es más, este.
+Le regalo 5 puntos a extra, ahí sí, genera la documentación con ****.
+Para la otra semana.
+Pero si todo el código tiene que estar documentado, si solo veo HTML vacíos no cuenta.
+
+TAYRON ALONSO SALAS NUÑEZ   31:17
+Que ahorita cada cosa cuenta, prueba para pasar.
+
+LUIS FELIPE MORA UMAÑA   31:21
+Bueno, y ya saben, mi mismo de.
+¿Mismo misma regla, verdad? La nota mínima es un 80 para poder esperar los puntos extra.
+Preguntas, dudas, comentarios.
+
+Kaik Andy Yocks Sandoval   31:47
+A profame.
+
+LUIS FELIPE MORA UMAÑA   31:47
+Okay, estamos.
+
+Kaik Andy Yocks Sandoval   31:49
+Con el Doxygen entonces sería documentación completa por medio ahí verdad serían los documentos que usted mostró verdad o okay
+
+LUIS FELIPE MORA UMAÑA   32:01
+Mhm.
+
+Kaik Andy Yocks Sandoval   32:04
+Listo.
+
+LUIS FELIPE MORA UMAÑA   32:06
+K.
+
+Kaik Andy Yocks Sandoval   32:06
+Y eso es en, me imagino que eso cuando lo cuando los crea, los crea en una misma carpeta, bueno, todo lo tiene que meter como que en una carpeta.
+
+LUIS FELIPE MORA UMAÑA   32:16
+Sí, todo tiene que ser una carpeta, es el desorden de por ahí.
+
+Kaik Andy Yocks Sandoval   32:18
+Okay, listo.
+no, sí, preguntaban porque pensé que él hacía como que una carpetita ahí, pero no es para saber y lo hacían.
+
+LUIS FELIPE MORA UMAÑA   32:28
+sí.
+
+Kaik Andy Yocks Sandoval   32:30
+Okey, gracias.
+
+LUIS FELIPE MORA UMAÑA   32:31
+Two wesome.
+estamos vean este vamos a la parte de las presentaciones por ahí ya habíamos hablado un poquito de las reglas todo bien por ahí hoy lo voy lo voy a agregar una regla nueva este
+¿O lo vemos?
+Vamos a ver si yo estoy exponiendo por lo menos 1 persona debería preguntar algo.
+Ok, este lo pueden hacer voluntariamente o lo puedo hacer yo dedocráticamente, verdad? Pero siempre tiene que haber espacios para preguntas. Ok, entonces probablemente vamos a estar ahí flotando.
+¿Estamos entonces?
+Dice que empezamos con, dígame.
+
+Kaik Andy Yocks Sandoval   33:16
+profe.
+¿Qué pena otra vez en la ronda de preguntas, entonces sería para saber si un compañero y usted o solo el compañero?
+
+LUIS FELIPE MORA UMAÑA   33:20
+Add.
+I bounce.
+
+Kaik Andy Yocks Sandoval   33:28
+Okay.
+
+LUIS FELIPE MORA UMAÑA   33:30
+Por los 2.
+Hey.
+Este empezamos con Tyron y Ariadne.
+Tema número 12, react, cuenten muchachos.
+
+TAYRON ALONSO SALAS NUÑEZ   33:44
+Presento yo, compañera.
+
+ARIADNY MARIA NUÑEZ GODINEZ   33:48
+Sí, porfi.
+
+TAYRON ALONSO SALAS NUÑEZ   33:50
+Sí.
+
+LUIS FELIPE MORA UMAÑA   34:15
+Listos.
+
+TAYRON ALONSO SALAS NUÑEZ   34:17
+¿Se puede ver la presentación?
+
+LUIS FELIPE MORA UMAÑA   34:19
+Está cargando.
+
+ARIADNY MARIA NUÑEZ GODINEZ   34:20
+Está cargando.
+
+LUIS FELIPE MORA UMAÑA   34:23
+Bumps.
+
+TAYRON ALONSO SALAS NUÑEZ   34:25
+Then.
+
+ARIADNY MARIA NUÑEZ GODINEZ   34:26
+Ahora lo hago como para Alex.
+Bueno, nosotros nos tocó hablar sobre el react y sobre las características de la importancia del desarrollo del de del desarrollo moderno de interfaces web. ¿En qué nos enfocamos en esto? Principalmente en cómo se organizan las interfaces, que usa componentes, cómo manejar los datos, el estado y cómo se actualizan las interfaces según la interacción que tienen con los con los usuarios.
+¿Qué es react? React es una biblioteca de JavaScript que se utiliza para construir interfaces de un usuario tanto web como nativas. ¿Qué quiere decir nativas que se pueden hacer en teléfonos o en aplicaciones móviles? Esto o react surge. ¿Por qué? Porque empezó a ver como una complejidad.
+al crear aplicaciones web y ocupaban que se actualizaron o que funcionaran mejor Entonces qué hicieron crear react que el su principal idea o su principal función es dividir la interfaz en componentes independientes así pueden reutilizarse pueden acomodarse de otra forma pueden actualizarse por sí solos o pueden tener un mejor mantenimiento de código
+7.
+
+TAYRON ALONSO SALAS NUÑEZ   35:40
+Bueno, la arquitectura, la arquitectura React tiene su cierto grado de complejidad al inicio, pero conforme uno va averiguando más sobre el tema, va como comprendiendo un poco más. Generalmente se basa en componentes, componentes que viene siendo botones, formularios, menús.
+Tablas, todas las partes interactivas de lo que es la estructura de la interfaz de usuario.
+De aquí hay que saber diferentes tipos de conceptos como para ir comprendiendo un poco más que son componentes, vienen siendo como bueno, ya lo mencioné anteriormente, pero a nivel de función estos vienen siendo como información que reciben y se van pasando.
+De uno a uno.
+Después viene lo que son los props, que los props ayuda a que los componentes funcionen igual lo que es el estado, pero para que le den como una idea o lo o lo interioricen de forma más fácil, el props viene siendo como una variable estilo input que uno le da la información.
+Para que este la mantenga. Igual ahí tenemos una demo para que la podamos ver al final, para que comprendan más lo que es esta esta idea, que es la parte de estado. La parte de estado viene siendo como variables que se almacenan de estado que pueden ser cambiantes.
+En lo que es este el componente.
+Y el renderizado que esa es una parte de interesante de lo que tiene react que él actualiza el componente. Normalmente cuando uno hace como un cambio en HTML uno ve que hay que actualizar toda la página para ver ese cambio, react si da la opción de que es nada más renderiza esa parte que tiene como.
+Como lo que es ese.
+Ese cambio a nivel de destructura ya vienen más conceptos más adelante, que es el dios state, el set valor o los hub que los vienen siendo como las funciones en lo que es react.
+Ventajas y limitaciones entre las ventajas que tiene React, las más importantes es la reutilización de código, que es modular, que la interfaz es meramente sencilla a nivel de modificación, que toda la información uno puede volverla a reutilizar, pero lo más importante es entender cuáles son las limitaciones de esto.
+Que React por sí solo no cubre toda una aplicación, o sea, viene siendo parte de una librería, pero sí hay que tener más conocimiento de otros frames para poder como.
+Como dar por completo la aplicación.
+En este caso hay que saber JavaScript, el GSX, que viene siendo como.
+Como una sintaxis de JavaScript para lo que es el HTML, hay que conocer acerca de los conceptos que tiene Red, que son de esos que los mencioné anteriormente.
+Y se van a requerir de diferentes herramientas para completar lo que es la aplicación.
+
+ARIADNY MARIA NUÑEZ GODINEZ   39:11
+el caso de Facebook o el caso que traigo como para ejemplo qué pasó que facebook.com para hablar de la página web hizo una reestructuración meta lo que hizo fue utilizar react para la interfaz utilizó really para tener una relación entre los componentes y los datos y utilizó esa música
+Muy princesa así, pero grabo cruel, así lo digo yo.
+¿Qué es lo que hace es obtener la información? ¿Por qué usa usted como ejemplo? Porque así podemos ver que React no solo se puede usar en cosas pequeñas, sino en trabajos a gran escala, trabajos grandes y que también React por sí solo no puede hacer una aplicación, tiene que sí o sí compartir con otras tecnologías como Really y Crab. ¿Por qué?
+Porque real está más enfocado en la interfaz, en cómo se ve y en cómo se actualiza, no tanto en la información o la recopilación de datos.
+Siguiente.
+
+TAYRON ALONSO SALAS NUÑEZ   40:05
+Bueno, entre lo que son las conclusiones, podemos saber de que React está enfocado en lo que es la interfaz. Entonces hay que tener eso bastante claro en interfaces modernas que se dividen por componentes, que es para realizar como un diseño más fácil.
+que los props utilizan para lo que es pasar información entre componentes que el estado permite manejar información que uno puede cambiar en la misma pantalla sin necesidad de actualizar y que hay diferentes tipos de estado que se puede hacer más dinámico
+Lo que es el desarrollo de una interfaz gráfica a nivel a nivel web.
+Ahora vamos a ver lo que vendría siendo una pequeña demo de lo que es.
+Y en funcionamiento.
+I sang when the same in.
+
+ARIADNY MARIA NUÑEZ GODINEZ   41:11
+Eso se ve bueno, tenemos cuatro tarjetitas y voy a explicar la primera. La primera es un componente llamado saludo que tiene un prop llamado nombre. ¿Qué hace?
+un ejemplo rápido o como para que se pueda definir rápido nosotros tenemos el título de Hola react ese título puede cambiarse en tiempo real digamos en vez de ponerle react se puede cambiar el input que está ahí es un texto por pongámosle mundo o lo que quieras
+Ven como cambio temporal eso hace Riak.
+Sin necesidad de estar actualizando la aplicación, lo hace como de manera automática.
+La segunda la explica.
+
+TAYRON ALONSO SALAS NUÑEZ   41:56
+Okay, bueno, esta la segunda parte de la de la demo es el uso del JOSE site, que lo que hace es generar una variable que se porta en nivel del sistema, pero que uno de igual forma la puede ir modificando. En este caso, la vamos más fácil de verlo es por medio de un contador.
+Queremos que aquí simplemente es de un botón de dar clic que se va actualizando, va generando un historial o no puede resetear, pero el cambio se da justamente solo en este espacio. en.
+En este componente, sin tocar lo que es lo además de la página.
+
+ARIADNY MARIA NUÑEZ GODINEZ   42:34
+La otra demo es la lista dinámica. ¿Qué es lo que hace? Nosotros tenemos una lista con varias tareas. Aquí ya tenemos 3 ya hechas. Podríamos hacer una más, póngale exposición.
+Se les se escribe y se agregar que lo que hace React lo que hace es recorrer el.
+El arreglo con un punto map que lo que hace es recorrer un arreglo y ver qué cambió y agregarlo. Si no me equivoco, es así y lo que hizo fue agregar el nuevo. También se le puede hacer ciertas cosas, digamos, se puede como tachar. Entonces si usted lo tacha abajo vemos que hay 3 como informaciones, está el total, está.
+Los Ay, soy de que casi no leo lo las completadas y las pendientes. Al tacharlo vemos que las completadas cambia el número automáticamente sin necesidad de actualizarlo, y también podemos eliminar una que también es algo que reconoce y lo hace automáticamente. Entonces podemos por la luna y también se actualizan los números de abajo.
+De manera automática y solo ese.
+Y el último es.
+
+TAYRON ALONSO SALAS NUÑEZ   43:39
+Y para finalizar, tenemos esta este el use effect que con un fetch lo que hace es que se utilice una función que llame a otro.
+Como a otro lado, otro componente.
+Come on.
+cómo sería como para decirlo más más fácil como para cargar datos o solicitar en este caso como usuarios de de lo que es una Api real y recibir respuestas para guardarlo como en una variable y que esa variable se se mantenga para poderla manejar a través de de la misma renta
+Renderización, entonces aquí simplemente clic en el botón cargar usuarios y el mismo me va a jalar información por medio de este use Fetch.
+Esa sería nuestra presentación, preguntas.
+
+Adrian Vinicio Chaves Marin   44:49
+Probé, disculpe.
+
+LUIS FELIPE MORA UMAÑA   44:52
+Well, okay.
+
+Adrian Vinicio Chaves Marin   44:53
+¿Se dijo que podemos hacer consultas, verdad?
+
+ARIADNY MARIA NUÑEZ GODINEZ   44:56
+Sí, porfa.
+
+LUIS FELIPE MORA UMAÑA   44:56
+Adelante, pregunten, sí.
+
+Adrian Vinicio Chaves Marin   44:58
+Sí, es que iba a preguntarle sobre los props props es.
+
+TAYRON ALONSO SALAS NUÑEZ   45:02
+Mhm.
+
+ARIADNY MARIA NUÑEZ GODINEZ   45:03
+Ajá.
+
+Adrian Vinicio Chaves Marin   45:05
+Ese me quedó como ahí, como un toquecillo.
+Con duda.
+
+ARIADNY MARIA NUÑEZ GODINEZ   45:11
+Okay, los props o la forma más fácil en que yo lo podría describir los props es como a ver cómo se lo puedo explicar que no se me enreda tanto los props.
+
+TAYRON ALONSO SALAS NUÑEZ   45:21
+Yo lo veo con bueno, hay que continuar, continuar, perdón.
+
+ARIADNY MARIA NUÑEZ GODINEZ   45:24
+Okay, is.
+Este es información que está o que recibe el componente, es información que no podemos cambiar nosotros. Lo que sí podemos cambiar, que es una diferencia que ocupo aclarar, es el estado, digamos. Nosotros tenemos el prop que el componente lo que hace es leerlo, por ejemplo, el hola.
+El saludo, el hola es un pro que lee y el estado es la información que podemos llegar a cambiar. Por ejemplo, el prop tiene la parte que se lee, que es el hola y el estado que es lo que se cambia, que es el input que nosotros podemos cambiar.
+
+TAYRON ALONSO SALAS NUÑEZ   45:57
+Sí, de la forma vamos de haberlo vendría siendo como una variable tipo input cuando uno lo ingresa en el dato.
+
+ARIADNY MARIA NUÑEZ GODINEZ   45:57
+Man.
+No sé si me di a entender.
+
+Adrian Vinicio Chaves Marin   46:08
+Sí, muy bien, gracias.
+
+ARIADNY MARIA NUÑEZ GODINEZ   46:10
+Mucho gusto, gracias a usted.
+
+LUIS FELIPE MORA UMAÑA   46:16
+Más preguntas, compañeros.
+Yo tenía una pregunta y si nadie si nadie tiene preguntas, si nadie más tiene preguntas graves, Adrián, por la pregunta este.
+¿Qué es el virtual DOM?
+
+TAYRON ALONSO SALAS NUÑEZ   46:36
+El virtual DOM, bueno, tengo el conocimiento del DOM, perdón por no saber el virtual DOM, pero el DOM viene siendo como la parte visual, pero no necesariamente visual completa, sino como está separada lo que son la parte de los componentes.
+
+LUIS FELIPE MORA UMAÑA   46:38
+¿Y el don?
+
+TAYRON ALONSO SALAS NUÑEZ   46:59
+Como la.
+¿Cómo se ve cómo funciona cada cada parte de la parte visual?
+Pero a nivel, como por escala, vendría siendo.
+Al menos ese fue como mi comprender del don.
+
+ARIADNY MARIA NUÑEZ GODINEZ   47:16
+Igual nuestra investigación no se enfocó tanto en eso, sino en que se enfocamos en cómo funcionaba. Entonces, honestamente, no investigamos tanto en esa parte.
+Así como lo que entendemos es eso que dijo el compañero.
+
+LUIS FELIPE MORA UMAÑA   47:32
+Okay.
+Creo que vea este 3 cositas por ahí, 3 detalles.
+Este cuando exponemos en en grupo, esto va un poquito más para para tairo, principalmente en la parte de preguntas, tenemos que tener un poco de cuidado a la hora de interrumpir al. A los compañeros, yo sé digamos que hay cosas que no se practican y demás, verdad? Pues parte de también, verdad? Este a veces este, bueno, aquí está, aquí estamos en.
+virtual pero por lo menos uno en vivo le hace ojos a la persona digamos por ahí verdad Pero si no uno Espera que termine de meter los patos verdad y después lo arregla verdad no estoy diciendo que haya metido los patos verdad pero por ahí va eso por ahí después este hay unas cositas de react que yo creo que este si bien Yo sé que es una presentación rápida y todo
+pasaron muy en alto digamos este principalmente el porqué del react y por eso hice la pregunta del virtual dom porque el virtual dom es casi que la clave del Por qué nació y digamos todo lo que vamos a ver react fue revolucionario en su momento
+por este la parte del virtual DOM, verdad que el DOM es el document object model, que básicamente es un documento, verdad, con diferentes este modelos de objetos.
+que se que se ven en el que se ve en el browser Por decirlo así al final es un árbol digamos ya sea probablemente en html verdad que es con este lenguajes de etiquetado qué es lo que pasa que ahí es donde donde va por ahí la la un poco la contradicción este que es eso que decía tyron verdad este el
+¿Cuando usted usa Angular o cualquier otra cosa, verdad? Cuando usted actualiza algo, actualiza el.
+actualiza toda la página verdad está actualizando todo el documento de html qué fue lo que hizo React, React hizo algo que este hizo un DOM virtual entonces usted va actualiza el DOM virtual verdad el DOM de React y cuando ya usted haya terminado de ejecutar todos los cambios
+El maestro va y aplica solamente los cambios en los espacios necesarios. Eso hace que las páginas web sean mucho más rápidas, digamos, en ese sentido. Otro detalle ahí es que no solamente este, si bien es un framework web, verdad que eso es importante resaltarlo desde el inicio, es un framework web. Este, entonces al ser un framework web hay un montón de cosas que no podemos hacer en web.
+O que no deberíamos hacer en web porque no se nos permiten incluso en algunos lenguajes o algunos frameworks hacer en en web, como por ejemplo conectarnos a base de datos, simplemente podemos conectarnos a server por ejemplo. O crear, no sé, un montón de cosas más por ahí. Entonces este para eso hay este por eso son frameworks web solamente funcionan para web necesita un backend.
+verdad que es donde está la importancia de combinarlo con diferentes tecnologías que su enfoque está bastante bien y lo último es que no solamente este de hecho es ese fue uno de los cambios que pasó hace ya un par de años de hecho que este react también evolucionó a Ty Script entonces este de hecho ustedes ven las versiones viejas de react están en
+Ya, pero digamos, todo el código nuevo que se genera hoy en día se.
+Es más eficiente, es más enfocado a performance, a lectura y demás, entonces este va un poquito más por ahí. Sería bueno también digamos en la parte visual este echarle un ojillo y al al cuguillo verdad por ejemplo este cuando cuando haría pregunta que me parece que es una pregunta muy válida
+este de decirle Mira es que vea esto es aquí y como puedes ver acá solo aquí es donde inyectamos esta propiedad al actualizar esta propiedad estamos actualizando esto verdad que al final es el el el detalle verdad si ustedes ven este reactive es es relativamente nuevo fue muy revolucionario en su momento pero realmente no hizo nada nuevo verdad al final lo que eso fue
+Componentes, componentización, no solamente a nivel de. A nivel de botones y demás, sino que yo también puedo hacer mis propios componentes, verdad? Y no solamente íbamos a tener mis propias páginas, sino también puedo tener mis propios componentes reutilizables, que si ustedes ven son muchos de los términos que hemos hablado en los últimos días.
+Sí, muchas gracias, muchachos.
+
+TAYRON ALONSO SALAS NUÑEZ   51:53
+Gracias, brother.
+
+LUIS FELIPE MORA UMAÑA   51:57
+Preguntas, no sé si tenían algo el derecho de respuesta.
+
+ARIADNY MARIA NUÑEZ GODINEZ   52:03
+No te doy profe, gracias.
+
+LUIS FELIPE MORA UMAÑA   52:05
+Okay.
+Muy bien.
+Bien, muchachos, este seguimos con David y con bueno, David me dijo que dieron chance.
+Este con Albert y Eric Docker.
+Y se alistan de una vez a Adrián y Glen, por favor.
+
+ERICK ANDRES DELGADO ARAYA   52:29
+Ya le comparto, profe.
+Me confirman si se ve, no sé si se verán, está allá por ahí.
+
+ALBERT DAYAN BRENES CARPIO   52:42
+See, you sorry.
+
+LUIS FELIPE MORA UMAÑA   52:42
+Sí, señor.
+
+ERICK ANDRES DELGADO ARAYA   52:44
+Okey.
+
+ALBERT DAYAN BRENES CARPIO   52:46
+Bueno, nosotros en esta presentación vamos a hablar de Docker. La idea es explicarlo bien de forma básica, porque me imagino que como nosotros, alguno puede que nunca haya utilizado Docker. entonces.
+Queremos mantener lo básico para que puedan comprender más o menos cómo funciona Docker. Vamos a estar mencionando qué problema intenta solucionar, qué es un contenedor, la diferencia entre una imagen y un contenedor y herramientas que utiliza Docker como el Docker File.
+El Docker Compose.
+Una diferencia que se puede hacer de los contenedores con las máquinas virtuales, ventajas, desventajas, otra herramienta que se llama Kubernetes, que tienen cierta relación con Docker. Y por último, vamos a mostrar un pequeño ejemplo. No es tan visual como nosotros queremos, , pero bueno, ahí agregamos unas capturas para que ustedes lo.
+Lo vieran en la siguiente diapositiva, podemos empezar con una pequeña introducción.
+Lo primero, con un poco de relación con la historia. En el 2013 fue cuando se publicó el Docker. Fue creado por esa persona, por Solomon Highs. Sí, desde ese desde ese momento Docker empezó a ganar popularidad por la forma en la que ayudaba a las personas.
+Que trabajaban en las aplicaciones, facilitando, digamos, la forma en la que se podían ejecutar tanto en sus dispositivos, sus entornos, como en otros. Puede ser otra la computadora de otro o un o un servidor aparte. Y aparte de que es open source, o sea, al ser código abierto te ayuda a que muchas personas. o.
+O empresas si pudieran utilizarlo y no solo utilizarlo, sino también aportar mejoras o crear herramientas con Docker. También el Docker está relacionado con DevOps por la misma facilidad que tiene. Busca mejorar, digamos, la colaboración que hay entre los desarrolladores.
+Con las personas que se encargan de poner estas aplicaciones en funcionamiento y también el Docker, como lleva una aplicación de un entorno de donde fue desarrollado hasta un servidor, se caracteriza por ser una herramienta que facilita el despliegue de las aplicaciones.
+En la próxima diapositiva podemos ver el problema que llega a solucionar Docker. Nosotros, como entre comillas, programadores, tenemos usualmente un problema que es cuando estamos chorbeando código, cruzamos los dedos y que la aplicación.
+Funcione.
+Los que ya desarrollan, digamos, en producción y demás, o sea, ya desarrollan aplicaciones, tienen un problema un poquito más arriba, que es básicamente de que cuando estén en los entornos, en las computadoras de ellos, tienen que cruzar los dedos para que eso funcione en producción, o sea, pasar del entorno de testeo al.
+Entorno de producción y que la aplicación funcione tal cual funciona en sus computadoras, para ponerle un palabras un poco más simples, con un ejemplo un poco más sencillo.
+Pensemos que yo estoy creando una.
+Una aplicación en mi compu. Yo estoy usando cierta versión de Python, estoy usando ciertas librerías. Tengo una configuración xy en mi compu todo funciona perfectamente. Y luego yo vengo y le digo a Eric que pruebe la aplicación que yo estoy creando.
+Pero cuando Eric la va a correr por allá, Eric tiene una versión diferente de Python a la que yo tenía. Por allá le faltaba una librería que yo estaba utilizando en la aplicación o tiene una configuración X que no es parecida a la mía. Entonces es bastante probable de que la aplicación que sí servía para mí.
+No le vaya a servir a él por más que el código sea el mismo. Entonces esto mismo puede ocurrir en el entorno de pruebas cuando va a pasar a producción. Y ahí es donde se ve el famoso problema que mostramos en la diapositiva, entre comillas, funciona en mi máquina, pero no en producción. Entonces toca es lo que va a hacer.
+Es buscar reducir este problema empaquetando una aplicación junto con las dependencias. O sea, las dependencias es básicamente que el entorno donde vive la aplicación tenga todo lo que necesita para correr. Entonces así puede haber como una forma más controlada de ejecutarse tanto en mi entorno, o sea, en mi PC.
+Como en la de otro o en un servidor. Entonces, sí se puede decir que Docker no solo nos va a ayudar, digamos, a ejecutar programas, sino también a que esa consistencia se se mantenga.
+
+ERICK ANDRES DELGADO ARAYA   57:55
+Bueno, muchas veces cuando estamos aprendiendo a usar Docker, primero tenemos que entender.
+o definir básicamente que es un contenedor en Docker. En términos sencillos de decirlo, básicamente una unidad de software.
+Que es ligera, es autónoma y exportable.
+Básicamente emplaza el código que realicemos según las configuraciones, igual forma que queramos añadirle.
+Y todas las dependencias necesarias.
+Luego esto al aislar la aplicación garantiza que funcione exactamente de la misma forma en cualquier entorno. Esto evita el típico problema que comentaba Adrián de en mi máquina si funcionaba, por así decirlo.
+Esto nos permite.
+Tener lo que son varias aplicaciones ejecutándose de manera separada.
+En el mismo equipo.
+
+ALBERT DAYAN BRENES CARPIO   59:12
+Sí, gracias. Igual si no les queda del todo claro, simplemente pueden ver el contenedor como una cajita, una cajita donde está una aplicación con todo lo que necesita para correr. Y ya que sabemos un poquito, digamos de que puede ser un contenedor, podemos hacer como esta diferenciación de una imagen que es una plantilla inmutable, como dice la diapositiva, que es como un molde versus un contenedor.
+Que es la instancia ejecutable de esa imagen. Es que es como el objeto moldeado. Entonces, para ponerlo como una analogía bastante simple, para que lo puedan comprender, una imagen puede verse como una receta.
+Una receta de cualquier cosa, una receta que describa lo que es necesario para poder usted preparar algo, o sea, cualquier plato. Entonces esa receta usted puede crear un plato o puede crear 10 y la receta sigue siendo la misma. Pasa lo mismo con una imagen, una imagen puede ser.
+Usada para hacer para crear múltiples contenedores. Entonces, por otro lado, tenemos el contenedor que ya sería como el plato en esta analogía que estamos usando, que es lo que nosotros construimos.
+Con base a la imagen.
+Entonces.
+Básicamente, como dice la diapositiva, que la plantilla es inmutable, cabe recalcar de que son inmutables, porque a pesar de que si uno quisiera hacer una modificación a una imagen, normalmente no se modifica. Lo que se hace es crear una nueva versión de la misma y así quedaría.
+Y así no se modificaría la imagen como tal.
+
+ERICK ANDRES DELGADO ARAYA   1:00:57
+Okey, y básicamente también nos preguntamos cómo es que realmente funciona Docker.
+Pues bueno, básicamente Docker utiliza una arquitectura de cliente y servidor.
+Como para decirlo de una manera más sencilla, nosotros usamos el cliente de Docker para lo que es dar las órdenes y el daemon de Docker recibe esas órdenes y realiza el trabajo de crear y administrar lo que son los contenedores.
+Un ejemplo también puede ser cuando escribimos un comando como el docker Run, que es bastante común.
+El cliente envía la solicitud y Docker se encarga de realizar las acciones que son necesarias.
+También existen muchos otros elementos importantes, como lo que es el Docker Hub.
+Que funciona como un registro.
+donde se almacenan imágenes y esto permite descargar imágenes que sean existentes o también nos permite compartir nuestras propias imágenes.
+También es importante mencionar que a diferencia de máquinas, de las máquinas virtuales tradicionales, Docker no necesita como tal emular un sistema operativo completo para lo que es cada aplicación. En cambio, este aprovechar lo que es el kernel
+del sistema operativo que trabaja como host, lo que hace que básicamente sea bastante rápido y eficiente en el uso de lo que son los recursos.
+
+ALBERT DAYAN BRENES CARPIO   1:02:52
+Sí, y por otro lado tenemos el Docker File. Este archivo puede verse como un simple archivo de texto que va a contener un paso a paso las instrucciones, como puede verse en la diapositiva. Por ahí hay varios comandos que es como el From, el Run, el Copy, el Exposed y el CMD.
+Es básicamente para indicarle.
+¿Cuál será la imagen base, las dependencias que se deben instalar, archivos por copiar o qué comando se debe ejecutar cuando se inicia el contenedor? Y en palabras un poco más simples, uno le dice, use este sistema operativo base, instale este programa y ejecute esta aplicación.
+lo la ventaja que tiene el docker file es más que todo la automatización porque básicamente usted crea el archivo y ya queda ya queda registrado digamos en el código ya queda en el archivo guardado para cuando usted tenga que construir una
+Una imagen o varias, porque el archivo puede puede ser reutilizado y claramente no es necesario tener que recordarse cada una de esas líneas y escribirlas de nuevo porque ya va a estar guardado en el docker file y eso es como lo que viene a ayudar. Al lado derecho de la diapositiva se ven.
+Se ve el ejemplo del Docker File que quisimos agregar a grandes rasgos. Lo que indica es, por ejemplo, de que se va a usar el Node DS, la versión 18, que está implementada en Alpine, que es una versión de Linux, sistema operativo. Se crea una aplicación de trabajo que se llama.
+App se hace la copia de los archivos que que tienen información de las dependencias. Luego con el Run NP NP me install, se van a hacer la instalación de las de las dependencias. Pueden ser librerías y demás que la aplicación necesite para correr con el copy.
+Se va a hacer una copia simplemente de nuestro proyecto a la carpeta de trabajo que está dentro del contenedor. Con el expose lo que hace es y decirle al a la aplicación que va a utilizar ese puerto dentro del contenedor y el CMD es simplemente la ejecución al final cuando ya el.
+El contenedor se iniciamos el contenedor, digamos, entonces ahí ejecutaría el Node Gsy el server Gs sería como el archivo principal de nuestra de nuestra aplicación. Ya cuando tenemos un Docker File de ahí.
+
+LUIS FELIPE MORA UMAÑA   1:05:29
+Tempo.
+
+ALBERT DAYAN BRENES CARPIO   1:05:33
+Island.
+
+LUIS FELIPE MORA UMAÑA   1:05:35
+No tiempo ya.
+12 minutos más bien.
+
+ALBERT DAYAN BRENES CARPIO   1:05:40
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:05:43
+Este preguntas, compañeros.
+Dale Anel.
+
+DANNEL ROBERTO QUESADA SOLANO   1:05:50
+Buenas noches, no sé qué preguntas, un comentario porque a nosotros bueno, nos pasó un curso en el que ya estuvimos atravesando Docker, pero porque uno está acostumbrado a llegar simplemente descargar, instalar y que corra la cosa, ¿verdad?
+
+LUIS FELIPE MORA UMAÑA   1:05:53
+No.
+
+DANNEL ROBERTO QUESADA SOLANO   1:06:10
+Y Docker tiene muy buena documentación también en el.
+en a donde están las imágenes de Docker, explica paso a paso prácticamente como ponerlo a correr. Entonces, si si alguien quiere usar Docker, creo que es mejor utilizar ese recurso antes de irse ahí a una guía que le den instrucciones porque está documentado paso a paso.
+Trae cuál es la última versión, cuándo se actualizó, qué soporta y trae un readme y pequeñitos tutoriales de cómo utilizarlo. Entonces es súper completo.
+
+LUIS FELIPE MORA UMAÑA   1:06:49
+Buenísimo, Ale, muchas gracias.
+
+DANNEL ROBERTO QUESADA SOLANO   1:06:49
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   1:06:54
+Time.
+
+TAYRON ALONSO SALAS NUÑEZ   1:06:56
+La mía si es que no me quedó claro como vendría siendo la diferencia de entre un contenedor de Docker a lo que vendría siendo como una máquina virtual. En esa parte me quedé con un toque perdido.
+
+ALBERT DAYAN BRENES CARPIO   1:07:10
+Sí, gracias por hacer la pregunta, porque es que eso lo queríamos cubrir, pero al parecer no llegamos para ponerlo en formas, en una forma simple para que lo pueda comprender, digamos, una máquina virtual. Usualmente cuando uno la crea de ahí hay un sistema operativo completo.
+Que la utiliza con su propio núcleo y todo. O sea, tiene una cantidad de recursos importante, dependiendo de lo que vayamos a instalar en esa máquina virtual. Y por otro lado, el contenedor no necesita un sistema operativo completo, va a utilizar parte o va a compartir el núcleo que uno tiene en nuestra.
+En nuestro entorno, nuestra PC y por ende va a ser más ligero que una que una máquina virtual. Entonces va a permitir igual ejecutar aplicaciones, pero va a utilizar el hardware de nuestro de nuestro PC.
+
+TAYRON ALONSO SALAS NUÑEZ   1:08:02
+O K, sí, depende más como la máquina de uno.
+
+ERICK ANDRES DELGADO ARAYA   1:08:02
+Sí, de hecho, sí.
+De hecho, para sumarle un poco a lo que nos indica Adrián.
+
+ALBERT DAYAN BRENES CARPIO   1:08:08
+Six is.
+
+ERICK ANDRES DELGADO ARAYA   1:08:11
+Sí, básicamente los contenedores comparten el kernel, verdad, el sistema operativo de host y prácticamente solo empaquetan la aplicación y las dependencias directas como las librerías, digamos.
+
+LUIS FELIPE MORA UMAÑA   1:08:32
+Buenísimo compañeros, este Luis.
+
+LUIS ALONSO ESPINOZA BONILLA   1:08:37
+Que nada más para saber bien. Bueno, ahí, por ejemplo, ron y CMD, ambos creo que le cortan los comandos. ¿Cuál era más o menos la diferencia entre estos 2?
+
+ALBERT DAYAN BRENES CARPIO   1:08:52
+Es que el Docker Run es cuando usted ya tiene el.
+El contenedor se ha creado.
+O sea, cuando cuando la imagen está creada con el docker run va a crear el contenedor. Entonces el docker file primero se va a correr con el docker build para crear la imagen y el docker run ahí es donde se implementa para el contenedor. El CMD que está dentro del docker file es para que el docker sepa que esto que tiene que correr.
+Dentro de ese archivo que ya hemos seteado, por ejemplo, en este caso el ejemplo es de Node Js, entonces lo que va a correr es el Node Jsy nuestra aplicación, que sería el server punto Js.
+
+LUIS ALONSO ESPINOZA BONILLA   1:09:33
+Okay, okay.
+
+LUIS FELIPE MORA UMAÑA   1:09:40
+¿Más preguntas?
+Ok, ahí vamos a ver este detalle rápido. Este al final no deja de ser. Vamos a ver, no es una máquina virtual, como si dicen o bien dicen los compañeros, verdad? Pero no deja de ser un subsistema, por decirlo así, digamos un contenedor. Es que es un contenedor al final. Entonces, qué es la diferencia, verdad? Que era lo que lo que preguntaban por ahí este.
+Cuando usted instala este.
+cuando se instala una máquina virtual o se instala un sistema operativo independientemente del sistema operativo vas a instalar drivers, vas a instalar este, no sé, un montón de cochinadas ahí que vienen un montón de de esas barras que hayan de un montón de cosas de Windows, un montón de cosas de etcétera, ¿Verdad? Un montón de cosas por ahí.
+¿Entonces, qué es la diferencia que codocker solamente se instala?
+Únicamente lo necesario. Eso es lo necesario para que esta aplicación en específico corre. Por eso usted ve ahí el CD y el ROM y el y el epidemisal y todas esas varas porque no dejas de usar una consola común y corriente de verdad nada más que dentro de la más pequeña, verdad?
+Compañeros, comentarios finales.
+Alberto.
+
+ALBERT DAYAN BRENES CARPIO   1:11:05
+And.
+Dino, es que no nos quedó bastante por cubrir. Entonces no sé qué mencionar. Pensamos que era mínimo 10 minutos, no pensamos que era el max. Entonces, di no, no, espero que haya quedado. quedó claro que pudimos exponer y si tienen alguna otra pregunta que pueden hacerla, no hay problema.
+
+LUIS FELIPE MORA UMAÑA   1:11:25
+Sí, literalmente eran 10 minutos.
+Okay.
+Buenísimo, este Albert y Glen, digo, perdón, Eric.
+
+ERICK ANDRES DELGADO ARAYA   1:11:32
+Probably is the...
+Si puedo comentar nada más algo final de la exposición, sí, básicamente.
+
+LUIS FELIPE MORA UMAÑA   1:11:36
+Adelante, sí, dale, dale, perdón.
+
+ERICK ANDRES DELGADO ARAYA   1:11:41
+Docker, pues es una herramienta verdad que a nivel general facilita la forma en la que se desarrolla y comparte y se ejecutan muchas aplicaciones. Entonces sí.
+Considero que por lo por lo menos a nivel de desarrollo, es prácticamente que fundamental.
+
+LUIS FELIPE MORA UMAÑA   1:12:05
+sí sí por eso vamos a ver por eso es tan popular ahora digamos este vamos a ver ahora todo en la nube de todo al final de muchas cosas van a la nube verdad Entonces este qué pasa digamos este todo en la nube tiene un costo las imágenes por eso este ahora que ustedes mencionaban este cobertics cober es tan popular digamos porque es una pequeña imagen de Linux ahí que corre digamos en
+En el server y una imagen de imagínense que una imagen de Linux este que puede pesar este entre sí, lo menos que pesas son como 5 gigas, mientras que una imagen de Microsoft.
+Según porfa.
+Eso, perdón, casi me ahogo. Mientras que una imagen de Windows pesa como mínimo pesa 50 gigas. Entonces ahí saqué la diferencia, verdad? En cuanto a costos, no recuerdo decir al medio giga, la verdad. Pero si es una diferencia, los números cientan más o menos así.
+Termina siendo mucho más caro, ¿Verdad? Para para las empresas y demás, ese tipo de de gastos, ¿Verdad? Asúmele ahí un montón de cosas, ¿Verdad? Porque ya ahí puedes este de jugar con la arquitectura y demás. Buenísimo. Muchas gracias.
+Vamos.
+
+KENDALL JOSUE MATA SANCHEZ   1:13:26
+Profe, yo bueno, yo este aprendí a usar Docker en organización de archivos y siento yo que estar al principio sí cuesta un poco, pero ya con el tiempo uno le agarra cierto cariño y realmente es muy fundamental. Y bueno, en mi caso a mí me gusta bastante.
+Doctor.
+
+LUIS FELIPE MORA UMAÑA   1:13:50
+Sí, sí, es como todo, ¿verdad? Al final de todo es práctica en esta.
+vamos ahí como agarrarlo practicar bastante eso que dice ganar es cierto porque vamos a ver este la idea es muy contextual y y este tipo de cosas tienen contextos muy específicos Entonces siempre hay que tener ahí como de pie manejado verdad el contexto en el que estamos manejando y la documentación de docker es muy muy bueno
+Entonces sí.
+Ok, continuamos ahora sí, Adrián Guilén.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:14:28
+No.
+Y se ve la pantalla ahí.
+
+Adrian Vinicio Chaves Marin   1:14:40
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:14:41
+Sí, señor, adelante.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:14:51
+Listo, bueno, el tema de nosotros sería software libre y licencias. Me gustaría aquí comentar para que quede bien claro.
+¿Tal vez tienes tanta familiarizados, el software libre vendría siendo como la filosofía, verdad?
+y la forma de desarrollar el software mientras que las licencias son como más bien como las herramientas jurídicas Por decirlo así como los contratos entonces lo que vendrían a hacer es que esa libertad se cumpla
+Y.
+Por la parte del marco legal y ético, tenemos unos puntos que queremos mencionar, como el framework y librería.
+También los derechos y las obligaciones y una parte de lo que es de Stallman, el proceso a lo que es el open source.
+Y.
+En el caso de las librerías y los frameworks, hoy en día.
+Rara vez empieza desde cero.
+¿Te importan librerías, te importan framework? Entonces ahí donde el marco legal viene y lo que dice es qué podemos y qué no podemos hacer cuando se integra.
+¿Y el código de terceros, verdad, a un proyecto?
+Por eso te digo que una licencia es como el software, es un contrato porque vamos a tener tanto derechos como obligaciones.
+en cuanto a los derechos estaría usar y modificar también distribuir el sistema Pero también hay obligaciones que nos dicen que por ejemplo tenemos que incluir los derechos del autor
+¿Y o, por ejemplo, liberar nuestro código si usamos licencias restrictivas, verdad, entonces?
+Como en la en la frase en pantalla de Stallman a open source, Richard Stallman fue el que consiguió el software libre.
+Y.
+Fue un movimiento social y ético al principio porque se centró en la libertad del usuario. Luego nació el concepto del open source, que se lo impulsó la voz, que son tigres en inglés.
+Que significa iniciativa de código abierto.
+En inglés o SI es una organización que es sin fines de lujo y que más que todo fue para promover el uso de este mismo software, el de código abierto. En pocas palabras, esas 2 corrientes filosóficas.
+Lo que dicen es que el.
+Y por el lado de Richard Salmon, la idea principal es que el software debe ser libre porque es un derecho y por otro lado.
+Por la postura del de la OCI, dice que se debe abrir el código como más que todo un método superior para desarrollar. Sería como yo lo veo como un enfoque más técnico, incluso comercial, ¿verdad?
+Por la parte de la historia y la evolución, aquí señalamos algunos años lo más importante.
+Por ejemplo, de los cincuentas a los setentas se considera la era del mainframe que se puede ver en pantalla. Un ejemplo, la imagen que serían en los inicios de la computación, cuando el código fuente se compartía entre los científicos o tal vez los académicos.
+¿Entonces de por supuesto que en ese momento el negocio era vender máquinas, verdad?
+Y como esa que está en pantalla, máquinas físicas, pero no tanto los programas, por decirlo así, el hardware y no tanto el software. Luego, entre los setentas y los ochentas, lo que sucede es que al modificarse las computadoras, al haber tanta cantidad de computadoras, las empresas empezaron a.
+empaquetar el software por separado y a cerrar el código y bueno, tal vez se preguntan cómo, pues mediante derechos de autor cerraron el código, prohibiendo a los usuarios ver o también modificar cómo funcionaban los programas.
+Y por otro lado, en el 83 hasta el 85 Stallman lo que hizo fue que en el 83 lanzó el proyecto no.
+Para crear un sistema operativo que según él, que verdad, como siempre, la idea de él que fue que fuera completamente libre. Entonces quería un sistema operativo completamente libre. En el 85 fundó bueno, en pantalla se ve FSF, la Fundación Free Software Foundation.
+Para dar un respaldo ético y legal a la vez.
+en el y en el 91 92 lo que pasa es que el proyecto no tenía casi todo listo excepto el cerebro o el núcleo verdad Por decirlo así y en el 91 lo que decimos crea es el núcleo Linux
+Entonces, lo que pasa en el 92 es que se combinan nuevos proyectos tanto NU como Linux.
+Ya que uno necesitaba el núcleo, ¿verdad? Como mencionaba, y pues lo que hizo fue dar origen al sistema operativo que estamos hoy en día, ¿verdad? En servidores y demás.
+Por la parte de los fundamentos de software libre, encontramos que existen cuatro libertades.
+Estos empiezan en el índice cero, curiosamente como los arreglos, ¿verdad? En progra, aunque de hecho.
+El libertad cero fue la última que se.
+¿Que se consiguió? Lo que pasa es que la pusieron de primera porque se consideró que era lo más, lo más importante, era como la base, entonces por eso quedó primera.
+Y bueno, lo que se considera aquí es que el software libre.
+Si no cumple estas cuatro.
+¿Bueno, no es ojos libre, verdad?
+Empezando por el cero.
+Que lo que dice aquí es ejecutar, porque lo más importante es tener acceso al software, entonces sin acceso a él, sin poder usarlo, pues.
+No cumpliría.
+En la parte de la libertad, uno quería estudiar y esto lo que significa es como que.
+Podemos ingresar al código fuente y entenderlo.
+Porque tendríamos que tener acceso, que sería la uno y la 2 sería lograr ingresar y estudiarlo, entender el código fuente, cómo funciona el sistema.
+Y la libertad 2 sería redistribuir.
+Que vendría siendo como compartir copias del programa.
+Distribuyéndolas para ayudar a otros, la parte de la libertad 3, la libertad 3 se llama mejorar.
+Porque pues mediante la modificación del código, ¿verdad? Código fuente se pueden publicar mejor.
+Y se Y se usa que principalmente sea para el beneficio de la comunidad, ¿verdad? Para lograr contribuir a la misma comunidad.
+Y en la parte de copyleft versus permisivos.
+Acá, pues lo que dice es son las 2 tipos de.
+De licencias.
+Open source se viven en estas 2 grandes familias.
+Por la parte de las permisivas.
+Nosotros encontramos que también se les dice atribution style, esas son licencias.
+Que logramos ver que son flexibles porque le permiten tomar el código libre.
+Y se puede modificar e incluso permite cerrarlo.
+Para venderlo en un producto comercial.
+Pero la exigencia es que le den crédito al creador original.
+Y por la parte, el copyleft.
+Y ahí en pantalla también se puede ver que dice decir porque la fire license.
+Es algo que dicen, es que son recíprocas, así como el nombre lo dice, porque si nosotros hacemos una mejora o un trabajo derivado.
+Tenemos que publicarlo, pero bajo la misma licencia libre.
+Son virales porque.
+Pues buscan proteger el código para que ninguna empresa se adueñe ni ni el golpe privativo.
+unas frases que encontré que pienso que dejan bien claro la diferencia es que las permisivas vienen a decirnos te regalo mi código haz lo que quieras pero incluso venderlo y puedes cerrarlo pero no borres mi nombre
+Mientras que el copyleft lo que dice es te regalo mi código para que lo uses, pero hay una condición y eso es que todo lo que construyas con él también tiene que ser regalado y también tiene que ser abierto para los demás. Entonces ese sería el la principal, la principal diferencia.
+Entre las 2 grandes familias que hay de licencia.
+
+Adrian Vinicio Chaves Marin   1:25:43
+Bueno, con respecto a lo que es software libre y open source, el versus verdad, este podemos decir que software libre se enfoca más que todo a la libertad del usuario y este el open source se enfoca más al desarrollo y colaboración.
+Este, en este caso, el Open Source bueno, puede revisarlo y ayudar a mejorarlo. Siguiente, compañera.
+Con respuesta al ecosistema de software libre, este podemos encontrar un montón de aplicaciones en distintos, bueno, por así decirlo, hábitos, ámbitos, en digamos, por ejemplo, en base de datos tenemos a Postgrey SQL, también tenemos el que.
+Los compañeros nos hablaron ahorita de Docker en servidores, podemos encontrar en ofimática, por ejemplo, el LibreOffice, este en sistema operativos encontramos a lo que es Linux y bueno, en realidad hay un montón que actualmente utilizamos, que son como por así decirlo, la columna vertebral de la infraestructura tecnológica.
+Que mueve el mundo actualmente.
+Siguiente compañero.
+Este bueno, el impacto global, este lo que es el este, el tema de open source y este lo que es este, ya se me olvidó. Bueno, este tema, bueno, el impacto global.
+Por así decirlo, bueno.
+
+LUIS FELIPE MORA UMAÑA   1:27:27
+Temple.
+
+Adrian Vinicio Chaves Marin   1:27:30
+This is going to go.
+
+LUIS FELIPE MORA UMAÑA   1:27:32
+Tiempo, estamos.
+
+Adrian Vinicio Chaves Marin   1:27:33
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:27:34
+2 minutos igual para que no nos pudiera presentar.
+¿Qué preguntas?
+Kendall, una pregunta para los compañeros.
+
+KENDALL JOSUE MATA SANCHEZ   1:27:59
+Sí, profe, este era sobre.
+Este, el compañero me mencionó que también este hay base de datos, pero no.
+Digamos que está Ocker base datos y Linux.
+Mi pregunta es este.
+Es que no sé si se me portó qué es lo que ayuda a ir a la base de datos.
+
+Adrian Vinicio Chaves Marin   1:28:30
+Este Bueno, no sé si la pregunta más bien es relacionada a qué bases de datos podemos encontrar.
+
+LUIS FELIPE MORA UMAÑA   1:28:31
+Do you?
+
+KENDALL JOSUE MATA SANCHEZ   1:28:39
+Huh?
+
+Adrian Vinicio Chaves Marin   1:28:40
+Sí, digamos, bueno, podemos encontrar, digamos, a María DB, MySQL, Postgre, este las serían algunas de las que le puedo mencionar.
+
+LUIS FELIPE MORA UMAÑA   1:28:50
+Sí.
+
+Adrian Vinicio Chaves Marin   1:28:56
+Digamos.
+
+KENDALL JOSUE MATA SANCHEZ   1:28:56
+Perfecto, compañero, así.
+
+LUIS FELIPE MORA UMAÑA   1:29:02
+¿O K, más preguntas, más si quería comentar algo.
+que podemos volvernos un toque a la a la parte de slides anteriores a ver que mencionaba Kendall de hecho.
+Comentario.
+¿Qué este básicamente este Kendall?
+La idea en general es que digamos este para todo lo que usted necesite.
+Hay una versión libre, siempre hay software libre para todo.
+Verdad este ahí para desarrollo verdad como este BS Code usted no quiere correr Visual Studio puede correr Visual Studio Code este bases de datos, usted no quiere correr SQL server tiene postgre tiene MySQL verdad que MySQL de hecho es una de las más utilizadas. Y si no quiere correr Windows este recorrer este o no quiere correr este.
+iOS corra Linux verdad o corra este bueno, corra realmente ubuntu o no sé, hay muchas variantes de ubuntu ahí todos son libres en el mercado para que las personas las puedan utilizar. Lo mismo para server, verdad? Digamos que este toda esta parte de Docker y Code Metics como les mencionaba de usted puede contar diferentes imágenes de diferentes sistemas operativos.
+Sobre la misma.
+¿Sobre el mismo ambiente, verdad? Y así para para muchas cosas, verdad, en diferentes.
+
+Adrian Vinicio Chaves Marin   1:30:24
+Okey, disculpe, ahí también para aportar también encontramos navegadores como el Mozilla, puede ser.
+
+LUIS FELIPE MORA UMAÑA   1:30:27
+Mhm.
+Mozila, correcto, de hecho, Mozila es uno de los más famosos, este también Opera Mini.
+
+Adrian Vinicio Chaves Marin   1:30:32
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   1:30:36
+Este y si no me y si no me equivoco, brave browser también es este open source.
+
+Adrian Vinicio Chaves Marin   1:30:36
+Exacto.
+Hay uno que llama Cronium, Cronium, creo este.
+
+LUIS FELIPE MORA UMAÑA   1:30:46
+No, Chronium, Chronium es la base.
+Sobre la que se construyen los browsers ahora.
+Es como decir el core del de la mayoría de los browsers.
+
+Adrian Vinicio Chaves Marin   1:31:01
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:31:03
+Mhm.
+Vamos por ahí.
+Que este muchachos, comentarios finales, yo tengo un par de observaciones de la presentación en general.
+
+Adrian Vinicio Chaves Marin   1:31:18
+Bueno, profe, ahí para.
+Para agregar, tal vez bueno.
+Las ventajas.
+De lo que es software libre, más todo la parte significativa de los costos, transparencia y la capacidad de personalización que se tiene, verdad que cada uno puede puede trabajar a como guste.
+Ese di este tema de los trajes, la verdad, porque es como la base pionera de la informática de hoy en día.
+
+LUIS FELIPE MORA UMAÑA   1:31:56
+ahora todo es open source todo vean que ha hecho Microsoft liberó todo el código de de .NET y ahora todo el código de .NET es open source también pero sí vean este comentarios voy a centrarme un poquito más específico en la presentación principalmente al inicio
+este un poquito más de de
+De manejo del tema en el 80% de la presentación pareció que estaba leyendo porque vamos a ver cuando uno lee así ido ustedes uno va leyendo, leyendo, leyendo, se devuelve la presentación y empieza a conectar cosas de la de la presentación por ahí. Entonces este de no, es muy fácil.
+perder la atención del público. Lo otro también es en un tema tan grande como este, porque es un tema bastante grande, yo me hubiera hecho la pregunta de qué cosas pueden tener impacto para mis compañeros, por ejemplo. Entonces te hubiera omitido mucho de la primera parte de la
+de la presentación o si lo hubiera mencionado, lo hubiera mencionado de una forma muy breve, verdad? Porque al final es eso, verdad? Este el software hoy en día o el software, digamos, este uno tiene que tener mucho cuidado, principalmente cuando uno trabaja en un ambiente empresarial, digamos de que ustedes van y construyen una aplicación y ustedes no sé, llámanos al ejemplo de hoy en día, ustedes van y dicen a la llamada, es que
+ocupo un procesador de imágenes para esto esto y esto verdad y listo okay entonces para leer pasaporte digamos de que ustedes trabajan en migración Entonces ustedes se van ta ta ta verdad llega la vara este de programa liberan el software cuando el software lo libera este de por alguna razón
+Hay una filtración.
+Y esa filtración era un software libre, entonces usted no tiene que ir a quien, primero no tiene que ir a quién echarle la culpa porque si usted va donde la donde. Donde la persona digamos que lo desarrolle le va a decir más que se va a dar el libro, usted puede adaptarlo como quiera, ¿Verdad? Y es su responsabilidad usarlo.
+segunda segunda cosa que puede pasar por ejemplo este que llegue alguien de afuera y diga mira ese es mi software y si usted está lucrando con él usted tiene que pagarme a mí y tiene que pagarme todo desde que esta vara se liberó hasta el día de hoy con intereses. Entonces tienes que ir a pagar verdad y eso ya
+un proceso legal grandísimo, verdad? Entonces van desde implicaciones básicas hasta implicaciones de más pesada legalmente, verdad? Y hay que tener mucho cuidado siempre con las cosas que usamos, verdad? No solamente es meter cosas por meter cosas, verdad? Y ahí es donde viene el tipo de licencias que que que hay, verdad? Porque hay múltiples licencias de múltiples cosas, está multi, está bache,
+Están las que son este puramente ya las deficiencias privativas puramente. Entonces, si es un tema de mucho cuidado, que todos deberíamos por lo menos saber y entender, porque como les digo, digamos, el peor de los casos es un tema legal. Y si es un tema legal en la legalidad, el yo no sabía.
+No cuenta.
+Okay.
+
+Adrian Vinicio Chaves Marin   1:35:09
+Profe, para no sé, para agregar un poco, yo bueno, trabajo para el sector público, ¿verdad? Y casi en el sector público se usa muy poco, como se dice en las aplicaciones que sean software libre por la parte de cómo se llama de seguridad, ¿verdad? Casi siempre todo es pago debido a que.
+
+LUIS FELIPE MORA UMAÑA   1:35:10
+Yeah.
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:35:31
+Y hay que actualizar a cada rato. En el caso, en mi trabajo se usa Intune, entonces todas las aplicaciones caen por Intune y digamos esta parte, bueno, es diferente, verdad, porque no se usa tanto debido a que tiene muchos peligros, verdad, a nivel informático, pero sí es muy importante lo que usted está diciendo.
+
+LUIS FELIPE MORA UMAÑA   1:35:55
+sí, claro, bye, su madre, muchas gracias.
+
+TAYRON ALONSO SALAS NUÑEZ   1:35:59
+Me parece que ahorita Sony tiene problemas legales con lo que están haciendo con los videojuegos porque son digitales, pero al final uno termina comprando una licencia, al final no es dueño de nada.
+
+LUIS FELIPE MORA UMAÑA   1:36:10
+Exacto de hecho es uno de los de ya ahí entra toda la parte del antimonopolio y todo eso verdad que ya es un tema legal ahí más grande verdad pero este vamos a ver eso eso es tan simple como el no sé si vieron hace un par de años en Costa Rica este hay una vara que ustedes este ustedes le dicen como ma este no puede pagar con tarjeta
+o le decían solo efectivo usted ya no le pueden decir y pasó una ley que dice que a usted un local no le puede decir que usted solamente puede pagar, solamente tiene un método de pago. Usted tiene que dar por lo menos dos métodos de pago, verdad que ahora está a toda la hora es simple y demás. Pero sí, digamos, básicamente eso mismo, verdad no puede monopolizar ese tipo de cosas porque excluizar la población.
+
+DANNEL ROBERTO QUESADA SOLANO   1:36:50
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   1:36:52
+Sí.
+
+DANNEL ROBERTO QUESADA SOLANO   1:36:53
+No le pueden negar las ofertas, digamos, no son mucha gente, pretende seguirlo haciendo, pero si hay ofertas estoy cantando en tarjeta como en efectivo o simple, o son excluyentes.
+
+LUIS FELIPE MORA UMAÑA   1:36:53
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   1:37:08
+De un método de pago.
+
+LUIS FELIPE MORA UMAÑA   1:37:11
+Exacto, exacto. Entonces todo eso, al final todo es regulación, verdad? Y como les digo, este, hay cosas para las que a nosotros como ingenieros en general no se nos prepara tanto, verdad? Y como les digo, el día de mañana cuando algo pasa,
+Usted no puede simplemente llegar a decir es que yo no sabía.
+Y.
+
+DANNEL ROBERTO QUESADA SOLANO   1:37:38
+Profe, el caso de Winrar cae en este escenario.
+
+LUIS FELIPE MORA UMAÑA   1:37:44
+Winrod tiene una licencia muy particular.
+Pero sí, Winrar es un software que es licenciado.
+pero los maes ya por por decisión de ellos este dejaron la licencia opcional, por decirlo así, si quiere nos paga, si quiere no nos paga, pero es un software licenciado.
+
+DANNEL ROBERTO QUESADA SOLANO   1:38:09
+Okay, okay.
+
+LUIS FELIPE MORA UMAÑA   1:38:10
+Mhm, hay software como todo, verdad? Y cuando se termina el periodo de prueba, ahí murió, verdad? Hasta ahí llega. Ellos dijeron de no, si nos quieren pagar de hagamos lo más contributivo, verdad? Ah, por ejemplo, una vara como oxygen que oxygen es open source, verdad? Si usted quiere donar algo a la comunidad o al desarrollador, lo puede hacer.
+¿Pero si no te puede seguir usando el software, verdad?
+Y así hay un montón de software que andan por ahí. El lo importante es ver el tipo de licencia que estás utilizando, porque yo puedo publicar algo bajo una licencia, digamos open source, pero este porque hay diferentes tipos de licencia open source, verdad? Algo que es donde necesariamente quiere decir que es gratis para todos, verdad? Cosas que son open source, que se tiene que pagar.
+Este entonces este si yo la lidero, no sé, este un MIT así tal vez que es una vara de desarrollo este se utiliza más como para desarrollo investigativo. Yo la puedo liberar, usted la puede utilizar.
+Pero yo le puedo decir más, este pero está libre, ahí está gratis. Si quiere regalarme algo y regáleme algo, digamos básicamente.
+Pero Winter, el code was DSR.
+Más preguntas, comentarios. Muchas gracias compañeros.
+
+Adrian Vinicio Chaves Marin   1:39:37
+As it were.
+
+LUIS FELIPE MORA UMAÑA   1:39:38
+Pero ya este Luis y Anel.
+
+LUIS ALONSO ESPINOZA BONILLA   1:39:45
+O K.
+A veces a la hora de presentar esto es medio raro, pongo en una pantalla y presentan otra, entonces me dicen si.
+Sí se ve, ya lo pongo a presentar, vamos a ver.
+
+LUIS FELIPE MORA UMAÑA   1:40:00
+Listo.
+
+LUIS ALONSO ESPINOZA BONILLA   1:40:01
+Sí, okey.
+
+LUIS FELIPE MORA UMAÑA   1:40:02
+Hello with you.
+
+LUIS ALONSO ESPINOZA BONILLA   1:40:04
+Bueno, buenas noches, este mi compañero Daniel y yo vamos a hablar sobre, bueno, las bases de datos, bueno, no SQL. este.
+Bueno, sí, primeramente que es este no es QL, este básicamente este son sistemas de bases de datos que no dependen exclusivamente de lo que es el modelo tradicional de bueno, lo de las tablas, columnas, bueno, que tiene.
+El SQL es sí tradicional, ese no quiere decir que no tenga, digamos, como reglas o estructura en sí, sino que son como más especializados dependiendo de este en lo que se necesita. Básicamente estos surgieron porque, bueno, y ya en aplicaciones, bueno, ya más cosas más.
+Modernas, el volumen de los datos ya es mucho más grande. Hay diferentes, bueno, se necesita así manejar este en grandes cantidades de datos, tal vez en fracciones de segundo, cosas así, con miles de usuarios, este ahora sí, dependiendo de este el servicio.
+Este Bueno, el nombre sí, que no, Esquivel no es básicamente que no al SQL, sino como este significado en inglés 'Not Only SQL'. Entonces, bueno, no es como para reemplazarlo, sino que este es como para.
+Sí, como mencioné antes, como más especializado, dependiendo a este lo que son sí distintas tareas.
+Hay diferentes modelos aquí, bueno, funcionamos cuatro. este Bueno, el primero de acá es el clave valor, este en que básicamente este funciona como un diccionario, este ya que digamos los datos se guardan este como una clave única, que bueno, y es básicamente como una etiqueta.
+Que lo que hace es este al usar esa etiqueta, se recupera toda la información relacionado a eso. Por ejemplo, por decir algo, no sé, como usuario uno este a la hora de decir consultar el usuario uno se va toda la información este relacionada este a esa etiqueta. este.
+Y sí, básicamente trae toda la este mi información sin.
+Importar que sea como distintos tipos de datos, como no sé, archivos de texto o otros documentos. O sea, lo trae todo así mientras esté esté relacionado. Este el otro sería bueno, el siguiente serían documentos. Este aquí básicamente se almacena generalmente.
+La información en estructuras tipo, ya sea Jason o piso, creo que se va así este bueno, el documento básicamente este.
+Puede perdón, ahora sí, este bueno representa, por ejemplo, como se puede usar como para un producto. Este se utiliza mucho cuando son este catálogos, por decirlo así. Este y bueno, es útil porque si se quiere añadir una característica, no sé si se habla de teléfonos que todos tienen, no sé, nombre, lo de la cámara, píxeles o cosas así.
+así este si se quiere Añadir en específico a uno que no sé es resistente al agua por decir algo este no hay que bueno rediseñar nada básicamente siempre si se este se puede Añadir este decir bueno es una de las ventajas de El msql que bueno
+Que si es este inflexible, este luego está lo que son las bases de columnas anchas, este bueno, como la Sandra o Bigtable, este estas este modelo básicamente este organiza la información utilizando lo que son claves y familias de columnas.
+Este más que todo, está como pensado para que cuando se manejen grandes cantidades de datos, este y muchas estructuras, sí como que se ocupan.
+Los datos rápidos, como no sé por segundo, bueno, sí que pasan muchos datos este al mismo tiempo, en lugar de tener todo 100 tablas fijas. este.
+Este para los registros, este las columnas se agrupan este más como en familias. Entonces así se tiene el distinto tipo de información. No sé si para que una Ovistar, bueno, ya no es Movistar, el Liberty, digamos, tienen los datos de los usuarios cuando gastan, no sé, el saldo.
+Por decirlo, no sé, en llamadas, mensajes o los datos móviles, cosas así. este Bueno, esas familias, digamos, la familia, no sé, las llamadas, por poner un ejemplo, ahí ve este sí, bueno, la información ya como más este específica. este Después está lo que son.
+Este los grafos que básicamente aquí son los nodos que representan este las entidades. Bueno, y las relaciones entre estos, bueno, y se relacionan así, perdón, entre los nodos. Este básicamente no solo guarda la información, sino como las conexiones que.
+Que hay entre ellos. Se utiliza, por ejemplo, mucho en lo que es, tal vez como Netflix a la hora de hacer alguna este recomendación. de . De hecho, en el menú sale ahí como porque viste tal serie, lo recomendamos tal, cosillas así, por ejemplo.
+Este y bueno, vamos con digamos si algunas ventajas ya de manera simple, este lo que es bueno, no tiene SQL facilita la escalabilidad horizontal, este porque básicamente se pueden agregar más, no bueno, servidores.
+Este, en lugar de depender de tal vez un servidor grande este y potente, bueno, si se pueden agregar ahí más este los pequeños este y también permite diseñar este lo que es todo el sistema, bueno, lo del almacenamiento y todo eso, lo de los datos este dependiendo de cómo se va a utilizar.
+O sea, si solo se necesita formar de manera que bueno, aunque sean un montón de datos, unos en específico los lees bastante rápido. este Bueno, se puede hacer así que en lugar del SQL que vivamos sería como el tiempo normal de uno no este especializado, nada más que sí.
+al hacerlo así digamos especializado este preguntas digamos para los que fueron consultas para los que no tal vez se realizaron tal vez pensado en eso este en sí este tarda más tiempo entonces si más recursos y todo eso Entonces si no
+Básicamente no.
+No planea como reemplazar el SQL, sino que por lo general las empresas trabajan como en conjunto con ambos, este dividiéndolo así la carga de distintas este partes. Vamos a ver, ahora sí continúa mi compañero.
+
+DANNEL ROBERTO QUESADA SOLANO   1:47:32
+Okay Bueno esto ya habíamos mencionado un poquito qué dónde se deben de utilizar o cuáles son las aplicaciones más frecuentes para las low SQL en la parte de streaming y perfiles
+De usuarios.
+Esto va a manejar, por ejemplo, aplicaciones como Netflix, como Disney Plus, Paramount, todo lo que tiene que ver con streaming y se utilizan más frecuentemente Redis y Dynamo para la parte de mensajería y redes sociales. Neo4j y Amazon Net.
+para cuando se necesita manejar datos de alto volumen y de alta disponibilidad y hacer muchas consultas a nivel masivo. Se utiliza Cassandra y Action Vector más frecuentemente para la parte de telemetría.
+A IO tickets, the internet of things utilizan, perdon.
+y influx Timescale, incluso Amazon, AWS. O sea, cuántos ven, por ejemplo, Fórmula uno o deportes en los que necesiten llevar marcas de tiempo. Se utiliza este tipo de bases de datos y también para seguridad.
+Basada en cloud, como por ejemplo Wiz, que trabaja con modelos de grafos para poder hacer las relaciones entre aristas y dar la información en un modelo gráfico.
+Justas pasamos a la siguiente.
+¿Ahora, cuáles son los criterios de selección que yo debería cubrir?
+para saber específicamente qué tipo de base de datos debería usar. Bueno, primero saber qué tipo de consultas se van, se van a hacer, cuál va a ser el volumen y la latencia también de los de los datos. Después.
+Qué modelo va a representar los datos sin necesidad de transformarlos demasiado, sin tener que hacerles ahí mucho maquillaje para ponerlos en un formato fácil de entender y de interpretar.
+Luego la consistencia, la cantidad de transacciones, tipo de transacciones que voy a hacer, qué disponibilidad necesito y qué tipo de recovery va a tener la base de datos.
+Como cuarto punto, validación de índices, qué particionamiento voy a necesitar, qué distribución y cómo voy a hacer las pruebas de carga si lo voy a hacer con volúmenes altos que sean representativos para simular.
+Casos de consultas reales y, por último, la estimación de la operación, seguridad, también la dependencia de el proveedor y el costo que esté relacionado a la base de datos.
+Yeah.
+Voy a compartir un momentito, creo que ya esa es la última, ¿verdad, Luis? Si gustas.
+O K, voy a compartir un momentito para mostrar este de Mongo TV.
+que esto es una base de datos que habíamos utilizado anteriormente, en la que tenemos una conexión a un local host nos permite hacer consultas por medio de un pipeline. Entonces puedo ir, puedo ir, como se llama, personalizando cada consulta, por ejemplo, en este caso.
+Lo que hicimos fue bueno la.
+El cliente que más ha gastado, o sea, quién ha comprado más productos o ha gastado la mayor cantidad de dinero. Entonces él nos permite.
+Trabajar con los arreglos.
+que van a tener todos los detalles del cliente, los productos, los precios y las fechas lo que vamos a hacer como primera parte es hacer un win que eso nos va a permitir separar los valores del arreglo o de la lista y trabajarlos por separado esto es un vectorización
+Luego agruparlos por medio del.
+del campo que nosotros identificamos como crítico. En este caso, lo que ocupamos ver es cuál es el cliente que nos compró. Entonces vamos a definirlo por el cliente y luego vamos a hacer esto.
+
+LUIS FELIPE MORA UMAÑA   1:52:40
+Tiempo.
+Esto estamos preguntas.
+
+Kaik Andy Yocks Sandoval   1:52:56
+Profane.
+
+LUIS FELIPE MORA UMAÑA   1:52:59
+Yeah.
+
+Kaik Andy Yocks Sandoval   1:52:59
+Sí, yo tengo una preguntica, bueno, y bueno, compañeros, yo tengo una pregunta para ustedes. Más que todo era como que como que se me volvían a explicar entre la diferencia que ustedes me habían comentado del modelo de documentos y el de grafos.
+
+LUIS FELIPE MORA UMAÑA   1:53:00
+Yo no llegué a ellos.
+
+DANNEL ROBERTO QUESADA SOLANO   1:53:24
+Okay.
+Vamos a ver si el de documentos tenemos bases de datos, como por ejemplo el MongoDB que nos permite utilizar, nos permite almacenar documentos en formatos de JSON, XML, PDF, imágenes y el de grafos lo que hace.
+Es que hace relaciones por medio de las aristas de los modelos de grafos, entonces es más fácil verlo a nivel gráfico.
+Ver las relaciones entre valores.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:54:04
+bueno, okay, muchísimas gracias.
+
+LUIS FELIPE MORA UMAÑA   1:54:11
+Adrián, iba a preguntar algo.
+
+Adrian Vinicio Chaves Marin   1:54:17
+Profe, bueno, John, este las bases de datos, este las no SQL, siento que no utilizan ni columnas ni filas, ¿verdad? Porque todo es en formato JSON.
+
+DANNEL ROBERTO QUESADA SOLANO   1:54:32
+No, de hecho, de hecho, de hecho, si utilizan columnas, lo que no utilizan es filas.
+
+Adrian Vinicio Chaves Marin   1:54:32
+Como las relacionales, perdón.
+
+DANNEL ROBERTO QUESADA SOLANO   1:54:39
+Y los datos se almacenan en columnas de forma independiente. Eso es la mayoría de las estructuras que tienen estas bases de datos, porque las relacionales es en filas. entonces.
+Generan o guardan mucha información.
+Pero estas es por separado en columnas.
+No sé si te respondo correctamente.
+
+Adrian Vinicio Chaves Marin   1:55:10
+Gracias.
+Sí, solo bueno, gracias.
+
+DANNEL ROBERTO QUESADA SOLANO   1:55:15
+Pura vida, sí, las que las que utilizan más formato JSON son las de las de documentos como Mongo.
+
+Adrian Vinicio Chaves Marin   1:55:25
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:55:32
+Sí, muchachos, matario final.
+
+LUIS ALONSO ESPINOZA BONILLA   1:55:39
+No, sí, o sea que bueno, la idea principal sí, a lo que fueron creadas, no como para sustituir este el SQL tradicional, sino para cómo trabajar en conjunto. Se tiene el principal y luego ese ya no SQL, este para tal vez tareas más específicas que sí se ocupa.
+
+DANNEL ROBERTO QUESADA SOLANO   1:55:39
+I don't really up.
+
+LUIS ALONSO ESPINOZA BONILLA   1:55:59
+Es una mayor velocidad, o sea, para una especialidad para así brindar mayor velocidad y que las consultas sean más simples.
+
+LUIS FELIPE MORA UMAÑA   1:56:11
+Okay.
+Este comentarios generales, bueno, Anel, no sé si iba a cerrar con él, perdón.
+
+DANNEL ROBERTO QUESADA SOLANO   1:56:18
+Sí, en realidad es muy interesante, muy interesante ver esto porque, digamos, uno no se imagina el nivel de complejidad o de diversidad que tienen las bases de datos, verdad, enfocadas en el propósito que cada uno va a cumplir. No todo es SQL, no todo es.
+
+LUIS FELIPE MORA UMAÑA   1:56:18
+a todo mundo.
+
+DANNEL ROBERTO QUESADA SOLANO   1:56:38
+María de B y es muy interesante. Por ejemplo, a mí me llamó mucho la atención las de telemetría. Lo precisas que son la cantidad de información que pueden guardar sin que vuelvan un sistema.
+pesado y lento y que las consultas digamos se muestren super super rápido los resultados Entonces sí muy interesante y también la parte de IoT con la cantidad de dispositivos que hay hoy por hoy que o sea que andan recopilando datos por ejemplo un smartwatch toda la información personal que
+que guarda a nivel de salud y demás, inclusive los monitoreos que hace, mientras que mientras que el usuario está dormido. Entonces no cae en conciencia de todo el diseño que hay detrás de esas métricas cuando uno son simplemente un resultado ahí sencillo.
+Representado con número.
+
+LUIS FELIPE MORA UMAÑA   1:57:39
+Okey, claro, buenísimo, muchachos, muy bien, este yo tenía 2 comentarios, este uno.
+Creo que la presentación de la información puede mejorar. En algunas diapositivas tengan mucho texto y no sé si Luis puede volver a compartir, por favor.
+Bueno, eso es otra, no se termina de compartir hasta que no se cierren las preguntas y demás verdad porque tiene el mismo material de apoyo, entonces tenemos material de apoyo este de cuando vengan las preguntas ahí es donde uno se apoya en el material para para ver ciertas cosas.
+Este puedo volver atrás un toque, porfa, como 3 diapositivas atrás, si no me equivoco, es esta, esta lo ves, está muy cargada.
+Hay mucho texto.
+aquí y todas estas cosas el que las debería manejar es usted o si lo hago son tan importantes como para que tengan que estar listadas. Hago diapositivas por aparte, verdad? Para que no se cargue tanto. Vamos a la de atrás, porfa.
+Esta de aquí lo es.
+está muy cargada, digamos, en el aspecto visual, porque la letra está muy pequeña, está muy apuñado, todo está en un puñito y tenemos mucho espacio, digamos en otros un poquito más de espacio, verdad? van por ahí. Entonces, por ejemplo, este no sé si tienes que meter ejemplos, verdad? Los ejemplos están quitando mucho tiempo. Puedes cortarlos, verdad? Al final este
+Creo que todo este tipo de cosas, o principalmente esta, se puede reducir con palabras clave dentro de cada una, verdad? Vamos por ahí.
+
+LUIS ALONSO ESPINOZA BONILLA   1:59:14
+Bueno, de hecho, bueno, en una clase, bueno, no sé si me la ha pasado, antes pasaba, usted había mencionado, bueno, que en la presentación algo como de 2 diapositivas. Entonces hicimos como 2 presentaciones, esta y una con nada más 2 diapositivas, pero sí era, si gustas, es lo mismo, nada más.
+Que sí, nada más era como la las preguntillas y eso entonces.
+
+LUIS FELIPE MORA UMAÑA   1:59:35
+Mhm.
+
+LUIS ALONSO ESPINOZA BONILLA   1:59:40
+Hicimos una así que tuviera nada más esta parte que es y todo eso y luego esta la parte este ya o para que se utilizan y así es así, pero sí.
+
+LUIS FELIPE MORA UMAÑA   1:59:52
+Mm.
+No, como le digo, está bien, digamos nada más. Son como esos detallitos por ahí en que algunas partes hay como muy cargada la presentación. Este un detalle ahí que yo quisiera agregar ahí, digamos, como a la buena información que ustedes traen es que vamos a ver si nos remontamos al hecho histórico, verdad? Las bases de datos.
+Nacen verdad las primeras que nacen son las relacionales, verdad? Bueno, primero nacieron las victris, pero ya no es otro tema todavía más antiguo, pero al final este todo eso nace de los de los archivos, verdad? Los ficheros, perdón de los ficheros que tenían antes ahí en los setenta, no sé si se acuerdan esos que han visto en las películas ahí o.
+O cuando haga el doctor que sacan esa que a veces chunche y los ampos, verdad? Entonces ahora entonces este los maes quisieron automatizar eso. Entonces este al final todo se relaciona, verdad? De interés entidades y de qué se relaciona con qué, verdad? Y ahí fue evolucionando el concepto, verdad? Hasta que llegó un punto a una era tecnológica.
+Donde ya no digamos.
+donde ya no se pudo estirar más el concepto hacia otros ambientes.
+todavía sigue siendo sumamente utilizadas verdad eso no va a morir verdad eso va a seguir ahí pero este hay ciertas cosas eso es como los patrones de diseño los patrones de diseño cada uno tiene una receta en específica es lo mismo es una analogía perfectamente completa
+Para la parte de las bases de datos no SQL. Cada una de las bases de datos no SQL tiene una finalidad y tiene un. ¿Cómo se llama esta parte? Un.
+un ámbito de trabajo por decirlo así por ejemplo este no sé Google Maps verdad Google Maps es una base de datos orientada a grafos verdad principalmente cuando cargas moverse de un lugar a otro verdad porque tener rutas es el típico ejemplo de grafos verdad
+Este las bases de datos. De hecho, digamos este las bases de datos de grafos nacieron mucho o tuvieron un auge así, digamos, como como empezaron a reventar a partir de que nació Twitter, verdad? Porque imagínese la cantidad de joins en las tablas que usted tiene que tener para moverse y mostrar sugerencias, verdad? Entre diferentes categorías y demás.
+Entonces ahí es donde se, como te dice, coloquialmente, se ingedió en un toque, mientras que en bases de datos y aquí va a agregarle un poquito lo que ustedes le dieron la respuesta a Adrián. Las bases de datos no SQL no son cuadradas, verdad? Por ejemplo, si usted puede tener, por ejemplo, a mí me encantan las bases de datos de grafos.
+Usted puede tener en una base de datos de grafos una entidad persona con siete fields, verdad? O con siete propiedades y no sé, digamos otra persona que tenga 15 propiedades y otra que tenga tres nada más, pero sigue siendo una entidad, pero sigue siendo dentro de la entidad, verdad?
+Como se dice en base de grafos dentro de la etiqueta seguir cabiendo dentro de la etiqueta persona.
+Así mismo para los diferentes bases de datos, verdad? Por ejemplo, que ustedes que mencionan mongo, verdad? Imagínense ustedes lo que es cargar un archivo un Jason un PDF, no sé cargarlo, verdad? Y almacenarlo en memoria dentro de una base de datos que no sé, digamos, no tiene mucho sentido, después tiene que cargarlo en memoria para buscar a ver si es esto y así.
+Porque la base de datos no es la base de datos. SQL no nació para eso, para analizar contenido de archivos mediante una consulta este para zonas de mongo, verdad que es parte un poquito de lo que de lo que va todo este tema, verdad? Y al final es eso, verdad? Este de siempre es bueno, verdad que revisen.
+y que sepan que existen, verdad, digamos, porque si hay problemas de el problema de performance y escalabilidad puede ser muy grande, digamos, si yo ya tengo que hacer, no sé digamos cuánto es de quién lleva bases de datos y ya yo tengo que hacer más de tres cuatro joins para hacer una consulta sencilla, ya yo debería evaluarme si estoy utilizando el esquema de base de datos que debería utilizar.
+Ahora sí, para ahí va.
+No sé si si Anel y Luis tenían un comentario ahí adicional a esto.
+
+LUIS ALONSO ESPINOZA BONILLA   2:04:20
+Bueno, parte sí, eso sería.
+
+DANNEL ROBERTO QUESADA SOLANO   2:04:24
+No creo que creo que únicamente profe, sí.
+
+LUIS FELIPE MORA UMAÑA   2:04:25
+Thumbs.
+Mhm.
+Okey, dale, un beso.
+
+DANNEL ROBERTO QUESADA SOLANO   2:04:29
+Bueno, y como comentario, también voy a hablar de temas de porque es un tema picado, pero yo sí vi sistemas contables de tarjetas.
+
+LUIS FELIPE MORA UMAÑA   2:04:41
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   2:04:41
+Entonces, imagínese cuando todos estos modelos de.
+De que usted no es menor ahora de los ficheros.
+
+LUIS FELIPE MORA UMAÑA   2:04:52
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   2:04:52
+Sí, todo eso no me pareció tan tan de enciclopedia, porque sí, sí.
+
+LUIS FELIPE MORA UMAÑA   2:04:56
+Para allá.
+Sí, sí.
+
+DANNEL ROBERTO QUESADA SOLANO   2:05:01
+Sí, lo viví.
+
+LUIS FELIPE MORA UMAÑA   2:05:04
+Sí, es parte, parte del golpe de los 2000.
+Por lo menos aquí en Costa Rica llegó un poquito más tarde.
+Pero sí.
+Bueno, muchacho, muchas gracias, este Andy y Kendall, adelante.
+
+KENDALL JOSUE MATA SANCHEZ   2:05:24
+Es ya comparto, profe.
+
+LUIS FELIPE MORA UMAÑA   2:05:27
+Sí, señor.
+Y se alistan David y Felipe.
+
+KENDALL JOSUE MATA SANCHEZ   2:06:01
+Este ahí ve, profe.
+
+LUIS FELIPE MORA UMAÑA   2:06:04
+Descargando.
+
+KENDALL JOSUE MATA SANCHEZ   2:06:06
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:06:08
+Ahora sí, estamos adelante.
+
+KENDALL JOSUE MATA SANCHEZ   2:06:09
+Sí.
+
+LUIS FELIPE MORA UMAÑA   2:06:11
+Sí, señor.
+
+Kaik Andy Yocks Sandoval   2:06:12
+Bueno, muy buenas noches profesor y compañeros. Nosotros vamos a presentarles nuestra investigación que, como ustedes pueden ver, se llama Latex como herramienta de elaboración de papers, científicos y técnicos mediante el lobo Live. Vamos a explicar primero que nada.
+La siguiente dispositiva, que sería que es látex.
+Aquí sigue, compañero.
+Ok como ustedes pueden ver ahí látex es un sistema que literalmente permite elaborar documentos tanto científicos como técnicos utilizando los comandos una de sus principales características que podemos utilizar o lo que más se utiliza es la organización el documento mediante las
+Tanto secciones como tablas, referencias bibliográficas, figuras, ecuaciones, manteniendo siempre una estructura uniforme. A continuación, voy a explicarles también qué es el overlift.
+Entonces mi compañero ya Kendel les explicará, continúa compañero.
+
+KENDALL JOSUE MATA SANCHEZ   2:07:30
+Ok perfecto este por el otro lado tenemos que es un entorno que utilizamos para trabajar este con látex una de su ventajas es que funciona directamente con desde desde la web desde y podemos escribir este el código copilarlo Y observar el resultado este de
+de PDF también nos ofrece lo que son las plantillas recursos que pueden facilitar el trabajo con este tipo de documentos aquí quiero aclarar algo importante que es no confundir Olaf con látex que es un sistema que estructuramos el documento mientras que nos
+Es proporciona un entorno donde podemos trabajar con ese código. Una ventaja es que la práctica podemos ir realizando cambios y realizar el resultado mediante la compilación.
+En esta diapositiva le corresponde a mi compañero.
+
+Kaik Andy Yocks Sandoval   2:08:31
+Gracias compañero eh aquí como ustedes pueden ver eh vamos a explicarles sobre cómo se complementa tanto el látex como el olive eh aquí literalmente el látex y olive se pueden entender mediante un flujo de trabajo primero como ustedes pueden ver escribimos el código en látex después eh compilamos o lib procesa
+Y compila ese código. ¿Qué hacemos? ¿Qué se hace? Después se revisa una vista previa en PDF, que sería como nos permite revisar este resultado de PDF, lo que estamos escribiendo en el código de látex. Si necesitamos realizar algún cambio del código, entonces podemos llegamos al cuarto punto, que sería la modificación que se vuelva a compilar y se vuelve a hacer esta estos cambios.
+pertinentes Entonces como ustedes pueden ver en la última fase en última frase dice que la access nos proporciona este ese sistema para las estructuras y generar estos documentos mientras que nos proporciona el entorno de trabajo y compilarlo a continuación mi compañero Kendall va a explicarle la siguiente diapositiva
+
+KENDALL JOSUE MATA SANCHEZ   2:09:41
+Este estructura y elementos de paper. Un paper puede estar compuesto por este diferentes elementos, entre ellos tenemos el título, los autores, el resumen, las palabras claves, este las diferentes gestiones, figuras, tablas, este también tenemos ecuaciones, matemáticas y finalmente tenemos las referencias.
+biográficas estos elementos permiten organizar el contenido de una manera estructurada es una ventaja de trabajar con con estos elementos con latex es que podemos mantener una estructura uniforme durante todo el documento por ejemplo podemos organizar las diferentes secciones y manejar los los elementos con tablas ecuaciones sin perder la constancia
+
+Kaik Andy Yocks Sandoval   2:10:05
+I.
+
+KENDALL JOSUE MATA SANCHEZ   2:10:26
+El de formato.
+Acá mi compañero, sí, con las limitaciones.
+
+Kaik Andy Yocks Sandoval   2:10:35
+Como ustedes pueden ver, aquí hay algunas ventajas y limitaciones de manera muy puntual y precisas, que serían es una estructura consistente. ¿A qué nos referimos con esto? Que podemos trabajar en ecuaciones, tablas y referencias utilizando este tipo de plantillas también nos permite.
+utilizar como entorno en línea de OLIF en limitaciones que lo que es lo único que nos presenta como limitación principal es si encontramos una curva de aprendizaje inicial hay que informarse y buscar cómo se utiliza estos comandos y estos entornos para poder aplicar algunos diseños específicos que
+Ya le den esos conocimientos. A continuación, mi compañero les va a explicar un poquitico del ejemplo práctico en la siguiente diapositiva.
+
+KENDALL JOSUE MATA SANCHEZ   2:11:32
+ejemplo platico ahora vamos a bueno voy a presentar el ejemplo práctico Este ejemplo utilizamos comandos para definir el título los autores utilizamos sesión para crear las sesiones agregamos una lista una tabla una ecuación matemática escogimos estos elementos porque nos permite nos va a dar una
+De una manera sencilla, las diferentes capacidades que tiene la látex este la tabla nos permite este presentar información de manera ordenada y la ecuación nos permite observar cómo se puede representar las.
+Las expresiones matemáticas y lo importante del ejemplo es ver el código que escribimos.
+este que termina convirtiéndose en el documento final y a continuación nuestro compañero va a mostrar el proceso el proceso directamente o verif
+
+Kaik Andy Yocks Sandoval   2:12:27
+Bueno ahí están sí se lo grabé verdad Okay Sí sí ya confirmé Okay como ustedes pueden ver aquí está la demo de lo que se hizo en en látex verdad tanto en el látex es látex y overlift Entonces como ustedes pueden ver entonces aquí ustedes pueden ver que el Bing el Bing document creo que significa es lo que es como el
+inicio del documento de lo que queremos Que aparezca en el PDF el title como ustedes pueden ver el title literalmente aquí definimos como literalmente en el título del documento que queremos llevar el autor También tenemos el Bing abstract que el Bing abstract que es Cuál es la diferencia de este que el Bing abstract sirve como un indicador de los del
+La del resumen o lo que queremos implementar en este documento. Por eso es que se utiliza tanto el BIM abstract como el end abstract, y existe también el BIM document y el end document, que son 2 cosas diferentes, pero son del mismo del mismo comando. Ahora, en este, en este section introduction.
+¿Qué es lo que tenemos en esa en la parte del de la sección? Lo que ustedes pueden apreciar es sobre la parte de ya cuando se empieza a desarrollar todo, que sería como las diferentes secciones del documento. Entonces, por eso se pone section introduction, section utilizados, que aquí ustedes los pueden ir viendo.
+Sección de ejemplos de ecuación, etcétera, etcétera, etcétera. Entonces, a continuación, mi compañero nos va a es terminar de explicar el la.
+
+KENDALL JOSUE MATA SANCHEZ   2:14:10
+Okay, ahí como podemos ver, tenemos este el ejemplo de la tabla. Ahí podemos observar un ejemplo que utilizamos para organizar este 3 elementos relacionados con nuestro trabajo gratis que utilizamos para crear y organizar el documento o el if donde escribimos y copilamos el código y finalmente el PDF que nos permite este.
+Y visualizar el resultado.
+y luego tenemos la la ecuación que también agregamos una expresión matemática para demostrar otras de las capacidades de dates en este caso utilizamos una fórmula sencilla que representa el el promedio de 3 valores No buscamos realizar un un cálculo este muy complejo sino este demostrar Cómo podemos incorporar
+Este correctamente las expresiones matemáticas en el documento y si usted quiere, este recopila para que ellos puedan ver.
+
+Kaik Andy Yocks Sandoval   2:15:04
+Entonces como ustedes pueden aquí rápidamente ver un ejemplo si por A por B quisiéramos quitar simplemente como ejemplo de ecuación solamente lo lo borramos y se lo ponemos como ecuación le damos aquí recopilar aquí se está recompilando ves y aquí se pone ecuación de igual forma se puede volver a poner
+Y entonces ahí ustedes se aplica lo que les había comentado anteriormente de revisión, verificar y si y si tenemos algún error se puede arreglar en un mismo momento. Mi compañero les va a presentar ya como última diapositiva la las conclusiones para determinar el la investigación.
+Ya se las voy a decir de manera muy rápida, se las voy a ir comentando que pudimos concluir con esta investigación que la permite elaborar documentos tanto técnicos como científicos, y Overlift facilita los procesos que permiten trabajar, compilar y revisar los proyectos que vamos a trabajar. en.
+Las investigaciones a futuro y con eso sería todo, muchísimas gracias. y.
+Cualquier pregunta, estamos a la orden.
+
+KENDALL JOSUE MATA SANCHEZ   2:16:16
+Mhm.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:16:23
+Preguntas, compañeros.
+Ariadni, buena pregunta para los compañeros.
+
+ARIADNY MARIA NUÑEZ GODINEZ   2:16:53
+Podrían definir látex de una forma más simple y amor.
+La forma siempre en la que lo podrían definir.
+
+Kaik Andy Yocks Sandoval   2:17:03
+claro compañera bueno látex como como les había explicado es donde se empieza a crear el documento verdad Entonces a qué nos referimos con esto por ejemplo un ejemplo como les estaba comentando Qué es Bing el Bing abstract es donde se empieza el resumen
+Entonces siempre es como un esquema es Bing document Bing abstract que es donde empieza todo el resumen todo toda la carne donde ustedes quieren digámoslo como una introducción el section ahí donde vamos a poner todas las secciones como y el title que ya es al final donde ustedes ponen como la quienes
+
+KENDALL JOSUE MATA SANCHEZ   2:17:38
+What?
+
+Kaik Andy Yocks Sandoval   2:17:45
+¿De qué va a tratar el tema? Entonces así sería como una respuesta di corta y más fácil de recordar de cómo utilizar el látex.
+
+KENDALL JOSUE MATA SANCHEZ   2:17:55
+Y también para este ayudar a mi compañero si la muchacha no entendió, este latex, es más que todo un sistema para crear y organizar documentos mediante comandos, especialmente documentos científicos y técnicos. No sé si resolvieron su UA con esas con esas respuestas.
+
+ARIADNY MARIA NUÑEZ GODINEZ   2:18:17
+Súper bien, gracias.
+
+KENDALL JOSUE MATA SANCHEZ   2:18:20
+Con gusto.
+
+Kaik Andy Yocks Sandoval   2:18:21
+No sé si alguien tiene otra pregunta.
+
+LUIS FELIPE MORA UMAÑA   2:18:27
+Más preguntas.
+Sí, vamos este.
+comentarios generales este está bastante bien en términos generales está bastante bien hay un detalle ahí digamos que más visual digamos que siento que no siguieron una línea gráfica en toda la presentación digamos algunas están planas otras están con diseños otros algunas tienen cosas así otras cosas no verdad
+Entonces este ahí para que lo tome en cuenta, siempre es importante mantener una línea gráfica cuando estamos presentando un material audiovisual y lo segundo es que este.
+No sé, tal vez hubiera sido bueno también que enfocaran y y eso resalta en la pregunta de la compañera este. ¿Para qué se usará? ¿Qué me qué valor agregado me da a mí utilizar late, verdad? Este que eso es lo principal, ¿Verdad? Ustedes vienen a defender, ¿Verdad? Invitarnos a todos.
+¿A usar látex, verdad? Entonces, por qué tengo que usar látex, verdad? Eso es lo que se vende, digamos este o lo que se trata de vender a nivel de de cuando estamos vendiendo algo, verdad.
+
+Kaik Andy Yocks Sandoval   2:19:38
+Sí, o sea, bueno, nosotros tratamos de explicarlo lo más puntual posible por el tiempo, pero así como en ya más detalladamente, como usted bien lo dice, pues látex, literalmente, como les había comentado anteriormente en las presentaciones, que fue en la primera presentación, que es como la creación de documentos.
+Especializados que se necesitan una estructura más organizada y donde podemos utilizar ecuaciones, tablas, referencias por medio de los comandos que les mostré y les expliqué que son los más sencillos de utilizar y son los más de como que la forma más beginner, pero en nuestro caso, pues literalmente.
+Como como ustedes pudieron ver, creamos esta estructura de este de este de esa emo del paper técnico mediante ese código, pero no sé si a la hora de por el tiempo lo expliqué muy puntual y no sé entender, entonces por eso lo estoy recalcando aquí ahorita.
+
+LUIS FELIPE MORA UMAÑA   2:20:40
+Más que todo, vamos a ver porque ahí.
+
+Kaik Andy Yocks Sandoval   2:20:43
+¿Te gusta? Ajá, dime.
+
+LUIS FELIPE MORA UMAÑA   2:20:43
+Vamos de nuevo, este mhm.
+
+Kaik Andy Yocks Sandoval   2:20:46
+Ay, si gustan, ajá.
+
+LUIS FELIPE MORA UMAÑA   2:20:47
+No, más que todo eso, que me dale.
+
+Kaik Andy Yocks Sandoval   2:20:49
+Pues no es para que y si está devolvemos a bueno con todo mal de la PPT, pues sí, verdad, es pues se escogió esa estructura, pero sí voy a tenerlo en cuenta para verdad, para que para saber y pues en la primera PPT, por eso lo puse como en.
+Dígame que viñetas de lo más importante que lo que se tenía que hacer, entonces no sé si mi compañero se devuelve a la primera como para que usted pueda ver.
+
+KENDALL JOSUE MATA SANCHEZ   2:21:17
+Ay, sí, claro.
+
+LUIS FELIPE MORA UMAÑA   2:21:23
+Pues por ejemplo aquí unas viñetas con puntos, otras viñetas con números, otra parte plano, ¿verdad? Pero este vamos a ver y por ahí, por ahí es donde no está, vamos a ver si, vamos a ver, no es que no entendí, sí, pero sí siento que hace falta, digamos.
+
+Kaik Andy Yocks Sandoval   2:21:30
+Mhm.
+Mhm.
+O más.
+
+LUIS FELIPE MORA UMAÑA   2:21:42
+Y no es como que no es algo que hubiera quitado mucho tiempo porque es es eso, verdad? Porque vamos a ver, este sí permite este estructurar documentos mediante comandos, verdad? Este por la presentación uniforme, verdad? Trabajo en secciones, pero es que vamos a ver, ya eso es lo que voy todo esto de aquí.
+
+Kaik Andy Yocks Sandoval   2:21:45
+Mhm.
+Y.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:22:02
+ya me lo da Word, o sea yo como como consumidor, verdad, el producto que ustedes me están vendiendo, yo digo todo esto me lo da Word, ya ya lo tengo en Word.
+Verdad.
+
+Kaik Andy Yocks Sandoval   2:22:14
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:22:14
+¿Qué es el valor agregado que yo tengo al utilizar esto, verdad? La bibliografía ya está en Word, las secciones ya está en Word, este la presentación uniforme ya está en Word.
+entiende eso es a lo que voy digamos este porque látex no nace Solamente porque sí sino tiene una función muy específica a la hora de nacer verdad que es este y también por eso hay diferentes estándares verdad y tampoco era como para que ampliaran un montón digamos que yo entiendo la parte del tiempo y más
+por lo menos mencionarlos verdad que el más utilizado es el estándar de la IEEE pero también existen este este y este punto siguiente diapositiva continuamos
+Me sigue.
+
+Kaik Andy Yocks Sandoval   2:22:59
+Ajá, sí, está bien, profe, o sea, es el que pues que nos hace los el feedback.
+
+KENDALL JOSUE MATA SANCHEZ   2:23:04
+Sí, profe.
+
+LUIS FELIPE MORA UMAÑA   2:23:05
+Jesus.
+Es este.
+La conversación abierta, yo soy parte del público el día de hoy.
+
+Adrian Vinicio Chaves Marin   2:23:15
+Okay.
+
+KENDALL JOSUE MATA SANCHEZ   2:23:15
+María, gracias Roger por el feedback que te lo dio.
+
+LUIS FELIPE MORA UMAÑA   2:23:21
+Yeah.
+Estamos entonces, muchas gracias muchachos, comentarios finales.
+
+KENDALL JOSUE MATA SANCHEZ   2:23:26
+Gracias profe, estoy más bien.
+
+Kaik Andy Yocks Sandoval   2:23:32
+No, pues o sea, yo bueno, cuando se nos explicó, nos enseñó en la clase que nos dejó el trabajo. Entonces fue donde me interesó y empecé, pues y empecé, le comenté bueno al compañero y luego empezamos a hacer las investigaciones.
+
+LUIS FELIPE MORA UMAÑA   2:23:33
+No.
+
+Kaik Andy Yocks Sandoval   2:23:52
+Y.
+Y esos serían de mi parte.
+
+KENDALL JOSUE MATA SANCHEZ   2:23:57
+Bueno, de mi parte, yo aprendí que más que todo, nos nos permite nos permite a crear documentos este científicos y técnicos de forma estructurada y bien coordenada, mientras que overlift este facilita el trabajo del código.
+Pero de mi parte sí, la investigación sí estuvo muy bonita y es bonito aprender cosas nuevas siempre en la vida, profe.
+
+LUIS FELIPE MORA UMAÑA   2:24:26
+Bueno, buenísimo, muchas gracias.
+
+KENDALL JOSUE MATA SANCHEZ   2:24:28
+Nos vemos bien, profe.
+
+LUIS FELIPE MORA UMAÑA   2:24:30
+Oh yeah.
+David y Felipe, ahora sí.
+
+JUAN FELIPE PEREZ	BEJARANO   2:24:38
+¿Me escucha todo bien?
+
+LUIS FELIPE MORA UMAÑA   2:24:40
+Señor, pero bien.
+
+JUAN FELIPE PEREZ	BEJARANO   2:24:42
+Por allá. Ok, voy a compartir.
+Me avisan si se ve por ahí la presentación.
+
+DAVID MOISES GOMEZ MORA   2:24:53
+Is there right?
+
+LUIS FELIPE MORA UMAÑA   2:24:53
+Sí, señor, adelante.
+
+JUAN FELIPE PEREZ	BEJARANO   2:24:56
+K.
+este Bueno buenas noches profesor y compañeros básicamente como pueden ver en el título nuestro tema es el análisis comparativo de los modelos de servicio en la nube como lo son IAS, Paz y SAS este básicamente mediante esta presentación lo que queremos es
+¿Cómo explicar lo básico de cada una de ellas, sus principales diferencias y además, en qué situaciones conviene usar cada una?
+antes de hablar propiamente de lo que es IAS, PAS y SAS primero debemos entender qué es la computación en la nube esto básicamente es un modelo que permite acceder a recursos tecnológicos por medio de internet por ejemplo ¿como cuáles? servidores, almacenamiento, aplicaciones, redes
+entre otros, esto como es mediante internet se realiza sin necesidad de tener toda una infraestructura física dentro de una empresa, una ventaja importante también es que los recursos pueden ajustarse según la necesidad, por ejemplo ¿qué quiere decir esto? si una aplicación recibe una cantidad más grande de usuarios
+¿Se puede aumentar su capacidad sin verse en la necesidad de comprar inmediatamente este nuevos servidores físicos?
+Además, otra de las ventajas es que di muchos de estos servicios funcionan con pago según el consumo.
+Ok, una vez ya sabiendo esto, vamos a pasar al primer modelo que es IAS. Este Sus siglas en inglés significa Infrastructure a Service y en español infraestructura como servicio.
+Este, el primer modelo sería este y As, que básicamente este el proveedor ofrece como los recursos más básicos. Este Esto quiere decir máquinas, almacenamiento, redes. El proveedor también administra.
+La infraestructura física y la virtualización, pero el cliente todavía se encarga como de el sistema operativo, también se encarga de las aplicaciones y también se encarga de la parte de los datos.
+entonces Ias ofrece este como más versatilidad en cuanto a lo que lo que requiere la empresa como tal ellos lo pueden moldear más a su manera sin embargo esto también conlleva a un a un conocimiento más amplio de niveles técnicos este como pueden ver en la presentación abajo algunos ejemplos de ellos son el Amazon EC2
+El Azure Virtual Machines y el Google Compute Engine.
+Este digamos que la empresa elegiría este tipo de modelo gracias a su flexibilidad, ya que ellos mismos pueden configurar su propio entorno.
+
+DAVID MOISES GOMEZ MORA   2:27:58
+Se me escucha, sí.
+
+JUAN FELIPE PEREZ	BEJARANO   2:28:00
+Sí.
+
+DAVID MOISES GOMEZ MORA   2:28:01
+Okey, bueno, buenas noches, les voy a hablar yo de la segunda que sería.
+
+LUIS FELIPE MORA UMAÑA   2:28:05
+Un poco bajo se le escucha.
+
+DAVID MOISES GOMEZ MORA   2:28:09
+Me escucha muy bajo.
+
+LUIS FELIPE MORA UMAÑA   2:28:11
+ahora se escucha mejor Sí pero al principio se escucha un toque Ahora sí perfecto Dale gracias
+
+DAVID MOISES GOMEZ MORA   2:28:13
+Ay, ahora sí.
+Ok, ok, entonces bueno.
+Bueno, como lo ven en la diapositiva, la que me la que va a presentar sería paz o plataforma como servicio.
+Bueno, este es el segundo modelo.
+que bueno ya como lo dije en español sería plataforma como servicio y en inglés plataforma as a service bueno en este caso el proveedor administra no solo infraestructura sino también el sistema operativo y el entorno ejecutivo también el cliente puede concentrarse principalmente en el desarrollo
+su aplicación y maneja sus datos. Esto es especialmente útil para desarrolladores porque reduce el tiempo dedicado a instalar servidores o configurar sistemas operativos. Aquí ya podríamos ver algunos ejemplos que sería Google App Engine.
+As you're up service.
+A W S Elastic Beinstalk y Eraku.
+Aquí también podemos agarrar ciertas ventajas, las cuales la principal es que acelera el desarrollo, aunque el cliente tenga menos control que con IAS.
+Siguiente día política.
+Aquí ya hablaríamos sobre la de SAS, que sería software como servicio, software as a service, igual en inglés, esas serían las siglas.
+Este es probablemente el modelo que más usamos como usuarios nosotros. El proveedor ofrece una aplicación completa, lista para utilizarse y el usuario normalmente entra desde un navegador o una aplicación y no administra servidores y sistemas operativos ni actualizaciones. Ejemplos conocidos.
+Ya más de nada los hemos utilizado, que sería Google Workspace, Microsoft 365, Salesforce, Dropbox y Zoom. Su mayor ventaja es la facilidad de uso, pero a cambio el usuario tiene menos control y personalización. Siguiente diapositiva.
+Aquí ya podemos ver una comparación más central.
+La diferencia principal está en quien administra cada componente con el cliente conserva más control, pero también tiene que administrar más elementos, luego con paz.
+Una parte mayor de la responsabilidad pasa al proveedor y el cliente se concentra en aplicación y datos y en SAS el proveedor administra prácticamente todo y el usuario utiliza la aplicación. Podemos verlo como en una escala de IAS a SAS disminuye el control del cliente y aumenta la
+La facilidad de uso y por eso no existe un modelo mejor que todos los en todos los casos. Eso depende de la necesidad del proyecto.
+Y si quiere continuar.
+
+JUAN FELIPE PEREZ	BEJARANO   2:31:20
+este bueno por otra parte como para que tengan un o se familiaricen un poquito más con lo que lo que conlleva esto este vamos a hacer un ejemplo práctico de una tienda en línea este y cómo aplicaría más o menos estos modelos primero con guías este podría alquilar las máquinas virtuales y configurar su cuenta
+el sistema operativo, el servidor web y la base de datos y la aplicación, o sea, eso quiere decir que tiene como mucho más control, pero eso también exige un mayor trabajo técnico. Por parte de Paz, los desarrolladores podrían crear la aplicación y publicarla en una plataforma preparada.
+Mientras que el proveedor solo administra los servidores y el sistema operativo. Y por último, con la parte de esas, la empresa este básicamente solo contrata la plataforma de comercio electrónico ya lista y ellos este pueden enfocarse más como en su parte operativa, digamos, al configurar producto.
+servicios pedidos usuarios ese tipo de cosas y básicamente Este ejemplo lo que quiere dar a entender es que básicamente la elección de la empresa se basa en cuanto ellos mismos quieren administrar o desarrollar desarrollar por por sí mismo ellos digamos
+Otro ejemplo que también les podría dar, que tal vez les ayude más como a familiarizarse de una forma más fácil, es como los medios de transporte, por ejemplo, este IAs sería como alquilar un carro y usted realiza todas las demás funciones para la hora de transportarse.
+la parte de PASS sería como contratar un taxi o un Uber al cual usted le da simplemente las indicaciones y la parte de esas sería como el bus que ya tiene rutas predefinidas y simplemente usted se monta sabiendo ya las rutas.
+Esto es como básicamente un una comparación de lo que digamos de las responsabilidades que tiene cada uno de los modelos.
+Y por último pasamos a las conclusiones.
+
+DAVID MOISES GOMEZ MORA   2:33:40
+Bueno ya que en conclusiones podemos de y aspas y sas son Tres formas diferentes de consumir servicios de computación en la nube ya es apropiado cuando se necesita mayor control sobre la infraestructura como le digo el compañero como cuando alquilamos un carro y ya nos tenemos que
+Encargar de todo el mantenimiento y todo lo demás paz conviene cuando se quiere desarrollar una aplicación sin encargarse directamente los servidores y el sistema operativos. Igual con la comparación es como andar en un taxi, ya usted nada más le dice al al conductor, pero si es más personalizado.
+Y SAS es adecuado cuando se necesita una solución completa lista para utilizar.
+Y ya eso sí sería así, como ir en el como tipo bus, que ya él lleva una ruta, pero usted es el que la consume.
+Y ya la elección depende del control requerido, los conocimientos técnicos, los costos, la seguridad y la rapidez de la implementación.
+
+JUAN FELIPE PEREZ	BEJARANO   2:34:44
+Básicamente, en resumen, lo que quiere decir esto es que no hay un modelo perfecto o un modelo que sea pues mejor que los otros, sino que simplemente pues lo importante es elegir como el modelo que más se acople a las necesidades de uno de la empresa como tal.
+Y básicamente esta sería nuestra presentación.
+
+DAVID MOISES GOMEZ MORA   2:35:08
+¿Algún compañero o el productor tiene alguna pregunta?
+
+DANNEL ROBERTO QUESADA SOLANO   2:35:15
+Y lo mandas, ahorita me creo.
+No.
+
+LUIS FELIPE MORA UMAÑA   2:35:23
+Ya lo había abierto, dale Anel.
+
+DANNEL ROBERTO QUESADA SOLANO   2:35:23
+Ay, perdón, sí, disculpe, una cultilla, no sé si.
+Tal vez.
+Pueden comentarnos si han tenido experiencia con alguna de estas plataformas en algo que digamos que hayan trabajado o esto.
+
+JUAN FELIPE PEREZ	BEJARANO   2:35:43
+Este pues en cuanto al área laboral o la parte de trabajo, no realmente, pero este como pudimos ver en las dispositivas anteriores de algunos de los ejemplos, pues creo que la mayoría hemos usado como este tipo de servicios que son las SaaS, como lo puede ser Gmail, Microsoft 13
+365 este lo que es Dropbox para almacenar, pues información en una nube, Zoom para videoconferencias y demás. Entonces creo que esta es como la parte más.
+Como que más se familiariza, creo que con todos.
+
+DAVID MOISES GOMEZ MORA   2:36:23
+Y en mi caso igual, de igual manera, no he tenido alguna experiencia así directa con las demás, solamente con lo que sería lo del SAS, porque sí, no, de momento no he utilizado ninguna ni tenía ninguna experiencia.
+
+JUAN FELIPE PEREZ	BEJARANO   2:36:23
+No sé si.
+
+LUIS FELIPE MORA UMAÑA   2:36:47
+Buenísimo, Anel, este alguien más preguntas.
+¿Eric, alguna pregunta para los compañeros que creo que no lo he escuchado preguntar hoy?
+Feliz poder la centroamericana.
+A ver si pasa el team.
+
+DANNEL ROBERTO QUESADA SOLANO   2:37:19
+Morning, miss, I can't me hang.
+
+LUIS FELIPE MORA UMAÑA   2:37:19
+¿Qué?
+Yo creo que sí, yo creo que está jugando centroamericana hoy, yo sé que la liga hoy mañana, pero bueno. este.
+¿Algún comentario, compañeros?
+
+JUAN FELIPE PEREZ	BEJARANO   2:37:36
+no básicamente creo que abarcamos la parte del último comentario con la conclusión que pues básicamente no es como que o sea antes de investigar pues no sabíamos como si alguno de los modelos iba a ser mejor que otro o demás pero pues ya haciendo la investigación y confirmamos que no es que sea mejor
+Uno que otro, sino que simplemente de ahí uno busca el que se acopia a las necesidades.
+
+DAVID MOISES GOMEZ MORA   2:38:06
+en mi caso para ver yo tuve que ver un poco de videos bueno vi unos videíllos ahí más que todo para tener un poco más de ejemplos porque sí si uno lo ve así a simple teoría si es un poco complicadillo si uno no ha tocado el tema pero ya con ejemplos ya uno va entendiendo más la teoría y ya lo va ejemplificando mejor
+
+LUIS FELIPE MORA UMAÑA   2:38:28
+Sí, de hecho, sí, este vamos a ver.
+Por ahí hay algo, digamos, que que tal vez tenemos que quitarnos un poco de la mente, verdad? Es que este siempre va a haber algo que funcione falso donde entra la expertise técnica, verdad? y el conocimiento y experiencia y todo, verdad? Porque no hay nada que sirva para
+Do.
+Y si hay algo que sirve para todo, no sirve para nada, por ejemplo, acetamilofén quedan en.
+¿En el seguro, verdad? Que ya todo mundo ya a esa hora nadie le hace nada, verdad? Cuando se le dan una es exactamente lo mismo acá, verdad? Lo mismo pasa en software, lo mismo pasa en esta parte que es una parte más de infraestructura. Exacto, no hay, no hay pomada canaria y verdad. Entonces, este qué es lo que pasa, digamos, esto depende mucho de las necesidades.
+Vamos a ir un toque al cuadro comparativo, porque por ahí siento que rápido.
+
+JUAN FELIPE PEREZ	BEJARANO   2:39:24
+Este.
+
+LUIS FELIPE MORA UMAÑA   2:39:25
+Este, el otro.
+Look to este aquí. Este.
+Vamos a ver.
+Hay un detalle aquí, digamos que hay que hay que ser muy cuidadoso, digamos este y el ejemplo más claro es este, digamos que ustedes son, vamos al ejemplo de la tienda, verdad? Y generalicemos lo más en la parte de los e-commerce, toda esa parte de e-commerce, verdad, no siempre están en temporada alta, verdad? No siempre vamos a ver, usted no va a pagar, usted no va a tener.
+15 servidores siempre disponibles verdad y estar pagando el costo de esos 15 servidores verdad Por decirlo así qué es lo que pasa Este pero por ejemplo usted para Black Friday usted no necesita 15 usted necesita no sé 45 para pero lo necesita solo para ese fin de semana pero la la
+la misma inversión se dice por algo es una inversión verdad se reía el mismo fin de semana es muy a corto plazo Entonces eso nos permite estar cambiando infraestructuras de estas verdad Nos permite estar cambiando y estar moderando y aparte de eso hay que hacer un consumo responsable porque creo que ese es el el mayor detalle verdad
+el costo porque al final estas cosas son alquileres verdad estás alquilando verdad que tanto alquilas que tanta implicación usted tiene o no ya es otra cosa verdad Pero por ejemplo este no sé digamos de que ustedes alquilan este hacer un server ahí para meter máquinas virtuales en ambientes predefinidos tienen 15 personas pero esas 15 personas solamente tres están tocando ahí como el como el sistema
+para qué vas a estar pagando por 15 máquinas virtuales verdad para ese tipo de cosas este no sé digamos para que usted va a estar pagando este no sé digamos aquí en Costa Rica que la hora pico de compra sea a las 5 de la tarde y las 7 de la noche que es cuando la gente va en el bus por decirle algo así para que usted va a estar pagando no sé a las 3 de la mañana
+siete servidores, verdad? No tiene, no tiene, no tiene como el sentido, verdad? Y ahí es donde tenemos que administrar este tipo de cosas, verdad? Que tanto nos impliquemos o no. Es independiente porque al final estás alquilando la infraestructura, verdad? Al final de de todo esto. Vale, Anel, pregunta.
+
+DANNEL ROBERTO QUESADA SOLANO   2:41:41
+Perdón, espero no estar mal por estar metiendo la cuchara, curiosamente, digamos, en esta área.
+
+LUIS FELIPE MORA UMAÑA   2:41:45
+Dale, dale.
+
+DANNEL ROBERTO QUESADA SOLANO   2:41:50
+Que yo trabajo con lo de.
+El infrastructure as a service, platform as a service, software as a service.
+Y la parte comercial es sumamente delicada, es agotador, honestamente, porque dependiendo de lo que de lo que uno vaya a necesitar, tiene que negociar demasiado.
+Que los costos son sumamente altos, entonces, por ejemplo, con el SAS.
+Y.
+
+LUIS FELIPE MORA UMAÑA   2:42:20
+Yes.
+
+DANNEL ROBERTO QUESADA SOLANO   2:42:20
+La persona que yo trabajo se hizo un acuerdo que nosotros no pagamos por licencia activa.
+Sino que pagamos por país.
+En el que se activa, entonces traemos como un blanket.
+Pero digamos, viene de la mano con que tenemos que hacer un early adoption para muchos mercados en los que o los mercados en los que se vaya a lanzar el SAS, ¿verdad? Entonces, por un lado, pues tenemos el beneficio de poder negociar como.
+Vamos a pagar.
+Que si se paga por licencia activa es carísimo. y.
+Lo ponemos por país, pero el digamos el gancho o la parte no tan beneficiosa es tener que entrar a mercados en los que todavía no se está listo.
+¿Y forzar un poquito el negocio a que lo a que lo haga, verdad? Entonces, sí, esa parte del costo y la discusión comercial es muy complicada.
+
+LUIS FELIPE MORA UMAÑA   2:43:42
+Exacto, entonces, imagínese usted, digamos, este, no sé, abrir una licencia para un país.
+Para 10 personas, 100 personas, digamos.
+tiene sentido imaginando menos costos que pueden llegar a pagar verdad todo este de es parte de los riesgos verdad ahorrarse en un lado verdad porque ahí no sé este tal vez de estas paga Pues si hubiera pagado por licencias este individuales estarías pagando aquí en Costa Rica estarías pagando menos más verdad Pero ese costo al inicio verdad el consumo y demás y jalar clientes
+Hay que asumirlo de alguna forma. Entonces está dentro nunca pierde, pero el detalle es ese verdad es todo es un verdad y hay que saber, digamos este cuál es la parte que más nos conviene, verdad? Cuál es la parte que más conviene de la organización y cuál es la parte que más me conviene a mí, verdad? Porque por ejemplo este. Usted puede decir mira que la plata de la empresa eso no me interesa, verdad? Pero el día de mañana este cuando llega a pedir cuentas.
+¿El responsable de las decisiones es usted, verdad? Entonces, este ahí es donde va el.
+Ahí es donde va el arroz, pero sí muy Brandan, muchas gracias ahí por el comentario.
+Comentario final, compañeros.
+
+JUAN FELIPE PEREZ	BEJARANO   2:44:58
+Ya lo dijimos anteriormente, creo, no, profe.
+
+LUIS FELIPE MORA UMAÑA   2:45:01
+Sí, no, si quieren agregar algo ya.
+
+JUAN FELIPE PEREZ	BEJARANO   2:45:04
+Busy.
+
+LUIS FELIPE MORA UMAÑA   2:45:04
+Al detalle, perdón, no.
+
+DAVID MOISES GOMEZ MORA   2:45:05
+Todo bien, todo bien de momento.
+
+LUIS FELIPE MORA UMAÑA   2:45:08
+Bueno, estoy muy bien la presentación, de hecho salieron tallados con el tiempo este me parece que el material de ayuda fue bastante bueno. Y sí, digamos, a veces este vamos a ver uno tiene que también conocer un poquito su audiencias y saber, digamos este de cuando tenemos una audiencia general es un poquito más difícil saber, digamos con qué nos vamos a topar, por eso a veces no está de más preguntar al público, verdad hacia.
+para ver hacia dónde puedo ir o hacia dónde no puedo ir en verdad nada más que todo por ahí pero buenísimo entonces buenísimo
+
+JUAN FELIPE PEREZ	BEJARANO   2:45:35
+Mhm.
+
+DAVID MOISES GOMEZ MORA   2:45:38
+Más que todo, por eso eran unos ejemplos así un poco para explicar, ya que o sea, el público general.
+
+LUIS FELIPE MORA UMAÑA   2:45:45
+De hecho, sí, porque este cómo asocia usted un servicio o algo, verdad? Y si no, porque muchas veces estamos consumiendo algo y no sabemos qué es eso, verdad?
+
+DAVID MOISES GOMEZ MORA   2:45:50
+Exact.
+Correctly.
+
+JUAN FELIPE PEREZ	BEJARANO   2:45:54
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:45:56
+Bueno, es un ejemplo, siempre se me olvidó, ahorita se me olvidó.
+Pero.
+Este, no sé.
+Vamos un ejemplo así bien tonto, digamos, este la gente dice mira este qué combustible está utilizando usted. No, si yo tengo carro eléctrico, yo no utilizo ningún combustible.
+Pero al final este está este la misma energía verdad o la o la electricidad es lo que hace lo que moviliza el vehículo verdad Entonces ese caso sería eléctrico Entonces no sé usted que usted está consumiendo combustible si cree que usted que es eléctrico verdad Pero al final de no no se mueve la combustión
+Pero si estás consumiendo algo, ¿verdad? Por ahí, por ejemplo, ahí chatarra.
+entonces este muchachos este rey yo creo que eso sería lo de la clase de hoy Muchas gracias por las presentaciones muy bien este Muchas gracias por las preguntas también pero bueno hay que que la clase debe ser un poquito más relax ahí para
+preguntas y demás y nos vemos la otra semana ahí este recuerden anotarse en el Excel conocimientos
+
+DAVID MOISES GOMEZ MORA   2:47:11
+That is the problem.
+
+LUIS FELIPE MORA UMAÑA   2:47:13
+Buenos días, que pasó una buena noche, feliz final de semana y ya empiezo a oler a fin de semana. Entonces este y a fin de cuatro y para ustedes, pues yo cambié las vacaciones. El último empuje, nada más nos vemos.
+
+JUAN FELIPE PEREZ	BEJARANO   2:47:27
+Necesito, profe, muchas gracias.
+
+DANNEL ROBERTO QUESADA SOLANO   2:47:29
+Are you? Buenas noches.
+
+DAVID MOISES GOMEZ MORA   2:47:29
+Provía.
+
+LUIS FELIPE MORA UMAÑA   2:47:30
+What are you gonna bounce?
+
+Kaik Andy Yocks Sandoval   2:47:31
+Profe.
+
+LUIS FELIPE MORA UMAÑA   2:47:33
+Sí, señor.
+
+Kaik Andy Yocks Sandoval   2:47:34
+O habla con usted al final.
+
+LUIS FELIPE MORA UMAÑA   2:47:36
+Con todo gusto.
+
+Kaik Andy Yocks Sandoval   2:47:38
+Gracias.
+
+TAYRON ALONSO SALAS NUÑEZ   2:47:40
+El problema.
+
+LUIS FELIPE MORA UMAÑA   2:47:42
+Buenas noches.
+
+KENDALL JOSUE MATA SANCHEZ   2:47:44
+Pero noches, profe chao.
+
+LUIS FELIPE MORA UMAÑA   2:47:46
+Buenas noches, que la pase muy bien.
+
+KENDALL JOSUE MATA SANCHEZ   2:47:49
+Igual.
+
+LUIS FELIPE MORA UMAÑA   2:47:57
+Dime a cake.
+
+Kaik Andy Yocks Sandoval   2:47:59
+Profe, bueno, vea que como dime.
+
+LUIS FELIPE MORA UMAÑA   2:48:02
+Yep.
+¿Pero si yo tenía una pregunta para usted?
+
+Kaik Andy Yocks Sandoval   2:48:06
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   2:48:08
+Porque he visto su nombre escrito diferente, escrito en diferentes lugares de diferentes formas.
+
+Kaik Andy Yocks Sandoval   2:48:14
+Ay, sí.
+
+LUIS FELIPE MORA UMAÑA   2:48:15
+¿Es cake o es cake o si es cake, pero se pronuncia cake?
+
+Kaik Andy Yocks Sandoval   2:48:18
+Es que mira lo que pasa No es que mira lo que pasó fue esto bueno según lo que me dio yo sé supuestamente mi papá le echa la culpa a mi mamá a mi mamá dice que mi mamá me puso que mi país dice que mi mamá me puso ese nombre Mientras ella estaba sedada pero dice mi mamá que el que puso el nombre exótico fue mi papá porque le gusta como que pues Ajá nombre
+exóticos a mi hermano le puso Jake Randy verdad Entonces pues se echaron la culpa a los dos y yo no sé la verdad yo me lo iba a cambiar pero los dos se me dijeron que le dije la boba que pues Ajá porque pues en el tanto en el colegio o sea digamos lo que un tipo de bullying que me hacían era como que me decían que quedan digo pastelito
+
+LUIS FELIPE MORA UMAÑA   2:48:48
+Uh-huh.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:49:03
+o cosas así yo no porque pues se pronuncia cake verdad Pero es en inglés en inglés se pronuncia cake que igual no era como queque pero se escribe diferente entonces Ajá
+
+LUIS FELIPE MORA UMAÑA   2:49:06
+Mhm.
+Okay.
+Pero se escribe Kai, digamos si está bien escrito Kai.
+
+Kaik Andy Yocks Sandoval   2:49:18
+Ajá, es sí, es KEYK.
+
+LUIS FELIPE MORA UMAÑA   2:49:22
+O KKEIK.
+
+Kaik Andy Yocks Sandoval   2:49:23
+Ajá, sí.
+
+LUIS FELIPE MORA UMAÑA   2:49:26
+Tuviera como Kaipe.
+
+Kaik Andy Yocks Sandoval   2:49:27
+No, o sea, pues no sé, la universidad puso como caica, pero pues ajá, también es un proceso. O sea, yo no les dije, pues ajá, me dijeron que que eso llevaba mucha papeleta, ta ta ta que se podía hacer, pero pues conté y que mandar un correo y pues al final de cuentas yo simplemente le digo a los profesores, no, si quieren me dicen el segundo nombre y ya.
+
+LUIS FELIPE MORA UMAÑA   2:49:42
+Safing.
+
+Kaik Andy Yocks Sandoval   2:49:49
+Usted es el único que, pues, o sea, me dice así. Ya he tenido otras personas en el colegio que prefieren utilizar ese nombre de Kate. Entonces pues a Jax no, tampoco es como que no me molesta, pero ya me acostumbré literalmente.
+
+LUIS FELIPE MORA UMAÑA   2:49:50
+Mhm.
+Sí, parte, es como el chef, es su padre de familia.
+
+Kaik Andy Yocks Sandoval   2:50:07
+Sí.
+
+LUIS FELIPE MORA UMAÑA   2:50:09
+It's like on your make.
+
+Kaik Andy Yocks Sandoval   2:50:13
+Make Make, no, ahorita no me acuerdo, sí, ahorita no me acuerdo.
+
+LUIS FELIPE MORA UMAÑA   2:50:15
+Mex, Mex, la caradilla.
+
+Kaik Andy Yocks Sandoval   2:50:19
+sí, la carajilla sí, ya la top, pero sí, yo para los nombres soy un asco, la verdad, por eso le digo a todos.
+
+LUIS FELIPE MORA UMAÑA   2:50:24
+Las 2 no sé.
+
+Kaik Andy Yocks Sandoval   2:50:26
+Sí, imagínese, mi mamá le querían poner, ajá.
+
+LUIS FELIPE MORA UMAÑA   2:50:28
+Sí, el nombre I make.
+¿El nombre de Meg, no digamos, Meg es un diminutivo, verdad? ¿Pero usted no sabe cuál es el nombre real?
+
+Kaik Andy Yocks Sandoval   2:50:36
+Say.
+¿No, sí está, si mal no me equivoco, un me que es Mc Griffin, creo que algo así, no Mc Griffin, no?
+
+LUIS FELIPE MORA UMAÑA   2:50:52
+Ajá, pero es el diminutivo del nombre.
+
+Kaik Andy Yocks Sandoval   2:50:56
+¿Entonces cuál es el nombre?
+
+LUIS FELIPE MORA UMAÑA   2:50:59
+¿Porque un capítulo que la madre dicen como Megan no sé qué y la madre como porque me dicen Megan, él dice Megan, verdad?
+
+Kaik Andy Yocks Sandoval   2:51:06
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:51:07
+No, el nombre es este Megatron Griffin.
+
+Kaik Andy Yocks Sandoval   2:51:14
+Así, mira, me gato un griffin, dice que sí.
+
+LUIS FELIPE MORA UMAÑA   2:51:16
+Megatron Griffin, sí.
+
+Kaik Andy Yocks Sandoval   2:51:18
+¿Qué ****, qué es lo que era hasta ahorita? ¿Se imagina que se llama en Vegatron? No, sí.
+
+LUIS FELIPE MORA UMAÑA   2:51:21
+I think.
+De cuando busques el busques el risillo ahí del porque de porque eso entonces se va a acordar ahí el pleito de su papá y su papá.
+
+Kaik Andy Yocks Sandoval   2:51:28
+Sí, ese sí, voy a ver.
+sí literalmente Entonces entonces así fue como que quedó incógnita la verdad yo ya no volví a insistir porque pues Ajá los dos sí me siguen diciendo eso y tal vez eso me lo dicen los dos juntos O sea no es como que un día me lo dice ella no los dos y se mantienen se implantan y yo no dije eso y yo ta ta y pues ya ya tengo como que ya 26 años como para seguirles preguntando
+
+LUIS FELIPE MORA UMAÑA   2:51:40
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:51:55
+Igual me lo puedo cambiar, pero pues ajá, x también me dijeron que es bobada y ya y pues x.
+
+LUIS FELIPE MORA UMAÑA   2:51:56
+sí.
+Es un speech así porque tiene que empezar a cambiar todos los títulos, tiene que ir a cambiar las cédulas. En la cédula tiene que agregarle el conocido como un speech.
+
+Kaik Andy Yocks Sandoval   2:52:04
+I see.
+¿Ajá, exacto, bueno, pregunta, verdad?
+
+LUIS FELIPE MORA UMAÑA   2:52:13
+Cuéntame.
+
+Kaik Andy Yocks Sandoval   2:52:15
+Bueno, primero que nada quería saber, sé que todavía no tiene la nota, no sé, pero es rasgos, siento rasgos como cómo me fue, decente, mal, algo así.
+
+LUIS FELIPE MORA UMAÑA   2:52:29
+What is that?
+
+Kaik Andy Yocks Sandoval   2:52:30
+Sí.
+
+LUIS FELIPE MORA UMAÑA   2:52:32
+No sé si quiere que le dé la nota aquí, la llamada está grabada, pero se la puedo dar.
+
+Kaik Andy Yocks Sandoval   2:52:34
+Pues si quieres.
+Sí, como usted quiera.
+
+LUIS FELIPE MORA UMAÑA   2:52:37
+Que este vea, no tengo la nota completa porque está paper 50%, presentación 50%.
+
+Kaik Andy Yocks Sandoval   2:52:40
+Ajá.
+Mhm.
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   2:52:47
+No he revisado el paper, ¿verdad? Claramente porque lo entregaron ahorita a las 6, entonces es prácticamente imposible que lo hubiera revisado, ¿verdad? Pero de la presentación de hoy tuvieron 45 50 puntos.
+
+Kaik Andy Yocks Sandoval   2:52:53
+Ajá.
+¿Bueno, por dicha algo, es algo, verdad? Bueno, perdón, ahora viene la siguiente pregunta, ¿verdad?
+
+LUIS FELIPE MORA UMAÑA   2:53:00
+Mhm.
+¿Cómo algo? Son 4550 solo 5 puntos perdieron.
+
+Kaik Andy Yocks Sandoval   2:53:06
+Sí, pues sí, más bien me sorprende porque la otra vez con te acuerdas con la otra compañera. Ay, qué edad.
+
+LUIS FELIPE MORA UMAÑA   2:53:12
+Pues que la otra vez ha ido muy mal.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:53:32
+Yo creo que era Docker también que ella escogió.
+
+LUIS FELIPE MORA UMAÑA   2:53:36
+Mhm, así porque se puede hacer una vara voladísima y yo como más.
+
+Kaik Andy Yocks Sandoval   2:53:36
+Bueno, x.
+Ajá, sí, y entonces bueno, suspicios. Ahora bien, pregunta. Bueno, sé que usted me va a decir como no, siga XD ta ta ta, pero pues hay que ser realista. A ver, mira, veamos, yo tengo el examen, tengo las tareas, digamos. Bueno, ahí usted me está diciendo que me fue bien aquí. Bueno, yo le comento, empecé.
+
+LUIS FELIPE MORA UMAÑA   2:53:41
+Está sospechoso esto.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:54:01
+Como verá para no hacer, sé que usted me dijo como mira, pues no bote todo, solamente descarte, pues la verdad, yo descarté todo y empecé desde cero. O sea, sé que usted dice, coño, usted está demente, usted está fumado, pero y pues al final de cuentas y lo que le presenta el primer inicio, pues literalmente era como que.
+
+LUIS FELIPE MORA UMAÑA   2:54:10
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:54:19
+un 5% un 15 o algo así no sé lo que usted pedía yo prefería hacerlo mejor todo desde cero y para irlo como organizado mejor pero ahora viene la pregunta importante y es pues bueno obviamente como le digo sigo sigo practicando sigo pues trabajando en esto ya por dicha ya presenté de las cuatro materias todos los proyectos solo me queda el suyo
+
+LUIS FELIPE MORA UMAÑA   2:54:26
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:54:44
+Entonces me queda en estos días hasta el miércoles para continuar dándole duro, pero sí continúo o qué me recomienda o qué pex o dice, no, la verdad es que miren, ustedes no tienen salvación, aunque se pegue un 100, así que pues.
+
+LUIS FELIPE MORA UMAÑA   2:54:45
+Okay.
+Bear.
+Para serle muy honesto, este, si le digo que he votado el curso, le estaría mintiendo. Porque ahorita no tengo la información suficiente para decirle si sí o si no. Usted sabe, bueno, yo creo que ya ya lo habíamos hablado, este yo no saco notas hasta el día que me siento sentada a sacar actas.
+
+Kaik Andy Yocks Sandoval   2:55:04
+Porque ya lo sé.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:55:25
+entonces a este momento no sé cuánto le falta No sé cuánto tiene solo sé digamos las notas que están ahí digamos que son creo que la única tarea que me falta la de la tarea tres la tarea dos que eso simplemente es un 100 o cero digamos que simplemente no haber mandado nada verdad para para eso porque literalmente era una captura de pantalla nada más lo que tenía que enviar
+
+Kaik Andy Yocks Sandoval   2:55:34
+I.
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   2:55:45
+el Quiz que en eso estoy revisando probablemente lo saco esta semana y de la idea es tenerlo todo listo para el para el miércoles entonces este de la verdad No sabría decir de estar como el como el gato de strodinger
+
+Kaik Andy Yocks Sandoval   2:55:50
+Mhm.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:56:00
+O K, la verdad no sigamos, no sé como le digo, probablemente sabe usted más cuánto le falta que yo.
+
+Kaik Andy Yocks Sandoval   2:56:07
+O sea, pues like, pues como le digo, pues hasta verdad a ciencia cierta, pues como le estoy diciendo, lo que tenemos, verdad, hecho es el examen, que el examen, verdad, las tareas. Eso sí, ¿qué más? ¿Qué más hicimos? ¿Qué más hicimos? Bueno, el quiz.
+
+LUIS FELIPE MORA UMAÑA   2:56:19
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:56:27
+¿Eso también lo hice, bueno, este investigación de qué?
+
+LUIS FELIPE MORA UMAÑA   2:56:27
+Uh-huh.
+La investigación.
+Esta.
+
+Kaik Andy Yocks Sandoval   2:56:33
+Del así que sí, el paper, sí, el paper.
+No, o sea, la puse a la PPT y al paper, pero esa vez sí se los puse en el PDF.
+
+LUIS FELIPE MORA UMAÑA   2:56:37
+Sí, y el proyecto.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:56:47
+Y pues el proyecto pues es lo que pues usted sabe que siempre lo que flaqueo.
+
+LUIS FELIPE MORA UMAÑA   2:56:53
+no póngale póngale lo más que le puedo decir póngale bastante tiene una semana y si ya ha salido todos los cursos con más razón tiene una semana de tiempo digamos
+
+Kaik Andy Yocks Sandoval   2:56:53
+Y.
+Y sí, entonces.
+Entonces sí, o sea, ya lo de la lo de.
+Pues la investigación, pues como le digo, le subí todo bien, tanto el la el la ppty eso, y entonces sí.
+
+LUIS FELIPE MORA UMAÑA   2:57:16
+Mhm.
+I think.
+
+Kaik Andy Yocks Sandoval   2:57:24
+Entonces sí o sea lo único que estoy tambaleando es en el proyecto verdad que pues el primero sí salió muy curioso y pues esperemos pues ya con este que pues no salga tan tan curioso si está no está o sea Tiene lo suyo verdad tiene su miau miau
+
+LUIS FELIPE MORA UMAÑA   2:57:32
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:57:43
+Pero ahí vamos de igual forma, pues sé que usted me dice que era un correo y cosas así, pero no sé si mejor como que bueno, le pongo así, como que no sé si usted trabaja los fines de semana como para jugar dudas o algo así.
+Es que mira contexto Ajá Okay Okay listo Bueno entonces sí eso era mi pregunta más que todo pues para saber porque ya la segunda vez con usted sé que existe el dicho de la tercera la vencida pero si hago la tercera la vencida entonces tendría que cancelarlo de lo de la eso le
+
+LUIS FELIPE MORA UMAÑA   2:58:00
+On my correo.
+Hello.
+
+Kaik Andy Yocks Sandoval   2:58:22
+Este seu exacto.
+
+LUIS FELIPE MORA UMAÑA   2:58:25
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:58:26
+Entonces, por eso dije, mejor dije, mejor di, verdad, preguntar de una vez para saber cómo están las cositas, pero si usted no sabe, pues con lo que le he dicho, pues no sé.
+
+LUIS FELIPE MORA UMAÑA   2:58:35
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:58:39
+Entonces, eso es.
+
+LUIS FELIPE MORA UMAÑA   2:58:40
+Sí, de como le digo, este vamos a ver, de póngale, póngale, vamos a ver, aquí tengo la Excel.
+Vea, para hacerle muy honesto, yo he visto personas.
+Con peores primeros proyectos, con peores notas en primeros proyectos y pasan en este.
+
+Kaik Andy Yocks Sandoval   2:59:02
+Bueno, eso me alegra.
+
+LUIS FELIPE MORA UMAÑA   2:59:05
+Lo que sí veo es que, por ejemplo, la entregué a uno no la envío.
+
+Kaik Andy Yocks Sandoval   2:59:10
+No eso fue la tarea uno así no lo envié porque bueno se acuerda que yo comenté la semana 2 que yo le dije que pues Ajá el ti y usted me dijo Sí está bien pero pues Ajá yo ya lo conocía entonces todavía que usted Pues solamente le especifique porque la semana la semana uno yo no yo no subí yo no estuve en la clase porque yo no estaba en su clase sabes o sea
+Estaban en problemas de ti, entonces me estaba arreglando. O sea, yo se lo comenté en la semana 2, pero usted simplemente me dijo como bueno, sí, está bien, pues yo le quito la ausencia, pero ya.
+
+LUIS FELIPE MORA UMAÑA   2:59:46
+No me convence.
+
+Kaik Andy Yocks Sandoval   2:59:47
+No, o sea, de ahí se puede ver en la semana.
+
+LUIS FELIPE MORA UMAÑA   2:59:49
+Porque la semana uno no tuvimos clase.
+
+Kaik Andy Yocks Sandoval   2:59:52
+Sí, o sea, me refiero a los emanados de tan después de eso.
+
+LUIS FELIPE MORA UMAÑA   2:59:55
+Semana 2 tuvimos clase y dejé la tarea.
+
+Kaik Andy Yocks Sandoval   2:59:58
+Ajá, exacto.
+
+LUIS FELIPE MORA UMAÑA   3:00:01
+Pero ahí está la grabación.
+
+Kaik Andy Yocks Sandoval   3:00:02
+Ajá, sí, pero usted se puede fijar. Yo no estoy en esa clase, o sea, no le estoy diciendo que me la vi, solamente le estoy comentando, pero las otras sí las tengo. O sea, es para que usted sepa nada más.
+
+LUIS FELIPE MORA UMAÑA   3:00:14
+O K, me hubiera hecho con más tiempo.
+
+Kaik Andy Yocks Sandoval   3:00:16
+Sí, pero o sea, bueno, o sea, a ver, contexto. Mira, para que usted sepa, ya lo estoy viendo, siento que lo estoy viendo de otra forma a usted, ya no lo estoy viendo como el demon que que lo vi como que lo tenía la primera vez. Entonces veo que pues verdad una un cambio radical 180. Entonces no veo que así usted así como que tanto usted.
+
+LUIS FELIPE MORA UMAÑA   3:00:19
+Bueno.
+
+Kaik Andy Yocks Sandoval   3:00:39
+Entonces yo por eso no fui.
+
+LUIS FELIPE MORA UMAÑA   3:00:40
+El cambio suyo, yo siempre he sido igual, yo siempre he dicho, si ocupan hablar, hablen. ¿Qué es lo que pasó? Usted en el primer la primera vez que llevo el curso, no habló conmigo en ningún momento.
+
+Kaik Andy Yocks Sandoval   3:00:50
+Sí, es que me entró un miedo, pues que pues no, sí, pero no.
+
+LUIS FELIPE MORA UMAÑA   3:00:53
+Ya sos otro tema, ya es otro tema.
+
+Kaik Andy Yocks Sandoval   3:00:58
+Pero sí, profe, no me van bien, muchísimas gracias y pues ahí usted va a ver. Voy a hacerle eso, lo que usted me recomendó de los 5 punto extra de esa de ese de ese.
+Alguien se me olvidó el nombre, pero voy a bueno, ya en la grabación busco cómo se llama, voy a buscar descargar y ta ta ta y lo y lo meto en la misma carpeta y ya, mami, muchísimas gracias y.
+
+LUIS FELIPE MORA UMAÑA   3:01:10
+Mhm.
+Hagas una carpeta ahí, bueno, tenemos una carpeta que se llama Docs, ¿verdad? en el.
+o deberíamos tener una carpeta que se llama docs entonces en esa carpeta debería estar entregable uno y forme uno y ahora el final dos verdad Entonces haces una carpeta ahí le metes doxygen verdad
+
+Kaik Andy Yocks Sandoval   3:01:39
+Okay.
+Okey, sí, porque yo lo yo lo que tenía era como una carpeta técnicas de programación, proyecto de técnicas de programación de proyecto, bueno, proyecto técnicas de programación Kinegol y ahí pues ahí tenía pues todo chorreado, ¿verdad? Pero voy a hacer eso, lo que usted dice, voy a hacer esa carpeta docs y ahí voy a meter entonces los PDFs y.
+
+LUIS FELIPE MORA UMAÑA   3:01:48
+Mhm.
+Exacto.
+
+Kaik Andy Yocks Sandoval   3:02:05
+Y pues eso, lo que vamos a hacer y con esa segunda parte.
+
+LUIS FELIPE MORA UMAÑA   3:02:10
+Sí, y póngala bastante, nada más reviso bien, lea bien la especificación.
+
+Kaik Andy Yocks Sandoval   3:02:12
+Bueno.
+así Esta vez sí esta vez no va a pasar lo mismo y seguir su consejo no sé si mira lo voy a mostrar rapidito ya para que usted se vaya porque seguro usted tiene hambre yo también yo no he almorzado pero pues Ajá
+
+LUIS FELIPE MORA UMAÑA   3:02:30
+Tranquilo.
+
+Kaik Andy Yocks Sandoval   3:02:33
+Bueno, sé que no es no es lo más óptimo, pero me ayuda a mí porque pues un ejemplo, yo acá no me siento a trabajar, no sé si logra ver, me siento a trabajar aquí, verdad? Pues lo primero que veo siempre es el escritorio, entonces en lugar de decir verdad como usted me recomendó las aplicaciones, pero sinceramente las aplicaciones, pues a mí se me olvida como si es Gmail o cositas así como que abrirlas y cosas así entonces.
+
+LUIS FELIPE MORA UMAÑA   3:02:42
+Mhm.
+
+Kaik Andy Yocks Sandoval   3:02:55
+yo hice una una carpeta no sé si puede ver aquí que hice falta verdad Entonces ves un ejemplo aquí son están las materias que me hicieron que me hacían falta verdad Entonces un ejemplo técnicas de programación ves entonces paper ver grabación porque en ese momento no me acordaba y toda la cosa y todo y cosas así entonces un ejemplo ya como este ya lo terminamos Entonces esto lo que hago es que lo muevo y yo lo que lo muevo
+
+LUIS FELIPE MORA UMAÑA   3:02:58
+Mhm.
+
+Kaik Andy Yocks Sandoval   3:03:20
+Es aquí en esta otra carpeta, que ya es más general.
+
+LUIS FELIPE MORA UMAÑA   3:03:35
+Mhm.
+
+Kaik Andy Yocks Sandoval   3:03:36
+ese consejo que usted me dio pues hágase como una cartica Bueno un recordatorio algo así sé que me pueda Haber puesto a programar que dejar un recordatorio pero pues por temas de tiempo pues a ponerme así de gracioso eh pues mejor lo hice así pero pero me gustó mucho más bien ese consejo que usted me dio
+
+LUIS FELIPE MORA UMAÑA   3:03:49
+Mhm.
+vamos a ver como le decía ese día cada quien se acomoda como a su forma digamos lo que tienen que encontrar es el sistema que usted le sirva si el sistema le sirvió Dale
+
+Kaik Andy Yocks Sandoval   3:04:03
+Sí.
+Sí, bueno, y en términos de GitHub, ya me acordé que a ver, por eso también que sí le había tomado un screenshot a los códigos de las contraseñas de esas que me pedían.
+
+LUIS FELIPE MORA UMAÑA   3:04:21
+Mhm.
+
+Kaik Andy Yocks Sandoval   3:04:22
+Entonces, pues ya por dicha lo pude bloquear, no tuve que bloque, que como que volverme a hacer uno, así que pues ahí vamos bien por esa parte también.
+
+LUIS FELIPE MORA UMAÑA   3:04:33
+Bueno, hay que hecho.
+
+Kaik Andy Yocks Sandoval   3:04:35
+Y ya entonces serían, ya se fue, ya se fue. Muchísimas gracias de una vez más, profe.
+
+LUIS FELIPE MORA UMAÑA   3:04:36
+Desarrollo.
+Tranquilo para eso estamos buenas noches que descanse.
+
+Kaik Andy Yocks Sandoval   3:04:43
+Bueno, buenas noches, hasta luego, bye.
+
+LUIS FELIPE MORA UMAÑA   3:04:45
+Buen día, buen día.
+
+LUIS FELIPE MORA UMAÑA stopped transcription

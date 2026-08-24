@@ -1,274 +1,143 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
 
 namespace Quiniegol.Services
 {
+    /// <summary>
+    /// Administra las insignias automáticas obtenidas por los participantes.
+    /// </summary>
     public class InsigniaService
     {
-        private readonly JsonRepository<Usuario>
-            _usuarioRepository;
+        private static readonly HashSet<string> InsigniasGlobales = new()
+        {
+            "Líder global",
+            "Peor del ranking global",
+            "Rey de los empates",
+            "Racha de 10 aciertos"
+        };
 
-        private readonly JsonRepository<Pronostico>
-            _pronosticoRepository;
-
-        private readonly JsonRepository<Quiniela>
-            _quinielaRepository;
-
-        private readonly PartidoController
-            _partidoController;
-
-        private readonly PuntajeController
-            _puntajeController;
+        private readonly JsonRepository<Usuario> _usuarioRepository;
+        private readonly JsonRepository<Pronostico> _pronosticoRepository;
+        private readonly JsonRepository<Quiniela> _quinielaRepository;
+        private readonly PartidoController _partidoController;
+        private readonly PuntajeController _puntajeController;
 
         public InsigniaService()
         {
-            _usuarioRepository =
-                new JsonRepository<Usuario>(
-                    RutaDatosService.ObtenerRuta(
-                        "usuarios.json"
-                    )
-                );
-
-            _pronosticoRepository =
-                new JsonRepository<Pronostico>(
-                    RutaDatosService.ObtenerRuta(
-                        "pronosticos.json"
-                    )
-                );
-
-            _quinielaRepository =
-                new JsonRepository<Quiniela>(
-                    RutaDatosService.ObtenerRuta(
-                        "quinielas.json"
-                    )
-                );
-
-            _partidoController =
-                new PartidoController();
-
-            _puntajeController =
-                new PuntajeController();
+            _usuarioRepository = new JsonRepository<Usuario>(
+                RutaDatosService.ObtenerRuta("usuarios.json"));
+            _pronosticoRepository = new JsonRepository<Pronostico>(
+                RutaDatosService.ObtenerRuta("pronosticos.json"));
+            _quinielaRepository = new JsonRepository<Quiniela>(
+                RutaDatosService.ObtenerRuta("quinielas.json"));
+            _partidoController = new PartidoController();
+            _puntajeController = new PuntajeController();
         }
 
+        /// <summary>
+        /// Devuelve el catálogo de insignias globales disponibles.
+        /// </summary>
         public List<Insignia> ObtenerCatalogo()
         {
             return new List<Insignia>
             {
-                new Insignia
-                {
-                    Nombre = "Líder global",
-                    Descripcion =
-                        "Usuario con mayor puntaje global.",
-                    Tipo = "Positiva"
-                },
-                new Insignia
-                {
-                    Nombre = "Rey de los empates",
-                    Descripcion =
-                        "Usuario con más empates acertados.",
-                    Tipo = "Positiva"
-                },
-                new Insignia
-                {
-                    Nombre = "Racha de 10 aciertos",
-                    Descripcion =
-                        "Usuario con al menos 10 aciertos consecutivos.",
-                    Tipo = "Positiva"
-                },
-                new Insignia
-                {
-                    Nombre = "Peor del ranking global",
-                    Descripcion =
-                        "Usuario con menor puntaje global.",
-                    Tipo = "Vergüenza"
-                }
+                CrearInsignia("Líder global", "Usuario con mayor puntaje global.", "Positiva"),
+                CrearInsignia(
+                    "Rey de los empates", "Usuario con más empates acertados.", "Positiva"),
+                CrearInsignia(
+                    "Racha de 10 aciertos",
+                    "Usuario con al menos 10 aciertos consecutivos.",
+                    "Positiva"),
+                CrearInsignia(
+                    "Peor del ranking global", "Usuario con menor puntaje global.", "Vergüenza")
             };
         }
 
+        /// <summary>
+        /// Recalcula todas las insignias automáticas a partir de los datos actuales.
+        /// </summary>
         public void RecalcularInsignias()
         {
-            _puntajeController
-                .CalcularTodosLosPuntajes();
+            _puntajeController.CalcularTodosLosPuntajes();
 
-            List<Usuario> usuarios =
-                _usuarioRepository.ObtenerTodos();
-
-            List<Pronostico> pronosticos =
-                _pronosticoRepository.ObtenerTodos();
-
-            List<Quiniela> quinielas =
-                _quinielaRepository.ObtenerTodos();
-
-            List<Partido> partidos =
-                _partidoController.ObtenerPartidos();
-
+            List<Usuario> usuarios = _usuarioRepository.ObtenerTodos();
             List<Usuario> participantes = usuarios
-                .Where(usuario =>
-                    usuario.Rol == RolUsuario.Usuario)
+                .Where(usuario => usuario.Rol == RolUsuario.Usuario)
                 .ToList();
+            List<Pronostico> pronosticos = _pronosticoRepository.ObtenerTodos();
+            List<Quiniela> quinielas = _quinielaRepository.ObtenerTodos();
+            Dictionary<int, Partido> partidosPorId = _partidoController.ObtenerPartidos()
+                .ToDictionary(partido => partido.Id);
+            Dictionary<int, Usuario> participantesPorId = participantes
+                .ToDictionary(usuario => usuario.Id);
 
             foreach (Usuario usuario in usuarios)
             {
-                usuario.Insignias ??=
-                    new List<string>();
-
-                usuario.Insignias.RemoveAll(
-                    EsInsigniaAutomatica
-                );
+                usuario.Insignias ??= new List<string>();
+                usuario.Insignias.RemoveAll(EsInsigniaAutomatica);
             }
 
-            AsignarLiderGlobal(participantes);
+            AsignarExtremoGlobal(participantes, esMayor: true);
+            AsignarExtremoGlobal(participantes, esMayor: false);
+            AsignarReyDeLosEmpates(participantesPorId, pronosticos, partidosPorId);
+            AsignarRachas(participantes, pronosticos, partidosPorId);
+            AsignarInsigniasPorQuiniela(participantesPorId, quinielas);
 
-            AsignarPeorGlobal(participantes);
-
-            AsignarReyDeLosEmpates(
-                participantes,
-                pronosticos,
-                partidos
-            );
-
-            AsignarRachas(
-                participantes,
-                pronosticos,
-                partidos
-            );
-
-            AsignarInsigniasPorQuiniela(
-                participantes,
-                quinielas
-            );
-
-            _usuarioRepository.GuardarTodos(
-                usuarios
-            );
+            _usuarioRepository.GuardarTodos(usuarios);
         }
 
-        private bool EsInsigniaAutomatica(
-            string insignia)
+        private static Insignia CrearInsignia(string nombre, string descripcion, string tipo)
         {
-            return
-                insignia == "Líder global" ||
-                insignia == "Peor del ranking global" ||
-                insignia == "Rey de los empates" ||
-                insignia == "Racha de 10 aciertos" ||
-                insignia.StartsWith(
-                    "Líder de quiniela:"
-                ) ||
-                insignia.StartsWith(
-                    "Peor de quiniela:"
-                );
+            return new Insignia { Nombre = nombre, Descripcion = descripcion, Tipo = tipo };
         }
 
-        private void AsignarLiderGlobal(
-            List<Usuario> usuarios)
+        private static bool EsInsigniaAutomatica(string insignia)
         {
-            if (usuarios.Count == 0)
+            return InsigniasGlobales.Contains(insignia) ||
+                insignia.StartsWith("Líder de quiniela:") ||
+                insignia.StartsWith("Peor de quiniela:");
+        }
+
+        private static void AsignarExtremoGlobal(List<Usuario> usuarios, bool esMayor)
+        {
+            if (usuarios.Count == 0 || (!esMayor && usuarios.Count <= 1))
             {
                 return;
             }
 
-            int mayorPuntaje =
-                usuarios.Max(usuario =>
-                    usuario.Puntos
-                );
+            int puntajeObjetivo = esMayor
+                ? usuarios.Max(usuario => usuario.Puntos)
+                : usuarios.Min(usuario => usuario.Puntos);
+            string insignia = esMayor ? "Líder global" : "Peor del ranking global";
 
-            foreach (Usuario usuario in usuarios
-                         .Where(usuario =>
-                             usuario.Puntos ==
-                             mayorPuntaje
-                         ))
+            foreach (Usuario usuario in usuarios.Where(
+                participante => participante.Puntos == puntajeObjetivo))
             {
-                AgregarInsignia(
-                    usuario,
-                    "Líder global"
-                );
+                AgregarInsignia(usuario, insignia);
             }
         }
 
-        private void AsignarPeorGlobal(
-            List<Usuario> usuarios)
+        private static void AsignarReyDeLosEmpates(
+            IReadOnlyDictionary<int, Usuario> usuarios,
+            IEnumerable<Pronostico> pronosticos,
+            IReadOnlyDictionary<int, Partido> partidos)
         {
-            if (usuarios.Count <= 1)
+            var empatesAcertados = new Dictionary<int, int>();
+            foreach (Pronostico pronostico in pronosticos)
             {
-                return;
-            }
-
-            int menorPuntaje =
-                usuarios.Min(usuario =>
-                    usuario.Puntos
-                );
-
-            foreach (Usuario usuario in usuarios
-                         .Where(usuario =>
-                             usuario.Puntos ==
-                             menorPuntaje
-                         ))
-            {
-                AgregarInsignia(
-                    usuario,
-                    "Peor del ranking global"
-                );
-            }
-        }
-
-        private void AsignarReyDeLosEmpates(
-            List<Usuario> usuarios,
-            List<Pronostico> pronosticos,
-            List<Partido> partidos)
-        {
-            Dictionary<int, int> empatesAcertados =
-                new Dictionary<int, int>();
-
-            foreach (Pronostico pronostico
-                     in pronosticos)
-            {
-                Partido? partido =
-                    partidos.FirstOrDefault(
-                        partidoActual =>
-                            partidoActual.Id ==
-                            pronostico.PartidoId
-                    );
-
-                if (partido == null ||
-                    partido.Estado != "Finalizado" ||
-                    !partido.GolesLocal.HasValue ||
-                    !partido.GolesVisitante.HasValue)
+                if (!usuarios.ContainsKey(pronostico.UsuarioId) ||
+                    !partidos.TryGetValue(pronostico.PartidoId, out Partido? partido) ||
+                    !PartidoTieneResultado(partido) ||
+                    partido.GolesLocal != partido.GolesVisitante ||
+                    pronostico.GolesLocalPronosticados !=
+                        pronostico.GolesVisitantePronosticados)
                 {
                     continue;
                 }
 
-                bool resultadoRealFueEmpate =
-                    partido.GolesLocal ==
-                    partido.GolesVisitante;
-
-                bool pronosticoFueEmpate =
-                    pronostico
-                        .GolesLocalPronosticados ==
-                    pronostico
-                        .GolesVisitantePronosticados;
-
-                if (!resultadoRealFueEmpate ||
-                    !pronosticoFueEmpate)
-                {
-                    continue;
-                }
-
-                if (!empatesAcertados.ContainsKey(
-                    pronostico.UsuarioId
-                ))
-                {
-                    empatesAcertados[
-                        pronostico.UsuarioId
-                    ] = 0;
-                }
-
-                empatesAcertados[
-                    pronostico.UsuarioId
-                ]++;
+                empatesAcertados[pronostico.UsuarioId] =
+                    empatesAcertados.GetValueOrDefault(pronostico.UsuarioId) + 1;
             }
 
             if (empatesAcertados.Count == 0)
@@ -276,173 +145,105 @@ namespace Quiniegol.Services
                 return;
             }
 
-            int mayorCantidad =
-                empatesAcertados
-                    .Max(elemento =>
-                        elemento.Value
-                    );
-
-            foreach (var elemento in empatesAcertados
-                         .Where(elemento =>
-                             elemento.Value ==
-                             mayorCantidad
-                         ))
+            int mayorCantidad = empatesAcertados.Max(resultado => resultado.Value);
+            foreach (var resultado in empatesAcertados.Where(
+                resultado => resultado.Value == mayorCantidad))
             {
-                Usuario? usuario =
-                    usuarios.FirstOrDefault(
-                        usuarioActual =>
-                            usuarioActual.Id ==
-                            elemento.Key
-                    );
-
-                if (usuario != null)
-                {
-                    AgregarInsignia(
-                        usuario,
-                        "Rey de los empates"
-                    );
-                }
+                AgregarInsignia(usuarios[resultado.Key], "Rey de los empates");
             }
         }
 
-        private void AsignarRachas(
-            List<Usuario> usuarios,
-            List<Pronostico> pronosticos,
-            List<Partido> partidos)
+        private static void AsignarRachas(
+            IEnumerable<Usuario> usuarios,
+            IEnumerable<Pronostico> pronosticos,
+            IReadOnlyDictionary<int, Partido> partidos)
         {
+            Dictionary<int, List<Pronostico>> pronosticosPorUsuario = pronosticos
+                .Where(pronostico => pronostico.PuntosObtenidos.HasValue)
+                .GroupBy(pronostico => pronostico.UsuarioId)
+                .ToDictionary(grupo => grupo.Key, grupo => grupo.ToList());
+
             foreach (Usuario usuario in usuarios)
             {
-                List<Pronostico> pronosticosUsuario =
-                    pronosticos
-                        .Where(pronostico =>
-                            pronostico.UsuarioId ==
-                            usuario.Id &&
-                            pronostico
-                                .PuntosObtenidos
-                                .HasValue
-                        )
-                        .OrderBy(pronostico =>
-                            partidos.FirstOrDefault(
-                                partido =>
-                                    partido.Id ==
-                                    pronostico.PartidoId
-                            )
-                            ?.FechaHora
-                            ?? DateTime.MaxValue
-                        )
-                        .ToList();
-
-                int rachaActual = 0;
-                int mayorRacha = 0;
-
-                foreach (Pronostico pronostico
-                         in pronosticosUsuario)
+                if (!pronosticosPorUsuario.TryGetValue(usuario.Id, out List<Pronostico>? historial))
                 {
-                    if (pronostico.PuntosObtenidos >
-                        0)
-                    {
-                        rachaActual++;
-
-                        if (rachaActual > mayorRacha)
-                        {
-                            mayorRacha =
-                                rachaActual;
-                        }
-                    }
-                    else
-                    {
-                        rachaActual = 0;
-                    }
+                    continue;
                 }
 
-                if (mayorRacha >= 10)
+                IEnumerable<Pronostico> historialOrdenado = historial.OrderBy(pronostico =>
+                    partidos.GetValueOrDefault(pronostico.PartidoId)?.FechaHora ?? DateTime.MaxValue);
+                if (ObtenerMayorRacha(historialOrdenado) >= 10)
                 {
-                    AgregarInsignia(
-                        usuario,
-                        "Racha de 10 aciertos"
-                    );
+                    AgregarInsignia(usuario, "Racha de 10 aciertos");
                 }
             }
         }
 
-        private void AsignarInsigniasPorQuiniela(
-            List<Usuario> usuarios,
-            List<Quiniela> quinielas)
+        private static int ObtenerMayorRacha(IEnumerable<Pronostico> pronosticos)
+        {
+            int rachaActual = 0;
+            int mayorRacha = 0;
+            foreach (Pronostico pronostico in pronosticos)
+            {
+                rachaActual = pronostico.PuntosObtenidos > 0 ? rachaActual + 1 : 0;
+                mayorRacha = Math.Max(mayorRacha, rachaActual);
+            }
+
+            return mayorRacha;
+        }
+
+        private static void AsignarInsigniasPorQuiniela(
+            IReadOnlyDictionary<int, Usuario> usuarios,
+            IEnumerable<Quiniela> quinielas)
         {
             foreach (Quiniela quiniela in quinielas)
             {
-                List<Usuario> integrantes =
-                    usuarios
-                        .Where(usuario =>
-                            quiniela
-                                .IntegrantesIds
-                                .Contains(
-                                    usuario.Id
-                                )
-                        )
-                        .ToList();
-
+                List<Usuario> integrantes = quiniela.IntegrantesIds
+                    .Where(usuarios.ContainsKey)
+                    .Select(id => usuarios[id])
+                    .ToList();
                 if (integrantes.Count == 0)
                 {
                     continue;
                 }
 
-                int mayorPuntaje =
-                    integrantes.Max(usuario =>
-                        usuario.Puntos
-                    );
-
-                foreach (Usuario lider
-                         in integrantes.Where(
-                             usuario =>
-                                 usuario.Puntos ==
-                                 mayorPuntaje
-                         ))
+                AsignarExtremoQuiniela(integrantes, quiniela.Nombre, esMayor: true);
+                if (integrantes.Count > 1)
                 {
-                    AgregarInsignia(
-                        lider,
-                        $"Líder de quiniela: " +
-                        $"{quiniela.Nombre}"
-                    );
-                }
-
-                if (integrantes.Count <= 1)
-                {
-                    continue;
-                }
-
-                int menorPuntaje =
-                    integrantes.Min(usuario =>
-                        usuario.Puntos
-                    );
-
-                foreach (Usuario ultimo
-                         in integrantes.Where(
-                             usuario =>
-                                 usuario.Puntos ==
-                                 menorPuntaje
-                         ))
-                {
-                    AgregarInsignia(
-                        ultimo,
-                        $"Peor de quiniela: " +
-                        $"{quiniela.Nombre}"
-                    );
+                    AsignarExtremoQuiniela(integrantes, quiniela.Nombre, esMayor: false);
                 }
             }
         }
 
-        private void AgregarInsignia(
-            Usuario usuario,
-            string nombreInsignia)
+        private static void AsignarExtremoQuiniela(
+            IEnumerable<Usuario> integrantes,
+            string nombreQuiniela,
+            bool esMayor)
         {
-            if (!usuario.Insignias.Contains(
-                nombreInsignia
-            ))
+            List<Usuario> lista = integrantes.ToList();
+            int puntaje = esMayor
+                ? lista.Max(usuario => usuario.Puntos)
+                : lista.Min(usuario => usuario.Puntos);
+            string prefijo = esMayor ? "Líder" : "Peor";
+
+            foreach (Usuario usuario in lista.Where(usuario => usuario.Puntos == puntaje))
             {
-                usuario.Insignias.Add(
-                    nombreInsignia
-                );
+                AgregarInsignia(usuario, $"{prefijo} de quiniela: {nombreQuiniela}");
+            }
+        }
+
+        private static bool PartidoTieneResultado(Partido partido)
+        {
+            return partido.Estado == "Finalizado" &&
+                partido.GolesLocal.HasValue &&
+                partido.GolesVisitante.HasValue;
+        }
+
+        private static void AgregarInsignia(Usuario usuario, string nombreInsignia)
+        {
+            if (!usuario.Insignias.Contains(nombreInsignia))
+            {
+                usuario.Insignias.Add(nombreInsignia);
             }
         }
     }

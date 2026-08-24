@@ -1,194 +1,106 @@
-﻿using System.Text;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
 using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
+    /// <summary>
+    /// Prepara el historial de pronósticos que se muestra a cada usuario.
+    /// </summary>
     public class HistorialPronosticoController
     {
-        private readonly JsonRepository<Pronostico>
-            _pronosticoRepository;
-
-        private readonly JsonRepository<Seleccion>
-            _seleccionRepository;
-
-        private readonly PartidoController
-            _partidoController;
+        private readonly JsonRepository<Pronostico> _pronosticoRepository;
+        private readonly JsonRepository<Seleccion> _seleccionRepository;
+        private readonly PartidoController _partidoController;
 
         public HistorialPronosticoController()
         {
-            string rutaPronosticos =
-                RutaDatosService.ObtenerRuta(
-                    "pronosticos.json"
-                );
-
-            string rutaSelecciones =
-                RutaDatosService.ObtenerRuta(
-                    "selecciones.json"
-                );
-
-            _pronosticoRepository =
-                new JsonRepository<Pronostico>(
-                    rutaPronosticos
-                );
-
-            _seleccionRepository =
-                new JsonRepository<Seleccion>(
-                    rutaSelecciones
-                );
-
-            _partidoController =
-                new PartidoController();
+            _pronosticoRepository = new JsonRepository<Pronostico>(
+                RutaDatosService.ObtenerRuta("pronosticos.json"));
+            _seleccionRepository = new JsonRepository<Seleccion>(
+                RutaDatosService.ObtenerRuta("selecciones.json"));
+            _partidoController = new PartidoController();
         }
 
-        public List<HistorialPronosticoItem>
-            ObtenerPorUsuario(int usuarioId)
+        /// <summary>
+        /// Obtiene el historial propio o, si la sesión es administrativa, el de otro usuario.
+        /// </summary>
+        public List<HistorialPronosticoItem> ObtenerPorUsuario(int usuarioId)
         {
-            Usuario usuarioActual = SesionUsuarioService.UsuarioActual;
+            ValidarAcceso(usuarioId);
 
-            if (!SesionUsuarioService.EsAdministrador &&
-                usuarioId != usuarioActual.Id)
-            {
-                throw new UnauthorizedAccessException(
-                    "Solo puede consultar su propio historial."
-                );
-            }
+            Dictionary<int, Partido> partidosPorId = _partidoController.ObtenerPartidos()
+                .ToDictionary(partido => partido.Id);
+            Dictionary<int, string> seleccionesPorId = _seleccionRepository.ObtenerTodos()
+                .ToDictionary(seleccion => seleccion.Id, seleccion => seleccion.Nombre);
 
-            if (usuarioId <= 0)
-            {
-                throw new ArgumentException(
-                    "Debe seleccionar un usuario."
-                );
-            }
-
-            List<Pronostico> pronosticos =
-                _pronosticoRepository
-                    .ObtenerTodos()
-                    .Where(pronostico =>
-                        pronostico.UsuarioId ==
-                        usuarioId
-                    )
-                    .ToList();
-
-            List<Partido> partidos =
-                _partidoController.ObtenerPartidos();
-
-            List<Seleccion> selecciones =
-                _seleccionRepository.ObtenerTodos();
-
-            List<HistorialPronosticoItem> historial =
-                new List<HistorialPronosticoItem>();
-
-            foreach (Pronostico pronostico in pronosticos)
-            {
-                Partido? partido =
-                    partidos.FirstOrDefault(
-                        partidoActual =>
-                            partidoActual.Id ==
-                            pronostico.PartidoId
-                    );
-
-                if (partido == null)
-                {
-                    continue;
-                }
-
-                string nombreLocal =
-                    ObtenerNombreSeleccion(
-                        selecciones,
-                        partido.SeleccionLocalId
-                    );
-
-                string nombreVisitante =
-                    ObtenerNombreSeleccion(
-                        selecciones,
-                        partido.SeleccionVisitanteId
-                    );
-
-                string resultadoReal = "Pendiente";
-
-                if (partido.Estado == "Finalizado" &&
-                    partido.GolesLocal.HasValue &&
-                    partido.GolesVisitante.HasValue)
-                {
-                    resultadoReal =
-                        $"{partido.GolesLocal} - " +
-                        $"{partido.GolesVisitante}";
-                }
-
-                string puntos =
-                    pronostico.PuntosObtenidos.HasValue
-                        ? pronostico
-                            .PuntosObtenidos
-                            .Value
-                            .ToString()
-                        : "Pendiente";
-
-                HistorialPronosticoItem fila =
-                    new HistorialPronosticoItem
-                    {
-                        PronosticoId =
-                            pronostico.Id,
-
-                        FechaRegistro =
-                            pronostico.FechaRegistro,
-
-                        Partido =
-                            $"{nombreLocal} vs " +
-                            $"{nombreVisitante}",
-
-                        MarcadorPronosticado =
-                            $"{pronostico.GolesLocalPronosticados}" +
-                            " - " +
-                            $"{pronostico.GolesVisitantePronosticados}",
-
-                        GoleadoresPronosticados =
-                            GoleadoresPronosticoService.Formatear(
-                                pronostico,
-                                nombreLocal,
-                                nombreVisitante),
-
-                        ResultadoReal =
-                            resultadoReal,
-
-                        Estado =
-                            partido.Estado,
-
-                        Puntos =
-                            puntos
-                    };
-
-                historial.Add(fila);
-            }
-
-            return historial
-                .OrderByDescending(fila =>
-                    fila.FechaRegistro
-                )
+            return _pronosticoRepository.ObtenerTodos()
+                .Where(pronostico => pronostico.UsuarioId == usuarioId)
+                .Where(pronostico => partidosPorId.ContainsKey(pronostico.PartidoId))
+                .Select(pronostico => CrearFila(
+                    pronostico,
+                    partidosPorId[pronostico.PartidoId],
+                    seleccionesPorId))
+                .OrderByDescending(fila => fila.FechaRegistro)
                 .ToList();
         }
 
-        private string ObtenerNombreSeleccion(
-            List<Seleccion> selecciones,
-            int seleccionId)
+        private static void ValidarAcceso(int usuarioId)
         {
-            Seleccion? seleccion =
-                selecciones.FirstOrDefault(
-                    seleccionActual =>
-                        seleccionActual.Id ==
-                        seleccionId
-                );
-
-            if (seleccion == null)
+            if (usuarioId <= 0)
             {
-                return $"Selección {seleccionId}";
+                throw new ArgumentException("Debe seleccionar un usuario.");
             }
 
-            return seleccion.Nombre;
+            if (!SesionUsuarioService.EsAdministrador &&
+                usuarioId != SesionUsuarioService.UsuarioActual.Id)
+            {
+                throw new UnauthorizedAccessException(
+                    "Solo puede consultar su propio historial.");
+            }
+        }
+
+        private static HistorialPronosticoItem CrearFila(
+            Pronostico pronostico,
+            Partido partido,
+            IReadOnlyDictionary<int, string> selecciones)
+        {
+            string local = ObtenerNombreSeleccion(selecciones, partido.SeleccionLocalId);
+            string visitante = ObtenerNombreSeleccion(selecciones, partido.SeleccionVisitanteId);
+            string resultadoReal = PartidoTieneResultado(partido)
+                ? $"{partido.GolesLocal} - {partido.GolesVisitante}"
+                : "Pendiente";
+            string puntos = pronostico.PuntosObtenidos?.ToString() ?? "Pendiente";
+
+            return new HistorialPronosticoItem
+            {
+                PronosticoId = pronostico.Id,
+                FechaRegistro = pronostico.FechaRegistro,
+                Partido = $"{local} vs {visitante}",
+                MarcadorPronosticado =
+                    $"{pronostico.GolesLocalPronosticados} - {pronostico.GolesVisitantePronosticados}",
+                GoleadoresPronosticados = GoleadoresPronosticoService.Formatear(
+                    pronostico,
+                    local,
+                    visitante),
+                ResultadoReal = resultadoReal,
+                Estado = partido.Estado,
+                Puntos = puntos
+            };
+        }
+
+        private static bool PartidoTieneResultado(Partido partido)
+        {
+            return partido.Estado == "Finalizado" &&
+                partido.GolesLocal.HasValue &&
+                partido.GolesVisitante.HasValue;
+        }
+
+        private static string ObtenerNombreSeleccion(
+            IReadOnlyDictionary<int, string> selecciones,
+            int seleccionId)
+        {
+            return selecciones.GetValueOrDefault(seleccionId, $"Selección {seleccionId}");
         }
     }
 }

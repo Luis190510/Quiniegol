@@ -31,58 +31,50 @@ namespace Quiniegol.Services
         {
             new PuntajeController().CalcularTodosLosPuntajes();
 
-            List<Usuario> integrantes =
-                _quinielaController.ObtenerIntegrantes(quinielaId);
-            HashSet<int> integrantesIds =
-                integrantes.Select(usuario => usuario.Id).ToHashSet();
-            List<Partido> partidos =
-                _partidoController.ObtenerPartidos();
-            List<Seleccion> selecciones =
-                _seleccionRepository.ObtenerTodos();
+            Dictionary<int, Usuario> integrantes = _quinielaController
+                .ObtenerIntegrantes(quinielaId)
+                .ToDictionary(usuario => usuario.Id);
+            Dictionary<int, Partido> partidosFinalizados = _partidoController
+                .ObtenerPartidos()
+                .Where(partido => partido.Estado == "Finalizado")
+                .ToDictionary(partido => partido.Id);
+            Dictionary<int, string> selecciones = _seleccionRepository.ObtenerTodos()
+                .ToDictionary(seleccion => seleccion.Id, seleccion => seleccion.Nombre);
 
-            List<Notificacion> actividad =
-                _pronosticoRepository
-                    .ObtenerTodos()
-                    .Where(pronostico =>
-                        integrantesIds.Contains(pronostico.UsuarioId) &&
-                        pronostico.PuntosObtenidos.HasValue)
-                    .Select(pronostico => CrearNotificacion(
-                        pronostico,
-                        integrantes,
-                        partidos,
-                        selecciones))
-                    .Where(notificacion => notificacion != null)
-                    .Cast<Notificacion>()
-                    .OrderByDescending(notificacion => notificacion.Fecha)
-                    .ThenByDescending(notificacion => notificacion.Id)
-                    .ToList();
-
-            return actividad;
+            return _pronosticoRepository.ObtenerTodos()
+                .Where(pronostico =>
+                    integrantes.ContainsKey(pronostico.UsuarioId) &&
+                    pronostico.PuntosObtenidos.HasValue)
+                .Select(pronostico => CrearNotificacion(
+                    pronostico,
+                    integrantes,
+                    partidosFinalizados,
+                    selecciones))
+                .Where(notificacion => notificacion != null)
+                .Cast<Notificacion>()
+                .OrderByDescending(notificacion => notificacion.Fecha)
+                .ThenByDescending(notificacion => notificacion.Id)
+                .ToList();
         }
 
         private static Notificacion? CrearNotificacion(
             Pronostico pronostico,
-            List<Usuario> usuarios,
-            List<Partido> partidos,
-            List<Seleccion> selecciones)
+            IReadOnlyDictionary<int, Usuario> usuarios,
+            IReadOnlyDictionary<int, Partido> partidos,
+            IReadOnlyDictionary<int, string> selecciones)
         {
-            Usuario? usuario = usuarios.FirstOrDefault(elemento =>
-                elemento.Id == pronostico.UsuarioId);
-            Partido? partido = partidos.FirstOrDefault(elemento =>
-                elemento.Id == pronostico.PartidoId &&
-                elemento.Estado == "Finalizado");
-
-            if (usuario == null || partido == null)
+            if (!usuarios.TryGetValue(pronostico.UsuarioId, out Usuario? usuario) ||
+                !partidos.TryGetValue(pronostico.PartidoId, out Partido? partido))
             {
                 return null;
             }
 
-            string local = selecciones.FirstOrDefault(seleccion =>
-                seleccion.Id == partido.SeleccionLocalId)?.Nombre
-                ?? $"Selección {partido.SeleccionLocalId}";
-            string visitante = selecciones.FirstOrDefault(seleccion =>
-                seleccion.Id == partido.SeleccionVisitanteId)?.Nombre
-                ?? $"Selección {partido.SeleccionVisitanteId}";
+            string local = selecciones.GetValueOrDefault(
+                partido.SeleccionLocalId,
+                $"Selección {partido.SeleccionLocalId}");
+            string visitante = selecciones.GetValueOrDefault(
+                partido.SeleccionVisitanteId,
+                $"Selección {partido.SeleccionVisitanteId}");
 
             return new Notificacion
             {

@@ -1,54 +1,48 @@
-using System;
-using System.Windows.Forms;
+using Quiniegol.Models;
 using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
+    /// <summary>
+    /// Muestra la tabla de posiciones de cada grupo con encabezados descriptivos.
+    /// </summary>
     public partial class FrmTablaGrupos : Form
     {
-        private readonly TablaPosicionesService
-            _tablaService;
+        private static readonly Dictionary<string, string> TitulosColumnas = new()
+        {
+            [nameof(PosicionGrupoItem.Posicion)] = "Posición",
+            [nameof(PosicionGrupoItem.Seleccion)] = "Selección",
+            [nameof(PosicionGrupoItem.PartidosJugados)] = "Partidos jugados",
+            [nameof(PosicionGrupoItem.PartidosGanados)] = "Partidos ganados",
+            [nameof(PosicionGrupoItem.PartidosEmpatados)] = "Partidos empatados",
+            [nameof(PosicionGrupoItem.PartidosPerdidos)] = "Partidos perdidos",
+            [nameof(PosicionGrupoItem.GolesFavor)] = "Goles a favor",
+            [nameof(PosicionGrupoItem.GolesContra)] = "Goles en contra",
+            [nameof(PosicionGrupoItem.DiferenciaGoles)] = "Diferencia de goles",
+            [nameof(PosicionGrupoItem.Puntos)] = "Puntos"
+        };
+
+        private readonly TablaPosicionesService _tablaService;
 
         public FrmTablaGrupos()
         {
             InitializeComponent();
-
-            _tablaService =
-                new TablaPosicionesService();
-
+            _tablaService = new TablaPosicionesService();
             CargarGrupos();
         }
 
         private void CargarGrupos()
         {
-            cmbGrupo.DataSource = null;
-
-            cmbGrupo.DataSource =
-                _tablaService.ObtenerGrupos();
-
-            cmbGrupo.DropDownStyle =
-                ComboBoxStyle.DropDownList;
+            cmbGrupo.DataSource = _tablaService.ObtenerGrupos();
+            cmbGrupo.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        private void btnCalcular_Click(
-            object sender,
-            EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
             try
             {
-                string grupo =
-                    cmbGrupo.SelectedItem
-                        ?.ToString()
-                    ?? "";
-
-                dgvTabla.DataSource = null;
-
-                dgvTabla.DataSource =
-                    _tablaService
-                        .CalcularTabla(
-                            grupo
-                        );
-
+                string grupo = cmbGrupo.SelectedItem?.ToString() ?? string.Empty;
+                dgvTabla.DataSource = _tablaService.CalcularTabla(grupo);
                 ConfigurarColumnas();
             }
             catch (Exception ex)
@@ -57,89 +51,32 @@ namespace Quiniegol.Views
                     ex.Message,
                     "Error al calcular la tabla",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
+                    MessageBoxIcon.Error);
             }
         }
 
         private void ConfigurarColumnas()
         {
-            if (dgvTabla.Columns["SeleccionId"]
+            if (dgvTabla.Columns[nameof(PosicionGrupoItem.SeleccionId)]
                 is DataGridViewColumn columnaId)
             {
                 columnaId.Visible = false;
             }
 
-            CambiarTitulo(
-                "Posicion",
-                "Posición"
-            );
+            foreach ((string propiedad, string titulo) in TitulosColumnas)
+            {
+                if (dgvTabla.Columns[propiedad] is DataGridViewColumn columna)
+                {
+                    columna.HeaderText = titulo;
+                }
+            }
 
-            CambiarTitulo(
-                "Seleccion",
-                "Selección"
-            );
-
-            CambiarTitulo(
-                "PartidosJugados",
-                "Partidos jugados"
-            );
-
-            CambiarTitulo(
-                "PartidosGanados",
-                "Partidos ganados"
-            );
-
-            CambiarTitulo(
-                "PartidosEmpatados",
-                "Partidos empatados"
-            );
-
-            CambiarTitulo(
-                "PartidosPerdidos",
-                "Partidos perdidos"
-            );
-
-            CambiarTitulo(
-                "GolesFavor",
-                "Goles a favor"
-            );
-
-            CambiarTitulo(
-                "GolesContra",
-                "Goles en contra"
-            );
-
-            CambiarTitulo(
-                "DiferenciaGoles",
-                "Diferencia de goles"
-            );
-
-            CambiarTitulo(
-                "Puntos",
-                "Puntos"
-            );
-
-            dgvTabla.ColumnHeadersDefaultCellStyle.WrapMode =
-                DataGridViewTriState.True;
+            dgvTabla.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dgvTabla.ColumnHeadersHeightSizeMode =
                 DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         }
 
-        private void CambiarTitulo(
-            string nombreColumna,
-            string titulo)
-        {
-            if (dgvTabla.Columns[nombreColumna]
-                is DataGridViewColumn columna)
-            {
-                columna.HeaderText = titulo;
-            }
-        }
-
-        private void btnCerrar_Click(
-            object sender,
-            EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }

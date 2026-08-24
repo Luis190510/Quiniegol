@@ -104,8 +104,10 @@ namespace Quiniegol.Controllers
                 );
             }
 
-            List<Usuario> usuarios =
-                _usuarioController.ObtenerUsuarios();
+            HashSet<int> participantesIds = _usuarioController.ObtenerUsuarios()
+                .Where(usuario => usuario.Rol == RolUsuario.Usuario)
+                .Select(usuario => usuario.Id)
+                .ToHashSet();
             List<int> integrantes = (integrantesIds ?? new List<int>())
                 .Distinct()
                 .ToList();
@@ -116,10 +118,7 @@ namespace Quiniegol.Controllers
                 integrantes.Add(creador.Id);
             }
 
-            if (integrantes.Any(usuarioId =>
-                    !usuarios.Any(usuario =>
-                        usuario.Id == usuarioId &&
-                        usuario.Rol == RolUsuario.Usuario)))
+            if (integrantes.Any(usuarioId => !participantesIds.Contains(usuarioId)))
             {
                 throw new InvalidOperationException(
                     "Uno de los integrantes no existe o no es participante."
@@ -239,10 +238,10 @@ namespace Quiniegol.Controllers
             );
             ExigirAcceso(quiniela);
 
+            HashSet<int> integrantesIds = quiniela.IntegrantesIds.ToHashSet();
             return _usuarioController
                 .ObtenerUsuarios()
-                .Where(usuario =>
-                    quiniela.IntegrantesIds.Contains(usuario.Id))
+                .Where(usuario => integrantesIds.Contains(usuario.Id))
                 .OrderBy(usuario => usuario.Nombre)
                 .ToList();
         }
@@ -260,13 +259,16 @@ namespace Quiniegol.Controllers
             );
             ExigirAcceso(quiniela);
 
-            List<Pronostico> pronosticos =
-                _pronosticoRepository.ObtenerTodos();
+            Dictionary<int, int> pronosticosConGoleadores = _pronosticoRepository
+                .ObtenerTodos()
+                .Where(GoleadoresPronosticoService.TieneGoleadores)
+                .GroupBy(pronostico => pronostico.UsuarioId)
+                .ToDictionary(grupo => grupo.Key, grupo => grupo.Count());
+            HashSet<int> integrantesIds = quiniela.IntegrantesIds.ToHashSet();
 
             return _usuarioController
                 .ObtenerUsuarios()
-                .Where(usuario =>
-                    quiniela.IntegrantesIds.Contains(usuario.Id))
+                .Where(usuario => integrantesIds.Contains(usuario.Id))
                 .OrderBy(usuario => usuario.Nombre)
                 .Select(usuario => new QuinielaIntegranteItem
                 {
@@ -274,9 +276,8 @@ namespace Quiniegol.Controllers
                     Nombre = usuario.Nombre,
                     PaisPreferido = usuario.PaisPreferido,
                     Puntos = usuario.Puntos,
-                    PronosticosConGoleadores = pronosticos.Count(pronostico =>
-                        pronostico.UsuarioId == usuario.Id &&
-                        GoleadoresPronosticoService.TieneGoleadores(pronostico))
+                    PronosticosConGoleadores =
+                        pronosticosConGoleadores.GetValueOrDefault(usuario.Id)
                 })
                 .ToList();
         }
@@ -284,8 +285,7 @@ namespace Quiniegol.Controllers
         /// <summary>Elimina una quiniela administrada por la sesión.</summary>
         public void EliminarQuiniela(int quinielaId)
         {
-            List<Quiniela> quinielas =
-                _quinielaRepository.ObtenerTodos();
+            List<Quiniela> quinielas = _quinielaRepository.ObtenerTodos();
             Quiniela quiniela = ObtenerExistente(quinielas, quinielaId);
             ExigirAdministracion(quiniela);
 
@@ -306,8 +306,7 @@ namespace Quiniegol.Controllers
                 if (quiniela.CreadorUsuarioId == 0 &&
                     quiniela.IntegrantesIds.Count > 0)
                 {
-                    quiniela.CreadorUsuarioId =
-                        quiniela.IntegrantesIds[0];
+                    quiniela.CreadorUsuarioId = quiniela.IntegrantesIds[0];
                     huboCambios = true;
                 }
             }

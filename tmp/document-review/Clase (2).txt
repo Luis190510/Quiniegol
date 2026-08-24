@@ -1,0 +1,5620 @@
+Clase-20260805_160243-Meeting Recording
+August 5, 2026, 10:02PM
+4h 0m 0s
+
+LUIS FELIPE MORA UMAÑA started transcription
+
+LUIS FELIPE MORA UMAÑA   0:03
+Este de la semana pasada, entonces de ahí no vamos amor a verlo.
+
+DAVID MOISES GOMEZ MORA   0:08
+Moon.
+
+LUIS FELIPE MORA UMAÑA   0:09
+Sí, señor.
+
+DAVID MOISES GOMEZ MORA   0:11
+Déjeme un chance porque no tenemos abierto.
+
+LUIS FELIPE MORA UMAÑA   0:14
+Halo.
+
+DAVID MOISES GOMEZ MORA   0:45
+Dice yoga.
+¿Están bien detrás, verdad ya?
+
+LUIS FELIPE MORA UMAÑA   0:50
+I think.
+
+DAVID MOISES GOMEZ MORA   0:52
+Entregable, este era verdad, entregable uno.
+
+LUIS FELIPE MORA UMAÑA   0:56
+Correcto.
+
+DAVID MOISES GOMEZ MORA   1:13
+Esto estamos viendo ya.
+
+LUIS FELIPE MORA UMAÑA   1:15
+Sí, yo.
+
+DAVID MOISES GOMEZ MORA   1:16
+Okay, that's it by handsway.
+
+LUIS FELIPE MORA UMAÑA   1:20
+That will you.
+Si aguántalo ahí, porfa.
+Ok, muy bien la introducción.
+
+DAVID MOISES GOMEZ MORA   1:51
+Okay, Cortana.
+Deals.
+
+LUIS FELIPE MORA UMAÑA   1:57
+Mhm.
+
+DAVID MOISES GOMEZ MORA   1:58
+Sigo.
+
+LUIS FELIPE MORA UMAÑA   1:59
+Sí, porfa.
+
+DAVID MOISES GOMEZ MORA   2:02
+Descripción del proyecto.
+
+LUIS FELIPE MORA UMAÑA   2:13
+Okey, ese párrafo aquí sobra todo bien.
+
+DAVID MOISES GOMEZ MORA   2:17
+Este.
+
+LUIS FELIPE MORA UMAÑA   2:18
+Pero estamos en momento de definición, apenas.
+
+DAVID MOISES GOMEZ MORA   2:20
+O K, sí es cierto, sí es cierto.
+Estamos hablando.
+
+LUIS FELIPE MORA UMAÑA   2:24
+Y continuamos.
+
+DAVID MOISES GOMEZ MORA   2:28
+Tecnologías y herramientas que le interesa.
+
+LUIS FELIPE MORA UMAÑA   2:29
+Este igual, esto es de la otra.
+
+DAVID MOISES GOMEZ MORA   2:32
+Hey.
+
+LUIS FELIPE MORA UMAÑA   2:33
+Se de la otra documentación.
+
+DAVID MOISES GOMEZ MORA   2:35
+Prología de trabajo.
+
+LUIS FELIPE MORA UMAÑA   2:43
+Okay, muy bien.
+
+DAVID MOISES GOMEZ MORA   2:48
+En teoría es el diagrama, pero de ahí muchas cosas, uno piensa que van a pasar, pero no pasan.
+
+LUIS FELIPE MORA UMAÑA   2:55
+Es parte de él también.
+
+DAVID MOISES GOMEZ MORA   2:56
+Sí.
+Primero epic.
+
+LUIS FELIPE MORA UMAÑA   3:01
+Mm.
+
+DAVID MOISES GOMEZ MORA   3:04
+Future one.
+
+LUIS FELIPE MORA UMAÑA   3:04
+Déjamelo toca arriba, brother.
+
+DAVID MOISES GOMEZ MORA   3:06
+Pues.
+
+LUIS FELIPE MORA UMAÑA   3:07
+La cosa ahí.
+O.K.
+Estamos bajando.
+O K, todo muy bien.
+
+DAVID MOISES GOMEZ MORA   3:24
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   3:25
+Cuando hay el criterio de aceptación, nada más.
+
+DAVID MOISES GOMEZ MORA   3:28
+Okay.
+
+LUIS FELIPE MORA UMAÑA   3:31
+Pero ya hablamos un poquito la semana pasada, lo que era el que tenía aceptación, no sé si ustedes saben cuando lo hablamos.
+
+DAVID MOISES GOMEZ MORA   3:37
+Date.
+
+JUAN FELIPE PEREZ	BEJARANO   3:39
+Sí, pero o sea, probablemente sí, pero no, sinceramente no recuerdo, no sé si me podría refrescar ahí como para recordar.
+
+DAVID MOISES GOMEZ MORA   3:39
+Sí.
+
+LUIS FELIPE MORA UMAÑA   3:49
+Que al final este, a nosotros cuando nos dan, ya nos dan el brete así, ¿verdad? Este nos dan el ítem, ¿verdad? Y ahí tenemos lo que es sobre lo que trabajamos. Este, el criterio de aceptación es bueno que esté porque es este, vamos a ver, así yo hago el check de qué es lo que necesito tener al final de este.
+
+JUAN FELIPE PEREZ	BEJARANO   3:54
+Mhm.
+
+DAVID MOISES GOMEZ MORA   3:54
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   3:57
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   4:08
+de este feature verdad? Al final del PBA principalmente verdad. Entonces por ejemplo este registrar pronóstico, seleccionar el partido correctamente, ingresar el marcador pronosticado, guardar el pronóstico del usuario. Este. ¿Qué debería pasar al final de esta tarea? ¿Qué debería hacer yo hábil de hacer en el sistema al final de esta tarea? Entonces este.
+
+DAVID MOISES GOMEZ MORA   4:11
+Green.
+
+JUAN FELIPE PEREZ	BEJARANO   4:12
+Okay.
+
+LUIS FELIPE MORA UMAÑA   4:30
+Así nosotros podemos ver, ¿verdad? También digamos que es lo que se espera la tarea como tal, ¿verdad? Porque a veces este las cosillas quedan un poco ahí como en el aire, ¿verdad? Entonces este.
+
+DAVID MOISES GOMEZ MORA   4:39
+Dream.
+
+JUAN FELIPE PEREZ	BEJARANO   4:40
+Es como prácticamente es como si se cumplió o no el objetivo o algo así.
+
+LUIS FELIPE MORA UMAÑA   4:40
+Pelón hirviendo.
+Exacto, es una línea donde a nosotros nos dicen esto tiene que verse así, así, así y así, verdad. Entonces es más fácil para nosotros el día de mañana, es que faltó esto, esto y esto, pero es que eso no está en criterio de aceptación, digamos de cosas que uno no puede ponerse a imaginar, porque si uno se pone a imaginar todo desde cero y nunca termina de hacer un feature, verdad.
+
+JUAN FELIPE PEREZ	BEJARANO   4:50
+Mhm.
+Mhm.
+
+DAVID MOISES GOMEZ MORA   5:08
+Okay.
+
+LUIS FELIPE MORA UMAÑA   5:09
+Va por ahí.
+
+DAVID MOISES GOMEZ MORA   5:16
+Haz unas conclusiones 6.
+
+LUIS FELIPE MORA UMAÑA   5:18
+Ok, muy bien, nada más. Bueno, podemos pasar al a la documentación final, porfa, esa sí la podemos ver en Get.
+
+DAVID MOISES GOMEZ MORA   5:25
+Igual me meto el.
+Angie.
+
+LUIS FELIPE MORA UMAÑA   5:27
+Ahora lo podemos ver en Git, sí, ahí está la semana.
+Nada más.
+
+DAVID MOISES GOMEZ MORA   5:37
+No, no.
+
+LUIS FELIPE MORA UMAÑA   5:42
+Verás que no lo encuentro.
+
+DAVID MOISES GOMEZ MORA   5:49
+Me encuentra.
+
+LUIS FELIPE MORA UMAÑA   5:49
+One couple years too.
+
+JUAN FELIPE PEREZ	BEJARANO   5:51
+Juan Felipe Pérez, Pérez Bejarano.
+
+LUIS FELIPE MORA UMAÑA   5:52
+Aquí está, aquí está, aquí está, sí, es que no encontré al.
+ordenada como por apellido sin encontrar Juan.
+
+JUAN FELIPE PEREZ	BEJARANO   6:01
+Mhm.
+
+DAVID MOISES GOMEZ MORA   6:01
+¿Pero usted le tienen allí más Luis o Felipe?
+
+LUIS FELIPE MORA UMAÑA   6:04
+Felipe, Luis, solo mi abuelo y mi bisabuelo.
+
+JUAN FELIPE PEREZ	BEJARANO   6:07
+Pasa lo mismo a mí.
+
+LUIS FELIPE MORA UMAÑA   6:09
+Sí, es que es poco común en realidad.
+
+DAVID MOISES GOMEZ MORA   6:10
+And so.
+
+JUAN FELIPE PEREZ	BEJARANO   6:12
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   6:16
+Okay.
+
+DAVID MOISES GOMEZ MORA   6:17
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   6:20
+Ahora sí, vámonos.
+
+DAVID MOISES GOMEZ MORA   6:23
+¿Es la portada, verdad?
+
+LUIS FELIPE MORA UMAÑA   6:25
+Sí, de hecho yo no soy licenciado.
+
+DAVID MOISES GOMEZ MORA   6:28
+Thank you.
+
+LUIS FELIPE MORA UMAÑA   6:30
+Nosotros estamos directo a maestría, todo bien.
+
+DAVID MOISES GOMEZ MORA   6:31
+De ahí no sé.
+Por aquí por aquello, digo yo al rato y no es y más bien se ofende por no ponerlo.
+
+LUIS FELIPE MORA UMAÑA   6:38
+Pero está bien.
+De hecho, si nos vamos a las formalidades, este en ese caso sería máster, pero todo bien.
+
+DAVID MOISES GOMEZ MORA   6:47
+Entonces, alguien se ha venido por verle, pues, ajá.
+
+JUAN FELIPE PEREZ	BEJARANO   6:47
+Es más, es más arriba.
+
+LUIS FELIPE MORA UMAÑA   6:49
+Es que nosotros.
+No, es que no, es que realmente yo no soy licenciado, yo no sé qué licenciatura. Nosotros salimos en el salimos, salimos directo a maestría en el TEC.
+
+DAVID MOISES GOMEZ MORA   6:54
+Say Z.
+
+JUAN FELIPE PEREZ	BEJARANO   6:56
+Seco.
+Mhm, sacar la maestría de una vez.
+
+DAVID MOISES GOMEZ MORA   7:00
+Does it?
+
+LUIS FELIPE MORA UMAÑA   7:02
+Sí, no hay, no hay licenciatura.
+
+JUAN FELIPE PEREZ	BEJARANO   7:04
+Mhm.
+De mejor aún.
+
+LUIS FELIPE MORA UMAÑA   7:06
+Este sí, de hecho.
+Puedes hacerlo un poquito más pequeño.
+
+DAVID MOISES GOMEZ MORA   7:13
+Es que se hace más pequeño esto hace rato que estoy viendo.
+
+LUIS FELIPE MORA UMAÑA   7:16
+Este dale control, scroll down, control y scroll le ha parado.
+
+DAVID MOISES GOMEZ MORA   7:26
+Es que tengo laptop, probably.
+
+JUAN FELIPE PEREZ	BEJARANO   7:28
+Sí, si no lo descargas y lo abre en PDF, no.
+
+DAVID MOISES GOMEZ MORA   7:31
+De aquí lo tengo, aquí lo tengo abierto, no mentiras, ya no lo tengo, ya lo tengo abierto, pero vea, vamos a abrirlo.
+
+LUIS FELIPE MORA UMAÑA   7:34
+Okay.
+No, pero todo bien, vamos así.
+
+DAVID MOISES GOMEZ MORA   7:40
+Sí.
+
+LUIS FELIPE MORA UMAÑA   7:42
+sí, voy a ir un poco más lento, nada más, pero.
+
+DAVID MOISES GOMEZ MORA   7:44
+bueno, aquí.
+
+LUIS FELIPE MORA UMAÑA   7:46
+Ahí está, eso es todo, sí, muchas gracias.
+Sí, muy bien.
+
+DAVID MOISES GOMEZ MORA   8:04
+Sigo.
+
+LUIS FELIPE MORA UMAÑA   8:05
+Sí, porfa.
+Deseo bueno agregarle un par de bullets ahí a los específicos para que no sea tan planillo.
+
+JUAN FELIPE PEREZ	BEJARANO   8:17
+Mhm.
+
+DAVID MOISES GOMEZ MORA   8:17
+Okey.
+
+LUIS FELIPE MORA UMAÑA   8:19
+Algo más ahí como es presentación.
+
+DAVID MOISES GOMEZ MORA   8:21
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   8:22
+Okay.
+
+LUIS FELIPE MORA UMAÑA   8:24
+Vamos a ir llevando.
+Que ella está lista de tecnologías, no sé si estamos abajo, pero aquí podría ir, verdad? En tecnologías, más que todo sería como ambiente, sí.
+
+DAVID MOISES GOMEZ MORA   8:44
+No.
+Sí, la que se puso en el otro, ajá, en lo que se trabaja.
+
+LUIS FELIPE MORA UMAÑA   8:49
+Mhm.
+Sí, igual ahí donde dice el estudio community, siempre voy a poner cuál.
+
+DAVID MOISES GOMEZ MORA   8:55
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   8:57
+Del año.
+
+DAVID MOISES GOMEZ MORA   8:57
+Okay.
+
+LUIS FELIPE MORA UMAÑA   8:58
+Sí, porque eso creo que también eso lo hablamos la semana pasada, o sea, nos falta la persona que usted le da el software y cuando llega a ver el software. este.
+¿Y dice que tiene problemas, verdad? Y cuando usted ve los problemas es que lo está corriendo en Visual Studio 2020, 2000 literal.
+
+DAVID MOISES GOMEZ MORA   9:14
+CSA.
+
+JUAN FELIPE PEREZ	BEJARANO   9:16
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   9:18
+Sí, y créame que sí pasa.
+
+DAVID MOISES GOMEZ MORA   9:21
+Es algo, aunque parezca mentira.
+
+LUIS FELIPE MORA UMAÑA   9:24
+Aunque parezca mentira, sí.
+Y ahí arriba en tu si te podemos volver un poco arriba.
+Más que vamos a ver.
+Pokémon Sierra 3.
+Un pelín más arriba.
+Ay, ay.
+I'm sorry.
+
+DAVID MOISES GOMEZ MORA   10:06
+Time.
+
+LUIS FELIPE MORA UMAÑA   10:07
+sí, todo bien.
+
+DAVID MOISES GOMEZ MORA   10:09
+Bing.
+
+LUIS FELIPE MORA UMAÑA   10:13
+¿Cuéntenme cómo usaron el strategy mientras siga bajando?
+
+JUAN FELIPE PEREZ	BEJARANO   10:19
+Este de ahí, profe, básicamente era como para di realizar una.
+Una y la función del cálculo propiamente, pero de ahí dividida en secciones apartes, de ahí una para calcular específicamente el marcador exacto, otra para el marcador, el pronóstico incorrecto y el otro para.
+Para digamos que es el de la victoria, el de los 2 puntos.
+
+LUIS FELIPE MORA UMAÑA   10:46
+Mm.
+Porque una estrategia un poquito más despacio.
+
+DAVID MOISES GOMEZ MORA   10:52
+En el primer.
+
+JUAN FELIPE PEREZ	BEJARANO   10:52
+Realmente eso lo tuvimos que investigar antes de implementarlo, pero era más que todo como para tema de orden, organización, digamos, si queríamos arreglar algo o suplantar algo, no tener que hacerlo en una sección donde estaba todo junto, sino pues propiamente en la parte del cálculo donde se debería arreglar.
+O ya sea arreglar, o sea añadir, o etcétera.
+
+LUIS FELIPE MORA UMAÑA   11:44
+Igual esos punto y comas ahí, no verdad.
+
+DAVID MOISES GOMEZ MORA   11:47
+Esles.
+
+LUIS FELIPE MORA UMAÑA   11:47
+Pues en varios lugares así como para alistar.
+
+JUAN FELIPE PEREZ	BEJARANO   11:50
+Mhm.
+
+DAVID MOISES GOMEZ MORA   11:50
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   11:51
+Sí, mejora, si van a alistar mejores en bullets porque el punto y coma lo que hace es separar una oración dentro de la misma línea, ¿verdad?
+
+DAVID MOISES GOMEZ MORA   11:57
+Sí.
+
+JUAN FELIPE PEREZ	BEJARANO   11:59
+Okay.
+
+LUIS FELIPE MORA UMAÑA   12:23
+Igual lo de las insignias sería una capturilla ahí.
+
+DAVID MOISES GOMEZ MORA   12:26
+O K.
+
+LUIS FELIPE MORA UMAÑA   12:29
+A ver cómo se ven.
+
+DAVID MOISES GOMEZ MORA   12:31
+Mhm.
+Bien.
+No hay mucho que ver tampoco.
+
+LUIS FELIPE MORA UMAÑA   12:36
+No, no, I think this.
+
+JUAN FELIPE PEREZ	BEJARANO   12:38
+Sí, se se insignias, pero ya hizo una pantallilla ahí donde muestra.
+
+DAVID MOISES GOMEZ MORA   12:39
+No sé.
+Sí.
+
+JUAN FELIPE PEREZ	BEJARANO   12:43
+La digamos, la insignia que tiene cada usuario, digamos.
+
+LUIS FELIPE MORA UMAÑA   12:52
+No, déjamelo entonces, es que pasaste muy rápido.
+
+DAVID MOISES GOMEZ MORA   12:52
+Say him.
+Ahí, another real.
+
+LUIS FELIPE MORA UMAÑA   12:56
+Análisis general, no análisis general.
+
+DAVID MOISES GOMEZ MORA   12:59
+¿Dónde está?
+
+LUIS FELIPE MORA UMAÑA   12:59
+Era.
+We don't know.
+
+JUAN FELIPE PEREZ	BEJARANO   13:03
+Más abajo.
+Más es como el 6.6, creo.
+
+LUIS FELIPE MORA UMAÑA   13:12
+Sí, no hablo tan rápido como ustedes creen.
+
+DAVID MOISES GOMEZ MORA   13:15
+Y.
+
+LUIS FELIPE MORA UMAÑA   13:20
+Sí, muchas gracias.
+
+DAVID MOISES GOMEZ MORA   14:06
+Mhm.
+Mm.
+
+LUIS FELIPE MORA UMAÑA   14:28
+Che, muy bien.
+
+DAVID MOISES GOMEZ MORA   14:31
+Vamos a.
+
+LUIS FELIPE MORA UMAÑA   14:33
+Get.
+
+DAVID MOISES GOMEZ MORA   14:37
+Buen nombre que le pusimos, nada más que aquí es una.
+
+LUIS FELIPE MORA UMAÑA   14:41
+Está bien.
+
+DAVID MOISES GOMEZ MORA   14:41
+No sé, es que no lo cargué.
+
+JUAN FELIPE PEREZ	BEJARANO   14:43
+No es que usamos la el, digamos, el numeral de C sharp como una H, pero ahí no nos deja.
+
+LUIS FELIPE MORA UMAÑA   14:51
+Oye.
+
+DAVID MOISES GOMEZ MORA   14:51
+Sí, sharp bien teoría se llaman.
+
+LUIS FELIPE MORA UMAÑA   14:56
+Sí, creo que dieron bastante duro aquí.
+
+DAVID MOISES GOMEZ MORA   14:59
+¿Cómo?
+
+LUIS FELIPE MORA UMAÑA   15:00
+Usaron bastante kit, güey, 41 comits.
+
+DAVID MOISES GOMEZ MORA   15:04
+Hey, profe.
+
+JUAN FELIPE PEREZ	BEJARANO   15:04
+Más o menos, profe, tuvimos varios problemas con.
+
+LUIS FELIPE MORA UMAÑA   15:08
+Okay.
+
+DAVID MOISES GOMEZ MORA   15:08
+Sí, de hecho, eso era una cosa que le íbamos a comentar nosotros.
+
+JUAN FELIPE PEREZ	BEJARANO   15:12
+Sí.
+Como era la primera vez que lo usábamos, primero hicimos un repositorio que se nos dañó todo, o sea, no sé, como que no nos funcionaba. Yo no sé qué era la vara y logramos rescatar al principio lo de lo de ese repositorio, pero luego.
+
+LUIS FELIPE MORA UMAÑA   15:24
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   15:31
+De ahí tuvimos que ponernos a investigar fuertemente como como eran más o menos las cosas, porque de ahí teníamos como las bases, pero y todavía no lo habíamos puesto mucho en práctica. Entonces de ahí tuvimos unos problemillas, pero ya luego de ahí básicamente nos acoplamos.
+Ahí dentro de lo que cae.
+
+LUIS FELIPE MORA UMAÑA   15:55
+Okay.
+
+JUAN FELIPE PEREZ	BEJARANO   15:56
+Igual con los comandos básicos.
+
+LUIS FELIPE MORA UMAÑA   15:59
+sí, no se ocupa mucho, por lo menos para empezar.
+Revisamos yera.
+Otra, no sé cuál de los usaron.
+
+DAVID MOISES GOMEZ MORA   16:08
+De.
+
+JUAN FELIPE PEREZ	BEJARANO   16:11
+Dear.
+
+LUIS FELIPE MORA UMAÑA   16:12
+Two.
+¿Sí, todo un éxito entonces?
+
+JUAN FELIPE PEREZ	BEJARANO   16:19
+No tanto así, pero.
+
+DAVID MOISES GOMEZ MORA   16:19
+Hey, eso es según.
+
+LUIS FELIPE MORA UMAÑA   16:24
+There you.
+
+JUAN FELIPE PEREZ	BEJARANO   16:24
+Pero dentro de lo que cabe, creo que sí cumplimos a y a grandes rasgos con lo que se pedía. Tal vez hay bastantes cosillas que mejorar y bastantes errores, pero digamos que dentro de lo que cabe.
+Se lograron algunas cosas.
+
+LUIS FELIPE MORA UMAÑA   16:42
+Jing.
+Ahora sí, vamos a ver la ecuación.
+
+DAVID MOISES GOMEZ MORA   16:49
+Esa es la parte de verdad, a ver cómo nos va.
+
+LUIS FELIPE MORA UMAÑA   16:51
+Sing.
+
+DAVID MOISES GOMEZ MORA   16:55
+Bueno, ya empezamos a correr a ver qué.
+Aquí registrarse de normal, registra uno con el nombre completo, un nombre de usuario y la contraseña y el país favorito.
+
+LUIS FELIPE MORA UMAÑA   17:09
+Okay.
+
+DAVID MOISES GOMEZ MORA   17:10
+Pero ahí están todos los países.
+
+LUIS FELIPE MORA UMAÑA   17:13
+What is that tonight?
+
+DAVID MOISES GOMEZ MORA   17:13
+Nosotros vamos, ahora me registro.
+
+LUIS FELIPE MORA UMAÑA   17:16
+Sí.
+
+DAVID MOISES GOMEZ MORA   17:17
+¿Que vamos a ponerle?
+Si.
+Bank.
+Registrar si usuario registrado correctamente.
+
+LUIS FELIPE MORA UMAÑA   17:40
+Okay.
+
+DAVID MOISES GOMEZ MORA   17:41
+Ya nos lanza de nuevo a la fin.
+Are you?
+3 cuatro.
+Inicia sesión correcta.
+
+LUIS FELIPE MORA UMAÑA   17:54
+Okay.
+
+DAVID MOISES GOMEZ MORA   17:57
+Y aquí ya de aquí van a estar los usuarios.
+Pero las quinielas ya casi hacemos el ejemplo para que pueda enseñarles y luego hacemos ya el ejemplo con porque ya metimos pronósticos, pues no.
+
+JUAN FELIPE PEREZ	BEJARANO   18:10
+Igualmente, di si quiere, lo va a hacer, di lo puede hacer, ¿no? Sí, ahí en la parte principal, ahí tenemos lo que es como la fecha, pues simulada.
+
+LUIS FELIPE MORA UMAÑA   18:10
+Mm.
+
+DAVID MOISES GOMEZ MORA   18:13
+Conocemos de una vez.
+Digamos, digamos que fue el 11, entonces ya uno cambia fecha.
+
+JUAN FELIPE PEREZ	BEJARANO   18:23
+Pero no lo no lo ponga, no lo ponga hasta el final, póngalo como y a mitades para poder ver partidos también que están todavía pendientes.
+
+DAVID MOISES GOMEZ MORA   18:27
+La mitad.
+Ven.
+Son 28, entonces pongámoslo.
+
+LUIS FELIPE MORA UMAÑA   18:33
+Mhm.
+
+DAVID MOISES GOMEZ MORA   18:35
+Entonces ya debemos cambiar fecha, entonces ya el ranking ya se va a poder ver.
+Ava.
+Ahí vamos hoyo.
+
+JUAN FELIPE PEREZ	BEJARANO   18:46
+No, pero.
+Creo se tela primero en la fecha inicial, digamos.
+
+DAVID MOISES GOMEZ MORA   18:52
+Vámonos.
+
+JUAN FELIPE PEREZ	BEJARANO   18:53
+Porque creo que estoy con el máximo punto de registro.
+
+DAVID MOISES GOMEZ MORA   18:56
+I.
+
+LUIS FELIPE MORA UMAÑA   18:57
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   18:57
+Yeah.
+
+DAVID MOISES GOMEZ MORA   18:58
+Ahí está cero ya.
+
+JUAN FELIPE PEREZ	BEJARANO   19:02
+Y ahora sí se tela como la mitad.
+
+DAVID MOISES GOMEZ MORA   19:12
+Ben.
+Quinielas.
+De ahí este este, como es nuevo, no he estado ingresado ninguna.
+
+LUIS FELIPE MORA UMAÑA   19:20
+Mm.
+
+DAVID MOISES GOMEZ MORA   19:22
+Pero ahí sería sería ahí meterlo.
+
+LUIS FELIPE MORA UMAÑA   19:26
+Sí.
+
+DAVID MOISES GOMEZ MORA   19:28
+Traigo de partidos.
+¿Qué hicimos?
+Quisimos unos.
+
+JUAN FELIPE PEREZ	BEJARANO   19:35
+Decidimos poner, Decidimos poner a los a cada miembro de la clase ahí en las.
+Los anotadores.
+
+LUIS FELIPE MORA UMAÑA   19:43
+Mhm.
+Okay.
+
+DAVID MOISES GOMEZ MORA   19:45
+Eat.
+Ahí, ven.
+Ahí veo los partidos más o menos, luego pronósticos.
+Ah, bueno, no, este no, say, sí.
+Pero.
+
+LUIS FELIPE MORA UMAÑA   20:02
+What can I put this?
+
+DAVID MOISES GOMEZ MORA   20:04
+Es por lo mismo que yo le iba a decir.
+
+LUIS FELIPE MORA UMAÑA   20:07
+Mhm.
+
+DAVID MOISES GOMEZ MORA   20:07
+Yeah.
+Bueno, ya eso nos está fallando y no nos había fallado.
+
+JUAN FELIPE PEREZ	BEJARANO   20:23
+Sí, ahí sí, de póngala.
+Un toque.
+
+DAVID MOISES GOMEZ MORA   20:33
+Eso sí, no nos había fallado y no sé ni por qué nos está fallando justamente ahorita.
+
+JUAN FELIPE PEREZ	BEJARANO   20:35
+But...
+Devuelves un toque.
+Mova la fecha entonces otra vez.
+
+DAVID MOISES GOMEZ MORA   20:43
+La fecha, el 11.
+
+JUAN FELIPE PEREZ	BEJARANO   20:45
+Ajá, a ver un toque algo.
+
+DAVID MOISES GOMEZ MORA   20:51
+No entiendo lo que está fallando.
+
+JUAN FELIPE PEREZ	BEJARANO   20:51
+Ahora pronósticos.
+
+DAVID MOISES GOMEZ MORA   20:54
+A ver, ahí está, pero.
+Y ahora sí está ahí.
+Por los partidos.
+Con las banderas, pero.
+
+JUAN FELIPE PEREZ	BEJARANO   21:07
+No sé por qué está fallando, si lo pone en otra fecha.
+
+DAVID MOISES GOMEZ MORA   21:10
+Sí, no, yo tampoco.
+
+JUAN FELIPE PEREZ	BEJARANO   21:11
+Intente otra fecha que no sea el 28 para ver.
+
+DAVID MOISES GOMEZ MORA   21:21
+No, so de que es el 28, nada más.
+
+JUAN FELIPE PEREZ	BEJARANO   21:23
+No sé por qué está fallando el con el 28.
+
+LUIS FELIPE MORA UMAÑA   21:24
+Sure.
+
+DAVID MOISES GOMEZ MORA   21:28
+Ya se está fallando solamente para o fue un book ahí.
+No.
+
+JUAN FELIPE PEREZ	BEJARANO   21:35
+Sí, no, ahí sí es cierto o qué.
+
+DAVID MOISES GOMEZ MORA   21:36
+Es como el 28.
+
+LUIS FELIPE MORA UMAÑA   21:41
+¿Y cuál 30?
+
+DAVID MOISES GOMEZ MORA   21:42
+No, eso es, pero eso es una.
+It's a liar.
+
+JUAN FELIPE PEREZ	BEJARANO   21:47
+No sé en julio para ver.
+
+DAVID MOISES GOMEZ MORA   21:50
+El lente también.
+Disculpe.
+
+JUAN FELIPE PEREZ	BEJARANO   21:58
+No, yo creo que ya sé porque creo que es sí, eso es, creo que es por lo de.
+
+DAVID MOISES GOMEZ MORA   22:01
+Okay.
+
+JUAN FELIPE PEREZ	BEJARANO   22:05
+este nosotros logramos hacer el cálculo de de los cruces pero no pudimos como terminarlos o sea hacer para poder pronosticarlos de los cruces en adelante es por eso Entonces el 28 me imagino que fue la fecha en que sí sí el 28 fue la fecha en que empezaron los cruces entonces por eso es que no le van a salir
+
+LUIS FELIPE MORA UMAÑA   22:19
+Okay.
+
+DAVID MOISES GOMEZ MORA   22:26
+Um.
+Bueno, el historial aquí.
+
+LUIS FELIPE MORA UMAÑA   22:33
+Okay, muy bien.
+
+DAVID MOISES GOMEZ MORA   22:35
+Aquí es los que están pendientes.
+Tengo resultados.
+Aquí es donde de aquí es como el administrador, me imagino verdad que llegue ahí.
+Pone, actualiza, guarda o elimina el resultado.
+
+LUIS FELIPE MORA UMAÑA   22:51
+Bing.
+
+DAVID MOISES GOMEZ MORA   22:52
+Para los de grupos.
+Es en todas las tardes.
+Y yo creo que sí, cruce finales es cierto que están.
+Yes, this is a house.
+
+LUIS FELIPE MORA UMAÑA   23:15
+Sí.
+
+DAVID MOISES GOMEZ MORA   23:16
+Y creo que poco más.
+
+LUIS FELIPE MORA UMAÑA   23:18
+Vamos a ver las genielas, no sé qué falta ahí.
+Going.
+Porque falta hablar nada más.
+
+DAVID MOISES GOMEZ MORA   23:38
+Sí, es que vean, el mensaje era vergüenza.
+
+JUAN FELIPE PEREZ	BEJARANO   23:39
+No de letras.
+
+LUIS FELIPE MORA UMAÑA   23:41
+Ese es el timeline.
+
+DAVID MOISES GOMEZ MORA   23:43
+sí.
+
+JUAN FELIPE PEREZ	BEJARANO   23:44
+En estadísticas.
+
+DAVID MOISES GOMEZ MORA   23:46
+Estadísticas.
+
+JUAN FELIPE PEREZ	BEJARANO   23:48
+A last.
+I know it's not estadísticas.
+
+DAVID MOISES GOMEZ MORA   23:55
+¿Dónde recuerdas?
+
+LUIS FELIPE MORA UMAÑA   23:55
+You're already.
+
+JUAN FELIPE PEREZ	BEJARANO   23:55
+Gracias.
+
+DAVID MOISES GOMEZ MORA   23:57
+Ah.
+
+LUIS FELIPE MORA UMAÑA   23:58
+Igual de ahí tenemos que revisar las estadísticas.
+
+JUAN FELIPE PEREZ	BEJARANO   23:59
+Calcule.
+
+DAVID MOISES GOMEZ MORA   24:12
+Para güey, el que menos güey, sorpresa.
+No si fue sorpresa.
+
+LUIS FELIPE MORA UMAÑA   24:18
+Mhm.
+
+DAVID MOISES GOMEZ MORA   24:20
+Me acuerdo.
+
+JUAN FELIPE PEREZ	BEJARANO   24:22
+Deletas.
+
+LUIS FELIPE MORA UMAÑA   24:25
+Del que le ganó a Alemania.
+
+DAVID MOISES GOMEZ MORA   24:26
+Hay que la que no hay manía, sí, y pena me fue 3 de eso.
+
+JUAN FELIPE PEREZ	BEJARANO   24:26
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   24:31
+Two.
+
+JUAN FELIPE PEREZ	BEJARANO   24:34
+Ahí están las insignias.
+
+DAVID MOISES GOMEZ MORA   24:38
+So it does name this.
+El primer lugar de ranking global.
+Opa el primer lugar de una quiniela privada.
+
+LUIS FELIPE MORA UMAÑA   24:48
+Sí.
+
+DAVID MOISES GOMEZ MORA   24:53
+Y poco más, yo creo.
+
+LUIS FELIPE MORA UMAÑA   24:56
+Estén ahí mi perfil.
+
+DAVID MOISES GOMEZ MORA   24:58
+Mi perfil aquí es para cambiar el nombre, nada más él.
+Is already?
+
+JUAN FELIPE PEREZ	BEJARANO   25:03
+El nombre, el usuario no se puede cambiar y la contraseña.
+
+DAVID MOISES GOMEZ MORA   25:07
+Sí, la contraseña y el equipo.
+
+JUAN FELIPE PEREZ	BEJARANO   25:09
+En el país favorito.
+
+LUIS FELIPE MORA UMAÑA   25:11
+Sí.
+
+DAVID MOISES GOMEZ MORA   25:19
+Basic.
+
+LUIS FELIPE MORA UMAÑA   25:19
+Pero bueno que las insignias sean un poquito más visibles.
+
+DAVID MOISES GOMEZ MORA   25:22
+¿Sí, como más interactivas, tal vez qué?
+
+LUIS FELIPE MORA UMAÑA   25:26
+Pero en el ranking de Eren Star, porque.
+
+DAVID MOISES GOMEZ MORA   25:28
+sí.
+
+LUIS FELIPE MORA UMAÑA   25:31
+Women the machine.
+¿Qué echa un ojillo ahí al código?
+
+DAVID MOISES GOMEZ MORA   25:41
+Wait.
+Se me dice que abrimos de primero, profe.
+
+LUIS FELIPE MORA UMAÑA   25:51
+Bye.
+
+DAVID MOISES GOMEZ MORA   26:08
+That is a report.
+Por ti.
+
+LUIS FELIPE MORA UMAÑA   26:13
+¿Qué cuéntame cómo están la estructura, cómo están?
+
+JUAN FELIPE PEREZ	BEJARANO   26:18
+Hey, profe, básicamente fue inspirado en NBC. Obviamente lo que tratamos de hacer fue.
+Y separar los modelos, controladores, los views.
+Sin embargo, como nosotros di, no sé, empezamos, tuvimos muchas dificultades y empezamos haciendo ahí como el los views, principalmente la parte visual y demás, este más que todo los views no usan tanto la parte de controladores, sino que llaman directamente a los services.
+O sea, como que entonces de ahí.
+
+LUIS FELIPE MORA UMAÑA   26:56
+Do you?
+¿Está bien, porque los al final los servicios sí no dejan de ser desde el punto de vista abstracto, verdad?
+
+JUAN FELIPE PEREZ	BEJARANO   27:06
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   27:07
+Controladores, o por lo menos en la capa de controles, una capa aparte.
+
+DAVID MOISES GOMEZ MORA   27:13
+Thanks.
+
+JUAN FELIPE PEREZ	BEJARANO   27:13
+Sí, de hecho, los contro lo la parte de controles y simplemente nos quedó como separada, pero de no nos quedó así como que con tantísimo código.
+
+LUIS FELIPE MORA UMAÑA   27:23
+Sí, lleva el ojillo ahí al controller.
+
+DAVID MOISES GOMEZ MORA   27:26
+Voy.
+
+LUIS FELIPE MORA UMAÑA   27:40
+Hmm.
+Okay.
+Revisemos los malls.
+
+DAVID MOISES GOMEZ MORA   27:51
+My.
+
+LUIS FELIPE MORA UMAÑA   28:07
+Por si yo warnings ahí.
+
+DAVID MOISES GOMEZ MORA   28:10
+Okay, yo nada más.
+
+LUIS FELIPE MORA UMAÑA   28:12
+So.
+
+DAVID MOISES GOMEZ MORA   28:14
+Mhm.
+pero llegamos de una pregunta
+
+LUIS FELIPE MORA UMAÑA   28:20
+Leviamos partido.
+Mhm.
+
+DAVID MOISES GOMEZ MORA   28:24
+Partido.
+Que digamos ya en el momento de entregar un proyecto así como tal, como un trabajo, como no sé, como en el trabajo que usted trabaja, que usted ha mencionado, que usted hace entrega de esto.
+
+LUIS FELIPE MORA UMAÑA   28:38
+Mhm.
+
+DAVID MOISES GOMEZ MORA   28:39
+Se tiene que hacer entregar así cero warning, digamos, como si usted lo dijo.
+
+LUIS FELIPE MORA UMAÑA   28:44
+Verás que eso depende mucho de la calidad de las métricas de calidad que se tengan dentro de cada organización.
+
+DAVID MOISES GOMEZ MORA   28:52
+El puntual digámoslo así.
+
+LUIS FELIPE MORA UMAÑA   28:54
+Sí, sí, sí, vamos a ver, hay cosillas ahí que siempre hay que revisar, ¿verdad? Hay cosillas que siempre hay que estar pendientes, pero obviamente nunca va a ir perfecto, ¿verdad? Eso es completamente entendible, pero hay cositas ahí que sí hay que tratar de evitar, ¿verdad? Este principalmente digamos que uno tiene clientes de todo y va a encontrarse.
+
+DAVID MOISES GOMEZ MORA   29:00
+Mhm.
+Mhm.
+Estar.
+
+LUIS FELIPE MORA UMAÑA   29:15
+De todo tipo, hay clientes no muy técnicos, hay clientes muy técnicos, ¿verdad? Entonces hay clientes que se alarman por cualquier insignificancia, digamos, no tiene sentido, pero ahí para ellos tiene sentido, ¿verdad? Y es parte de.
+
+DAVID MOISES GOMEZ MORA   29:17
+Mhm.
+Sí.
+Zune, ZZ.
+Si es como que se lo saben de teoría, entonces ya por cualquier cosa puede que lleguen a asustarse o algo así.
+
+LUIS FELIPE MORA UMAÑA   29:33
+Este.
+Sí, sí, sí, un toque.
+
+DAVID MOISES GOMEZ MORA   29:42
+G.
+
+LUIS FELIPE MORA UMAÑA   29:44
+Revisemos los Servicios, Arc Servicios TM.
+
+DAVID MOISES GOMEZ MORA   29:47
+Y un montón.
+
+LUIS FELIPE MORA UMAÑA   29:52
+I don't.
+
+DAVID MOISES GOMEZ MORA   29:54
+Bueno, se me dice, no sé.
+
+LUIS FELIPE MORA UMAÑA   30:01
+¿Cuánto que sí estoy?
+Que regresamos este regresamos el estrategy, a ver qué bueno como metieron la estrategy.
+
+DAVID MOISES GOMEZ MORA   30:14
+No es de esta manera.
+Un ejemplo ahí.
+
+LUIS FELIPE MORA UMAÑA   30:22
+Siempre se empieza por la interfaz, por la interfaz del contrato.
+
+JUAN FELIPE PEREZ	BEJARANO   30:27
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   30:29
+Sí, señor.
+Game.
+Ahora sí vamos a ver una de las específicas.
+
+DAVID MOISES GOMEZ MORA   30:42
+Voy cerrando esto.
+
+LUIS FELIPE MORA UMAÑA   30:44
+Si quieres, sí.
+
+DAVID MOISES GOMEZ MORA   30:44
+De verdad.
+De estas marcadoras.
+
+LUIS FELIPE MORA UMAÑA   30:52
+No, de las específicas, sí.
+Okay.
+No me convence mucho la estrategia ahí.
+
+DAVID MOISES GOMEZ MORA   31:07
+Sí.
+
+LUIS FELIPE MORA UMAÑA   31:08
+No es en serio, podría ser perfectamente una clase abstracta. Obtener puntos es un property, podría ser un property, no sé, dígame ustedes.
+
+DAVID MOISES GOMEZ MORA   31:12
+Hey.
+
+JUAN FELIPE PEREZ	BEJARANO   31:12
+Mhm.
+
+DAVID MOISES GOMEZ MORA   31:15
+Sí.
+
+JUAN FELIPE PEREZ	BEJARANO   31:18
+De ahí, básicamente, profe, es que eso lo que hace es, o sea, lo separamos en esas partes y lo que hace luego desde el service de puntaje es que va en orden recorriendo 1:1 y pues agarra con el que cumpla, digamos.
+
+LUIS FELIPE MORA UMAÑA   31:34
+Okay.
+Que o que no, muchachos, es ahora el vivo, me falta el vivo, pero es un toque los vivos, a ver cómo saben muy bien la documentación, por cierto, está bastante bonita bien.
+
+JUAN FELIPE PEREZ	BEJARANO   31:43
+Mhm.
+
+DAVID MOISES GOMEZ MORA   31:45
+Mhm, bye.
+
+JUAN FELIPE PEREZ	BEJARANO   31:49
+No, bro.
+
+DAVID MOISES GOMEZ MORA   31:49
+Profe, eso fue en algo que nos intentamos de pulir, porque de hecho nosotros lo hablamos de aquel día.
+
+LUIS FELIPE MORA UMAÑA   31:55
+Mhm.
+
+DAVID MOISES GOMEZ MORA   31:56
+Nosotros veíamos en los Jason.
+
+JUAN FELIPE PEREZ	BEJARANO   31:59
+En los básicamente, por decirlo así, los otros cursos que llevábamos y documentamos todo y no de esta forma, digamos, esta forma de documentarlo así, sumary y documentarlo, pues realmente para mí por lo menos es nueva.
+
+DAVID MOISES GOMEZ MORA   32:06
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   32:14
+La próxima semana vamos a revisar un poquito porque es bueno seguir esos estándares de documentación.
+
+DAVID MOISES GOMEZ MORA   32:15
+Sí.
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   32:20
+Okay.
+
+LUIS FELIPE MORA UMAÑA   32:24
+Además de que son porque lo dice el lenguaje, ¿verdad? Sí, el lenguaje los compone, pero sí.
+
+DAVID MOISES GOMEZ MORA   32:24
+Yeah.
+
+JUAN FELIPE PEREZ	BEJARANO   32:27
+Mhm.
+
+DAVID MOISES GOMEZ MORA   32:29
+Y además, yo creo que la documentación también nos ayuda porque hemos tenido unos profesores un poco estrictos en documentación. Entonces yo creo que al final de cuentas van echando para el saco y unos.
+
+LUIS FELIPE MORA UMAÑA   32:36
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   32:41
+No, igualmente, por lo menos yo por mi parte he tenido profesores que sí piden documentación, pero no digamos con una estructura como tal, sino de ahí documenten ahí.
+
+LUIS FELIPE MORA UMAÑA   32:51
+Mhm, es que es un curso de estándares, donde hay que tener estándares, sí.
+
+DAVID MOISES GOMEZ MORA   32:51
+Es que eso.
+Es como todo.
+Sí.
+Cheese.
+
+JUAN FELIPE PEREZ	BEJARANO   32:57
+Sí.
+
+DAVID MOISES GOMEZ MORA   33:02
+Abrí, abrílo aquí, no sé si ocupaba que abriera otra, dígame cuál.
+
+LUIS FELIPE MORA UMAÑA   33:05
+No regresamos otra, otra que tenga más carnita.
+
+DAVID MOISES GOMEZ MORA   33:08
+Dígame, ahí no sé.
+
+LUIS FELIPE MORA UMAÑA   33:09
+Este, no sé, quinielas.
+
+DAVID MOISES GOMEZ MORA   33:11
+Most.
+Hasta quinielas, aquí está, ya abrí luego otra vara tanto aquí.
+Please try star.
+Poquito más canita, no.
+Excellent.
+
+LUIS FELIPE MORA UMAÑA   33:36
+sí, te necesito más.
+
+DAVID MOISES GOMEZ MORA   33:38
+Ajá.
+Tom, are you on the?
+
+LUIS FELIPE MORA UMAÑA   33:57
+Creo que sí tienen mucho en el view.
+
+DAVID MOISES GOMEZ MORA   33:58
+So.
+También un poco probe, la verdad.
+
+JUAN FELIPE PEREZ	BEJARANO   34:02
+Sí, sí, eso era lo que eso era lo que le comentábamos de que de que nos vio si eso de conforme y conforme íbamos investigando lo del NBC como tal propiamente como era un NBC puro vimos que teníamos mucho en los views
+
+LUIS FELIPE MORA UMAÑA   34:06
+Sí, podré limpiarse un poco más.
+
+JUAN FELIPE PEREZ	BEJARANO   34:20
+Y que Y que, digamos, propiamente de los views, hablaba de otros lados.
+
+LUIS FELIPE MORA UMAÑA   34:28
+Okay.
+No estamos muchachos, entonces muchas gracias.
+
+DAVID MOISES GOMEZ MORA   34:36
+Okay.
+
+JUAN FELIPE PEREZ	BEJARANO   34:36
+Listo, profe, muchas gracias.
+
+DAVID MOISES GOMEZ MORA   34:37
+¿Cómo hago?
+
+LUIS FELIPE MORA UMAÑA   34:38
+Oh yeah.
+
+DAVID MOISES GOMEZ MORA   34:39
+Nos vemos ahora entonces a las 6:00 profe. Bueno, pero había la nota, vámonos así.
+
+LUIS FELIPE MORA UMAÑA   34:42
+See, see you scaredy.
+
+JUAN FELIPE PEREZ	BEJARANO   34:43
+Pero que yo le iba a hacer una consulta.
+
+LUIS FELIPE MORA UMAÑA   34:47
+Pase un mensajillo ahí ya ahorita cuando salga la revisión les contesto, las paso ahí.
+
+DAVID MOISES GOMEZ MORA   34:50
+Dead end.
+
+JUAN FELIPE PEREZ	BEJARANO   34:52
+Solo se lo pasa a uno, me imagino.
+
+LUIS FELIPE MORA UMAÑA   34:54
+Pon mesajillo ahí, sí.
+
+JUAN FELIPE PEREZ	BEJARANO   34:56
+Okay.
+
+LUIS FELIPE MORA UMAÑA   34:56
+No sé si le entendía la pregunta.
+
+JUAN FELIPE PEREZ	BEJARANO   34:58
+No sé, digamos que si solo se lo pone, o sea, el mensaje solo se lo ponemos uno de los 2.
+
+LUIS FELIPE MORA UMAÑA   35:04
+Hace uno el de la nota la misma.
+
+JUAN FELIPE PEREZ	BEJARANO   35:06
+Ok, no quería hacer una consulta, profe.
+
+DAVID MOISES GOMEZ MORA   35:06
+Susan.
+
+LUIS FELIPE MORA UMAÑA   35:08
+Cuéntame.
+
+JUAN FELIPE PEREZ	BEJARANO   35:09
+Este nosotros estábamos viendo ya lo del paper.
+
+LUIS FELIPE MORA UMAÑA   35:13
+Aha.
+
+JUAN FELIPE PEREZ	BEJARANO   35:15
+Eso también de ahí lo hemos tenido que ir investigando ahí poco a poco. Con respecto al paper, estábamos viendo los ejemplos y también el ejemplo que ustedes dio en clase y vimos lo de las columnas, que básicamente está como en columnas e imágenes y a la parte de la imagen hay un pequeño texto y así. Eso sí o sí tiene que ir así o puede ir, digamos, en un.
+
+LUIS FELIPE MORA UMAÑA   35:26
+Huh.
+
+JUAN FELIPE PEREZ	BEJARANO   35:37
+Solo texto, digamos parejo hacia abajo o si o si tiene que llevar columnas y demás.
+
+LUIS FELIPE MORA UMAÑA   35:41
+Siempre ya las columnas.
+
+DAVID MOISES GOMEZ MORA   35:43
+Okay.
+
+JUAN FELIPE PEREZ	BEJARANO   35:43
+Okey.
+Entonces vamos a investigar cómo se hace eso.
+
+LUIS FELIPE MORA UMAÑA   35:45
+sí.
+Eso no es tan difícil de acomodar, este entonces está en la configuración del paper, si me recuerda ahora.
+
+JUAN FELIPE PEREZ	BEJARANO   35:53
+Okay.
+
+DAVID MOISES GOMEZ MORA   35:53
+P.
+
+LUIS FELIPE MORA UMAÑA   35:56
+Este le echamos un ojillo, yo más o menos me acuerdo donde iba a sabar.
+
+DAVID MOISES GOMEZ MORA   35:59
+Okey.
+
+JUAN FELIPE PEREZ	BEJARANO   35:59
+Okay, sí, sí.
+
+LUIS FELIPE MORA UMAÑA   36:01
+Sí, me acuerdo nada más.
+
+JUAN FELIPE PEREZ	BEJARANO   36:02
+Aunque sea como para tener una idea, porque si no le hemos llegado.
+
+LUIS FELIPE MORA UMAÑA   36:05
+No vieras que vieras que eso es un es un comando ahí nada más que uno le mete, según recuerdo, ¿verdad? Es un comando que uno le mete y el y el mal lo ajusta solo, digamos.
+
+JUAN FELIPE PEREZ	BEJARANO   36:13
+Mhm.
+Okay.
+
+DAVID MOISES GOMEZ MORA   36:16
+Okay.
+
+LUIS FELIPE MORA UMAÑA   36:18
+Sí, nada más le dice como mamá, meta columnas tantas y listo.
+
+JUAN FELIPE PEREZ	BEJARANO   36:18
+Hello.
+Ok, ok, listo, está bien, profe, por allá, listo.
+
+LUIS FELIPE MORA UMAÑA   36:24
+Ven, acuérdame ahora.
+
+DAVID MOISES GOMEZ MORA   36:26
+Bueno, gracias, profe.
+
+LUIS FELIPE MORA UMAÑA   36:28
+Pass por ahí.
+Adrián, cuéntame cómo va todo.
+
+Adrian Vinicio Chaves Marin   36:37
+Buenas, profe, pura vida.
+
+LUIS FELIPE MORA UMAÑA   36:39
+Yeah.
+
+Adrian Vinicio Chaves Marin   36:40
+Todo bien, pero bien.
+
+LUIS FELIPE MORA UMAÑA   36:41
+Hecha.
+
+Adrian Vinicio Chaves Marin   36:44
+It's deal, Sage.
+De una profe.
+
+LUIS FELIPE MORA UMAÑA   36:48
+A lo que venimos, dijo el.
+Compita el 7.
+
+Adrian Vinicio Chaves Marin   36:51
+A lo que venimos, OK, vamos a compartirle.
+
+LUIS FELIPE MORA UMAÑA   36:53
+Pregunta.
+Dijo el bateador de Fíjate que narró armas malo.
+
+Adrian Vinicio Chaves Marin   37:03
+Mhm.
+De compartir esta.
+Me estoy compartiendo ya, pero.
+
+LUIS FELIPE MORA UMAÑA   37:15
+Sí, señora, muchas gracias.
+
+Adrian Vinicio Chaves Marin   37:17
+Okey, comenzamos con.
+Con el git drogue.
+
+LUIS FELIPE MORA UMAÑA   37:25
+Entregarle número uno.
+
+Adrian Vinicio Chaves Marin   37:27
+Regalo el número uno, qué.
+
+LUIS FELIPE MORA UMAÑA   37:28
+Sí, señor, thank it.
+
+Adrian Vinicio Chaves Marin   37:30
+Aquí lo tengo en git, sí.
+Es great.
+
+LUIS FELIPE MORA UMAÑA   37:33
+¿De cuándo lo tienen que?
+
+Adrian Vinicio Chaves Marin   37:35
+Es que vamos a ver, pucha.
+Es una broma con el.
+
+LUIS FELIPE MORA UMAÑA   37:40
+Documentación de ir afuera.
+
+Adrian Vinicio Chaves Marin   37:43
+Te quiero afuera.
+
+LUIS FELIPE MORA UMAÑA   37:44
+Sí, señor, adentro todo el código, estamos en la carpeta source, solamente va el source.
+
+Adrian Vinicio Chaves Marin   37:49
+Okey, sí, yo las metí aquí. Bueno, entregué esa parte enlaces para poder ingresar al proyecto y entregarle uno y entregarle final proyecto uno.
+
+LUIS FELIPE MORA UMAÑA   37:58
+Sí, entonces vamos a model, porfa, lo descargamos.
+
+Adrian Vinicio Chaves Marin   38:02
+I don't move.
+
+LUIS FELIPE MORA UMAÑA   38:03
+Is it young?
+
+Adrian Vinicio Chaves Marin   38:25
+Ay, juepucha, es cierto, aquí yo tengo abierto por aparte, profe, o este mejor nada más.
+
+LUIS FELIPE MORA UMAÑA   38:29
+No, bajémoslo bien, sí, está bien contenido el curso, no lo había usado en general.
+
+Adrian Vinicio Chaves Marin   38:41
+There is then.
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   38:50
+Eso se hace primero.
+
+Adrian Vinicio Chaves Marin   38:51
+That's the grand.
+
+LUIS FELIPE MORA UMAÑA   38:52
+Sí, ahorita el otro sí lo podemos ver de aquí porque está la semana pasada.
+
+Adrian Vinicio Chaves Marin   38:59
+Sí, es que probé le voy a contar. Bueno, el git en realidad lo que me pasó fue que.
+Bueno, tuve una bronca más bien porque.
+yo trabajo cuando trabajo desde casi todo lo hice del trabajo en parte verdad hacía como avances pero un día me reventó una alerta porque el git lo tenía la vara El dominio de la caja y yo estaba haciéndolo Entonces como el
+
+LUIS FELIPE MORA UMAÑA   39:15
+Mhm.
+
+Adrian Vinicio Chaves Marin   39:30
+¿Hace esa, cómo se dice esa sincronización?
+
+LUIS FELIPE MORA UMAÑA   39:33
+Mm.
+
+Adrian Vinicio Chaves Marin   39:35
+Y seguridad informática, ya imagínese porque está tirando información, que es educativa, pero ahí usted sabe que eso no es permitido.
+
+LUIS FELIPE MORA UMAÑA   39:40
+Mhm.
+
+Adrian Vinicio Chaves Marin   39:45
+Y ya eso era otro que tenía, era otro.
+Y este entonces, sinceramente, sí, digamos, ahí metí todo lo que fue el trabajo. Bueno, antes de la entrega, obvio, va, no después de la.
+
+LUIS FELIPE MORA UMAÑA   39:56
+Mm.
+
+Adrian Vinicio Chaves Marin   39:58
+De la entrega, este bajo, profe.
+
+LUIS FELIPE MORA UMAÑA   40:01
+Sí, porfa.
+
+Adrian Vinicio Chaves Marin   40:08
+Y bueno, tenemos el contenido.
+Aquí, bueno, la introducción.
+
+LUIS FELIPE MORA UMAÑA   40:14
+Puedes hacerle sum out un toque, porfa.
+
+Adrian Vinicio Chaves Marin   40:17
+El.
+
+LUIS FELIPE MORA UMAÑA   40:18
+Tom out.
+
+Adrian Vinicio Chaves Marin   40:21
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   40:21
+Hacerlo más pequeño, poquito más pequeño, sí.
+
+Adrian Vinicio Chaves Marin   40:23
+Hacerlo más pequeño.
+
+LUIS FELIPE MORA UMAÑA   40:26
+Está perfecto ahora.
+Recuerde que aquí no hablamos ni en BC ni sobre estudio ni de Cichar, ¿verdad?
+
+Adrian Vinicio Chaves Marin   40:35
+Say.
+Halo ahí.
+
+LUIS FELIPE MORA UMAÑA   40:39
+Igual en el segundo párrafo.
+La segunda parte del segundo párrafo sí está bien.
+Ok, vámonos.
+Siga, puedo seguir bajando tranquilo.
+
+Adrian Vinicio Chaves Marin   41:05
+Y ahí fallé porque ella y también y como no se puede corregir a lo último como sé Trello.
+
+LUIS FELIPE MORA UMAÑA   41:12
+Mm.
+No, eso está bien, es parte, por eso no se pone nada de.
+Por eso no se pone nada de herramientas, ¿verdad? Porque todavía no hemos escogido las herramientas.
+Todo hay que tratar de tenerlo siempre de la manera más simplista.
+Entonces, si no metes herramientas aquí no tienes que venir a actualizar herramientas aquí, ¿verdad?
+
+Adrian Vinicio Chaves Marin   41:38
+Exacto, sí.
+
+LUIS FELIPE MORA UMAÑA   41:40
+La visión del proyecto es la misma, es independientemente de las herramientas que uses, siempre la misma visión, digamos, la misma problemática es este para seguir bajando.
+Es la misma problemática, son los mismos features, este van a ser los mismos ítems de trabajo, ¿verdad? Este entonces, y por eso es que este documento es agnóstico a la tecnología.
+
+Adrian Vinicio Chaves Marin   41:50
+Okay.
+Sí, porque sí es la primera, es la parte, como se dice primaria del proyecto donde todavía no sabemos.
+¿Cómo se va a desarrollar?
+
+LUIS FELIPE MORA UMAÑA   42:13
+Exacto, exacto.
+Estamos analizando apenas qué se tiene que hacer.
+
+Adrian Vinicio Chaves Marin   42:19
+Sí.
+
+LUIS FELIPE MORA UMAÑA   42:21
+Okay.
+
+Adrian Vinicio Chaves Marin   42:22
+Es como cuando se hace un arroz con pollo y que se tienen los ingredientes, pero no se sabe qué va a pasar después o cómo va a quedar.
+
+LUIS FELIPE MORA UMAÑA   42:23
+Yo ando ahí.
+Usted primero tiene que saber qué tiene que ir a comprar.
+Ahí falta un poquito de amor, ¿verdad? Las descripciones.
+
+Adrian Vinicio Chaves Marin   42:43
+Team and yes this.
+
+LUIS FELIPE MORA UMAÑA   42:44
+Sí, le quité la aceptación también.
+
+Adrian Vinicio Chaves Marin   42:45
+Because.
+
+LUIS FELIPE MORA UMAÑA   42:48
+Porque vamos a ver este creo que se lo decía, no recuerdo a quien se lo decía la semana pasada.
+A usted le dicen este tómelo, a usted le toca el PBI uno, crear formulario de registro.
+¿Y qué lleva el formulario de registro, verdad?
+
+Adrian Vinicio Chaves Marin   43:01
+Sí.
+Sí, ya y no va a ser uno adivino, ¿verdad? Y tiene que poner ahí. Bueno, exacto, porque yo no soy en este caso solo soy yo, pero si trabajo en un equipo y tengo que poner, bueno, tiene que crear un formulario de registro que lleve esto, que lleve el correo, que lleve el nombre que lleve esto.
+
+LUIS FELIPE MORA UMAÑA   43:12
+Same.
+Mhm.
+Que no permita esto, que no permita aquello.
+
+Adrian Vinicio Chaves Marin   43:24
+Hello.
+Que no permita exacto.
+
+LUIS FELIPE MORA UMAÑA   43:28
+Same.
+Voy a seguir bajando hoy, sí.
+
+Adrian Vinicio Chaves Marin   43:31
+Estoy bajando, sí.
+
+LUIS FELIPE MORA UMAÑA   43:34
+Saca lo que pasa, digamos que estos documentos usualmente.
+Vamos a ver, uno lo plantea una forma un poquito diferente, un poquito más cliente. Puede seguir bajando o no lo plantea un poquito más cliente y se lo envía al cliente.
+
+Adrian Vinicio Chaves Marin   43:50
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   43:51
+Entonces usted se lo envía al cliente, el cliente lo revisa, el cliente lo valida, el cliente lo aprueba y eso es lo que se empieza a trabajar.
+Entre más tarde aún va tildado.
+Este.
+
+Adrian Vinicio Chaves Marin   44:05
+Aquí.
+
+LUIS FELIPE MORA UMAÑA   44:06
+Sí.
+Listo.
+
+Adrian Vinicio Chaves Marin   44:11
+Sí, aquí está la bibliografía.
+
+LUIS FELIPE MORA UMAÑA   44:13
+Chadohis.
+
+Adrian Vinicio Chaves Marin   44:15
+Y listo por ahí, este el otro profe.
+
+LUIS FELIPE MORA UMAÑA   44:20
+Sí, señor.
+
+Adrian Vinicio Chaves Marin   44:22
+This is Bahemolo.
+
+LUIS FELIPE MORA UMAÑA   44:24
+No lo podemos ver ahí, todo bien.
+Entonces, lo bonito de las firmas es que una vez usted firma algo.
+Ese es su compromiso.
+Y ese es el acuerdo.
+¿Entonces, qué pasó? Ella aparte, digamos, desde una base sólida, ¿verdad? Es que el cliente debe tener entonces este es más fácil corregir en estas etapas del proyecto.
+que cuando ya usted tiene toda la pantalla y no tiene que ir a modificar el view, no tiene que modificar el API, no tiene que ir a modificar el control, no tiene que ir a modificar el servicio, no tiene que ir a modificar la base de datos, pues es parte
+
+Adrian Vinicio Chaves Marin   45:04
+Sí, sí, no es prendida.
+
+LUIS FELIPE MORA UMAÑA   45:06
+Exacto.
+
+Adrian Vinicio Chaves Marin   45:07
+Sí, más que esto y uno casi yo, bueno, en realidad es muy poco lo que lo veo, o mejor dicho, nunca.
+Hey, esto sí, esto sí es muy importante tenerlo si uno sí, una empresa privada, por así decirlo.
+
+LUIS FELIPE MORA UMAÑA   45:15
+So.
+Independientemente de lo que uno haga, puede seguir pasando. Sí, estoy bien. Independientemente de lo que uno haga, siempre es importante saber qué es lo que necesito.
+¿Qué es lo que tengo que hacer? ¿Qué es lo que tengo que resolver? No tan rápido, nada más ahí, ajá.
+Game.
+Podemos orar los 2 primeros párrafos.
+Porque se ha desarrollado un poquito más los últimos 2.
+
+Adrian Vinicio Chaves Marin   45:56
+Manestro.
+
+LUIS FELIPE MORA UMAÑA   45:57
+Bing.
+Igual, mucho, mucho, sí, Sharp, mucho eso al estudio, mucho ves que se repite mucho.
+
+Adrian Vinicio Chaves Marin   46:04
+Sí.
+Aquí viene la edición del proyecto.
+
+LUIS FELIPE MORA UMAÑA   46:11
+Mm.
+
+Adrian Vinicio Chaves Marin   46:13
+Esto es igual que el otro.
+I'm saying.
+Las tareas de implementación.
+Ahora aquí, creo que aquí comienza la otra parte.
+
+LUIS FELIPE MORA UMAÑA   46:23
+Mhm.
+T.
+Pues ir bajando.
+
+Adrian Vinicio Chaves Marin   46:46
+Esta parte sí me quedó pendiente que fue el y el testing, por así decirlo.
+
+LUIS FELIPE MORA UMAÑA   46:51
+Mhm.
+
+Adrian Vinicio Chaves Marin   46:51
+Como lo que usted hizo aquel día en la última.
+
+LUIS FELIPE MORA UMAÑA   46:54
+Mm.
+
+Adrian Vinicio Chaves Marin   46:55
+Sí.
+
+LUIS FELIPE MORA UMAÑA   47:03
+¿Que cuando hablamos de control de versiones?
+No lo pongas así porque es otro tema completamente diferente.
+
+Adrian Vinicio Chaves Marin   47:08
+I'm so.
+O K, en la parte del jeep.
+
+LUIS FELIPE MORA UMAÑA   47:15
+Sí.
+Cuando usted habla de control de versiones, estás hablando un poquito más de que es un major, que es un mainor, toda esa vara de cuando usted tira un alfa, tira un beta, cuando es un salto de versión, cuando no es un salto de versión, cuando es un breaking change, ¿verdad? Entonces este es esa vara que nosotros vemos en los sistemas todos los días de.
+Salió la versión 8.0.0 8.1 8.1.0 9.0.0 eso es control de versiones, digamos.
+
+Adrian Vinicio Chaves Marin   47:42
+Mhm.
+En que en mi caso sería como cuando sale una, cómo se llama una nueva compilación, un nuevo parche de Windows.
+
+LUIS FELIPE MORA UMAÑA   47:53
+No no release.
+Mhm No sería un minor, por ejemplo, si es un parche, es un minor.
+
+Adrian Vinicio Chaves Marin   47:57
+Es el de a minor.
+
+LUIS FELIPE MORA UMAÑA   48:02
+Yes.
+Entonces, por eso, digamos, el título contrasta un poco de lo que dice adentro. el.
+Descripción.
+
+Adrian Vinicio Chaves Marin   48:17
+I see.
+
+LUIS FELIPE MORA UMAÑA   48:21
+Was it bandling?
+Mhm.
+
+Adrian Vinicio Chaves Marin   48:27
+Aquí, profe, me faltó. Bueno, es que en este MBC, bueno, sí, está el model vista este porque yo agregué aquí unas utilidades. No sé si eso igual había que agregarlo a mí esta parte.
+
+LUIS FELIPE MORA UMAÑA   48:43
+Describiendo la arquitectura debería estar ahí.
+
+Adrian Vinicio Chaves Marin   48:45
+Tasing.
+Eso lo agregué ahí como parte también.
+
+LUIS FELIPE MORA UMAÑA   48:58
+Okay.
+Mhm.
+Jay.
+Game.
+
+Adrian Vinicio Chaves Marin   49:20
+Y no sé, a lo último hice de un tipo de manual, ¿verdad? El usuario guía de ejecución.
+
+LUIS FELIPE MORA UMAÑA   49:27
+Mm.
+Okay, channel ban thing.
+Chicas, todavía hay.
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   49:53
+Está ya la parte de autenticación y registro en lo mismo.
+
+LUIS FELIPE MORA UMAÑA   49:57
+K.
+
+Adrian Vinicio Chaves Marin   50:04
+Es como la parte del bueno, el registro del usuario nuevo.
+
+LUIS FELIPE MORA UMAÑA   50:08
+Mhm.
+
+Adrian Vinicio Chaves Marin   50:10
+En esta parte, bueno, ahora la parte ahora le explico, es que la hice como a como es en el trabajo, digamos, usé Gmail, pero como en la parte de versión de.
+De los usuarios a como se hacen en la caja.
+
+LUIS FELIPE MORA UMAÑA   50:24
+Okay.
+
+Adrian Vinicio Chaves Marin   50:27
+Is this coming with dashboard?
+
+LUIS FELIPE MORA UMAÑA   50:31
+Mhm.
+
+Adrian Vinicio Chaves Marin   50:44
+Sí, bajando.
+
+LUIS FELIPE MORA UMAÑA   50:45
+Jay, person.
+
+Adrian Vinicio Chaves Marin   50:46
+Sí.
+
+LUIS FELIPE MORA UMAÑA   50:47
+Two.
+A seguir.
+Aquí sí podemos ir un poquito más rápido, poca text.
+Mhm.
+¿No es pendiente, qué pasó?
+
+Adrian Vinicio Chaves Marin   51:18
+Este pendiente es el la parte de las semifinales, final y cuartos.
+
+LUIS FELIPE MORA UMAÑA   51:25
+Going.
+
+Adrian Vinicio Chaves Marin   51:28
+No me dio.
+Tiempo probé, la verdad.
+
+LUIS FELIPE MORA UMAÑA   51:33
+Okay.
+
+Adrian Vinicio Chaves Marin   51:35
+Y es el panel de administración.
+
+LUIS FELIPE MORA UMAÑA   51:44
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   51:54
+Pero una parte de estadística.
+Y ya serían las conclusiones que.
+
+LUIS FELIPE MORA UMAÑA   52:10
+Ves igual, mucho visual Studio, mucho Gira, mucho GitHub.
+
+Adrian Vinicio Chaves Marin   52:12
+Nope.
+Sí.
+
+LUIS FELIPE MORA UMAÑA   52:17
+Lo repite mucho y el aún también tampoco sabe.
+
+Adrian Vinicio Chaves Marin   52:18
+Sí, yo.
+Yo no, bueno, esta parte no actualicé lo de Jira, me quedé con lo de Jira y no pude actualizar a Trello. Y aparte de eso, y todo esto uno lo ve y cuando yo oí todas las demás, cómo se llama, este entrega de proyectos y digo yo qué huevado.
+
+LUIS FELIPE MORA UMAÑA   52:27
+Mm.
+Okay.
+
+Adrian Vinicio Chaves Marin   52:43
+Sí, porque y esto y estaba mal, yo sabía que iba a estar mal.
+
+LUIS FELIPE MORA UMAÑA   52:48
+Okay.
+
+Adrian Vinicio Chaves Marin   52:48
+Esa parte de la entrega del documento.
+
+LUIS FELIPE MORA UMAÑA   52:53
+Okay.
+
+Adrian Vinicio Chaves Marin   52:54
+Sí, ya aquí termina.
+Y la bibliografía.
+
+LUIS FELIPE MORA UMAÑA   52:58
+Saying.
+Perfecto.
+Vámonos aquí, ahí a la principal.
+
+Adrian Vinicio Chaves Marin   53:05
+Ms.
+
+LUIS FELIPE MORA UMAÑA   53:10
+Ok, 19 commits, el último la semana pasada, todo bien.
+Vamos a traerlo.
+
+Adrian Vinicio Chaves Marin   53:24
+Tenerlo, profe. Bueno, lo hice así, lo hice bueno, en la primer semana yo puse semana, el primero al 8 lo que hice fue agregar todos.
+
+LUIS FELIPE MORA UMAÑA   53:32
+Mhm.
+
+Adrian Vinicio Chaves Marin   53:36
+Este todas las funcionalidades que va a tener el proyecto.
+
+LUIS FELIPE MORA UMAÑA   53:36
+Mhm.
+
+Adrian Vinicio Chaves Marin   53:42
+Como bueno, la gestión de usuarios, creación de quinielas, ingresos y resultados, cálculo, puntajes, reportes. Ya la semana del 8 al 15 los que están marcados con el check. Bueno, aquí también está que la tarea la hago yo, verdad que está asignada a mi usuario, los que están bien.
+
+LUIS FELIPE MORA UMAÑA   53:46
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   54:02
+Es el chef en verde, esos son las que se terminaron.
+Bueno, esto es del 8 al 15 que crecen de formulario, implementar la autenticación básica, validar datos de usuario. Esto quedó quedó bien. La parte de la semana 15 al 22 no quedó la definición de estructura de jornadas que era.
+La parte que venía el chivo pendiente, que no se creó lo que fue la fase finales.
+
+LUIS FELIPE MORA UMAÑA   54:33
+Okay.
+
+Adrian Vinicio Chaves Marin   54:34
+Ese no se terminó.
+Este por acá en la semana del 22 al 29. Bueno, aquí uno puede ingresar, ¿verdad? Y.
+
+LUIS FELIPE MORA UMAÑA   54:44
+Mhm.
+
+Adrian Vinicio Chaves Marin   54:45
+Is then?
+Vamos a ver otro como este.
+En este aquí le puse la descripción que se hacía.
+
+LUIS FELIPE MORA UMAÑA   54:57
+T.
+
+Adrian Vinicio Chaves Marin   55:00
+Y sí, esta última semana, bueno, aquí dice ingreso de Utados, validar consistencia de datos. Bueno, la predicción haciendo ahí lo que son los marcadores, los puntajes automáticos y mostrar la tabla de consiciones, las pruebas del sistema y en realidad digamos.
+No sé si se puede decir que las pruebas del sistema fueron como estas, ver lo de la tabla de posiciones y puntaje se generaba bien, si el usuario se podía loguear, si se podía registrar este o digamos, o no sé si esto es como a la parte de del testing.
+
+LUIS FELIPE MORA UMAÑA   55:37
+Esa es la parte del testing, puramente.
+
+Adrian Vinicio Chaves Marin   55:40
+Exacto, entonces esta fue la que.
+
+LUIS FELIPE MORA UMAÑA   55:42
+Sería más validación de sistema en realidad.
+
+Adrian Vinicio Chaves Marin   55:45
+Sí, entonces esta, digamos, esta tampoco quedó.
+
+LUIS FELIPE MORA UMAÑA   55:50
+O K, todo bien, igual todavía no hacía falta el testing, el unit test.
+
+Adrian Vinicio Chaves Marin   55:55
+Oh, what is it?
+
+LUIS FELIPE MORA UMAÑA   55:56
+Mm.
+
+Adrian Vinicio Chaves Marin   55:58
+Y no se procede aquí.
+
+LUIS FELIPE MORA UMAÑA   56:01
+Vámonos al a la ejecución.
+
+Adrian Vinicio Chaves Marin   56:05
+Game.
+
+LUIS FELIPE MORA UMAÑA   56:06
+Ya está Erick en la fila.
+
+Adrian Vinicio Chaves Marin   56:08
+Ya sé que en la vida o qué.
+
+LUIS FELIPE MORA UMAÑA   56:10
+So.
+
+Adrian Vinicio Chaves Marin   56:11
+I was a Cortana.
+Cha.
+
+LUIS FELIPE MORA UMAÑA   56:20
+Son toques, tenés cambiecillos ahí.
+
+Adrian Vinicio Chaves Marin   56:24
+¿A dónde?
+
+LUIS FELIPE MORA UMAÑA   56:25
+Ahí de esta semana.
+Para ver, podemos verlos.
+
+Adrian Vinicio Chaves Marin   56:33
+Sí, claro, no, pero esta semana ni yo ni ni he estado será.
+
+LUIS FELIPE MORA UMAÑA   56:36
+Sale de cerrar.
+Vamos a ver cuáles son los cambios, nos damos cuenta.
+Dale ahí donde dice cambios de git abajo.
+No, creo que equipo.
+
+Adrian Vinicio Chaves Marin   56:53
+Pero porque aquí tengo boquita es y.
+
+LUIS FELIPE MORA UMAÑA   56:57
+Yes, I same.
+¿Qué cambios tiene?
+
+Adrian Vinicio Chaves Marin   57:10
+Hey, profe, le mentiría porque yo esta semana no he trabajado ni, digamos, desde el miércoles no estoy.
+
+LUIS FELIPE MORA UMAÑA   57:17
+Dale doble click ahí a cualquier archivo.
+Esos son los cambiecillos de ese.
+
+Adrian Vinicio Chaves Marin   57:38
+serán los comentarios.
+
+LUIS FELIPE MORA UMAÑA   57:42
+De poco más que solo comentarios.
+
+Adrian Vinicio Chaves Marin   57:49
+Sí, profe, porque no sale como la fecha no puede salir aquí.
+
+LUIS FELIPE MORA UMAÑA   57:53
+La fecha no sale porque no lo has cometiado.
+
+Adrian Vinicio Chaves Marin   57:59
+Sí, no, yo no, yo no hice cambios desde el día y desde el día en la noche, sería mentible.
+
+LUIS FELIPE MORA UMAÑA   58:04
+Y los cometió.
+
+Adrian Vinicio Chaves Marin   58:07
+No es que digamos el día en la en la el último día yo ya no hice más cambios en este archivo. Será que digamos que quedaron algunos de los que ya digamos, tal vez no los hice antes de que fueran las 6:00.
+
+LUIS FELIPE MORA UMAÑA   58:10
+Mm.
+
+Adrian Vinicio Chaves Marin   58:22
+No dice los comit.
+
+LUIS FELIPE MORA UMAÑA   58:25
+K.
+Va, aquí tenemos 2 opciones.
+Porque debería estar en Git.
+Opción número uno.
+
+Adrian Vinicio Chaves Marin   58:33
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   58:35
+Le damos riberta, todos esos cambios nos persignamos y que sea lo que Dios quiera.
+
+Adrian Vinicio Chaves Marin   58:40
+Okay.
+
+LUIS FELIPE MORA UMAÑA   58:41
+O este de no nada, le hago un par de puntillos ahí por.
+Por eso como para no paseármela en el repo.
+
+Adrian Vinicio Chaves Marin   58:52
+De ahí es que me fue pucha, no creo que se caiga, pero es que sí, nada mira.
+
+LUIS FELIPE MORA UMAÑA   58:58
+K, entonces vea, hagamos algo, vea, escribe un mensaje ahí, póngale ahí último commit.
+Ajá, dale, commit and push.
+
+Adrian Vinicio Chaves Marin   59:11
+Oh.
+Que bueno, aquí yo no me veo aquí. y.
+
+LUIS FELIPE MORA UMAÑA   59:17
+No, dale, tiene que pacharlos, si no, bueno, sí, también.
+
+Adrian Vinicio Chaves Marin   59:21
+sí, muy bien.
+
+LUIS FELIPE MORA UMAÑA   59:24
+Sí, soy más perezoso, solo todo un solo click.
+
+Adrian Vinicio Chaves Marin   59:31
+Es que sí me extraña, digamos aquí ya y uno sabe que en la verdad digamos va a salir todo.
+
+LUIS FELIPE MORA UMAÑA   59:38
+Okey, vámonos aquí arriba.
+Ajá, este ver historial de ramas.
+Y ahí está, dice que el último commit antes que ese.
+Fue del 29.
+
+Adrian Vinicio Chaves Marin   1:00:01
+sí, entonces sí.
+
+LUIS FELIPE MORA UMAÑA   1:00:01
+Quedó la semana pasada.
+
+Adrian Vinicio Chaves Marin   1:00:04
+Sí, fue el fue el miércoles, sí, este no lo hice.
+
+LUIS FELIPE MORA UMAÑA   1:00:07
+I start order.
+
+Adrian Vinicio Chaves Marin   1:00:09
+A las 5:00.
+
+LUIS FELIPE MORA UMAÑA   1:00:10
+A esta hora, sí, 5 y 2, literal a esta hora.
+
+Adrian Vinicio Chaves Marin   1:00:13
+Sí, entonces listo.
+Sí, sí, a la misma hora.
+
+LUIS FELIPE MORA UMAÑA   1:00:15
+Sí.
+Sí, todavía nos.
+
+Adrian Vinicio Chaves Marin   1:00:19
+Y yo estaba asustado, digo, yo no, yo no trabajo, no tocaba estar chivo para nada.
+
+LUIS FELIPE MORA UMAÑA   1:00:23
+Sí, nos podemos volver a ese y ejecutamos ese o esta es la otra opción.
+Se manda.
+
+Adrian Vinicio Chaves Marin   1:00:31
+Sí, démosle a ese.
+
+LUIS FELIPE MORA UMAÑA   1:00:33
+Hey, dale clic derecho.
+
+Adrian Vinicio Chaves Marin   1:00:35
+I broke we channel.
+Clic derecho.
+
+LUIS FELIPE MORA UMAÑA   1:00:39
+Ajá, y este extracción del repositorio.
+
+Adrian Vinicio Chaves Marin   1:00:43
+Extracción de reproductorio este.
+
+LUIS FELIPE MORA UMAÑA   1:00:46
+Sí, sale todos pañoletes a ver.
+Dale que sí.
+Y ahora sí estamos en esa rama de ese último día.
+
+Adrian Vinicio Chaves Marin   1:01:01
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:01:01
+Dale, Dale, vámonos al explorador de soluciones.
+¿Oh, y dónde está la parte de Git de los camecillos de Git?
+
+Adrian Vinicio Chaves Marin   1:01:13
+Aquí.
+
+LUIS FELIPE MORA UMAÑA   1:01:13
+Ajá, ajá, ahí dale click derecho a la solución, le da rebuild y nos vamos.
+
+Adrian Vinicio Chaves Marin   1:01:21
+Thank you, bro.
+
+LUIS FELIPE MORA UMAÑA   1:01:22
+No en la solución a la derecha.
+
+Adrian Vinicio Chaves Marin   1:01:26
+bueno, aquí.
+
+LUIS FELIPE MORA UMAÑA   1:01:27
+Ajá, arriba, dale ahí, dale rebuild, clic derecho a la solución.
+Ajá, recopilar.
+
+Adrian Vinicio Chaves Marin   1:01:38
+Lots.
+Hijo, pucha, no me asuste.
+
+LUIS FELIPE MORA UMAÑA   1:01:54
+Y la vamos a iniciar, ahora sí.
+
+Adrian Vinicio Chaves Marin   1:01:56
+Ahora sí, vámonos, sí, me voy.
+Bueno, pues aquí vamos a probar el ingreso con.
+
+LUIS FELIPE MORA UMAÑA   1:02:13
+Estamos en usuario primero.
+
+Adrian Vinicio Chaves Marin   1:02:15
+Estamos en serio o K.
+
+LUIS FELIPE MORA UMAÑA   1:02:17
+Sí, señora.
+
+Adrian Vinicio Chaves Marin   1:02:18
+¿What is that este?
+Yo lo estoy haciendo con el nombre y un apellido.
+Y el nombre del usuario casi siempre pongo la inicial y como los usuarios de la caja casi siempre son la inicial del nombre y el apellido de J Marín.
+
+LUIS FELIPE MORA UMAÑA   1:02:33
+Mhm.
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:02:42
+Yeah, key.
+El correo sería gmail.com.
+Y bueno, la contraseña.
+Y aquí selecciona uno el país preferido. Bueno, aquí hay una lista, es corta en realidad.
+
+LUIS FELIPE MORA UMAÑA   1:03:00
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:03:03
+Brasil.
+Guardar y dice que ya, bueno, el usuario se guardó exitosamente.
+
+LUIS FELIPE MORA UMAÑA   1:03:11
+Okay.
+
+Adrian Vinicio Chaves Marin   1:03:14
+Nos vamos a ir a ingresar el usuario.
+La sueña.
+Es que se me pasa para la otra pantalla.
+
+LUIS FELIPE MORA UMAÑA   1:03:33
+Thank you.
+
+Adrian Vinicio Chaves Marin   1:03:35
+O K, profe, bueno, esta es el dashboard, es como la pantalla principal.
+Este aquí, bueno, da lo que es la información del jugador, bueno, ahorita tiene cero puntos.
+
+LUIS FELIPE MORA UMAÑA   1:03:41
+Mhm.
+Hotel designia, gracias.
+
+Adrian Vinicio Chaves Marin   1:03:49
+Y.
+La peor global es insignias ahí me la jugué.
+
+LUIS FELIPE MORA UMAÑA   1:03:54
+Sí.
+
+Adrian Vinicio Chaves Marin   1:03:57
+Este aquí, bueno, trae el los pronósticos que hay ahorita.
+
+LUIS FELIPE MORA UMAÑA   1:04:03
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:04:03
+¿Disponibles tenemos el historial que no tiene porque no ha jugado, verdad?
+
+LUIS FELIPE MORA UMAÑA   1:04:11
+King.
+
+Adrian Vinicio Chaves Marin   1:04:12
+Partidos y tablas aquí. este.
+
+LUIS FELIPE MORA UMAÑA   1:04:14
+Mm.
+
+Adrian Vinicio Chaves Marin   1:04:18
+Esta parte es la que no está la de cruces de fases finales.
+
+LUIS FELIPE MORA UMAÑA   1:04:23
+¿Qué podemos volver la fecha?
+
+Adrian Vinicio Chaves Marin   1:04:23
+It is.
+¿Podemos devolver la fecha?
+
+LUIS FELIPE MORA UMAÑA   1:04:28
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:04:30
+De los partidos, profe.
+
+LUIS FELIPE MORA UMAÑA   1:04:32
+Sí, pues estamos en el 28, que es cuando termina la fase de grupos, entonces por lo menos para.
+
+Adrian Vinicio Chaves Marin   1:04:36
+Cuando termina, sí, eso en la parte tengo el usuario administrador.
+
+LUIS FELIPE MORA UMAÑA   1:04:43
+Okay.
+
+Adrian Vinicio Chaves Marin   1:04:44
+Y estos serían, no sé si le muestro ya. o.
+
+LUIS FELIPE MORA UMAÑA   1:04:49
+Nemberle.
+
+Adrian Vinicio Chaves Marin   1:04:50
+I'm second.
+Escuchamos a ver por qué.
+O K, aquí está el usuario administrador.
+
+LUIS FELIPE MORA UMAÑA   1:05:14
+H.
+
+Adrian Vinicio Chaves Marin   1:05:16
+Entonces aquí es donde podemos manipular lo que son los este bueno, aquí en administrar, no sé por qué es que se va para la otra pantalla.
+
+LUIS FELIPE MORA UMAÑA   1:05:23
+Mhm.
+Es que está por default.
+
+Adrian Vinicio Chaves Marin   1:05:26
+Le damos señor, sí, digamos toda esta parte del dashboard, aunque sea usuario administrador, está igual para los demás, digamos, sale igual que los demás usuarios.
+
+LUIS FELIPE MORA UMAÑA   1:05:36
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:05:40
+Aquí.
+De que aquí podemos cambiar, bueno, la fecha simulada y aplicar la fecha y aquí, bueno, este sería el equipo local y el equipo visita, ponemos los marcadores.
+
+LUIS FELIPE MORA UMAÑA   1:05:54
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:05:54
+En este caso es que aquí hay algunos marcadores ya.
+Ahí sería cambiar alguno de estos como este.
+Sería como cambiar la fecha acá y de ahí sería agosto.
+6 de agosto.
+Say.
+Y aquí, digamos, le ponemos el marcador, que sería, no sé, uno a uno.
+Anotadores, bueno, pongámosle uno a cero, le ponemos John.
+Y guardar el resultado.
+
+LUIS FELIPE MORA UMAÑA   1:06:32
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:06:33
+O sea, aquí.
+Saber cuál era.
+
+LUIS FELIPE MORA UMAÑA   1:06:40
+Canadá, Suiza.
+
+Adrian Vinicio Chaves Marin   1:06:42
+Canada, Suiza.
+Este de acá, pero pucha, no sale.
+
+LUIS FELIPE MORA UMAÑA   1:06:44
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:06:49
+Seven.
+No se me aplicó.
+Que aquí nuevamente.
+Uno a cero, bueno, partido finalizado, guardar el resultado.
+Y ahora sí es que tenía que darle aquí en el check de partido finalizado y aquí dice que está finalizado y que Canadá, Suiza, que uno a cero.
+
+LUIS FELIPE MORA UMAÑA   1:07:19
+Two.
+
+Adrian Vinicio Chaves Marin   1:07:20
+Entonces vamos a ir a un usuario de los.
+De los otros, profe, para.
+Es el usuario mío.
+Entonces acá en el historial.
+Canadá, Suiza, dice que está acá.
+
+LUIS FELIPE MORA UMAÑA   1:07:48
+Burn.
+
+Adrian Vinicio Chaves Marin   1:07:49
+Marcador real uno a cero finalizado, le dan 2 puntos.
+
+LUIS FELIPE MORA UMAÑA   1:07:53
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:07:53
+Por que solo pegó, que ganó.
+
+LUIS FELIPE MORA UMAÑA   1:07:57
+King.
+
+Adrian Vinicio Chaves Marin   1:07:58
+Ya se hubiera pegado al marcador completo de 3 a cero, este se lleva 5 puntos.
+
+LUIS FELIPE MORA UMAÑA   1:08:05
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:08:07
+También tengo las cosas.
+
+LUIS FELIPE MORA UMAÑA   1:08:07
+And it.
+Un detallillo visual, detallillo visual es que se corta ahí la.
+
+Adrian Vinicio Chaves Marin   1:08:09
+Cobro.
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:08:15
+Las insignias arriba, lo ves.
+
+Adrian Vinicio Chaves Marin   1:08:17
+Esta parte aquí.
+
+LUIS FELIPE MORA UMAÑA   1:08:19
+No, el río.
+En la parte de insignias, ajá, ahí eso de ahí.
+
+Adrian Vinicio Chaves Marin   1:08:27
+Sí, ese peor.
+Y ahí está fallando, eso es.
+Es como soy yo el jugador y yo hice varios de que aquí voy como de segundo.
+
+LUIS FELIPE MORA UMAÑA   1:08:39
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:08:40
+Entonces está en varias quinielas y sale en varias, son varias las que salen.
+
+LUIS FELIPE MORA UMAÑA   1:08:44
+Mhm.
+no está bien, nada más que debería ser ahí un.
+
+Adrian Vinicio Chaves Marin   1:08:50
+See it is.
+
+LUIS FELIPE MORA UMAÑA   1:08:51
+Pues esto más grande el textbox o no sé, como que te lo multiline, una verdad así.
+
+Adrian Vinicio Chaves Marin   1:08:53
+And textbooks in you.
+Sí, esto en realidad, digamos, yo quería como bajarlo como en orden.
+
+LUIS FELIPE MORA UMAÑA   1:09:05
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:09:06
+Ya la pantalla sentía que se iba a ver muy pesada.
+
+LUIS FELIPE MORA UMAÑA   1:09:09
+Mm.
+James.
+
+Adrian Vinicio Chaves Marin   1:09:13
+Este Bueno, profe, bueno, aquí tenemos el ranking global, que es este.
+
+LUIS FELIPE MORA UMAÑA   1:09:18
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:09:19
+Y ahí yo llené algunos datos en el los archivos. Bueno, creé todos los usuarios 1:1, los marcadores los fui haciendo ahí. Entonces llené y bueno, llené más de 40.
+
+LUIS FELIPE MORA UMAÑA   1:09:28
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:09:35
+En realidad cree 60.
+
+LUIS FELIPE MORA UMAÑA   1:09:38
+Jay.
+
+Adrian Vinicio Chaves Marin   1:09:39
+60 usuarios y 2 marcadores, algunos también, bueno, varios, como unos, no sé, 2530.
+
+LUIS FELIPE MORA UMAÑA   1:09:48
+June.
+
+Adrian Vinicio Chaves Marin   1:09:49
+Bueno, y estas son mis quinielas, que aquí es donde uno.
+Que este aparecen los participantes de las quinielas. Yo eso sí, aquí siento que sí es un fallo porque solo crea la quiniela.
+
+LUIS FELIPE MORA UMAÑA   1:10:01
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:10:02
+Aquí uno puede crear la quiniela, digamos, yo a ver como crear una quiniela, le meto un código ID.
+El nombre de la quiniela.
+Y aquí pregunta si es privada, pero yo en esta vi un error porque digamos como hace uno.
+Para está bien, yo le digo a usted, este profe, métase a la quiniela tal código.
+
+LUIS FELIPE MORA UMAÑA   1:10:27
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:10:28
+Pero solo solo sabiendo el ID de la quiniela.
+
+LUIS FELIPE MORA UMAÑA   1:10:33
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:10:35
+Entonces ese sí es un fallo ahí que.
+Este bien el programa.
+
+LUIS FELIPE MORA UMAÑA   1:10:42
+Okay.
+
+Adrian Vinicio Chaves Marin   1:10:42
+Que no hay una forma de buscar las quinielas. este.
+Para saber bien, digamos, cuáles quinielas están y todo eso.
+
+LUIS FELIPE MORA UMAÑA   1:10:53
+Okay.
+
+Adrian Vinicio Chaves Marin   1:10:53
+Vamos a ver qué más, no sé qué más podemos ver, profe.
+
+LUIS FELIPE MORA UMAÑA   1:11:00
+No, yo creo que estamos.
+
+Adrian Vinicio Chaves Marin   1:11:02
+Game.
+So some ish.
+
+LUIS FELIPE MORA UMAÑA   1:11:09
+Écheme un ojillo al código.
+
+Adrian Vinicio Chaves Marin   1:11:10
+Even.
+Aquí tenemos el código.
+Por acá tenemos los controladores.
+
+LUIS FELIPE MORA UMAÑA   1:11:19
+Hmm.
+
+Adrian Vinicio Chaves Marin   1:11:21
+Los controladores y los cómo se llama, y los modelos y vienen siendo el mismo nombre, lo bien, match, prediction, quiniela. las.
+
+LUIS FELIPE MORA UMAÑA   1:11:32
+Chevlo, ese que es el precio en controlero.
+
+Adrian Vinicio Chaves Marin   1:11:35
+Las fricciones.
+
+LUIS FELIPE MORA UMAÑA   1:11:45
+Sí, para un toque.
+Okay.
+
+Adrian Vinicio Chaves Marin   1:12:10
+Sí, bueno, pero lo que usted fue este el término homema, que es casa y el away, que es este, cómo se llama el de visita o.
+El equipo, sí, el equipo visitas.
+
+LUIS FELIPE MORA UMAÑA   1:12:25
+Mm.
+
+Adrian Vinicio Chaves Marin   1:12:29
+No sé si bajo más.
+
+LUIS FELIPE MORA UMAÑA   1:12:31
+Sí, porfa, vamos al final.
+Uff.
+
+Adrian Vinicio Chaves Marin   1:12:45
+Hay un error.
+
+LUIS FELIPE MORA UMAÑA   1:12:47
+¿Por qué haces tu lista ahí en la línea 107?
+
+Adrian Vinicio Chaves Marin   1:12:56
+Este.
+¿Profe, este en realidad, digamos, lo que hace es enlistar, verdad?
+
+LUIS FELIPE MORA UMAÑA   1:13:04
+Y.
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:13:09
+Pero aquí en ese lo que hace bueno es.
+Crear como.
+
+LUIS FELIPE MORA UMAÑA   1:13:17
+¿Qué es user controllers? Podemos ver un toque, que es user, poner el mouse encima a users.
+
+Adrian Vinicio Chaves Marin   1:13:23
+And users.
+
+LUIS FELIPE MORA UMAÑA   1:13:25
+no, ahí digamos en esa misma línea 107.
+
+Adrian Vinicio Chaves Marin   1:13:29
+En prediccionera.
+
+LUIS FELIPE MORA UMAÑA   1:13:31
+Ajá.
+
+Adrian Vinicio Chaves Marin   1:13:33
+A.
+
+LUIS FELIPE MORA UMAÑA   1:13:34
+Línea 107.
+
+Adrian Vinicio Chaves Marin   1:13:38
+107 aquí.
+
+LUIS FELIPE MORA UMAÑA   1:13:40
+Ajá, users para el mouse encima de users.
+Yeah, users punto users.
+
+Adrian Vinicio Chaves Marin   1:13:48
+Thank you.
+
+LUIS FELIPE MORA UMAÑA   1:13:51
+Porque ese es tu lista ahí.
+
+Adrian Vinicio Chaves Marin   1:13:57
+Porque este, pero lo que hace es enlistar, lo que hace es enlistar. Creo que eso es un error porque él no está.
+
+LUIS FELIPE MORA UMAÑA   1:13:58
+Sí.
+
+Adrian Vinicio Chaves Marin   1:14:10
+Él, a la hora que el usuario le da los puntos, hay que salirse.
+Hay que salirse de la aplicación, pero este tu list es para enlistar, bueno, en este caso los usuarios.
+
+LUIS FELIPE MORA UMAÑA   1:14:24
+Yo tomo una lista, es más quitarle ese tu listo.
+Los paréntesis pero no los mato.
+
+Adrian Vinicio Chaves Marin   1:14:38
+Fish.
+
+LUIS FELIPE MORA UMAÑA   1:14:44
+No, sin el quitar los paréntesis.
+
+Adrian Vinicio Chaves Marin   1:14:48
+Anyway.
+
+LUIS FELIPE MORA UMAÑA   1:14:50
+Y el punto que no estamos llamando a nadie dale paréntesis porque tienes que cerrarlo para el.
+
+Adrian Vinicio Chaves Marin   1:14:55
+Ahí falta para empresarios ahí.
+
+LUIS FELIPE MORA UMAÑA   1:14:59
+Okay.
+No es necesario.
+¿Estás pasando una lista a una lista y recorrer la lista, me entiende?
+
+Adrian Vinicio Chaves Marin   1:15:10
+Okey, sí, recorro la lista, pero digamos sí me está dando ese error que a la hora de los del puntaje, él digamos genera la actualización hasta que se sale, digamos, uno del usuario ese y ustedes meten otro usuario y ya está actualizado.
+
+LUIS FELIPE MORA UMAÑA   1:15:30
+Pero no tiene nada que ver con eso.
+
+Adrian Vinicio Chaves Marin   1:15:33
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:15:35
+Es otra cosa completamente diferente.
+
+Adrian Vinicio Chaves Marin   1:15:38
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:15:38
+De hecho, este.
+No sé, me preocupa mucho, muchísimo.
+El performance de este método, digamos.
+
+Adrian Vinicio Chaves Marin   1:15:56
+¿Por qué, profe?
+
+LUIS FELIPE MORA UMAÑA   1:15:57
+¿Para qué haces una lista?
+
+Adrian Vinicio Chaves Marin   1:15:58
+Hoy.
+
+LUIS FELIPE MORA UMAÑA   1:16:02
+De los fines De los fines chat matches.
+
+Adrian Vinicio Chaves Marin   1:16:02
+No.
+Pucha, es que a la hora que yo, digamos, los partidos termino.
+Tiene que actualizar todo.
+Porque aquí lo que hace es recalcular el puntaje, pero recalculo el puntaje.
+
+LUIS FELIPE MORA UMAÑA   1:16:30
+Sí.
+
+Adrian Vinicio Chaves Marin   1:16:33
+En realidad de todos otra vez.
+
+LUIS FELIPE MORA UMAÑA   1:16:36
+Sí.
+
+Adrian Vinicio Chaves Marin   1:16:36
+Donde donde ya digamos, donde ya lo hizo, está repitiendo un procedimiento.
+
+LUIS FELIPE MORA UMAÑA   1:16:43
+Sí.
+
+Adrian Vinicio Chaves Marin   1:16:45
+There you do.
+
+LUIS FELIPE MORA UMAÑA   1:16:46
+Pero eso no dice el por qué otra, por qué estás haciendo otra vez esa lista de algo que ya es una lista.
+Y lo están metiendo en una lista para recorrer esa lista de la cual ya tenías una lista. Yo sé que eso era como un juegos de palabras, pero es que así de contradictorio es lo que estoy viendo.
+
+Adrian Vinicio Chaves Marin   1:17:05
+There is a deep.
+Say brother.
+Yo pensé, juepucha, será eso, es que no.
+
+LUIS FELIPE MORA UMAÑA   1:17:14
+Y metes un for each dentro de otro for each, porque metes un for each dentro de otro for each y ese where y ese to list.
+Stop book on.
+
+Adrian Vinicio Chaves Marin   1:17:28
+Si, no.
+
+LUIS FELIPE MORA UMAÑA   1:17:32
+Local told me awesome.
+
+Adrian Vinicio Chaves Marin   1:17:36
+Yo estoy haciéndole números, pero.
+Estoy haciendo el número de los errores que me dio.
+
+LUIS FELIPE MORA UMAÑA   1:17:47
+Sí, este revisamos algún modelo.
+
+Adrian Vinicio Chaves Marin   1:17:51
+So much.
+
+LUIS FELIPE MORA UMAÑA   1:17:52
+No me convence mucho.
+
+Adrian Vinicio Chaves Marin   1:18:03
+¿Ajá, pero cuál sería?
+
+LUIS FELIPE MORA UMAÑA   1:18:05
+Pero el depresión.
+Jay.
+¿Tú y yo documentación ahí, verdad?
+
+Adrian Vinicio Chaves Marin   1:18:24
+¿Va cómo, profe?
+
+LUIS FELIPE MORA UMAÑA   1:18:26
+Falta un poquillo de documentación ahí.
+
+Adrian Vinicio Chaves Marin   1:18:29
+En este.
+
+LUIS FELIPE MORA UMAÑA   1:18:30
+Sí.
+
+Adrian Vinicio Chaves Marin   1:18:31
+Más que todo, comentarios, fíjese.
+
+LUIS FELIPE MORA UMAÑA   1:18:34
+Sí, señor.
+¿Qué se comenta?
+
+Adrian Vinicio Chaves Marin   1:18:39
+Lo público.
+
+LUIS FELIPE MORA UMAÑA   1:18:40
+Hey.
+No se ha comentado.
+
+Adrian Vinicio Chaves Marin   1:18:44
+Te nos ha comentado acá.
+
+LUIS FELIPE MORA UMAÑA   1:18:47
+¿Para qué es esa interfaz de ahí subele un toque?
+I.
+Identifiable.
+
+Adrian Vinicio Chaves Marin   1:18:58
+¿Cuál profe?
+
+LUIS FELIPE MORA UMAÑA   1:19:00
+La de ahí identifyable.
+
+Adrian Vinicio Chaves Marin   1:19:06
+El de acá.
+
+LUIS FELIPE MORA UMAÑA   1:19:10
+Sí, señora.
+
+Adrian Vinicio Chaves Marin   1:19:14
+Este.
+¿Cómo le digo, profe, cómo le explico?
+Hey, I'm Saish.
+Mm.
+Escucha como.
+Ya me pegué.
+Ya me pegué, ya me ya me entró la nervia.
+Hice contacto para implicar por Mónica identidad.
+
+LUIS FELIPE MORA UMAÑA   1:19:53
+O K, todo bien, sigamos. este.
+
+Adrian Vinicio Chaves Marin   1:19:54
+Bueno, pero desde que.
+
+LUIS FELIPE MORA UMAÑA   1:19:58
+¿No veo mucha claridad en el en las respuestas, este dónde está el patrón?
+
+Adrian Vinicio Chaves Marin   1:20:07
+Profe, patrón, sí me sí me hizo falta ahí.
+
+LUIS FELIPE MORA UMAÑA   1:20:10
+¿Qué es que está documentado como que tenías patrón?
+
+Adrian Vinicio Chaves Marin   1:20:14
+Sí, el patrón, el repositorio.
+
+LUIS FELIPE MORA UMAÑA   1:20:17
+Sí, esa es la documentación.
+
+Adrian Vinicio Chaves Marin   1:20:18
+Sí.
+Sí, ese no.
+
+LUIS FELIPE MORA UMAÑA   1:20:24
+Sí, chao, chavalón ahí al vión.
+
+Adrian Vinicio Chaves Marin   1:20:24
+So that mean.
+
+LUIS FELIPE MORA UMAÑA   1:20:31
+Al de main, al main.
+
+Adrian Vinicio Chaves Marin   1:20:34
+I mean, that's worth.
+
+LUIS FELIPE MORA UMAÑA   1:20:36
+Sí, señora.
+Bien, vamos en toque.
+¿Qué haces de show panel? Ese me interesa.
+El de la línea 37.
+
+Adrian Vinicio Chaves Marin   1:20:58
+37.
+
+LUIS FELIPE MORA UMAÑA   1:21:00
+Sí, señor.
+
+Adrian Vinicio Chaves Marin   1:21:03
+Mostrar el panel.
+
+LUIS FELIPE MORA UMAÑA   1:21:05
+No, el F 12, no sé quién va a hacer un panel, pero qué hace adentro.
+
+Adrian Vinicio Chaves Marin   1:21:09
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:21:14
+E.
+
+Adrian Vinicio Chaves Marin   1:21:18
+No.
+
+LUIS FELIPE MORA UMAÑA   1:21:19
+Okay.
+¿Y para qué agregaste regions?
+
+Adrian Vinicio Chaves Marin   1:21:24
+Yes.
+¿Para qué agregue?
+
+LUIS FELIPE MORA UMAÑA   1:21:29
+Regions.
+
+Adrian Vinicio Chaves Marin   1:21:33
+¿Dónde está, bro?
+
+LUIS FELIPE MORA UMAÑA   1:21:35
+Dígame usted en su código, usted lo agregó.
+
+Adrian Vinicio Chaves Marin   1:21:37
+¿Cómo me ha ido?
+
+LUIS FELIPE MORA UMAÑA   1:21:39
+¿Regions, regiones, para qué agregaste regiones?
+
+Adrian Vinicio Chaves Marin   1:21:44
+Profe, regiones este al principio.
+Mejor que se me hizo, eso es uno de los cambios.
+Esa era.
+Que se me hizo porque es que yo sé que yo hice un cambio.
+Donde en vez de decir la sede, la sede o el grupo, decía.
+
+LUIS FELIPE MORA UMAÑA   1:22:09
+no va por ahí, no va por ahí.
+
+Adrian Vinicio Chaves Marin   1:22:14
+Very honest.
+
+LUIS FELIPE MORA UMAÑA   1:22:16
+Sí, señor.
+Me genera mucha intriga que ese código sea cierto porcentaje de su autoría cada vez más.
+
+Adrian Vinicio Chaves Marin   1:22:24
+What?
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:22:38
+Los regions bajo un toque más.
+
+Adrian Vinicio Chaves Marin   1:22:41
+Yes.
+
+LUIS FELIPE MORA UMAÑA   1:22:42
+Baje a la línea 73, dele expanda la línea 73.
+
+Adrian Vinicio Chaves Marin   1:22:47
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:22:47
+Lo es que dice que es lo primero que dice ahí.
+
+Adrian Vinicio Chaves Marin   1:22:51
+Brilliance.
+
+LUIS FELIPE MORA UMAÑA   1:22:53
+O K, entonces este.
+¿Cómo usas algo que no sabes qué es?
+
+Adrian Vinicio Chaves Marin   1:23:07
+Profe, bueno, esa parte.
+Listen, listen.
+Todos esos que saca.
+
+LUIS FELIPE MORA UMAÑA   1:23:18
+Sí, señor.
+
+Adrian Vinicio Chaves Marin   1:23:23
+Yo sé que bueno, los origen son para cómo se llama para organizar.
+Organizar el código.
+
+LUIS FELIPE MORA UMAÑA   1:23:44
+Sigue sin convencerme, pero estoy en listo, Adrián, estamos.
+
+Adrian Vinicio Chaves Marin   1:23:49
+Está otro.
+
+LUIS FELIPE MORA UMAÑA   1:23:50
+Vamos.
+
+Adrian Vinicio Chaves Marin   1:23:53
+Bueno, muchas gracias.
+
+LUIS FELIPE MORA UMAÑA   1:23:55
+Pero ya gracias, Sam.
+Échele ovillosos algoritmos porque o hay algo mal en el diseño.
+¿O hay algo ahí que está fallando en el?
+
+Adrian Vinicio Chaves Marin   1:24:07
+Give people.
+
+LUIS FELIPE MORA UMAÑA   1:24:08
+en la lógica digamos porque no sé digamos este ese código digamos este el performance de ese código ahorita tiene poquitos datos y no se nota pero se agrégale no sé 100 datos más mil datos más agrégale mil datos más y es altamente probable que sea inusable digamos se quede pegado
+
+Adrian Vinicio Chaves Marin   1:24:24
+Thank you.
+
+LUIS FELIPE MORA UMAÑA   1:24:28
+O va a durar tiempos ahí de reacción.
+
+Adrian Vinicio Chaves Marin   1:24:32
+El, digamos, que entre más datos ingrese.
+
+LUIS FELIPE MORA UMAÑA   1:24:36
+Sí, tienes mucho linkyu ahí, demasiado linkyu.
+
+Adrian Vinicio Chaves Marin   1:24:42
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:24:44
+Y como le digo y creas una lista de una lista que es exactamente la misma lista y luego recorres la lista y hay cosas ahí que no sé digamos este hay cosas que por ejemplo este ese
+Esa parte, si el partido terminó, no para que eso es una lista con eso, es simplemente validar que el partido haya terminado, es un simple if.
+Un flag que ya tenés.
+
+Adrian Vinicio Chaves Marin   1:25:10
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:25:12
+Y los estás agrupando por una cosa que no tiene sentido.
+
+Adrian Vinicio Chaves Marin   1:25:18
+Sí, pero no, sí, ya entiendo la parte, es que uno también ya y uno está suena feo, pero uno está aprendiendo también.
+Esa parte digamos de.
+
+LUIS FELIPE MORA UMAÑA   1:25:26
+Es que vamos a ver.
+¿Sabes lo que pasa? Y ahí es donde yo me pongo.
+Me pongo un poco picky con esto.
+Porque está bien, digamos si yo hubiera.
+Un montón de usted me dice, estoy aprendiendo, yo le digo, está bien, pero la sintaxis que estás usando aquí no es de alguien que está aprendiendo.
+¿Entiende?
+Eso es a lo que yo voy ahí.
+Ese montón de link Q, un montón de cosas que no sabe justificar, entonces es parte de. Entonces, vamos a ver, si yo veo un código de ese nivel, yo lo cuestiono a ese nivel. Si yo veo un código de un nivel principiante, yo lo cuestiono a un nivel principiante. ¿Entiende?
+
+Adrian Vinicio Chaves Marin   1:26:15
+People.
+
+LUIS FELIPE MORA UMAÑA   1:26:17
+Sí, vale, Adrián, por ahí.
+
+Adrian Vinicio Chaves Marin   1:26:19
+Are you?
+
+LUIS FELIPE MORA UMAÑA   1:26:24
+Listo, Eric.
+
+ERICK ANDRES DELGADO ARAYA   1:26:27
+Buenas tardes, profe, ya le comparto.
+
+LUIS FELIPE MORA UMAÑA   1:26:29
+Estoy en.
+
+ERICK ANDRES DELGADO ARAYA   1:26:31
+They look like a moments.
+
+LUIS FELIPE MORA UMAÑA   1:26:33
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:26:35
+A Omar con Andrés Trevilan.
+
+LUIS FELIPE MORA UMAÑA   1:26:37
+Thank you.
+
+ERICK ANDRES DELGADO ARAYA   1:26:39
+Hey profe, no es que me hicieron ir ayer, ¿verdad? Primero. Pero oye, el caballero que me iba a entrevistar tuvo un altercado ahí, no pudo. Me dijeron que fuera hoy y fui y el caballero tuvo otro altercado. Entonces ahí me quedé, ahí me devolví.
+
+LUIS FELIPE MORA UMAÑA   1:26:43
+Mhm.
+Bots.
+Además, no es más 2 al 3 caos.
+
+ERICK ANDRES DELGADO ARAYA   1:26:59
+Sí, ya lo vi como muy turbio entonces.
+Mejor mejor me volví.
+
+LUIS FELIPE MORA UMAÑA   1:27:05
+Easy.
+Está jugando con su tiempo.
+
+ERICK ANDRES DELGADO ARAYA   1:27:10
+Sí, la verdad que sí.
+
+LUIS FELIPE MORA UMAÑA   1:27:12
+Sí.
+Yo al.
+
+ERICK ANDRES DELGADO ARAYA   1:27:14
+Este a la documentación.
+
+LUIS FELIPE MORA UMAÑA   1:27:17
+Sí, señora.
+Este dar atrás un toque, nomás o suelo un toque.
+
+ERICK ANDRES DELGADO ARAYA   1:27:20
+Aquí está el.
+Uh-huh.
+
+LUIS FELIPE MORA UMAÑA   1:27:26
+Ok, vámonos adelante.
+
+ERICK ANDRES DELGADO ARAYA   1:27:32
+Bueno, aquí está la introducción.
+
+LUIS FELIPE MORA UMAÑA   1:27:34
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:27:35
+No sé qué tan rápido ir bajando, pero también indica cualquier cosa.
+
+LUIS FELIPE MORA UMAÑA   1:27:39
+Ahí en el segundo párrafo, el segundo párrafo sobra, verdad.
+
+ERICK ANDRES DELGADO ARAYA   1:27:43
+That's.
+
+LUIS FELIPE MORA UMAÑA   1:27:43
+Eso lo hablamos, el de arriba, el segundo párrafo, el de la introducción, sí, señor.
+
+ERICK ANDRES DELGADO ARAYA   1:27:46
+A este sí.
+Sí, por lo del NBC que le está diciendo al compañero igual.
+
+LUIS FELIPE MORA UMAÑA   1:27:52
+Exactamente lo mismo, ¿no?
+
+ERICK ANDRES DELGADO ARAYA   1:27:53
+Sí, profe, la verdad es que conocer estaba explicando, Adrián, ahí fue cuando yo también agarré el primero saber qué voy a trabajar y ya luego voy poner todo dentro de la olla.
+
+LUIS FELIPE MORA UMAÑA   1:28:04
+Factum.
+
+ERICK ANDRES DELGADO ARAYA   1:28:04
+Pero sí.
+
+LUIS FELIPE MORA UMAÑA   1:28:06
+Bing.
+Ok, aquí.
+Todavía no podemos escoger porque todavía no tenemos el trabajo, ¿verdad? Y todavía no tenemos este la estamos haciendo la planificación, la introducción lo primero que se escribe no se escribe cuando el documento está hecho.
+
+ERICK ANDRES DELGADO ARAYA   1:28:25
+Mhm.
+Dizzy.
+
+LUIS FELIPE MORA UMAÑA   1:28:30
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:28:30
+Eso me quedó como claro con la con lo de Adrián.
+
+LUIS FELIPE MORA UMAÑA   1:28:34
+Talgar.
+Vamos a ver.
+¿Igual aquí lo hablamos hace rato, verdad? La parte de los campos obligatorios, ¿cuáles campos van a ser obligatorios?
+
+ERICK ANDRES DELGADO ARAYA   1:28:55
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:29:37
+Allá arriba.
+En vez de como usuario, simplemente se necesita como usuario, coma se necesita siempre en tercera persona.
+
+ERICK ANDRES DELGADO ARAYA   1:29:48
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:29:49
+Mm.
+
+ERICK ANDRES DELGADO ARAYA   1:29:50
+Un.
+
+LUIS FELIPE MORA UMAÑA   1:29:51
+Mhm.
+Ya volví un toque.
+King.
+¿Puedes ir bajando y everything?
+Like this.
+Bing.
+
+ERICK ANDRES DELGADO ARAYA   1:31:22
+Y la final vamos a ver.
+
+LUIS FELIPE MORA UMAÑA   1:32:11
+¿Por qué no es tocho? ¿Por qué si Sharp 8?
+
+ERICK ANDRES DELGADO ARAYA   1:32:15
+Este profe, vieras que cuando estaba desarrollando el proyecto habían momentos como que en los que me tiraba un error de versión y me puse a revisar y tenía que, es que yo sí lo instalé hace rato, ya hace rato, rato.
+
+LUIS FELIPE MORA UMAÑA   1:32:16
+Sí.
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:32:34
+No sé si era que estabas actualizado, entonces me puse a investigar el error y sí me decía como que tenía que actualizar la versión de C.
+
+LUIS FELIPE MORA UMAÑA   1:32:34
+Mm.
+Mhm.
+Si usted le quita esa etiqueta del lank version, el mal siempre va a utilizar la última.
+
+ERICK ANDRES DELGADO ARAYA   1:32:50
+Esto.
+
+LUIS FELIPE MORA UMAÑA   1:32:51
+Si usted se le quita el proyecto, el más siempre siempre va a utilizar lo último.
+Sí, el temple y lo genera, sí.
+
+ERICK ANDRES DELGADO ARAYA   1:33:02
+la cambió por este, pero ya es algo que con solo eliminarla y se ahorro uno de esos llegamos.
+
+LUIS FELIPE MORA UMAÑA   1:33:09
+Sí, también es que si usted crea un proyecto en el framework de los viejos, le va a crear un template viejo.
+No le voy a creer el template, no, el template de proyectos es un poquito más twanis el template nuevo, digamos.
+
+ERICK ANDRES DELGADO ARAYA   1:33:18
+Okay.
+DC.
+
+LUIS FELIPE MORA UMAÑA   1:33:25
+No es parte mal.
+Sí.
+¿Cuánto par de captura y es ahí en manual, verdad?
+
+ERICK ANDRES DELGADO ARAYA   1:33:47
+Sí, pues la verdad es que sí, todo el con todo el tutorial.
+
+LUIS FELIPE MORA UMAÑA   1:33:53
+Un toquecillo.
+Vamos a tocar arriba, que me toque, un párrafo, ahí están.
+¿Cómo le fue con Sonar? Creo que lo señal ahí.
+
+ERICK ANDRES DELGADO ARAYA   1:34:31
+Profe vieras que primera vez que usaba Sonar porque ni sabía que era, la verdad, soy sincero y este me costó un toque agarrarle al principio, pero.
+
+LUIS FELIPE MORA UMAÑA   1:34:34
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:34:42
+Y yo después yo creo que bastante como.
+Pero lo utilizan aquí mismo en el estudio, entonces ahorita si no se lo muestro.
+
+LUIS FELIPE MORA UMAÑA   1:34:47
+Same.
+Mhm.
+Lo dejamos este Jiram, porfa.
+
+ERICK ANDRES DELGADO ARAYA   1:34:56
+Ya lo hice así, generalmente todo lo iba poniendo primero en el backlog este para que no se me hicieron revoltijo, entonces lo que iba trabajando lo iba subiendo al cuarto y lo traje así por por features con digamos con micro tareas como para poder llegar tipo un pequeño orden.
+
+LUIS FELIPE MORA UMAÑA   1:35:01
+Mhm.
+Jane.
+Okay.
+I saw it.
+
+ERICK ANDRES DELGADO ARAYA   1:35:19
+Sí, es que él trajo.
+
+LUIS FELIPE MORA UMAÑA   1:35:20
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:35:22
+Hemos usado un poco de gira, entonces más o menos ahí le agarré el toquecillo.
+
+LUIS FELIPE MORA UMAÑA   1:35:27
+No, buenísimo entonces.
+
+ERICK ANDRES DELGADO ARAYA   1:35:28
+A unas que sí se me fue marcarlas, la verdad, pero sí esa era la idea principal.
+
+LUIS FELIPE MORA UMAÑA   1:35:37
+Ok, pero digo que todo está listo.
+
+ERICK ANDRES DELGADO ARAYA   1:35:40
+Sí, digamos, todo está listo, solo que un poquito tarde. Entonces lo que hacía era que nada más lo movía.
+
+LUIS FELIPE MORA UMAÑA   1:35:47
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:35:52
+No sé si pasamos al funcionamiento.
+
+LUIS FELIPE MORA UMAÑA   1:35:54
+Sí, señor, por favor.
+
+ERICK ANDRES DELGADO ARAYA   1:35:58
+Personal, lo puse aquí, entonces aquí me tiraba como los las mejoras que podía hacer el código.
+
+LUIS FELIPE MORA UMAÑA   1:36:06
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:36:08
+Ahorita si no lo vemos, pero si básicamente el sistema.
+Es un poco.
+Como los otros compañeros, ¿verdad? Todos parecidos. Hubo cosas que sí me faltó implementarles, la verdad. Este, por ejemplo, me quedé mucho con el de es que me quedé mucho con lo que hicieron muchos compañeros que realmente no se me ocurrieron.
+
+LUIS FELIPE MORA UMAÑA   1:36:20
+Too in.
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:36:33
+Por ejemplo, el de Albert que tenía, bueno, muchos que tenían la opción de adelantar el tiempo este con 1.1 opción aquí, yo no, yo por malas se se implementó.
+
+LUIS FELIPE MORA UMAÑA   1:36:37
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:36:45
+Pues directamente del código escogiendo la fecha, ahorita así no se lo enseño, pero eso es como para futuras mejoras, digamos, sí.
+
+LUIS FELIPE MORA UMAÑA   1:36:50
+Two.
+Sí, registramos el usuario primero, ahora sí.
+
+ERICK ANDRES DELGADO ARAYA   1:36:55
+¿Y entonces para registrar un usuario?
+
+LUIS FELIPE MORA UMAÑA   1:36:58
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:36:59
+Lo trae solo con un nombre usuario y contraseña y entonces, por ejemplo, Luis Alfaro.
+No, copy it.
+Y la contraseña en 6 dígitos aquí va el se escoge el país de preferencia.
+Registrar el registro exitoso, ya se puede ingresar.
+Y así sería este.
+Un sale now.
+
+LUIS FELIPE MORA UMAÑA   1:37:28
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:37:28
+Pues aquí está el de Luis Alfaro, está el perfil cero puntos, insignias para su recepción las quinielas en caso de que quiera crear una, este se solicita solo el nombre.
+
+LUIS FELIPE MORA UMAÑA   1:37:32
+Mhm.
+Yes.
+No.
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:37:41
+No sé, gol Herediano.
+
+LUIS FELIPE MORA UMAÑA   1:37:44
+Se para Heredia, pero todo bien.
+
+ERICK ANDRES DELGADO ARAYA   1:37:45
+Y acepta.
+
+LUIS FELIPE MORA UMAÑA   1:37:48
+Ha.
+
+ERICK ANDRES DELGADO ARAYA   1:37:49
+Y aquí ya consulta si quiere que sea público o privado.
+
+LUIS FELIPE MORA UMAÑA   1:37:54
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:37:56
+Entonces aquí crea la quiniebla y sale los integrantes por el número de usuario. O si quieren irse a una quiniebla, aquí hay unas creadas por defecto. Entonces, por ejemplo, la primera, los creadores del diagnóstico.
+
+LUIS FELIPE MORA UMAÑA   1:38:02
+Okay.
+Uh-huh.
+Eso está un poco ahí.
+
+ERICK ANDRES DELGADO ARAYA   1:38:16
+You see what I can you?
+
+LUIS FELIPE MORA UMAÑA   1:38:17
+O sea.
+Es un poco ahí como vamos a ver este.
+No podría decirlo.
+
+ERICK ANDRES DELGADO ARAYA   1:38:25
+Bill.
+
+LUIS FELIPE MORA UMAÑA   1:38:26
+No es feo, la palabra no es feo, el de la universidad que ni él está propenso a errores de la palabra.
+
+ERICK ANDRES DELGADO ARAYA   1:38:33
+que este.
+
+LUIS FELIPE MORA UMAÑA   1:38:34
+Sí, debería ser como un de los botoncillo, una bara así y ahí digamos para ver el.
+
+ERICK ANDRES DELGADO ARAYA   1:38:40
+Mi idea es más adelante ponerlo, sí, con un como con un ID más corto, porque poner el nombre que paga.
+
+LUIS FELIPE MORA UMAÑA   1:38:40
+Para seleccionar.
+Soon.
+No con un dropdown que se lo ponga a seleccionar, ya se tiene los datos simplemente.
+
+ERICK ANDRES DELGADO ARAYA   1:38:50
+Okey, sí, como yo le doy clic y aquí esté todo.
+
+LUIS FELIPE MORA UMAÑA   1:38:55
+sí.
+
+ERICK ANDRES DELGADO ARAYA   1:38:55
+Okey.
+y aquí así sería como un timeline de la quiniela en la que uno está entonces por ejemplo sale el usuario que es el todo tal resultado si tiene talca de aciertos y es no líder con puntos y bueno si acertó un marcador
+
+LUIS FELIPE MORA UMAÑA   1:39:01
+Great.
+A.
+
+ERICK ANDRES DELGADO ARAYA   1:39:14
+A lo que es a partidos, bueno, aquí salen los últimos partidos.
+
+LUIS FELIPE MORA UMAÑA   1:39:19
+Mm.
+
+ERICK ANDRES DELGADO ARAYA   1:39:20
+Este sí lo voy a ser sincero, aquí tuve un error. Es que este yo lo había probado, o sea, lo fui probando, pero luego realicé unas correcciones de unos ejercicios que tenía. Y profe, lo soy sincero, me di cuenta la semana pasada este que como que se me rompió.
+
+LUIS FELIPE MORA UMAÑA   1:39:29
+Mhm.
+Y me lo eché.
+
+ERICK ANDRES DELGADO ARAYA   1:39:38
+Sí, exactamente porque, por ejemplo, aquí está simulador hasta el 30, pero ya salen todos los partidos finales.
+
+LUIS FELIPE MORA UMAÑA   1:39:40
+Mhm.
+Mhm.
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:39:47
+Entonces si es algo que tengo que corregir. Este pero ahí para decirle nada. Pero entonces si digamos aquí salen los últimos partidos, los próximos 24 en caso de que hayan disponibles la tabla de grupos por grupo.
+
+LUIS FELIPE MORA UMAÑA   1:39:55
+Sorry.
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:40:04
+Y lo que es la fase eliminatoria de 16avos, octavos de final, cuartos de final y la final.
+
+LUIS FELIPE MORA UMAÑA   1:40:10
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:40:12
+El de pronósticos es, como le digo, se podía pronosticar hasta que me la eché. Básicamente aquí salía algo parecido a esto, parecía España, Argentina, cero cero.
+
+LUIS FELIPE MORA UMAÑA   1:40:22
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:40:26
+Aquí entonces aquí aparecía el nombre del equipo local, el equipo visitante y yo le daba 2 a cero y guardaba pronóstico.
+
+LUIS FELIPE MORA UMAÑA   1:40:32
+Mm.
+
+ERICK ANDRES DELGADO ARAYA   1:40:34
+Entonces aquí ya tenía el historial de todos los pronósticos que yo tenía y aquí el ranking general, digamos, de lo que es todos los usuarios.
+
+LUIS FELIPE MORA UMAÑA   1:40:38
+Mm.
+Sí, si Luis es Alfaro es el último porque no ha acertado nada.
+No debería tener la insignia del o no tiene insignia del todo.
+
+ERICK ANDRES DELGADO ARAYA   1:40:50
+Sí, en como tal, no tienen sitio.
+
+LUIS FELIPE MORA UMAÑA   1:40:54
+Okay.
+No, pero digamos, el sistema no tiene insignias del todo.
+
+ERICK ANDRES DELGADO ARAYA   1:41:00
+Sí, ahorita le muestro con un usuario que tenga puntaje.
+
+LUIS FELIPE MORA UMAÑA   1:41:04
+El tercero puntos debería tener el single que no ha pegado nada.
+
+ERICK ANDRES DELGADO ARAYA   1:41:04
+Y ya.
+Sí, como sí, como de perdedores directamente.
+
+LUIS FELIPE MORA UMAÑA   1:41:11
+Literal, andas perdiendo, llegaste tarde.
+
+ERICK ANDRES DELGADO ARAYA   1:41:14
+Sí, y ya esta es la sección de estadísticas, entonces aquí igual, dependiendo de la fecha, este se puede seleccionar.
+
+LUIS FELIPE MORA UMAÑA   1:41:21
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:41:25
+se le da a calcular y esto ya tira el equipo más ajustado en ese rango de fechas el resultado más repetido el partido con más aciertos, el usuario que tenga más aciertos el partido con más pronósticos, el promedio de goles por partido y lo que es el equipo sorpresa
+
+LUIS FELIPE MORA UMAÑA   1:41:35
+Mhm.
+No hay equipos sorpresas todavía.
+
+ERICK ANDRES DELGADO ARAYA   1:41:45
+Pero sí, eso es, sí, es que dependiendo de las fechas, muestra vacío, entonces sí, pero por ejemplo, yo lo pongo desde inicio de julio hasta mediados, ya me tira un equipo de fresa.
+
+LUIS FELIPE MORA UMAÑA   1:41:45
+Hello.
+Es que tenías pocos datos, seguro.
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:42:00
+Y le voy a enseñar, por ejemplo, con un usuario que ya tiene como cierto puntaje.
+
+LUIS FELIPE MORA UMAÑA   1:42:07
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:42:13
+Entonces ya más o menos así sale como usuario el país preferido, los puntos que tiene la insignia, que en este caso es como el que más puntos tiene el líder.
+
+LUIS FELIPE MORA UMAÑA   1:42:15
+Mhm.
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:42:25
+No sé, algo más para.
+
+LUIS FELIPE MORA UMAÑA   1:42:28
+No, echémosle hoy al código.
+Utilizar algún patrón.
+
+ERICK ANDRES DELGADO ARAYA   1:42:34
+Yeah, I was there.
+Y.
+Realmente lo que utilicé o quise utilizar desde el principio era.
+Modelo vista controlador.
+
+LUIS FELIPE MORA UMAÑA   1:42:47
+Uh-huh.
+Okay.
+Mm.
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:43:08
+Mi idea es para futuras mejoras, hacerlo como los demás compañeros, que hay como un botoncito y si yo quiero adelantar 6 horas un día y con el botoncito ya se hace unas.
+
+LUIS FELIPE MORA UMAÑA   1:43:19
+Okay.
+
+ERICK ANDRES DELGADO ARAYA   1:43:21
+Este.
+No sé si quiere ver alguno en específico, profe.
+
+TAYRON ALONSO SALAS NUÑEZ   1:43:28
+Si.
+
+LUIS FELIPE MORA UMAÑA   1:43:29
+Este démosle al controller, ahí sí que es controller.
+¿Hay comentarios por ahí, verdad, no?
+
+ERICK ANDRES DELGADO ARAYA   1:43:44
+Realmente en las públicas, principalmente ve que los públicos.
+
+LUIS FELIPE MORA UMAÑA   1:43:49
+No, pero es público y no hay nada.
+
+ERICK ANDRES DELGADO ARAYA   1:43:51
+Ahora sí, como este.
+
+LUIS FELIPE MORA UMAÑA   1:43:52
+El constructor no tiene la clase no tiene así.
+
+ERICK ANDRES DELGADO ARAYA   1:43:54
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:43:56
+Y los que están abajo no siguen los estándares.
+
+ERICK ANDRES DELGADO ARAYA   1:44:01
+Yes.
+
+LUIS FELIPE MORA UMAÑA   1:44:03
+Sí, señor.
+
+ERICK ANDRES DELGADO ARAYA   1:44:05
+Ah bueno, eso es lo que le comentaba al Sonar, que de que me tiraba como las mejoras, a lo que entendí es como, no sé si estoy mal, que lo rojo es como lo más, que tiene un impacto más alto, sí, crítico.
+
+LUIS FELIPE MORA UMAÑA   1:44:12
+Mm.
+Crítico.
+Two.
+
+ERICK ANDRES DELGADO ARAYA   1:44:21
+Y ya lo amarillo y que es como más que todo como una advertencia, puede ser.
+
+LUIS FELIPE MORA UMAÑA   1:44:26
+Warning Meet.
+
+ERICK ANDRES DELGADO ARAYA   1:44:28
+Okay, sí, sí.
+
+LUIS FELIPE MORA UMAÑA   1:44:31
+Sí.
+Como consejo.
+Este yo sé que ahora se permite, pero igual digamos, siempre hay una documentación al respecto, eso sí, de una línea.
+
+ERICK ANDRES DELGADO ARAYA   1:44:48
+Yes.
+
+LUIS FELIPE MORA UMAÑA   1:44:50
+Los no de abajo, arriba, perdón, arriba, esos arriba, ajá, esos, ajá, esos de ahí, sí, siempre los siempre tienen que llevar este.
+
+ERICK ANDRES DELGADO ARAYA   1:44:50
+Oh, master.
+Yes.
+
+LUIS FELIPE MORA UMAÑA   1:45:04
+Las jazz.
+
+ERICK ANDRES DELGADO ARAYA   1:45:05
+Callavecitos.
+
+LUIS FELIPE MORA UMAÑA   1:45:06
+Sí, no solamente agregar los tabs, lo ves porque eso complica un poco la parte de la elegibilidad. Otro detalle es que, por ejemplo, en la línea 90, cuando declaras un stream vacío, es mejor ponerle stream punto empty.
+
+ERICK ANDRES DELGADO ARAYA   1:45:10
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:45:20
+Eso es por un tema más de memoria.
+
+ERICK ANDRES DELGADO ARAYA   1:45:23
+Okey, okey, consume menos en todo caso.
+
+LUIS FELIPE MORA UMAÑA   1:45:25
+Sí, es correcto, es correcto, ves, por ejemplo, ese if de la línea este 111.
+
+ERICK ANDRES DELGADO ARAYA   1:45:28
+Okay, okay.
+Stick.
+
+LUIS FELIPE MORA UMAÑA   1:45:34
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:45:38
+Okay, please.
+
+LUIS FELIPE MORA UMAÑA   1:45:40
+Eso es todo para entender el flujo, para seguir mejor el flujo.
+
+ERICK ANDRES DELGADO ARAYA   1:45:52
+Pero yo quería consultarle al momento de comentar.
+
+LUIS FELIPE MORA UMAÑA   1:45:56
+Mhm.
+
+ERICK ANDRES DELGADO ARAYA   1:45:57
+¿Se comenta, digamos, toda esta porción de código o yo puedo comentar varias líneas?
+Si fuese el caso.
+
+LUIS FELIPE MORA UMAÑA   1:46:03
+Este solo va a ser necesario.
+
+ERICK ANDRES DELGADO ARAYA   1:46:06
+O K, sí, ya sí es extremadamente, como por decirlo así, complejo puede ser.
+
+LUIS FELIPE MORA UMAÑA   1:46:12
+Mhm.
+Hay muchas cosas ahí que se hacen varias veces que podría utilizar un poco ahí el.
+
+ERICK ANDRES DELGADO ARAYA   1:46:45
+Simplificarlo.
+
+LUIS FELIPE MORA UMAÑA   1:46:46
+Sí, es un poquito más de ese responsability y reutilización de código ahí que falta un toque.
+
+ERICK ANDRES DELGADO ARAYA   1:46:53
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:46:53
+Este.
+Los equipos sorpresa están quemados, al parecer los favoritos.
+
+ERICK ANDRES DELGADO ARAYA   1:47:01
+Sí, entonces es algo que.
+
+LUIS FELIPE MORA UMAÑA   1:47:02
+Por eso es que probablemente no se lo calcula ahí.
+
+ERICK ANDRES DELGADO ARAYA   1:47:07
+Okay, okay.
+Déjame entrarlo por acá.
+
+LUIS FELIPE MORA UMAÑA   1:47:12
+Sí, ya lo voy y yo eso, principalmente eso.
+
+ERICK ANDRES DELGADO ARAYA   1:47:13
+Para regresarles.
+
+LUIS FELIPE MORA UMAÑA   1:47:25
+Y este revisamos ahí modelos.
+
+ERICK ANDRES DELGADO ARAYA   1:47:31
+Oh.
+No sé, cualquiera.
+
+LUIS FELIPE MORA UMAÑA   1:47:37
+Te quiero.
+
+ERICK ANDRES DELGADO ARAYA   1:47:39
+Vamos a ver, por ejemplo, el de usuario.
+
+LUIS FELIPE MORA UMAÑA   1:47:44
+Hey.
+¿Documentación, quién te conoce, verdad?
+
+ERICK ANDRES DELGADO ARAYA   1:47:50
+Sí, pues es que sabe que es que siento que es más por maña, porque muchas veces siento que el código.
+Así es como que sí se entiende, digamos, pero sí, tiene toda la razón.
+
+LUIS FELIPE MORA UMAÑA   1:48:04
+Sí.
+
+ERICK ANDRES DELGADO ARAYA   1:48:06
+No sé, alguna vista también.
+
+LUIS FELIPE MORA UMAÑA   1:48:08
+Por favor.
+
+ERICK ANDRES DELGADO ARAYA   1:48:12
+No sé si igual alguna en específica o escojo.
+
+LUIS FELIPE MORA UMAÑA   1:48:15
+Los estadísticas.
+
+ERICK ANDRES DELGADO ARAYA   1:48:17
+Statistic.
+
+LUIS FELIPE MORA UMAÑA   1:48:28
+Okay.
+Esta bastante bien, lo es el juegos más simple, más estructurado.
+
+ERICK ANDRES DELGADO ARAYA   1:48:33
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:48:35
+Todos a través de los controles para que se obtiene la información.
+Okay, some don't Eric.
+
+ERICK ANDRES DELGADO ARAYA   1:48:44
+También profe, muchas gracias ahí por la por la retroalimentación. este.
+
+LUIS FELIPE MORA UMAÑA   1:48:48
+Oh yeah, choose.
+
+ERICK ANDRES DELGADO ARAYA   1:48:51
+Pues te digo, quiero explicar lo del proyecto, es verdad, es para ir trabajando de una vez en esto. Ah bueno, super bien, profe. Muchas gracias. Tengo que igual escribirle al privado para lo de la nota.
+
+LUIS FELIPE MORA UMAÑA   1:48:53
+Sí, señor.
+Doing other?
+Show stores semanen.
+Sí, tengo que subirles amor, eso siempre me da pereza verles amor, pero sí.
+
+ERICK ANDRES DELGADO ARAYA   1:49:08
+Adentro.
+
+LUIS FELIPE MORA UMAÑA   1:49:10
+Listo, grave a Eric.
+Buenas, Tyrone Albert, again, ¿cómo están?
+
+TAYRON ALONSO SALAS NUÑEZ   1:49:18
+Coming, cansados, cansados.
+
+LUIS FELIPE MORA UMAÑA   1:49:21
+Sí.
+
+TAYRON ALONSO SALAS NUÑEZ   1:49:22
+Trabajo en contra, entonces estamos saliendo medio de cierre y a través con problemas de cierre.
+
+LUIS FELIPE MORA UMAÑA   1:49:28
+No hombre, en serio.
+
+TAYRON ALONSO SALAS NUÑEZ   1:49:29
+Yo lo tengo con Brasil, entonces sí me jode de vez en cuando.
+
+LUIS FELIPE MORA UMAÑA   1:49:34
+Sí.
+Está peleado Brasil con Estados.
+
+TAYRON ALONSO SALAS NUÑEZ   1:49:41
+Tienen demasiado trabajo.
+
+LUIS FELIPE MORA UMAÑA   1:49:44
+Say my mail.
+
+TAYRON ALONSO SALAS NUÑEZ   1:49:44
+Y hay algo que he estado oliendo yo, últimamente he estado oliendo muchos centros de servicio en Colombia y si uno se pone a ver, Colombia de ahí es un país barato y no está tan distante de buena zona horaria, que es lo que beneficia de Costa Rica.
+
+LUIS FELIPE MORA UMAÑA   1:49:53
+Ajá.
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:50:01
+Y si está desarrollando calidad.
+
+LUIS FELIPE MORA UMAÑA   1:50:04
+O sea, ya son 2 horas, aquí son 3 con Brasil.
+
+TAYRON ALONSO SALAS NUÑEZ   1:50:08
+De hecho, bueno, ahorita yo estoy haciendo un proyecto como un hub donde se va a reunir toda la información. de.
+Del site es como para no andar perdido, algo que tiene ibemas que es mucho como autosuficiente. Entonces hay links por todo lado para que uno haga todo, pero igual uno se pierde si no conoce la ubicación.
+
+LUIS FELIPE MORA UMAÑA   1:50:18
+Mhm.
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:50:31
+Entonces ahí entre los compañeros desarrollamos uno en HTML para hacerlo como más sencillo.
+
+LUIS FELIPE MORA UMAÑA   1:50:37
+Y.
+
+TAYRON ALONSO SALAS NUÑEZ   1:50:37
+Como un repositorio, no ocupo como.
+Cosas de hash a nivel de seguridad porque utiliza la misma seguridad de IBM, ingresa a Talent, entonces ya va a loguearse con el usuario y contraseña ya original de IBM y esas cosas. y.
+
+LUIS FELIPE MORA UMAÑA   1:50:54
+Che, the long direction now.
+
+TAYRON ALONSO SALAS NUÑEZ   1:50:56
+Exactamente, es bien, prácticamente utilizo lo que vimos acá de utilizar como el yo me convertiría en la parte visualizador. IBM sigue siendo el controlador.
+
+LUIS FELIPE MORA UMAÑA   1:51:03
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:06
+No.
+
+LUIS FELIPE MORA UMAÑA   1:51:06
+Sí, es una interfaz que estás agregando nada más.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:09
+Sí, prácticamente, y le puse knowledge shop.
+
+LUIS FELIPE MORA UMAÑA   1:51:11
+Sí, bueno, está bonito.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:15
+Lo presenté hoy y ayer Colombia a nivel global presentó el de ellos que se llama Colombia Hub y literalmente es igual, exactamente la misma banco.
+
+LUIS FELIPE MORA UMAÑA   1:51:23
+Cheers.
+Lazy.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:28
+Ya la otra semana sí, igual me toca presentarlo a managers a nivel local porque sí les interesó y tienen ganas de.
+
+LUIS FELIPE MORA UMAÑA   1:51:33
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:37
+De verlo como lo condicionan.
+
+LUIS FELIPE MORA UMAÑA   1:51:40
+No está listo, ojalá que sí.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:43
+Solo tengo un problema que no sé si usted me puede ayudar con eso es html y funciona literalmente en cada compu a nivel local Entonces no sé cómo hacerlo como a nivel
+
+LUIS FELIPE MORA UMAÑA   1:51:47
+What doing?
+Mall.
+
+TAYRON ALONSO SALAS NUÑEZ   1:51:56
+Web, ahí utilizaría de ahí parte del hosting o algo así, ocuparía como que me habiliten esa parte a nivel de seguridad, supongo.
+
+LUIS FELIPE MORA UMAÑA   1:52:04
+El deploy sí tiene que de ellos ya sus ya sus ya o le dicen cómo deployarlo o ellos lo deployan, pero probablemente tiene.
+
+TAYRON ALONSO SALAS NUÑEZ   1:52:12
+Sí, inventores.
+Entregarles el piloto.
+
+LUIS FELIPE MORA UMAÑA   1:52:16
+sí, ahí salón paqueta y ellos lo suben.
+Depende de lo que lo haya hecho, digamos, si.
+¿En qué lo hizo? Perdón por la pregunta.
+
+TAYRON ALONSO SALAS NUÑEZ   1:52:28
+HTML.
+
+LUIS FELIPE MORA UMAÑA   1:52:30
+Pero si nada más.
+
+TAYRON ALONSO SALAS NUÑEZ   1:52:31
+sí, solo HTML.
+
+LUIS FELIPE MORA UMAÑA   1:52:32
+Entonces le man le manda la HTML a ellos y ellos lo publican.
+
+TAYRON ALONSO SALAS NUÑEZ   1:52:38
+Sí, lo que sí se fue separar como por módulos, ahí le dije como a la gente que.
+Que no había problemas en que se cayera el sistema porque cada equipo de organización o cuenta podía nada más como cambiar o editar.
+Cada parte en específico, sin afectar lo demás de los sistemas.
+
+LUIS FELIPE MORA UMAÑA   1:52:58
+Mm.
+Mhm, mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:53:13
+Y algo todo en este sí les gustó es que las reuniones de Teams, pues no las graba con Timescript y al menos allá tiene una inteligencia artificial llamada Bob. No sé si se podrá hacer con Cloud o Cloud o algo así.
+
+LUIS FELIPE MORA UMAÑA   1:53:26
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:53:31
+A ser como.
+como sus menús o que vaya directamente a cierto tema digamos para evitar la parte que usted está viendo entrenamiento 1 hora y tiene que amarse 30 a 20 minutos del entrenamiento porque no sabe en qué parte exacta está cierto tema entonces ahí hicimos como un sí como un índice al estilo como YouTube Cuando uno quiere adelantar a partes específicas
+
+LUIS FELIPE MORA UMAÑA   1:53:47
+Mhm.
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:53:55
+Sí, eso le llamó la atención y en cuentas más o menos haciendo.
+2 consultas por semana que cada consulta sea de 15 minutos al mes por empleado es un costo de 2 horas, que es equivalente a unos 800 USD por empleado.
+
+LUIS FELIPE MORA UMAÑA   1:54:14
+What pass him?
+
+TAYRON ALONSO SALAS NUÑEZ   1:54:15
+Acumulativo a nivel de búsquedas, que es tiempo no traqueable, por así decir, por así decirlo.
+
+LUIS FELIPE MORA UMAÑA   1:54:22
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:54:23
+Como un costo fantasma que no se nota.
+
+LUIS FELIPE MORA UMAÑA   1:54:26
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:54:27
+y apliqué también un chatbot que me mande directo a la página para no tener como que andar navegando que es parte de la pérdida del tiempo que del problema
+
+LUIS FELIPE MORA UMAÑA   1:54:35
+Mhm, mhm, no saber tú.
+
+TAYRON ALONSO SALAS NUÑEZ   1:54:39
+El edificio es alimentar esa parte, el chatbot.
+
+LUIS FELIPE MORA UMAÑA   1:54:43
+El chatbot este si usted le agrega los tags, hay unas varas ahí en siempre se me olvidan los nombres, la verdad en HTML que usted le agrega como ciertos tags a los mismos labels y esas varas. Este Si usted le agrega esa información, eso es una información que es oculta al usuario.
+
+TAYRON ALONSO SALAS NUÑEZ   1:54:55
+Thank.
+I.
+
+LUIS FELIPE MORA UMAÑA   1:55:03
+El mar puede identificar más fácil, digamos, cómo navegar entre esas barras.
+
+Adrian Vinicio Chaves Marin   1:55:05
+Eso.
+In ultimate.
+
+TAYRON ALONSO SALAS NUÑEZ   1:55:08
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:55:10
+Son como gints, es que no recuerdo cómo era que se llamaban esos maes, pero sí.
+
+TAYRON ALONSO SALAS NUÑEZ   1:55:10
+Pues.
+Ya doy como alrededor de 500 keywords agregándole y que me funciona también en inglés, que se puede hacer preguntas en inglés y en español y funciona.
+
+LUIS FELIPE MORA UMAÑA   1:55:20
+Mhm.
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   1:55:30
+But...
+
+LUIS FELIPE MORA UMAÑA   1:55:30
+No, está bonito.
+Muchachos, ya casi empezamos, este deme 2 minutos y ya vuelvo.
+Ahora sí, bueno, buenas tardes, oficialmente, ¿cómo están?
+
+JUAN FELIPE PEREZ	BEJARANO   1:58:01
+Buenas tardes, profe.
+
+LUIS FELIPE MORA UMAÑA   1:58:03
+Buenas tardes, Felipe atrás.
+
+JUAN FELIPE PEREZ	BEJARANO   1:58:06
+Por ahí el profe, profe, no sé si viste el mensajillo ahí, qué pena.
+
+LUIS FELIPE MORA UMAÑA   1:58:08
+Echen.
+Lo No se preocupe, luego ahorita cuando.
+
+JUAN FELIPE PEREZ	BEJARANO   1:58:13
+Dale, dale, por allá.
+
+LUIS FELIPE MORA UMAÑA   1:58:15
+Cuando salga esta puras revisiones.
+
+JUAN FELIPE PEREZ	BEJARANO   1:58:18
+Dale, tranquilo.
+
+LUIS FELIPE MORA UMAÑA   1:58:20
+Okay.
+¿Cómo están muchachos, cómo va todo?
+
+Adrian Vinicio Chaves Marin   1:58:32
+Okay.
+
+DAVID MOISES GOMEZ MORA   1:58:33
+Bien pro.
+
+LUIS FELIPE MORA UMAÑA   1:58:36
+¿Y cómo va todo? Que él es la única que me ha saludado, eso ya lo sabía.
+
+Adrian Vinicio Chaves Marin   1:58:37
+D.
+
+LUIS FELIPE MORA UMAÑA   1:58:43
+Ya habíamos hablado.
+
+ARIADNY MARIA NUÑEZ GODINEZ   1:58:46
+Todavía usted.
+
+LUIS FELIPE MORA UMAÑA   1:58:48
+Bien por dicha.
+Que este muchachos, dudas, preguntas, comentarios antes de empezar, hoy tenemos una clase bastante entretenida.
+
+Adrian Vinicio Chaves Marin   1:59:02
+Profe, bueno, yo tengo una consulta sobre la nota del proyecto usará hoy mismo.
+
+LUIS FELIPE MORA UMAÑA   1:59:04
+Adelante.
+Mándame un mensajillo ahí, yo ahorita le mando el desglose.
+
+Adrian Vinicio Chaves Marin   1:59:11
+For teams.
+
+LUIS FELIPE MORA UMAÑA   1:59:13
+Sí, porfa.
+
+Adrian Vinicio Chaves Marin   1:59:14
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:59:16
+Ahora, cuando termine la clase ahí les paso la nota, el resto de la nota ya debería estar disponible arriba en modo de hecho.
+¿La única que no está la tarea 2, pero esa básicamente era un regalo, verdad? Eso es 100 o cero, verdad?
+¿Qué vamos a ver?
+Este dudas de la parte de testing, ahora es que me acuerdo, dudas que hayan quedado en la parte de testing.
+Claro.
+Vamos a ver.
+¿Cómo era que se llamaba la herramienta de la vara de látex?
+
+Adrian Vinicio Chaves Marin   2:00:29
+Profe, yo uso una que llama Overlift.
+
+LUIS FELIPE MORA UMAÑA   2:00:31
+Overlift, muchas gracias.
+
+Adrian Vinicio Chaves Marin   2:00:33
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   2:00:35
+Es usted muy amable.
+Qué, deme 1 segundo, ya casi vamos a empezar.
+Nada más porque este.
+Felipe tenía una duda antes de empezar.
+¿Y este?
+Quiero responder antes de que se me olvide.
+
+JUAN FELIPE PEREZ	BEJARANO   2:00:57
+Yo pensé que era al final, ya le iba a recordar hasta el final, profe.
+
+LUIS FELIPE MORA UMAÑA   2:01:01
+Oh, toy.
+
+JUAN FELIPE PEREZ	BEJARANO   2:01:03
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:01:06
+Vamos a ver.
+Mhm.
+Mhm.
+Raro, dónde está.
+Vea, si no me equivoco.
+Ya les voy, Ya les voy a mostrar.
+1 segundo nada más para terminar de ver algo.
+Saber.
+Come.
+Sí.
+See, see, seem.
+Vaya, ya les comparto, ya ahora sí, ya vamos a empezar.
+Sí.
+Vea para responder a su pregunta.
+Esta ahora tiene estos 2, lo ves este, está en versión code y está en versión visual, cualquiera de los 2, pero con solamente que uses este documento.
+Ya él este agarra ahí toda la parte de los.
+De los De las columnas y demás.
+
+JUAN FELIPE PEREZ	BEJARANO   2:03:40
+¿Cuál es ese que dice propiamente Document Class?
+
+LUIS FELIPE MORA UMAÑA   2:03:42
+Document class I triple conf.
+Que es el estándar de la I triple.
+
+JUAN FELIPE PEREZ	BEJARANO   2:03:46
+Y.
+Y ese este acomodo automáticamente el texto, no hay que darle ningún tipo de formato o medida o algo.
+
+LUIS FELIPE MORA UMAÑA   2:03:57
+Correcto. Aquí está la parte de use graphics, use package, usar el URL para los URLs. La parte del Overwrite command logs, usar el Overwrite los CEEE margins. Y aquí en el title lo ves, no viene nada más de configuración.
+
+JUAN FELIPE PEREZ	BEJARANO   2:04:01
+Mhm.
+Mhm.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:04:18
+Ven el title y ven este el autor y además.
+Y después este ya viene toda esta parte, luego viene el abstract. este.
+Y viene este, entonces ya viene todo lo que es parte de introducción, verdad, introducción y todo este, todo el resto de lo demás, pero ya viene chorreado y el mismo lo acomoda.
+De forma que puedo comer las cositas aquí.
+
+JUAN FELIPE PEREZ	BEJARANO   2:04:46
+Okey, y otra consulta no tiene que llevar imágenes necesariamente.
+
+LUIS FELIPE MORA UMAÑA   2:04:50
+Si usted no lo considera, no, si usted lo considera, sí, no sé cuál es su tema.
+
+JUAN FELIPE PEREZ	BEJARANO   2:04:52
+Okay.
+Digamos, si lo consideramos necesario, el esa vara de como por ejemplo en los en los que tú mandaste de ejemplos había como un una imagen y al ladito como que se ponía un texto pequeño así. Eso mismo se configura con esto, él automáticamente lo configura.
+
+LUIS FELIPE MORA UMAÑA   2:05:00
+Mhm.
+Yeah.
+
+JUAN FELIPE PEREZ	BEJARANO   2:05:14
+No.
+
+LUIS FELIPE MORA UMAÑA   2:05:15
+Eso es eso no es tan realmente, eso no es tan complicado. Vieras este, por ejemplo, aquí tengo un par de imágenes.
+Esta lo es y está esta aquí con la referencia al texto.
+
+JUAN FELIPE PEREZ	BEJARANO   2:05:30
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:05:31
+Entonces este si usted ve todas las imágenes están guardadas aquí usted nada más guarda las varas en las en la parte de las imágenes creo que era nada más arrastrando y por aquí está la vara del este para buscarla
+Item begin, begin, item begin.
+Begin, item ante el que está ahora las imágenes.
+Pues sí, ahora aquí para.
+Aquí está.
+Este lo es, arranca la figura, le pones el centro y le decís cuál imagen, lo es.
+
+Adrian Vinicio Chaves Marin   2:06:17
+Hello.
+
+LUIS FELIPE MORA UMAÑA   2:06:25
+Y aquí que lo agregue un formato de bibliografía para que agregue el textito aquí.
+Oh.
+
+JUAN FELIPE PEREZ	BEJARANO   2:06:32
+Okay.
+Okay, okay.
+
+LUIS FELIPE MORA UMAÑA   2:06:35
+Es que aquí estamos.
+
+Adrian Vinicio Chaves Marin   2:06:35
+Igual yo creo que se puede tocar la imagen, pero también ya directo, creo.
+
+LUIS FELIPE MORA UMAÑA   2:06:41
+Sí, también gracias.
+I guess.
+
+JUAN FELIPE PEREZ	BEJARANO   2:06:47
+Okay, okay, listo, prueba y approve.
+
+LUIS FELIPE MORA UMAÑA   2:06:49
+Mhm.
+Mucho gusto.
+Ok, estamos.
+Pero sí con solamente estar aquí ya lo.
+Pues let it let it paper.
+¿12 PT conference y triple de conf y ya conoce el más ajuste y todas las todas las barras, verdad? Y aquí usted le dice cuál es el graphic path graphics paths path.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:20
+O K O K, pensé que era algo más complicado, la verdad.
+
+LUIS FELIPE MORA UMAÑA   2:07:25
+Bueno, eso es muy HTML, digamos.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:28
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:07:29
+No está nada más de etiquetado.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:31
+Y bueno, obviamente eso va a ir reduciendo la cantidad de páginas más o menos con que quede quede.
+6 7 páginas.
+
+LUIS FELIPE MORA UMAÑA   2:07:40
+Un paper no debería tener más de 5 páginas de contenido.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:43
+De contenido propiamente contenido.
+
+LUIS FELIPE MORA UMAÑA   2:07:45
+Mhm.
+Sí, no más de 5 contenido.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:47
+Okay.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:07:50
+King.
+
+JUAN FELIPE PEREZ	BEJARANO   2:07:51
+Listo, pero yo profe.
+
+LUIS FELIPE MORA UMAÑA   2:07:53
+A yeah.
+Okey, si no hay más dudas antes de empezar.
+Este trauma número 2 no mentira este proyecto número 2 es igual 27.5% 26 de agosto antes de las 6 pm máximo 2 personas elementos generales. Esto es exactamente lo mismo que la parte anterior.
+Este.
+enviar esta ahora aquí nada más que lo único que cambia aquí Bueno no sé si quieren lo leemos línea por línea pero lo único que cambia aquí es que ya tener la documentación el documento simplemente es otro documento verdad pero le agregas este V2 al final verdad para que tenga el para que se diferencie el otro
+Sí.
+Y este utilice los principios de programación en objetos para para desarrollar un incremento, un sistema, un que o sea, voy ando, pero terrible.
+Para desarrollar un incremento de versiones del sistema de gestión de un sistema.
+De.
+Sistema de quinielas.
+trabajado en el proyecto número uno utilizando principios como Clean Code toda la trama verdad dentro del lenguaje C# y aquí es donde viene lo bonito este elementos incrementales de esta versión que vamos a meter en esta versión diferente este vamos a meter el uso de bases de datos en esta interacción los datos serán cargados desde una base de datos valga la redundancia
+relacional todos los archivos de la iteración anterior serán sustituidos por esta base de datos que la documentación deberá agregar el diagrama de base de datos esto es extra este puntito de aquí es extra 20 puntos extra Ok Recuerden que los puntos extras están condicionados a la nota
+La verdad entonces prioricen verdad es lo último si les da chance bien y si no les da chance también.
+En esta iteración ya no vamos a usar Winframes, vamos a utilizar un entorno web, este entorno web será Blazor por su facilidad de aprendizaje. Blazor es una herramienta o es un framework web de .NET, igual es bastante fácil de usar, es bastante ligero. Hoy vamos a ver un poquito de eso y este
+Van a ver que no es así como la gran cosa y van a ver por qué es tan importante la segmentación entre capas, okey, nuevas funcionalidades dentro del sistema.
+¿Adicional a todos los elementos del primer proyecto, verdad? Porque esto es un incremento de versión, ahora se deberá agregar la funcionalidad de un nuevo usuario administrador.
+El cual será responsable de todas las actualizaciones de los partidos. Las horas también, ¿verdad? Solo se podrán manipular ahora desde el usuario administrador, mantenimiento de usuarios como el reset de contraseñas, eliminar o desactivar usuarios. No les recomiendo eliminar los usuarios, les recomiendo desactivar los usuarios.
+Y eso es un principio ahí de base de datos que se llama integridad de datos, porque es más fácil, digamos, este cuando usted elimina cosas de una base de datos y todo tiene relaciones, tiene que hacer una eliminación.
+Triki ahí Digamos como con bastante seguridad de ese tema Okay este usuario solamente administrador verdad no podrá pronosticar
+Okay.
+Como segunda funcionalidad.
+Ahora los reportes deberán tener una opción de ser descargados. Se puede mantener como pantallas, pero deberá facilitarse la opción de descarga en CSU o TXT. Mantiene la pantallita ahí y agrega un botón que dice descargar el reporte. En caso de utilizar PDF, una bonificación de 10 puntos sobre la nota,
+siempre y cuando sea mayor a 80 y desarrollada por ustedes mismos. Ok, si me vienen con puro copilot, salados. Ok, porque son puntos extra.
+K.
+Deberá presentar notificaciones de los partidos que falten pronostic egg. Se deberán presentar notificaciones para los partidos que falten por pronosticar en las próximas 24 horas al iniciar sesión.
+Los reportes deberán ser distribuidos de la siguiente manera según su rol. Aquí vamos a partir. El administrador solamente podrá ver el resultado más repetido, partidos con más aciertos, usuarios con más aciertos, top 1, 3 y 5. Esto quita lo del ranking, ¿verdad? El ranking sigue siendo el ranking, el ranking siempre se lo pueden ver todos, ¿verdad?
+Partidos con más pronósticos y promedio de goles, promedio de goles y partidos sin aciertos. Esto es nuevo.
+¿Cuáles partidos no tuvieron aciertos?
+¿Usuarios, este el usuario podrá ver el equipo más apostado, el equipo sorpresa con el resultado estadística completa, verdad? ¿Cuál fue el resultado que este lo hizo ser la sorpresa, verdad? Y no sé, digamos este el.
+el cómo se llama este el el porcentaje verdad y fue el equipo sorpresa porque este por ejemplo Paraguay le ganó 1 a 0 Alemania y este solamente un 3% de las personas lo habían puesto solamente un 15% de las personas lo habían puesto ok ahora los pronósticos anteriores cuando vamos a la parte histórico
+Tenemos que ver el porcentaje de probabilidad de acierto o el porcentaje de acierto. Ok, entonces no sé si aceptamos 5 y somos 50 de un 10%.
+Recuerden que las insignias también deberán ser mostradas en el dashboard del usuario.
+Sí.
+Como en el ranking.
+Come on.
+Testing, vamos a agregar testing, se deberá probar la capa de controlador o capa lógica. Dejemos por fuera los modelos, dejemos por fuera los views, solamente la capa del controller en al menos un 60% de cobertura. En caso de igualar o superar el 80% y que esté demostrado que igual que fue hecho por ustedes porque es un 80%
+Y es un punto extra, es de 15 puntos adicionales, una vez realizado el análisis de la del.
+Una vez realizado el análisis de elementos pendientes con respecto a la especificación del primer proyecto, se deberá completar al menos en un 80% de funcionalidad. Esto es para los cuales para la gente que le faltó mucho para terminar el primer proyecto que tiene muchas cosillas por ahí pendientes para que no sientan que se van a quedar en verdad.
+¿Que de ahí si les fue mal en el primero, les va a ir mal en este, no verdad? Entonces por lo menos llegan al 80% como mínimo y este continúen, ¿verdad?
+Game.
+Se bueno, preguntas hasta quién.
+
+TAYRON ALONSO SALAS NUÑEZ   2:15:15
+Yo tengo una con la parte de los la base de datos del bueno, los que se van a brindar. ¿Esos usted los va a pasar o nada más hace como aplicarlo la carga?
+
+LUIS FELIPE MORA UMAÑA   2:15:27
+What about this?
+
+TAYRON ALONSO SALAS NUÑEZ   2:15:29
+la parte que se van a borrar todos los creo que es el punto uno los datos serán cargados desde una base de datos relacional y toda la interacción anterior serán suscriptivos por esta base de datos esa información usted la va a pasar o uno nada más como que borra y lo hace de carga
+
+LUIS FELIPE MORA UMAÑA   2:15:36
+Y.
+Ya tener la información en el primer proyecto.
+
+TAYRON ALONSO SALAS NUÑEZ   2:15:52
+Sí.
+Deja.
+
+LUIS FELIPE MORA UMAÑA   2:15:54
+Simplemente es eliminar los archivos y este utilizar el.
+
+TAYRON ALONSO SALAS NUÑEZ   2:16:00
+La lectura en cambio, pero sí.
+
+LUIS FELIPE MORA UMAÑA   2:16:01
+Cargarlos en la base de datos, verdad? La base de datos no la tienes que cargar cada vez que el sistema, pues ya los datos están ahí.
+
+TAYRON ALONSO SALAS NUÑEZ   2:16:08
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:16:09
+Simplemente es un reemplazo.
+
+TAYRON ALONSO SALAS NUÑEZ   2:16:12
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:16:12
+Por ahí, sí.
+
+TAYRON ALONSO SALAS NUÑEZ   2:16:14
+Creo que sí, ahí cualquier cosa pregunta después.
+
+LUIS FELIPE MORA UMAÑA   2:16:18
+¿Qué recuerde que esto es extra, verdad? No empiecen hoy con esto, o k.
+Vale Alberto.
+
+ALBERT DAYAN BRENES CARPIO   2:16:27
+Profe, en ese punto de descargar reportes, ¿a qué reportes hace referencia? Es que no sé si me perdí ahí un toque. ¿Cuáles reportes?
+
+LUIS FELIPE MORA UMAÑA   2:16:32
+Ohh.
+Lo reporto con las estadísticas.
+Los reportes serán distribuidos de diferente manera de conservarlo.
+
+ALBERT DAYAN BRENES CARPIO   2:16:46
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:16:46
+Son los mismos reportes que hemos visto en el primero estos de aquí.
+Tanto que ya lo molaba.
+La jugada.
+Porque están.
+Estas de aquí, estas estadísticas son los reportes, si quieren lo cambio de estadísticas, pero.
+
+ALBERT DAYAN BRENES CARPIO   2:17:10
+No, todo bien, solo quería confirmar para y para saber que he descargado lo correcto, todo bien.
+
+LUIS FELIPE MORA UMAÑA   2:17:12
+Sí.
+sí, no está bien, por eso les decía que si quieren lo cambio estadísticas para.
+Claro son reportes, pueden descargar, pero bueno.
+Te mando.
+Más preguntas.
+
+TAYRON ALONSO SALAS NUÑEZ   2:17:37
+De momento no, bueno, sí, no es más que todo como comparativas a al proyecto que tengo actual, pero no sé si al final.
+
+LUIS FELIPE MORA UMAÑA   2:17:46
+Hey.
+¿Alguien más, Danel?
+Tomamos estoy en.
+
+DANNEL ROBERTO QUESADA SOLANO   2:17:55
+Aquí recuperándome la clase pasada, pero sí, digamos.
+Hablando muy aventuradamente, si nos da chance a nosotros de llegar a ese punto de la base de datos, entonces ya.
+
+LUIS FELIPE MORA UMAÑA   2:18:02
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   2:18:09
+Como reemplazar el JSON por una base de datos.
+
+LUIS FELIPE MORA UMAÑA   2:18:12
+¿Es correcto, es correcto?
+
+DANNEL ROBERTO QUESADA SOLANO   2:18:13
+Okay, okay.
+Pisto.
+
+LUIS FELIPE MORA UMAÑA   2:18:16
+Básicamente.
+Dame 1 segundo, pues ajá.
+
+DANNEL ROBERTO QUESADA SOLANO   2:18:19
+De MySicle o cualquiera.
+
+LUIS FELIPE MORA UMAÑA   2:18:23
+Por eso les puse relacional.
+
+DANNEL ROBERTO QUESADA SOLANO   2:18:25
+Okey.
+
+LUIS FELIPE MORA UMAÑA   2:18:27
+Bueno, por ejemplo, aquí antes teníamos esto.
+¿Verdad?
+Este es el model.
+Ese es el view.
+Ese es el controller.
+Buen address.
+¿Qué vamos a hacer en este proyecto?
+En este proyecto.
+Vamos a desaparecer estos macitos de aquí.
+¿Verdad? Y vamos a crear.
+Un nuevo view cancel en Blaze.
+pero va a ser consumir los mismos controllers, verdad? Y si quieren hacerlo de la base de datos, vamos a hacerlo en un óvalo, bueno, esto es una piedra, pero es un óvalo, este ahora va a consumir la base de datos, ya no va a consumir los archivos.
+
+ALBERT DAYAN BRENES CARPIO   2:19:34
+¿Vamos a tener que volarnos el file hundred, no?
+
+LUIS FELIPE MORA UMAÑA   2:19:35
+So.
+es que el handler al final este y para eso está recuerde la toda la parte del dependence inversion es simplemente agregas un nuevo una nueva implementación del del data handler verdad que ejecute las mismas operaciones pero de diferente manera ahora con base de datos verdad toda la parte del connection el handle verdad de la barra
+
+ALBERT DAYAN BRENES CARPIO   2:19:54
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   2:20:02
+¿En vez de hacer este del get data, ya no pasa a ser un read read file, verdad? Un read, ahora pasa a ser un select.
+Por ejemplo.
+Dígame.
+
+DANNEL ROBERTO QUESADA SOLANO   2:20:17
+Pero yo no tengo ni la más marmota idea.
+¿De qué es Blaze ni cómo?
+
+LUIS FELIPE MORA UMAÑA   2:20:24
+¿Es de la clase hoy?
+
+DANNEL ROBERTO QUESADA SOLANO   2:20:25
+Ni ni cómo se usa o k eso no se ocupa licencias ni nada.
+
+LUIS FELIPE MORA UMAÑA   2:20:30
+No.
+
+DANNEL ROBERTO QUESADA SOLANO   2:20:31
+Okey, okey.
+
+LUIS FELIPE MORA UMAÑA   2:20:32
+Limpio, clean.
+
+DANNEL ROBERTO QUESADA SOLANO   2:20:33
+Esto.
+
+LUIS FELIPE MORA UMAÑA   2:20:35
+Buenísimo, ves, pero este esto es y voy a dibujar una línea aquí, voy a dejar 2 líneas más, esta la voy a hacer en azulito.
+
+DANNEL ROBERTO QUESADA SOLANO   2:20:37
+Google.
+
+LUIS FELIPE MORA UMAÑA   2:20:49
+Esto es lo que da igual.
+Esto es lo que se pide para este proyecto.
+Esto y lo voy a ver aquí anaranjado.
+Es extra, OK.
+Pues esto no querían enfocarse y si les da chance se pueden enfocar en esto.
+Más preguntas.
+Hey, continuamos.
+¿Ojo, aquí esta parte, esta parte es importante, el usuario administrador y el usuario usuario, verdad? ¿Este el administrador básicamente administra, verdad? Valga la redundancia, no puede pronosticar, no se va a poner y aquí el administrador no puede pronosticar, verdad? El usuario es una entidad completamente bueno.
+Es un ente porque puede ser la misma entidad, es un ente completamente diferente del ente usuario.
+Sí, el usuario se administra, ve los rankings, ve la vara, este mancito lo único que hace es mantenimientos.
+Resisteo contraseñas, resulté... A ver los resultados, ¿verdad? Este es el único que va a poder poner resultados. Y este, bueno, los resultados finales, ¿verdad? Adelantar la hora, el manejo de la hora y la vara. Y este sí, y el otro sí, simplemente.
+¿Queda como un usuario final, verdad? Imagínense toda la parte de la usabilidad.
+Que este lo mismo la vez pasada se recomienda toda esta misma parte, manejo excepciones. este.
+Uso de herencia, polimorfismo, todo lo mismo, verdad? Vamos a ver, esto sí voy a tener un toquecito al leer, uso de herencia, polimorfismo, encapsulamiento, aspectos básicos de la programación orientada, objetos solid, patrones de diseño, en caso que no haya engregado alguno del primer proyecto, hace como un punto de mejora en VC, reutilización de código, mantenibilidad, escalabilidad, robustez, clean code.
+Y demás conceptos vistos en clase como estas cosas, ya este vamos a ver, ya deberían estar plasmadas dentro del código. ¿Este No hay un punto de evaluación a partir de esto, pero obviamente siempre se va a tomar en cuenta, ¿verdad?
+este se recomienda la utilización de las herramientas planteadas en la especificación el uso de Git será basado en historial de revisión no sé qué pueden usar el mismo Git de hecho debería usar el mismo Git no debería haber ningún cambio ahí este a los que se les vence la licencia Gira de ver cómo cómo plantean el proyecto pero este los que están usando Trail lo simplemente agrega una iteración más verdad
+Entonces este la iteración 2.
+Buenas prácticas igual van a ser evaluadas, se dejarán puntos en caso de no seguir instrucciones como formatos de envío, en caso de ser detectado se dejarán los puntos respectivos. Los puntos extra serán tomados en cuenta siempre y cuando la funcionalidad sea mayor 80.
+Este, de igual manera, el proyecto anterior se recomienda una buena planificación. Aquí no vamos a hacer entregable uno, pero yo espero que ustedes hagan el ejercicio por lo menos ahí en papelito del entregable uno, ¿verdad? Porque tienen que planificar el pre el proyecto que ya le doy leí la palabra. Eric, este sí, dígame.
+Ahora sí pensé que me queda algo por mencionar.
+
+ERICK ANDRES DELGADO ARAYA   2:24:23
+¿Profe, no es como 100% necesario usar otra rama de git, verdad? Se puede trabajar en la misma que ya tenemos, digamos.
+
+LUIS FELIPE MORA UMAÑA   2:24:31
+Sigue en la misma, sí.
+
+ERICK ANDRES DELGADO ARAYA   2:24:32
+Okey, y lo que es el a nivel de Gira, nada más se sigue el consecutivo.
+
+LUIS FELIPE MORA UMAÑA   2:24:40
+Es correcto, sí.
+
+ERICK ANDRES DELGADO ARAYA   2:24:40
+De los features.
+
+LUIS FELIPE MORA UMAÑA   2:24:42
+Correcto.
+
+ERICK ANDRES DELGADO ARAYA   2:24:43
+Okay, perfecto, gracias profe.
+
+LUIS FELIPE MORA UMAÑA   2:24:44
+Sí, Yera, como Yera tiene la licencia de un mes, fíjese nada más que no se quede sin la licencia a medio proyecto, ¿verdad?
+
+ERICK ANDRES DELGADO ARAYA   2:24:51
+Sí, eso ya lo estoy cotizando, profe.
+
+LUIS FELIPE MORA UMAÑA   2:24:54
+De, pero ese tráelo, tráelo gratis de pagar, sí.
+
+ERICK ANDRES DELGADO ARAYA   2:24:54
+Sí.
+No hay problema ahí que se haga el cambio.
+
+LUIS FELIPE MORA UMAÑA   2:24:59
+No hay ningún problema, no deberían porque recurrir en gastos para el para el curso, digamos, no tiene sentido.
+
+ERICK ANDRES DELGADO ARAYA   2:25:05
+Vaya, muchas gracias.
+
+LUIS FELIPE MORA UMAÑA   2:25:07
+Thank you.
+
+JUAN FELIPE PEREZ	BEJARANO   2:25:09
+Pero en ese caso, permiso, en ese en ese caso es como que básicamente hagamos el ejercicio de la entregable uno de forma personal, digámoslo así, y en caso de que usemos Jira de volver a plantear, digamos en Trello desde ese punto.
+
+LUIS FELIPE MORA UMAÑA   2:25:09
+Okey, ajá, dale.
+Es correcto, es correcto, sí.
+
+JUAN FELIPE PEREZ	BEJARANO   2:25:30
+Okay, okay.
+
+LUIS FELIPE MORA UMAÑA   2:25:33
+Al final lo que es eso, verdad este la idea es que les quede ese ejercicio de planificación, verdad, no hacerlo tan formal y estricto como un documento, pero que ustedes siempre se sienten a planificar y a visualizar, porque siempre que nos sentamos a planificar podemos entender, entendemos el problema y al entender el problema es donde mejoramos.
+O desarrollamos una mejor solución.
+Meterle un poquito de ingeniería, nada más.
+Estoy bien prayer.
+
+ERICK ANDRES DELGADO ARAYA   2:26:04
+Sí, profe, yo preguntaba lo de la rama principalmente porque bueno, más que todo por si se podía trabajar en otra, digamos, si no había problema, pero si hay que seguir en la misma y se sigue.
+
+LUIS FELIPE MORA UMAÑA   2:26:14
+Si usted quiere trabajar en otro, trabaja en otra. Es su repositorio, usted lo maneja como usted guste.
+
+ERICK ANDRES DELGADO ARAYA   2:26:17
+okay, super bien.
+Sí, esa era la más que todo, muchas gracias.
+
+LUIS FELIPE MORA UMAÑA   2:26:23
+I am.
+Dígame Tayron.
+
+TAYRON ALONSO SALAS NUÑEZ   2:26:26
+bueno en el caso mío necesito mis eh funciones que me quedaron pendientes no es necesario agregar esas funciones en el proyecto anterior si no las puedo implementar directamente en este de una vez Bueno sí al final al final le voy a tener que al final lo va a tener que implementar solo que una visualización diferente
+
+LUIS FELIPE MORA UMAÑA   2:26:31
+Paul.
+Es que es el mismo, es el mismo proyecto partir de la misma base.
+Exacto, digamos, vamos a ver, por eso yo les decía la vez pasada, enfóquese en la lógica de negocio.
+Toda la parte del business logic porque el view lo vamos a votar, ¿verdad? Entonces si te votaron cosas, este terminé de hacer esas cosas, pero ahora van a responder hacia otro view, no van a responder hacia el view que teníamos antes, pero al final es exactamente lo mismo.
+
+TAYRON ALONSO SALAS NUÑEZ   2:27:09
+Okay, okay, gracias.
+
+LUIS FELIPE MORA UMAÑA   2:27:11
+Joseph.
+Ok, dice mejora web 25 puntos, nuevas funcionalidades 35 puntos, testing 25 puntos, uso de gira y git 5 puntos, documentación 10 puntos y el total 100% Ok, Clean Code y las buenas prácticas de programación al ser tomadas en cuentas cómodas el proyecto se verán reflejadas en cada uno de los aspectos evaluados en cada ítem.
+Barata.
+Y por último de los anuncios parroquiales verdad rebajos mínimos Exactamente lo hemos pasado este no participar en daily ya rebajo de cinco puntos no contar con zona de herramientas de revisión 10 puntos este archivos o registros verdad archivos en base de datos este rebajo de 20 puntos este todo proyecto era ser revisado en clases
+caso no seguir los lineamientos en cuanto a herramientas utilizar noto uno este todo el código era hacer completamente su teoría en caso contrario se rebajarán los se aplicarán los grados respectivos dentro de la categoría.
+Preguntas, ese es el momento, bueno, también la otra semana. pero.
+Estoy en.
+¿Qué cómo plantearé yo el proyecto si fuera ustedes este y cómo está pensado, digamos, también? ¿Y por qué 3 semanas tenemos 3 semanas, entonces está básicamente este?
+Una semanita para nuevas funcionalidades, una semanita para cambio web y este de una semana si quieren hacer extras o para reportar para terminar lo que les haya hecho falta.
+Básicamente por ahí va tanto, pero si usted se pone a ver, no es tantísimo lo que se lleva de nuevo, digamos, simplemente es como dividir cosas que ya estaban, este agregar un par de funcionalidades más, dividir, segmentar.
+Nada del otro mundo, creo que simplemente este aquí nuevo, nuevo, nuevo para el sistema, esta parte de descargar esta vara, pero ahora no es nada del otro mundo, este partido sin aciertos es nuevo y la parte del testing.
+Sí, después de ahí simplemente es como prendeste el tiempo.
+
+ERICK ANDRES DELGADO ARAYA   2:29:29
+y ese sistema web Blazor es como digamos como por así decirlo como decirlo como para darle diseño igual es directamente desde como si fuera un view
+
+LUIS FELIPE MORA UMAÑA   2:29:45
+Es un view, es un view, sí.
+
+ERICK ANDRES DELGADO ARAYA   2:29:45
+Solo tenía el web.
+O K, está exactamente igual, solo que nivel, digamos.
+
+LUIS FELIPE MORA UMAÑA   2:29:50
+Sí, mira, he cambiado Wing Froms, cambia todo lo que tienen Wing Froms a Blazer.
+
+ERICK ANDRES DELGADO ARAYA   2:29:56
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:29:58
+Okay.
+Más preguntas.
+Y ahora se los voy en PR.
+Vamos a ver este.
+La semana pasada estábamos viendo testing.
+Ahora.
+Vamos a ver.
+Este más preguntas.
+Kendall, todo bien.
+
+KENDALL JOSUE MATA SANCHEZ   2:30:47
+Sí, profe, estoy bien.
+
+LUIS FELIPE MORA UMAÑA   2:30:49
+Sí, buenísimo.
+
+KENDALL JOSUE MATA SANCHEZ   2:30:50
+Ahí nada más toca planificarlo bien, sí.
+
+LUIS FELIPE MORA UMAÑA   2:30:54
+Bing, they chasing.
+Luis Alonso, todavía ascan.
+
+LUIS ALONSO ESPINOZA BONILLA   2:31:02
+Sí, pero ahora todo bien, ahora sí a poner atención a bien el tema nuevo para poder aplicarlo bien.
+El proyecto, pero sí, por ahora todo claro.
+
+LUIS FELIPE MORA UMAÑA   2:31:09
+You're king.
+What is you won?
+Okay.
+Que con Eric fue que revisé.
+Debe ser Eric, estos son los templates nuevos de bueno, relativamente nuevos, porque a ver ahora hay unos más nuevos de los proyectos, esos son más fáciles de usar.
+Sigue siendo igual, pero el template es diferente.
+Pero bueno.
+Hey, vamos a entrarle a Blazor directamente, este nada más deme un toquecito para refrescar la memoria. Este tenemos este esta parte Wing Front.
+A ver si corre algún día, porque la verdad ya no me acuerdo cómo se veía su aplicación.
+Okay.
+Este creo que era, no este.
+Eso está en el archivo.
+¿Dónde será uno?
+123.
+Ha ha.
+Vamos a ver.
+Dice que son.
+Yes.
+Y eso es lo que es más fácil.
+A punto, ajá, aquí está el usuario.
+Hey.
+No sabría esto, crear examples.
+¿Que no sabría?
+Estoy aquí.
+Mhm.
+Ozaría ranking.
+Y nos habría user maintenas.
+No me acuerdo que era, ya me acordé que fui esto.
+¿Para qué?
+¿Y a unos qué?
+Vamos a tratar de hacer algo similar para presumir los mismos endpoints. Entonces aquí simplemente vamos a agregar un nuevo proyecto.
+Este vamos a agregar este que se llama aquí Blazor web app. Blazor es un framework relativamente nuevo, relativamente porque es del 2020, 2021, por ahí por ahí ha ido mutando, ha ido creciendo y los números de benchmark con respecto a otros frameworks sí está creciendo bastante bien.
+Tiene una ventaja.
+primordial para cualquier este ambiente web. Cuando usted programa, por ejemplo, principalmente los de JavaScript, cuando usted programa en Angular o en React, tiene un problema. Cada seis meses tenés que reescribir el sitio nuevo porque Angular, porque toda esta parte
+de por eso son frameworks bases en JavaScript. Toda esta parte de JavaScript cada seis meses se lanza una nueva versión. Angular cada seis meses se lanza una nueva versión. De preca las anteriores se convierten en problemas de seguridad. Entonces tenés que siempre estar en la última versión, siempre y cuando no haya hay problemas. Pero siempre hay problemas ahí.
+¿De vulnerabilidades, entonces qué es lo que pasa?
+este casi y esos y esos este cambios de versiones usualmente vienen con bastantes Breaking Changes. Esos Breaking Changes este de no sé, digamos, este pasa mucho, verdad? Yo una vez trabajé con un banco en México, es un camaroncillo por ahí, este ahí tenían todo lo tenían montado en
+¿En Angular, entonces este qué pasaba? Digamos que los mares se cansaron de que duraban cuatro meses actualizando todos los sitios web.
+Y en dos meses, otra vez venía otra versión y es un banco, ¿verdad? Tiene que tener toda la parte de las de las de todas las medidas de seguridad, ¿verdad? Entonces este las versiones anteriores quedaban deprecadas o tenían problemas de vulnerabilidad, ¿verdad? Problemas de seguridad. Entonces tenían que moverse a huevo, ¿verdad?
+Entonces pasaban cuatro meses moviendo todos los diferentes sitios que tenían, dos meses de paz y otra vez en cuatro meses vamos de nuevo, ¿verdad? A veces pasa, digamos, en este tipo de frameworks que no sé, sale una versión, hoy sale la 18, ¿verdad? Y salen los primeros parches y en dos semanas ya la versión 18 ya está o la versión 20 o 24 de Angular.
+Ya tiene vulnerabilidades, entonces hay que saltar a la 28.2 o a la 28.7.0, digamos, es en cuestión así de 2 semanas. ¿Entonces es un problema, nunca acabar, verdad? ¿Con Blazer, verdad? O sea, el ambiente.net es un es trabaja dentro del ambiente.net.
+Pero la historia es open source.
+¿A cualquier persona puede colaborar, verdad? Es parte de lo que llaman este.net Foundation o punto Net Foundation, que es este de la parte de toda la parte de open source y esa vara de.
+¿De lo que es Echar, verdad? Que eso se abrió hace unos años al público en general.
+Entonces este por ahí va un poquito el los pros y los contras verdad de utilizar esto. Igual usted puede utilizar JavaScript interrup, usted puede utilizar un montón de cosas más, pero es parte de que por ahí arranco un poquito ahí como la introducción a qué es Blazer, verdad? Y por qué es tan importante ahora? Porque vamos a ver este.
+Si usted hace un benchmark, por ejemplo, de cuánto ha crecido Blazor en los últimos años, verdad, en los últimos 4 años, solamente con los datos de GitHub, este sí es bastante la diferencia, ¿verdad? Este Angular ha ido perdiendo un poco de terreno, que era el mayor, el React este ahí está estable, pero Blazor hace, no sé, hace 5 años.
+Tenía este.
+Solamente un como un 3 4% de los repositorios de angu de Git ahora tiene este, no sé, o sea, había subido como al 2030% 20% por ahí.
+Entonces, este es parte de toda esa competencia que tienen las diferentes este entidades de desarrollo web, sí.
+Igual si tienen 2 meses.
+Ok, vamos a crearlo.
+Este source vámonos y este le vamos a poner.
+Y nos vamos.
+Ok, este lo vamos a hacer en 9, no lleva autentificación. Esta parte es muy importante, hay dos tipos de Blazer, hay dos tipos de formas de generar Blazer.
+Este Tenemos Blazer Server, que es básica, 1 segundo, porfa.
+Y ahora sí, perdón, es que hoy sí.
+He estado potente el día de la garganta nueva.
+Este Tenemos Blazor Server, que es la arquitectura server, verdad? cliente servidor donde tenemos un server que un cliente que se conecta a un server y está mandando cosas, los manda por websockets, verdad que es una estructura.
+De las primeras que hubo, ¿verdad? Para comunicación, pero sumamente optimizada. Este tenemos este y tenemos la versión que se llama web assembly. ¿Qué hace el web assembly? Web assembly es un poco diferente porque web assembly no necesita server. Web assembly corre enteramente dentro del browser.
+agarra todos los paquetes, eso sí, al ser browser y tienes que estar en el browser, todos los DLLs que uses o que uno use, tienen que estar disponibles para el browser. Entonces esto es asystem.text, por ejemplo, tiene que haber un compilado de system.text en el browser, entonces él manda todos los DLLs.
+¿Verdad? Para poder ejecutar la aplicación en el en el browser, ¿verdad? Por sí sola, sin necesitar de un.
+de un server ahí que esté manejando los requests y los estados y demás. Entonces, las dos son bastante interesantes, son distintas formas de hacer las cosas. WebAssembly se presta mucho para lo que se conoce ahora como WPA, que son aplicaciones que se puede hasta descargar en su propia máquina y ejecutar.
+Siguen siendo sitios web, pero ahí son aplicaciones, perdón, entonces por ahí va un poquito.
+¿Qué nosotros vamos al server, pues ya tenemos todos los controles y todo el ya tenemos todo el server montado, entonces hacemos server, verdad? Este esta parte lo dejamos aquí quedito, el resto lo dejamos quedito y nos vamos. Dudas hasta aquí, preguntas.
+
+TAYRON ALONSO SALAS NUÑEZ   2:40:44
+Cuéntame un toquecito para tomar un screenship profe.
+
+LUIS FELIPE MORA UMAÑA   2:40:48
+Sí, igual ahí queda la grabación, ¿verdad?
+
+TAYRON ALONSO SALAS NUÑEZ   2:40:53
+Listo, gracias.
+
+LUIS FELIPE MORA UMAÑA   2:40:54
+Tostom.
+Entonces le damos create.
+Y creamos los proyectos, creamos el proyecto, gorda.
+Este proyecto no voy a venir Gina hasta aquí, lo voy a hacer este.
+Le voy a decir que corra este inicialmente o K, ustedes lo ven, es un proyecto web común y corriente. Lo realizamos aquí, santo que este no este.
+Lo ven que nada.
+Este es el mismo SDK, pero es el SDK web, verdad? Solo que cambia un toque, nan 9, nulable, implicit using y nada más. Bueno, así básico es lo que hace toda la magia por debajo, que importa todas las librerías y demás que se necesita son es este maicito de aquí.
+Okay.
+¿Tenemos las mismas dependencias, verdad? Este tenemos analyzers, tenemos los frameworks, verdad que es esto es lo que nos permite, esto es lo que nos agrega el punto web, que esto es lo que nos permite ejecutar, verdad, toda la parte de Net Corp, verdad, y toda la parte de SP Net.
+Eso es todo a nivel de framework. Tenemos los properties, que tenemos el launch settings, que es un archivito ahí que nos dice digamos como de cómo ejecutarlo, ¿verdad? Esto dice que va a ejecutar en este puerto este si es HTTP, si es HTTPS, toda esa parte, mismas configuración de cualquier sitio web.
+Y este vamos a ver, tenemos el WW root, que aquí es donde van a estar todos los de todos los assets, ¿verdad? Pues es igual que en Angular, es igual que en React. Todos los todos los assets vienen aquí.
+Y este tenemos este la PP series, en verdad que es la como la configuración aquí es de la del sistema.
+Aquellas cosillas podemos agregar y tenemos el program que igual el program es el mismo punto de entrada, que podemos verlo así.
+O podemos verlo, o sea, está.
+Bueno, no me.
+Podemos verlo de la forma clásica, que es simplemente este malo es un toquecito aquí.
+que lo reduce un Main verdad es una clase program con el mismo Main con la misma vara Exactamente lo mismo nada más que el mail por el mismo framework lo entiende así entonces este vamos a crear una aplicación web le mandamos los argumentos este vamos a hacer todo esto pasa a través del patrón builder verdad
+Entonces este builder es el que va a cargar todos los servicios, agrega los basor components, agrega el interactive server, la delexia me está matando, me disculpa. Una vez tengo listo todo, tengo todos los servicios listos, aquí es el que yo le decía a Adrián la semana pasada si no me equivocado Adrián
+que podemos inyectar servicios y podemos inyectar servicios fácilmente de aquí Entonces tenemos el builder punto build verdad que aquí ya vamos a crear puramente la instancia de este web application una vez ya configurada hacemos un build el build se crea para eso es el patrón builder
+Yo no puedo hacer un new de este madecito de aquí porque está restringido por el mismo patrón Bilder, verdad? Pueden echarle un ojo después al patrón Bilder o si tienen dudas me avisan. Se configura y una vez está configurado, yo lo creo. Lo genero aquí. Si es development, verdad que use algunas cosillas, este que use la predirección, el antiforgery.
+Para que agarre los assets, este para que agarre los Razor Components desde la app, ¿verdad? Que la P es el punto de entrada.
+Y el interactive server, esta parte del interactive server es que yo puedo interactuar con el servidor y no simplemente una aplicación donde muestra cosas, ¿verdad? Yo también interactúo, tengo eventos, tengo interacciones, escribo cosas, ¿verdad? Y por último, simplemente ejecuto esto es lo que hacemos básicamente desde la.
+¿De del main, verdad? Ahora igual, si voy muy rápido, me avisan muchachos, de verdad, pregunten por favor.
+Aquí viene ya la parte, digamos este pesadita, verdad que es la parte de los componentes. Tenemos este layout.
+Verdad que para que ustedes se hagan una idea, el es como la base del browser, por decirlo así, lo que yo tengo aquí en.
+Vamos a ver.
+Aquí toda esta parte de aquí. todas.
+Bueno, si algún día se despega.
+¿O tal vez no?
+Tal vez fue mi máquina, ahora sí, todo esto de aquí, todo esto que tengo aquí adentro.
+Yo lo encapsulo.
+Dentro del layout, ¿verdad que son este main layout?
+No hay mucha ciencia, este como pueden ver, tiene un body aquí tiene este el layout component base para saber qué es este, qué es un layout.
+Y aquí un DIF, verdad, por si pasa algo.
+Va a mostrar un mensaje este mensajito.
+Sí.
+Y este eso por ahí tenemos los imports, que esta parte de imports son simplemente para yo no estar agregando using en todas las clases de o en todos los componentes, porque el imports es solamente para los componentes. Yo agrego todo lo que yo vaya a necesitar aquí.
+Que a lo más bonito, queda más limpia las páginas, queda más limpia el desarrollo de código. Tenemos esta parte de las rutas, verdad que simplemente hay como para saber digamos como toda la parte del enrutamiento que es el enrutamiento para los que no han visto enrutamiento. El enrutamiento es bueno, aquí está escondido.
+Pero si yo me meto aquí.
+Todo esto es el enrutamiento.
+Para yo poder navegar de esta forma dentro del browser.
+Ok, como les digo, eso se puede esconder, ¿verdad? Ya es configuración y demás, pero yo le digo que el default layout va a ser este mancito que es el main layout que acabamos de ver aquí. Ok, esta es mi base y yo voy a trabajar sobre este espacio. Ok, después de eso este.
+Vamos a ver el a pp este a pp para los que han trabajado en.
+En React alguien ha trabajado en React, sino para no ser este metáforas de React.
+
+TAYRON ALONSO SALAS NUÑEZ   2:47:20
+No.
+
+LUIS FELIPE MORA UMAÑA   2:47:21
+No, no, bye.
+Entonces, el app es de este es el application, por decirlo así, este es toda la parte del HTML.
+Blazor, perdón que haga otra vez la misma metáfora. Blazor es muy parecido a React en ese sentido. Porque este y si lo imaginamos así, imaginémoslo como un concepto de cajas que es componentización. Nosotros tenemos componentes que se
+Expanden en toda la parte del HTML o K, entonces este este maesito se va a expandir, este otro se va a expandir, este otro se va a expandir. ¿Qué es expandir? Que el ma va a pegar este mismo código aquí.
+¿Verdad? Entonces por eso él sabe que tiene que usar el layout que tiene el layout, el body.
+Entonces el aquí lo vimos, perdón, este es el bori, lo ven todo lo que ven aquí es el bori.
+Entonces este y después el script verdad para que él sepa que está ejecutando laser.
+después de ahí no hay mucho más que que agregar verdad toda la parte todo esto el resto es igual verdad este el Head el Body y el Si tuviera fure furer verdad la página pero este por ahí va un poquito es puro html es puro puro html si ustedes lo ven aquí Ok entonces este aquí Podemos agregar este las hojas de estilos que vayamos acá
+¿A tener, verdad? Por ejemplo, aquí tengo este a pp punto CSS, verdad que son ahí algunas CSS global.
+Sí, y esta parte de estilos que yo creo que esta me la voy a volar porque no la tengo ni la ocupo, pero bueno, ahí después vemos. ¿Qué y ahora sí, cómo se ven las y así es como se navega dentro del mar, cierto? ¿Cómo se ven las páginas? Las páginas se ven así, este carácter que ven aquí, esta línea de aquí, aquí le estoy diciendo que esta página.
+Va a ser el root, va a ser el punto de entrada. Tiene un título que se llama home, ¿verdad? Un h1 que es una etiqueta. Y tienes el Word, ¿ok? Y pueden aquí ver este Star Al. Welcome to your new app. Si ejecutamos esto, lo ejecutamos en este momento.
+Lo que nos va a salir es esta misma pantalla.
+Segundo, la otra que con pila y cargue.
+¿Él va a levantar esta consolita, que es cualquier consola web, verdad? Ahora sí escuchan este puerto, esta vara y de aquí la apago.
+Y aquí tengo la página Hello World, welcome to your new app.
+Esta otra paginita de aquí.
+¿Que se llama error, verdad?
+¿Yo puedo navegar a ella, verdad? Por eso es lo que les decía el routing.
+este quiero copiar.
+¿Entonces el título tiene aquí el error, verdad? Este si hay un request ID, si algo pasó y algo tostó, lo ven, aquí tengo y aquí es un y aquí es donde se pone bonito, ¿verdad? Porque yo puedo agregar usins, lo ven.
+Yo puedo mezclar código C# con código Blazor, lo ven? Aquí tengo un arroba if, yo uso el arroba cuando voy a meter estructuras de código, estructuras condicionales y el arroba code que son básicamente las los macitos aquí.
+Es el HTP Context para tener el contexto de la aplicación, verdad y todo está aquí.
+Entonces, bueno, hay otra aquí importante que si yo quiero mostrar el valor de una variable, simplemente lo ven declarar una variable.
+Y ese lo hago con arroba y que ha salido el rico.
+Entonces yo de aquí.
+Me puedo mover a error, bueno.
+Esta es la variable que tenía ahí.
+Entonces es más fácil.
+De navegar y si lo vemos.
+Desde el punto de vista de la página.
+Lo ven, está el doctay, toda la misma vara, todo eso que acabamos de ver está el head, que el head tiene todos estos maesitos y tenemos el body, lo ven H1 el welcome, el DIF ahí que se había metido, ¿verdad?
+Con la vara del error, si hubiera un error aquí saldría que les va a salir abajo algún día.
+¿Y este ya después todo el resto de cositas, verdad? Aparte de los scripts y demás, pero si ustedes ven así es como se ve la página.
+¿Qué preguntas, dudas, comentarios, chistes?
+
+TAYRON ALONSO SALAS NUÑEZ   2:52:38
+Esto en la empresa, yo creo que en de momento la probé.
+
+LUIS FELIPE MORA UMAÑA   2:52:42
+No.
+
+Adrian Vinicio Chaves Marin   2:52:43
+Todo bien, profe.
+
+LUIS FELIPE MORA UMAÑA   2:52:44
+¿Sí, qué tal se ve?
+
+TAYRON ALONSO SALAS NUÑEZ   2:52:49
+¿Y si comparamos al proyecto anterior en un inicio fácil?
+
+LUIS FELIPE MORA UMAÑA   2:52:54
+Let's start with the bank.
+Para los que no han programado o han programado poco en HTML, tenemos esta paginita aquí que se llama W 3 Schools.
+Estos.
+Esto es un amor que está toda la hora, toda la introducción que puedo hacer aquí.
+Este aquí explica todo eso, que acá que mucho de eso, ¿verdad? Un poquito mejor de lo que.
+Lo que yo lo expliqué y tiene toda esta parte que es un compilador, verdad?
+Yo lo corro aquí, vamos a ver.
+ponerle aquí este y me lo volé Bueno me borré se lo ven y puedo ejecutar y probar después yo agarro este masito aquí le doy control
+Este voy a llamar para acá.
+Vamos a estar aquí en el home.
+Y pues vale este, pues vale este.
+Cualquiera de los 2.
+Y aquí me va a salir ahí que volver a cargar el éxito.
+No les recomiendo usar mucho esto, eso no está casi como tan bien depurado.
+¿Lo quieren usar?
+Está y ya lo recargo todos los datos.
+Ya tenemos aquí todo lo que es un agregando.
+Hay un montón de cosas que podemos agregar.
+Toda la parte de los DIF que esta parte es importantísima, los que no han visto DIF este varas de layout.
+Phone.
+Y aquí lo podemos ver.
+Okay.
+Aquí está el header.
+Esto me lo voy a robar.
+Esto va a ser útil.
+Y esto, a ver, según día para.
+Lo voy a poner aquí al mini y a otro.
+Creo que tengo que ponerlo un DIF ahí, pero después de esos.
+Después de eso lo vamos viendo.
+Todo es igual, yo lo puedo componentizar.
+Que lo ideal sería componentizarlo.
+
+ALBERT DAYAN BRENES CARPIO   2:55:39
+No.
+Ahí me queda, me queda una duda en poder volver un toque al.
+
+LUIS FELIPE MORA UMAÑA   2:55:42
+No, porque nos queda más bonito.
+Mhm.
+
+ALBERT DAYAN BRENES CARPIO   2:55:49
+Cuando estaba el código, ahí eso el main layout y el home se me confunden porque yo pensé que el home era como el principal, pero ahora le metiste un app al main main layout. Entonces no sé y cuál es la diferencia, digamos cuál es el principal, a dónde tendría que meter código. o.
+
+LUIS FELIPE MORA UMAÑA   2:55:49
+Sí, señora.
+Ok, ok, es una muy buena pregunta, vea.
+Esto es para toda la aplicación, toda todas las páginas, toda la aplicación van a tener esto.
+Okey, el body renderé adentro lo que tenga el home.
+¿El home es el home, verdad? Entonces tal vez para que por si no, pues yo sé que tal vez no fue como mi mejor explicación, pero.
+
+TAYRON ALONSO SALAS NUÑEZ   2:56:33
+Ese money layout es como el index, algo así.
+
+LUIS FELIPE MORA UMAÑA   2:56:37
+No es el índex, como les decías, china.
+Vean, por ejemplo, yo me paso el olor, lo ven, esto se mantiene porque yo solamente modifico el body.
+Going.
+Pues eso queda fijo para todo.
+
+ALBERT DAYAN BRENES CARPIO   2:56:52
+O sea, sería útil, sería útil como para ponerle un encabezado y un footer, tal vez a ese que comparten todas las páginas. y luego.
+
+LUIS FELIPE MORA UMAÑA   2:57:00
+Exacto.
+
+ALBERT DAYAN BRENES CARPIO   2:57:02
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:57:03
+Exacto, por ahí va un poquito.
+
+ALBERT DAYAN BRENES CARPIO   2:57:05
+Creo que ya por lo menos más o menos sé la diferencia, sé por qué le metió el nava a ese y no el otro, entonces está bien.
+
+LUIS FELIPE MORA UMAÑA   2:57:12
+Sí, porque digamos, yo podría agregárselo a todas las páginas, pero hay que parece estárselo agregando todas las páginas y es algo general de toda la toda la app, ¿verdad?
+
+DANNEL ROBERTO QUESADA SOLANO   2:57:22
+Entonces, dentro del main layout pa lo que yo quiero que permee a todos los demás.
+Páginas. el.
+Digamos del de la aplicación.
+
+LUIS FELIPE MORA UMAÑA   2:57:37
+Exacto, vea, veámoslo así.
+
+DANNEL ROBERTO QUESADA SOLANO   2:57:38
+Colores, colores, fuentes.
+
+LUIS FELIPE MORA UMAÑA   2:57:42
+Más o menos.
+
+DANNEL ROBERTO QUESADA SOLANO   2:57:42
+Digamos si quiero algún logo o alguna aire así.
+
+LUIS FELIPE MORA UMAÑA   2:57:45
+Eso sí, esa parte sí, verlo así.
+Véalo, este sabe que ya se me perdió, voy a buscarlo aquí mejor.
+Para que le vamos un poquito más fácil.
+Este me ****, que no está terrible, pero eso va a tener que reiniciarlo.
+
+DANNEL ROBERTO QUESADA SOLANO   2:58:03
+Entonces cada página luego tendría aparte, digamos, cargaría como un machote de main layout y aparte habría que darle código específico para lo que se necesite. Digamos, si yo quiero lo de headers distintos o quiero agregar una caja.
+
+LUIS FELIPE MORA UMAÑA   2:58:15
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   2:58:23
+Y demás.
+
+LUIS FELIPE MORA UMAÑA   2:58:23
+Mhm, but.
+
+TAYRON ALONSO SALAS NUÑEZ   2:58:23
+¿Cómo se hace ese?
+
+LUIS FELIPE MORA UMAÑA   2:58:26
+no veámoslo así veámoslo a este punto de vista para que quede un poquito más fácil este Aquí está el Mac verdad que es este mismo back de aquí aquí está el este maecito aquí aquí está el refresh Aquí está el W punto verdad y
+Todo el resto de cosas en verdad, la fy no sé.
+¿Los 3 puntos de opciones, verdad? Ese es mi browser, OK.
+Todo esto de aquí es el main layout. Si yo pongo algo, digamos de que yo al main layout le pongo una cajita aquí.
+¿Y le pongo una cajita, verdad?
+No sé, y también le pongo un footer.
+¿Verdad, entonces esto de aquí en este caso?
+todo esto que está aquí adentro es el Body lo ven Entonces esto lo que yo estoy intercambiando si yo no tengo nada verdad Entonces no sé si es el si es el login el login si es la el menú del menú o si es este tal cosa tal cosa verdad Ese es pronósticos pronósticos verdad y todo esto está aquí
+Pero si yo no tengo nada de esto, todo esto es el body. ¿Lo ven? Yo lo limito y según esas cosas, ¿verdad? Porque eso lo estoy haciendo general.
+No sé si un poco más claro, tal vez.
+Mhm.
+Exacto.
+
+Adrian Vinicio Chaves Marin   3:00:08
+Profe, en este caso, bueno, la de Login se iba a ir diferente.
+
+LUIS FELIPE MORA UMAÑA   3:00:09
+Check.
+Check.
+
+Adrian Vinicio Chaves Marin   3:00:13
+Es la creo que es la única, porque ya cuando usted está dentro, todas las demás sí son y pueden ser iguales, el mismo, digamos, el mismo machote, por así decirlo.
+
+LUIS FELIPE MORA UMAÑA   3:00:21
+Hmm.
+
+Adrian Vinicio Chaves Marin   3:00:22
+Pero.
+
+LUIS FELIPE MORA UMAÑA   3:00:23
+Sí, prueba.
+Igual no se complique mucho porque para eso hay que meter este hay una vara que se llama autentication verdad y toda la parte de autenticación de usuarios para que no pueda acceder a ciertas páginas desde el bravo sería más no se compliquen con eso y si lo quieren poner ahí de todo bien, verdad.
+O K, este habíamos quedado aquí.
+Entonces, este bam.
+Para el proyecto, este no se compliquen mucho, digamos, este usen Bootstrap y Bootstrap ya hay templates de Bootstrap.
+Entonces, por ejemplo, aquí este vengo aquí.
+Este bus trap template.
+Por ejemplo, este are grips.
+Este.
+¿Sabes qué dice?
+Bueno, por ejemplo, este por aquí está el import, bueno, este si quiero usar este usen este, pero no me gusta tanto.
+
+JUAN FELIPE PEREZ	BEJARANO   3:01:33
+Rem is a bro.
+
+LUIS FELIPE MORA UMAÑA   3:01:34
+Mhm.
+
+JUAN FELIPE PEREZ	BEJARANO   3:01:35
+Igualmente, creo que si uno se mete a la página de Bootstrap como tal, creo que ahí hay como un dropdown donde usted puede ver como todas las.
+Las opciones que tiene de templates para diferentes cosas.
+
+LUIS FELIPE MORA UMAÑA   3:01:49
+Y.
+Bueno, entonces aquí están los macitos.
+Vale.
+Da la parte tanking.
+Como de esta barra de aquí es esta parte layout.
+That's a battle thing.
+Reeps.
+Yeah.
+Ahí lo puede regresar ahí.
+Meterle creatividad al detalle.
+Es que como buen programador backend.
+Soy terrible para todo esto ahora.
+Bueno, entonces aquí está toda la parte, por ejemplo, si quiero productos, aquí la vara, este templates, no sé.
+Esto se agrega ahí la.
+Claro.
+¿Qué este qué más, qué más, qué más, qué más?
+Este de ahí no, ya después de que simplemente empezar a chorrear componentes. Entonces, por ejemplo, vean este voy a hacer algo aquí bastante interesante en este momento.
+¿Dónde este voy a hablar en esto?
+¿Y este?
+Va a ser que un.
+Ahí después este le meto, ahí después se le puede meter estilillo de ahí cosillas, pero este vamos a poner aquí en label.
+
+DANNEL ROBERTO QUESADA SOLANO   3:03:33
+Esa era otra pregunta, pues entonces sí se puede usar templates de HTML.
+
+LUIS FELIPE MORA UMAÑA   3:03:40
+Es lo mismo, es exactamente lo mismo.
+
+DANNEL ROBERTO QUESADA SOLANO   3:03:42
+Okay.
+
+LUIS FELIPE MORA UMAÑA   3:03:43
+Mhm.
+This is the King.
+Yes, I can.
+Okey, ahora aquí le puedo poner el password.
+Ya me lo conoce como password, pero vean aquí es donde viene lo curioso y lo bonito de esto.
+Este yo desde aquí puedo hacer esto, vea.
+Racoat.
+¿Verdad? Y también voy a meter aquí otro if.
+Estoy con.
+Un botón.
+¿Ok, verdad?
+Entonces vean que bonito este.
+Yo le digo aquí este arroba.
+¿Y tengo todos los eventos, verdad?
+Click.
+¿Va a ser igual a este?
+Login.
+Me empezó este, este aquí metieron error de compilación, obviamente, porque la función no existe, ¿verdad?
+Entonces, vean, yo puedo hacer esto, este private.
+String.
+Este name.
+Set.
+Propia cumbre corriente.
+Private string.
+Password.
+Verdad y puedo hacerlo bien aquí.
+Lo ven ya con solo meter una función.
+Ya hermanito lo agarro, creo que me hace falta algo.
+Y me hace falta para que el mae pueda interactuar, yo tengo que ponerle aquí este arroba.
+Render mode.
+siempre se me olvidó.
+¿Este ¿Cómo es que se llama su cochinada?
+Pero lo tengo aquí.
+Mm.
+Este, por ejemplo.
+Esteco Blaze.
+Aquí está.
+Trender mode.
+Interactive server.
+Si yo no le agrego esto, bueno, voy a dejarlo, voy a comentar esto primero.
+Okay, back.
+Yo tengo esto aquí y yo puedo hacer esto, vean que bonito, yo le agarro aquí arroba bind value, ¿verdad? Es un bindeo, bindeme el valor a.
+Arroba name, ahí me salía algo ahí.
+Y aquí le digo bind value the password.
+Que me dice que no está inicializado dentro lo de inicializar como streaming.emp.
+Si es igual hasta impotente.
+Y vámonos.
+Aquí yo puedo poner breakpoint, aquí lo ven.
+Ok, por ejemplo, aquí es el nombre.
+Es aquí.
+Poquito lo de login no pasa absolutamente nada porque el man no está esperando respuestas.
+Pero si yo le digo, no, papi, esta página.
+Va a ser interactiva.
+Esto básicamente es por template, esto siempre lo van a llevar todas las páginas.
+Creo que era aquí nada más que se agregaba, tal vez se agregaba en otro lado, pero no me acuerdo, ahorita nos daremos cuenta.
+Entonces, por ejemplo, vea.
+Este en que otros textos ahí random.
+login Ahora sí lo ven Pero si ustedes ven Qué bonito aquí como tengo este bind value este bind me sirve para vaindear es enlazar verdad yo enlazo el valor a la propiedad nombre yo enlazo el valor a la propiedad nombre lo ven entonces por eso password
+Tiene mi password, lo ven, que bonito.
+Pero de esta forma yo tengo toda esta información y le doy aquí, puedo ahí ejecutar código y lo ven.
+Así de bonito funciona eso.
+Ya ven más o menos por dónde va el asunto.
+Preguntas.
+Comentarios, chistes.
+
+Adrian Vinicio Chaves Marin   3:09:22
+Probé con respecto a las bases de datos.
+
+DANNEL ROBERTO QUESADA SOLANO   3:09:23
+Okay.
+
+Adrian Vinicio Chaves Marin   3:09:26
+Este, pues no sé cualquiera.
+
+LUIS FELIPE MORA UMAÑA   3:09:27
+Oh.
+Sí.
+
+Adrian Vinicio Chaves Marin   3:09:32
+No hay problema, digamos.
+
+LUIS FELIPE MORA UMAÑA   3:09:34
+Sí, no sé, que pueden usar este maic, cuáles y cuáles server postre, no sé.
+Este sí, me dice cuál es el de la ballena.
+Sí, no sé como cuál corre.
+Again.
+
+Adrian Vinicio Chaves Marin   3:09:55
+No es que estaba pensando que en un momento, en algún momento usé una, pero no me acuerdo si era.
+Espero para ver si era.
+
+LUIS FELIPE MORA UMAÑA   3:10:11
+¿Qué hace secuela light?
+
+Adrian Vinicio Chaves Marin   3:10:13
+HP creo que es.
+
+LUIS FELIPE MORA UMAÑA   3:10:16
+Puede mantener en PHP, pero la verdad se va a complicar.
+
+Adrian Vinicio Chaves Marin   3:10:19
+Sí, okey.
+
+LUIS FELIPE MORA UMAÑA   3:10:21
+De un toque.
+Puedo usar ahí en TC framework en vez de PHP para conectarse a la base de datos.
+Más preguntas desde continuar.
+que me preguntas así como yo puedo desarrollar páginas yo puedo desarrollar componentes es exactamente lo mismo y todo aquí por eso está este maestro que se llama componentes Entonces por ejemplo cómo desarrollo yo un componente vean Qué bonito este
+Otro componente aquí.
+Revisar component, este le voy a poner este.
+Draging component.
+Entonces aquí.
+Esto no va a ser un page, entonces no lleva page, pero sí lleva esto.
+Entonces voy a poner aquí esto.
+Voy a pegar esto aquí.
+Me voy a hablar esto.
+¿Para que quede al otro lado y aquí se queda solamente el lo que respecta a login, verdad?
+Eso es como para que sepan que pueden usar componentes reutilizables si la página no va a tener nada y solamente meten eso.
+Pero es más que todo como para el ejercicio didáctico.
+Me voy a hablar esto aquí.
+Y aquí voy a poner este.
+Que hay material, listo, lo ven y lo reconoce aquí como componente, lo ven.
+¿Puedo agregar using si la vara, verdad?
+A este man le puedo poner namespace, no sé, entonces si yo ejecuto esto.
+¿Es lo mismo, verdad? Este un componentes lo que hace es expandir el HTML del otro componente.
+Noe queda exactamente igual.
+Nada más que si lo vemos aquí, bueno, creo que tal vez no lo hice tan claro para que se vea.
+Para que se viera aquí, pero eso es un.
+Bueno, vamos a ver un poquito más claro. este.
+The restaurant diff.
+Y a este le vamos a poner.
+I dean.
+Este.
+Oye.
+Right.
+Pero se me tira ahí los cientos de compilación porque me cerraba las etiquetas.
+Ponent, no sé, component así para que se vea bien redundante.
+Y nos vamos aquí.
+O sea, como yo puedo crear páginas, puedo cogregar componentes también.
+Que quita y este vamos a ir en esos los elementos, lo ven, aquí está el DIF del componentico.
+Así es como yo desarrollo componenticos.
+Guarda y además.
+Ahora sí, voy a desarrollar una página, entonces, por ejemplo, este va a ir acá.
+y voy a ponerle este.
+Main.
+Open L dashboard.
+Para que sea el dash por Danish.
+Ok, entonces aquí simplemente vengo y le pongo aquí este.
+Vamos a poner muy creativo.
+Yo creo que esto aquí no hace falta, pues ya está dentro de la página, pero bueno.
+¿Qué dashboard?
+Okay.
+Entonces.
+Vea, aquí es donde se va a embarrilar un toque, bueno, voy a voy a tratar de embarrilarlo lo menos posible.
+Este.
+Vamos a ponerle aquí este hay servicios verdad eso creo que lo comentamos en una de las revisiones hay servicios hay un pool de servicios ese pool de servicios está dentro del builder que podemos ver aquí lo ven aquí es donde yo le meto todos los servicios que yo necesito utilizar aquí están unos por default
+¿Verdad? Pero este de yo también puedo agregar mis servicios propios.
+Okey, y la forma de utilizar yo esos servicios, yo puedo hacer esto.
+Arrow inject, verdad? Y le pongo aquí.
+Navigation manager.
+¿Y le pongo el nombre navigation manager, verdad?
+Entonces, este.
+Solo de una forma un poquito trial.
+If el name es igual a admin.
+Y el password es igual a password, va a ser lo más pequeño. Paz, voy a llamar a este navigation manager.
+Que tiene la función que se llama navigate to.
+¿Y bueno, vamos a navegar a este, a este mancito, verdad? A esta página de aquí.
+Y si no, la verdad no voy a hacer a bueno, y si no en vez de hacer esto.
+Puede hacer esto, vean este.
+This punto name.
+Igual hacer un punto en ti, punto paso es igual a vacío.
+¿Quiere que ponga breakpoint o lo ejecutamos así?
+Gracias positivo.
+¿Qué entonces este yo vengo aquí y pongo este?
+¿Verdad? Y no pasa nada, se cayó el mancito, ¿verdad? Ahí puedo mostrar una notificación, ¿verdad? Y hay componentes para eso y todo bien este después de eso. este.
+El usuario era admin.
+El padre de la paz.
+Hola.
+Ahora sí va a entrar, lo ven y nos movimos al dashboard.
+Porque simplemente saltamos de página.
+Y así podemos navegar entre las diferentes páginas.
+Así de sencillo, muchachos.
+Y lo hacemos todo a través del servicio Navigation Manager. Este servicio, como pueden ver, es DACpNet Core punto components, ya es parte.
+Preguntas antes de ir con el siguiente upgrade.
+
+ALBERT DAYAN BRENES CARPIO   3:18:27
+A mí me quedó claro lo de la navegación y todo eso, pero lo que no le encuentro diferencia es del component con el con un page, porque al principio hiciste un page, mostraste el login y luego hiciste el component como el login y se ve igual, digamos. Entonces no pude ver la diferencia de para qué nos serviría un component.
+
+LUIS FELIPE MORA UMAÑA   3:18:30
+Mhm.
+Par.
+
+ALBERT DAYAN BRENES CARPIO   3:18:48
+Sí se ve como un page normal, entonces no entendí ese toque.
+
+LUIS FELIPE MORA UMAÑA   3:18:52
+Okey, okey, perfecto, todo bien los componentes. Vamos a ver este a lo que me refería con esa parte es que no solamente todo tiene que ser páginas, ¿verdad? También puedes tener componentes reutilizables.
+¿Verdad? Entre masito. Entonces, por ejemplo, si hay, no sé, si hay formularios que se repiten mucho, lo metes a un componente y simplemente llamas a ese componente ya, ¿verdad? Si hay este, no sé, ese tipo de cosas así, si hay este, no sé, este ciertos campos o ciertos filtros o ciertos cards ahí que usted necesite reutilizar.
+En otros puntos del sistema.
+Reutilizar lo metes como un componente, es como para que sepan que existe esta herramienta de la componentización, ¿verdad?
+No sé, tal vez un poco más claro por ahí.
+
+DANNEL ROBERTO QUESADA SOLANO   3:19:40
+So.
+Fue un componente, puede ser el botón de cerrar.
+
+LUIS FELIPE MORA UMAÑA   3:19:44
+Exacto, es correcto.
+
+DANNEL ROBERTO QUESADA SOLANO   3:19:46
+Que se lo tengo que aplicar a cuanta página haya, entonces mejor lo correo como un componente y simplemente después lo replico.
+
+LUIS FELIPE MORA UMAÑA   3:19:53
+Exacto, exacto, por ahí va.
+Pues simplemente lo que haces es llamar al componente, de hecho yo lo puedo llamar aquí.
+Va a ser exactamente lo mismo, pero dentro del.
+Dentro del dashboard.
+¿Es que aquí dice dashboard, verdad? Y aquí dice home. Bueno, aquí no dice home, ese page title es este.
+Pues aquí este admin vas, vámonos, ahora estamos dentro de dashboard, entonces ese componente se puede reutilizar en play donde se necesite.
+Es un poco más claro, Adrián Albert.
+
+ALBERT DAYAN BRENES CARPIO   3:20:42
+sí, todavía.
+
+LUIS FELIPE MORA UMAÑA   3:20:43
+sí, no lo pego, sí, sorry, algún día lo va a pegar, ma, perdón, perdón.
+
+ALBERT DAYAN BRENES CARPIO   3:20:45
+Todo bien, todo bien. Si ya con ese con esa explicación que digo, digamos de que uno puede como llamar al component donde quiera que lo donde sea que lo necesite, ya tiene más sentido. Acá no vi la diferencia porque tal vez el login de solo se usaría, tal vez al principio no hay necesidad como de llamarlo o al menos no veo.
+
+LUIS FELIPE MORA UMAÑA   3:20:55
+Mhm.
+
+ALBERT DAYAN BRENES CARPIO   3:21:04
+La necesidad de llamarlo después, tal vez por eso fue que no me quedó tan claro al principio, pero ya lo entendí, todo bien.
+
+LUIS FELIPE MORA UMAÑA   3:21:11
+Mhm.
+Vas por ejemplo, vamos a ver.
+No sabes algo aquí si es ahora carga algún día.
+Por ejemplo, este a ver 1 segundo.
+Es para ver.
+Por ejemplo, aquí ya casi los comparto.
+Esta parte del BC Loader. El BC Loader es la página esta de carga que se muestra, cuando algo está cargando, que carga y carga y carga. Entonces aquí simplemente tenemos el BC Loader.
+Entonces se puede componentizar el para que sea siempre el mismo.
+Pues sí, que esta no, si esa hora no se quedará pegado, pero podría haber.
+Entonces aquí tenemos el viciolador de teletic donde le metemos aquí el texto, verdad que el texto viene por parámetro.
+Entonces se le puede poner aquí como no sé, cargando registros, cargando usuarios, cargando información personal, cargando no sé qué, verdad. Y le va a salir el maestro aquí porque lo llama desde este punto de vista.
+¿Qué y depende del maecito, verdad? Y vamos dando, verdad? Por ejemplo, aquí tenemos este.
+Daisy.
+Sí, el target es nulo, ¿verdad? Entonces tiramos uno normal.
+¿Y si el target tiene un valor de tiremoslo ahí basado con el con el child content, verdad?
+Entonces aquí está toda la barra.
+Este shell content es una vara fresísima, pero eso lo vamos a ver después.
+Porque es como yo puedo meter hijos dentro de un HTML.
+Pues y aquí está el código, no hay mucha ciencia por aquí.
+Entonces eso es lo que puedo hacer por aquí. o K, entonces ahora este ya yo tengo un montón de controllers, ya tengo un montón de cosas. este Bueno, más preguntas, por cierto, no sé si que si algo si hay algo más que ande por ahí.
+Eric, ¿cómo vamos? ¿Todo bien hasta acá?
+
+ERICK ANDRES DELGADO ARAYA   3:23:39
+Todo en parte, sí, todo claro.
+
+LUIS FELIPE MORA UMAÑA   3:23:44
+¿O K, Ariadne, ¿cómo vamos?
+
+ARIADNY MARIA NUÑEZ GODINEZ   3:23:49
+Bien, profe, ahí vamos agarrándole, tal vez cuando yo me pongo a hacerlo, ya lo agarre más.
+
+LUIS FELIPE MORA UMAÑA   3:23:55
+Sí, pues.
+
+ARIADNY MARIA NUÑEZ GODINEZ   3:23:55
+Good boy.
+
+LUIS FELIPE MORA UMAÑA   3:23:57
+Okey.
+Vean, aquí tengo todas las mismas etiquetas que tengo de HTML, tengo un A, tengo un BR, tengo un área, tengo un article B, no sé qué, tengo mi componente, ¿verdad? Tengo el main ladi out, tengo el cascar invalido.
+Este el dashboard.
+Data notations, ¿verdad? Hay componentes de SP Net, ¿verdad? Que podemos utilizar el Edge Form. A mí no me gusta para nada este Edge Form, porque eso es lo que hace es hacer que se caigan las aplicaciones, pero es otro tema. Este tengo los HS, tengo el head, el head content header, home.
+Importe el input checkbox, lo ven, esto es lo mismo, la misma vara, pero es de SP Net, lo ven que ya son como controlcillos ahí nativos que nos da el mismo framework.
+Por nomber, inputaria, layout view, este mi componentico, el menú, el menú item.
+Toda la parte del autorize, verdad que era lo que les mencionaba para poder autenticar el usuario que puede el navlink. No sé, hay un montón de componentes. Todos los componentes están en la documentación oficial de.
+De esta árabe.
+De Teleric, Teleric, Sorry, DC Peneto.
+Ya me imaginas de que os pecado ahora sí.
+Entonces podemos utilizar ahí varias cosillas, incluso allá está un grita y el más bonito.
+Pero bueno.
+Entonces así más o menos va la rosa que como les mencionaba, ya tenemos toda la lógica que nos corre login, verdad? Entonces simplemente que tenemos que hacer llamarla. Vamos a agregar una referencia.
+Al proyecto, el controller.
+y aquí hay dos opciones vean aquí yo puedo crear los servicios o puedo crear los maecitos verdad muy similar a como los cree aquí lo ven donde yo creo el controller le paso el handler verdad le paso toda la vara aquí y vámonos verdad y es justo verdad pero pasa eso que hablaba con Alberde el otro día verdad vas a tener que estar regando por
+todo lado la declaración de controles. Puedo meter un singleton o simplemente puedo meter un servicio. Como esto es MADWeb, aquí puedo meter un servicio, digamos, ya el mismo framework me habilita toda la parte de los servicios. Voy a necesitar también los modelos
+Porque ya vi la declaración del mae.
+¿Entonces, qué hago aquí? Simplemente vengo.
+Por ahí le digo este.
+Builder.
+¿Atos services, verdad? Entre los servicios.
+Y aquí hay un montón de cosas que puedo hacer, luego un montón de cochinazos.
+Pero lo que me interesa a mí en este momento, ¿verdad? Es este.
+Hacer esto, yo puedo agregar servicios de diferente 3 diferentes formas. Aquí puedo agregar un singleton, lo ven.
+¿Puedo agregar un app scope?
+O puedo agregar un AND trascient. ¿Cuál es la diferencia entre los tres? El singleton va a vivir para toda la aplicación, es un singleton. Entonces siempre va a estar ahí, va a tener los mismos datos, va a tener consistencia de datos y va a tener toda la vara ahí. El scope.
+me lo va a hacer por sesión. Las sesiones son simplemente por taps, por decirlo así, digamos, yo tengo un tap y otro, abro un tap del browser ahí y me meto al mismo a la misma página, una va a tener unos valores de un lado y otros valores en el otro tap, porque son sesiones diferentes. O si yo en mi máquina estoy usando la página y Tyrone está usando en la máquina de la misma página.
+Este son sesiones diferentes, entonces este para eso usamos el scope para información que de información que no puede ser compartida entre mi máquina y la tyron, ¿verdad? Porque son como son de propias de la sesión y el trascend.
+Es uno que este lo que hace es esto. Cuando yo llamo el servicio, el mal crea una instancia. Cuando yo dejo usar el servicio, el mal la remueve.
+Entonces simplemente como para poder hacer un uso más responsable de la memoria. Si yo voy a tener un servicio que me hace ciertos cálculos de simplemente lo agrego como un 300, ¿verdad? Entonces lo llamo, ejecuto, termino de ejecutar, el mae se muere. Si es algo por sesión, ¿verdad? Como por ejemplo, si yo quiero almacenar.
+¿Mi usuario, verdad? O el o un usuario en la sesión, entonces lo agrego como un at scope. Si yo quiero cargar toda la lista de usuarios, ¿verdad? Y que esté disponible para todos, porque igual eso no va a variar, ¿verdad? O eso sí varía, es importante. Entonces yo lo hago un singleton. OK.
+Entonces en este caso voy a agregarlo como singleton.
+Todo en 6, sí.
+Este aquí yo le puedo decir. este.
+Yo ser con.
+User controller.
+¿Verdad que me agrega el using allá arriba?
+Estimated to us to.
+Pero para, porque no me acuerdo este tipo de nervios aquí, total ajá.
+Este maestro tiene una sobrecarga, yo le digo aquí.
+Esto es porque es un servicio ahí medio porque tiene dependencias, él hizo el controller.
+En ese data handler, aquí lo ven, entonces yo necesito inyectarle el data handler.
+Entonces, este atahandle yo se lo inyecto.
+Si no me equivoco, dame 1 segundo para ver algo porque siempre se me olvida.
+A single tongue, huh?
+Send it is.
+Ok, este es el que me sirve.
+Este matic talkie.
+¿Este me va a crear uno genérico, verdad? Pero yo no necesito que sea uno genérico, yo sé que yo necesito que sea uno específico. Entonces yo puedo agregar aquí este y ya se me olvidó cuál era, qué pereza.
+Viendo terrible.
+Mhm ven que aquí está la parte del público instructors.
+Pero.
+Me interesa.
+So it is.
+Type implementation.
+At Singleton's EP's type.
+Implement factory.
+Sí, entonces, si no me equivoco, que probablemente sí me equivoque.
+Voy a hacer esto.
+China, entre ahí, vamos a ver si me lo lee así.
+Este.
+No es el control, era.
+Pero a recibir.
+New.
+And handler.
+De tipo yo, será.
+¿Cierro este, cierro este, pero no cierro este qué?
+Creo que así. Ahí me va a reventar cuando cuando lo levanto va a reventar. Pero eso es porque este madecito necesita este. Si fuera un mae, digamos, este único, si no tuviera alguna, pero yo necesito que se inicialice así, yo necesito inyectar esta dependencia. Pero si fuera genérico, simplemente este no hace falta esto, simplemente va.
+Y se va por el constructor default. Siempre tiene que haber un constructor. Entonces, este por ahí va. OK, entonces este yo me vuelvo aquí a login component y le digo, vean qué bonito.
+A Robinjekt, este bueno, si quiero alguien que meter varas de JavaScript, yo puedo meter JavaScript aquí, pero el JavaScript de Interrupt no es tanto Anis.
+Este, o sea, el control era.
+User controller.
+Okey, me revienta claramente porque lo tengo el using.
+Bueno.
+Entonces aquí es donde yo vengo.
+Y le digo este.
+Bar resulta porque no me acuerdo cómo era la vara.
+Se iguala y es el controller. punto.
+¿Crees el controller?
+Mover a login controller china.
+Era alguien control que tenía que meter sobre eso, se me fue, se me fue la pájara.
+Entonces, este.
+Login Controller.
+Sí, el cero cero.
+Ajá.
+Esto obviamente se puede reestructurar para que quede más bonito sin hacer todos estos news, porque ya tenemos este otro tipo de paradigma, pero yo no me voy a complicar ahorita en hacer esto, yo necesito que este mae queda disponible.
+Entonces voy a volver acá y le voy a decir.
+Login controller.
+Lo que hay que pegar la máquina.
+Voy a encontrar.
+Aquí le digo login punto.
+Y si no me equivoco, usted me volvió boleano.
+Ven porque es importante la documentación.
+A goes time.
+De esta forma puedo usar el controlador.
+Entonces va a poner un break cuenta aquí nada más por si acaso.
+Creo que ahora Glen, no entra como que.
+Entonces llego aquí.
+Stress.
+Login lowing.
+Aquí tengo mi logincito, mi login controles que ya lo inyecté.
+Yo tengo mis cuatro usuarios que si no me equivoco, el 2 era Kendall.
+Lo siguiente.
+Siguiente login, llevamos al dashboard.
+Sí.
+Ya tengo todo esto por aquí.
+Voy a meter por aquí.
+Este, MS, By the key control D.
+Administers.
+Porque también voy a necesitar unas.
+Think.
+Eso no es necesario probar.
+Aquí agrego este mes y yo tengo servicio para el user controller, un singleton para el user controller.
+Okay.
+Hay una forma donde yo inyecto todos estos servicios por separado.
+Y el ma detecta cuáles servicios están y los inyecta donde es requerido, pero la verdad ahorita no me acuerdo, es más, vamos a hacer la pruebita a ver.
+Hola todo esto.
+Vamos a ver si no mal recuerdo o si recuerdo mal.
+O K, no rento.
+Y este ya se me olvidó creer el nombre.
+Porque los agarra como leguitos y si está disponible, entonces los inyecta.
+Vamos a ver.
+Aquí está, lo ven, sí, el magarro ese servicio que yo metí.
+Y se lo pasó al constructor. El vamos a ver, el framework entiende que ya hay un servicio y que si él necesita este maecito, lo voy a tomar de los servicios ya de forma este implícita. Si yo no declaro.
+Ese servicio antes, si yo no declaro este servicio de aquí antes para hacer es pedazo.
+Okay.
+Entonces lo va construyendo en base a esto, porque si ustedes ven, esto no ha cambiado, siempre necesito un.
+¿Cuál es el único constructor que tengo, entonces él siempre va a pasar por aquí?
+O sea, ya es un sabor sintáctico, ahí ya es un hotel más chugger en la barra.
+Okay.
+Vamos a darle continuo.
+Sí, estamos en dashboard, se me olvidó.
+Sí, ahora sí, qué les parece muchachos toda esta parte.
+Bien, mal, tal vez fácil, puede explicar de nuevo.
+
+TAYRON ALONSO SALAS NUÑEZ   3:40:02
+No es curioso, se entiende, pero puede ser como interiorizarlo, no sé.
+
+LUIS FELIPE MORA UMAÑA   3:40:08
+Sí, al final es eso, ¿verdad? Este yo construyo una colección de servicios este para que ustedes se lo yo me lo imagino así, digamos, tal vez ustedes luego un poquito ahí más científico que yo, pero yo a esa vara lo veo.
+Lo veo literal como un saco.
+Entonces aquí en el saquito yo voy metiendo saquitos pequeños.
+Guarda.
+¿Qué este este?
+Este.
+No sé, otro de estos, entonces aquí está el login.
+Aquí está el user.
+Aquí está el no sé.
+Incluso es el file hundred pero el file a sí me gusta más que sea así, este no sé este.
+Baby 2.
+Service 3.
+Service 70.
+Entonces todo eso es un pool de servicios que yo puedo simplemente en el momento que yo quiera.
+Lo agarro, lo saco.
+Consulto, ejecuto, verdad, las operaciones y él va a seguir ahí.
+Al final es un pool de servicios.
+
+TAYRON ALONSO SALAS NUÑEZ   3:41:26
+Algo así como lo peques.
+
+LUIS FELIPE MORA UMAÑA   3:41:30
+Más o menos, más o menos, porque son objetos vivos, son objetos vivos en memoria, de los cuales tienen datos y tienen valores y yo puedo consultar.
+Puede darse como una biblioteca, pero no lo quiero que lo confundan con las librerías de código.
+
+TAYRON ALONSO SALAS NUÑEZ   3:41:47
+No, más que todo como para irlo relacionando.
+
+LUIS FELIPE MORA UMAÑA   3:41:49
+Sí, eso es un puede ser un saco de leguitos, lo ven entonces este leguito.
+Se complementa con este otro.
+Line.
+Puede que este otro se complemente con este.
+Y este se complementa con este. Entonces, a partir de este creo estos 3. Eso sí, tienen que estar definidos, ¿verdad? En orden de necesidad, por decirlo así, ¿verdad? ¿Qué voy a necesitar primero? Que lo declaro primero y a partir de ahí ya los puedo sacar y tengo servicios para toda la aplicación.
+Okay.
+Más preguntas.
+Glenco lo es.
+¿Qué bien, Adrián, cómo vamos?
+Adriana ando viendo la Central América Champions Cup.
+La copa que ahora sí vale, pero antes no valía, pero cuando quede en fuera sí va a valer, no va a valer otra vez.
+Game.
+Entonces este voy a quitar esto de aquí porque ya me estaba confundiendo.
+Y voy a agregar aquí este.
+I.
+¿Cuál de todos quieren ver?
+Tengo samples, tengo este ranking y tengo user maintenance.
+No sé cualquier ver.
+
+DANNEL ROBERTO QUESADA SOLANO   3:43:38
+Because with the ranking, but this is the key.
+Hay que meter el buen músculo ahí.
+
+LUIS FELIPE MORA UMAÑA   3:43:43
+The ranking.
+Ok, es simplemente un grit y este otro maecito aquí está.
+Entonces, este vamos a poner aquí.
+¿A hacer un nuevo page, verdad?
+Y le vamos a poner.
+The ranking component.
+Hay una esteem.
+Hay un principio ahí que todos estos varos se deberían llamar componentes.
+Al final, la más que todo pura.
+Este ranking.
+Ya se quedó pegado.
+Aquí este.
+Title ranking.
+Aquí.
+ya vi por qué lo escribí malo.
+Este top scores.
+Esto probablemente me haya traer problemas.
+Okay, ahí está.
+Ya tengo el ranking.
+Entonces para el ranking, ¿qué necesito? Necesito un service, necesito el ranking controller, ¿verdad? Entonces como necesito el ranking controller, necesito inyectar el ranking controller, ¿verdad? ¿Qué necesitaba el ranking controller?
+El backing controller, pero ya me perdí.
+Este aquí está.
+A su bonito, solamente ocupa el user control.
+Entonces este así como era este o darle control de.
+Y le meto el ranking controller.
+Entonces aquí la misma ciencia.
+Este.
+Arrow inject.
+Point.
+Ranking component.
+Y.
+Members' names cannot be designed as their inclusion type.
+¿Haces controller? Sí, cierto, le puse component.
+Y aquí ya tengo aquí esta.
+Tengo el título.
+Tengo el top scorers.
+Y aquí simplemente vean.
+Una cosa importante.
+Hay momentos en esta vara, así como habían eventos en Wingfrons, también aquí hay eventos, y también hay ciclo de vida. Los forms tienen ciclos de vida, verdad. Entonces yo puedo hacer en el on inicialize que es cuando la aplicación inicializa, verdad, cuando carga la, cuando el componente se inicializa, puedo hacer un on render, verdad. Entonces ahí cuando el más está
+Aprendereando o no sé qué, tengo ahí varios este.
+Varios maecitos ahí donde yo puedo cargar información, verdad que este, por ejemplo, vamos a ver, vean.
+Este.
+Play Sora.
+Por ahí lo tengo alguna presentación, pero siempre se me olvida.
+Entonces mejor lo dejamos de la documentación.
+Aquí está, lo ven, tengo el inicial, edición para meter set, se renderan render.
+Sí, este sí, esos 2 eran solo esos 2.
+Así el un after render, verdad, que es cuando se termina de renderizar algo set para meter así, que es cuando se setean los parámetros y este.
+No mucho.
+No son muchísimos, tampoco son como cuatro, digamos.
+Pero sí, y todos este sincronos y asincronos, perdón.
+Pero sí.
+Está entonces yo puedo operar y ejecutar a partir de algún momento. Esos son parámetros. Yo solo puedo meter un parámetro al componente.
+Entonces, este vamos a ver.
+No sé si quieres después vemos parámetros ahí.
+Entonces aquí voy a necesitar un grip.
+Este.
+Sí, creo que ocupa un grip.
+Lo puedo ver un poco diferente.
+Pero DIF bueno, pues si no le he metido este.
+No le metió Ostrap.
+Que parecía, mete luz, bueno, ahorita le ahorita metemos bostra, pero bueno, este.
+Y.
+Sí.
+Me leí era, a mí siempre se me olvida esta barra.
+Y como ustedes podrán ver, yo no soy el programador más gato de Wepa.
+todos siempre se olvidan todos ahora todas las etiquetas y todo eso que así es que porque usualmente vamos a ver si bien es bonito usar este html y toda la vara verdad este hay cositas ahí que esta cochinada hay cosillas ahí que uno siempre hace con con componentes digamos para eso está tele y que para eso está este
+No sé el resto, entonces la verdad es que no ocupa así como.
+Como muchos más mayores este.
+Sí, ese que sea así, se ven a este compa mío.
+Does the king?
+En 3 CCS, que bien bonito.
+Yo voy a meter el table, pero aquí donde mete el table.
+Es donde voy a meter.
+Toda la magia.
+Pick.
+Entonces este yo tenía aquí y eso estaba.
+En esta cochinada. en el.
+En el view.
+Ya se me olvidaron hasta las columnas.
+No, recargo el queso.
+Tengo name y tengo score, no, casi me da un derrame este name.
+Y escort.
+¿Qué son los hairs?
+Y este aquí es donde viene la que es donde viene la ciencia, vea, me voy a hablar toda esta hora de aquí.
+Bajar uno porque yo sé que se me va a olvidar.
+Entonces voy a meter esto bien arroba.
+Forish.
+Este maestro tenía la función.
+Ranking Controller.
+Punto.
+Get ranking by score.
+I move it.
+¿Quieres, ahora sí? No, Get Top T, Score.
+Past.
+Adiós que tenía que llamar.
+Entonces un td, un td, tr. ¿Qué va a hacer esto? Él va a ir aquí. Ta ta ta va ejecutando y dice OK item1 name score item2 ta name score y así y así podemos este simplificar toda esta parte de la implementación.
+¿Entonces con eso ya debería estar aquí, ahora qué me falta?
+Me falta.
+El acceso a este mae.
+Entonces yo voy a hacer esto y voy a meter un.
+H vaya, H ref.
+Hay una cherry for a star.
+No.
+Buenas tardes, un montón de cochinadas.
+Lo único que me acuerdo siempre es de la imagen.
+Y aquí le vamos a poner a no, el HRF es el parámetro chinada.
+Este link href y lo voy a poner aquí este el slash.
+Ranking, creo que le puse el farm.
+Creo que era así, siempre se me olvidas.
+Solo ranking.
+Sí.
+Ya nos daremos cuenta.
+Programación en vivo muchachos.
+¿Esto lo puedo hacer así o simplemente meto un botoncito, verdad?
+Cualquiera de las 2 al final.
+No es lo mismo.
+Pero es lo mismo al mismo tiempo.
+No es lo mismo porque no es lo mismo moverse, digamos dentro de la misma lógica que ya tienen los macitos de aquí.
+A este.
+Aquí está.
+No, recongeling styles.
+123.
+Los.
+Ese recto me lo debería quitar.
+Porque ya busqué era lo que pasaba ahí.
+Dashboards y se fue el higo, no salió.
+Qué raro, aquí están.
+Es porque no sale, o sea, bueno, le puse texto.
+Bueno.
+Voy a hacerlo a la antigüita.
+Este arroba.
+Inject.
+Navigation Manager, Navigation Manager.
+¿Qué hacemos en la Gatorrent?
+Vamos hacia la página del ranking, ahora sí.
+Creo que van a salir pegados, que pereza.
+A mí es ahora estar acomodando las cajitas y que una cajita aquí, que una cajita allá.
+No sé como buen programador backend.
+No me cuadra, me da pereza eso, para eso están los diseñadores.
+Y go to ranking, como podemos ver, aquí está el ranking.
+¿Qué tal lo vio, Anel?
+
+DANNEL ROBERTO QUESADA SOLANO   3:56:51
+En realidad, un consuelo ver que no somos los únicos a los que nos pasa.
+
+LUIS FELIPE MORA UMAÑA   3:56:59
+sí.
+
+DANNEL ROBERTO QUESADA SOLANO   3:56:59
+Pero.
+Ay, pero sí está sencillo, pero el cuidado también.
+
+LUIS FELIPE MORA UMAÑA   3:57:06
+Es tener mucho cuidado puramente, vamos a lo mismo este.
+Muchachos, no se pongan creativos, usen lo que saben usar. Si tienen tiempo, ahí sí, pónganse en creativos, exploren, saquen, ¿verdad? Pero si no tienen tiempo, simplemente un botoncito, ahí está, es la misma función y listo.
+Verdad, yo sí, yo soy muy pragmático de esas cosas, pero usted ya está el maestro aquí entonces este no sé aquí ya.
+Es donde empieza a jugar esta área, yo le puedo decir el más este.
+Vamos a ver, bueno, es que este man no lo metí entre un DIF, tenía que haberlo metido entre un DIF.
+Pero bueno.
+Vamos a meterlo entre un DIF.
+Este no sé si está en Tront Diff.
+Live class.
+Este.
+Table class.
+Yes, there.
+Pay por class.
+Y le pongo aquí un margin.
+When the back is...
+Le pongo un padding de 20x.
+Como para que no salga así tan feo, digamos que sale así como de lado a lado, es una tablita demasiado grande para.
+Es una tablita demasiado pequeña para hacerla tan gigante, no tiene tanto sentido.
+Vamos de nuevo.
+Aquí, ajá, unos 3 vámonos por ranking y no le dio la gana.
+No, sí lo ven, pena chiquitico lo agregó.
+Buscar aquí está table class.
+Entonces, si yo quiero venir aquí.
+Porque no me agregó el margin.
+¿Será que vamos a ver?
+
+TAYRON ALONSO SALAS NUÑEZ   3:59:26
+En esos casos habría que meterlo como un contenedor para poderlo mover.
+
+LUIS FELIPE MORA UMAÑA   3:59:31
+No, porque en teoría sí está dentro de un contenedor, para eso le puse el DIF.
+Ese es el style que inyecta ahí, ese es el table class, lo es.
+Y me agrego estos marencitos aquí.
+Estoy por clase, entonces vamos a ponerle aquí en margen de.
+Este es 50.
+Y aquí otro de Ascas.
+Sinquent.
