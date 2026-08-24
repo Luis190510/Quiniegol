@@ -56,8 +56,39 @@ namespace Quiniegol.Views
             }
 
             SesionUsuarioService.IniciarSesion(usuario);
+            MostrarNotificacionesPendientes(usuario);
             DialogResult = DialogResult.OK;
             Close();
+        }
+
+        private void MostrarNotificacionesPendientes(Usuario usuario)
+        {
+            List<NotificacionPronosticoItem> pendientes =
+                new NotificacionPronosticoController()
+                    .ObtenerPendientes(usuario);
+            if (pendientes.Count == 0)
+            {
+                return;
+            }
+
+            string detalle = string.Join(
+                Environment.NewLine,
+                pendientes.Select(pendiente =>
+                    $"• {pendiente.FechaHora:dd/MM/yyyy HH:mm} - " +
+                    pendiente.Partido));
+            string encabezado = pendientes.Count == 1
+                ? "Tiene 1 partido sin pronosticar en las próximas 24 horas:"
+                : $"Tiene {pendientes.Count} partidos sin pronosticar " +
+                  "en las próximas 24 horas:";
+
+            MessageBox.Show(
+                this,
+                $"{encabezado}{Environment.NewLine}{Environment.NewLine}{detalle}" +
+                $"{Environment.NewLine}{Environment.NewLine}" +
+                "Las horas se calculan usando la fecha simulada.",
+                "Pronósticos pendientes",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
