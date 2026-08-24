@@ -85,5 +85,19 @@ namespace Quiniegol.Controllers
                 contrasena
             );
         }
+
+        /// <summary>
+        /// Sustituye la contraseña temporal antes de iniciar la sesión definitiva.
+        /// </summary>
+        public Usuario CompletarCambioObligatorio(
+            int usuarioId,
+            string contrasenaTemporal,
+            string nuevaContrasena)
+        {
+            return _usuarioController.CompletarCambioObligatorio(
+                usuarioId,
+                contrasenaTemporal,
+                nuevaContrasena);
+        }
     }
 }

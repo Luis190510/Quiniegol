@@ -36,6 +36,25 @@ namespace Quiniegol.Views
                 return;
             }
 
+            if (usuario.DebeCambiarContrasena)
+            {
+                using FrmCambioContrasena cambio = new(
+                    _loginController,
+                    usuario,
+                    txtContrasena.Text);
+                if (cambio.ShowDialog(this) != DialogResult.OK ||
+                    cambio.UsuarioActualizado == null)
+                {
+                    lblError.Text =
+                        "Debe cambiar la contraseña temporal para ingresar.";
+                    txtContrasena.Clear();
+                    txtContrasena.Focus();
+                    return;
+                }
+
+                usuario = cambio.UsuarioActualizado;
+            }
+
             SesionUsuarioService.IniciarSesion(usuario);
             DialogResult = DialogResult.OK;
             Close();

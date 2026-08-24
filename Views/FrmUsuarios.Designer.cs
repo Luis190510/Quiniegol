@@ -19,6 +19,8 @@ namespace Quiniegol.Views
             lblTitulo = new Label();
             btnRegistrar = new Button();
             dgvUsuarios = new DataGridView();
+            btnRestablecer = new Button();
+            btnCambiarEstado = new Button();
             btnCerrar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
@@ -50,18 +52,42 @@ namespace Quiniegol.Views
             dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsuarios.Location = new Point(24, 72);
+            dgvUsuarios.MultiSelect = false;
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.ReadOnly = true;
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUsuarios.Size = new Size(873, 372);
             dgvUsuarios.TabIndex = 2;
+            dgvUsuarios.SelectionChanged += dgvUsuarios_SelectionChanged;
+            //
+            // btnRestablecer
+            //
+            btnRestablecer.Enabled = false;
+            btnRestablecer.Location = new Point(24, 459);
+            btnRestablecer.Name = "btnRestablecer";
+            btnRestablecer.Size = new Size(200, 30);
+            btnRestablecer.TabIndex = 3;
+            btnRestablecer.Text = "Restablecer contraseña";
+            btnRestablecer.UseVisualStyleBackColor = true;
+            btnRestablecer.Click += btnRestablecer_Click;
+            //
+            // btnCambiarEstado
+            //
+            btnCambiarEstado.Enabled = false;
+            btnCambiarEstado.Location = new Point(236, 459);
+            btnCambiarEstado.Name = "btnCambiarEstado";
+            btnCambiarEstado.Size = new Size(174, 30);
+            btnCambiarEstado.TabIndex = 4;
+            btnCambiarEstado.Text = "Desactivar cuenta";
+            btnCambiarEstado.UseVisualStyleBackColor = true;
+            btnCambiarEstado.Click += btnCambiarEstado_Click;
             //
             // btnCerrar
             //
             btnCerrar.Location = new Point(793, 459);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(104, 30);
-            btnCerrar.TabIndex = 3;
+            btnCerrar.TabIndex = 5;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
@@ -72,6 +98,8 @@ namespace Quiniegol.Views
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 511);
             Controls.Add(btnCerrar);
+            Controls.Add(btnCambiarEstado);
+            Controls.Add(btnRestablecer);
             Controls.Add(dgvUsuarios);
             Controls.Add(btnRegistrar);
             Controls.Add(lblTitulo);
@@ -86,6 +114,8 @@ namespace Quiniegol.Views
         private Label lblTitulo = null!;
         private Button btnRegistrar = null!;
         private DataGridView dgvUsuarios = null!;
+        private Button btnRestablecer = null!;
+        private Button btnCambiarEstado = null!;
         private Button btnCerrar = null!;
     }
 }
