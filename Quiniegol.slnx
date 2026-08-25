@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../BlazorApp1/Blazor_Quiniegol.csproj" Id="269a6517-3eaf-4023-9f7a-038be09c596f" />
   <Project Path="Quiniegol.csproj" />
   <Project Path="Tests/Quiniegol.Tests/Quiniegol.Tests.csproj" />
 </Solution>
