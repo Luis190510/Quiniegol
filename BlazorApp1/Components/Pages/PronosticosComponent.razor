@@ -1,0 +1,315 @@
+﻿@page "/pronosticos"
+@rendermode InteractiveServer
+
+<PageTitle>Pronósticos</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado de la página *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Pronósticos
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Ingresa el marcador que esperas para cada partido.
+        </p>
+
+    </div>
+
+    @* Mensaje generado por las acciones *@
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje alert-dismissible fade show"
+             role="alert">
+
+            @Mensaje
+
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarMensaje">
+            </button>
+
+        </div>
+    }
+
+    @* Resumen de pronósticos *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Partidos disponibles
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadDisponibles
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Pronósticos guardados
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadGuardados
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Pronósticos pendientes
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadPendientes
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Lista de partidos disponibles *@
+    <div class="row g-4">
+
+        @foreach (var partido in Partidos)
+        {
+            <div class="col-12 col-xl-6">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header d-flex justify-content-between align-items-center">
+
+                        <span>
+                            @partido.Fase
+                        </span>
+
+                        @if (partido.Disponible)
+                        {
+                            <span class="badge text-bg-success">
+                                Disponible
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge text-bg-secondary">
+                                Cerrado
+                            </span>
+                        }
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="text-center text-secondary">
+                            @partido.Fecha.ToString("dd/MM/yyyy HH:mm")
+                        </p>
+
+                        <div class="row align-items-center text-center g-3">
+
+                            @* Equipo local *@
+                            <div class="col">
+
+                                <h5>
+                                    @partido.EquipoLocal
+                                </h5>
+
+                                <input type="number"
+                                       min="0"
+                                       max="20"
+                                       class="form-control text-center"
+                                       aria-label="Goles del equipo local"
+                                       disabled="@(!partido.Disponible)"
+                                       @bind="partido.GolesLocal" />
+
+                            </div>
+
+                            <div class="col-auto">
+
+                                <span class="fw-bold">
+                                    VS
+                                </span>
+
+                            </div>
+
+                            @* Equipo visitante *@
+                            <div class="col">
+
+                                <h5>
+                                    @partido.EquipoVisitante
+                                </h5>
+
+                                <input type="number"
+                                       min="0"
+                                       max="20"
+                                       class="form-control text-center"
+                                       aria-label="Goles del equipo visitante"
+                                       disabled="@(!partido.Disponible)"
+                                       @bind="partido.GolesVisitante" />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer bg-white">
+
+                        @if (partido.PronosticoGuardado)
+                        {
+                            <div class="alert alert-success py-2 mb-2 text-center">
+                                Pronóstico guardado:
+                                @partido.GolesLocal - @partido.GolesVisitante
+                            </div>
+                        }
+
+                        <button type="button"
+                                class="btn btn-primary w-100"
+                                disabled="@(!partido.Disponible)"
+                                @onclick="() => GuardarPronostico(partido)">
+                            Guardar pronóstico
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+@* Datos temporales para construir y probar la interfaz.
+   Posteriormente se cargarán desde partidos.json y pronosticos.json. *@
+@code {
+    private string Mensaje { get; set; } = string.Empty;
+
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    private List<PartidoPronosticoVista> Partidos { get; set; } =
+    [
+        new()
+        {
+            EquipoLocal = "Costa Rica",
+            EquipoVisitante = "Brasil",
+            Fecha = new DateTime(2026, 6, 15, 18, 0, 0),
+            Fase = "Fase de grupos",
+            Disponible = true
+        },
+        new()
+        {
+            EquipoLocal = "Argentina",
+            EquipoVisitante = "España",
+            Fecha = new DateTime(2026, 6, 16, 20, 0, 0),
+            Fase = "Fase de grupos",
+            Disponible = true
+        },
+        new()
+        {
+            EquipoLocal = "Francia",
+            EquipoVisitante = "Alemania",
+            Fecha = new DateTime(2026, 6, 14, 17, 0, 0),
+            Fase = "Fase de grupos",
+            Disponible = false,
+            GolesLocal = 2,
+            GolesVisitante = 1,
+            PronosticoGuardado = true
+        }
+    ];
+
+    private int CantidadDisponibles =>
+        Partidos.Count(partido => partido.Disponible);
+
+    private int CantidadGuardados =>
+        Partidos.Count(partido => partido.PronosticoGuardado);
+
+    private int CantidadPendientes =>
+        Partidos.Count(partido =>
+            partido.Disponible &&
+            !partido.PronosticoGuardado);
+
+    private void GuardarPronostico(
+        PartidoPronosticoVista partido)
+    {
+        if (!partido.Disponible)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "Este partido ya no acepta pronósticos.";
+            return;
+        }
+
+        if (partido.GolesLocal < 0 ||
+            partido.GolesVisitante < 0)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "Los goles no pueden ser negativos.";
+            return;
+        }
+
+        partido.PronosticoGuardado = true;
+
+        ClaseMensaje = "alert-success";
+
+        Mensaje =
+            $"Pronóstico guardado: {partido.EquipoLocal} " +
+            $"{partido.GolesLocal} - {partido.GolesVisitante} " +
+            $"{partido.EquipoVisitante}.";
+    }
+
+    private void CerrarMensaje()
+    {
+        Mensaje = string.Empty;
+    }
+
+    private sealed class PartidoPronosticoVista
+    {
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public string Fase { get; set; } = string.Empty;
+
+        public int GolesLocal { get; set; }
+
+        public int GolesVisitante { get; set; }
+
+        public bool Disponible { get; set; }
+
+        public bool PronosticoGuardado { get; set; }
+    }
+}
