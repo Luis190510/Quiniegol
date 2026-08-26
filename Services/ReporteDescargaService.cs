@@ -1,10 +1,12 @@
 using System.Text;
+using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
 using Quiniegol.Models;
 
 namespace Quiniegol.Services
 {
     /// <summary>
-    /// Convierte los reportes visibles en archivos CSV o TXT codificados en UTF-8.
+    /// Convierte los reportes visibles en archivos CSV, TXT o PDF.
     /// </summary>
     public static class ReporteDescargaService
     {
@@ -52,6 +54,50 @@ namespace Quiniegol.Services
         {
             ValidarRuta(ruta);
             File.WriteAllText(ruta, GenerarTxt(reporte), Utf8ConMarca);
+        }
+
+        /// <summary>Guarda un reporte sencillo en formato PDF.</summary>
+        public static void GuardarPdf(
+            string ruta,
+            IEnumerable<EstadisticaItem> reporte)
+        {
+            ValidarRuta(ruta);
+            ArgumentNullException.ThrowIfNull(reporte);
+
+            List<EstadisticaItem> elementos = reporte.ToList();
+            var documento = new Document();
+            Section seccion = documento.AddSection();
+            Style estiloNormal = documento.Styles["Normal"]
+                ?? throw new InvalidOperationException(
+                    "No se pudo preparar el formato del PDF.");
+
+            documento.Info.Title = "Reporte Quiniegol";
+            estiloNormal.Font.Name = "Arial";
+            estiloNormal.Font.Size = 10;
+
+            Paragraph titulo = seccion.AddParagraph("REPORTE QUINEGOL");
+            titulo.Format.Font.Size = 18;
+            titulo.Format.Font.Bold = true;
+            titulo.Format.SpaceAfter = Unit.FromCentimeter(0.8);
+
+            for (int indice = 0; indice < elementos.Count; indice++)
+            {
+                EstadisticaItem elemento = elementos[indice];
+                Paragraph parrafo = seccion.AddParagraph();
+                parrafo.AddFormattedText(
+                    $"{indice + 1}. {elemento.Estadistica}",
+                    TextFormat.Bold);
+                parrafo.AddLineBreak();
+                parrafo.AddText(elemento.Resultado ?? string.Empty);
+                parrafo.Format.SpaceAfter = Unit.FromCentimeter(0.5);
+            }
+
+            var renderer = new PdfDocumentRenderer
+            {
+                Document = documento
+            };
+            renderer.RenderDocument();
+            renderer.PdfDocument.Save(ruta);
         }
 
         private static string EscaparCsv(string? valor)

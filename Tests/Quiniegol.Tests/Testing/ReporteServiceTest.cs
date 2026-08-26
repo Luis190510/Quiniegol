@@ -61,6 +61,44 @@ namespace Quiniegol.Tests
         }
 
         /// <summary>
+        /// PDF report should create a valid file.
+        /// </summary>
+        [TestMethod]
+        public void PdfReportShouldCreateValidFile()
+        {
+            // Arrange
+            var path = Path.Combine(
+                Path.GetTempPath(),
+                $"reporte-{Guid.NewGuid():N}.pdf");
+            var report = new List<EstadisticaItem>
+            {
+                new EstadisticaItem
+                {
+                    Estadistica = "Equipo más apostado",
+                    Resultado = "Costa Rica"
+                }
+            };
+
+            try
+            {
+                // Act
+                ReporteDescargaService.GuardarPdf(path, report);
+                var result = File.ReadAllBytes(path);
+
+                // Assert
+                Assert.IsTrue(result.Length > 4);
+                Assert.AreEqual('%', (char)result[0]);
+                Assert.AreEqual('P', (char)result[1]);
+                Assert.AreEqual('D', (char)result[2]);
+                Assert.AreEqual('F', (char)result[3]);
+            }
+            finally
+            {
+                File.Delete(path);
+            }
+        }
+
+        /// <summary>
         /// Administrator report should include administrative information.
         /// </summary>
         [TestMethod]
