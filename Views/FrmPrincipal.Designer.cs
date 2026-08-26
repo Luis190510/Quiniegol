@@ -33,6 +33,8 @@ namespace Quiniegol.Views
             btnQuinielas = new Button();
             btnRankingPrivado = new Button();
             btnTimeline = new Button();
+            grpNotificaciones = new GroupBox();
+            txtNotificaciones = new TextBox();
             grpInsignias = new GroupBox();
             txtInsignias = new TextBox();
             grpTorneo = new GroupBox();
@@ -47,6 +49,7 @@ namespace Quiniegol.Views
             flpAdministracion.SuspendLayout();
             grpParticipacion.SuspendLayout();
             flpParticipacion.SuspendLayout();
+            grpNotificaciones.SuspendLayout();
             grpInsignias.SuspendLayout();
             grpTorneo.SuspendLayout();
             flpTorneo.SuspendLayout();
@@ -249,11 +252,35 @@ namespace Quiniegol.Views
             btnTimeline.UseVisualStyleBackColor = true;
             btnTimeline.Click += btnTimeline_Click;
             //
+            // grpNotificaciones
+            //
+            grpNotificaciones.Controls.Add(txtNotificaciones);
+            grpNotificaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            grpNotificaciones.Location = new Point(24, 334);
+            grpNotificaciones.Name = "grpNotificaciones";
+            grpNotificaciones.Size = new Size(872, 100);
+            grpNotificaciones.TabIndex = 5;
+            grpNotificaciones.TabStop = false;
+            grpNotificaciones.Text = "Partidos sin pronosticar en las próximas 24 horas";
+            //
+            // txtNotificaciones
+            //
+            txtNotificaciones.BackColor = SystemColors.Control;
+            txtNotificaciones.BorderStyle = BorderStyle.None;
+            txtNotificaciones.Font = new Font("Segoe UI", 9F);
+            txtNotificaciones.Location = new Point(16, 25);
+            txtNotificaciones.Multiline = true;
+            txtNotificaciones.Name = "txtNotificaciones";
+            txtNotificaciones.ReadOnly = true;
+            txtNotificaciones.ScrollBars = ScrollBars.Vertical;
+            txtNotificaciones.Size = new Size(840, 60);
+            txtNotificaciones.TabIndex = 0;
+            //
             // grpInsignias
             //
             grpInsignias.Controls.Add(txtInsignias);
             grpInsignias.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpInsignias.Location = new Point(24, 334);
+            grpInsignias.Location = new Point(24, 448);
             grpInsignias.Name = "grpInsignias";
             grpInsignias.Size = new Size(872, 110);
             grpInsignias.TabIndex = 5;
@@ -277,7 +304,7 @@ namespace Quiniegol.Views
             //
             grpTorneo.Controls.Add(flpTorneo);
             grpTorneo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpTorneo.Location = new Point(24, 458);
+            grpTorneo.Location = new Point(24, 572);
             grpTorneo.Name = "grpTorneo";
             grpTorneo.Size = new Size(872, 132);
             grpTorneo.TabIndex = 5;
@@ -375,9 +402,11 @@ namespace Quiniegol.Views
             //
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(920, 616);
+            AutoScroll = true;
+            ClientSize = new Size(920, 730);
             Controls.Add(grpTorneo);
             Controls.Add(grpInsignias);
+            Controls.Add(grpNotificaciones);
             Controls.Add(grpParticipacion);
             Controls.Add(grpAdministracion);
             Controls.Add(btnCerrarSesion);
@@ -393,6 +422,8 @@ namespace Quiniegol.Views
             flpAdministracion.ResumeLayout(false);
             grpParticipacion.ResumeLayout(false);
             flpParticipacion.ResumeLayout(false);
+            grpNotificaciones.ResumeLayout(false);
+            grpNotificaciones.PerformLayout();
             grpInsignias.ResumeLayout(false);
             grpInsignias.PerformLayout();
             grpTorneo.ResumeLayout(false);
@@ -418,6 +449,8 @@ namespace Quiniegol.Views
         private Button btnQuinielas = null!;
         private Button btnRankingPrivado = null!;
         private Button btnTimeline = null!;
+        private GroupBox grpNotificaciones = null!;
+        private TextBox txtNotificaciones = null!;
         private GroupBox grpInsignias = null!;
         private TextBox txtInsignias = null!;
         private GroupBox grpTorneo = null!;
