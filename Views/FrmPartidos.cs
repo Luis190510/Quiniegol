@@ -3,6 +3,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
@@ -13,6 +14,7 @@ namespace Quiniegol.Views
 
         public FrmPartidos()
         {
+            SesionUsuarioService.ExigirAdministrador();
             InitializeComponent();
 
             _partidoController = new PartidoController();

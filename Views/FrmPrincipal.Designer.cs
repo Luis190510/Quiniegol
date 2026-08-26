@@ -107,6 +107,7 @@ namespace Quiniegol.Views
             //
             flpAdministracion.Controls.Add(btnUsuarios);
             flpAdministracion.Controls.Add(btnPartidos);
+            flpAdministracion.Controls.Add(btnFechaSimulada);
             flpAdministracion.Dock = DockStyle.Fill;
             flpAdministracion.Location = new Point(3, 19);
             flpAdministracion.Name = "flpAdministracion";
@@ -141,7 +142,7 @@ namespace Quiniegol.Views
             // btnFechaSimulada
             //
             btnFechaSimulada.Font = new Font("Segoe UI", 9F);
-            btnFechaSimulada.Location = new Point(15, 11);
+            btnFechaSimulada.Location = new Point(423, 11);
             btnFechaSimulada.Margin = new Padding(7);
             btnFechaSimulada.Name = "btnFechaSimulada";
             btnFechaSimulada.Size = new Size(190, 40);
@@ -159,11 +160,10 @@ namespace Quiniegol.Views
             grpParticipacion.Size = new Size(872, 132);
             grpParticipacion.TabIndex = 4;
             grpParticipacion.TabStop = false;
-            grpParticipacion.Text = "Participación y fecha simulada";
+            grpParticipacion.Text = "Participación y quinielas";
             //
             // flpParticipacion
             //
-            flpParticipacion.Controls.Add(btnFechaSimulada);
             flpParticipacion.Controls.Add(btnPronosticos);
             flpParticipacion.Controls.Add(btnHistorialPronosticos);
             flpParticipacion.Controls.Add(btnRanking);

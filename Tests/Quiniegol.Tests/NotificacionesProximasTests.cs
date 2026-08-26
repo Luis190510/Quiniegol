@@ -37,12 +37,20 @@ namespace Quiniegol.Tests
             });
             _pronosticos.GuardarTodos(new List<Pronostico>());
             _fechaAnterior = FechaSimuladaService.Instancia.FechaActual;
+            SesionUsuarioService.IniciarSesion(new Usuario
+            {
+                Id = 1,
+                Nombre = "Administrador",
+                Rol = RolUsuario.Administrador,
+                Activo = true
+            });
         }
 
         [TestCleanup]
         public void LimpiarDatos()
         {
             FechaSimuladaService.Instancia.CambiarFecha(_fechaAnterior);
+            SesionUsuarioService.CerrarSesion();
 
             if (Directory.Exists(_carpetaTemporal))
             {

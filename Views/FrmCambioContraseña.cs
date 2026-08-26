@@ -6,7 +6,7 @@ namespace Quiniegol.Views
     /// <summary>
     /// Solicita reemplazar una contraseña temporal antes de iniciar sesión.
     /// </summary>
-    public partial class FrmCambioContrasena : Form
+    public partial class FrmCambioContraseña : Form
     {
         private readonly LoginController _loginController;
         private readonly Usuario _usuario;
@@ -15,7 +15,7 @@ namespace Quiniegol.Views
         /// <summary>Cuenta actualizada después del cambio exitoso.</summary>
         public Usuario? UsuarioActualizado { get; private set; }
 
-        public FrmCambioContrasena(
+        public FrmCambioContraseña(
             LoginController loginController,
             Usuario usuario,
             string contrasenaTemporal)
