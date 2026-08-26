@@ -80,6 +80,9 @@ namespace Quiniegol.Services
             IReadOnlyDictionary<int, Partido> partidosPorId,
             IReadOnlyDictionary<int, string> selecciones)
         {
+            List<Pronostico> pronosticosDelUsuario = pronosticos
+                .Where(pronostico => pronostico.UsuarioId == usuarioId)
+                .ToList();
             List<Pronostico> pronosticosEvaluados = pronosticos
                 .Where(pronostico =>
                     pronostico.UsuarioId == usuarioId &&
@@ -91,9 +94,9 @@ namespace Quiniegol.Services
             return new List<EstadisticaItem>
             {
                 CrearItem("Equipo más apostado", ObtenerEquipoMasApostado(
-                    pronosticos, partidosPorId, selecciones)),
+                    pronosticosDelUsuario, partidosPorId, selecciones)),
                 CrearItem("Equipo sorpresa (resultado y estadística)", ObtenerEquipoSorpresa(
-                    pronosticos, partidos, selecciones)),
+                    pronosticosDelUsuario, partidos, selecciones)),
                 CrearItem("Pronósticos anteriores evaluados",
                     pronosticosEvaluados.Count.ToString()),
                 CrearItem("Aciertos obtenidos", aciertos.ToString()),

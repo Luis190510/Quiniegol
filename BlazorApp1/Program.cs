@@ -6,6 +6,8 @@ using Quiniegol.Models;
 using Quiniegol.Repositories;
 using Quiniegol.Services;
 
+PdfSharp.Fonts.GlobalFontSettings.UseWindowsFontsUnderWindows = true;
+
 var builder = WebApplication.CreateBuilder(args);
 
 RutaDatosService.Configurar(builder.Environment.ContentRootPath);
@@ -26,6 +28,8 @@ builder.Services
 
 builder.Services.AddScoped<DatosPronosticosService>();
 builder.Services.AddScoped<DatosMundialService>();
+builder.Services.AddScoped<PartidoAdministracionService>();
+builder.Services.AddScoped<ReporteWebService>();
 builder.Services.AddScoped<SesionUsuarioService>();
 builder.Services.AddScoped<AuthenticationStateProvider>(
     provider => provider.GetRequiredService<SesionUsuarioService>());

@@ -1,0 +1,176 @@
+@page "/administracion-partidos"
+@attribute [Authorize(Roles = "Administrador")]
+@inject PartidoAdministracionService AdministracionPartidos
+@inject DatosMundialService DatosMundial
+
+<PageTitle>Administración de partidos</PageTitle>
+
+<div class="container-fluid">
+    <div class="mb-4">
+        <h1 class="mb-1">Administración de partidos</h1>
+        <p class="text-secondary mb-0">
+            Modifica la fecha, la hora y el marcador oficial de un partido.
+        </p>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje" role="alert">@Mensaje</div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <label for="partidoAdmin" class="form-label">Partido</label>
+            <select id="partidoAdmin"
+                    class="form-select mb-3"
+                    value="@PartidoSeleccionadoId"
+                    @onchange="SeleccionarPartido">
+                @foreach (PartidoMundialItem partido in Partidos)
+                {
+                    <option value="@partido.Id">
+                        @partido.Id - @partido.EquipoLocal contra @partido.EquipoVisitante
+                    </option>
+                }
+            </select>
+
+            <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                    <label for="equipoLocal" class="form-label">Equipo local</label>
+                    <select id="equipoLocal"
+                            class="form-select"
+                            @bind="SeleccionLocalId">
+                        @foreach (Seleccion seleccion in Selecciones)
+                        {
+                            <option value="@seleccion.Id">@seleccion.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="equipoVisitante" class="form-label">Equipo visitante</label>
+                    <select id="equipoVisitante"
+                            class="form-select"
+                            @bind="SeleccionVisitanteId">
+                        @foreach (Seleccion seleccion in Selecciones)
+                        {
+                            <option value="@seleccion.Id">@seleccion.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="fechaPartido" class="form-label">Fecha y hora</label>
+                    <input id="fechaPartido"
+                           type="datetime-local"
+                           class="form-control"
+                           @bind="FechaHora"
+                           @bind:format="yyyy-MM-ddTHH:mm" />
+                </div>
+                <div class="col-6 col-lg-3">
+                    <label for="golesLocal" class="form-label">Goles local</label>
+                    <input id="golesLocal"
+                           type="number"
+                           min="0"
+                           class="form-control"
+                           @bind="GolesLocal" />
+                </div>
+                <div class="col-6 col-lg-3">
+                    <label for="golesVisitante" class="form-label">Goles visitante</label>
+                    <input id="golesVisitante"
+                           type="number"
+                           min="0"
+                           class="form-control"
+                           @bind="GolesVisitante" />
+                </div>
+            </div>
+
+            <button type="button"
+                    class="btn btn-primary mt-4"
+                    @onclick="Guardar">
+                Guardar cambios del partido
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<PartidoMundialItem> Partidos { get; set; } = [];
+    private List<Seleccion> Selecciones { get; set; } = [];
+    private int PartidoSeleccionadoId { get; set; }
+    private int SeleccionLocalId { get; set; }
+    private int SeleccionVisitanteId { get; set; }
+    private DateTime FechaHora { get; set; }
+    private int? GolesLocal { get; set; }
+    private int? GolesVisitante { get; set; }
+    private string Mensaje { get; set; } = string.Empty;
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    protected override void OnInitialized()
+    {
+        Selecciones = DatosMundial.ObtenerSelecciones();
+        CargarPartidos();
+    }
+
+    private void CargarPartidos()
+    {
+        Partidos = DatosMundial.ObtenerPartidos(DateTime.MaxValue);
+        if (Partidos.Count == 0)
+        {
+            return;
+        }
+
+        if (PartidoSeleccionadoId == 0)
+        {
+            PartidoSeleccionadoId = Partidos[0].Id;
+        }
+        CargarSeleccionado();
+    }
+
+    private void SeleccionarPartido(ChangeEventArgs evento)
+    {
+        if (int.TryParse(evento.Value?.ToString(), out int partidoId))
+        {
+            PartidoSeleccionadoId = partidoId;
+            CargarSeleccionado();
+        }
+    }
+
+    private void CargarSeleccionado()
+    {
+        PartidoMundialItem? partido = Partidos.FirstOrDefault(
+            elemento => elemento.Id == PartidoSeleccionadoId);
+        if (partido is null)
+        {
+            return;
+        }
+
+        FechaHora = partido.Fecha;
+        SeleccionLocalId = partido.SeleccionLocalId;
+        SeleccionVisitanteId = partido.SeleccionVisitanteId;
+        GolesLocal = partido.GolesLocal;
+        GolesVisitante = partido.GolesVisitante;
+    }
+
+    private void Guardar()
+    {
+        try
+        {
+            AdministracionPartidos.ActualizarPartido(
+                PartidoSeleccionadoId,
+                SeleccionLocalId,
+                SeleccionVisitanteId,
+                FechaHora,
+                GolesLocal,
+                GolesVisitante);
+            ClaseMensaje = "alert-success";
+            Mensaje = "El partido fue actualizado correctamente.";
+            CargarPartidos();
+        }
+        catch (Exception ex) when (
+            ex is ArgumentException or
+            InvalidOperationException or
+            UnauthorizedAccessException)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = ex.Message;
+        }
+    }
+}
