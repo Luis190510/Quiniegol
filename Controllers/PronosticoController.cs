@@ -15,12 +15,30 @@ namespace Quiniegol.Controllers
         private readonly FechaSimuladaService _fechaService;
 
         public PronosticoController()
+            : this(
+                new JsonRepository<Pronostico>(
+                    RutaDatosService.ObtenerRuta("pronosticos.json")),
+                new UsuarioController(),
+                new PartidoController(),
+                FechaSimuladaService.Instancia)
         {
-            _pronosticoRepository = new JsonRepository<Pronostico>(
-                RutaDatosService.ObtenerRuta("pronosticos.json"));
-            _usuarioController = new UsuarioController();
-            _partidoController = new PartidoController();
-            _fechaService = FechaSimuladaService.Instancia;
+        }
+
+        /// <summary>Inicializa el controlador con datos específicos.</summary>
+        public PronosticoController(
+            JsonRepository<Pronostico> pronosticoRepository,
+            UsuarioController usuarioController,
+            PartidoController partidoController,
+            FechaSimuladaService fechaService)
+        {
+            _pronosticoRepository = pronosticoRepository ??
+                throw new ArgumentNullException(nameof(pronosticoRepository));
+            _usuarioController = usuarioController ??
+                throw new ArgumentNullException(nameof(usuarioController));
+            _partidoController = partidoController ??
+                throw new ArgumentNullException(nameof(partidoController));
+            _fechaService = fechaService ??
+                throw new ArgumentNullException(nameof(fechaService));
         }
 
         /// <summary>
