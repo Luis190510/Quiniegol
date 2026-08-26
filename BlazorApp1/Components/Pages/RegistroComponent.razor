@@ -1,6 +1,9 @@
 ﻿@page "/registro"
 @rendermode InteractiveServer
 @using System.ComponentModel.DataAnnotations
+@inject LoginController LoginController
+@inject SesionUsuarioService Sesion
+@inject NavigationManager Navigation
 
 <PageTitle>Crear cuenta</PageTitle>
 
@@ -196,8 +199,9 @@
                                 <div class="d-grid">
 
                                     <button type="submit"
-                                            class="btn btn-primary btn-lg">
-                                        Crear cuenta
+                                            class="btn btn-primary btn-lg"
+                                            disabled="@Procesando">
+                                        @(Procesando ? "Creando cuenta..." : "Crear cuenta")
                                     </button>
 
                                 </div>
@@ -230,8 +234,6 @@
 
 </div>
 
-@* El formulario todavía no guarda usuarios.
-   Posteriormente se conectará con usuarios.json. *@
 @code {
     private RegistroUsuarioVista Registro { get; set; } = new();
 
@@ -239,27 +241,50 @@
 
     private string ClaseMensaje { get; set; } = "alert-info";
 
-    private List<string> Selecciones { get; set; } =
-    [
-        "Costa Rica",
-        "Argentina",
-        "Brasil",
-        "Colombia",
-        "España",
-        "Francia",
-        "Alemania",
-        "Portugal"
-    ];
+    private bool Procesando { get; set; }
+
+    private IReadOnlyList<string> Selecciones { get; } =
+        PaisesService.ObtenerTodos();
 
     private void RegistrarUsuario()
     {
-        ClaseMensaje = "alert-success";
+        if (Procesando)
+        {
+            return;
+        }
 
-        Mensaje =
-            $"La cuenta de {Registro.NombreUsuario} " +
-            "fue validada correctamente.";
+        Procesando = true;
+        Mensaje = string.Empty;
 
-        Registro = new RegistroUsuarioVista();
+        try
+        {
+            string nombreCompleto =
+                $"{Registro.Nombre.Trim()} {Registro.Apellidos.Trim()}";
+
+            Usuario usuario = LoginController.RegistrarCuenta(
+                nombreCompleto,
+                Registro.SeleccionFavorita,
+                Registro.NombreUsuario,
+                Registro.Correo,
+                Registro.Password);
+
+            Registro.Password = string.Empty;
+            Registro.ConfirmarPassword = string.Empty;
+            Sesion.IniciarSesion(usuario);
+            Navigation.NavigateTo("/partidos");
+        }
+        catch (Exception ex) when (
+            ex is ArgumentException or InvalidOperationException)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = ex.Message;
+            Registro.Password = string.Empty;
+            Registro.ConfirmarPassword = string.Empty;
+        }
+        finally
+        {
+            Procesando = false;
+        }
     }
 
     private sealed class RegistroUsuarioVista

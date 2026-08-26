@@ -1,5 +1,8 @@
 ﻿@rendermode InteractiveServer
 
+@inject LoginController LoginController
+@inject SesionUsuarioService Sesion
+@inject NavigationManager Navigation
 
 <div class="container mt-5">
     <div class="row justify-content-center">
@@ -17,7 +20,8 @@
                                class="form-control"
                                id="floatingUsuario"
                                placeholder="Usuario"
-                               @bind="Nombre" />
+                               @bind="Nombre"
+                               @bind:event="oninput" />
 
                         <label for="floatingUsuario">
                             Usuario
@@ -29,7 +33,8 @@
                                class="form-control"
                                id="floatingPassword"
                                placeholder="Contraseña"
-                               @bind="Password" />
+                               @bind="Password"
+                               @bind:event="oninput" />
 
                         <label for="floatingPassword">
                             Contraseña
@@ -45,7 +50,7 @@
 
                         @if (!string.IsNullOrWhiteSpace(Mensaje))
                         {
-                            <div class="alert alert-info mt-3" role="alert">
+                            <div class="alert @ClaseMensaje mt-3" role="alert">
                                 @Mensaje
                             </div>
                         }
@@ -70,8 +75,6 @@
 </div>
 
 
-@*validacion de credenciales y carga de archivo .jason*@
-
 @code {
     private string Nombre { get; set; } = string.Empty;
 
@@ -79,15 +82,36 @@
 
     private string Mensaje { get; set; } = string.Empty;
 
+    private string ClaseMensaje { get; set; } = "alert-info";
+
     private void Login()
     {
         if (string.IsNullOrWhiteSpace(Nombre) ||
             string.IsNullOrWhiteSpace(Password))
         {
+            ClaseMensaje = "alert-danger";
             Mensaje = "Debe ingresar el usuario y la contraseña.";
             return;
         }
 
-        Mensaje = $"Intentando iniciar sesión como {Nombre}.";
+        Usuario? usuario = LoginController.Autenticar(Nombre, Password);
+        Password = string.Empty;
+
+        if (usuario is null)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "El usuario, correo o contraseña no son válidos.";
+            return;
+        }
+
+        if (usuario.DebeCambiarContrasena)
+        {
+            Sesion.IniciarCambioObligatorio(usuario);
+            Navigation.NavigateTo("/cambiar-contrasena");
+            return;
+        }
+
+        Sesion.IniciarSesion(usuario);
+        Navigation.NavigateTo("/partidos");
     }
 }

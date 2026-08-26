@@ -1,0 +1,161 @@
+@page "/cambiar-contrasena"
+@rendermode InteractiveServer
+@inject LoginController LoginController
+@inject SesionUsuarioService Sesion
+@inject NavigationManager Navigation
+
+<PageTitle>Cambiar contraseña</PageTitle>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h3 class="text-center mb-3">
+                        Cambiar contraseña temporal
+                    </h3>
+
+                    @if (Sesion.UsuarioPendienteCambio is not null)
+                    {
+                        <p class="text-secondary text-center">
+                            Cuenta:
+                            <strong>
+                                @Sesion.UsuarioPendienteCambio.NombreUsuario
+                            </strong>
+                        </p>
+
+                        <div class="form-floating mb-3">
+                            <input type="password"
+                                   class="form-control"
+                                   id="contrasenaTemporal"
+                                   autocomplete="current-password"
+                                   placeholder="Contraseña temporal"
+                                   @bind="ContrasenaTemporal" />
+                            <label for="contrasenaTemporal">
+                                Contraseña temporal
+                            </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password"
+                                   class="form-control"
+                                   id="nuevaContrasena"
+                                   autocomplete="new-password"
+                                   placeholder="Nueva contraseña"
+                                   @bind="NuevaContrasena" />
+                            <label for="nuevaContrasena">
+                                Nueva contraseña
+                            </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password"
+                                   class="form-control"
+                                   id="confirmacionContrasena"
+                                   autocomplete="new-password"
+                                   placeholder="Confirmar contraseña"
+                                   @bind="Confirmacion" />
+                            <label for="confirmacionContrasena">
+                                Confirmar nueva contraseña
+                            </label>
+                        </div>
+
+                        @if (!string.IsNullOrWhiteSpace(Mensaje))
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @Mensaje
+                            </div>
+                        }
+
+                        <div class="d-grid gap-2">
+                            <button type="button"
+                                    class="btn btn-primary"
+                                    @onclick="Guardar">
+                                Guardar nueva contraseña
+                            </button>
+
+                            <button type="button"
+                                    class="btn btn-outline-secondary"
+                                    @onclick="Cancelar">
+                                Volver al inicio
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string ContrasenaTemporal { get; set; } = string.Empty;
+    private string NuevaContrasena { get; set; } = string.Empty;
+    private string Confirmacion { get; set; } = string.Empty;
+    private string Mensaje { get; set; } = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        if (Sesion.UsuarioPendienteCambio is null)
+        {
+            Navigation.NavigateTo("/");
+        }
+    }
+
+    private void Guardar()
+    {
+        Usuario? pendiente = Sesion.UsuarioPendienteCambio;
+        if (pendiente is null)
+        {
+            Navigation.NavigateTo("/");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(ContrasenaTemporal) ||
+            string.IsNullOrWhiteSpace(NuevaContrasena) ||
+            string.IsNullOrWhiteSpace(Confirmacion))
+        {
+            Mensaje = "Debe completar todos los campos.";
+            return;
+        }
+
+        if (NuevaContrasena != Confirmacion)
+        {
+            Mensaje = "La nueva contraseña y su confirmación no coinciden.";
+            return;
+        }
+
+        try
+        {
+            Usuario actualizado = LoginController.CompletarCambioObligatorio(
+                pendiente.Id,
+                ContrasenaTemporal,
+                NuevaContrasena);
+
+            LimpiarContrasenas();
+            Sesion.IniciarSesion(actualizado);
+            Navigation.NavigateTo("/partidos");
+        }
+        catch (Exception ex) when (
+            ex is ArgumentException or
+            UnauthorizedAccessException or
+            InvalidOperationException)
+        {
+            LimpiarContrasenas();
+            Mensaje = ex.Message;
+        }
+    }
+
+    private void Cancelar()
+    {
+        LimpiarContrasenas();
+        Sesion.CerrarSesion();
+        Navigation.NavigateTo("/");
+    }
+
+    private void LimpiarContrasenas()
+    {
+        ContrasenaTemporal = string.Empty;
+        NuevaContrasena = string.Empty;
+        Confirmacion = string.Empty;
+    }
+}

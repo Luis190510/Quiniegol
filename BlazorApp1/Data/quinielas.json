@@ -1,0 +1,99 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Room 1",
+    "Descripcion": "Para novatos",
+    "Tipo": "Privada",
+    "CreadorUsuarioId": 2,
+    "IntegrantesIds": [
+      2,
+      8,
+      5,
+      4
+    ]
+  },
+  {
+    "Id": 2,
+    "Nombre": "Amigos del Mundial",
+    "Descripcion": "Quiniela privada generada para pruebas.",
+    "Tipo": "Privada",
+    "CreadorUsuarioId": 1,
+    "IntegrantesIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "Id": 3,
+    "Nombre": "Expertos del F\u00FAtbol",
+    "Descripcion": "Quiniela privada generada para pruebas.",
+    "Tipo": "Privada",
+    "CreadorUsuarioId": 8,
+    "IntegrantesIds": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  {
+    "Id": 4,
+    "Nombre": "Quiniela Tica",
+    "Descripcion": "Quiniela privada generada para pruebas.",
+    "Tipo": "Privada",
+    "CreadorUsuarioId": 15,
+    "IntegrantesIds": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "Id": 5,
+    "Nombre": "Fan\u00E1ticos 2026",
+    "Descripcion": "Quiniela privada generada para pruebas.",
+    "Tipo": "Privada",
+    "CreadorUsuarioId": 22,
+    "IntegrantesIds": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  }
+]

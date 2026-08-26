@@ -1,89 +1,47 @@
-﻿<h5 class="px-3 mt-3 mb-2 text-secondary">
-    MENU
-</h5>
+<h5 class="px-3 mt-3 mb-2 text-secondary">MENU</h5>
 
 <nav class="nav flex-column p-3">
+    <AuthorizeView Context="sesionContext">
+        <NotAuthorized>
+            <NavLink class="nav-link text-white" href="" Match="NavLinkMatch.All">
+                Inicio
+            </NavLink>
+            <NavLink class="nav-link text-white" href="registro">
+                Crear cuenta
+            </NavLink>
+        </NotAuthorized>
 
-    <NavLink class="nav-link text-white"
-             href=""
-             Match="NavLinkMatch.All">
-        Inicio
-    </NavLink>
+        <Authorized>
+            <NavLink class="nav-link text-white" href="partidos">Partidos</NavLink>
+            <NavLink class="nav-link text-white" href="timeline">Timeline</NavLink>
+            <NavLink class="nav-link text-white" href="informacion-partidos">
+                Información de partidos
+            </NavLink>
+            <NavLink class="nav-link text-white" href="pronosticos">Pronósticos</NavLink>
+            <NavLink class="nav-link text-white" href="historial-pronosticos">Historial</NavLink>
+            <NavLink class="nav-link text-white" href="quinielas">Quinielas</NavLink>
+            <NavLink class="nav-link text-white" href="resultados">Resultados</NavLink>
+            <NavLink class="nav-link text-white" href="tabla-grupos">Tabla de grupos</NavLink>
+            <NavLink class="nav-link text-white" href="fase-final">Fase final</NavLink>
+            <NavLink class="nav-link text-white" href="ranking">Ranking</NavLink>
+            <NavLink class="nav-link text-white" href="estadisticas">Estadísticas</NavLink>
+            <NavLink class="nav-link text-white" href="perfil">Mi perfil</NavLink>
+            <NavLink class="nav-link text-white" href="configuracion">Configuración</NavLink>
 
-    <NavLink class="nav-link text-white"
-             href="partidos">
-        Partidos
-    </NavLink>
+            <AuthorizeView Roles="Administrador" Context="adminContext">
+                <Authorized>
+                    <hr class="border-secondary" />
+                    <h6 class="text-secondary px-2 mt-3">ADMINISTRACIÓN</h6>
+                    <NavLink class="nav-link text-white" href="administracion-usuarios">
+                        Usuarios
+                    </NavLink>
+                </Authorized>
+            </AuthorizeView>
 
-    <NavLink class="nav-link text-white"
-             href="timeline">
-        Timeline
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="informacion-partidos">
-        Información de partidos
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="pronosticos">
-        Pronósticos
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="historial-pronosticos">
-        Historial
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="quinielas">
-        Quinielas
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="resultados">
-        Resultados
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-                 href="tabla-grupos">
-            Tabla de grupos
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="fase-final">
-        Fase final
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-                 href="ranking">
-            Ranking
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="estadisticas">
-        Estadísticas
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="perfil">
-        Mi perfil
-    </NavLink>
-
-    <NavLink class="nav-link text-white"
-             href="configuracion">
-        Configuración
-    </NavLink>
-
-    <hr class="border-secondary" />
-
-    <h6 class="text-secondary px-2 mt-3">
-        ADMINISTRACIÓN
-    </h6>
-
-    <NavLink class="nav-link text-white"
-             href="administracion-usuarios">
-        Usuarios
-    </NavLink>
-
+            <hr class="border-secondary" />
+            <NavLink class="nav-link text-white" href="cerrar-sesion">
+                Cerrar sesión
+            </NavLink>
+        </Authorized>
+    </AuthorizeView>
 </nav>

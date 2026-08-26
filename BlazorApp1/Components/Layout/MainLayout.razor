@@ -25,15 +25,18 @@
                 </button>
             </div>
 
-            <div>
-
-            <NavLink href="notificaciones"
-                         class="btn btn-link text-decoration-none me-2"
-                         title="Notificaciones">
-                    🔔
-            </NavLink>
-                <span>👤 Usuario</span>
-            </div>
+            <AuthorizeView Context="usuarioContext">
+                <Authorized>
+                    <div>
+                        <NavLink href="notificaciones"
+                                 class="btn btn-link text-decoration-none me-2"
+                                 title="Notificaciones">
+                            🔔
+                        </NavLink>
+                        <span>👤 @usuarioContext.User.Identity?.Name</span>
+                    </div>
+                </Authorized>
+            </AuthorizeView>
 
         </header>
 

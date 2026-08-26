@@ -1,5 +1,6 @@
 ﻿@page "/administracion-usuarios"
 @rendermode InteractiveServer
+@attribute [Authorize(Roles = "Administrador")]
 
 <PageTitle>Administración de usuarios</PageTitle>
 
