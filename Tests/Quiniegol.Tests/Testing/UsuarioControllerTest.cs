@@ -52,6 +52,35 @@ namespace Quiniegol.Tests
         }
 
         /// <summary>
+        /// Regular user should not reset or deactivate accounts.
+        /// </summary>
+        [TestMethod]
+        public void RegularUserShouldNotChangeAccounts()
+        {
+            // Arrange
+            var path = CreateFileWithUsers();
+
+            try
+            {
+                var controller = new UsuarioController(
+                    new JsonRepository<Usuario>(path));
+                var user = controller.ObtenerUsuarios().Single(item =>
+                    item.Rol == RolUsuario.Usuario);
+                SesionUsuarioService.IniciarSesion(user);
+
+                // Act and Assert
+                Assert.ThrowsException<UnauthorizedAccessException>(() =>
+                    controller.RestablecerContrasena(user.Id));
+                Assert.ThrowsException<UnauthorizedAccessException>(() =>
+                    controller.CambiarEstadoCuenta(user.Id, activar: false));
+            }
+            finally
+            {
+                File.Delete(path);
+            }
+        }
+
+        /// <summary>
         /// Administrator should deactivate a regular user.
         /// </summary>
         [TestMethod]

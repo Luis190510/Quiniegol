@@ -126,7 +126,7 @@ namespace Quiniegol.Views
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(190, 40);
             btnUsuarios.TabIndex = 0;
-            btnUsuarios.Text = "Gestión de usuarios";
+            btnUsuarios.Text = "Usuarios y contraseñas";
             btnUsuarios.UseVisualStyleBackColor = true;
             btnUsuarios.Click += btnUsuarios_Click;
             //
