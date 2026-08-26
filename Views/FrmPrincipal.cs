@@ -1,3 +1,4 @@
+using Quiniegol.Controllers;
 using Quiniegol.Models;
 using Quiniegol.Services;
 
@@ -29,16 +30,38 @@ namespace Quiniegol.Views
             grpAdministracion.Visible = esAdministrador;
             btnFechaSimulada.Visible = esAdministrador;
             btnPronosticos.Visible = !esAdministrador;
+            grpNotificaciones.Visible = !esAdministrador;
             grpInsignias.Visible = !esAdministrador;
 
             if (!esAdministrador)
             {
+                List<NotificacionPronosticoItem> notificaciones =
+                    new NotificacionPronosticoController()
+                        .ObtenerPendientes(usuario);
+                txtNotificaciones.Text =
+                    FormatearNotificaciones(notificaciones);
+
                 List<string> insignias = new InsigniaService()
                     .ObtenerInsigniasDeUsuario(usuario.Id);
                 txtInsignias.Text = FormatearInsignias(insignias);
             }
 
-            ReorganizarSecciones();
+            ReorganizarSecciones(esAdministrador);
+        }
+
+        private static string FormatearNotificaciones(
+            IReadOnlyCollection<NotificacionPronosticoItem> notificaciones)
+        {
+            if (notificaciones.Count == 0)
+            {
+                return "No tiene partidos sin pronosticar en las próximas 24 horas.";
+            }
+
+            return string.Join(
+                Environment.NewLine,
+                notificaciones.Select(notificacion =>
+                    $"{notificacion.FechaHora:dd/MM/yyyy HH:mm} - " +
+                    notificacion.Partido));
         }
 
         private static string FormatearInsignias(IEnumerable<string> insignias)
@@ -62,13 +85,13 @@ namespace Quiniegol.Views
                 : string.Join(" | ", insignias);
         }
 
-        private void ReorganizarSecciones()
+        private void ReorganizarSecciones(bool esAdministrador)
         {
             const int margenSuperior = 92;
             const int separacion = 14;
             int siguientePosicion = margenSuperior;
 
-            if (grpAdministracion.Visible)
+            if (esAdministrador)
             {
                 grpAdministracion.Top = siguientePosicion;
                 siguientePosicion = grpAdministracion.Bottom + separacion;
@@ -77,8 +100,11 @@ namespace Quiniegol.Views
             grpParticipacion.Top = siguientePosicion;
             siguientePosicion = grpParticipacion.Bottom + separacion;
 
-            if (grpInsignias.Visible)
+            if (!esAdministrador)
             {
+                grpNotificaciones.Top = siguientePosicion;
+                siguientePosicion = grpNotificaciones.Bottom + separacion;
+
                 grpInsignias.Top = siguientePosicion;
                 siguientePosicion = grpInsignias.Bottom + separacion;
             }

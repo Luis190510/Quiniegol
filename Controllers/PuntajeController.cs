@@ -14,13 +14,31 @@ namespace Quiniegol.Controllers
         private readonly CalculadoraPuntajeService _calculadoraPuntaje;
 
         public PuntajeController()
+            : this(
+                new JsonRepository<Usuario>(
+                    RutaDatosService.ObtenerRuta("usuarios.json")),
+                new JsonRepository<Pronostico>(
+                    RutaDatosService.ObtenerRuta("pronosticos.json")),
+                new PartidoController(),
+                new CalculadoraPuntajeService())
         {
-            _usuarioRepository = new JsonRepository<Usuario>(
-                RutaDatosService.ObtenerRuta("usuarios.json"));
-            _pronosticoRepository = new JsonRepository<Pronostico>(
-                RutaDatosService.ObtenerRuta("pronosticos.json"));
-            _partidoController = new PartidoController();
-            _calculadoraPuntaje = new CalculadoraPuntajeService();
+        }
+
+        /// <summary>Inicializa el controlador con datos específicos.</summary>
+        public PuntajeController(
+            JsonRepository<Usuario> usuarioRepository,
+            JsonRepository<Pronostico> pronosticoRepository,
+            PartidoController partidoController,
+            CalculadoraPuntajeService calculadoraPuntaje)
+        {
+            _usuarioRepository = usuarioRepository ??
+                throw new ArgumentNullException(nameof(usuarioRepository));
+            _pronosticoRepository = pronosticoRepository ??
+                throw new ArgumentNullException(nameof(pronosticoRepository));
+            _partidoController = partidoController ??
+                throw new ArgumentNullException(nameof(partidoController));
+            _calculadoraPuntaje = calculadoraPuntaje ??
+                throw new ArgumentNullException(nameof(calculadoraPuntaje));
         }
 
         /// <summary>Recalcula pronósticos y totales según los partidos finalizados.</summary>

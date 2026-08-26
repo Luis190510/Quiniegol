@@ -17,6 +17,7 @@ namespace Quiniegol.Views
         private void InitializeComponent()
         {
             lblTitulo = new Label();
+            lblAyuda = new Label();
             btnRegistrar = new Button();
             dgvUsuarios = new DataGridView();
             btnRestablecer = new Button();
@@ -33,7 +34,17 @@ namespace Quiniegol.Views
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(203, 28);
             lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "Usuarios registrados";
+            lblTitulo.Text = "Mantenimiento de usuarios";
+            //
+            // lblAyuda
+            //
+            lblAyuda.AutoSize = true;
+            lblAyuda.ForeColor = Color.DimGray;
+            lblAyuda.Location = new Point(26, 56);
+            lblAyuda.Name = "lblAyuda";
+            lblAyuda.Size = new Size(532, 15);
+            lblAyuda.TabIndex = 1;
+            lblAyuda.Text = "Seleccione una cuenta para restablecer su contraseña o para activarla/desactivarla.";
             //
             // btnRegistrar
             //
@@ -51,12 +62,12 @@ namespace Quiniegol.Views
             dgvUsuarios.AllowUserToDeleteRows = false;
             dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(24, 72);
+            dgvUsuarios.Location = new Point(24, 84);
             dgvUsuarios.MultiSelect = false;
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.ReadOnly = true;
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsuarios.Size = new Size(873, 372);
+            dgvUsuarios.Size = new Size(873, 360);
             dgvUsuarios.TabIndex = 2;
             dgvUsuarios.SelectionChanged += dgvUsuarios_SelectionChanged;
             //
@@ -102,6 +113,7 @@ namespace Quiniegol.Views
             Controls.Add(btnRestablecer);
             Controls.Add(dgvUsuarios);
             Controls.Add(btnRegistrar);
+            Controls.Add(lblAyuda);
             Controls.Add(lblTitulo);
             Name = "FrmUsuarios";
             StartPosition = FormStartPosition.CenterParent;
@@ -112,6 +124,7 @@ namespace Quiniegol.Views
         }
 
         private Label lblTitulo = null!;
+        private Label lblAyuda = null!;
         private Button btnRegistrar = null!;
         private DataGridView dgvUsuarios = null!;
         private Button btnRestablecer = null!;

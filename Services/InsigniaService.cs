@@ -27,17 +27,41 @@ namespace Quiniegol.Services
         private readonly PuntajeController _puntajeController;
 
         public InsigniaService()
+            : this(
+                new JsonRepository<Usuario>(
+                    RutaDatosService.ObtenerRuta("usuarios.json")),
+                new JsonRepository<Pronostico>(
+                    RutaDatosService.ObtenerRuta("pronosticos.json")),
+                new JsonRepository<Quiniela>(
+                    RutaDatosService.ObtenerRuta("quinielas.json")),
+                new JsonRepository<GoleadorReal>(
+                    RutaDatosService.ObtenerRuta("goleadores2026.json")),
+                new PartidoController(),
+                new PuntajeController())
         {
-            _usuarioRepository = new JsonRepository<Usuario>(
-                RutaDatosService.ObtenerRuta("usuarios.json"));
-            _pronosticoRepository = new JsonRepository<Pronostico>(
-                RutaDatosService.ObtenerRuta("pronosticos.json"));
-            _quinielaRepository = new JsonRepository<Quiniela>(
-                RutaDatosService.ObtenerRuta("quinielas.json"));
-            _goleadorRepository = new JsonRepository<GoleadorReal>(
-                RutaDatosService.ObtenerRuta("goleadores2026.json"));
-            _partidoController = new PartidoController();
-            _puntajeController = new PuntajeController();
+        }
+
+        /// <summary>Inicializa el servicio con datos específicos.</summary>
+        public InsigniaService(
+            JsonRepository<Usuario> usuarioRepository,
+            JsonRepository<Pronostico> pronosticoRepository,
+            JsonRepository<Quiniela> quinielaRepository,
+            JsonRepository<GoleadorReal> goleadorRepository,
+            PartidoController partidoController,
+            PuntajeController puntajeController)
+        {
+            _usuarioRepository = usuarioRepository ??
+                throw new ArgumentNullException(nameof(usuarioRepository));
+            _pronosticoRepository = pronosticoRepository ??
+                throw new ArgumentNullException(nameof(pronosticoRepository));
+            _quinielaRepository = quinielaRepository ??
+                throw new ArgumentNullException(nameof(quinielaRepository));
+            _goleadorRepository = goleadorRepository ??
+                throw new ArgumentNullException(nameof(goleadorRepository));
+            _partidoController = partidoController ??
+                throw new ArgumentNullException(nameof(partidoController));
+            _puntajeController = puntajeController ??
+                throw new ArgumentNullException(nameof(puntajeController));
         }
 
         /// <summary>
