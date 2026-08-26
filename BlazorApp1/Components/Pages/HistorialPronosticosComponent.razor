@@ -1,0 +1,432 @@
+﻿@page "/historial-pronosticos"
+@rendermode InteractiveServer
+
+<PageTitle>Historial de pronósticos</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Historial de pronósticos
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Consulta tus pronósticos anteriores y los puntos obtenidos.
+        </p>
+
+    </div>
+
+    @* Resumen *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Pronósticos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Historial.Count
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Marcadores exactos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadExactos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Resultados acertados
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadResultadosCorrectos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Puntos obtenidos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @TotalPuntos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Filtros *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row g-3 align-items-end">
+
+                <div class="col-12 col-md-5">
+
+                    <label for="buscarEquipoHistorial"
+                           class="form-label">
+                        Buscar equipo
+                    </label>
+
+                    <input id="buscarEquipoHistorial"
+                           type="text"
+                           class="form-control"
+                           placeholder="Ejemplo: Costa Rica"
+                           @bind="EquipoBuscado"
+                           @bind:event="oninput" />
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <label for="filtroAcierto"
+                           class="form-label">
+                        Resultado del pronóstico
+                    </label>
+
+                    <select id="filtroAcierto"
+                            class="form-select"
+                            @bind="FiltroAcierto">
+
+                        <option value="todos">
+                            Todos
+                        </option>
+
+                        <option value="exacto">
+                            Marcador exacto
+                        </option>
+
+                        <option value="resultado">
+                            Resultado correcto
+                        </option>
+
+                        <option value="fallido">
+                            Sin acierto
+                        </option>
+
+                        <option value="pendiente">
+                            Pendiente
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <button type="button"
+                            class="btn btn-outline-secondary w-100"
+                            @onclick="LimpiarFiltros">
+                        Limpiar filtros
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Tabla del historial *@
+    @if (HistorialFiltrado.Count == 0)
+    {
+        <div class="alert alert-info"
+             role="alert">
+            No se encontraron pronósticos.
+        </div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+
+            <div class="card-body p-0">
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle mb-0">
+
+                        <thead class="table-dark">
+
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Partido</th>
+                                <th class="text-center">Pronóstico</th>
+                                <th class="text-center">Resultado</th>
+                                <th class="text-center">Estado</th>
+                                <th class="text-center">Puntos</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var pronostico in HistorialFiltrado)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @pronostico.Fecha.ToString("dd/MM/yyyy")
+                                    </td>
+
+                                    <td class="fw-semibold">
+                                        @pronostico.EquipoLocal
+                                        contra
+                                        @pronostico.EquipoVisitante
+                                    </td>
+
+                                    <td class="text-center">
+                                        @pronostico.GolesLocalPronosticados
+                                        -
+                                        @pronostico.GolesVisitantePronosticados
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        @if (pronostico.Estado == "pendiente")
+                                        {
+                                            <span>—</span>
+                                        }
+                                        else
+                                        {
+                                            <span>
+                                                @pronostico.GolesLocalReal
+                                                -
+                                                @pronostico.GolesVisitanteReal
+                                            </span>
+                                        }
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span class="badge @ObtenerClaseEstado(pronostico.Estado)">
+                                            @ObtenerTextoEstado(pronostico.Estado)
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-center fw-bold">
+                                        @pronostico.Puntos
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+@* Datos temporales para probar la interfaz.
+   Posteriormente se cargarán desde pronosticos.json. *@
+@code {
+    private string EquipoBuscado { get; set; } = string.Empty;
+
+    private string FiltroAcierto { get; set; } = "todos";
+
+    private List<PronosticoHistorialVista> Historial { get; set; } =
+    [
+        new()
+        {
+            EquipoLocal = "Costa Rica",
+            EquipoVisitante = "Panamá",
+            GolesLocalPronosticados = 2,
+            GolesVisitantePronosticados = 1,
+            GolesLocalReal = 2,
+            GolesVisitanteReal = 1,
+            Fecha = new DateTime(2026, 6, 10),
+            Estado = "exacto",
+            Puntos = 3
+        },
+        new()
+        {
+            EquipoLocal = "Brasil",
+            EquipoVisitante = "Argentina",
+            GolesLocalPronosticados = 2,
+            GolesVisitantePronosticados = 1,
+            GolesLocalReal = 1,
+            GolesVisitanteReal = 1,
+            Fecha = new DateTime(2026, 6, 11),
+            Estado = "fallido",
+            Puntos = 0
+        },
+        new()
+        {
+            EquipoLocal = "España",
+            EquipoVisitante = "Alemania",
+            GolesLocalPronosticados = 2,
+            GolesVisitantePronosticados = 0,
+            GolesLocalReal = 3,
+            GolesVisitanteReal = 1,
+            Fecha = new DateTime(2026, 6, 12),
+            Estado = "resultado",
+            Puntos = 1
+        },
+        new()
+        {
+            EquipoLocal = "Francia",
+            EquipoVisitante = "Portugal",
+            GolesLocalPronosticados = 1,
+            GolesVisitantePronosticados = 0,
+            Fecha = new DateTime(2026, 6, 17),
+            Estado = "pendiente",
+            Puntos = 0
+        }
+    ];
+
+    private int CantidadExactos =>
+        Historial.Count(pronostico =>
+            pronostico.Estado == "exacto");
+
+    private int CantidadResultadosCorrectos =>
+        Historial.Count(pronostico =>
+            pronostico.Estado == "exacto"
+            ||
+            pronostico.Estado == "resultado");
+
+    private int TotalPuntos =>
+        Historial.Sum(pronostico =>
+            pronostico.Puntos);
+
+    private List<PronosticoHistorialVista> HistorialFiltrado =>
+        Historial
+            .Where(CoincideConEquipo)
+            .Where(CoincideConAcierto)
+            .OrderByDescending(pronostico =>
+                pronostico.Fecha)
+            .ToList();
+
+    private bool CoincideConEquipo(
+        PronosticoHistorialVista pronostico)
+    {
+        if (string.IsNullOrWhiteSpace(EquipoBuscado))
+        {
+            return true;
+        }
+
+        return pronostico.EquipoLocal.Contains(
+                   EquipoBuscado,
+                   StringComparison.OrdinalIgnoreCase)
+               ||
+               pronostico.EquipoVisitante.Contains(
+                   EquipoBuscado,
+                   StringComparison.OrdinalIgnoreCase);
+    }
+
+    private bool CoincideConAcierto(
+        PronosticoHistorialVista pronostico)
+    {
+        return FiltroAcierto == "todos"
+            ||
+            pronostico.Estado == FiltroAcierto;
+    }
+
+    private void LimpiarFiltros()
+    {
+        EquipoBuscado = string.Empty;
+        FiltroAcierto = "todos";
+    }
+
+    private static string ObtenerClaseEstado(string estado)
+    {
+        return estado switch
+        {
+            "exacto" => "text-bg-success",
+            "resultado" => "text-bg-primary",
+            "fallido" => "text-bg-danger",
+            "pendiente" => "text-bg-warning",
+            _ => "text-bg-secondary"
+        };
+    }
+
+    private static string ObtenerTextoEstado(string estado)
+    {
+        return estado switch
+        {
+            "exacto" => "Marcador exacto",
+            "resultado" => "Resultado correcto",
+            "fallido" => "Sin acierto",
+            "pendiente" => "Pendiente",
+            _ => "Desconocido"
+        };
+    }
+
+    private sealed class PronosticoHistorialVista
+    {
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public int GolesLocalPronosticados { get; set; }
+
+        public int GolesVisitantePronosticados { get; set; }
+
+        public int GolesLocalReal { get; set; }
+
+        public int GolesVisitanteReal { get; set; }
+
+        public DateTime Fecha { get; set; }
+
+        public string Estado { get; set; } = string.Empty;
+
+        public int Puntos { get; set; }
+    }
+}

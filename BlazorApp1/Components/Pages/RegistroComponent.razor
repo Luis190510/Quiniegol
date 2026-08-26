@@ -1,0 +1,315 @@
+﻿@page "/registro"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+
+<PageTitle>Crear cuenta</PageTitle>
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+
+            <div class="card shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <div class="text-center mb-4">
+
+                        <h1 class="h3">
+                            Crear cuenta
+                        </h1>
+
+                        <p class="text-secondary">
+                            Regístrate para participar en Quiniegol.
+                        </p>
+
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(Mensaje))
+                    {
+                        <div class="alert @ClaseMensaje"
+                             role="alert">
+                            @Mensaje
+                        </div>
+                    }
+
+                    <EditForm Model="@Registro"
+                              OnValidSubmit="RegistrarUsuario">
+
+                        <DataAnnotationsValidator />
+
+                        <ValidationSummary class="text-danger mb-3" />
+
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+
+                                <label for="nombre"
+                                       class="form-label">
+                                    Nombre
+                                </label>
+
+                                <InputText id="nombre"
+                                           class="form-control"
+                                           @bind-Value="Registro.Nombre" />
+
+                                <ValidationMessage For="@(() => Registro.Nombre)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <label for="apellidos"
+                                       class="form-label">
+                                    Apellidos
+                                </label>
+
+                                <InputText id="apellidos"
+                                           class="form-control"
+                                           @bind-Value="Registro.Apellidos" />
+
+                                <ValidationMessage For="@(() => Registro.Apellidos)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <label for="usuario"
+                                       class="form-label">
+                                    Nombre de usuario
+                                </label>
+
+                                <InputText id="usuario"
+                                           class="form-control"
+                                           @bind-Value="Registro.NombreUsuario" />
+
+                                <ValidationMessage For="@(() => Registro.NombreUsuario)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <label for="correoRegistro"
+                                       class="form-label">
+                                    Correo electrónico
+                                </label>
+
+                                <InputText id="correoRegistro"
+                                           type="email"
+                                           class="form-control"
+                                           @bind-Value="Registro.Correo" />
+
+                                <ValidationMessage For="@(() => Registro.Correo)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <label for="passwordRegistro"
+                                       class="form-label">
+                                    Contraseña
+                                </label>
+
+                                <InputText id="passwordRegistro"
+                                           type="password"
+                                           class="form-control"
+                                           @bind-Value="Registro.Password" />
+
+                                <ValidationMessage For="@(() => Registro.Password)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
+                                <label for="confirmarPassword"
+                                       class="form-label">
+                                    Confirmar contraseña
+                                </label>
+
+                                <InputText id="confirmarPassword"
+                                           type="password"
+                                           class="form-control"
+                                           @bind-Value="Registro.ConfirmarPassword" />
+
+                                <ValidationMessage For="@(() => Registro.ConfirmarPassword)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <label for="seleccionRegistro"
+                                       class="form-label">
+                                    Selección favorita
+                                </label>
+
+                                <InputSelect id="seleccionRegistro"
+                                             class="form-select"
+                                             @bind-Value="Registro.SeleccionFavorita">
+
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    @foreach (var seleccion in Selecciones)
+                                    {
+                                        <option value="@seleccion">
+                                            @seleccion
+                                        </option>
+                                    }
+
+                                </InputSelect>
+
+                                <ValidationMessage For="@(() => Registro.SeleccionFavorita)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <div class="form-check">
+
+                                    <InputCheckbox id="aceptaTerminos"
+                                                   class="form-check-input"
+                                                   @bind-Value="Registro.AceptaTerminos" />
+
+                                    <label for="aceptaTerminos"
+                                           class="form-check-label">
+                                        Acepto los términos y condiciones.
+                                    </label>
+
+                                </div>
+
+                                <ValidationMessage For="@(() => Registro.AceptaTerminos)"
+                                                   class="text-danger" />
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <div class="d-grid">
+
+                                    <button type="submit"
+                                            class="btn btn-primary btn-lg">
+                                        Crear cuenta
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </EditForm>
+
+                    <hr class="my-4" />
+
+                    <p class="text-center mb-0">
+
+                        ¿Ya tienes una cuenta?
+
+                        <NavLink href="">
+                            Iniciar sesión
+                        </NavLink>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@* El formulario todavía no guarda usuarios.
+   Posteriormente se conectará con usuarios.json. *@
+@code {
+    private RegistroUsuarioVista Registro { get; set; } = new();
+
+    private string Mensaje { get; set; } = string.Empty;
+
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    private List<string> Selecciones { get; set; } =
+    [
+        "Costa Rica",
+        "Argentina",
+        "Brasil",
+        "Colombia",
+        "España",
+        "Francia",
+        "Alemania",
+        "Portugal"
+    ];
+
+    private void RegistrarUsuario()
+    {
+        ClaseMensaje = "alert-success";
+
+        Mensaje =
+            $"La cuenta de {Registro.NombreUsuario} " +
+            "fue validada correctamente.";
+
+        Registro = new RegistroUsuarioVista();
+    }
+
+    private sealed class RegistroUsuarioVista
+    {
+        [Required(ErrorMessage = "El nombre es obligatorio.")]
+        [StringLength(
+            50,
+            MinimumLength = 2,
+            ErrorMessage = "El nombre debe contener entre 2 y 50 caracteres.")]
+        public string Nombre { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Los apellidos son obligatorios.")]
+        [StringLength(
+            80,
+            MinimumLength = 2,
+            ErrorMessage = "Los apellidos deben contener entre 2 y 80 caracteres.")]
+        public string Apellidos { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "El nombre de usuario es obligatorio.")]
+        [StringLength(
+            30,
+            MinimumLength = 4,
+            ErrorMessage = "El usuario debe contener entre 4 y 30 caracteres.")]
+        public string NombreUsuario { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "El correo es obligatorio.")]
+        [EmailAddress(ErrorMessage = "El correo no tiene un formato válido.")]
+        public string Correo { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "La contraseña es obligatoria.")]
+        [StringLength(
+            100,
+            MinimumLength = 8,
+            ErrorMessage = "La contraseña debe contener al menos 8 caracteres.")]
+        public string Password { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Debe confirmar la contraseña.")]
+        [Compare(
+            nameof(Password),
+            ErrorMessage = "Las contraseñas no coinciden.")]
+        public string ConfirmarPassword { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Seleccione su equipo favorito.")]
+        public string SeleccionFavorita { get; set; } = string.Empty;
+
+        [Range(
+            typeof(bool),
+            "true",
+            "true",
+            ErrorMessage = "Debe aceptar los términos y condiciones.")]
+        public bool AceptaTerminos { get; set; }
+    }
+}
