@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Tests\**\*.cs" />
     <None Remove="Data\partidos.json" />
     <None Remove="Data\goleadores2026.json" />
     <None Remove="Data\pronosticos.json" />
@@ -18,7 +17,10 @@
     <None Remove="Data\resultados2026.json" />
     <None Remove="Data\selecciones.json" />
     <None Remove="Data\usuarios.json" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="Tests\**" />
     <None Remove="Images\Banderas\*.png" />
+    <None Remove="Tests\**" />
   </ItemGroup>
 
   <ItemGroup>
