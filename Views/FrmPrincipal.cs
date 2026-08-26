@@ -27,6 +27,7 @@ namespace Quiniegol.Views
                 $"Fecha simulada: " +
                 $"{FechaSimuladaService.Instancia.FechaActual:dd/MM/yyyy HH:mm}";
             grpAdministracion.Visible = esAdministrador;
+            btnFechaSimulada.Visible = esAdministrador;
             btnPronosticos.Visible = !esAdministrador;
             grpInsignias.Visible = !esAdministrador;
 
@@ -106,6 +107,7 @@ namespace Quiniegol.Views
 
         private void btnFechaSimulada_Click(object sender, EventArgs e)
         {
+            SesionUsuarioService.ExigirAdministrador();
             using FrmFechaSimulada formulario = new();
             formulario.ShowDialog();
 

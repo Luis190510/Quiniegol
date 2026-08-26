@@ -96,13 +96,33 @@ namespace Quiniegol.Tests
         }
 
         [TestMethod]
-        public void UsuarioRegularPuedeAjustarFechaDePrueba()
+        public void UsuarioRegularNoPuedeAjustarFechaSimulada()
         {
             SesionUsuarioService.IniciarSesion(new Usuario
             {
                 Id = 7,
                 Nombre = "Participante",
                 Rol = RolUsuario.Usuario,
+                Activo = true
+            });
+            DateTime fechaAnterior =
+                FechaSimuladaService.Instancia.FechaActual;
+            Assert.ThrowsException<UnauthorizedAccessException>(() =>
+                FechaSimuladaService.Instancia.CambiarFecha(
+                    new DateTime(2026, 6, 10, 12, 0, 0)));
+            Assert.AreEqual(
+                fechaAnterior,
+                FechaSimuladaService.Instancia.FechaActual);
+        }
+
+        [TestMethod]
+        public void AdministradorPuedeAjustarFechaSimulada()
+        {
+            SesionUsuarioService.IniciarSesion(new Usuario
+            {
+                Id = 1,
+                Nombre = "Administrador",
+                Rol = RolUsuario.Administrador,
                 Activo = true
             });
             DateTime fechaAnterior =

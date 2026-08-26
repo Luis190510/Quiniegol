@@ -10,7 +10,10 @@
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
     "Puntos": 78,
-    "Insignias": []
+    "Insignias": [
+      "Precisi\u00F3n goleadora",
+      "Precisi\u00F3n goleadora de quiniela: Amigos del Mundial"
+    ]
   },
   {
     "Id": 2,
@@ -50,7 +53,9 @@
     "PaisPreferido": "Espa\u00F1a",
     "Puntos": 85,
     "Insignias": [
-      "L\u00EDder de quiniela: Room 1"
+      "L\u00EDder de quiniela: Room 1",
+      "Cazagoleadores de quiniela: Room 1",
+      "Cazagoleadores de quiniela: Amigos del Mundial"
     ]
   },
   {
@@ -65,7 +70,8 @@
     "PaisPreferido": "Inglaterra",
     "Puntos": 74,
     "Insignias": [
-      "Peor de quiniela: Room 1"
+      "Peor de quiniela: Room 1",
+      "Precisi\u00F3n goleadora de quiniela: Room 1"
     ]
   },
   {
@@ -134,6 +140,7 @@
     "PaisPreferido": "Colombia",
     "Puntos": 71,
     "Insignias": [
+      "Peor del ranking global",
       "Peor de quiniela: Amigos del Mundial",
       "Peor de quiniela: Expertos del F\u00FAtbol"
     ]
@@ -204,6 +211,7 @@
     "Insignias": [
       "L\u00EDder global",
       "L\u00EDder de quiniela: Expertos del F\u00FAtbol",
+      "Precisi\u00F3n goleadora de quiniela: Expertos del F\u00FAtbol",
       "L\u00EDder de quiniela: Quiniela Tica"
     ]
   },
@@ -218,7 +226,9 @@
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ecuador",
     "Puntos": 80,
-    "Insignias": []
+    "Insignias": [
+      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 17,
@@ -300,7 +310,11 @@
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Francia",
     "Puntos": 81,
-    "Insignias": []
+    "Insignias": [
+      "Cazagoleadores",
+      "Cazagoleadores de quiniela: Quiniela Tica",
+      "Cazagoleadores de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 23,
@@ -340,7 +354,10 @@
     "PaisPreferido": "Hait\u00ED",
     "Puntos": 88,
     "Insignias": [
-      "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
+      "Precisi\u00F3n goleadora",
+      "Precisi\u00F3n goleadora de quiniela: Quiniela Tica",
+      "L\u00EDder de quiniela: Fan\u00E1ticos 2026",
+      "Precisi\u00F3n goleadora de quiniela: Fan\u00E1ticos 2026"
     ]
   },
   {
@@ -540,9 +557,7 @@
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Rep\u00FAblica Checa",
     "Puntos": 0,
-    "Insignias": [
-      "Peor del ranking global"
-    ]
+    "Insignias": []
   },
   {
     "Id": 41,
@@ -568,8 +583,6 @@
     "DebeCambiarContrasena": false,
     "PaisPreferido": "Cabo Verde",
     "Puntos": 0,
-    "Insignias": [
-      "Peor del ranking global"
-    ]
+    "Insignias": []
   }
 ]

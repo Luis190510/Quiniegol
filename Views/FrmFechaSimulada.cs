@@ -8,6 +8,7 @@ namespace Quiniegol.Views
 
         public FrmFechaSimulada()
         {
+            SesionUsuarioService.ExigirAdministrador();
             InitializeComponent();
 
             _fechaService = FechaSimuladaService.Instancia;

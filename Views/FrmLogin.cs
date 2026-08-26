@@ -38,7 +38,7 @@ namespace Quiniegol.Views
 
             if (usuario.DebeCambiarContrasena)
             {
-                using FrmCambioContrasena cambio = new(
+                using FrmCambioContraseña cambio = new(
                     _loginController,
                     usuario,
                     txtContrasena.Text);

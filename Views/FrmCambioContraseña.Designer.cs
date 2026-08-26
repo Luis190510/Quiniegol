@@ -1,6 +1,6 @@
 namespace Quiniegol.Views
 {
-    partial class FrmCambioContrasena
+    partial class FrmCambioContraseña
     {
         private System.ComponentModel.IContainer components = null!;
 
@@ -135,7 +135,7 @@ namespace Quiniegol.Views
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // FrmCambioContrasena
+            // FrmCambioContraseña
             // 
             AcceptButton = btnGuardar;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -156,7 +156,7 @@ namespace Quiniegol.Views
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FrmCambioContrasena";
+            Name = "FrmCambioContraseña";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cambio obligatorio de contraseña";
             ResumeLayout(false);
