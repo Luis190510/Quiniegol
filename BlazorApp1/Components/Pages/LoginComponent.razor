@@ -15,10 +15,13 @@
                         Iniciar sesión
                     </h3>
 
+                    <form @onsubmit="Login" @onsubmit:preventDefault>
                     <div class="form-floating mb-3">
                         <input type="text"
                                class="form-control"
                                id="floatingUsuario"
+                               name="usuario"
+                               autocomplete="username"
                                placeholder="Usuario"
                                @bind="Nombre"
                                @bind:event="oninput" />
@@ -32,6 +35,8 @@
                         <input type="password"
                                class="form-control"
                                id="floatingPassword"
+                               name="contrasena"
+                               autocomplete="current-password"
                                placeholder="Contraseña"
                                @bind="Password"
                                @bind:event="oninput" />
@@ -42,9 +47,8 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="button"
-                                class="btn btn-primary btn-lg"
-                                @onclick="Login">
+                        <button type="submit"
+                                class="btn btn-primary btn-lg">
                             Iniciar sesión
                         </button>
 
@@ -66,6 +70,7 @@
                         </p>
 
                     </div>
+                    </form>
 
                 </div>
             </div>
