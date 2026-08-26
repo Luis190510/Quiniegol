@@ -38,7 +38,7 @@ namespace Quiniegol.Views
                 txtInsignias.Text = FormatearInsignias(insignias);
             }
 
-            ReorganizarSecciones();
+            ReorganizarSecciones(esAdministrador);
         }
 
         private static string FormatearInsignias(IEnumerable<string> insignias)
@@ -62,13 +62,13 @@ namespace Quiniegol.Views
                 : string.Join(" | ", insignias);
         }
 
-        private void ReorganizarSecciones()
+        private void ReorganizarSecciones(bool esAdministrador)
         {
             const int margenSuperior = 92;
             const int separacion = 14;
             int siguientePosicion = margenSuperior;
 
-            if (grpAdministracion.Visible)
+            if (esAdministrador)
             {
                 grpAdministracion.Top = siguientePosicion;
                 siguientePosicion = grpAdministracion.Bottom + separacion;

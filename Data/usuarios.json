@@ -9,7 +9,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 78,
+    "Puntos": 39,
     "Insignias": [
       "Precisi\u00F3n goleadora",
       "Precisi\u00F3n goleadora de quiniela: Amigos del Mundial"
@@ -25,8 +25,11 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Brasil",
-    "Puntos": 84,
-    "Insignias": []
+    "Puntos": 58,
+    "Insignias": [
+      "L\u00EDder de quiniela: Room 1",
+      "L\u00EDder de quiniela: Amigos del Mundial"
+    ]
   },
   {
     "Id": 3,
@@ -38,7 +41,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Cabo Verde",
-    "Puntos": 88,
+    "Puntos": 36,
     "Insignias": []
   },
   {
@@ -51,12 +54,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 85,
-    "Insignias": [
-      "L\u00EDder de quiniela: Room 1",
-      "Cazagoleadores de quiniela: Room 1",
-      "Cazagoleadores de quiniela: Amigos del Mundial"
-    ]
+    "Puntos": 43,
+    "Insignias": []
   },
   {
     "Id": 5,
@@ -68,7 +67,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 74,
+    "Puntos": 35,
     "Insignias": [
       "Peor de quiniela: Room 1",
       "Precisi\u00F3n goleadora de quiniela: Room 1"
@@ -84,7 +83,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Austria",
-    "Puntos": 75,
+    "Puntos": 49,
     "Insignias": []
   },
   {
@@ -92,15 +91,13 @@
     "Nombre": "Oliver Atom",
     "NombreUsuario": "oliver.atom",
     "Correo": "oliver.atom@quinegol.local",
-    "ContrasenaHash": "PBKDF2-SHA256$100000$aDObov8GIjdT/bxAgLYp7Q==$Ztj6s2BixMYo06AUbhJQvRTxXSVSQy4NeYbRjkEi60Q=",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$hooDZZ4575MR/fOd3z3VgQ==$5Mjiotl2Wf3eyEF/MIT1Q6Nn\u002BPdwPS6h0I1r9M70wZY=",
     "Rol": "Usuario",
     "Activo": true,
-    "DebeCambiarContrasena": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 89,
-    "Insignias": [
-      "L\u00EDder de quiniela: Amigos del Mundial"
-    ]
+    "Puntos": 37,
+    "Insignias": []
   },
   {
     "Id": 8,
@@ -112,8 +109,13 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 81,
-    "Insignias": []
+    "Puntos": 39,
+    "Insignias": [
+      "Cazagoleadores",
+      "Cazagoleadores de quiniela: Room 1",
+      "Cazagoleadores de quiniela: Amigos del Mundial",
+      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 9,
@@ -125,7 +127,7 @@
     "Activo": true,
     "DebeCambiarContrasena": false,
     "PaisPreferido": "Canad\u00E1",
-    "Puntos": 74,
+    "Puntos": 35,
     "Insignias": []
   },
   {
@@ -138,12 +140,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Colombia",
-    "Puntos": 71,
-    "Insignias": [
-      "Peor del ranking global",
-      "Peor de quiniela: Amigos del Mundial",
-      "Peor de quiniela: Expertos del F\u00FAtbol"
-    ]
+    "Puntos": 45,
+    "Insignias": []
   },
   {
     "Id": 11,
@@ -155,8 +153,11 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Congo DR",
-    "Puntos": 82,
-    "Insignias": []
+    "Puntos": 30,
+    "Insignias": [
+      "Peor de quiniela: Amigos del Mundial",
+      "Peor de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 12,
@@ -168,7 +169,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Corea del Sur",
-    "Puntos": 74,
+    "Puntos": 32,
     "Insignias": []
   },
   {
@@ -181,7 +182,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Costa de Marfil",
-    "Puntos": 78,
+    "Puntos": 39,
     "Insignias": []
   },
   {
@@ -194,8 +195,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Croacia",
-    "Puntos": 79,
-    "Insignias": []
+    "Puntos": 53,
+    "Insignias": [
+      "L\u00EDder de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 15,
@@ -207,13 +210,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Curazao",
-    "Puntos": 97,
-    "Insignias": [
-      "L\u00EDder global",
-      "L\u00EDder de quiniela: Expertos del F\u00FAtbol",
-      "Precisi\u00F3n goleadora de quiniela: Expertos del F\u00FAtbol",
-      "L\u00EDder de quiniela: Quiniela Tica"
-    ]
+    "Puntos": 45,
+    "Insignias": []
   },
   {
     "Id": 16,
@@ -225,10 +223,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ecuador",
-    "Puntos": 80,
-    "Insignias": [
-      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol"
-    ]
+    "Puntos": 38,
+    "Insignias": []
   },
   {
     "Id": 17,
@@ -240,8 +236,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Egipto",
-    "Puntos": 76,
-    "Insignias": []
+    "Puntos": 37,
+    "Insignias": [
+      "Precisi\u00F3n goleadora de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 18,
@@ -253,9 +251,11 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Escocia",
-    "Puntos": 75,
+    "Puntos": 49,
     "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
+      "Cazagoleadores",
+      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol",
+      "Cazagoleadores de quiniela: Quiniela Tica"
     ]
   },
   {
@@ -268,8 +268,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Eslovaquia",
-    "Puntos": 86,
-    "Insignias": []
+    "Puntos": 34,
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 20,
@@ -281,7 +283,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 93,
+    "Puntos": 51,
     "Insignias": []
   },
   {
@@ -294,7 +296,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 85,
+    "Puntos": 46,
     "Insignias": [
       "Rey de los empates"
     ]
@@ -309,10 +311,12 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Francia",
-    "Puntos": 81,
+    "Puntos": 55,
     "Insignias": [
       "Cazagoleadores",
+      "L\u00EDder de quiniela: Quiniela Tica",
       "Cazagoleadores de quiniela: Quiniela Tica",
+      "L\u00EDder de quiniela: Fan\u00E1ticos 2026",
       "Cazagoleadores de quiniela: Fan\u00E1ticos 2026"
     ]
   },
@@ -326,8 +330,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Gales",
-    "Puntos": 86,
-    "Insignias": []
+    "Puntos": 34,
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 24,
@@ -339,7 +345,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ghana",
-    "Puntos": 83,
+    "Puntos": 41,
     "Insignias": []
   },
   {
@@ -352,11 +358,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Hait\u00ED",
-    "Puntos": 88,
+    "Puntos": 49,
     "Insignias": [
       "Precisi\u00F3n goleadora",
       "Precisi\u00F3n goleadora de quiniela: Quiniela Tica",
-      "L\u00EDder de quiniela: Fan\u00E1ticos 2026",
       "Precisi\u00F3n goleadora de quiniela: Fan\u00E1ticos 2026"
     ]
   },
@@ -370,10 +375,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 76,
-    "Insignias": [
-      "Peor de quiniela: Fan\u00E1ticos 2026"
-    ]
+    "Puntos": 50,
+    "Insignias": []
   },
   {
     "Id": 27,
@@ -385,8 +388,11 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Ir\u00E1n",
-    "Puntos": 78,
-    "Insignias": []
+    "Puntos": 26,
+    "Insignias": [
+      "Peor del ranking global",
+      "Peor de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 28,
@@ -398,7 +404,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Irak",
-    "Puntos": 78,
+    "Puntos": 36,
     "Insignias": []
   },
   {
@@ -411,7 +417,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 77,
+    "Puntos": 38,
     "Insignias": []
   },
   {
@@ -424,7 +430,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Jordania",
-    "Puntos": 79,
+    "Puntos": 53,
     "Insignias": []
   },
   {
@@ -437,7 +443,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Marruecos",
-    "Puntos": 86,
+    "Puntos": 34,
     "Insignias": []
   },
   {
@@ -450,10 +456,8 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "M\u00E9xico",
-    "Puntos": 88,
-    "Insignias": [
-      "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
-    ]
+    "Puntos": 46,
+    "Insignias": []
   },
   {
     "Id": 33,
@@ -465,7 +469,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Noruega",
-    "Puntos": 77,
+    "Puntos": 38,
     "Insignias": []
   },
   {
@@ -478,7 +482,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Nueva Zelanda",
-    "Puntos": 77,
+    "Puntos": 51,
     "Insignias": []
   },
   {
@@ -491,7 +495,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Pa\u00EDses Bajos",
-    "Puntos": 84,
+    "Puntos": 32,
     "Insignias": []
   },
   {
@@ -504,7 +508,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Panam\u00E1",
-    "Puntos": 80,
+    "Puntos": 38,
     "Insignias": []
   },
   {
@@ -517,7 +521,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Paraguay",
-    "Puntos": 76,
+    "Puntos": 37,
     "Insignias": []
   },
   {
@@ -530,8 +534,10 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Portugal",
-    "Puntos": 90,
-    "Insignias": []
+    "Puntos": 64,
+    "Insignias": [
+      "L\u00EDder global"
+    ]
   },
   {
     "Id": 39,
@@ -543,7 +549,7 @@
     "Activo": true,
     "DebeCambiarContrasena": true,
     "PaisPreferido": "Qatar",
-    "Puntos": 82,
+    "Puntos": 30,
     "Insignias": []
   },
   {
