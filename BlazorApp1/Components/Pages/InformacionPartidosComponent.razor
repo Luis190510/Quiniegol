@@ -1,6 +1,7 @@
 ﻿@page "/informacion-partidos"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Información de partidos</PageTitle>
 
@@ -35,7 +36,7 @@
                     <input id="buscarPartidoInformacion"
                            type="text"
                            class="form-control"
-                           placeholder="Ejemplo: Costa Rica"
+                           placeholder="Ejemplo: México"
                            @bind="EquipoBuscado"
                            @bind:event="oninput" />
 
@@ -59,6 +60,9 @@
                         <option value="Fase de grupos">
                             Fase de grupos
                         </option>
+
+                        <option value="Ronda de 32">Ronda de 32</option>
+                        <option value="Octavos de final">Octavos de final</option>
 
                         <option value="Cuartos de final">
                             Cuartos de final
@@ -160,7 +164,9 @@
                                 </dt>
 
                                 <dd class="col-sm-7">
-                                    @partido.Capacidad.ToString("N0") personas
+                                    @(partido.Capacidad > 0
+                                        ? $"{partido.Capacidad:N0} personas"
+                                        : "No registrada")
                                 </dd>
 
                                 <dt class="col-sm-5">
@@ -209,51 +215,27 @@
 
     private string FaseSeleccionada { get; set; } = "todas";
 
-    private List<InformacionPartidoVista> Partidos { get; set; } =
-    [
-        new()
-        {
-            Id = 1,
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Brasil",
-            Fecha = new DateTime(2026, 6, 15, 18, 0, 0),
-            Fase = "Fase de grupos",
-            Grupo = "Grupo A",
-            Estadio = "MetLife Stadium",
-            Ciudad = "Nueva Jersey",
-            Capacidad = 82500,
-            Arbitro = "Michael Oliver",
-            Transmision = "Televisión nacional"
-        },
-        new()
-        {
-            Id = 2,
-            EquipoLocal = "Argentina",
-            EquipoVisitante = "España",
-            Fecha = new DateTime(2026, 6, 16, 20, 0, 0),
-            Fase = "Fase de grupos",
-            Grupo = "Grupo B",
-            Estadio = "SoFi Stadium",
-            Ciudad = "Los Ángeles",
-            Capacidad = 70240,
-            Arbitro = "Clément Turpin",
-            Transmision = "Televisión y streaming"
-        },
-        new()
-        {
-            Id = 3,
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Alemania",
-            Fecha = new DateTime(2026, 6, 17, 17, 0, 0),
-            Fase = "Fase de grupos",
-            Grupo = "Grupo C",
-            Estadio = "Hard Rock Stadium",
-            Ciudad = "Miami",
-            Capacidad = 65326,
-            Arbitro = "Szymon Marciniak",
-            Transmision = "Televisión nacional"
-        }
-    ];
+    private List<InformacionPartidoVista> Partidos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new InformacionPartidoVista
+            {
+                Id = partido.Id,
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Grupo = partido.Grupo,
+                Estadio = "No registrado",
+                Ciudad = "No registrada",
+                Arbitro = "No registrado",
+                Transmision = "No registrada"
+            })
+            .ToList();
+    }
 
     private List<InformacionPartidoVista> PartidosFiltrados =>
         Partidos

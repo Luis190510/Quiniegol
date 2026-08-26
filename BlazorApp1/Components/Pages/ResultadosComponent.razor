@@ -1,6 +1,7 @@
 ﻿@page "/resultados"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Resultados</PageTitle>
 
@@ -32,7 +33,7 @@
                     <input id="filtroEquipo"
                            type="text"
                            class="form-control"
-                           placeholder="Ejemplo: Costa Rica"
+                           placeholder="Ejemplo: México"
                            @bind="EquipoBuscado"
                            @bind:event="oninput" />
 
@@ -51,9 +52,11 @@
 
                         <option value="">Todas las fases</option>
                         <option value="Fase de grupos">Fase de grupos</option>
+                        <option value="Ronda de 32">Ronda de 32</option>
                         <option value="Octavos de final">Octavos de final</option>
                         <option value="Cuartos de final">Cuartos de final</option>
                         <option value="Semifinal">Semifinal</option>
+                        <option value="Tercer lugar">Tercer lugar</option>
                         <option value="Final">Final</option>
 
                     </select>
@@ -185,45 +188,24 @@
 
     private string Mensaje { get; set; } = string.Empty;
 
-    private List<ResultadoVista> Resultados { get; set; } =
-    [
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Panamá",
-            GolesLocal = 2,
-            GolesVisitante = 1,
-            Fecha = new DateTime(2026, 6, 10),
-            Fase = "Fase de grupos"
-        },
-        new()
-        {
-            EquipoLocal = "Brasil",
-            EquipoVisitante = "Argentina",
-            GolesLocal = 1,
-            GolesVisitante = 1,
-            Fecha = new DateTime(2026, 6, 11),
-            Fase = "Fase de grupos"
-        },
-        new()
-        {
-            EquipoLocal = "España",
-            EquipoVisitante = "Alemania",
-            GolesLocal = 3,
-            GolesVisitante = 2,
-            Fecha = new DateTime(2026, 6, 12),
-            Fase = "Octavos de final"
-        },
-        new()
-        {
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Portugal",
-            GolesLocal = 2,
-            GolesVisitante = 0,
-            Fecha = new DateTime(2026, 6, 13),
-            Fase = "Cuartos de final"
-        }
-    ];
+    private List<ResultadoVista> Resultados { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Resultados = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Where(partido => partido.Finalizado)
+            .Select(partido => new ResultadoVista
+            {
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                GolesLocal = partido.GolesLocal ?? 0,
+                GolesVisitante = partido.GolesVisitante ?? 0,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase
+            })
+            .ToList();
+    }
 
     private List<ResultadoVista> ResultadosFiltrados
     {

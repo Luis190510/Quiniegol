@@ -1,6 +1,7 @@
 ﻿@page "/partidos"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Partidos</PageTitle>
 
@@ -88,40 +89,33 @@
 @code {
     private string Mensaje { get; set; } = string.Empty;
 
-    private List<PartidoVista> PartidosDisponibles { get; set; } =
-    [
-        new()
-        {
-            Id = 1,
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Brasil",
-            Fecha = new DateTime(2026, 6, 15, 18, 0, 0),
-            Fase = "Fase de grupos",
-            Estado = "Próximo"
-        },
-        new()
-        {
-            Id = 2,
-            EquipoLocal = "Argentina",
-            EquipoVisitante = "España",
-            Fecha = new DateTime(2026, 6, 16, 20, 0, 0),
-            Fase = "Fase de grupos",
-            Estado = "Próximo"
-        },
-        new()
-        {
-            Id = 3,
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Alemania",
-            Fecha = new DateTime(2026, 6, 17, 17, 0, 0),
-            Fase = "Fase de grupos",
-            Estado = "Próximo"
-        }
-    ];
+    private List<PartidoVista> PartidosDisponibles { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        CargarPartidos();
+    }
 
     private void ActualizarPartidos()
     {
-        Mensaje = $"Partidos actualizados a las {DateTime.Now:HH:mm:ss}.";
+        CargarPartidos();
+        Mensaje = $"Partidos actualizados a las {FechaSimulada.FechaActual:HH:mm:ss}.";
+    }
+
+    private void CargarPartidos()
+    {
+        PartidosDisponibles = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new PartidoVista
+            {
+                Id = partido.Id,
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Estado = partido.Estado
+            })
+            .ToList();
     }
 
     private sealed class PartidoVista

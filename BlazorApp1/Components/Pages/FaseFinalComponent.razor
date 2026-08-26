@@ -1,6 +1,7 @@
 ﻿@page "/fase-final"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Fase final</PageTitle>
 
@@ -264,117 +265,32 @@
 @code {
     private PartidoFaseFinalVista? PartidoSeleccionado { get; set; }
 
-    private List<RondaVista> Rondas { get; set; } =
-    [
-        new()
-        {
-            Nombre = "Cuartos de final",
-            Partidos =
-            [
-                new()
-                {
-                    EquipoLocal = "Costa Rica",
-                    EquipoVisitante = "España",
-                    GolesLocal = 2,
-                    GolesVisitante = 1,
-                    Fecha = new DateTime(2026, 7, 2, 18, 0, 0),
-                    Estadio = "MetLife Stadium",
-                    Finalizado = true
-                },
-                new()
-                {
-                    EquipoLocal = "Brasil",
-                    EquipoVisitante = "Portugal",
-                    GolesLocal = 3,
-                    GolesVisitante = 1,
-                    Fecha = new DateTime(2026, 7, 3, 18, 0, 0),
-                    Estadio = "SoFi Stadium",
-                    Finalizado = true
-                },
-                new()
-                {
-                    EquipoLocal = "Argentina",
-                    EquipoVisitante = "Francia",
-                    GolesLocal = 1,
-                    GolesVisitante = 2,
-                    Fecha = new DateTime(2026, 7, 4, 18, 0, 0),
-                    Estadio = "Hard Rock Stadium",
-                    Finalizado = true
-                },
-                new()
-                {
-                    EquipoLocal = "Alemania",
-                    EquipoVisitante = "Colombia",
-                    GolesLocal = 2,
-                    GolesVisitante = 0,
-                    Fecha = new DateTime(2026, 7, 5, 18, 0, 0),
-                    Estadio = "AT&T Stadium",
-                    Finalizado = true
-                }
-            ]
-        },
-        new()
-        {
-            Nombre = "Semifinales",
-            Partidos =
-            [
-                new()
-                {
-                    EquipoLocal = "Costa Rica",
-                    EquipoVisitante = "Brasil",
-                    GolesLocal = 1,
-                    GolesVisitante = 2,
-                    Fecha = new DateTime(2026, 7, 8, 19, 0, 0),
-                    Estadio = "MetLife Stadium",
-                    Finalizado = true
-                },
-                new()
-                {
-                    EquipoLocal = "Francia",
-                    EquipoVisitante = "Alemania",
-                    GolesLocal = 2,
-                    GolesVisitante = 1,
-                    Fecha = new DateTime(2026, 7, 9, 19, 0, 0),
-                    Estadio = "SoFi Stadium",
-                    Finalizado = true
-                }
-            ]
-        },
-        new()
-        {
-            Nombre = "Tercer lugar",
-            Partidos =
-            [
-                new()
-                {
-                    EquipoLocal = "Costa Rica",
-                    EquipoVisitante = "Alemania",
-                    GolesLocal = 2,
-                    GolesVisitante = 1,
-                    Fecha = new DateTime(2026, 7, 12, 18, 0, 0),
-                    Estadio = "Hard Rock Stadium",
-                    Finalizado = true
-                }
-            ]
-        },
-        new()
-        {
-            Nombre = "Final",
-            Partidos =
-            [
-                new()
-                {
-                    EquipoLocal = "Brasil",
-                    EquipoVisitante = "Francia",
-                    GolesLocal = null,
-                    GolesVisitante = null,
-                    Fecha = new DateTime(2026, 7, 13, 19, 0, 0),
-                    Estadio = "MetLife Stadium",
-                    Finalizado = false
-                }
-            ]
-        }
-    ];
+    private List<RondaVista> Rondas { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Rondas = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Where(partido => partido.Id > 72)
+            .GroupBy(partido => partido.Fase)
+            .Select(grupo => new RondaVista
+            {
+                Nombre = grupo.Key,
+                Partidos = grupo
+                    .Select(partido => new PartidoFaseFinalVista
+                    {
+                        EquipoLocal = partido.EquipoLocal,
+                        EquipoVisitante = partido.EquipoVisitante,
+                        GolesLocal = partido.GolesLocal,
+                        GolesVisitante = partido.GolesVisitante,
+                        Fecha = partido.Fecha,
+                        Estadio = "No registrado",
+                        Finalizado = partido.Finalizado
+                    })
+                    .ToList()
+            })
+            .ToList();
+    }
 
     private string Campeon
     {

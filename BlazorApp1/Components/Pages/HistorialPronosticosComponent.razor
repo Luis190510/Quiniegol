@@ -1,6 +1,8 @@
 ﻿@page "/historial-pronosticos"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
 
 <PageTitle>Historial de pronósticos</PageTitle>
 
@@ -121,7 +123,7 @@
                     <input id="buscarEquipoHistorial"
                            type="text"
                            class="form-control"
-                           placeholder="Ejemplo: Costa Rica"
+                           placeholder="Ejemplo: México"
                            @bind="EquipoBuscado"
                            @bind:event="oninput" />
 
@@ -283,55 +285,38 @@
 
     private string FiltroAcierto { get; set; } = "todos";
 
-    private List<PronosticoHistorialVista> Historial { get; set; } =
-    [
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Panamá",
-            GolesLocalPronosticados = 2,
-            GolesVisitantePronosticados = 1,
-            GolesLocalReal = 2,
-            GolesVisitanteReal = 1,
-            Fecha = new DateTime(2026, 6, 10),
-            Estado = "exacto",
-            Puntos = 3
-        },
-        new()
-        {
-            EquipoLocal = "Brasil",
-            EquipoVisitante = "Argentina",
-            GolesLocalPronosticados = 2,
-            GolesVisitantePronosticados = 1,
-            GolesLocalReal = 1,
-            GolesVisitanteReal = 1,
-            Fecha = new DateTime(2026, 6, 11),
-            Estado = "fallido",
-            Puntos = 0
-        },
-        new()
-        {
-            EquipoLocal = "España",
-            EquipoVisitante = "Alemania",
-            GolesLocalPronosticados = 2,
-            GolesVisitantePronosticados = 0,
-            GolesLocalReal = 3,
-            GolesVisitanteReal = 1,
-            Fecha = new DateTime(2026, 6, 12),
-            Estado = "resultado",
-            Puntos = 1
-        },
-        new()
-        {
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Portugal",
-            GolesLocalPronosticados = 1,
-            GolesVisitantePronosticados = 0,
-            Fecha = new DateTime(2026, 6, 17),
-            Estado = "pendiente",
-            Puntos = 0
-        }
-    ];
+    private List<PronosticoHistorialVista> Historial { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Dictionary<int, PartidoMundialItem> partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .ToDictionary(partido => partido.Id);
+
+        Historial = DatosMundial
+            .ObtenerPronosticos(Sesion.UsuarioActual.Id)
+            .Where(pronostico => partidos.ContainsKey(pronostico.PartidoId))
+            .Select(pronostico =>
+            {
+                PartidoMundialItem partido = partidos[pronostico.PartidoId];
+                string estado = ObtenerEstado(pronostico, partido);
+
+                return new PronosticoHistorialVista
+                {
+                    EquipoLocal = partido.EquipoLocal,
+                    EquipoVisitante = partido.EquipoVisitante,
+                    GolesLocalPronosticados = pronostico.GolesLocalPronosticados,
+                    GolesVisitantePronosticados = pronostico.GolesVisitantePronosticados,
+                    GolesLocalReal = partido.GolesLocal ?? 0,
+                    GolesVisitanteReal = partido.GolesVisitante ?? 0,
+                    Fecha = partido.Fecha,
+                    Estado = estado,
+                    Puntos = pronostico.PuntosObtenidos ??
+                        (estado == "exacto" ? 3 : estado == "resultado" ? 1 : 0)
+                };
+            })
+            .ToList();
+    }
 
     private int CantidadExactos =>
         Historial.Count(pronostico =>
@@ -396,6 +381,34 @@
             "pendiente" => "text-bg-warning",
             _ => "text-bg-secondary"
         };
+    }
+
+    private static string ObtenerEstado(
+        Pronostico pronostico,
+        PartidoMundialItem partido)
+    {
+        if (!partido.Finalizado ||
+            !partido.GolesLocal.HasValue ||
+            !partido.GolesVisitante.HasValue)
+        {
+            return "pendiente";
+        }
+
+        if (pronostico.GolesLocalPronosticados == partido.GolesLocal &&
+            pronostico.GolesVisitantePronosticados == partido.GolesVisitante)
+        {
+            return "exacto";
+        }
+
+        int resultadoPronosticado = Math.Sign(
+            pronostico.GolesLocalPronosticados -
+            pronostico.GolesVisitantePronosticados);
+        int resultadoReal = Math.Sign(
+            partido.GolesLocal.Value - partido.GolesVisitante.Value);
+
+        return resultadoPronosticado == resultadoReal
+            ? "resultado"
+            : "fallido";
     }
 
     private static string ObtenerTextoEstado(string estado)

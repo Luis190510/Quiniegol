@@ -1,6 +1,7 @@
 ﻿@page "/timeline"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Timeline de partidos</PageTitle>
 
@@ -331,67 +332,25 @@
 
     private PartidoTimelineVista? PartidoSeleccionado { get; set; }
 
-    private List<PartidoTimelineVista> Partidos { get; set; } =
-    [
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Panamá",
-            Fecha = new DateTime(2026, 6, 10, 18, 0, 0),
-            Fase = "Fase de grupos",
-            Estadio = "MetLife Stadium",
-            Finalizado = true,
-            GolesLocal = 2,
-            GolesVisitante = 1
-        },
-        new()
-        {
-            EquipoLocal = "Brasil",
-            EquipoVisitante = "Argentina",
-            Fecha = new DateTime(2026, 6, 11, 20, 0, 0),
-            Fase = "Fase de grupos",
-            Estadio = "SoFi Stadium",
-            Finalizado = true,
-            GolesLocal = 1,
-            GolesVisitante = 1
-        },
-        new()
-        {
-            EquipoLocal = "España",
-            EquipoVisitante = "Alemania",
-            Fecha = new DateTime(2026, 6, 17, 17, 0, 0),
-            Fase = "Fase de grupos",
-            Estadio = "Hard Rock Stadium",
-            Finalizado = false
-        },
-        new()
-        {
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Portugal",
-            Fecha = new DateTime(2026, 6, 18, 19, 0, 0),
-            Fase = "Fase de grupos",
-            Estadio = "AT&T Stadium",
-            Finalizado = false
-        },
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "España",
-            Fecha = new DateTime(2026, 7, 2, 18, 0, 0),
-            Fase = "Cuartos de final",
-            Estadio = "MetLife Stadium",
-            Finalizado = false
-        },
-        new()
-        {
-            EquipoLocal = "Brasil",
-            EquipoVisitante = "Francia",
-            Fecha = new DateTime(2026, 7, 13, 19, 0, 0),
-            Fase = "Final",
-            Estadio = "MetLife Stadium",
-            Finalizado = false
-        }
-    ];
+    private List<PartidoTimelineVista> Partidos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new PartidoTimelineVista
+            {
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Estadio = "No registrado",
+                Finalizado = partido.Finalizado,
+                GolesLocal = partido.GolesLocal ?? 0,
+                GolesVisitante = partido.GolesVisitante ?? 0
+            })
+            .ToList();
+    }
 
     private List<PartidoTimelineVista> PartidosFiltrados =>
         Partidos

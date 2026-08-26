@@ -4,10 +4,10 @@
     "Nombre": "Luis Alonso",
     "NombreUsuario": "luis.alonso",
     "Correo": "luis.alonso@gmail.com",
-    "ContrasenaHash": "PBKDF2-SHA256$100000$MCLYuF3OU4IWKyOkKH6hUw==$08AQukM0AG2ASqyAkS3aDqEW2xfN0Ee49CaKcxrqvYY=",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$lbl\u002BOlJd7meAqsnJ0LF54A==$w21IX5OoNQbjqtFJNEuZ6yY5Gxfkcbu7Sm20j\u002B4u/dA=",
     "Rol": "Usuario",
     "Activo": true,
-    "DebeCambiarContrasena": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Espa\u00F1a",
     "Puntos": 78,
     "Insignias": [

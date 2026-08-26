@@ -1,6 +1,7 @@
 ﻿@page "/pronosticos"
-@rendermode InteractiveServer
-@attribute [Authorize]
+@attribute [Authorize(Roles = "Usuario")]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Pronósticos</PageTitle>
 
@@ -102,6 +103,13 @@
     </div>
 
     @* Lista de partidos disponibles *@
+    @if (Partidos.Count == 0)
+    {
+        <div class="alert alert-info" role="alert">
+            No hay partidos disponibles después de la fecha simulada actual.
+        </div>
+    }
+
     <div class="row g-4">
 
         @foreach (var partido in Partidos)
@@ -220,36 +228,26 @@
 
     private string ClaseMensaje { get; set; } = "alert-info";
 
-    private List<PartidoPronosticoVista> Partidos { get; set; } =
-    [
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Brasil",
-            Fecha = new DateTime(2026, 6, 15, 18, 0, 0),
-            Fase = "Fase de grupos",
-            Disponible = true
-        },
-        new()
-        {
-            EquipoLocal = "Argentina",
-            EquipoVisitante = "España",
-            Fecha = new DateTime(2026, 6, 16, 20, 0, 0),
-            Fase = "Fase de grupos",
-            Disponible = true
-        },
-        new()
-        {
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Alemania",
-            Fecha = new DateTime(2026, 6, 14, 17, 0, 0),
-            Fase = "Fase de grupos",
-            Disponible = false,
-            GolesLocal = 2,
-            GolesVisitante = 1,
-            PronosticoGuardado = true
-        }
-    ];
+    private List<PartidoPronosticoVista> Partidos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Where(partido =>
+                !partido.Finalizado &&
+                partido.Fecha > FechaSimulada.FechaActual)
+            .Take(12)
+            .Select(partido => new PartidoPronosticoVista
+            {
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Disponible = true
+            })
+            .ToList();
+    }
 
     private int CantidadDisponibles =>
         Partidos.Count(partido => partido.Disponible);

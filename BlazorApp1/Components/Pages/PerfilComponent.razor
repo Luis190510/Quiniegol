@@ -1,6 +1,8 @@
 ﻿@page "/perfil"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
 
 <PageTitle>Mi perfil</PageTitle>
 
@@ -179,14 +181,6 @@
                         </dd>
 
                         <dt class="col-sm-5">
-                            Miembro desde
-                        </dt>
-
-                        <dd class="col-sm-7">
-                            @FechaRegistro.ToString("dd/MM/yyyy")
-                        </dd>
-
-                        <dt class="col-sm-5">
                             Quinielas
                         </dt>
 
@@ -267,10 +261,14 @@
                         Pronósticos recientes
                     </h5>
 
-                    <NavLink class="btn btn-sm btn-outline-primary"
-                             href="pronosticos">
-                        Ver todos
-                    </NavLink>
+                    <AuthorizeView Roles="Usuario">
+                        <Authorized>
+                            <NavLink class="btn btn-sm btn-outline-primary"
+                                     href="pronosticos">
+                                Ver todos
+                            </NavLink>
+                        </Authorized>
+                    </AuthorizeView>
 
                 </div>
 
@@ -355,28 +353,25 @@
    Posteriormente se obtendrá de la sesión y los archivos JSON. *@
 @code {
     private string NombreCompleto { get; set; } =
-        "Daniel Quesada";
+        string.Empty;
 
     private string NombreUsuario { get; set; } =
-        "DanQS";
+        string.Empty;
 
     private string Correo { get; set; } =
-        "usuario@quiniegol.com";
+        string.Empty;
 
     private string Rol { get; set; } =
-        "Participante";
+        string.Empty;
 
     private string SeleccionFavorita { get; set; } =
-        "Costa Rica";
+        string.Empty;
 
-    private DateTime FechaRegistro { get; set; } =
-        new DateTime(2026, 1, 10);
+    private int PosicionRanking { get; set; }
 
-    private int PosicionRanking { get; set; } = 2;
+    private int Puntos { get; set; }
 
-    private int Puntos { get; set; } = 28;
-
-    private int CantidadQuinielas { get; set; } = 3;
+    private int CantidadQuinielas { get; set; }
 
     private string Iniciales
     {
@@ -414,68 +409,58 @@
         }
     }
 
-    private List<InsigniaVista> Insignias { get; set; } =
-    [
-        new()
-        {
-            Nombre = "Marcador exacto",
-            Descripcion = "Acertaste un marcador completo.",
-            Icono = "🎯"
-        },
-        new()
-        {
-            Nombre = "Racha ganadora",
-            Descripcion = "Acertaste cinco resultados consecutivos.",
-            Icono = "🔥"
-        },
-        new()
-        {
-            Nombre = "Experto mundialista",
-            Descripcion = "Completaste quince pronósticos.",
-            Icono = "🏆"
-        },
-        new()
-        {
-            Nombre = "Primer pronóstico",
-            Descripcion = "Registraste tu primer pronóstico.",
-            Icono = "⚽"
-        }
-    ];
+    private List<InsigniaVista> Insignias { get; set; } = [];
 
-    private List<PronosticoPerfilVista> Pronosticos { get; set; } =
-    [
-        new()
-        {
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Panamá",
-            GolesLocalPronosticados = 2,
-            GolesVisitantePronosticados = 1,
-            GolesLocalReal = 2,
-            GolesVisitanteReal = 1,
-            PartidoFinalizado = true,
-            Puntos = 3
-        },
-        new()
-        {
-            EquipoLocal = "Brasil",
-            EquipoVisitante = "Argentina",
-            GolesLocalPronosticados = 2,
-            GolesVisitantePronosticados = 1,
-            GolesLocalReal = 1,
-            GolesVisitanteReal = 1,
-            PartidoFinalizado = true,
-            Puntos = 0
-        },
-        new()
-        {
-            EquipoLocal = "España",
-            EquipoVisitante = "Alemania",
-            GolesLocalPronosticados = 1,
-            GolesVisitantePronosticados = 0,
-            PartidoFinalizado = false,
-            Puntos = 0
-        }
-    ];
+    private List<PronosticoPerfilVista> Pronosticos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Usuario usuario = Sesion.UsuarioActual;
+        NombreCompleto = usuario.Nombre;
+        NombreUsuario = usuario.NombreUsuario;
+        Correo = usuario.Correo;
+        Rol = usuario.Rol == RolUsuario.Administrador
+            ? "Administrador"
+            : "Usuario";
+        SeleccionFavorita = usuario.PaisPreferido;
+        PosicionRanking = DatosMundial.ObtenerPosicionUsuario(usuario.Id);
+        Puntos = usuario.Puntos;
+        CantidadQuinielas = DatosMundial.ObtenerCantidadQuinielas(usuario.Id);
+
+        Insignias = usuario.Insignias
+            .Select(nombre => new InsigniaVista
+            {
+                Nombre = nombre,
+                Descripcion = "Insignia obtenida por tu participación en Quiniegol.",
+                Icono = "🏅"
+            })
+            .ToList();
+
+        Dictionary<int, PartidoMundialItem> partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .ToDictionary(partido => partido.Id);
+
+        Pronosticos = DatosMundial
+            .ObtenerPronosticos(usuario.Id)
+            .Where(pronostico => partidos.ContainsKey(pronostico.PartidoId))
+            .Take(5)
+            .Select(pronostico =>
+            {
+                PartidoMundialItem partido = partidos[pronostico.PartidoId];
+                return new PronosticoPerfilVista
+                {
+                    EquipoLocal = partido.EquipoLocal,
+                    EquipoVisitante = partido.EquipoVisitante,
+                    GolesLocalPronosticados = pronostico.GolesLocalPronosticados,
+                    GolesVisitantePronosticados = pronostico.GolesVisitantePronosticados,
+                    GolesLocalReal = partido.GolesLocal ?? 0,
+                    GolesVisitanteReal = partido.GolesVisitante ?? 0,
+                    PartidoFinalizado = partido.Finalizado,
+                    Puntos = pronostico.PuntosObtenidos ?? 0
+                };
+            })
+            .ToList();
+    }
 
     private sealed class InsigniaVista
     {

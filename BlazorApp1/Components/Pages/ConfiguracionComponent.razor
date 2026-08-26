@@ -1,6 +1,6 @@
 ﻿@page "/configuracion"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject SesionUsuarioService Sesion
 
 <PageTitle>Configuración</PageTitle>
 
@@ -317,7 +317,7 @@
 
     private string Correo { get; set; } = "usuario@quiniegol.com";
 
-    private string SeleccionFavorita { get; set; } = "Costa Rica";
+    private string SeleccionFavorita { get; set; } = string.Empty;
 
     private string Idioma { get; set; } = "Español";
 
@@ -334,16 +334,15 @@
     private string ClaseMensaje { get; set; } = "alert-info";
 
     private List<string> Selecciones { get; set; } =
-    [
-        "Costa Rica",
-        "Argentina",
-        "Brasil",
-        "Colombia",
-        "España",
-        "Francia",
-        "Alemania",
-        "Portugal"
-    ];
+        PaisesService.ObtenerTodos().ToList();
+
+    protected override void OnInitialized()
+    {
+        Usuario usuario = Sesion.UsuarioActual;
+        NombreUsuario = usuario.NombreUsuario;
+        Correo = usuario.Correo;
+        SeleccionFavorita = usuario.PaisPreferido;
+    }
 
     private void GuardarConfiguracion()
     {
@@ -370,7 +369,7 @@
     {
         NombreUsuario = "Usuario";
         Correo = "usuario@quiniegol.com";
-        SeleccionFavorita = "Costa Rica";
+        SeleccionFavorita = Sesion.UsuarioActual.PaisPreferido;
         Idioma = "Español";
         Tema = "Claro";
         NotificarPartidos = true;

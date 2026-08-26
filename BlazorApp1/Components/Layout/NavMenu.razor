@@ -17,7 +17,11 @@
             <NavLink class="nav-link text-white" href="informacion-partidos">
                 Información de partidos
             </NavLink>
-            <NavLink class="nav-link text-white" href="pronosticos">Pronósticos</NavLink>
+            <AuthorizeView Roles="Usuario" Context="usuarioMenuContext">
+                <Authorized>
+                    <NavLink class="nav-link text-white" href="pronosticos">Pronósticos</NavLink>
+                </Authorized>
+            </AuthorizeView>
             <NavLink class="nav-link text-white" href="historial-pronosticos">Historial</NavLink>
             <NavLink class="nav-link text-white" href="quinielas">Quinielas</NavLink>
             <NavLink class="nav-link text-white" href="resultados">Resultados</NavLink>
@@ -34,6 +38,9 @@
                     <h6 class="text-secondary px-2 mt-3">ADMINISTRACIÓN</h6>
                     <NavLink class="nav-link text-white" href="administracion-usuarios">
                         Usuarios
+                    </NavLink>
+                    <NavLink class="nav-link text-white" href="fecha-simulada">
+                        Fecha simulada
                     </NavLink>
                 </Authorized>
             </AuthorizeView>

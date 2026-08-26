@@ -1,6 +1,8 @@
 ﻿@page "/notificaciones"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
 
 <PageTitle>Notificaciones</PageTitle>
 
@@ -268,45 +270,32 @@
 
     private string TipoSeleccionado { get; set; } = "todos";
 
-    private List<NotificacionVista> Notificaciones { get; set; } =
-    [
-        new()
+    private List<NotificacionVista> Notificaciones { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        if (Sesion.EsAdministrador)
         {
-            Titulo = "Pronóstico pendiente",
-            Mensaje =
-                "El partido Costa Rica contra Brasil comienza en menos de 24 horas.",
-            Tipo = "Pronóstico",
-            Fecha = DateTime.Now.AddHours(-2),
-            Leida = false
-        },
-        new()
-        {
-            Titulo = "Nuevo resultado disponible",
-            Mensaje =
-                "Ya puedes consultar el resultado de Argentina contra España.",
-            Tipo = "Partido",
-            Fecha = DateTime.Now.AddHours(-5),
-            Leida = false
-        },
-        new()
-        {
-            Titulo = "Nueva posición en el ranking",
-            Mensaje =
-                "Ahora ocupas la segunda posición en Amigos Mundialistas.",
-            Tipo = "Quiniela",
-            Fecha = DateTime.Now.AddDays(-1),
-            Leida = true
-        },
-        new()
-        {
-            Titulo = "Bienvenido a Quiniegol",
-            Mensaje =
-                "Tu cuenta fue creada correctamente.",
-            Tipo = "Sistema",
-            Fecha = DateTime.Now.AddDays(-3),
-            Leida = true
+            return;
         }
-    ];
+
+        Notificaciones = DatosMundial
+            .ObtenerProximosSinPronostico(
+                Sesion.UsuarioActual.Id,
+                FechaSimulada.FechaActual)
+            .Select(partido => new NotificacionVista
+            {
+                Titulo = "Pronóstico pendiente",
+                Mensaje =
+                    $"El partido {partido.EquipoLocal} contra " +
+                    $"{partido.EquipoVisitante} comienza el " +
+                    $"{partido.Fecha:dd/MM/yyyy HH:mm}.",
+                Tipo = "Pronóstico",
+                Fecha = FechaSimulada.FechaActual,
+                Leida = false
+            })
+            .ToList();
+    }
 
     private int CantidadNoLeidas =>
         Notificaciones.Count(notificacion =>

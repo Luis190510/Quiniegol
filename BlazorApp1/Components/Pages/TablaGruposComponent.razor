@@ -1,6 +1,7 @@
 ﻿@page "/tabla-grupos"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Tabla de grupos</PageTitle>
 
@@ -216,150 +217,32 @@
 @code {
     private string GrupoSeleccionado { get; set; } = "A";
 
-    private List<GrupoVista> Grupos { get; set; } =
-    [
-        new()
-        {
-            Nombre = "A",
-            Selecciones =
-            [
-                new()
-                {
-                    Nombre = "Costa Rica",
-                    PartidosJugados = 3,
-                    Victorias = 2,
-                    Empates = 1,
-                    Derrotas = 0,
-                    GolesFavor = 6,
-                    GolesContra = 2
-                },
-                new()
-                {
-                    Nombre = "Brasil",
-                    PartidosJugados = 3,
-                    Victorias = 2,
-                    Empates = 0,
-                    Derrotas = 1,
-                    GolesFavor = 7,
-                    GolesContra = 3
-                },
-                new()
-                {
-                    Nombre = "Panamá",
-                    PartidosJugados = 3,
-                    Victorias = 1,
-                    Empates = 0,
-                    Derrotas = 2,
-                    GolesFavor = 3,
-                    GolesContra = 6
-                },
-                new()
-                {
-                    Nombre = "Japón",
-                    PartidosJugados = 3,
-                    Victorias = 0,
-                    Empates = 1,
-                    Derrotas = 2,
-                    GolesFavor = 2,
-                    GolesContra = 7
-                }
-            ]
-        },
-        new()
-        {
-            Nombre = "B",
-            Selecciones =
-            [
-                new()
-                {
-                    Nombre = "Argentina",
-                    PartidosJugados = 3,
-                    Victorias = 3,
-                    Empates = 0,
-                    Derrotas = 0,
-                    GolesFavor = 8,
-                    GolesContra = 2
-                },
-                new()
-                {
-                    Nombre = "España",
-                    PartidosJugados = 3,
-                    Victorias = 1,
-                    Empates = 1,
-                    Derrotas = 1,
-                    GolesFavor = 5,
-                    GolesContra = 4
-                },
-                new()
-                {
-                    Nombre = "Alemania",
-                    PartidosJugados = 3,
-                    Victorias = 1,
-                    Empates = 0,
-                    Derrotas = 2,
-                    GolesFavor = 4,
-                    GolesContra = 5
-                },
-                new()
-                {
-                    Nombre = "México",
-                    PartidosJugados = 3,
-                    Victorias = 0,
-                    Empates = 1,
-                    Derrotas = 2,
-                    GolesFavor = 2,
-                    GolesContra = 8
-                }
-            ]
-        },
-        new()
-        {
-            Nombre = "C",
-            Selecciones =
-            [
-                new()
-                {
-                    Nombre = "Francia",
-                    PartidosJugados = 3,
-                    Victorias = 2,
-                    Empates = 1,
-                    Derrotas = 0,
-                    GolesFavor = 6,
-                    GolesContra = 1
-                },
-                new()
-                {
-                    Nombre = "Portugal",
-                    PartidosJugados = 3,
-                    Victorias = 2,
-                    Empates = 0,
-                    Derrotas = 1,
-                    GolesFavor = 5,
-                    GolesContra = 3
-                },
-                new()
-                {
-                    Nombre = "Colombia",
-                    PartidosJugados = 3,
-                    Victorias = 1,
-                    Empates = 1,
-                    Derrotas = 1,
-                    GolesFavor = 4,
-                    GolesContra = 4
-                },
-                new()
-                {
-                    Nombre = "Canadá",
-                    PartidosJugados = 3,
-                    Victorias = 0,
-                    Empates = 0,
-                    Derrotas = 3,
-                    GolesFavor = 1,
-                    GolesContra = 8
-                }
-            ]
-        }
-    ];
+    private List<GrupoVista> Grupos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Grupos = DatosMundial
+            .ObtenerEstadisticas(FechaSimulada.FechaActual, soloFaseGrupos: true)
+            .GroupBy(estadistica => estadistica.Grupo)
+            .OrderBy(grupo => grupo.Key)
+            .Select(grupo => new GrupoVista
+            {
+                Nombre = grupo.Key,
+                Selecciones = grupo
+                    .Select(estadistica => new SeleccionGrupoVista
+                    {
+                        Nombre = estadistica.Seleccion,
+                        PartidosJugados = estadistica.PartidosJugados,
+                        Victorias = estadistica.Victorias,
+                        Empates = estadistica.Empates,
+                        Derrotas = estadistica.Derrotas,
+                        GolesFavor = estadistica.GolesFavor,
+                        GolesContra = estadistica.GolesContra
+                    })
+                    .ToList()
+            })
+            .ToList();
+    }
 
     private GrupoVista? GrupoActual =>
         Grupos.FirstOrDefault(grupo =>

@@ -1,6 +1,7 @@
 ﻿@page "/partidos/{Id:int}"
-@rendermode InteractiveServer
 @attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
 
 <PageTitle>Detalle del partido</PageTitle>
 
@@ -202,8 +203,16 @@
 
                     <div class="card-body">
 
-                        @foreach (var estadistica in Partido.Estadisticas)
+                        @if (Partido.Estadisticas.Count == 0)
                         {
+                            <p class="text-secondary mb-0">
+                                No hay estadísticas adicionales registradas para este partido.
+                            </p>
+                        }
+                        else
+                        {
+                            @foreach (var estadistica in Partido.Estadisticas)
+                            {
                             <div class="mb-4">
 
                                 <div class="d-flex justify-content-between mb-2">
@@ -238,6 +247,7 @@
                                 </div>
 
                             </div>
+                            }
                         }
 
                     </div>
@@ -255,13 +265,17 @@
 
                         <div class="d-flex flex-wrap justify-content-center gap-3">
 
-                            @if (!Partido.Finalizado)
-                            {
-                                <NavLink class="btn btn-primary"
-                                         href="pronosticos">
-                                    Crear pronóstico
-                                </NavLink>
-                            }
+                            <AuthorizeView Roles="Usuario">
+                                <Authorized>
+                                    @if (!Partido.Finalizado)
+                                    {
+                                        <NavLink class="btn btn-primary"
+                                                 href="pronosticos">
+                                            Crear pronóstico
+                                        </NavLink>
+                                    }
+                                </Authorized>
+                            </AuthorizeView>
 
                             <NavLink class="btn btn-outline-primary"
                                      href="timeline">
@@ -294,125 +308,33 @@
 
     private PartidoDetalleVista? Partido { get; set; }
 
-    private List<PartidoDetalleVista> PartidosTemporales { get; set; } =
-    [
-        new()
-        {
-            Id = 1,
-            EquipoLocal = "Costa Rica",
-            EquipoVisitante = "Brasil",
-            IconoLocal = "🇨🇷",
-            IconoVisitante = "🇧🇷",
-            Fecha = new DateTime(2026, 6, 15, 18, 0, 0),
-            Estadio = "MetLife Stadium",
-            Ciudad = "Nueva Jersey",
-            Fase = "Fase de grupos",
-            Grupo = "A",
-            Estado = "Próximo",
-            Finalizado = false,
-            Estadisticas =
-            [
-                new()
-                {
-                    Nombre = "Posesión",
-                    ValorLocal = 45,
-                    ValorVisitante = 55
-                },
-                new()
-                {
-                    Nombre = "Remates",
-                    ValorLocal = 8,
-                    ValorVisitante = 12
-                },
-                new()
-                {
-                    Nombre = "Tiros de esquina",
-                    ValorLocal = 4,
-                    ValorVisitante = 6
-                }
-            ]
-        },
-        new()
-        {
-            Id = 2,
-            EquipoLocal = "Argentina",
-            EquipoVisitante = "España",
-            IconoLocal = "🇦🇷",
-            IconoVisitante = "🇪🇸",
-            Fecha = new DateTime(2026, 6, 16, 20, 0, 0),
-            Estadio = "SoFi Stadium",
-            Ciudad = "Los Ángeles",
-            Fase = "Fase de grupos",
-            Grupo = "B",
-            Estado = "Próximo",
-            Finalizado = false,
-            Estadisticas =
-            [
-                new()
-                {
-                    Nombre = "Posesión",
-                    ValorLocal = 52,
-                    ValorVisitante = 48
-                },
-                new()
-                {
-                    Nombre = "Remates",
-                    ValorLocal = 11,
-                    ValorVisitante = 9
-                },
-                new()
-                {
-                    Nombre = "Tiros de esquina",
-                    ValorLocal = 5,
-                    ValorVisitante = 4
-                }
-            ]
-        },
-        new()
-        {
-            Id = 3,
-            EquipoLocal = "Francia",
-            EquipoVisitante = "Alemania",
-            IconoLocal = "🇫🇷",
-            IconoVisitante = "🇩🇪",
-            Fecha = new DateTime(2026, 6, 17, 17, 0, 0),
-            Estadio = "Hard Rock Stadium",
-            Ciudad = "Miami",
-            Fase = "Fase de grupos",
-            Grupo = "C",
-            Estado = "Finalizado",
-            Finalizado = true,
-            GolesLocal = 2,
-            GolesVisitante = 1,
-            Estadisticas =
-            [
-                new()
-                {
-                    Nombre = "Posesión",
-                    ValorLocal = 48,
-                    ValorVisitante = 52
-                },
-                new()
-                {
-                    Nombre = "Remates",
-                    ValorLocal = 10,
-                    ValorVisitante = 7
-                },
-                new()
-                {
-                    Nombre = "Tiros de esquina",
-                    ValorLocal = 6,
-                    ValorVisitante = 3
-                }
-            ]
-        }
-    ];
+    private List<PartidoDetalleVista> PartidosTemporales { get; set; } = [];
 
     protected override void OnParametersSet()
     {
-        Partido = PartidosTemporales
-            .FirstOrDefault(partido =>
-                partido.Id == Id);
+        PartidoMundialItem? datos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .FirstOrDefault(partido => partido.Id == Id);
+
+        Partido = datos is null
+            ? null
+            : new PartidoDetalleVista
+            {
+                Id = datos.Id,
+                EquipoLocal = datos.EquipoLocal,
+                EquipoVisitante = datos.EquipoVisitante,
+                IconoLocal = "⚽",
+                IconoVisitante = "⚽",
+                Fecha = datos.Fecha,
+                Estadio = "No registrado",
+                Ciudad = "No registrada",
+                Fase = datos.Fase,
+                Grupo = datos.Grupo,
+                Estado = datos.Estado,
+                Finalizado = datos.Finalizado,
+                GolesLocal = datos.GolesLocal ?? 0,
+                GolesVisitante = datos.GolesVisitante ?? 0
+            };
     }
 
     private string ObtenerClaseEstado()

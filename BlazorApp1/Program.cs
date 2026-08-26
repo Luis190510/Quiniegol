@@ -25,6 +25,7 @@ builder.Services
     });
 
 builder.Services.AddScoped<DatosPronosticosService>();
+builder.Services.AddScoped<DatosMundialService>();
 builder.Services.AddScoped<SesionUsuarioService>();
 builder.Services.AddScoped<AuthenticationStateProvider>(
     provider => provider.GetRequiredService<SesionUsuarioService>());
