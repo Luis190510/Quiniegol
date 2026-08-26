@@ -1,0 +1,62 @@
+﻿@rendermode InteractiveServer
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+
+            <div class="card shadow">
+                <div class="card-body p-4">
+
+                    <h3 class="text-center mb-4">
+                        Iniciar sesión
+                    </h3>
+
+                    <div class="form-floating mb-3">
+                        <input type="text"
+                               class="form-control"
+                               id="floatingUsuario"
+                               placeholder="Usuario"
+                               @bind="Nombre" />
+
+                        <label for="floatingUsuario">
+                            Usuario
+                        </label>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <input type="password"
+                               class="form-control"
+                               id="floatingPassword"
+                               placeholder="Contraseña"
+                               @bind="Password" />
+
+                        <label for="floatingPassword">
+                            Contraseña
+                        </label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="button"
+                                class="btn btn-primary btn-lg">
+                            Iniciar sesión
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@code
+{
+    private string Nombre { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+    private void Login()
+    {
+    }
+}

@@ -1,0 +1,47 @@
+﻿@inherits LayoutComponentBase
+
+<div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <h4>⚽ QUINIEGOL</h4>
+        </div>
+
+        <NavMenu/>
+
+    </aside>
+
+    <!-- Área principal -->
+    <div class="main-content">
+
+        <!-- Navbar superior -->
+        <header class="topbar">
+
+            <div>
+                <button class="btn btn-outline-secondary">
+                    ☰
+                </button>
+            </div>
+
+            <div>
+                <span class="me-3">🔔</span>
+                <span>👤 Usuario</span>
+            </div>
+
+        </header>
+
+        <!-- Contenido de cada página -->
+        <main class="content">
+            @Body
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            © 2026 Quiniegol
+        </footer>
+
+    </div>
+
+</div>
