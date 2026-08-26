@@ -1,0 +1,394 @@
+﻿@page "/configuracion"
+@rendermode InteractiveServer
+
+<PageTitle>Configuración</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Configuración
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Personaliza tu perfil y las preferencias de Quiniegol.
+        </p>
+
+    </div>
+
+    @* Mensajes de la página *@
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje alert-dismissible fade show"
+             role="alert">
+
+            @Mensaje
+
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarMensaje">
+            </button>
+
+        </div>
+    }
+
+    <div class="row g-4">
+
+        @* Datos del perfil *@
+        <div class="col-12 col-xl-7">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Información del perfil
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="nombreUsuario"
+                                   class="form-label">
+                                Nombre de usuario
+                            </label>
+
+                            <input id="nombreUsuario"
+                                   type="text"
+                                   class="form-control"
+                                   @bind="NombreUsuario" />
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="correo"
+                                   class="form-label">
+                                Correo electrónico
+                            </label>
+
+                            <input id="correo"
+                                   type="email"
+                                   class="form-control"
+                                   @bind="Correo" />
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="seleccionFavorita"
+                                   class="form-label">
+                                Selección favorita
+                            </label>
+
+                            <select id="seleccionFavorita"
+                                    class="form-select"
+                                    @bind="SeleccionFavorita">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                @foreach (var seleccion in Selecciones)
+                                {
+                                    <option value="@seleccion">
+                                        @seleccion
+                                    </option>
+                                }
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="idioma"
+                                   class="form-label">
+                                Idioma
+                            </label>
+
+                            <select id="idioma"
+                                    class="form-select"
+                                    @bind="Idioma">
+
+                                <option value="Español">
+                                    Español
+                                </option>
+
+                                <option value="Inglés">
+                                    Inglés
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        @* Preferencias de notificaciones *@
+        <div class="col-12 col-xl-5">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Notificaciones
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="form-check form-switch mb-4">
+
+                        <input id="notificarPartidos"
+                               type="checkbox"
+                               class="form-check-input"
+                               role="switch"
+                               @bind="NotificarPartidos" />
+
+                        <label for="notificarPartidos"
+                               class="form-check-label">
+                            Próximos partidos
+                        </label>
+
+                        <div class="form-text">
+                            Recibe avisos antes de los partidos.
+                        </div>
+
+                    </div>
+
+                    <div class="form-check form-switch mb-4">
+
+                        <input id="notificarResultados"
+                               type="checkbox"
+                               class="form-check-input"
+                               role="switch"
+                               @bind="NotificarResultados" />
+
+                        <label for="notificarResultados"
+                               class="form-check-label">
+                            Resultados
+                        </label>
+
+                        <div class="form-text">
+                            Recibe avisos cuando se publique un resultado.
+                        </div>
+
+                    </div>
+
+                    <div class="form-check form-switch">
+
+                        <input id="notificarQuinielas"
+                               type="checkbox"
+                               class="form-check-input"
+                               role="switch"
+                               @bind="NotificarQuinielas" />
+
+                        <label for="notificarQuinielas"
+                               class="form-check-label">
+                            Actividad de quinielas
+                        </label>
+
+                        <div class="form-text">
+                            Recibe noticias sobre tus quinielas.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        @* Apariencia *@
+        <div class="col-12 col-xl-6">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Apariencia
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <label for="tema"
+                           class="form-label">
+                        Tema
+                    </label>
+
+                    <select id="tema"
+                            class="form-select"
+                            @bind="Tema">
+
+                        <option value="Claro">
+                            Claro
+                        </option>
+
+                        <option value="Oscuro">
+                            Oscuro
+                        </option>
+
+                        <option value="Sistema">
+                            Usar configuración del sistema
+                        </option>
+
+                    </select>
+
+                    <div class="form-text">
+                        La aplicación del tema se agregará posteriormente.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        @* Seguridad *@
+        <div class="col-12 col-xl-6">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Seguridad
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <p class="text-secondary">
+                        Puedes cambiar la contraseña de tu cuenta.
+                    </p>
+
+                    <button type="button"
+                            class="btn btn-outline-danger"
+                            @onclick="SolicitarCambioContrasena">
+                        Cambiar contraseña
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Botones principales *@
+    <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+
+        <button type="button"
+                class="btn btn-outline-secondary"
+                @onclick="RestablecerConfiguracion">
+            Restablecer
+        </button>
+
+        <button type="button"
+                class="btn btn-primary"
+                @onclick="GuardarConfiguracion">
+            Guardar configuración
+        </button>
+
+    </div>
+
+</div>
+
+@* Por ahora la configuración se conserva únicamente mientras
+   la página permanece abierta. Después se guardará en usuarios.json. *@
+@code {
+    private string NombreUsuario { get; set; } = "Usuario";
+
+    private string Correo { get; set; } = "usuario@quiniegol.com";
+
+    private string SeleccionFavorita { get; set; } = "Costa Rica";
+
+    private string Idioma { get; set; } = "Español";
+
+    private string Tema { get; set; } = "Claro";
+
+    private bool NotificarPartidos { get; set; } = true;
+
+    private bool NotificarResultados { get; set; } = true;
+
+    private bool NotificarQuinielas { get; set; } = true;
+
+    private string Mensaje { get; set; } = string.Empty;
+
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    private List<string> Selecciones { get; set; } =
+    [
+        "Costa Rica",
+        "Argentina",
+        "Brasil",
+        "Colombia",
+        "España",
+        "Francia",
+        "Alemania",
+        "Portugal"
+    ];
+
+    private void GuardarConfiguracion()
+    {
+        if (string.IsNullOrWhiteSpace(NombreUsuario))
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "El nombre de usuario es obligatorio.";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(Correo) ||
+            !Correo.Contains('@'))
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "Debe ingresar un correo electrónico válido.";
+            return;
+        }
+
+        ClaseMensaje = "alert-success";
+        Mensaje = "La configuración se guardó correctamente.";
+    }
+
+    private void RestablecerConfiguracion()
+    {
+        NombreUsuario = "Usuario";
+        Correo = "usuario@quiniegol.com";
+        SeleccionFavorita = "Costa Rica";
+        Idioma = "Español";
+        Tema = "Claro";
+        NotificarPartidos = true;
+        NotificarResultados = true;
+        NotificarQuinielas = true;
+
+        ClaseMensaje = "alert-info";
+        Mensaje = "La configuración fue restablecida.";
+    }
+
+    private void SolicitarCambioContrasena()
+    {
+        ClaseMensaje = "alert-warning";
+        Mensaje =
+            "El formulario para cambiar la contraseña se agregará posteriormente.";
+    }
+
+    private void CerrarMensaje()
+    {
+        Mensaje = string.Empty;
+    }
+}
