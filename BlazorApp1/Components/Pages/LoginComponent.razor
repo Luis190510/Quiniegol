@@ -42,6 +42,15 @@
                                 @onclick="Login">
                             Iniciar sesión
                         </button>
+
+                        @if (!string.IsNullOrWhiteSpace(Mensaje))
+                        {
+                            <div class="alert alert-info mt-3" role="alert">
+                                @Mensaje
+                            </div>
+                        }
+
+
                     </div>
 
                 </div>
@@ -52,12 +61,24 @@
 </div>
 
 
+@*validacion de credenciales y carga de archivo .jason*@
 
-@code
-{
+@code {
     private string Nombre { get; set; } = string.Empty;
+
     private string Password { get; set; } = string.Empty;
+
+    private string Mensaje { get; set; } = string.Empty;
+
     private void Login()
     {
+        if (string.IsNullOrWhiteSpace(Nombre) ||
+            string.IsNullOrWhiteSpace(Password))
+        {
+            Mensaje = "Debe ingresar el usuario y la contraseña.";
+            return;
+        }
+
+        Mensaje = $"Intentando iniciar sesión como {Nombre}.";
     }
 }
