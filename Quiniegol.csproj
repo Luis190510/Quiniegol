@@ -54,6 +54,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="PDFsharp-MigraDoc-GDI" Version="6.2.4" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="10.33.0.1635">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

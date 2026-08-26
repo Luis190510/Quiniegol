@@ -80,6 +80,11 @@ namespace Quiniegol.Views
             DescargarReporte("txt");
         }
 
+        private void btnDescargarPdf_Click(object sender, EventArgs e)
+        {
+            DescargarReporte("pdf");
+        }
+
         private void DescargarReporte(string formato)
         {
             if (_reporteActual.Count == 0)
@@ -92,20 +97,32 @@ namespace Quiniegol.Views
                 return;
             }
 
-            bool esCsv = formato.Equals("csv", StringComparison.OrdinalIgnoreCase);
+            formato = formato.ToLowerInvariant();
+            string filtro;
+            if (formato == "csv")
+            {
+                filtro = "Archivo CSV (*.csv)|*.csv";
+            }
+            else if (formato == "pdf")
+            {
+                filtro = "Archivo PDF (*.pdf)|*.pdf";
+            }
+            else
+            {
+                filtro = "Archivo de texto (*.txt)|*.txt";
+            }
+
             string rol = SesionUsuarioService.EsAdministrador
                 ? "administrador"
                 : "usuario";
             using SaveFileDialog dialogo = new()
             {
                 AddExtension = true,
-                DefaultExt = esCsv ? "csv" : "txt",
+                DefaultExt = formato,
                 FileName = $"reporte_{rol}_{DateTime.Now:yyyyMMdd}",
-                Filter = esCsv
-                    ? "Archivo CSV (*.csv)|*.csv"
-                    : "Archivo de texto (*.txt)|*.txt",
+                Filter = filtro,
                 OverwritePrompt = true,
-                Title = esCsv ? "Guardar reporte CSV" : "Guardar reporte TXT"
+                Title = $"Guardar reporte {formato.ToUpperInvariant()}"
             };
 
             if (dialogo.ShowDialog(this) != DialogResult.OK)
@@ -115,9 +132,13 @@ namespace Quiniegol.Views
 
             try
             {
-                if (esCsv)
+                if (formato == "csv")
                 {
                     ReporteDescargaService.GuardarCsv(dialogo.FileName, _reporteActual);
+                }
+                else if (formato == "pdf")
+                {
+                    ReporteDescargaService.GuardarPdf(dialogo.FileName, _reporteActual);
                 }
                 else
                 {
@@ -152,6 +173,7 @@ namespace Quiniegol.Views
             bool hayReporte = _reporteActual.Count > 0;
             btnDescargarCsv.Enabled = hayReporte;
             btnDescargarTxt.Enabled = hayReporte;
+            btnDescargarPdf.Enabled = hayReporte;
         }
 
         private void ConfigurarColumnas()

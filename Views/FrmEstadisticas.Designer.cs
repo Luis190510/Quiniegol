@@ -38,6 +38,7 @@ namespace Quiniegol.Views
             dgvEstadisticas = new DataGridView();
             btnDescargarCsv = new Button();
             btnDescargarTxt = new Button();
+            btnDescargarPdf = new Button();
             btnCerrar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvEstadisticas).BeginInit();
             SuspendLayout();
@@ -146,12 +147,23 @@ namespace Quiniegol.Views
             btnDescargarTxt.UseVisualStyleBackColor = true;
             btnDescargarTxt.Click += btnDescargarTxt_Click;
             //
+            // btnDescargarPdf
+            //
+            btnDescargarPdf.Enabled = false;
+            btnDescargarPdf.Location = new Point(349, 515);
+            btnDescargarPdf.Name = "btnDescargarPdf";
+            btnDescargarPdf.Size = new Size(150, 29);
+            btnDescargarPdf.TabIndex = 9;
+            btnDescargarPdf.Text = "Descargar PDF";
+            btnDescargarPdf.UseVisualStyleBackColor = true;
+            btnDescargarPdf.Click += btnDescargarPdf_Click;
+            //
             // btnCerrar
             //
             btnCerrar.Location = new Point(772, 515);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(143, 29);
-            btnCerrar.TabIndex = 9;
+            btnCerrar.TabIndex = 10;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
@@ -164,6 +176,7 @@ namespace Quiniegol.Views
             CancelButton = btnCerrar;
             ClientSize = new Size(940, 560);
             Controls.Add(btnCerrar);
+            Controls.Add(btnDescargarPdf);
             Controls.Add(btnDescargarTxt);
             Controls.Add(btnDescargarCsv);
             Controls.Add(dgvEstadisticas);
@@ -197,6 +210,7 @@ namespace Quiniegol.Views
         private DataGridView dgvEstadisticas;
         private Button btnDescargarCsv;
         private Button btnDescargarTxt;
+        private Button btnDescargarPdf;
         private Button btnCerrar;
     }
 }
