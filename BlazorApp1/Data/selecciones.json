@@ -1,0 +1,290 @@
+﻿[
+  {
+    "Id": 1,
+    "Nombre": "México",
+    "Grupo": "A",
+    "RutaBandera": "Images/Banderas/mexico.png"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Sudáfrica",
+    "Grupo": "A",
+    "RutaBandera": "Images/Banderas/sudafrica.png"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Corea del Sur",
+    "Grupo": "A",
+    "RutaBandera": "Images/Banderas/corea-del-sur.png"
+  },
+  {
+    "Id": 4,
+    "Nombre": "República Checa",
+    "Grupo": "A",
+    "RutaBandera": "Images/Banderas/republica-checa.png"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Canadá",
+    "Grupo": "B",
+    "RutaBandera": "Images/Banderas/canada.png"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Bosnia y Herzegovina",
+    "Grupo": "B",
+    "RutaBandera": "Images/Banderas/bosnia-y-herzegovina.png"
+  },
+  {
+    "Id": 7,
+    "Nombre": "Qatar",
+    "Grupo": "B",
+    "RutaBandera": "Images/Banderas/qatar.png"
+  },
+  {
+    "Id": 8,
+    "Nombre": "Suiza",
+    "Grupo": "B",
+    "RutaBandera": "Images/Banderas/suiza.png"
+  },
+  {
+    "Id": 9,
+    "Nombre": "Brasil",
+    "Grupo": "C",
+    "RutaBandera": "Images/Banderas/brasil.png"
+  },
+  {
+    "Id": 10,
+    "Nombre": "Marruecos",
+    "Grupo": "C",
+    "RutaBandera": "Images/Banderas/marruecos.png"
+  },
+  {
+    "Id": 11,
+    "Nombre": "Haití",
+    "Grupo": "C",
+    "RutaBandera": "Images/Banderas/haiti.png"
+  },
+  {
+    "Id": 12,
+    "Nombre": "Escocia",
+    "Grupo": "C",
+    "RutaBandera": "Images/Banderas/escocia.png"
+  },
+  {
+    "Id": 13,
+    "Nombre": "Estados Unidos",
+    "Grupo": "D",
+    "RutaBandera": "Images/Banderas/estados-unidos.png"
+  },
+  {
+    "Id": 14,
+    "Nombre": "Paraguay",
+    "Grupo": "D",
+    "RutaBandera": "Images/Banderas/paraguay.png"
+  },
+  {
+    "Id": 15,
+    "Nombre": "Australia",
+    "Grupo": "D",
+    "RutaBandera": "Images/Banderas/australia.png"
+  },
+  {
+    "Id": 16,
+    "Nombre": "Turquía",
+    "Grupo": "D",
+    "RutaBandera": "Images/Banderas/turquia.png"
+  },
+  {
+    "Id": 17,
+    "Nombre": "Alemania",
+    "Grupo": "E",
+    "RutaBandera": "Images/Banderas/alemania.png"
+  },
+  {
+    "Id": 18,
+    "Nombre": "Curazao",
+    "Grupo": "E",
+    "RutaBandera": "Images/Banderas/curazao.png"
+  },
+  {
+    "Id": 19,
+    "Nombre": "Costa de Marfil",
+    "Grupo": "E",
+    "RutaBandera": "Images/Banderas/costa-de-marfil.png"
+  },
+  {
+    "Id": 20,
+    "Nombre": "Ecuador",
+    "Grupo": "E",
+    "RutaBandera": "Images/Banderas/ecuador.png"
+  },
+  {
+    "Id": 21,
+    "Nombre": "Países Bajos",
+    "Grupo": "F",
+    "RutaBandera": "Images/Banderas/paises-bajos.png"
+  },
+  {
+    "Id": 22,
+    "Nombre": "Japón",
+    "Grupo": "F",
+    "RutaBandera": "Images/Banderas/japon.png"
+  },
+  {
+    "Id": 23,
+    "Nombre": "Suecia",
+    "Grupo": "F",
+    "RutaBandera": "Images/Banderas/suecia.png"
+  },
+  {
+    "Id": 24,
+    "Nombre": "Túnez",
+    "Grupo": "F",
+    "RutaBandera": "Images/Banderas/tunez.png"
+  },
+  {
+    "Id": 25,
+    "Nombre": "Bélgica",
+    "Grupo": "G",
+    "RutaBandera": "Images/Banderas/belgica.png"
+  },
+  {
+    "Id": 26,
+    "Nombre": "Egipto",
+    "Grupo": "G",
+    "RutaBandera": "Images/Banderas/egipto.png"
+  },
+  {
+    "Id": 27,
+    "Nombre": "Irán",
+    "Grupo": "G",
+    "RutaBandera": "Images/Banderas/iran.png"
+  },
+  {
+    "Id": 28,
+    "Nombre": "Nueva Zelanda",
+    "Grupo": "G",
+    "RutaBandera": "Images/Banderas/nueva-zelanda.png"
+  },
+  {
+    "Id": 29,
+    "Nombre": "España",
+    "Grupo": "H",
+    "RutaBandera": "Images/Banderas/espana.png"
+  },
+  {
+    "Id": 30,
+    "Nombre": "Cabo Verde",
+    "Grupo": "H",
+    "RutaBandera": "Images/Banderas/cabo-verde.png"
+  },
+  {
+    "Id": 31,
+    "Nombre": "Arabia Saudita",
+    "Grupo": "H",
+    "RutaBandera": "Images/Banderas/arabia-saudita.png"
+  },
+  {
+    "Id": 32,
+    "Nombre": "Uruguay",
+    "Grupo": "H",
+    "RutaBandera": "Images/Banderas/uruguay.png"
+  },
+  {
+    "Id": 33,
+    "Nombre": "Francia",
+    "Grupo": "I",
+    "RutaBandera": "Images/Banderas/francia.png"
+  },
+  {
+    "Id": 34,
+    "Nombre": "Senegal",
+    "Grupo": "I",
+    "RutaBandera": "Images/Banderas/senegal.png"
+  },
+  {
+    "Id": 35,
+    "Nombre": "Irak",
+    "Grupo": "I",
+    "RutaBandera": "Images/Banderas/irak.png"
+  },
+  {
+    "Id": 36,
+    "Nombre": "Noruega",
+    "Grupo": "I",
+    "RutaBandera": "Images/Banderas/noruega.png"
+  },
+  {
+    "Id": 37,
+    "Nombre": "Argentina",
+    "Grupo": "J",
+    "RutaBandera": "Images/Banderas/argentina.png"
+  },
+  {
+    "Id": 38,
+    "Nombre": "Argelia",
+    "Grupo": "J",
+    "RutaBandera": "Images/Banderas/argelia.png"
+  },
+  {
+    "Id": 39,
+    "Nombre": "Austria",
+    "Grupo": "J",
+    "RutaBandera": "Images/Banderas/austria.png"
+  },
+  {
+    "Id": 40,
+    "Nombre": "Jordania",
+    "Grupo": "J",
+    "RutaBandera": "Images/Banderas/jordania.png"
+  },
+  {
+    "Id": 41,
+    "Nombre": "Portugal",
+    "Grupo": "K",
+    "RutaBandera": "Images/Banderas/portugal.png"
+  },
+  {
+    "Id": 42,
+    "Nombre": "Congo DR",
+    "Grupo": "K",
+    "RutaBandera": "Images/Banderas/congo-dr.png"
+  },
+  {
+    "Id": 43,
+    "Nombre": "Uzbekistán",
+    "Grupo": "K",
+    "RutaBandera": "Images/Banderas/uzbekistan.png"
+  },
+  {
+    "Id": 44,
+    "Nombre": "Colombia",
+    "Grupo": "K",
+    "RutaBandera": "Images/Banderas/colombia.png"
+  },
+  {
+    "Id": 45,
+    "Nombre": "Inglaterra",
+    "Grupo": "L",
+    "RutaBandera": "Images/Banderas/inglaterra.png"
+  },
+  {
+    "Id": 46,
+    "Nombre": "Croacia",
+    "Grupo": "L",
+    "RutaBandera": "Images/Banderas/croacia.png"
+  },
+  {
+    "Id": 47,
+    "Nombre": "Ghana",
+    "Grupo": "L",
+    "RutaBandera": "Images/Banderas/ghana.png"
+  },
+  {
+    "Id": 48,
+    "Nombre": "Panamá",
+    "Grupo": "L",
+    "RutaBandera": "Images/Banderas/panama.png"
+  }
+]

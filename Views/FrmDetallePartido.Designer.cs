@@ -37,20 +37,14 @@ namespace Quiniegol.Views
             lblMarcador = new Label();
             lblEstado = new Label();
             lblFecha = new Label();
+            lblGoleadores = new Label();
             dgvAnotadores = new DataGridView();
             lblSeleccionAnotador = new Label();
             cmbSeleccionAnotador = new ComboBox();
-            lblJugador = new Label();
-            txtJugador = new TextBox();
-            lblMinuto = new Label();
-            nudMinuto = new NumericUpDown();
-            btnAgregarAnotador = new Button();
-            btnEliminarAnotador = new Button();
             btnCerrar = new Button();
             ((System.ComponentModel.ISupportInitialize)picLocal).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picVisitante).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvAnotadores).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudMinuto).BeginInit();
             SuspendLayout();
             //
             // cmbPartido
@@ -139,103 +133,54 @@ namespace Quiniegol.Views
             lblFecha.Text = "Fecha";
             lblFecha.TextAlign = ContentAlignment.MiddleCenter;
             //
+            // lblGoleadores
+            //
+            lblGoleadores.AutoSize = true;
+            lblGoleadores.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblGoleadores.Location = new Point(20, 220);
+            lblGoleadores.Name = "lblGoleadores";
+            lblGoleadores.Size = new Size(190, 15);
+            lblGoleadores.TabIndex = 9;
+            lblGoleadores.Text = "Goleadores oficiales del partido";
+            //
             // dgvAnotadores
             //
             dgvAnotadores.AllowUserToAddRows = false;
             dgvAnotadores.AllowUserToDeleteRows = false;
             dgvAnotadores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvAnotadores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAnotadores.Location = new Point(20, 228);
+            dgvAnotadores.Location = new Point(20, 242);
             dgvAnotadores.MultiSelect = false;
             dgvAnotadores.Name = "dgvAnotadores";
             dgvAnotadores.ReadOnly = true;
             dgvAnotadores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvAnotadores.Size = new Size(1001, 272);
-            dgvAnotadores.TabIndex = 9;
+            dgvAnotadores.Size = new Size(1001, 258);
+            dgvAnotadores.TabIndex = 10;
             //
             // lblSeleccionAnotador
             //
             lblSeleccionAnotador.AutoSize = true;
-            lblSeleccionAnotador.Location = new Point(20, 526);
+            lblSeleccionAnotador.Location = new Point(20, 520);
             lblSeleccionAnotador.Name = "lblSeleccionAnotador";
             lblSeleccionAnotador.Size = new Size(61, 15);
-            lblSeleccionAnotador.TabIndex = 10;
-            lblSeleccionAnotador.Text = "Selección:";
+            lblSeleccionAnotador.TabIndex = 11;
+            lblSeleccionAnotador.Text = "Filtrar goleadores por selección:";
             //
             // cmbSeleccionAnotador
             //
-            cmbSeleccionAnotador.Enabled = false;
             cmbSeleccionAnotador.FormattingEnabled = true;
-            cmbSeleccionAnotador.Location = new Point(20, 547);
+            cmbSeleccionAnotador.Location = new Point(20, 541);
             cmbSeleccionAnotador.Name = "cmbSeleccionAnotador";
             cmbSeleccionAnotador.Size = new Size(256, 23);
-            cmbSeleccionAnotador.TabIndex = 11;
-            //
-            // lblJugador
-            //
-            lblJugador.AutoSize = true;
-            lblJugador.Location = new Point(298, 526);
-            lblJugador.Name = "lblJugador";
-            lblJugador.Size = new Size(50, 15);
-            lblJugador.TabIndex = 12;
-            lblJugador.Text = "Jugador:";
-            //
-            // txtJugador
-            //
-            txtJugador.Enabled = false;
-            txtJugador.Location = new Point(298, 547);
-            txtJugador.Name = "txtJugador";
-            txtJugador.Size = new Size(251, 23);
-            txtJugador.TabIndex = 13;
-            //
-            // lblMinuto
-            //
-            lblMinuto.AutoSize = true;
-            lblMinuto.Location = new Point(571, 526);
-            lblMinuto.Name = "lblMinuto";
-            lblMinuto.Size = new Size(47, 15);
-            lblMinuto.TabIndex = 14;
-            lblMinuto.Text = "Minuto:";
-            //
-            // nudMinuto
-            //
-            nudMinuto.Enabled = false;
-            nudMinuto.Location = new Point(571, 547);
-            nudMinuto.Maximum = new decimal(new int[] { 130, 0, 0, 0 });
-            nudMinuto.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            nudMinuto.Name = "nudMinuto";
-            nudMinuto.Size = new Size(93, 23);
-            nudMinuto.TabIndex = 15;
-            nudMinuto.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            //
-            // btnAgregarAnotador
-            //
-            btnAgregarAnotador.Enabled = false;
-            btnAgregarAnotador.Location = new Point(686, 542);
-            btnAgregarAnotador.Name = "btnAgregarAnotador";
-            btnAgregarAnotador.Size = new Size(159, 32);
-            btnAgregarAnotador.TabIndex = 16;
-            btnAgregarAnotador.Text = "Agregar anotador";
-            btnAgregarAnotador.UseVisualStyleBackColor = true;
-            btnAgregarAnotador.Click += btnAgregarAnotador_Click;
-            //
-            // btnEliminarAnotador
-            //
-            btnEliminarAnotador.Enabled = false;
-            btnEliminarAnotador.Location = new Point(862, 542);
-            btnEliminarAnotador.Name = "btnEliminarAnotador";
-            btnEliminarAnotador.Size = new Size(159, 32);
-            btnEliminarAnotador.TabIndex = 17;
-            btnEliminarAnotador.Text = "Eliminar seleccionado";
-            btnEliminarAnotador.UseVisualStyleBackColor = true;
-            btnEliminarAnotador.Click += btnEliminarAnotador_Click;
+            cmbSeleccionAnotador.TabIndex = 12;
+            cmbSeleccionAnotador.SelectedIndexChanged += cmbSeleccionAnotador_SelectedIndexChanged;
             //
             // btnCerrar
             //
-            btnCerrar.Location = new Point(862, 608);
+            btnCerrar.Location = new Point(862, 532);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(159, 32);
-            btnCerrar.TabIndex = 18;
+            btnCerrar.TabIndex = 13;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
@@ -246,17 +191,12 @@ namespace Quiniegol.Views
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCerrar;
-            ClientSize = new Size(1041, 658);
+            ClientSize = new Size(1041, 584);
             Controls.Add(btnCerrar);
-            Controls.Add(btnEliminarAnotador);
-            Controls.Add(btnAgregarAnotador);
-            Controls.Add(nudMinuto);
-            Controls.Add(lblMinuto);
-            Controls.Add(txtJugador);
-            Controls.Add(lblJugador);
             Controls.Add(cmbSeleccionAnotador);
             Controls.Add(lblSeleccionAnotador);
             Controls.Add(dgvAnotadores);
+            Controls.Add(lblGoleadores);
             Controls.Add(lblFecha);
             Controls.Add(lblEstado);
             Controls.Add(lblMarcador);
@@ -275,7 +215,6 @@ namespace Quiniegol.Views
             ((System.ComponentModel.ISupportInitialize)picLocal).EndInit();
             ((System.ComponentModel.ISupportInitialize)picVisitante).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvAnotadores).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudMinuto).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,15 +230,10 @@ namespace Quiniegol.Views
         private Label lblMarcador;
         private Label lblEstado;
         private Label lblFecha;
+        private Label lblGoleadores;
         private DataGridView dgvAnotadores;
         private Label lblSeleccionAnotador;
         private ComboBox cmbSeleccionAnotador;
-        private Label lblJugador;
-        private TextBox txtJugador;
-        private Label lblMinuto;
-        private NumericUpDown nudMinuto;
-        private Button btnAgregarAnotador;
-        private Button btnEliminarAnotador;
         private Button btnCerrar;
     }
 }

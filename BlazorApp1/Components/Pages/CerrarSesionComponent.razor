@@ -1,0 +1,14 @@
+@page "/cerrar-sesion"
+@attribute [Authorize]
+@inject SesionUsuarioService Sesion
+@inject NavigationManager Navigation
+
+<PageTitle>Cerrar sesión</PageTitle>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Sesion.CerrarSesion();
+        Navigation.NavigateTo("/");
+    }
+}

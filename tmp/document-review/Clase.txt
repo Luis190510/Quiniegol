@@ -1,0 +1,1856 @@
+Clase-20260729_170055-Meeting Recording 1
+July 29, 2026, 3:00AM
+1h 9m 38s
+
+KENDALL JOSUE MATA SANCHEZ   0:07
+¿Me escuchas?
+
+LUIS FELIPE MORA UMAÑA   0:07
+2 cosas ahí que sí, estoy viendo a ver cómo le pregunto, hay un montón de cosas aquí que no me convencen.
+
+KENDALL JOSUE MATA SANCHEZ   0:10
+Okay.
+
+LUIS FELIPE MORA UMAÑA   0:19
+¿Por qué ese order by ese?
+
+KENDALL JOSUE MATA SANCHEZ   0:24
+Para, para o para el order es para or ordenar, profe, lo utilicé para ordenar.
+
+LUIS FELIPE MORA UMAÑA   0:29
+Mhm.
+¿Mhm, pero por es que para ordenar qué digamos?
+
+KENDALL JOSUE MATA SANCHEZ   0:35
+Para ordenaré la fase es la.
+
+LUIS FELIPE MORA UMAÑA   0:36
+People can.
+
+KENDALL JOSUE MATA SANCHEZ   0:41
+No sé si me si me entiendes.
+
+LUIS FELIPE MORA UMAÑA   0:44
+Sí, lo entiendo, pero lo que no es, vamos a ver, aquí está recorriendo todos los partidos. No sé, por eso le decía que me explique, digamos, porque no me queda muy claro, digamos, este cuál es el resultado de esta.
+
+KENDALL JOSUE MATA SANCHEZ   0:52
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   0:58
+¿De este método, qué le devuelve?
+
+KENDALL JOSUE MATA SANCHEZ   1:01
+Pero la puerta.
+Carita.
+
+LUIS FELIPE MORA UMAÑA   1:04
+Ayúdame a entender un poquito.
+
+KENDALL JOSUE MATA SANCHEZ   1:06
+¿Qué?
+¿Cómo profe, no te entendí bien?
+
+LUIS FELIPE MORA UMAÑA   1:13
+¿Este método qué le devuelve?
+
+KENDALL JOSUE MATA SANCHEZ   1:15
+El order face.
+
+LUIS FELIPE MORA UMAÑA   1:17
+No todo este método, este método que se llama este que obtener cruces. ¿Qué le vuelve? ¿Qué le debería volver?
+
+KENDALL JOSUE MATA SANCHEZ   1:26
+In.
+
+LUIS FELIPE MORA UMAÑA   1:28
+¿Porque aquí está un return, verdad? El return es esto, verdad? Entonces, cuál es la ciencia que andaba buscando aquí, digamos que le volviera esto.
+
+KENDALL JOSUE MATA SANCHEZ   1:28
+Y.
+Sí.
+Que devolverá, digamos, el.
+El.
+El equipo local que volverá al equipo visitante.
+
+LUIS FELIPE MORA UMAÑA   1:54
+No me estás convenciendo mucho para serle muy honesto.
+
+KENDALL JOSUE MATA SANCHEZ   1:57
+Es que es que yo me explico muy mal, pero en mi cabeza sí tiene sentido, pero explicarte, digamos, lo utilicé para un uno, el para este dar el orden al equipo tanto local, visitante y la fecha ahora y ahí igualmente con el estado.
+Y luego allá po, podríamos este con el resultado, tenemos el resultado y ahí puede ver este el ganador que obtiene el ganador.
+
+LUIS FELIPE MORA UMAÑA   2:29
+¿Usted se entiende, digamos, ya voy a hacerle una pregunta así muy sin filtro, digamos, usted se entiende todo lo que está haciendo usted aquí para lo que lo está haciendo?
+
+KENDALL JOSUE MATA SANCHEZ   2:40
+Sí, en mi cabeza sí tiene sentido, profe.
+
+LUIS FELIPE MORA UMAÑA   2:44
+Si quieres que en la mía, al menos en la mía, no tiene mucho sentido, digamos.
+
+KENDALL JOSUE MATA SANCHEZ   2:47
+Mhm.
+Sí, pero siento que esto se podría mejor quitar y mejorar porque puede dar confusiones como tú dices. entonces de.
+
+LUIS FELIPE MORA UMAÑA   2:58
+no es que vamos a ver.
+No es sentido de que tiene confusiones o no, es que siento que estás haciendo un overkill.
+
+KENDALL JOSUE MATA SANCHEZ   3:06
+sí.
+
+LUIS FELIPE MORA UMAÑA   3:07
+Aquí y no sé, digamos con la explicación que usted me dio, si usted lo tiene tan claro.
+O si nada más copiaste y pegaste, digamos, que es lo que yo estoy considerando en este momento.
+
+KENDALL JOSUE MATA SANCHEZ   3:22
+De.
+
+LUIS FELIPE MORA UMAÑA   3:24
+Ni siquiera copiar y pegar, ahora nada más tiene que darle aceptar y aceptar los cambios y ya.
+
+KENDALL JOSUE MATA SANCHEZ   3:32
+no, profe.
+
+LUIS FELIPE MORA UMAÑA   3:42
+No sé, sigue sin convencerme mucho.
+
+KENDALL JOSUE MATA SANCHEZ   3:44
+Buen profe, madre.
+
+LUIS FELIPE MORA UMAÑA   3:45
+¿Por qué metió? Vamos a ver una pregunta rápida.
+¿Por qué metió esta entidad de cruce eliminatorio?
+Si al final tiene.
+Ya usted tiene un partido.
+
+KENDALL JOSUE MATA SANCHEZ   3:58
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   4:00
+Ya usted tiene este un flag ahí si es partido eliminatorio.
+
+KENDALL JOSUE MATA SANCHEZ   4:04
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   4:04
+Verdad.
+
+KENDALL JOSUE MATA SANCHEZ   4:06
+Dígame lo.
+
+LUIS FELIPE MORA UMAÑA   4:06
+Y este, aún así, estás metiendo otra entidad tanto que para tu estás metiendo otra entidad.
+
+KENDALL JOSUE MATA SANCHEZ   4:08
+Lo sí, lo.
+
+LUIS FELIPE MORA UMAÑA   4:16
+Es más, estás creando un montón de entidades más, tantas como cruces eliminatorias, ahorita porque no tiene muchos partidos eliminatorios, pero no sé, por cada usuario que use esto va a crear un montón de objetos de memoria, ya existe, toda esta información ya existe en el partido.
+
+KENDALL JOSUE MATA SANCHEZ   4:34
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   4:34
+El obtener partido ya tiene todo esto que no digamos como la.
+No la ganancia, además este todo el toda la.
+
+KENDALL JOSUE MATA SANCHEZ   4:45
+Bueno.
+
+LUIS FELIPE MORA UMAÑA   4:46
+La instrucción como tal, en algunos puntos me parece redundante, porque ¿para qué lo ordenas por fases si ya vienen ordenados por números de cruce? Y en segundo lugar, ¿para qué hacer un WHERE si ya tenés un flag? Y tercero, todavía te pone, ahí está recorriendo.
+
+KENDALL JOSUE MATA SANCHEZ   4:47
+Ajá.
+Sí, digamos, sí.
+
+LUIS FELIPE MORA UMAÑA   5:06
+Todos los partidos que hayan.
+Ya le digo, vea, 1, 2, 3, 4, 5, 6 veces. Está recorriendo 6 veces la misma lista para retornar una lista de un tipo de cruces eliminatorios que al final
+
+KENDALL JOSUE MATA SANCHEZ   5:18
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   5:24
+Usted se está yendo al otro lado a preguntar si esa lista tiene elementos de cruces eliminatorias, pero la estás creando aquí. Que era lo que le preguntaba ahora del IF ahí, que me pareció como extraño, pero nunca va a ir de elementos que sean de ese tipo. Entonces, no sé, digamos. Hay muchas cosas aquí que no me, no sé.
+
+KENDALL JOSUE MATA SANCHEZ   5:35
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   5:45
+Ahora sí, cuéntame, ya terminé, perdón, exponer mi punto.
+
+KENDALL JOSUE MATA SANCHEZ   5:46
+Digamos, yo creo que te te explico este código que tú estás diciendo, este bueno, lo sí sirve para este para obtener los partidos eliminatorios del sistema y filtrados y también para sí, para crear.
+
+LUIS FELIPE MORA UMAÑA   6:00
+Para crearlos porque los estás creando ahí.
+
+KENDALL JOSUE MATA SANCHEZ   6:04
+Sí, y también para ordenarlos este de fase de número este y creo que es de cruce y también.
+
+LUIS FELIPE MORA UMAÑA   6:11
+Eso es lo que yo le acabo de explicar, digamos, y al final de es exactamente lo mismo.
+
+KENDALL JOSUE MATA SANCHEZ   6:16
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   6:17
+Porque al final para que los ordenas por fase si al final solamente te vas a dejar los eliminatorios porque ya el partido es eliminatorio.
+
+KENDALL JOSUE MATA SANCHEZ   6:27
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   6:30
+Y después vas y lo ordenados por número de cruz, que los cruces no existirían si no han llegado hasta ahí en ese punto, entonces ya van a estar ordenados definitivamente.
+
+KENDALL JOSUE MATA SANCHEZ   6:41
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   6:41
+Y probablemente yo le puedo apostar.
+¿A que si usted va a obtener partidos?
+Va a tener otra expresión igual haciendo exactamente lo mismo.
+
+KENDALL JOSUE MATA SANCHEZ   6:57
+Buenos días.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   7:04
+Este Muéstrame el patrón mientras mientras Ariadni me explica, me comenta lo que tiene.
+
+KENDALL JOSUE MATA SANCHEZ   7:09
+Open.
+Thank you, profe.
+
+LUIS FELIPE MORA UMAÑA   7:12
+I'm on the lantern.
+
+ARIADNY MARIA NUÑEZ GODINEZ   7:13
+Profe, no era que me tenía que salir ya a vos.
+
+LUIS FELIPE MORA UMAÑA   7:16
+sí sí dale dale tranquila sí
+
+ARIADNY MARIA NUÑEZ GODINEZ   7:18
+Buenas noches, gracias. Profe, una pregunta, el la nota la pasas.
+
+LUIS FELIPE MORA UMAÑA   7:20
+Buenas noches, gracias. mhm.
+Ahora ahí vi su mensaje, este di, estoy en revisiones, entonces de cuando termine con todos. este.
+
+KENDALL JOSUE MATA SANCHEZ   7:31
+Thank you.
+
+ARIADNY MARIA NUÑEZ GODINEZ   7:32
+Eso profe.
+
+KENDALL JOSUE MATA SANCHEZ   7:32
+Mhm.
+
+ARIADNY MARIA NUÑEZ GODINEZ   7:34
+Gracias, buenas noches.
+
+LUIS FELIPE MORA UMAÑA   7:36
+Buenas noches.
+
+KENDALL JOSUE MATA SANCHEZ   7:37
+Ajá.
+Thank you.
+O sea, un mes años.
+Sí, me queda.
+
+LUIS FELIPE MORA UMAÑA   7:56
+Cuénteme el patrón, ahora sí que anda ya lo encontró.
+
+KENDALL JOSUE MATA SANCHEZ   8:01
+Sí, brother.
+Güey, la estoy buscando, profe, no lo veo con tantas cosas acá.
+
+LUIS FELIPE MORA UMAÑA   8:13
+¿Cuál fue el patrón que utilizó?
+
+KENDALL JOSUE MATA SANCHEZ   8:16
+El patrón diseño.
+
+LUIS FELIPE MORA UMAÑA   8:18
+Sí.
+
+KENDALL JOSUE MATA SANCHEZ   8:19
+En el repositorio.
+
+LUIS FELIPE MORA UMAÑA   8:21
+¿Para qué sirve el repository, qué hace el repository?
+
+KENDALL JOSUE MATA SANCHEZ   8:23
+Bueno, este el repositor lo utilicé.
+A ver.
+
+LUIS FELIPE MORA UMAÑA   8:37
+Mhm.
+
+KENDALL JOSUE MATA SANCHEZ   8:39
+Acá creo que está.
+
+LUIS FELIPE MORA UMAÑA   8:42
+Dame un toquecito, Erick, ya le ya le doy la.
+¿Vamos, misma pregunta que dicen los compañeros anteriores, cuál es la receta que resuelve? ¿Cuál es el problema que resuelve?
+
+KENDALL JOSUE MATA SANCHEZ   8:56
+E.
+
+LUIS FELIPE MORA UMAÑA   8:56
+¿Y por qué eso se ajusta a su problema y cómo fue que lo utilizó?
+
+KENDALL JOSUE MATA SANCHEZ   9:01
+Thank you.
+Bueno, este lo.
+
+LUIS FELIPE MORA UMAÑA   9:09
+Primero era la uno, después la 2.
+
+KENDALL JOSUE MATA SANCHEZ   9:09
+No.
+Que.
+¿Que cómo es profe el?
+
+LUIS FELIPE MORA UMAÑA   9:27
+¿Qué vamos a ver?
+Todos los patrones son una receta, todos los patrones tienen una estructura, tienen una responsabilidad, tienen un patrón, porque se llaman patrones, un patrón. ¿Cuál es el patrón que siguen? Literal, así el patrón.
+
+KENDALL JOSUE MATA SANCHEZ   9:31
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   9:44
+Que usted dice, mi problema es este, se este es el patrón que tengo. Yo tengo un patrón igual, los 2 se adaptan, ¿verdad? El uno con el otro.
+Ahora sí, este por esto es que lo implementé, esa es la respuesta que necesito que me diga.
+
+KENDALL JOSUE MATA SANCHEZ   10:02
+O K, sí.
+Bueno, lo.
+No.
+Este lo implementé.
+Hey.
+Y.
+El patrón principal este sigue el proyecto que es el MCU con el modelo viste controlador. y.
+El problema es que colocaba, digamos, toda la lógica dentro de los formularios.
+Yeah.
+Y se y se volvía este desordenado entonces.
+Este.
+Sí, porque si no rompería el principio, siento yo de la responsabilidad única que tendría que.
+
+LUIS FELIPE MORA UMAÑA   11:05
+Todo bien, yo creo que sería más fácil a ver si me dice lo copié y ya digamos y punto, digamos sería más fácil, más limpio y más honesto, pero bueno, este todo bien este porque no anda remotamente por ahí. Cuénteme, Eric, ¿qué pasó?
+
+ERICK ANDRES DELGADO ARAYA   11:18
+Pues que era como más privado, no sé si le puedo escribir o de alguna otra manera.
+
+LUIS FELIPE MORA UMAÑA   11:25
+Dame un toquecito, dame un toquecito porque ya viene el momento de negociación, ¿le parece?
+
+ERICK ANDRES DELGADO ARAYA   11:29
+Apple, gracias.
+
+LUIS FELIPE MORA UMAÑA   11:32
+Este.
+Bueno, listo, Kendall, estamos.
+
+KENDALL JOSUE MATA SANCHEZ   11:39
+Hey, profe.
+
+LUIS FELIPE MORA UMAÑA   11:41
+Buen día, muchas gracias.
+Okey, vamos a ver este.
+Dice aquí que me quedan por revisar.
+Glen, Adrián, Eric y Adid.
+Este me quedan cuatro grupos de revisar.
+Vamos a ver, podemos seguir revisando los que quieran salir, ¿verdad? Obviamente ya pueden salir tranquilamente, ya la clase terminó. Este los que los que digan, mira profe, sí, la verdad es que ya es tarde, estoy cansado. Les doy 2 opciones, este revisamos el próximo miércoles igual a las 5:00 de la tarde o revisamos el sábado.
+A las no sé, ahí nos ponemos de acuerdo. Yo les habilito ahí en el Excel un par de horas, se los dejo completamente a ustedes. Simplemente ahí nos devolvemos al commit, al último commit que se haya hecho hoy para igual, ¿verdad? Para mantener ahí la.
+La consistencia con los demás, verdad de la equidad de condiciones, dígame ustedes.
+
+Adrian Vinicio Chaves Marin   12:47
+Profe, una consulta.
+
+LUIS FELIPE MORA UMAÑA   12:48
+Dígame.
+
+Adrian Vinicio Chaves Marin   12:49
+El sábado sería el ese que viene, no el siguiente.
+
+LUIS FELIPE MORA UMAÑA   12:53
+It's testing.
+
+Adrian Vinicio Chaves Marin   12:55
+Okey, okey, no es que a mí me sirve mejor miércoles, pues yo entro a trabajar ahorita a las 10:00.
+Otra vez.
+
+LUIS FELIPE MORA UMAÑA   13:01
+Oh.
+Y el sábado no tiene chance.
+
+Adrian Vinicio Chaves Marin   13:06
+El sábado no estoy aquí, bueno, no estoy en mi casa, el sábado voy de vacaciones mañana.
+
+LUIS FELIPE MORA UMAÑA   13:11
+Ok, provecho, vamos a ver, vean este el toquecito. Bueno, ya Adrián dijo este renuncia a revisar hoy. ¿Qué fecha es el? Dame un toque, dame un toquecito de hoy en 8 es 5 de agosto.
+
+Adrian Vinicio Chaves Marin   13:19
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   13:28
+Este 5 Manolo de aquí.
+Voy a copiar esto, ya las comparto, dame 1 segundo.
+K, veamos.
+Este, o sea, ya.
+Ya estos de aquí.
+Voy a poner los aquí, ya los revisé.
+Entonces ya yo había hablado con Andy.
+Para revisar el próximo miércoles a las 5:30.
+Este.
+Entonces ya Adrián me está diciendo que el otro miércoles le sirve a las 5:00 de la tarde.
+
+Adrian Vinicio Chaves Marin   14:11
+Mhm, sí.
+
+LUIS FELIPE MORA UMAÑA   14:12
+Okay, todo bien.
+Estamos allá entonces.
+Donde nos vemos el miércoles a las 5:00.
+
+Adrian Vinicio Chaves Marin   14:21
+Sí, pero muchas gracias, muy bien.
+
+LUIS FELIPE MORA UMAÑA   14:22
+No se lo gracias, que le vaya muy bien las vacaciones y el trabajo.
+Este Glenn, no sé, Glenn, dígame usted.
+¿Qué le sirve más?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   14:32
+Prove.
+¿Me escucha, profe?
+
+LUIS FELIPE MORA UMAÑA   14:37
+Sí, y ahora sí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   14:39
+Y.
+Entonces está comentando que el sábado o el miércoles, verdad que ya hoy ya no, ya no revisaría. Tal vez que me puedo quedar con usted hoy, verdad si se podía.
+
+LUIS FELIPE MORA UMAÑA   14:49
+O K, por eso si se puede quedar hoy todo bien, pero yo entiendo también yo entiendo, digamos que también pueden estar cansados, ¿verdad? Todos hemos tenido un largo día laboral. La noche es larga, ¿verdad? Entonces si ustedes me dicen, profe, estoy cansado, yo lo entiendo perfectamente.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   14:52
+Yes.
+Hello!
+
+LUIS FELIPE MORA UMAÑA   15:04
+¿Y les doy estas opciones, verdad? Si no, este y me dice como usted, por ejemplo, que me dice no, profe, dele, deleamos.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   15:05
+No.
+A.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   15:13
+Sí, dele todo bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   15:17
+Di profe, si no es mucha molestia y me quedo aquí con usted porque me imagino que todos están cansados, pero yo la verdad sí.
+
+LUIS FELIPE MORA UMAÑA   15:22
+Dele.
+Dele, este Eric, cuénteme.
+
+ERICK ANDRES DELGADO ARAYA   15:34
+Pero lo que comentaron los compañeros, es que yo ocupaba retirarme, de hecho, olía a ver el motivo, pero si fuera el cargo, preferiría.
+Y si es posible el miércoles.
+
+LUIS FELIPE MORA UMAÑA   15:45
+A las 4:30 tiene chance.
+
+ERICK ANDRES DELGADO ARAYA   15:49
+El otro me que sí, ahora claro que sí.
+
+LUIS FELIPE MORA UMAÑA   15:51
+Lo tengo que de las 4:30, vamos a ver.
+Este vamos a ver estos 2, este más, vamos a verlos así.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   16:04
+Yes.
+No.
+
+LUIS FELIPE MORA UMAÑA   16:06
+Ok, voy a poner las cenas aquí.
+Cuatro y 30.
+Eric Delgado.
+Dale, Eric, nos vemos el otro miércoles a las 4:30 de la tarde, si Dios quiere.
+
+JUAN FELIPE PEREZ	BEJARANO   16:24
+Permiso, profe.
+
+LUIS FELIPE MORA UMAÑA   16:26
+¿Dígame, ahora sí, usted qué me falta?
+
+JUAN FELIPE PEREZ	BEJARANO   16:28
+Este, yo creo que a nosotros sí nos quedaría mejor el sábado.
+
+LUIS FELIPE MORA UMAÑA   16:33
+So.
+
+JUAN FELIPE PEREZ	BEJARANO   16:34
+Sí.
+¿A qué hora más o menos sería?
+
+LUIS FELIPE MORA UMAÑA   16:40
+De ahí, como solo son ustedes 2, le doy 2 opciones.
+El otro miércoles a las 4:00 de la tarde.
+
+JUAN FELIPE PEREZ	BEJARANO   16:48
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   16:50
+Oh, el sábado, no sé, 12:03 de la tarde.
+
+JUAN FELIPE PEREZ	BEJARANO   16:56
+Este di yo creo que no sirve cualquiera de las 2:00 es que hoy sí por un tema ahí con el compañero también se nos estaba complicando un poco.
+
+LUIS FELIPE MORA UMAÑA   17:04
+Sí, yo era un mes ahí.
+
+JUAN FELIPE PEREZ	BEJARANO   17:06
+Entonces di, yo creería que.
+Y.
+Déjame consultarle al compañero y ya te aviso.
+
+LUIS FELIPE MORA UMAÑA   17:16
+You saw it.
+
+JUAN FELIPE PEREZ	BEJARANO   17:18
+David.
+
+DAVID MOISES GOMEZ MORA   17:23
+Buenas noches, brother.
+
+LUIS FELIPE MORA UMAÑA   17:24
+We in right.
+
+DAVID MOISES GOMEZ MORA   17:26
+Ahí vamos, ahí vamos.
+De ahí cualquiera de las 2:00 de no sé, tal vez miércoles a las 4:00, no sé Felipe, ¿qué le parece?
+
+JUAN FELIPE PEREZ	BEJARANO   17:37
+Sí, por mí está bien, cualquiera de las 2:00 me sirve, entonces para que le quede mejor a usted, profe.
+
+LUIS FELIPE MORA UMAÑA   17:41
+Deámosle miércoles a las 4:00 de la tarde, entonces nada más deme un toque para arriesgar algo.
+
+JUAN FELIPE PEREZ	BEJARANO   17:45
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   17:50
+Este, hoy estamos aquí.
+No, la otra van a decir estoy perfecto.
+Revisar el calendario de breta. ¿Entonces ustedes revisan que recuerden igual, verdad? Este yo les ayudo ahí.
+Nos devolvemos en el.
+En el commit al último commit de hoy antes de las 6:00.
+Yeah, dumps, okay.
+
+DAVID MOISES GOMEZ MORA   18:20
+No.
+
+LUIS FELIPE MORA UMAÑA   18:21
+Going.
+
+JUAN FELIPE PEREZ	BEJARANO   18:21
+Okay, okay, bro.
+
+DAVID MOISES GOMEZ MORA   18:22
+Yes.
+
+LUIS FELIPE MORA UMAÑA   18:23
+¿Este si, por ejemplo, pueden seguir trabajando, verdad en el proyecto, en las cosas que les faltan, verdad? Porque eso es para el proyecto 2.
+
+JUAN FELIPE PEREZ	BEJARANO   18:31
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   18:31
+pero este y les recomendaría empezar desde ya, no sé qué tanto les faltará, pero este nada más lo van comiteando, ¿verdad? Entonces es más fácil devolvernos en el commit al commit del punto, ¿verdad? Eso es vean, para que ustedes se hagan una idea, eso es tan simple, voy a grabar este repositorio de aquí.
+Eso está simple como venir aquí, este es el repo del.
+Del curso nos venimos aquí, por ejemplo, este yo les digo, este vean este antes del 15.
+00 de la tarde entonces por ejemplo este fue a las 8:00 este fue ya el 22 entonces el último que queda disponible es este yo le doy clic derecho aquí le doy checkout y el mae se vuelve este estatus y ya eso es todo lo que hacemos.
+Okay.
+
+JUAN FELIPE PEREZ	BEJARANO   19:23
+¿Okey, profe, estabas comentando lo del proyecto 2 ya hay indicaciones de eso o algo?
+
+LUIS FELIPE MORA UMAÑA   19:29
+Um.
+Lo vemos la otra semana, nada más sigan trabajando ahí en las indicaciones, es falta lo que creen que les hace falta.
+Y si no les hace falta nada, de vayan ahí dándole.
+
+JUAN FELIPE PEREZ	BEJARANO   19:44
+Okay, bien, pura vida profe, buenas noches.
+
+LUIS FELIPE MORA UMAÑA   19:45
+T.
+Pero ya nos vemos, buenas noches.
+Hey.
+El resto no sé si tienen algo por ahí.
+
+TAYRON ALONSO SALAS NUÑEZ   20:05
+Ay, yo estoy esperando a ver si hay más presentaciones, sí me había interesado todas todos los proyectos.
+
+LUIS FELIPE MORA UMAÑA   20:10
+Okay.
+Está buenísimo entonces.
+Este.
+Vale, Glen.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   20:21
+Listo, profe.
+
+LUIS FELIPE MORA UMAÑA   20:23
+Listo, digamos time.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   20:25
+Se escucha ahí bien, es que el micrófono está como medio tocado, todo bien.
+
+LUIS FELIPE MORA UMAÑA   20:30
+Sí, señor.
+What you say?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   20:32
+Y.
+Compartir entonces.
+
+LUIS FELIPE MORA UMAÑA   20:41
+Nada más si quiere, mientras va compartiendo y abriendo todo este deme 1 segundo que el baño ya vuelvo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   20:42
+What?
+Okay.
+Stop!
+Okay.
+Sí.
+sí.
+No.
+Pon.
+Sí.
+Stop.
+No.
+Es.
+Okay.
+Sí.
+Ya.
+Google.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   23:00
+Ahora sí, muchas gracias por el tiempo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   23:04
+¿Listo, me escucha ahí?
+
+LUIS FELIPE MORA UMAÑA   23:06
+Sí, señor.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   23:09
+Y bueno, el entregable.
+Dale uno dice, si gusta ahora el del GitHub o.
+
+LUIS FELIPE MORA UMAÑA   23:13
+Mhm.
+¿Igual lo mismo que le preguntar a los otros compañeros, qué fecha tienen?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   23:20
+No.
+Okay.
+¿Qué?
+Está.
+
+LUIS FELIPE MORA UMAÑA   23:36
+All right, I started 3 semanas.
+O K, dale history nada más para ver algo rápido.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   23:44
+So.
+
+LUIS FELIPE MORA UMAÑA   23:49
+O K, perfecto, si yo vieras que ando como medio asociado el tiempo.
+Entonces ya se me fue Julio y no me he dado cuenta ni en qué momento llegó, pero es que mi junio se me hizo eterno, dale atrás porfa.
+El browser, el browser, el browser.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   24:06
+Y acá.
+
+LUIS FELIPE MORA UMAÑA   24:11
+Ahora sí, este veamos el entregable uno PF.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   24:23
+¿Qué es la tabla de contenido del índice?
+
+LUIS FELIPE MORA UMAÑA   24:26
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   24:27
+Yeah.
+De.
+
+LUIS FELIPE MORA UMAÑA   24:45
+dos cosas ahí en el en el falta un par de tildes así mismo va tildado buscaré va tildado porque es futuro y segundo este bueno y tercer punto cuando escribimos documentaciones técnicas las documentaciones técnicas
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   24:46
+No.
+A.
+S.
+
+LUIS FELIPE MORA UMAÑA   25:04
+Se escriben siempre en tercera persona, aunque usted haya trabajado solo, aunque hayan trabajado 100 personas, siempre se escribe en tercera persona.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   25:14
+Okay.
+
+LUIS FELIPE MORA UMAÑA   25:15
+Y.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   25:17
+E.
+
+LUIS FELIPE MORA UMAÑA   25:17
+Este se quedamos bajando ahí.
+Decía un proceso el mío de la UES, esa madre este.
+Para project manager, pero esos, esos señores así que tienen como 75000 certificaciones, más nos ponían esos documentos como 80 páginas, digamos, por proyecto. Y seguimos ahí todas las guías del PMBOK y todo eso. Este.
+Ese que le decía a Tyrone ahora, digamos que los más que son muy puristas de documentación, ¿verdad? Ese man era muy purista en cuanto a documentación. Este nos decía, por ejemplo, ahí en la página de arriba, que metes este el índice, la introducción y el siguiente tema, la misma página, siempre lo decía con muchachos.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   26:06
+O.
+
+LUIS FELIPE MORA UMAÑA   26:07
+Es el papel digital no es papel, papel, no hay que ahorrar papel este digital y eso no lo va a imprimir. Entonces sería bueno que esté siempre una.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   26:11
+Oh.
+
+LUIS FELIPE MORA UMAÑA   26:16
+Una paginita ahí, digamos, cada cosa en su paginita.
+Yeah, all bajando.
+Sí, ahí.
+Un detalle digamos es en este en el 1.1.2 Dice como usuario deseo modificar y esto lo hablé con Si no me equivoco con Albert ahora
+Este como usuario, deseo modificar mi información personal cuando sea necesario.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   27:00
+Oh.
+You could.
+
+LUIS FELIPE MORA UMAÑA   27:20
+Entonces, este cuando yo tome este trabajo, ¿verdad? De ahí yo ocupo saber qué es lo que puedo modificar y que no, ¿verdad?
+You are handling?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   27:39
+No.
+A.
+
+LUIS FELIPE MORA UMAÑA   27:44
+Igual ahí, digamos, ¿qué insignias tienes?
+¿Vas a seguir grabando?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   27:59
+No.
+
+LUIS FELIPE MORA UMAÑA   28:03
+Mhm.
+Sí.
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   28:24
+What is it?
+YouTube.
+No.
+Sí.
+
+LUIS FELIPE MORA UMAÑA   28:31
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   28:38
+No.
+A.
+Es.
+
+LUIS FELIPE MORA UMAÑA   28:43
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   28:50
+Pago, sí.
+
+LUIS FELIPE MORA UMAÑA   28:57
+Okay.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   28:59
+Re.
+Look.
+Sí.
+Sí.
+No.
+You know?
+No.
+Si.
+Es.
+
+LUIS FELIPE MORA UMAÑA   29:24
+Hmm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   29:30
+Sí.
+
+LUIS FELIPE MORA UMAÑA   29:32
+Mhm.
+Bing.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   29:43
+Go.
+
+LUIS FELIPE MORA UMAÑA   29:52
+Okay.
+Sí.
+Tiene.
+O K, si es que ahí escribe un toque rápido, puedo subir un toque después de bibliografía, sigue conclusiones directo, todo bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   30:06
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   30:14
+Es un salto ahí cuantitativo, podemos ver a conclusiones, porfa, si las pasaste muy rápido.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   30:14
+Is it correct?
+No.
+O.
+Sí.
+What?
+
+LUIS FELIPE MORA UMAÑA   30:39
+King.
+Veamos el otro, por.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   30:45
+¿Y la documentación?
+
+LUIS FELIPE MORA UMAÑA   30:47
+Sí, por favor.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   30:52
+Y bueno, está igual como estaba viendo el.
+¿De los compañeros, en mi caso no lo formulé tanto, verdad?
+Tal vez por no utilizar tantas herramientas que usamos, me enfoqué más como en el desarrollo, pero bueno, y me indica.
+
+LUIS FELIPE MORA UMAÑA   31:08
+Sí, vamos a ver, ahí sí quiero hacer, quiero hacer una pequeña pausa rápida para.
+Para hablar de una cosa, vamos a ver el hecho que presentemos todos en clases.
+No es para que se comparen, digamos, ustedes se pueden ver, si yo quisiera que todo fuera homogéneo, yo les doy un proyecto especificado así de Tao a raw hasta con mocks de cómo quiero que sea la aplicación, verdad. La idea es también ver un poquito más que todo la creatividad, verdad, el hecho de
+de que cada quien pueda echar para su saco y ver algunos puntos y algunas cosillas, pero a partir de esto y aprendemos todos, como dijo Taylor hace un rato, aprendemos todos, agarramos ideas, vemos, mira, está vacilón y a mí me gusta mucho ver que si usted se pone a ver, todos tenían un problema.
+Y todas las soluciones fueron diferentes, ¿verdad? Entonces de ellos es interesante ese tipo de ejercicio, ¿verdad? ¿Cómo es de una este?
+desde una especificación donde son simplemente requerimientos se llegan a cosas tan diferentes. En ese sentido no hay no hay como para compararse sino más bien como para para nutrirse en ese sentido. No sé si me expliqué bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   32:27
+Product to think.
+
+LUIS FELIPE MORA UMAÑA   32:29
+Todo este no se me achicopale.
+Las introducciones están muy bien.
+¿Hay nada más esta la parte de criterios de alta cohesión y además, sí me gustaría que le metiera un poquito más del porqué, verdad?
+¿Cómo garantizas eso? Una pequeña frase ahí.
+Este pasa el bando.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   33:15
+No.
+
+LUIS FELIPE MORA UMAÑA   33:20
+Okay, we're bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   33:21
+Oh.
+
+LUIS FELIPE MORA UMAÑA   33:31
+Okay.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   33:32
+No.
+
+LUIS FELIPE MORA UMAÑA   33:40
+¿Sí, igual ahí la versión, verdad? ¿Cuál versión estás utilizando?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   33:44
+Oh.
+
+LUIS FELIPE MORA UMAÑA   33:46
+Hay un detalle arriba soil on Tokio.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   33:47
+No.
+
+LUIS FELIPE MORA UMAÑA   33:50
+Ve al güey en lag que me.
+Ok, no estoy bien, estoy bien.
+Es que por ahí ahí, digamos, ahí dice este SDK SDK Stop Development Trendwork.
+Pero este no sé por qué leí, ya a esta hora ya me gana la dislexia. Este leí nada más punto NT CK y los 2 no necesariamente son compatibles.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   34:15
+No.
+No.
+
+LUIS FELIPE MORA UMAÑA   34:25
+Game.
+Igual ahí sería bueno unas capsurillas ahí para ver.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   34:36
+Correct.
+No.
+
+LUIS FELIPE MORA UMAÑA   34:49
+Dale, Glen.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   34:53
+Yeah.
+Okey, dice que sigue.
+
+LUIS FELIPE MORA UMAÑA   34:58
+It.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   35:08
+Yes.
+Go.
+
+LUIS FELIPE MORA UMAÑA   35:15
+¿Qué cuéntame cómo le fue usando Huguito? Veo solo 7 comitos, pues darle ahí donde dice 7 comitos.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   35:16
+It.
+bueno en el caso de git nunca lo había usado verdad en la primera semana que asignó el proyecto tuve un bloqueo ahí porque no estaba usando este estaba usando el del ojo azul ya después me pasé a este mejor lo descargué y busqué un poco porque igual eran que con Windows verdad
+Entonces, cuando solucioné ese, que era un poco más fácil en este, porque de hecho acá está, ¿verdad? Y.
+Para mí se me hace más fácil que la terminal, entonces tal vez por estar de ahí tan enfocado en el desarrollo, se me pasó un toque, lo de estar subiendo.
+De los avances.
+
+LUIS FELIPE MORA UMAÑA   36:07
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   36:07
+Aquí el 20, en el caso de los modelos, el 21, el 22, ya ahí después.
+Tuve algunos errores que tal vez eran errores que y no sabía qué era y si tuve que consultar. Entonces, tal vez por estar ahí bloqueado, no pensaba como en como en GitHub.
+
+LUIS FELIPE MORA UMAÑA   36:26
+Sí.
+Le decíamos qué son, giro, tráelo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   36:31
+En mi caso, Trelo.
+Vamos.
+No.
+Ok, está aquí es que lo está tapando el teams, aquí está.
+
+LUIS FELIPE MORA UMAÑA   36:42
+sí, está bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   36:45
+Es amor es.
+
+LUIS FELIPE MORA UMAÑA   36:48
+Okay.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   36:50
+Bueno, las que formulé.
+Sí, se me hizo mucho más fácil traer lo que quiere, la verdad. y.
+No me va a hacer tanto.
+En estar formulando, porque la verdad a mano sí estuve buscando mucha información aparte y se apunté muchas cosas, ¿verdad a mano? Pero cada estuve revisándolo y sí formulé algunas. Por ejemplo, acá la carga de los CSV, puse cuál es implementación de los pronósticos, porque yo usé.
+En cuanto a la arquitectura, usé pues las capas de presentación que serán los views, en mi caso usé servicios, como que viene siendo verdad, como bueno, ahora lo vamos a ver.
+
+LUIS FELIPE MORA UMAÑA   37:32
+Los controles.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   37:35
+Entre la interfaz gráfica que usted nos dijo que eran Windows Formes y la persistencia de datos, que yo lo que utilicé porque considero que es mucho más fácil los CSV.
+Bueno, acá las capas de presentación, bueno, los módulos, los pronósticos.
+Sí, 5 puntos, dice lo que están las indicaciones y bueno, crear los servicios que en ese caso están en services.
+
+LUIS FELIPE MORA UMAÑA   38:03
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   38:03
+Y.
+Está lógico, los modelos, arquitectura en bici, que ya sería el.
+Otro en arquitectura.
+Configuración de git.
+Parte de las notificaciones insignias, bueno, la configuración de GitHub, porque al principio sí tuve ahí un toque, ¿verdad? Estoy pegado ya cuando logré hacer el.
+
+LUIS FELIPE MORA UMAÑA   38:27
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   38:30
+El push y ya lo logré ver en el GitHub.
+Pues ya me descargué este voto y ya vi que era mucho más fácil, entonces ahí tal vez por eso fue que se me olvidó.
+Y subiendo los amores.
+
+LUIS FELIPE MORA UMAÑA   38:42
+Going.
+Yo ahí en la ejecución.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   38:50
+Perdón.
+
+LUIS FELIPE MORA UMAÑA   38:51
+Echemos los ojillos a la ejecución, sí lo puedo completar todo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   38:56
+Correct.
+
+LUIS FELIPE MORA UMAÑA   38:58
+That one.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   39:14
+Okey, esto es lo que le decía Becky, aquí uno nada más le toca y le va a confirmar todo, así el mensaje y acá lo.
+
+LUIS FELIPE MORA UMAÑA   39:18
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   39:22
+Entonces y mucho más fácil, claro.
+
+LUIS FELIPE MORA UMAÑA   39:24
+Chicklon.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   39:26
+Bueno, en este caso los usuarios tengo ahorita, tengo 40 y todos tienen la misma contraseña.
+Igualmente se pueden registrar.
+
+LUIS FELIPE MORA UMAÑA   39:39
+Registrado solo ahí capiado.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   39:46
+No.
+Voy a poner la misma.
+
+LUIS FELIPE MORA UMAÑA   39:57
+¿Es lo que yo le decía Ariadni, verdad? Creo que era Ariadni que le decía lo.
+Retrodown.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   40:06
+No.
+Okay, bueno.
+Y todos tienen la misma contraseña en este caso. y.
+¿Lo corro, verdad? Y bueno, aprendí muchas cosas aquí en este uno pone el formulario que con el que se va a ejecutar. El lo primero que va a cargar es el hoy, en este caso y el mensaje.
+Y.
+patrón singleton verdad creo que se llama fue lo que usé para la parte de la sesión del usuario y usted puede ver aquí que dice Carlos con el que acabo de ingresar para que el sistema de poco al usuario es y aprendí de eso fue como que esa clase
+
+LUIS FELIPE MORA UMAÑA   40:48
+Hmm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   40:54
+Se va a instanciar y solamente una vez es global, ¿verdad? Lo que significa que es accesible, si no me equivoco, a lo largo del de del sistema, porque como puede ver, con el que yo ingrese, acá va, nos va a decir cuál es.
+
+LUIS FELIPE MORA UMAÑA   41:09
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   41:09
+Y bueno, para hacer una prueba.
+
+LUIS FELIPE MORA UMAÑA   41:12
+¿Una pregunta ahí rápida, este sobre ese singleton, el singleton es sobre los usuarios o sobre este usuario en específico, qué es lo que se almacena ahí?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   41:14
+It.
+
+LUIS FELIPE MORA UMAÑA   41:23
+El usuario.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   41:23
+Okay, you.
+Con el que yo ingreso y ahí me va a indicar, porque, por ejemplo, cuando creo una quiniela es un ejemplo de los tienen un ID, entonces aquí dice el ID de la persona. Por ejemplo, yo creo que Carlos es el el uno, entonces te lo creo con Carlos, es para eso porque.
+
+LUIS FELIPE MORA UMAÑA   41:35
+Mhm.
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   41:48
+En el caso del form de quinielas, necesita agregar herida del creador.
+
+LUIS FELIPE MORA UMAÑA   41:55
+Okay, okay.
+Continuamos ahora sí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   42:01
+Bueno, en este caso.
+¿Y qué le iba a decir?
+Este Estas 2 columnas vienen siendo más como para la prueba de ahorita, ¿verdad? Porque no tiene lógica que le aparezcan los marcadores a la persona.
+
+LUIS FELIPE MORA UMAÑA   42:10
+Mhm.
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   42:20
+Pero este form es para finalizar el partido.
+Porque la idea es que el usuario venga y en pronósticos haga un pronóstico. Aquí escoge el ID del partido, pero hay una validación que lógicamente si el partido están finalizado, no puede.
+No puede hacer un pronóstico, entonces vamos a venirnos a uno que esté pendiente.
+Nigeria, Ecuador, dice.
+Entonces ahí.
+Y lo que le digo a las 2:00 columnas es que podemos ver que quedó 2 a 3 es para hacer el ejemplo un poco más.
+
+LUIS FELIPE MORA UMAÑA   42:58
+Mm.
+¿Qué es el pronóstico?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   43:00
+Entonces.
+Entonces yo le pongo 2 es para que le agregue los puntos de una vez.
+Entonces guardo el pronóstico.
+
+LUIS FELIPE MORA UMAÑA   43:12
+No para ponerle otro para que se vea la diferencia, si no le parece el mismo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   43:15
+No.
+Okay.
+El mismo partido dice usted.
+
+LUIS FELIPE MORA UMAÑA   43:23
+Cualquiera, cualquiera, cualquiera ve que se actualice ahí el.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   43:27
+Es a uno, entonces pongámosle uno.
+Un models.
+Entonces está guardando Caín.
+El pronóstico CSV.
+Que ya luego.
+
+LUIS FELIPE MORA UMAÑA   43:42
+Okay.
+Pero no se ve ahí la actualización.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   43:46
+Y.
+El pronóstico acabo de hacer dice usted.
+
+LUIS FELIPE MORA UMAÑA   43:51
+Sí, digamos, por ejemplo, darle pronósticos otras.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   43:54
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   43:55
+¿Vamos a ver si entiendo bien, esta es mi lista de pronósticos, verdad?
+Eso es lo que yo estoy pronosticando de cómo quedan los partidos esta parte.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   44:05
+Sí, yo que seleccionó el partido.
+
+LUIS FELIPE MORA UMAÑA   44:08
+Okey, vamos, ajá, vamos a ver qué acabamos de poner.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   44:08
+Y.
+Look.
+Perdón.
+
+LUIS FELIPE MORA UMAÑA   44:13
+Vámonos al que acabamos de poner porfa al de Estados Unidos Paraguay.
+No hay, pues que lo yo, pues que lo yo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   44:25
+Do.
+¿Y no sería Bolivia, Estados Unidos y Bolivia, no?
+
+LUIS FELIPE MORA UMAÑA   44:35
+No era Paraguay, sí me acuerdo.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   44:42
+Aquí está 39.
+
+LUIS FELIPE MORA UMAÑA   44:42
+SS.
+Sí, pero si le si le pusimos 2 a uno a uno a 2 no sería reflejar aquí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   44:46
+Es.
+No es que eso es para solamente para hacer el pronóstico este forma.
+Eso es lo que voy. Entonces, bueno, yo lo hice así, que entonces yo vengo, sería más como una función de administrador, ¿verdad? Vengo.
+Y es el de Estados Unidos.
+
+LUIS FELIPE MORA UMAÑA   45:20
+You stop?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   45:20
+Entonces, como podemos ver, el estado es pendiente, entonces yo lo finalizo porque.
+No puedo hacer pronósticos de si no están pendiente, ahora sí, ya lo puedo finalizar.
+
+LUIS FELIPE MORA UMAÑA   45:34
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   45:36
+Entonces ahí sí calcula los.
+Los puntos.
+Entonces tengo gestión de usuarios.
+Y Carlos, si usted vio, yo le di.
+A uno sí lee.
+Y le puse el mismo marcador, entonces por eso le asigno los 5 porque le pegó los el.
+
+LUIS FELIPE MORA UMAÑA   45:59
+No, pero le cambiamos porque le damos todos a uno.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:03
+No, pero que con otro.
+
+LUIS FELIPE MORA UMAÑA   46:04
+Eunos.
+Pero no lo escucho por si acaso.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:14
+Y a un marcador.
+
+LUIS FELIPE MORA UMAÑA   46:20
+Ahí no lo escuché, pero repetir, porfa.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:22
+Sí, me escucha ahí.
+
+LUIS FELIPE MORA UMAÑA   46:24
+Un poquito otra vez.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:27
+Y ahí me escucha mejor.
+
+LUIS FELIPE MORA UMAÑA   46:28
+Sí, hay bastante mejor gracias.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:32
+Hicimos 2 pronósticos a uno.
+
+LUIS FELIPE MORA UMAÑA   46:34
+Ajá.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:36
+Lo hice bien, me fijé en las 2 columnas que decía del grid.
+
+LUIS FELIPE MORA UMAÑA   46:40
+sí, cierto, sí, tener razón el otro, el de.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:42
+El ocio.
+Y si era uno malo, el que sí está bueno, por eso es que le agregó 5 puntos, ¿verdad? Porque si.
+
+LUIS FELIPE MORA UMAÑA   46:45
+Mhm.
+Um.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   46:52
+Aquí como un marcador son 5 y la y si no a ti no, pues son cero, ¿verdad?
+En este caso sí le atina luz.
+Tuviera 2 y lo hubiera atinado al ganador, pero sí le atinó al marcador de ambos.
+
+LUIS FELIPE MORA UMAÑA   47:05
+Okay.
+O sea, que no tendría 10 puntos.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   47:12
+Sí, si hubiera hecho 2 buenos, ¿verdad? O tuviera 7 si hubiera atinado el ganador del otro.
+
+LUIS FELIPE MORA UMAÑA   47:17
+Mhm.
+Okay.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   47:21
+Bueno, desde acá también le agregué para.
+Y la creación de usuarios, en este caso, si yo lo creo acá se va a guardar acá en usuarios y ya desde ya con ese nombre y esa contraseña vamos a poder ingresar desde el oyen también.
+Y bueno, podemos venir acá estadísticas.
+
+LUIS FELIPE MORA UMAÑA   47:47
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   47:48
+Y.
+Y bueno, acá acá este textbox es para agregar el número de grupo en caso de que.
+Hey, un momento, profe.
+A ver.
+School, please.
+
+LUIS FELIPE MORA UMAÑA   48:08
+Thank you.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   48:10
+Esta parte.
+Bueno, este nos varios resultados, este de ir a Redview.
+En este caso, como yo solamente Juan Carlos, he podido hacer el.
+El pronóstico, entonces aquí solamente se va a reflejar Carlos, todos los demás 40, pues no les he hecho nada. Bueno, 41, porque agregamos a uno que usted me indicó.
+
+LUIS FELIPE MORA UMAÑA   48:36
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   48:37
+A.
+calcular estadísticas También acá tienen los mensajes automáticos por ejemplo de promedio de goles la documentación ahí esa parte no sé si la vio que indique el promedio de goles el equipo más
+
+LUIS FELIPE MORA UMAÑA   48:54
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   48:57
+Y partido con más pronósticos.
+¿Y usaré con más puntos en este, en este caso es Carlos, que es el único, verdad?
+
+LUIS FELIPE MORA UMAÑA   49:08
+¿Tengo una duda ahí para qué sirve ese?
+Bueno, veamos las insignias.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   49:15
+Yes.
+
+LUIS FELIPE MORA UMAÑA   49:17
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   49:20
+Pues la lógica que yo que logré desarrollar fue quien que en este cuadro calcular y en general los el promedio de goles.
+
+LUIS FELIPE MORA UMAÑA   49:34
+No, eso estoy en las dudas. Tengo un par de dudas. Por ejemplo, yo sé que el con las insignias. ¿Ahora dónde salen las insignias?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   49:47
+Okay.
+Y vendrían siendo las.
+La notificación.
+Listo.
+Estoy, estoy viendo que acá el que le dice María con cero puntos.
+¿Y es que es de solamente usado Carlos, verdad?
+
+LUIS FELIPE MORA UMAÑA   50:17
+Pero hay una, hay un detalle muy curioso porque dice que este.
+José y Luis aceptaron marcadores, Carlos también.
+Pero solamente me sale uno que acertó.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   50:34
+AM.
+
+LUIS FELIPE MORA UMAÑA   50:34
+De hecho, dice que María tiene cero puntos.
+Pero María dice que abajo aceptó un marcador.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   50:38
+Uh-huh.
+No sé por qué indicará eso, porque solamente he usado Carlos, ¿verdad? No sé si será porque no tiene ningún ningún dato.
+¿O porque ahora estoy haciendo unas pruebas en la tarde antes de ingresar todo, verdad?
+Porque bueno, acá me indica que a las 19:00.
+
+LUIS FELIPE MORA UMAÑA   51:04
+Mhm 10 15.
+Que de hecho que dice que el marcador de ahorita es el de las 7:15, que fue ese que pegó Carlos.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   51:19
+Sí, siento que tendría que ver más con que pues están en ceros porque no he hecho ninguno.
+
+LUIS FELIPE MORA UMAÑA   51:26
+Entonces solamente deberían salir 2 notificaciones, la de Carlos pegó ese.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   51:31
+Sí, no verían automáticamente todo.
+Porque las está lanzando, tiene razón, las está lanzando, aunque no, aunque aún no se estén.
+Estoy haciendo.
+
+LUIS FELIPE MORA UMAÑA   51:43
+Mm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   51:46
+Es algo que tengo que revisar la verdad.
+
+LUIS FELIPE MORA UMAÑA   51:49
+Sí, igual las insignias también deberían salir también ahí en el.
+And ranking, brother.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   51:59
+Sí, no, en el otro, en el otro padre.
+
+LUIS FELIPE MORA UMAÑA   52:01
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   52:03
+Se cancel this.
+
+LUIS FELIPE MORA UMAÑA   52:03
+Okey, este tengo una duda ahí antes de que ejecute otra vez. Ay, mira dónde estás. No hay en estadísticas, esa parte del grupo que digamos que le agrega eso que usted le haya puesto a o que usted quite la B, que usted ponga una B, genera algo diferente.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   52:21
+No solamente los grupos, porque sabes.
+
+LUIS FELIPE MORA UMAÑA   52:25
+¿Los grupos, ¿Los grupos de qué, el mundial o qué?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   52:27
+Yeah.
+Sí, correcto.
+Porque lo agregué, siento que es necesario, pero lo agregué.
+Group.
+
+LUIS FELIPE MORA UMAÑA   52:46
+No, sí, porque tenemos que ver la tabla de posiciones, ¿verdad? No estamos viendo la tabla de posiciones, pero.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   52:56
+Yeah.
+Así.
+
+LUIS FELIPE MORA UMAÑA   52:58
+Sí, a ver.
+Okay, muy bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   53:13
+No.
+
+LUIS FELIPE MORA UMAÑA   53:13
+¿Qué pasa si este de ahí regresamos los otros que tienen?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   53:19
+Y bueno, partido, ya vimos que es para finalizar, cuando ya se finaliza podemos ver las.
+Los puntos en los porque esa es la idea, ¿verdad? Queda en el pronóstico, vengamos a finalizar el partido y vemos los puntos acá reflejados.
+
+LUIS FELIPE MORA UMAÑA   53:37
+Mhm.
+Yo sería la general, la tabla general.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   53:45
+Ok, en estadísticas dice usted.
+
+LUIS FELIPE MORA UMAÑA   53:47
+no pregunto en la pantalla que acabamos de ver era la general o aquí es donde sea la general.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   53:54
+El menú principal.
+
+LUIS FELIPE MORA UMAÑA   53:56
+No va, vamos a ver, vamos de nuevo, dale gestión a los usuarios.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   53:57
+No.
+Oh.
+
+LUIS FELIPE MORA UMAÑA   54:02
+Me saqué la tabla general.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:03
+Okay.
+Sí, por para ver los puntos de los usuarios.
+
+LUIS FELIPE MORA UMAÑA   54:07
+Okey, sí, perfecto, ahora bien, salgamos de.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:07
+No.
+No.
+Hello.
+
+LUIS FELIPE MORA UMAÑA   54:13
+Vamos a estadísticas ahora sí.
+Okay, ese le da ranking.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:20
+No.
+
+LUIS FELIPE MORA UMAÑA   54:23
+Si le das ver ahí, sí, me da lo mismo, sí que y en ese dropdown de ahí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:23
+Yeah, Barranco.
+No.
+
+LUIS FELIPE MORA UMAÑA   54:31
+Sí, dale, y el tropás y yo a ver qué opciones hacen eso.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:32
+Go.
+
+LUIS FELIPE MORA UMAÑA   54:37
+¿Qué tienes historial de pronósticos?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   54:47
+En este caso, todos son Carlos, todos los que he hecho con Carlos.
+
+LUIS FELIPE MORA UMAÑA   54:49
+Okay.
+Ok, entonces ya hay una pulga en la parte de notificaciones.
+¿Qué este vamos otra vez ahí al drop down?
+Hay un detalle rápido.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   55:04
+It.
+
+LUIS FELIPE MORA UMAÑA   55:04
+Es que si usted si usted se pone a ver.
+Ya voy, ya es 1 hora más de, es una cuestión más de usabilidad.
+¿Este de los ID no me sirven visualmente, verdad?
+Los ID son una parte, digamos, de lógica de backend y lógica de negocio, pero este y para eso tengo ahí el nombre, ¿verdad? Entonces sería más twice ver el nombre en este caso y el ID del partido, ver cuál fue el partido, ¿verdad?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   55:19
+No.
+
+LUIS FELIPE MORA UMAÑA   55:34
+Para ver quién contra quién para no tener que mirar cuál era el partido 19, tenía que ir a devolverme el 19 a ver cuál era el partido 19, me sigue.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   55:42
+Sí, porque los usuarios al final no tienen los CSU, es solamente uno, sí, la entiendo completamente.
+
+LUIS FELIPE MORA UMAÑA   55:47
+Exacto, I was por ahí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   55:48
+No.
+
+LUIS FELIPE MORA UMAÑA   55:52
+¿Estará ahora si está ahí?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   55:55
+Perdón.
+
+LUIS FELIPE MORA UMAÑA   55:55
+A ver qué más tiene dale ahí otra vez en dropdown, a ver qué más tiene ahí.
+Últimos 5 partidos.
+Porque si son los últimos ustedes están como pendientes.
+No deben estar finalizados.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   56:14
+Yeah.
+Yo los como el número 23 para arriba, todos son pendientes por el motivo de la validación, verdad que no nos va a dejar hacer el.
+El pronóstico, si no está pendiente, porque si está finalizado, nos va a tirar ahí un mensaje, un cuadrito.
+
+LUIS FELIPE MORA UMAÑA   56:33
+No, eso está bien. Lo que no entiendo es, digamos, y ahí la pregunta es, por ejemplo, yo le doy últimos 5 partidos. Yo esperaría ver cuáles fueron los últimos 5 partidos que ya obviamente ya se terminaron porque son los últimos 5, ¿verdad?
+Pero todos me salen como pendientes porque, por ejemplo, dale otra vez.
+Este próximos próximos partidos dale ahí donde dice próximos partidos.
+¿Ves ahí deberían salir todos esos porque todavía están como pendientes, verdad?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   57:05
+sí, ya.
+
+LUIS FELIPE MORA UMAÑA   57:05
+Les falta, ya lo entendió.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   57:08
+Tell me.
+Tiene que depender del Estado para mostrarme aquí más bien luz.
+
+LUIS FELIPE MORA UMAÑA   57:15
+Yo creo cuáles son los últimos verdad que se acaban de jugar, pues no tuve chance de verlos y quiero ver si cómo quedaron.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   57:23
+Ya no entendí.
+
+LUIS FELIPE MORA UMAÑA   57:24
+Sí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   57:27
+Sí, claramente no me tengo que revisar eso.
+
+LUIS FELIPE MORA UMAÑA   57:31
+¿Qué este el último detalle ahí que, bueno, 2 detalles ahí que?
+Que quería mencionar este.
+Vamos, puede cerrar esta ventana, ya vamos al menú principal.
+Hay un detalle aquí que me confunde un toque, digamos, si no sé si será solamente a mí, yo lo veo más como un tópico ahí de usabilidad, porque mira, este no hay forma de ver yo cuáles eran mis pronósticos, porque por ejemplo, yo voy a partidos, ¿verdad? Y está bien, está la lista de partidos y está la parte de terminar y todo eso es totalmente todo bien por ahí.
+Pero este que de hecho, digamos, no le agregaste lo de la hora, digamos como para poder uno jugar con las horas por ahí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   58:14
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   58:14
+Simular la hora, este ahí si le damos en pronósticos, dale pronósticos un toque.
+Ahí en pronóstico, si yo pronosti con resultado.
+Sería interesante, digamos, de ver cuál fue el resultado que yo pronostiqué, ¿verdad? Digamos, es cuál es el pronóstico que llevo, pero yo no sé cuál es. No sé, digamos, no he visto cuál es el pronóstico que yo llevo para los partidos. Sí me sigue.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   58:41
+Sí, correcto, ya que lo comprendo.
+
+LUIS FELIPE MORA UMAÑA   58:44
+Entonces va más por ahí, digamos, donde yo poder, digamos, qué es lo que yo pronostico, digamos, o cuáles son mis mis pronósticos, verdad?
+Y que los partidos que no se hayan jugado.
+¿Este de ahí no tengan marcadores, verdad? Tampoco.
+Todos los 2 temas ahí nada más que tenía por anotar, llevamos ellos al código nada más.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:13
+Sit.
+
+LUIS FELIPE MORA UMAÑA   59:15
+Hay que ir abajo, ahí sí, estás en Git.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:19
+Perdón.
+
+LUIS FELIPE MORA UMAÑA   59:20
+It's having it.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:23
+Okay.
+
+LUIS FELIPE MORA UMAÑA   59:23
+Está mal, no, mal, no hace falta que la cerrar, todo bien.
+Este Enséñame el patrón, está interesante ese patrón.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:34
+El de service es usted.
+
+LUIS FELIPE MORA UMAÑA   59:36
+El del Singleton, este amigo que tenía.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:42
+Sería lo que le estaba comentando, era esta clase que lo del usuario, porque.
+
+LUIS FELIPE MORA UMAÑA   59:48
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:50
+Bueno, ese es solamente instanciado una vez y que es global, entonces el sistema la puede, la puede contestar en todo momento.
+
+LUIS FELIPE MORA UMAÑA   59:59
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   59:59
+Más que todo ahí el.
+Que sí, que es buena recomendación, que es mejor el hombre, la verdad.
+
+LUIS FELIPE MORA UMAÑA   1:00:07
+Okay.
+¿Este, pero dónde está puramente la definición del singleton?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:00:14
+Bueno, lo que le comentaba al singleton es que yo entendí que es que es un patrón.
+Que se usa porque digamos.
+Lo guardé en útil porque con lo que con lo que indagué, las clases así que no son, que no es para eso más bien se guardan acá. Eso fue lo que lo.
+
+LUIS FELIPE MORA UMAÑA   1:00:41
+Mhm.
+Hey.
+No sé si está hablando, lo escucho, lo perdí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:00:56
+Y me escucha ahí.
+
+LUIS FELIPE MORA UMAÑA   1:00:57
+Ahora sí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:00:59
+Que no está hablando.
+
+LUIS FELIPE MORA UMAÑA   1:01:00
+Ok, tengo una duda, entonces usted en algún punto agarra el usuario, digamos el usuario que inició sesión y lo mete aquí, así literal, nada más lo agarra y lo asigna aquí.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:14
+No, lo que agarra es el ID.
+
+LUIS FELIPE MORA UMAÑA   1:01:18
+Mhm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:22
+Sí, pero es que uso esta sesión actual para que le indicaran el en el form.
+
+LUIS FELIPE MORA UMAÑA   1:01:29
+Mm.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:31
+Y poner el.
+
+LUIS FELIPE MORA UMAÑA   1:01:31
+Puedes darle donde dice pier referencias, porfa.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:35
+Perdón, eso.
+
+LUIS FELIPE MORA UMAÑA   1:01:37
+Eso sí, quiero ver una cosa.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:40
+Okay, thanks.
+How click?
+
+LUIS FELIPE MORA UMAÑA   1:01:42
+Perdón, sí, porfa.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:01:47
+No.
+
+LUIS FELIPE MORA UMAÑA   1:01:52
+Okey, ajá, ya vi, ya vi, ya vi, ya vi, ya vi, ajá, dale ahí en el del FM Login.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:02:01
+Y vamos a ver este.
+
+LUIS FELIPE MORA UMAÑA   1:02:04
+Sí, porfa.
+Okay.
+Es que.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:02:26
+Hola.
+
+LUIS FELIPE MORA UMAÑA   1:02:27
+Sabe lo que pase, digamos que.
+Y ahí es donde viven, donde les digo que es donde les dicen los otros compañeros, que es lo de las.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:02:34
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   1:02:42
+lo de las, lo de las recetas y demás, verdad, que es toda esa parte de la teoría de patrones y demás. Este el detalle con un singleton cuando implementas un vamos a ver, aquí lo que tenés es una variable global, no es un singleton, es una variable global.
+Como tal, cuando tengo un singleton, porque usted puede crear usuarios, este, la cantidad de usuarios que quiera, porque el constructor es público. Cuando usted tiene un singleton, el singleton es una instancia de la cual usted oculta el constructor y solo construye una instancia para
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:03:03
+No.
+
+LUIS FELIPE MORA UMAÑA   1:03:21
+toda la aplicación. ¿Lo ves? Entonces aquí lo que estás haciendo es que por ejemplo aquí en la línea 39 usted va y trae todo eso y filtra y demás y con el que encontró le cae encima a la variable global. Si fuera un singleton
+El max siempre sería el mismo. Si me seguís, la instancia siempre es la misma, digamos a ese usuario, a ese usuario actual, ahí donde dice, en la línea 43 donde haces el igual, ese igual no se podría hacer, porque el singleton no hay forma de hacer eso.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:04:03
+Dado cuentas, tal vez fue que lo malinterpreté porque me mencionó Singleton y variable global. Entonces sí, esto es la variable global.
+
+LUIS FELIPE MORA UMAÑA   1:04:14
+Sí, vamos por ahí, digamos, porque si no.
+no es como el puramente la receta del patrón singleton ahí después la puedo buscar si quiere digamos es más no sé si tiene Google ahí lo busca un toque digamos hay una hora que se llama este cómo se llama siempre se me olvida el nombre de esa página este creo que ya se los había pasado bueno no me acuerdo
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:04:27
+No.
+
+LUIS FELIPE MORA UMAÑA   1:04:40
+Ahí está el singleton y el singleton, si usted ve la receta del singleton, el singleton dice este que el constructor es privado, se invite una vez y se emite una vez la instancia porque se llama a través de ahí y solamente se crea una y crea una para todo el proyecto, que eso es lo que ve que es diferente, una variable global.
+A una instancia Singleton, verdad que o al patrono Singleton, porque solamente una sola instancia del Singleton lo que tenés.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:09
+Ah, okay, sí, ya, ya.
+
+LUIS FELIPE MORA UMAÑA   1:05:12
+Mhm.
+Sí, ahora que estamos en el login, echamos al login.
+¿Y va la documentación, verdad?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:26
+Perdón.
+
+LUIS FELIPE MORA UMAÑA   1:05:29
+La documentación.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:30
+Y me.
+
+LUIS FELIPE MORA UMAÑA   1:05:34
+Ahí hablamos los 2. ¿Qué pasó? Sí, otra vez.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:34
+No.
+Okay.
+¿Qué me indicaba?
+
+LUIS FELIPE MORA UMAÑA   1:05:40
+Lo de la documentación.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:44
+Que vaya a la documentación, me dice.
+
+LUIS FELIPE MORA UMAÑA   1:05:46
+No que le hizo falta la documentación del código.
+Arriba en los en todo lo público que todo lo público se comentaba, se acuerda.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:05:51
+Oh.
+Correcto y los comentarios.
+
+LUIS FELIPE MORA UMAÑA   1:05:58
+Sí, exacto.
+¿Quién este?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:06:03
+E.
+
+LUIS FELIPE MORA UMAÑA   1:06:10
+Hey.
+Menos enséñame algún controller.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:06:18
+Search.
+
+LUIS FELIPE MORA UMAÑA   1:06:37
+¿Es un muerto ahí, verdad?
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:06:39
+¿Y dónde probé?
+
+LUIS FELIPE MORA UMAÑA   1:06:42
+En registrar usuario, en iniciar sesión.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:06:46
+¿Por qué me indica por?
+
+LUIS FELIPE MORA UMAÑA   1:06:48
+Sí, porque si ves las referencias no tiene ninguna referencia, nadie lo está llamando, nadie lo está usando.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:06:56
+O K, en ese caso se puede, se puede omitir eso usted.
+
+LUIS FELIPE MORA UMAÑA   1:07:00
+Sí, se puede ahorrar porque no estás usando.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:07:04
+Ah, OK, muchas gracias.
+
+LUIS FELIPE MORA UMAÑA   1:07:08
+Yo me lo otro, porfa.
+O algún servicio creo que me interesa más porque si va a seguir la misma temática todo es a través de los servicios.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:07:12
+Y.
+
+LUIS FELIPE MORA UMAÑA   1:07:26
+Bing.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:07:26
+No.
+
+LUIS FELIPE MORA UMAÑA   1:07:49
+Y el rezamos un helillo ahí.
+Okay.
+It's time.
+Estamos bien, muchas gracias.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:08:09
+O.
+O K, profe, la nota, no sé si lo evalúo de una vez o.
+
+LUIS FELIPE MORA UMAÑA   1:08:16
+Ya está lista su nota, sí, es correcto.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:08:19
+O K, entonces ya le ya le voy a poner un mensaje, muchas gracias.
+
+LUIS FELIPE MORA UMAÑA   1:08:22
+Para acordarme, lo que tengo que hacer es subirle las otras notas. Ahí las tengo todos, yo tengo casi que todo calificado, solamente la tarea del curso no, porque eso es cero o 100, digamos si la entregara o no, pero lo que no he tenido chance de verdad es de ponerme ahí a tabular.
+Pues hay que pasarlos ahí uno, pero esta semana seguro usted, tal vez el fin de semana un toque tiempo ahí para.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:08:39
+No.
+No.
+
+LUIS FELIPE MORA UMAÑA   1:08:46
+Para ponerme a tabular todo eso.
+Pero sí, hago un mensajillo ahí, este aprovecho esta semana.
+Para terminar de pulir toda la parte de la lógica.
+Los cosillas que le hagan falta porque el bio si lo vamos a volar, el bio lo vamos a cambiar.
+Entonces, este.
+De cambiarle ahí eso ahí y seis, sí, muy bien.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:09:12
+Buenas noches.
+
+LUIS FELIPE MORA UMAÑA   1:09:15
+Buenas noches, Glen, que descanse.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   1:09:17
+Hello.
+
+TAYRON ALONSO SALAS NUÑEZ   1:09:21
+Muchas gracias por todo.
+
+LUIS FELIPE MORA UMAÑA   1:09:22
+Buenas noches, que descansen.
+
+TAYRON ALONSO SALAS NUÑEZ   1:09:25
+Bueno, igual.
+
+LUIS FELIPE MORA UMAÑA stopped transcription

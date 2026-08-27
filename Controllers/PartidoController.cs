@@ -1,498 +1,224 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
 using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
+    /// <summary>
+    /// Administra el calendario y sincroniza sus estados con la fecha simulada.
+    /// </summary>
     public class PartidoController
     {
-        private readonly JsonRepository<Partido>
-            _partidoRepository;
-
-        private readonly JsonRepository<ResultadoPartido>
-            _resultadoRepository;
-
-        private readonly FechaSimuladaService
-            _fechaService;
-
         private const int DuracionPartidoMinutos = 120;
 
+        private readonly JsonRepository<Partido> _partidoRepository;
+        private readonly JsonRepository<ResultadoPartido> _resultadoRepository;
+        private readonly FechaSimuladaService _fechaService;
+
         public PartidoController()
-        {
-            string rutaPartidos =
-                RutaDatosService.ObtenerRuta(
-                "partidos.json"
-            );
-
-            string rutaResultados =
-                RutaDatosService.ObtenerRuta(
-                    "resultados2026.json"
-                );
-
-            _partidoRepository =
+            : this(
                 new JsonRepository<Partido>(
-                    rutaPartidos
-                );
-
-            _resultadoRepository =
+                    RutaDatosService.ObtenerRuta("partidos.json")),
                 new JsonRepository<ResultadoPartido>(
-                    rutaResultados
-                );
-
-            _fechaService =
-                FechaSimuladaService.Instancia;
+                    RutaDatosService.ObtenerRuta("resultados2026.json")),
+                FechaSimuladaService.Instancia)
+        {
         }
 
+        /// <summary>Inicializa el controlador con datos específicos.</summary>
+        public PartidoController(
+            JsonRepository<Partido> partidoRepository,
+            JsonRepository<ResultadoPartido> resultadoRepository,
+            FechaSimuladaService fechaService)
+        {
+            _partidoRepository = partidoRepository ??
+                throw new ArgumentNullException(nameof(partidoRepository));
+            _resultadoRepository = resultadoRepository ??
+                throw new ArgumentNullException(nameof(resultadoRepository));
+            _fechaService = fechaService ??
+                throw new ArgumentNullException(nameof(fechaService));
+        }
+
+        /// <summary>
+        /// Obtiene el calendario actualizado y ordenado por fecha.
+        /// </summary>
         public List<Partido> ObtenerPartidos()
         {
-            List<Partido> partidos =
-                _partidoRepository.ObtenerTodos();
+            List<Partido> partidos = _partidoRepository.ObtenerTodos();
+            Dictionary<int, ResultadoPartido> resultados = _resultadoRepository.ObtenerTodos()
+                .ToDictionary(resultado => resultado.PartidoId);
 
-            List<ResultadoPartido> resultados =
-                _resultadoRepository.ObtenerTodos();
-
-            ActualizarEstadosYResultados(
-                partidos,
-                resultados
-            );
-
-            return partidos
-                .OrderBy(partido => partido.FechaHora)
-                .ToList();
+            ActualizarEstadosYResultados(partidos, resultados);
+            return partidos.OrderBy(partido => partido.FechaHora).ToList();
         }
 
+        /// <summary>
+        /// Obtiene los encuentros que todavía no han comenzado.
+        /// </summary>
         public List<Partido> ObtenerPartidosPendientes()
         {
             return ObtenerPartidos()
-                .Where(partido =>
-                    _fechaService.FechaActual <
-                    partido.FechaHora
-                )
+                .Where(partido => _fechaService.FechaActual < partido.FechaHora)
                 .ToList();
         }
 
-        private void ActualizarEstadosYResultados(
-            List<Partido> partidos,
-            List<ResultadoPartido> resultados)
-        {
-            bool huboCambios = false;
-
-            foreach (Partido partido in partidos)
-            {
-                string nuevoEstado;
-                int? nuevosGolesLocal = null;
-                int? nuevosGolesVisitante = null;
-
-                DateTime fechaFinalAproximada =
-                    partido.FechaHora.AddMinutes(
-                        DuracionPartidoMinutos
-                    );
-
-                if (_fechaService.FechaActual <
-                    partido.FechaHora)
-                {
-                    nuevoEstado = "Pendiente";
-                }
-                else if (_fechaService.FechaActual <
-                         fechaFinalAproximada)
-                {
-                    nuevoEstado = "En curso";
-                }
-                else
-                {
-                    ResultadoPartido? resultado =
-                        resultados.FirstOrDefault(
-                            resultadoActual =>
-                                resultadoActual.PartidoId ==
-                                partido.Id
-                        );
-
-                    if (resultado != null)
-                    {
-                        nuevoEstado = "Finalizado";
-                        nuevosGolesLocal =
-                            resultado.GolesLocal;
-                        nuevosGolesVisitante =
-                            resultado.GolesVisitante;
-                    }
-                    else
-                    {
-                        nuevoEstado =
-                            "Pendiente de resultado";
-                    }
-                }
-
-                if (partido.Estado != nuevoEstado ||
-                    partido.GolesLocal !=
-                    nuevosGolesLocal ||
-                    partido.GolesVisitante !=
-                    nuevosGolesVisitante)
-                {
-                    partido.Estado = nuevoEstado;
-                    partido.GolesLocal =
-                        nuevosGolesLocal;
-                    partido.GolesVisitante =
-                        nuevosGolesVisitante;
-
-                    huboCambios = true;
-                }
-            }
-
-            if (huboCambios)
-            {
-                _partidoRepository.GuardarTodos(
-                    partidos
-                );
-            }
-        }
-
+        /// <summary>
+        /// Registra un encuentro nuevo en el calendario.
+        /// </summary>
         public void RegistrarPartido(
             int seleccionLocalId,
             int seleccionVisitanteId,
             DateTime fechaHora)
         {
+            SesionUsuarioService.ExigirAdministrador();
+            ValidarSelecciones(seleccionLocalId, seleccionVisitanteId);
+
+            List<Partido> partidos = _partidoRepository.ObtenerTodos();
+            bool partidoRepetido = partidos.Any(partido =>
+                partido.FechaHora == fechaHora &&
+                partido.SeleccionLocalId == seleccionLocalId &&
+                partido.SeleccionVisitanteId == seleccionVisitanteId);
+            if (partidoRepetido)
+            {
+                throw new InvalidOperationException("Ese partido ya se encuentra registrado.");
+            }
+
+            partidos.Add(new Partido
+            {
+                Id = ObtenerSiguienteId(partidos),
+                SeleccionLocalId = seleccionLocalId,
+                SeleccionVisitanteId = seleccionVisitanteId,
+                FechaHora = fechaHora,
+                GolesLocal = null,
+                GolesVisitante = null,
+                Estado = "Pendiente"
+            });
+            _partidoRepository.GuardarTodos(partidos);
+        }
+
+        /// <summary>
+        /// Registra o modifica el marcador oficial de un encuentro.
+        /// </summary>
+        public void GuardarResultado(int partidoId, int golesLocal, int golesVisitante)
+        {
+            SesionUsuarioService.ExigirAdministrador();
+            if (golesLocal < 0 || golesVisitante < 0)
+            {
+                throw new ArgumentException("Los goles no pueden ser negativos.");
+            }
+
+            List<ResultadoPartido> resultados = _resultadoRepository.ObtenerTodos();
+            ResultadoPartido? resultado = resultados.FirstOrDefault(
+                existente => existente.PartidoId == partidoId);
+            if (resultado == null)
+            {
+                resultados.Add(new ResultadoPartido
+                {
+                    PartidoId = partidoId,
+                    GolesLocal = golesLocal,
+                    GolesVisitante = golesVisitante
+                });
+            }
+            else
+            {
+                resultado.GolesLocal = golesLocal;
+                resultado.GolesVisitante = golesVisitante;
+            }
+
+            _resultadoRepository.GuardarTodos(resultados);
+        }
+
+        /// <summary>
+        /// Elimina un encuentro y cualquier resultado asociado.
+        /// </summary>
+        public void EliminarPartido(int partidoId)
+        {
+            SesionUsuarioService.ExigirAdministrador();
+
+            List<Partido> partidos = _partidoRepository.ObtenerTodos();
+            Partido partido = partidos.FirstOrDefault(actual => actual.Id == partidoId)
+                ?? throw new InvalidOperationException(
+                    "No se encontró el partido seleccionado.");
+            partidos.Remove(partido);
+            _partidoRepository.GuardarTodos(partidos);
+
+            List<ResultadoPartido> resultados = _resultadoRepository.ObtenerTodos();
+            if (resultados.RemoveAll(resultado => resultado.PartidoId == partidoId) > 0)
+            {
+                _resultadoRepository.GuardarTodos(resultados);
+            }
+        }
+
+        private void ActualizarEstadosYResultados(
+            List<Partido> partidos,
+            IReadOnlyDictionary<int, ResultadoPartido> resultados)
+        {
+            bool huboCambios = false;
+            foreach (Partido partido in partidos)
+            {
+                (string estado, int? golesLocal, int? golesVisitante) =
+                    CalcularEstado(partido, resultados);
+                if (partido.Estado == estado &&
+                    partido.GolesLocal == golesLocal &&
+                    partido.GolesVisitante == golesVisitante)
+                {
+                    continue;
+                }
+
+                partido.Estado = estado;
+                partido.GolesLocal = golesLocal;
+                partido.GolesVisitante = golesVisitante;
+                huboCambios = true;
+            }
+
+            if (huboCambios)
+            {
+                _partidoRepository.GuardarTodos(partidos);
+            }
+        }
+
+        private (string Estado, int? GolesLocal, int? GolesVisitante) CalcularEstado(
+            Partido partido,
+            IReadOnlyDictionary<int, ResultadoPartido> resultados)
+        {
+            if (_fechaService.FechaActual < partido.FechaHora)
+            {
+                return ("Pendiente", null, null);
+            }
+
+            if (_fechaService.FechaActual <
+                partido.FechaHora.AddMinutes(DuracionPartidoMinutos))
+            {
+                return ("En curso", null, null);
+            }
+
+            return resultados.TryGetValue(partido.Id, out ResultadoPartido? resultado)
+                ? ("Finalizado", resultado.GolesLocal, resultado.GolesVisitante)
+                : ("Pendiente de resultado", null, null);
+        }
+
+        private static void ValidarSelecciones(int seleccionLocalId, int seleccionVisitanteId)
+        {
             if (seleccionLocalId <= 0)
             {
-                throw new ArgumentException(
-                    "Debe seleccionar el equipo local."
-                );
+                throw new ArgumentException("Debe seleccionar el equipo local.");
             }
 
             if (seleccionVisitanteId <= 0)
             {
-                throw new ArgumentException(
-                    "Debe seleccionar el equipo visitante."
-                );
+                throw new ArgumentException("Debe seleccionar el equipo visitante.");
             }
 
-            if (seleccionLocalId ==
-                seleccionVisitanteId)
+            if (seleccionLocalId == seleccionVisitanteId)
             {
                 throw new InvalidOperationException(
-                    "Una selección no puede jugar contra sí misma."
-                );
-            }
-
-            List<Partido> partidos =
-                _partidoRepository.ObtenerTodos();
-
-            bool partidoRepetido = partidos.Any(
-                partido =>
-                    partido.FechaHora == fechaHora &&
-                    partido.SeleccionLocalId ==
-                    seleccionLocalId &&
-                    partido.SeleccionVisitanteId ==
-                    seleccionVisitanteId
-            );
-
-            if (partidoRepetido)
-            {
-                throw new InvalidOperationException(
-                    "Ese partido ya se encuentra registrado."
-                );
-            }
-
-            int nuevoId = partidos.Count == 0
-                ? 1
-                : partidos.Max(
-                    partido => partido.Id
-                ) + 1;
-
-            Partido nuevoPartido = new()
-            {
-                Id = nuevoId,
-                SeleccionLocalId =
-                    seleccionLocalId,
-                SeleccionVisitanteId =
-                    seleccionVisitanteId,
-                FechaHora = fechaHora,
-                GolesLocal = null,
-                GolesVisitante = null,
-                Estado = "Pendiente",
-                Anotadores = new List<Anotador>()
-            };
-
-            partidos.Add(nuevoPartido);
-
-            _partidoRepository.GuardarTodos(
-                partidos
-            );
-        }
-
-        public void GuardarResultado(
-            int partidoId,
-            int golesLocal,
-            int golesVisitante)
-        {
-            if (golesLocal < 0 ||
-                golesVisitante < 0)
-            {
-                throw new ArgumentException(
-                    "Los goles no pueden ser negativos."
-                );
-            }
-
-            List<ResultadoPartido> resultados =
-                _resultadoRepository.ObtenerTodos();
-
-            ResultadoPartido? resultado =
-                resultados.FirstOrDefault(
-                    resultadoActual =>
-                        resultadoActual.PartidoId ==
-                        partidoId
-                );
-
-            if (resultado == null)
-            {
-                resultado = new ResultadoPartido
-                {
-                    PartidoId = partidoId,
-                    GolesLocal = golesLocal,
-                    GolesVisitante =
-                        golesVisitante
-                };
-
-                resultados.Add(resultado);
-            }
-            else
-            {
-                resultado.GolesLocal =
-                    golesLocal;
-
-                resultado.GolesVisitante =
-                    golesVisitante;
-            }
-
-            _resultadoRepository.GuardarTodos(
-                resultados
-            );
-        }
-
-        public void EliminarPartido(
-            int partidoId)
-        {
-            List<Partido> partidos =
-                _partidoRepository.ObtenerTodos();
-
-            Partido? partido =
-                partidos.FirstOrDefault(
-                    partidoActual =>
-                        partidoActual.Id ==
-                        partidoId
-                );
-
-            if (partido == null)
-            {
-                throw new InvalidOperationException(
-                    "No se encontró el partido seleccionado."
-                );
-            }
-
-            partidos.Remove(partido);
-
-            _partidoRepository.GuardarTodos(
-                partidos
-            );
-
-            List<ResultadoPartido> resultados =
-                _resultadoRepository.ObtenerTodos();
-
-            ResultadoPartido? resultado =
-                resultados.FirstOrDefault(
-                    resultadoActual =>
-                        resultadoActual.PartidoId ==
-                        partidoId
-                );
-
-            if (resultado != null)
-            {
-                resultados.Remove(resultado);
-
-                _resultadoRepository.GuardarTodos(
-                    resultados
-                );
+                    "Una selección no puede jugar contra sí misma.");
             }
         }
 
-        public void AgregarAnotador(
-            int partidoId,
-            int seleccionId,
-            string nombreJugador,
-            int minuto)
+        private static int ObtenerSiguienteId(List<Partido> partidos)
         {
-            if (string.IsNullOrWhiteSpace(nombreJugador))
-            {
-                throw new ArgumentException(
-                    "Debe escribir el nombre del jugador."
-                );
-            }
-
-            if (minuto <= 0 || minuto > 130)
-            {
-                throw new ArgumentException(
-                    "El minuto debe estar entre 1 y 130."
-                );
-            }
-
-            Partido? partidoActualizado =
-                ObtenerPartidos()
-                    .FirstOrDefault(
-                        partido =>
-                            partido.Id ==
-                            partidoId
-                    );
-
-            if (partidoActualizado == null)
-            {
-                throw new InvalidOperationException(
-                    "No se encontró el partido."
-                );
-            }
-
-            if (partidoActualizado.Estado != "Finalizado")
-            {
-                throw new InvalidOperationException(
-                    "Solo se pueden registrar anotadores " +
-                    "cuando el partido está finalizado."
-                );
-            }
-
-            bool seleccionParticipa =
-                partidoActualizado.SeleccionLocalId ==
-                seleccionId ||
-                partidoActualizado.SeleccionVisitanteId ==
-                seleccionId;
-
-            if (!seleccionParticipa)
-            {
-                throw new InvalidOperationException(
-                    "La selección indicada no participa " +
-                    "en este partido."
-                );
-            }
-
-            List<Partido> partidos =
-                _partidoRepository.ObtenerTodos();
-
-            Partido? partido =
-                partidos.FirstOrDefault(
-                    elemento =>
-                        elemento.Id ==
-                        partidoId
-                );
-
-            if (partido == null)
-            {
-                throw new InvalidOperationException(
-                    "No se encontró el partido."
-                );
-            }
-
-            if (partido.Anotadores == null)
-            {
-                partido.Anotadores =
-                    new List<Anotador>();
-            }
-
-            bool anotadorRepetido =
-                partido.Anotadores.Any(anotador =>
-                    anotador.SeleccionId ==
-                    seleccionId &&
-                    anotador.Minuto ==
-                    minuto &&
-                    anotador.NombreJugador.Equals(
-                        nombreJugador.Trim(),
-                        StringComparison.OrdinalIgnoreCase
-                    )
-                );
-
-            if (anotadorRepetido)
-            {
-                throw new InvalidOperationException(
-                    "Ese anotador ya está registrado."
-                );
-            }
-
-            int nuevoId =
-                partido.Anotadores.Count == 0
-                    ? 1
-                    : partido.Anotadores.Max(
-                        anotador =>
-                            anotador.Id
-                    ) + 1;
-
-            Anotador nuevoAnotador =
-                new Anotador
-                {
-                    Id = nuevoId,
-                    SeleccionId = seleccionId,
-                    NombreJugador =
-                        nombreJugador.Trim(),
-                    Minuto = minuto
-                };
-
-            partido.Anotadores.Add(
-                nuevoAnotador
-            );
-
-            _partidoRepository.GuardarTodos(
-                partidos
-            );
-        }
-
-        public void EliminarAnotador(
-            int partidoId,
-            int anotadorId)
-        {
-            List<Partido> partidos =
-                _partidoRepository.ObtenerTodos();
-
-            Partido? partido =
-                partidos.FirstOrDefault(
-                    elemento =>
-                        elemento.Id ==
-                        partidoId
-                );
-
-            if (partido == null)
-            {
-                throw new InvalidOperationException(
-                    "No se encontró el partido."
-                );
-            }
-
-            if (partido.Anotadores == null)
-            {
-                throw new InvalidOperationException(
-                    "El partido no tiene anotadores."
-                );
-            }
-
-            Anotador? anotador =
-                partido.Anotadores.FirstOrDefault(
-                    elemento =>
-                        elemento.Id ==
-                        anotadorId
-                );
-
-            if (anotador == null)
-            {
-                throw new InvalidOperationException(
-                    "No se encontró el anotador."
-                );
-            }
-
-            partido.Anotadores.Remove(
-                anotador
-            );
-
-            _partidoRepository.GuardarTodos(
-                partidos
-            );
+            return partidos.Count == 0 ? 1 : partidos.Max(partido => partido.Id) + 1;
         }
     }
 }

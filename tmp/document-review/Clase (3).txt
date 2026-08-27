@@ -1,0 +1,1895 @@
+Clase-20260812_180231-Meeting Recording
+August 12, 2026, 12:02AM
+2h 17m 54s
+
+LUIS FELIPE MORA UMAÑA started transcription
+
+Adrian Vinicio Chaves Marin   0:05
+Bueno, profe, todo bien.
+
+LUIS FELIPE MORA UMAÑA   0:08
+Todavía, ¿cómo va todo?
+
+Adrian Vinicio Chaves Marin   0:18
+Ahí vamos, ahí vamos, pero que estaría frío a todo.
+
+LUIS FELIPE MORA UMAÑA   0:22
+También está contando tyron.
+Ya está apretando el cuatrimestre.
+Claro, por el lado amable.
+De mi curso queda poco.
+Sí, bueno, antes de empezar. este.
+Dudas de la clase anterior, preguntas.
+
+DANNEL ROBERTO QUESADA SOLANO   1:07
+Claro que sí, buenas noches a mí.
+
+LUIS FELIPE MORA UMAÑA   1:10
+No sé, Daniel.
+
+DANNEL ROBERTO QUESADA SOLANO   1:12
+Todo bien, todo bien. No me tiene una cuchara para variar, pero es que a mí no me no me no me quedó muy claro. Estuve tratando de repasar.
+
+LUIS FELIPE MORA UMAÑA   1:21
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   1:23
+¿Cómo?
+
+LUIS FELIPE MORA UMAÑA   1:24
+Mhm.
+
+DANNEL ROBERTO QUESADA SOLANO   1:25
+Digamos, nosotros vamos a coger el proyecto anterior, eliminamos.
+Todos los views.
+
+LUIS FELIPE MORA UMAÑA   1:34
+Huh?
+
+DANNEL ROBERTO QUESADA SOLANO   1:34
+Donde teníamos los formularios, dejamos los controllers.
+
+LUIS FELIPE MORA UMAÑA   1:36
+Una pausa ahí, perdón.
+¿No es necesario que elimine los views, verdad? Así como estrictamente necesarios, simplemente si quieren eliminarlos eliminan, sino no les sirve para referencia más o menos que hacían, ¿verdad?
+
+DANNEL ROBERTO QUESADA SOLANO   1:51
+Es que esa es la parte que ocupo ver cómo vinculo los, digamos, cómo vinculo los cómo vinculo los views nuevos en este en este otro.
+
+LUIS FELIPE MORA UMAÑA   1:52
+Continue.
+
+DANNEL ROBERTO QUESADA SOLANO   2:03
+En este otro formato a los controladores que tenemos.
+
+LUIS FELIPE MORA UMAÑA   2:08
+Okay, okay, okay.
+
+DANNEL ROBERTO QUESADA SOLANO   2:10
+Sí, ese sería la porque yo recuerdo que digamos dentro del controlador uno jalaba el.
+El view como un formulario, pero no sé si será igual simplemente.
+The.
+
+LUIS FELIPE MORA UMAÑA   2:27
+Es un poco diferente, más bien aquí usted lo que jala es el controlador.
+
+DANNEL ROBERTO QUESADA SOLANO   2:31
+Okey, sí, hay chance de que nos explique algo sencillito, profe, le agradezco.
+
+LUIS FELIPE MORA UMAÑA   2:38
+Sí, ahorita pegamos un repasito, claro.
+
+DANNEL ROBERTO QUESADA SOLANO   2:40
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   2:42
+¿Alguien más preguntas de la clase pasada o preguntas en general?
+Aprovechen hoy porque las otras van igual si tienen dudas y todo lo vemos, pero estamos un poquillo más detallados de tiempo con las investigaciones.
+
+Kaik Andy Yocks Sandoval   2:59
+Buenas noches, profe, ¿cómo está?
+
+LUIS FELIPE MORA UMAÑA   3:02
+Buenas noches, ¿cómo le va?
+
+Kaik Andy Yocks Sandoval   3:05
+Bien, así es como de yo.
+
+LUIS FELIPE MORA UMAÑA   3:07
+Todo bien por dicha.
+
+Kaik Andy Yocks Sandoval   3:09
+Each kitchen.
+
+LUIS FELIPE MORA UMAÑA   3:11
+Ya miércoles, casi jueves, casi viernes.
+
+Kaik Andy Yocks Sandoval   3:14
+Casi estaba.
+Y.
+
+LUIS FELIPE MORA UMAÑA   3:17
+Yo creo que se vieron de confort.
+
+Kaik Andy Yocks Sandoval   3:21
+Okey.
+
+LUIS FELIPE MORA UMAÑA   3:24
+Okey, vamos a ver, dice que para la próxima semana.
+Tenemos 8 expositores.
+De esos 8 expositores son 10 minutos cada uno.
+Serían 80 minutos.
+Más preguntas, sí, estamos tallados.
+Two.
+Recuerde muchacho, las reglas ahí la.
+De las próximas semanas, ¿cuáles eran las reglas de la próxima semana?
+Recuérdenlo, por favor.
+
+Kaik Andy Yocks Sandoval   4:14
+Llévale una manzana al profesor para puntos extras.
+
+LUIS FELIPE MORA UMAÑA   4:18
+¿Vieres que tendría que ser por?
+Y soy más fan de las peras.
+
+Kaik Andy Yocks Sandoval   4:21
+Bueno.
+Oh, listo anotado.
+una caja de peras para cinco puntos excelente era menos lo que estuve leyendo les estuve leyendo aquí ahora
+
+LUIS FELIPE MORA UMAÑA   4:27
+Ja.
+
+Kaik Andy Yocks Sandoval   4:41
+era como de exposiciones de las de la exposición es como si utilizamos una PPT serían dos así como súper puntuales si son hay de otro de los otros temas que son
+Más expositivos, hace como un simulacro o una simulación, si se si se si se fuera a escoger, 10 minutos. y.
+
+LUIS FELIPE MORA UMAÑA   5:10
+Evito.
+
+Kaik Andy Yocks Sandoval   5:16
+Y ya y en parejas, pero pues ahí está el detalle.
+
+LUIS FELIPE MORA UMAÑA   5:21
+Okay.
+Okay.
+
+Kaik Andy Yocks Sandoval   5:24
+No sé si se me olvidó algo.
+
+LUIS FELIPE MORA UMAÑA   5:29
+Felipe, se le olvidó algo a Caic.
+
+JUAN FELIPE PEREZ	BEJARANO   5:34
+Creo que no, pero me parece la parte de que usted dijo que no se podía leer, porque si no le cortaba la presentación de una vez, este recuerdo que mencionó también lo de la vara del discurso del elevador.
+
+LUIS FELIPE MORA UMAÑA   5:42
+Oh.
+
+JUAN FELIPE PEREZ	BEJARANO   5:48
+Había que ser muy puntuales y precisos y lo de los 10 minutos.
+Y lo del paper.
+
+LUIS FELIPE MORA UMAÑA   5:57
+O K, muy bien.
+
+JUAN FELIPE PEREZ	BEJARANO   5:58
+Que ya.
+
+LUIS FELIPE MORA UMAÑA   6:01
+Perfecto.
+Es algo que es que es complicado a veces uno tiene que aprender a ser puntual sin perder detalles.
+que tanto que tanto quiero profundizar o no ya depende la de la presentación verdad Pero ahí lo vamos a ir viendo
+Dudas, alguna otra pregunta antes de pasar ahí con la.
+Con la pregunta Anel.
+
+DANNEL ROBERTO QUESADA SOLANO   6:28
+Ahora encendida, profe, o no importa.
+
+Kaik Andy Yocks Sandoval   6:29
+It.
+
+LUIS FELIPE MORA UMAÑA   6:31
+Huh?
+
+DANNEL ROBERTO QUESADA SOLANO   6:33
+Omar encendida para la próxima semana o no importa.
+
+LUIS FELIPE MORA UMAÑA   6:37
+We have new stairs in really.
+
+DANNEL ROBERTO QUESADA SOLANO   6:39
+Great.
+
+Kaik Andy Yocks Sandoval   6:44
+Profe, yo tengo una consulta.
+
+LUIS FELIPE MORA UMAÑA   6:45
+Dígame.
+Mhm.
+
+Kaik Andy Yocks Sandoval   6:48
+Y.
+Age.
+Es solo en los teams, o sea, en los en el grupo.
+¿Y si no se lo juro conseguir a nadie, qué se hace?
+
+LUIS FELIPE MORA UMAÑA   7:05
+Y hasta la semana antes, digamos, creo que solamente usted está así para.
+
+Kaik Andy Yocks Sandoval   7:10
+Alan.
+No, sí, eso lo decía porque di yo ya lo ya había escogido, pues ya todo, ¿verdad? Todo lo estaba haciendo ya, pero sí dije, mira, me voy a esperar ya para decirle al profesor, por si lo moscas. ¿Se acuerda que lo había comentado la semana antepasada?
+
+LUIS FELIPE MORA UMAÑA   7:27
+Mhm.
+Okay.
+Todo tarde, la garro, pero todo bien.
+Por lo menos estamos ahí, debería.
+Aprovechar el ejercicio para trabajar en grupos, pero bueno, ya está un poco tarde.
+Este vamos a ver.
+¿Empezamos entonces?
+Tenemos una repasadita rápido.
+Máximo 1 minuto cada cada grupo.
+¿De cómo van con la segunda parte del proyecto, qué?
+Entonces, este no sé si empieza Felipe o David, cualquiera de los 2.
+
+JUAN FELIPE PEREZ	BEJARANO   8:15
+Bueno, profe, de ahí vamos.
+Hemos tenido alguna que otra traba, más que todo con la base de datos y lo que es la lo de la migración de datos.
+Pero.
+De ahí vamos bien, ya creo que la parte de todo lo que tiene que ver con la base de datos y demás, creo que ya quedó implementado ahora y lo que toca es.
+De seguir con el resto.
+Lo que nos queda ahí de ahí en adelante, pero creo que vamos bien, lo veo un toque más complicado, pero de ahí vamos.
+
+LUIS FELIPE MORA UMAÑA   8:56
+Que o K.
+Para los demás, este como les decía la semana pasada, yo no hubiera personalmente, yo no hubiera empezado por la base de datos.
+Los 3 tenían los archivos, los archivos funcionaban, los 2, la base de datos son puntos extra.
+Y este dais, si no llegan a ochenta no van a tener los puntos ex, ya perdieron una semana de trabajo, al final nos da chance y al final van a haber perdido con más razón una semana de trabajo, ¿Verdad?
+Pero tomé en cuenta ahí.
+Jose.
+Entonces se fue tú fuimos y revisar el primer proyecto creo que ya podemos poner en la cruz Luis y Anel
+
+DANNEL ROBERTO QUESADA SOLANO   9:44
+Bueno, nosotros esta semana ya iniciamos con la parte un poquito administrativa, que es de nuevo volver a poner todo lo entre lo un poquito más detallado, que es lo que necesitamos hacer, iniciando por los login, que fue una falencia en la etapa anterior.
+Estamos testeando cómo subir bien las cosas en el GitHub sin que se nos afecten, o sea, sin echar apla. Estamos haciendo pruebas sin el.
+Bueno, con el código, pero en otro, en otro repositorio para no.
+nada a perder y mitigar ahí cualquier riesgo. Y el otro punto era que ya bueno, empezamos con la configuración de las de login y de ahí surge el temita este de ver cómo podemos conectar el este nuevo view con el controller.
+
+LUIS FELIPE MORA UMAÑA   10:49
+Okay.
+Mario.
+Ya casi vemos el bloqueo que tienen ahí.
+Albert.
+
+ALBERT DAYAN BRENES CARPIO   11:00
+Sí, yo por el momento lo que hice fue montar el tablero en Trello para llevar una guía de más o menos qué es lo que tengo que hacer y empecé con.
+Y.
+Con el nuevo rol agregando el admin.
+Y lo próximo que voy a hacer es ver cómo hago la migración de y de todas las cosas de los partidos, quinielas y demás.
+
+LUIS FELIPE MORA UMAÑA   11:26
+Okay.
+Ariadne.
+
+ARIADNY MARIA NUÑEZ GODINEZ   11:33
+profe yo empecé a ver lo de Trello porque me pasé Trello ya no lo estoy endeñado y acomodando un poco viendo cómo puedo pasarlo a la página web como tal digamos ponerlo bien yo soy muy detallista con las varas de colores así entonces estaba como toqueteando a ver si podía pero
+Mejor me enfoqué en otras cosas, entonces estaba terminando de acomodarme y espero esta semana ya mañana poder empezar bien a pasar código.
+
+LUIS FELIPE MORA UMAÑA   12:05
+Glen.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   12:10
+Y buenas, profe, y me escucha ahí.
+
+LUIS FELIPE MORA UMAÑA   12:13
+Sí, señor, adelante.
+
+GLEN GERARDO VILLAGRA RODRIGUEZ   12:15
+bueno en mi caso esta semana lo que hice fue organizar todas las tareas verdad con Trello en mi caso utilicé Trelo y para continuar con el mismo la parte de la documentación técnica y ahora lo que sigo es
+¿Con la migración que sería hable hizo el juegos, verdad? Y bloqueos, no ahorita.
+
+LUIS FELIPE MORA UMAÑA   12:43
+Okay, when is so.
+Alright.
+Eric.
+
+ERICK ANDRES DELGADO ARAYA   12:54
+Este pero que yo ya pude terminar el trello con los puntos adicionales que se van a trabajar.
+Este ya integré.
+Lo del proyecto uno.
+Al nuevo proyecto y de momento estoy con la implementación del ya logging de Reason, entonces haciendo y probando, haciendo y probando.
+
+LUIS FELIPE MORA UMAÑA   13:19
+Ok, buenísimo.
+Styrum.
+
+TAYRON ALONSO SALAS NUÑEZ   13:26
+Bueno de mi lado sí me traté de enfocar mejor en esta vez en la parte de lo que fue el diseño para de la arquitectura para para hacerlo mejor y esa fue la mi mayor falencia en la vez pasada en lo que más desperdicie tiempo me hice el mural de Trello y espero con eso Germán
+
+LUIS FELIPE MORA UMAÑA   13:41
+Mhm.
+
+TAYRON ALONSO SALAS NUÑEZ   13:46
+La idea es dedicarle como 1 hora por día, en primero lapsos cortos, pero constantes para adelantar más rápido y no agotarme o no llegar como a bloquearme y tal pase.
+
+LUIS FELIPE MORA UMAÑA   13:59
+I think manishimo.
+Kendall.
+
+KENDALL JOSUE MATA SANCHEZ   14:05
+Sí, profe, yo empecé, este igual con todos haciendo hasta las tareas, para tener una guía entra del camelo. Este luego este fue con la documentación técnica y ahorita después de la clase voy a ver el tema de la migración.
+
+LUIS FELIPE MORA UMAÑA   14:27
+Cuando dicen migración, se prefieren a mover todo lo de Wind Fronts Acuer.
+
+KENDALL JOSUE MATA SANCHEZ   14:33
+Sí.
+
+LUIS FELIPE MORA UMAÑA   14:34
+Okay.
+No de los novios, mejor lo más claro queda, pero no es una migración como tal.
+
+KENDALL JOSUE MATA SANCHEZ   14:37
+Sí.
+Sí.
+
+LUIS FELIPE MORA UMAÑA   14:43
+Adrián.
+
+Adrian Vinicio Chaves Marin   14:49
+Buenas profe Adrián dijo al profe.
+
+LUIS FELIPE MORA UMAÑA   14:51
+Sierra.
+
+Adrian Vinicio Chaves Marin   14:52
+Es el proyecto ahí.
+
+LUIS FELIPE MORA UMAÑA   14:54
+Yeah.
+
+Adrian Vinicio Chaves Marin   14:56
+Profe, bueno, esta semana trabajé en lo que fue Trello.
+Las nuevas, bueno, con los cambios que hay que hacer en este segundo proyecto, también en la documentación.
+Y no esta semana ya ponerle en lo que es las nuevas funcionalidades y la parte web, y no a dudas no tengo ni ni algo así como.
+Como que esté pegadillo, todavía no probé.
+
+LUIS FELIPE MORA UMAÑA   15:26
+Okay.
+Buenísimo.
+Andy.
+
+Kaik Andy Yocks Sandoval   15:36
+Bueno, yo bueno, en mi caso, pues mancheteé todo y comencé otra vez. Lo hice todos los comentarios que usted me hizo. Recuperé todos los datos del git.
+Y vi la clase, ya me hice el schedule para la parte 2 también, y entonces ahí estaba dándole tanto a la uno y conforme va se va arreglando los comentarios que se me hizo.
+Fui ya montando estructuralmente la parte 2 y ahí vamos.
+
+LUIS FELIPE MORA UMAÑA   16:24
+Okay.
+Buenísimo.
+¿Qué estamos entonces?
+Vamos a ver.
+Porque vieras que hace tiempo, hace tiempo no lo uso.
+Pero hay un mesito muy twanis.
+Para generar CSS.
+Pero ahorita no me acuerdo dónde está.
+Toque nada más por aquí lo encuentro.
+She, she, she.
+No.
+Sí.
+¿Qué vi en tu paradero?
+Es que no.
+¿Era este?
+No rest.
+Un tu éxito, pero se me pierde.
+Vamos a ver, ya casi estoy con usted en 1 segundo.
+Y.
+Aquí está.
+Casi no lo encuentro, casi me muerde.
+Bueno.
+Yeah.
+Risty.
+Escribiste.
+Bell.
+vamos a compartir vamos a ir paso a paso hoy tenemos un temita de testing ahí pequeño
+Este no vamos con el quiz, star up you.
+que veo hay para
+Pararías ni ahí que me dijo que.
+Estaba pegadilla con esto, vean, por ejemplo, aquí están todas las clases.
+Que tiene todos, todos, todos, todos, todos, todos.
+Lo ven, entonces no sé, veamos, por ejemplo, este la de esta que son botares.
+Button block.
+Bueno, aquí está el botón uno. Esto es la clasecita que tenemos que llevar y listo. Ya con eso tenemos boostrap. Si yo quiero usar estos estilos y demás, aquí está el aquí están los.
+I am salvar a los.
+La librería es verdad que tenemos que importar.
+Entonces, básicamente.
+¿Tomamos esto?
+Nos venimos acá.
+nos vamos a la app.rasor verdad que era donde tenemos todo esto aquí
+Y pegamos esto.
+Creo.
+Está así.
+Creo que con solo esto debería ser suficiente.
+Okay.
+Entonces.
+Nos venimos aquí a lo mismo.
+No se me olvidó como una que se llama.
+Estoy aquí.
+I don't see.
+Sí.
+No.
+Aquí está.
+Good luck.
+Ya mujer sí lo agarra, si no, si me hace falta agregar las otras bares, pero.
+Creo, si no me equivoco, la última vez que lo hice solamente con esto era necesario. Bueno, no sé los scripts, pero bueno.
+¿Será que tiene que llegar scripts? No me acuerdo el paquete si no necesario el paquete si por si buscan esto lo que nos ayuda es como a tener ahí como más.
+Más este.
+Más controles verdad los que ya están.
+No, deme un toquecito porque.
+Mi máquina se reinició hoy y todo el mundo creería que quedaría más rápida, pero no.
+Que terriblemente mal lento.
+Aquí apenas está cargando la consolita ahí.
+Toda la vida.
+Ahora sí.
+agarró y ya levanté el browser
+I stop blowing.
+y ya agarró el botoncito
+Mystal.
+Ya después de esto y lo podemos acomodar un poquito mejor, ¿verdad? No sé si quieren que lo haga y lo hacemos, pero.
+Pero sí, no sé, no veo como tanto.
+Como tantas ideas llegamos, vamos a ver.
+Bootstrap.
+Este login template.
+Entonces, I was a...
+este aquí a ver qué tal
+Sorry.
+¿Será que tomamos este?
+West.
+No tomar esto.
+As you behind.
+****, todo se llama puro datos.
+I know you.
+Aquí está el código y aquí está toda la parte de los divs los containers la barra y aquí simplemente lo que tenemos que hacer es meter los los textitos ahí que que tenemos que hacerlo en tata esto realmente lo que interesa para acomodar las cajitas
+Does this thing?
+¿Quieren que lo hagamos o...? No hace falta.
+
+TAYRON ALONSO SALAS NUÑEZ   26:24
+What music?
+
+Adrian Vinicio Chaves Marin   26:25
+Por mí sí también profe.
+
+LUIS FELIPE MORA UMAÑA   26:26
+Sí.
+Okay.
+Mhm.
+Esta es la sección, este es el DIF, el DIF de todos, todos saben que es la hora del DIF, ¿verdad?
+Si no me vuelvo un toquecito y toda esa cochinada del modelo de cajas y demás.
+Sí, no, tal vez.
+
+TAYRON ALONSO SALAS NUÑEZ   26:56
+Hay algo rápido.
+
+LUIS FELIPE MORA UMAÑA   27:00
+Claro, qué gusto, ¿qué más andan por ahí perdillo?
+¿Gelen, cómo andamos con los beef y todos ahora todo bien?
+pero no lo escucho
+¿Qué ondal? ¿Cómo andamos ahí? Si le arregla el micrófono.
+Conductí y ahora.
+
+KENDALL JOSUE MATA SANCHEZ   27:33
+Más o menos, pues igual.
+
+LUIS FELIPE MORA UMAÑA   27:35
+Entonces, porque no hablan muchachos, no habling.
+Bear.
+Esto puede tener sus fallos.
+Porque lo estoy haciendo literalmente al aire.
+Verdad, pero.
+hay que entender un poquito el porque las cosas, ¿verdad? Entonces estas.
+Esta es nuestra pantalla. Qué son los divs? los divs son simplemente secciones son contenedores nada más literal son esos son contenedores invisibles donde Por ejemplo yo puedo poner tres divs verdad y le digo este ma este para yo decir linweb
+Que ocupo que la pantalla se parta en 3.
+pongo tres dif verdad y le digo es tema de más usted va a tomar el 25% más usted va a tomar el 25% y usted va a tomar el 50% y acomode sus cosas solamente todo se va a acomodar dentro del DIF porque es el contenedor verdad es un modelo de etiquetas los lenguajes de etiquetas eso es lo que hacen verdad este contener y dar una jerarquía
+¿Verdad? Entonces, ¿qué va a pasar con esto?
+Esto más o menos es una vara así, este, pero si se está al mismo nivel. ¿Sí, porque los niveles también son importantes, verdad? Entonces este. Voy a meter un DIF aquí container donde voy a meter.
+Todo esta bueno el section, verdad que el section agarrar todo esta bar.
+Basado en esto que esto es lo que dices como partame el. La pantalla en tres. Esta otra va en cinco y este otro en ocho ahí como más que todo eso es lo que hace es hacernos esto.
+Verdad? Son grillas, tirianos, colombianos. Eso es como lo más chocante para mí, trabajar un colombiano que tiene unos nombres tan raros para algunas cosas. No les dicen grits, les dicen grillas. Yo no sé si algunos colombianos, pero bueno, no son comentarios xenofoicos. Hago el disclaimer este entonces aquí está.
+Entonces aquí, por ejemplo, este esto es un DIF, esto es otro DIF, esto es otro DIF que están metidos dentro de un DIF, verdad? Y así podemos ir haciendo las cajitas. Entonces aquí voy a meter un botón, aquí voy a meter un textbox, aquí este voy a meter un dibujo, verdad? Y así es para esto es lo que nos sirven los DIF.
+Sí, y aquí si yo quiero este de no sé el.
+un texto aquí random y otra aquí random verdad todo esto entre un div aquí hay un div que este va a la mitad y ese otro a la otra mitad hasta la izquierda ese otro a la derecha qué tal por ahí
+
+TAYRON ALONSO SALAS NUÑEZ   30:34
+Master.
+
+LUIS FELIPE MORA UMAÑA   30:37
+Kendall.
+
+KENDALL JOSUE MATA SANCHEZ   30:39
+Las claro, profe, mejor sí.
+
+LUIS FELIPE MORA UMAÑA   30:43
+¿Qué este Adrián, cómo andamos?
+
+Adrian Vinicio Chaves Marin   30:49
+Profe, bien, digamos, yo esa parte los DIF lo veo como segmentos, digamos dentro de en esta parte gráfica.
+
+LUIS FELIPE MORA UMAÑA   30:58
+Mhm.
+
+Adrian Vinicio Chaves Marin   30:58
+Yo lo entiendo así, digamos que estás en DIF y encierra, no sé, una parte de reportes, hace un DIF y encierra, digamos, así lo como lo veo, como cajitas, como lo hizo usted con dibujos.
+
+LUIS FELIPE MORA UMAÑA   31:11
+¿Exacto, eso es un grit al final, verdad? Yo hago un grit de la pantalla donde di, no sé, digamos, si quiero partirlo en 6.
+Aquí entonces, como está bien dice, aquí meto un reporte, aquí puedo poner este la información del usuario y aquí puedo poner la foto de perfil.
+Aquí contento, está contento, la chica y este no sé aquí podemos poner este la hoja médica y aquí podemos poner, no sé qué más este padecimientos y aquí este un par de botones ahí para tener un par de acciones que imprimir.
+Y aquí o volver.
+Entonces yo esto lo acomodo porque si yo acomodo todo dentro de la pantalla.
+Se va a ver sin DIF ni nada.
+se va a ver exactamente así lo ven plano porque esta ahora no se acomodó dentro del
+De aquí a la izquierda y dejar el resto de la pantalla porque yo no he metido tiff ahí.
+Entonces es lo mismo para esto.
+Right.
+Entonces, cómo acomodar esto más o menos la pantalla, la pantalla. Bueno, ya tenemos el section, vamos a tener un DIF container, que es un DIF que va a tener prácticamente todo esto de nuevo. Yo sé que a veces suena un poco redundante, pero es que no me cuadra todos son cajas dentro de cajas este y aquí viene el primer row lo ven.
+Entonces, y aquí viene otro robo.
+Entonces aquí va a venir un rowcito.
+que este prepara a ver Ajá
+¿Qué aquí va a venir un round?
+¿Y aquí va a venir?
+Otro row.
+y le estoy diciendo que tiene todo el centro Pero eso es lo que estoy haciendo lo ven otro robo este dice que columnas que lo divida el doce creo que lo divide como en tres columnas entonces uno dos tres la clase m cinco que ese es el otro maecito y ahorita vamos a ver un poco más más tarde más bonito
+Entonces aquí vamos a meter otro más aquí.
+Que se va a ver más o menos así.
+Este es el call, este es el MB 5.
+Huh?
+Y le vamos a meter este ya el texto, verdad que es este maicito el.
+Sign up the already count.
+Esto sí ya aprovecho TML entonces aquí tenemos esto aquí
+Y vamos a tener.
+Volver y. ¿Qué y después ya vamos con este otro, verdad? Y es exactamente lo mismo, vamos a ir metiendo cajitas dentro de cajitas, dentro de cajitas hasta que metemos esta parte de aquí. Lo ven estas cajas lo que hace es tu DIF, lo que hace es acomodarme estos elementos, lo ven.
+me va acomodando los elementos dentro de las diferentes cajas para que sea más tales Okay profe No es simplemente más fácil partir la pantalla en tres y poner este más el centro sí Totalmente de acuerdo Yo soy muy pragmático y muy práctico para esta cochinada de este css Okay eso se lo no me lo pueden preguntar a mí se lo pueden preguntar al mae que hizo toda esta cochinada css
+Sí, pero así es como funciona esto, verdad? Y Boostrap tiene una forma muy particular de dividir lo que también se le puede decir que la cuadrícula, verdad? Que es toda la parte del grid que vimos, verdad que es la pantalla. No sé qué tal por ahí un poquito más claro, tal vez.
+
+TAYRON ALONSO SALAS NUÑEZ   35:09
+Sí, es solo saber cómo manejar esa parte, cómo lo quiero ver uno.
+
+LUIS FELIPE MORA UMAÑA   35:14
+Exacto.
+Entonces, este, como les digo, bases en las de los templates de esta vara.
+De Bootstrap para que no tengan problemas, porque después este hay que ver cuáles son las diferencias entre esto y esto, porque es como el texto diferentes una cochina, pero bueno.
+Ya eso es otro tema, voy a llevarme.
+es que si me lo traigo para acá creo que se va a ver un poco feo
+Sí, sabe un poco feo.
+¿Entonces va a traer este para acá?
+¿Este y voy a traer, no?
+Creo que trae más bien este para acá.
+Preparar.
+Okay, ajá.
+I'll be able to get a brother.
+Ok entonces básicamente este este section de aquí vendría siendo este DIF
+Entonces tengo todos estos section de aquí.
+Esto sí me lo voy a llevar así.
+Hasta este.
+Ok, bueno, voy a llegar hasta aquí.
+Put.
+Voy a dejar todo dentro de este día.
+Sí.
+Aquí.
+No.
+le da la camita a día este sign up
+Y aquí no voy a tirar aquí, digamos, lo voy a tirar al registro, ¿verdad? Pero bueno.
+No tenemos registro todavía. Entonces ya tenemos este aquí, vamos al form y aquí dentro del form a mí los forms no me gustan, es una decisión personal. Siento que da más problemas de las que de los que reciben es simplemente es un contenedor más que lo que haces es meter un montón de broncas. Entonces este voy a meter esto aquí.
+Ta ta ta ta.
+Aquí está el.
+Este man, sí, sí.
+Y este sí me lo voy a volar.
+Entonces aquí deberían salir estos 2 maes, estos 2 maes de momento van a salir un poco feos.
+Pero vieran que no me importa tanto.
+Uh-huh.
+Uno nos.
+Estaba ahora más grande.
+Porque si necesito ver cómo queda el.
+Como que Ale, por eso la orientación es tan importante.
+Is your first name?
+Input, ajá.
+Control.
+Pero no, después de nuevo la clase.
+Okay cierro dos dif
+Thank you.
+Sierra to tips.
+Okay, después de eso.
+voy a quitar estos dos de aquí
+Y para que estos manes me salgan.
+Puedo tener que meterlos aquí.
+No.
+Para venir estos todos.
+Okay.
+Hi, mail others password now.
+y después cierro todos otra vez
+Sara no va cara de como lo más bonito.
+Creo que ha sido más fácil traerme todo y después llevarme y después ajustarlo por lo que ya tenía probar. Ya ese es otro tema.
+Yo a mí que me gusta complicarme.
+Saber.
+Probablemente abrir un pelín deforme y aquí simplemente ya con esto.
+Me dedico a este ser artistas.
+Heroesty.
+Cierro este aquí, voy a cerrar este aquí, voy a cerrar este aquí, voy a cerrar este aquí.
+Y si root container.
+Sierra section y Sierra el otro disk restaurant section.
+y Aparentemente a ver
+¿A cuánto cerraron 6?
+Section.
+¿Qué?
+Es que se ve algo con mi perception, esto es un DIF.
+Go.
+Y ahora sí se ve horrible, pero bueno, ahorita lo ajusto.
+Vean, vamos a ver si está los antones.
+Ahí está, ahora sí.
+I'm sorry.
+ya queda un poquito más bonito este mae quedó feo
+Algo tuve que ya sé por qué quedó feo.
+Porque este va a tener que estar dentro del input.
+
+ARIADNY MARIA NUÑEZ GODINEZ   41:19
+Right, that word.
+
+LUIS FELIPE MORA UMAÑA   41:21
+Este sí, el tema tiene que estar dentro de la habían estado nuteado, por si acaso.
+
+ARIADNY MARIA NUÑEZ GODINEZ   41:24
+Rubino maleante.
+Ay, perdón.
+
+LUIS FELIPE MORA UMAÑA   41:32
+Tranquila.
+Esto está ajá.
+Claro, ¿no?
+It's just done.
+Bueno, algo.
+esto más grande si algún día le da la gana y así se ve entonces si yo le doy F 12 aquí
+y empiezo a revisar
+Aquí tengo las cajitas, la ven.
+Esta es la cajita este mae, esta es la cajita este otro mae, esta es la caja donde tengo esto, pero tengo otra caja que tiene esto, pero tengo otra caja que tiene esto y tengo otra caja que tiene esto, lo ven.
+Y así sucesivamente hasta llegar.
+lo ven ven aquí que partí la eso es lo que les decía que partí el grid en 3 bueno es que no puedo mover si puntuales y mover el mouse, pero si ven las 3, las 2 líneas que hay aquí en el centro, ¿verdad?
+
+Adrian Vinicio Chaves Marin   42:37
+Sí, profe.
+
+LUIS FELIPE MORA UMAÑA   42:37
+Si no me avisan, que se parece, ven, pero ya sí, más o menos es como se ve el.
+El maesito, ¿verdad? Vamos a ver porque esto no hay que ir afuera, digo Manel.
+
+DANNEL ROBERTO QUESADA SOLANO   42:50
+Porque creo que una forma fácil de ver cómo funciona el DIF es cuando cuando uno se va a cualquier página web y le da entrar en modo a explorar por elementos.
+
+LUIS FELIPE MORA UMAÑA   43:02
+Ajá, pues esto mismo.
+
+DANNEL ROBERTO QUESADA SOLANO   43:03
+Sí, y exactamente. Y una vez, digamos, ya ahí le marca que cuál es el DIF. Exacto, ahí veo uno, pues una página que tenga bastante diseño.
+Bias.
+
+LUIS FELIPE MORA UMAÑA   43:16
+Por ejemplo, esto es un cart.
+que tiene una imagen adentro tiene este mancito aquí está y aquí está el otro carte y este es un contenedor de Card si este es un contenedor del contenedor y este sí
+Yes.
+Entonces, cómo van, ven como va partiendo ahí las seccioncillas del madecito.
+Es como la como.
+entonces ahí lo tienen ahí tienen los templates ahí
+Y es por ahí lo que les guste y vámonos.
+Okay, so.
+A ver, con 12.
+Floating.
+Hmm.
+¿Por qué?
+Con el más, pero bueno, ahí es donde está, así está la luz, aquí pongo este.
+Ya no me acuerdo cuáles eran los bajitos de Lugin, pero bueno, ahí está la
+Ok, ya voy a entrar y no sé cuando haya alguna. Usted se va a ver así de fea.
+Bueno, eso no es tan terrible, la verdad, este sí le ha metido un poquito de sugar ahí con él.
+Con el estidillo.
+Esta sí Bueno entonces por ejemplo este si nos volvemos al ranking este Kendal tiene 105 que aquí entró en la pregunta de este
+Daniel.
+Para ponerle 50 para actualizar el score, no muestra ningún mensaje, eso me hace falta.
+Y volvemos al ranking, lo ven, es el último cosa.
+Y todo esto pasa a través del controller.
+Okay.
+¿Preguntas o alguna otra pregunta ahí con la vara del CCS?
+
+TAYRON ALONSO SALAS NUÑEZ   45:27
+Ya meramente disposición de unos cuentos de quiero regresar entonces.
+
+LUIS FELIPE MORA UMAÑA   45:31
+Ya están usted como quiera vivir ahí la.
+
+TAYRON ALONSO SALAS NUÑEZ   45:34
+Yo creo que entre más sencillito, mejor.
+
+LUIS FELIPE MORA UMAÑA   45:35
+LL.
+Sí, tienen 2 opciones, este la primera es este.
+Sí, pueden agarrar un template.
+Pero no queda tan y puede que hayan problemillas, como vieron.
+Este.
+Sí es importante esto.
+Es decir que esto puede hacerme muy cuadrado, que si hace muy cuadrado, pero.
+¿Y si uno no tiene estas barras?
+Miren cómo cuesta cuando no quieren quedar ahorita y si me pongo a ver todos esos baros.
+Este cierra este.
+Este Sierra.
+Este otro.
+Estación a este.
+It's all well being.
+No, no.
+Why are you coming out stuff to get a record to come in stuff?
+ok esto vuelve aquí
+Huh?
+este se me equivoco le quisiera este
+Este.
+Ahorita esto.
+Este.
+Esto es aquí.
+Estos no están dentro de este.
+Estos.
+3 creo están dentro de este otro.
+No sé.
+Por ahí a un masito y para from partear esto, pero ya por un segundo es terrible.
+Lo buscas a remotive de la cuenta.
+Ahora si quieres, shift up.
+Is the car is sick?
+Is to com, is to com?
+It's the case of the hoptos.
+Is the rest?
+Ese era otra escoba aquí adentro.
+Ricados de madre.
+On.
+Y mi can es.
+Talk, talk, talk.
+Sí, ahora sí, vean qué lindo me quedo.
+Entonces eso sí puedo ver cuál es lo que está pasando aquí.
+Pero bueno, además, esto lo podría modificar para que quede en el
+Yes, to mine.
+Voy a hacer esto aquí.
+Quisiera el link.
+No sé por qué no te dije.
+Input.
+Okay.
+¿Y qué le pongo?
+Este.
+You open switch.
+No.
+Catarun spam.
+Im honest.
+Google.
+Puede que se vea peor, puede que sea menos terrible. Quiere ponerle un estilillo ahí, por lo menos para que se vea.
+Este.
+Para que vean medio transparentón, vamos a ver cómo se ve.
+No, no llevo mucho.
+Bueno.
+Y después se lo como.
+Pero sí, eso sería.
+¿Qué hay más preguntas?
+Estoy bien.
+Vamos a ver, por aquí tenía un dibujito, este no, este tampoco.
+Eso tampoco es este de aquí.
+Ese es el que me interesaba, este para contestarle a su pregunta de él, ahora sí.
+Esta es la estructura que tenemos ahorita, verdad? Tenemos el control, tenemos el view y tenemos el el modelo. Okay, entonces, pero para si me puedo hablar esta línea aquí, no, no puedo salir aquí. Bueno, antes teníamos aquí, por ejemplo, este el
+¿El login, verdad?
+El login tenía un controller.
+¿Verdad ese controller?
+¿Este punto Loy, verdad?
+Hacíamos una vara así.
+Y aquí en el controller.
+¿Que vamos a ver cómo son menos que se llama Login Controller, verdad?
+Y este maestro tiene una hora que dice looking.
+verdad vamos a hacerlo así todos sabemos que ya leí los los parámetros verdad este maecito llamaba directamente a este lo ven
+qué es lo que pasa y por qué le digo qué Y por qué es tan importante haber pensado y planeado el diseño de forma tal que todo esto fuera autónomo digamos y que todo esto este sirviera digamos sin ningún problema que aquí
+Yo voy a tener.
+uno le hizo login verdad lo pueden decir le hizo login que va a tener el mismo controller exactamente el mismo controller y va a ser exactamente el mismo login
+Oye, entonces una vez me siento bien o login.
+Este man es el que va a llamar este man.
+Y hasta de existir porque este puede existir. Okay, entonces él tiene que esperar y responder al mismo ti es lo mismo siempre es un API y te estás conectando un API, por decirlo así que es donde este simplemente es una entrada y una salida, verdad? Se le manda los parámetros que necesita y va a obtener la respuesta que necesita. Okay.
+Hasta acá en el todo.
+
+DANNEL ROBERTO QUESADA SOLANO   53:14
+Es simplemente digo empezar la referencia.
+
+LUIS FELIPE MORA UMAÑA   53:18
+¿Es correcto?
+
+DANNEL ROBERTO QUESADA SOLANO   53:18
+De del view.
+
+LUIS FELIPE MORA UMAÑA   53:21
+Es correcto.
+
+DANNEL ROBERTO QUESADA SOLANO   53:22
+Okay.
+
+LUIS FELIPE MORA UMAÑA   53:24
+Entonces no reemplazar la referencia.
+Es que el bio ya no existe, ahora es el vamos a ver, es un bio que se conecta al controller.
+Is a stone?
+lo es Entonces por aquí no sé si recuerda la clase pasada que vemos cómo inyectar servicios
+Por aquí tenemos un servicio de login, verdad?
+Entonces con el servicio de login.
+Yo tengo mi botoncito aquí, verdad? Ya después todo esto cambia, verdad? Todo esto se va a cambiar, verdad? Porque es que ahora estos web. Pero qué es lo que importa? Las acciones, las sí, las acciones que el usuario tiene dentro del sistema. Ok, entonces aquí yo tengo un mismo login, verdad que estaba endeado este un clic de este botón.
+Entonces, basado en esto.
+Yo vengo aquí y ejecuto login entonces simplemente voy a tener este vean que todo esto es diferente porque antes hacíamos como textbox.text verdad y obteníamos esto y password.text o label password textbox.text verdad y ahora no, ahora lo obtenemos verdad porque estamos en Blazor en este momento, verdad?
+Pero al final necesitamos lo mismo, necesitamos un nombre y necesitamos un password. Ya voy ahí, Adrián. Entonces básicamente vamos a simplemente hacer lo mismo, este obtenemos un login controller verdad que ya lo tenemos el servicio que está inyectado con el nombre con el password si es este.
+el resultado de aquí si es true verdad quiere decir que puedo hacer login Entonces nos vamos a ir al dashboard si es falso le resete la la vara verdad si nos vamos al ejemplito que tenemos aquí en WingFronce es una vara muy muy muy similar
+Donde igual es tengo el user.
+tengo el texto tengo el user tengo el password y este aquí si hago las validaciones en el otro lado no necesito porque ya le dije por ejemplo el otro lado que que ya que tenía que tener un valor verdad Entonces este que ya y les puedo decir que son los campos son numéricos y todo verdad Entonces no tengo que hacer las validaciones pero ya si ustedes la quieren agregar las agregan
+pero después es lo mismo lo ven este login controller login login exitoso nos movemos de la siguiente forma y si no otra vez
+K.
+Porque al final toda la lógica está dentro de este maestro de aquí.
+Este mae aquí es el que tiene toda la la ciencia, verdad? Porque este es el que carga los datos. Este es el que te maneja el user controller o inicia el user controller. Tenemos el password, tenemos el user y este de ahí simplemente es buscar si existo o si no existe y vámonos.
+¿Qué tal por ahí Anel?
+
+DANNEL ROBERTO QUESADA SOLANO   56:17
+Bien, bien, sí, un poquito más claro.
+
+LUIS FELIPE MORA UMAÑA   56:21
+Entonces claro.
+
+DANNEL ROBERTO QUESADA SOLANO   56:21
+No sé si sea una ventaja o una desventaja que nosotros no tengamos un control porque me parece que, digamos, me da la impresión un poquito, tal vez más fácil crearlo ahorita y ligarlo de una, digamos, con Blazer, con Blazer de una vez.
+
+LUIS FELIPE MORA UMAÑA   56:43
+Sí, ya eso es parte de los cambios que se tienen que hacer para su proyecto, ¿verdad? Pero este si tiene, por ejemplo, si tiene servicios, los servicios son exactamente lo mismo, digamos aquí realmente digamos lo que estamos inyectando en esta parte de aquí.
+
+DANNEL ROBERTO QUESADA SOLANO   56:48
+Yep.
+
+LUIS FELIPE MORA UMAÑA   56:57
+Es un servicio.
+Porque es un servicio, porque cuando venimos aquí. Y registramos, por eso era importante, digamos también tener como estos 3 capas separadas en proyectos, pero es más fácil, ves aquí inyectamos un servicio.
+Pues.
+Qué ahora sí, Adrián, dígame perdón.
+
+Adrian Vinicio Chaves Marin   57:25
+No, pero es que yo tengo una duda, no sé si estoy mal. Es que a la hora de nosotros, pues ahora dijo que la base de datos no era tan importante hacerlo primero, pero digamos, me entra una duda con esto porque a la hora que uno hace login.
+
+LUIS FELIPE MORA UMAÑA   57:29
+Mhm.
+
+Adrian Vinicio Chaves Marin   57:41
+Bueno, la base de datos es importante, como tenerla ya para saber cuál es, como las sociedades que se tiene, ¿verdad? Digamos las tablas que vamos a tener, porque al momento que hagamos el ingreso al sistema y vamos a tener sociedades ahí de.
+
+LUIS FELIPE MORA UMAÑA   57:41
+Mhm.
+No.
+Mhm.
+
+Adrian Vinicio Chaves Marin   58:01
+De una tabla con otra tabla dentro del sistema.
+No sé si me voy a hablar.
+
+LUIS FELIPE MORA UMAÑA   58:05
+No, en sí, le le entiendo perfectamente, digamos, usted ocupa los datos para operar.
+
+Adrian Vinicio Chaves Marin   58:07
+Porque si estuviéramos, digamos en que ajá, si estuviéramos en quemado es diferente, pero íbamos a usar la base de datos. Entonces la base de datos sí es como siento yo como primordial.
+
+LUIS FELIPE MORA UMAÑA   58:19
+Okey, ahí me voy a devolver como a la clase número 2, donde vivo en la parte del dependence inversion.
+Okay, por eso es que las implementaciones tienen que depender de las abstracciones.
+No de las implementaciones.
+Okay.
+Y ahí voy, aquí voy a voy a volver a un toquecito a la pizarra, un toque.
+I don't think, pueden ver, está.
+Así mismo.
+Como esto de aquí.
+funciona por sí solo porque depende de abstracciones de acá. Este maestro también depende de abstracciones acá, entonces este básica, bueno, no depende de abstracciones, porque tú hay que agregar el defaces, pero es otro tema, pero así como este me va a funcionar independientemente de quién lo esté llamando.
+Aquí también debería pasar lo mismo independientemente si yo vengo desde archivos o si vengo desde la base de datos los modelos son los mismos los modelos no van a cambiar por ejemplo usted hace un get users
+Verdad para obtener los usuarios de la base de datos y hace un select ahí, no sé, entonces este.
+Qué es lo que pasa es que cuando se carga esos usuarios, cuando se hace el get users, aquí es donde este viene el detalle, el detallito en específico, verdad? Porque qué es lo que obtenés al final de ese get users? Una lista de usuarios, esos usuarios ya están definidos en mis modelos. Ok, entonces independientemente de donde vengan.
+Lo que venga tiene que ser una lista de usuarios a huevo.
+Sí.
+Entonces, si nos vamos aquí, voy a cerrar todo esto.
+muchas cosas abiertos si nos vamos por ejemplo al esto no es aquí
+Si nos vamos, por ejemplo, al user controller, verdad que en mi caso, verdad es el que es el que maneja esto, si usted ve aquí, él depende de una abstracción, no de una implementación.
+verdad Y esta abstracción que nos dice que hay un load que nos carga este que no tengo alguna lista de usuarios verdad porque la declaré de usuarios que hace un update que hace un rebuff y y hace un create Okay
+¿A quién le correspondería ejecutar estas operaciones?
+Al implementador, a la clase que implemente esto.
+A la clase que implemente el data Android que yo se la voy a inyectar aquí.
+Pero eso no tiene nada que ver. Ok, si yo le inyecto una un data handler de base de datos.
+Debería funcionar igual, debería tener un load que va a volver una lista de usuarios. Debería tener, no sé, un montón de cosas más ahí.
+Si yo hago un remove, debería volver un booleano. Si yo hago un update, debería volver un booleano siempre, independientemente del que venga. Por eso es tan importante.
+toda esta parte de las de las interfaces y demás, porque si yo puedo hacer el software completamente intercambiable y vamos a lo mismo de nuevo, dependo de las abstracciones, dependo de los comportamientos, no de las implementaciones.
+Entonces está un poco más claro por ahí, Adrián.
+
+Adrian Vinicio Chaves Marin   1:02:00
+Profe, sí, no estamos bien.
+
+LUIS FELIPE MORA UMAÑA   1:02:04
+Sí, hemos hecho mi convencido.
+
+Adrian Vinicio Chaves Marin   1:02:08
+No, ahí lo ahí lo repaso.
+
+LUIS FELIPE MORA UMAÑA   1:02:14
+Véalo por este lado y analicémoslo así.
+¿Su sistema ahorita tiene datos, los carga de un archivo, verdad?
+
+Adrian Vinicio Chaves Marin   1:02:23
+sí.
+
+LUIS FELIPE MORA UMAÑA   1:02:25
+Ok, entonces, si usted tiene una interfaz muy similar a esta, va a tener un implementador.
+¿Que maneja los archivos, verdad?
+Y no, tal vez.
+Entonces.
+¿Aquí está toda la implementación de la parte esta ahora, verdad? Si yo tuviera aquí, lo voy a meter aquí este.
+Yeah.
+Sí, vuelvo a verme esto aquí nada más.
+Esto lo que me interesa.
+¿Digamos si yo tengo un archivo por aparte y yo hago y yo quiero cambiar de mis archivos a mi base de datos, verdad? Yo hago así public class este.
+That is handling.
+Entonces pego esto de aquí, tengo el data handler.
+Ahora los cochetes de aquí.
+Voy a implementar la interfaz.
+En el load.
+Voy a usar una, esta fue la pregunta que no recuerdo quién se la hice.
+Dios, Simón.
+Este bar.
+Context es igual a new, no es un data context, es un DV context.
+un DD connection qué es lo que estoy haciendo aquí estoy creando este una variable que solamente va a tener el ciclo de vida de esta porción de código. Es una variable contextual por decirlo así una variable más temporal pero es una variable ese tipo entonces hago el DD connection probablemente me faltan parámetros ahí donde le tiré ahí toda la.
+¿Cuál es el consultor de este man?
+¿Qué?
+Porque probablemente no es otra cosa, no? Ah, bueno, pues que esté más protected. Ajá.
+Sí, esto más correct.
+Y esto es una clase abstracta, tengo que ir a una implementación de la magia, pero bueno.
+Entonces voy a ir una implementación de la madre. Después me acuerdo este cuál era la implementación. Abro la conexión. Entonces, qué quiere decir esto? Que cuando salga de aquí esta variable ya no va a existir. Esta variable solo vive en este contexto. Entonces aquí este le digo aquí como a este.
+Query es igual a select asterisco from the punter.
+Madain slice.
+y aquí este vamos a crear el comando y después de crear el comando el texto y después hacemos un var result es igual a command punto es escalar no me gusta
+Execute no query.
+Y vámonos, aquí tengo el resultado, entonces dentro del resultado yo voy a hacer este.
+Aquí.
+Una lista.
+de tipo test data es igual porque estoy en un resultado y es el resultado de la base de datos verdad Entonces este data punto
+De.
+Mi número onda te te result punto.
+Si no me equivoco, este mancito aquí me va a retornar algo así.
+Esta.
+Si no me equivoco.
+¿Cuánto te retornas? Ya bye.
+Esto me ha reto, no tengo que dejar otro.
+¿Y cuál era?
+Este.
+Yo.
+Ah bueno sí lo jalo el transacción Pero bueno ya es otro tema Entonces hasta aquí devuelvo los resultados y aquí simplemente hago un retorno de datos okay
+Y listo, as stop.
+Bueno, ahí ya tengo aquí toda la el macito, verdad que va a ir a traer este listo de la tabla.
+Nunca haga un select asterisco.
+Entonces este baja la Data y al controller cuando haga load verdad este data handler.load le va a devolver una lista de usuarios independientemente de donde venga.
+Ok, entonces cuando vengo aquí al program de este mae en vez de inyectar un file hunter, voy a inyectar un.
+Data Bill Hunter.
+Ya vamos a la base datos.
+Recuerden el Open Close entonces aquí estamos cumpliendo con 3 pájaros al mismo tiempo porque tenemos Open Close tenemos Ingle Responsability y tenemos este
+El, ¿Cómo llamamos ahora? El, no, tenemos cuatro en realidad, tenemos el interface segregation porque cada interfaz va a ser específica y vamos a tener también el este dependence inversion. Ok, porque independientemente de lo que venga, el input y el output va a ser exactamente lo mismo que esperar los demás.
+¿Qué tal ahí, Adrián?
+
+Adrian Vinicio Chaves Marin   1:08:30
+Sí, profe, no más claro, yo esta parte sí yo tenía como un poquito como la idea como era, pero más que todo es cuando usted va a inyectar los datos que la base de datos sí tiene que estar ya correcta, digamos.
+
+LUIS FELIPE MORA UMAÑA   1:08:41
+Sí, pero ya es otro tema, ya es el llenado de la base de datos.
+
+Adrian Vinicio Chaves Marin   1:08:44
+Porque la base de datos y ahí tiene que estar bien para que esos datos, digamos, se puedan inyectar y pueda, digamos, no sé, a la hora que usted hace login, ya usted digamos ingresa y él va a caer en una página, no sé, la del administrador, ejemplo. Entonces sí tiene que estar la base de datos, más que todo era esa parte que la base de datos sí tiene que estar ya.
+
+LUIS FELIPE MORA UMAÑA   1:08:54
+Mhm.
+Mhm.
+Mhm.
+
+Adrian Vinicio Chaves Marin   1:09:06
+Tiene que estar bien montada para que ya uno pueda ir trabajando.
+
+LUIS FELIPE MORA UMAÑA   1:09:08
+Nothing.
+
+Adrian Vinicio Chaves Marin   1:09:12
+Este, como se dice, a como vaya desarrollando el proyecto de las más que todas las interfaces, ya sea de administrador o la de cualquier usuario ahí normal. Y pero no, ya estamos bien, profe.
+
+LUIS FELIPE MORA UMAÑA   1:09:28
+Okay Por eso le por eso les digo que no empiecen con la base de datos Porque la base de datos cuando uno está empezando a veces tiende a darle un poquito de broncas Entonces ustedes no van a saber si es una bronca en la base de datos o es una bronca del Entonces ya ustedes saben que de
+
+Adrian Vinicio Chaves Marin   1:09:28
+También gracias.
+
+LUIS FELIPE MORA UMAÑA   1:09:46
+Ya ustedes saben que aquí.
+Bueno, que esta se van a cargar un día, que de aquí para atrás todo sirve.
+Entonces cambiamos solo esto, bajemos. Es un término ahí medio de PM bajemos este el nivel de incertidumbre o reduzcamos las capas de incertidumbre. Okay, para qué voy a cambiar yo estos dos al mismo tiempo? Imagínese cuánta incertidumbre me va a dar al mismo tiempo. Entonces se cambiamos esto.
+Que esto funcione, esto es lo que vale puntos, tengo los puntos de esto y ahí sí me pongo otra vez un branch aparte, digamos si ya comitéo todo verdad y empiezo a hacer los cambios de la base de datos si funciona bien y si no tengo un punto al cual volver.
+¿Qué más preguntas?
+Vea, la otra semana son 120.
+Este, perdón, hora 20.
+20 20 minutos de preguntas 30 minutos de preguntas serían 7:50 nos quedaría aproximadamente 40 minutos acuérdenme la próxima semana
+La próxima semana vamos a este acuérdenme ver porque enseñarles un poquito.
+Vamos a meter un poquito ahí para que vean porque es tan importante la documentación, el código.
+Yeah.
+Me voy a poner aquí que ustedes también se les va a olvidar.
+Yeah.
+Langsing Mape.
+Sí, ahora sí, este.
+Y pues vamos a hacer clase, bueno, más preguntas.
+
+TAYRON ALONSO SALAS NUÑEZ   1:11:56
+¿No hay problema de haber creado otro repositorio, verdad, profe para ese proyecto?
+
+LUIS FELIPE MORA UMAÑA   1:12:01
+No veo porque tenía que haber creado otro repositorio.
+
+TAYRON ALONSO SALAS NUÑEZ   1:12:05
+Como para no ***** el actual.
+
+LUIS FELIPE MORA UMAÑA   1:12:08
+Para sostener branches.
+
+TAYRON ALONSO SALAS NUÑEZ   1:12:12
+Sí, quiero una nueva gama, nada más.
+
+LUIS FELIPE MORA UMAÑA   1:12:15
+Sí, es correcto.
+
+TAYRON ALONSO SALAS NUÑEZ   1:12:16
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:12:17
+O para eso tiene los commits, verdad? Se puede volver en los commits también cualquiera de los dos o hace un branch donde diga proyecto uno y deja el proyecto uno ahí que dicto y sigue trabajando en main con el o el master con el con el otro.
+No se complique, muchachos, esto es muy bonito para complicarse.
+O K, la vez pasada teníamos el charcount.
+Read this to mind.
+Queremos charcount.
+There we get index.
+Tenemos mi Max.
+Y tenemos suma de elementos, uno.
+2.
+3.
+Traemos tres, nos falta uno, ahorita agrego uno ahí.
+Yeah.
+Ahora sí vamos a un concepto abstracto de toda esta parte del testing. Aquí estamos probando y estamos viendo un testing, verdad? Donde probamos simplemente este de ahí el la entrada y la salida, verdad?
+Hay uno, hay veces verdad que, por ejemplo, no tenemos acceso a la base de datos.
+¿Entonces puede volverme aquí?
+Vamos para abajo, para abajo, para abajo, para abajo.
+vamos a volver aquí y voy a hacer dos cajitas
+Hay que se llaman test de caja blanca y test de caja negra.
+¿Verdad este?
+I was.
+hacerlo una caja negra okay
+Entonces.
+si ustedes ven y si lo vemos de diferentes formas la base de datos
+Es una carne.
+¿Verdad?
+Donde yo simplemente.
+Mande un query.
+It received a resultado.
+Do you query?
+Si your result.
+Nadie sabe qué es lo que pasa en la base de datos, digamos, no podemos entrar a ver el código, verdad o no podemos entrar a ver un montón de cosas ahí.
+verdad o cómo es que la base de datos recibe la bar y el server funciona por debajo, verdad? Y eso no lo podemos de bullar. Simplemente enviamos algo y recibimos algo de vuelta. Okay lo mismo pasa, por ejemplo.
+¿Cuándo?
+Tenemos una librería.
+¿Verdad? Bueno, ahora se puede odiar un poquito más, pero bueno, esto es la.
+Lymary.
+Reto.
+Entonces.
+Aquí no es bien aquí.
+Ya me meto.
+Con.
+Arx.
+y recibo un resultado verdad no vemos que no tenemos el control de que lo que está pasando
+¿Verdad, entonces, qué pasa?
+Para yo poder probar.
+Este.
+Pongámoslo aquí este.
+I took.
+¿Qué tenemos?
+Método TP. Ok, cuando yo quiero probar este método, verdad? Y yo tengo esta dependencia o esta otra, yo no voy a conectarme a la base de datos, independientemente si es staging, si es coase, si es la que sea. Yo para para la prueba que necesito hacer, verdad? Para saber que este método realmente funciona cuando los resultados vienen
+bien o vienen mal dependiendo del escenario verdad o no viene nada Por ejemplo yo no necesito Conectarme a la base de datos pasearme la base de datos hacer un speech en la base de datos para parar este método y que cada vez que yo ejecute este test voy ejecuto un test restauro la base de datos Porque el siguiente la ocupa
+Y tengo 1500 test, entonces tengo que hacer 1500 de restore en restore de la base de datos y eso si estoy ejecutándolo yo si están este Albert y Ariadni ejecutando en paralelo.
+Todavía peor, ¿verdad? Todavía más. Entonces, ¿qué es lo que pasa aquí? No sé si está aquí todo claro, sí está claro el escenario, sí.
+
+Kaik Andy Yocks Sandoval   1:17:25
+Sí, profe.
+
+LUIS FELIPE MORA UMAÑA   1:17:28
+Ok, buenísimo.
+Entonces.
+Para eso, dentro de la librería de testing.
+Esto lo daré un poquito más para abajo.
+Tenemos algo y nos damos, tenemos una herramienta muy bonita que se llama un MOOC.
+¿Verdad? Un moc.
+Es un objeto dummy, vamos a ponerlo aquí.
+Esto tuve me.
+y literal es un objeto tonto así literal así como viene tonto digamos Por qué Porque yo a ver si se venden ahí como como la asamblea legislativa este se habla de los objetos es yo tengo objeto tonto verdad se saca muy político no me hagan caso este
+Yo tengo un objeto tonto, entonces yo al objeto tonto, yo le digo, mae.
+A usted lo va a llamar tal.
+este dígale que no estoy o dígale que estoy o respóndale esto verdad eso es un objeto dummy cuando yo me conecto a la base de datos yo me conecto mediante un objeto verdad Entonces ese objeto dummy me va a funcionar
+Aquí.
+Entonces, cuando yo desde este método mando a llamar a la base de datos, yo tengo mi objetivo tonto aquí, que yo no voy a llamar a la base de datos directamente.
+¿Qué va a ser una dooming?
+¿Acabéis, verdad?
+O un mooc ya para ponerlo en palabras así más formales.
+Mock that dice.
+Hey.
+Dame más o menos por dónde lavar.
+Entonces yo vengo aquí y cuando yo le digo, okey, usted hace un objeto tonto.
+¿Entonces usted va a reemplazar la base de datos?
+Cuando alguien.
+Llame a la base de datos, usted se va a meter en el medio.
+Y usted me va a responder esto.
+Entonces desde aquí ya no voy a entrar aquí.
+Y ya no voy a recibir desde aquí, ahora voy a recibir.
+Desde aquí.
+¿Qué?
+Yo intercepto ese llamado.
+Y al interceptar ese llamado, mi objeto tonto que solo sabe hacer una cosa, va a responder lo que yo le diga que responda.
+¿Para qué? Para poder probar mi método de nuevo, tenemos que reducir la incertidumbre. OK, y para reducir la incertidumbre. Nada más fácil que eso, verdad, decirle yo a la base de datos cuáles son los escenarios específicos al test, perdón, cuáles son los escenarios específicos que yo quiero validar.
+Ok, lo mismo pasa.
+And.
+Lo mismo pasa cuando este objeto UMI no es tan tonto como como uno crea o de maestro tampoco es así como como tan tanjeta no es porque el va es medio gato, diría mi abuelo.
+Entonces el mae puede literalmente hacer lo que sea.
+Puede hacer para un método.
+verdad que yo vengo aquí intercepto y le digo no usted va a ser el que intercepta y usted es el que responde pero usted va a responder haciéndose pasar por él no sé si objeto dumi o objeto tonto objeto Camaleón o interceptador no sé cuál concepto les va a quedar más fácil
+De analizar, pero al final eso es un mock.
+qué Esa es la la la definición digamos este de del maito tenemos un moc que es el que nos va a responder qué preguntas hasta aquí
+
+TAYRON ALONSO SALAS NUÑEZ   1:21:33
+Es algo así como la línea de print que uno hace para ver si funciona algo.
+
+LUIS FELIPE MORA UMAÑA   1:21:37
+Más o menos, más o menos prueba, sí, sí, sí.
+Más o menos.
+¿Qué más preguntas?
+
+Adrian Vinicio Chaves Marin   1:21:54
+Profesor, profesor, hacer un ejemplo ahorita el testing.
+
+LUIS FELIPE MORA UMAÑA   1:21:58
+Sí, señor, quiero que el concepto esté un poquito claro antes de tirarme a chorrear código, digamos.
+
+Adrian Vinicio Chaves Marin   1:22:03
+Ok, buenísimo. Gracias, profe.
+
+LUIS FELIPE MORA UMAÑA   1:22:08
+¿Rustoff, entonces avanzamos con el código, alguien está deseando el código ya?
+Hey back.
+Aquí es donde viene.
+La ciencia de esto.
+Y aquí es donde nos vamos a poner creativos.
+El controller.
+¿Depende del data handler, verdad?
+pero el datahandler va a ir al archivo y si yo qué pasa, digamos vamos de nuevo, yo no puedo trabajar con datos vivos haciendo test que yo voy a correr 70 veces para ver si están buenos o no y para hacer un checkpoint de que mi implementación está bien, verdad? Y asegurar la calidad de la implementación de que hace lo que tiene que hacer.
+Entonces para eso tengo.
+mocks, verdad? Entonces este macito tiene esta dependencia, verdad? Y donde va el archivo, donde va y recibe y todo eso. Ok, entonces este y a partir de eso, él hace las validaciones, lo ven hace lo guin hace update score hace un users y estos dos aquí que nunca lo llené.
+Pero sí, para ahí va. Entonces enfoquémonos en estos dos.
+y aquí es donde viene la ciencia todo esto vean
+Y aquí este le voy a pedir que me ayuden.
+El mayor para quiz.
+¿Vamos a agregar nuevo item si yo quiero probar la clase controller, cómo se debería llamar el test?
+
+JUAN FELIPE PEREZ	BEJARANO   1:23:46
+Controller punto test o algo así.
+
+TAYRON ALONSO SALAS NUÑEZ   1:23:48
+Does.
+
+LUIS FELIPE MORA UMAÑA   1:23:52
+Pero voy a decir algo.
+
+TAYRON ALONSO SALAS NUÑEZ   1:23:54
+Controle usted, sí, caballo como llegaba para saber que se está testeando.
+
+LUIS FELIPE MORA UMAÑA   1:24:00
+Ok, para él iba a decir algo.
+
+DANNEL ROBERTO QUESADA SOLANO   1:24:03
+Sí, igual control el test, si le ponemos punto y le cambiamos.
+Cambia la clase.
+
+LUIS FELIPE MORA UMAÑA   1:24:11
+Sería.
+sería user controller test porque tenemos un montón de controles verdad cuál control estoy cuál control estoy probando cuando agrega todos los demás vamos a tener user controller test
+Okay.
+Que me va a hablar esto porque no lo ocupo.
+¿Bueno, ir acá o tener esta clase pública, qué hacía?
+A una clase.
+Común y corriente, una clase de testing.
+
+ALBERT DAYAN BRENES CARPIO   1:24:51
+Tiene que ponerle el decorador test class, algo así.
+
+LUIS FELIPE MORA UMAÑA   1:24:58
+Es correcto, muchas gracias.
+Class.
+K.
+Fácil, muchas gracias, Alberto.
+Y ahora vamos a hacer un método que vamos a probar primero, no sé qué quieren probar primero.
+Hello?
+O el update score.
+
+TAYRON ALONSO SALAS NUÑEZ   1:25:32
+Hello?
+
+LUIS FELIPE MORA UMAÑA   1:25:34
+Load.
+Sí, el otro está bonito. este.
+Holy boyd.
+Quiero hacer controller.
+Shoot.
+Load the users, but not in fight.
+¿Qué y teníamos los 3 pasos, verdad? ¿Cuáles eran los 3 pasos?
+Este.
+Arrange.
+Con el segundo.
+Y saludos a esperar el segundo.
+Viendo el calentamiento es la prisa.
+
+LUIS ALONSO ESPINOZA BONILLA   1:26:32
+Yeah.
+No, sí, yo aquí estoy, estaba pensando.
+
+LUIS FELIPE MORA UMAÑA   1:26:35
+No.
+¿Era entre esa, se acuerda?
+Other maths.
+Alguien que le quiera ayudar desde Alonso, ajá.
+
+LUIS ALONSO ESPINOZA BONILLA   1:27:06
+El.
+Bueno, los 3 el otro era.
+El act.
+
+LUIS FELIPE MORA UMAÑA   1:27:14
+¿Es correcto, aquí es donde actuamos?
+
+LUIS ALONSO ESPINOZA BONILLA   1:27:17
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:27:18
+K.
+vean voy a medir un toquecito aquí y aquí porque esta parte esta parte ya ya sabemos qué hacer verdad Entonces hay que hacer control este
+Aquí no cambia mucho.
+Y si ustedes ven, ya estamos haciendo una fórmula verdad de cargar este tema de simutos es igual a controller punto chinada.
+Controller.load.
+Ok, pero para que recibe este mal.
+El lote recibe el finding.
+¿Y qué le vamos a matar?
+Listed them.
+White name of the makes day.
+¿Qué aquí no hay mucha ciencia?
+Después de eso.
+
+ALBERT DAYAN BRENES CARPIO   1:28:08
+Ahí lo lo puede pasar como nulo o daría error.
+
+LUIS FELIPE MORA UMAÑA   1:28:13
+Daría.
+Podría pasarlo como nulo, pero no sé, digamos que tanto.
+porque yo quiero es que de qué me sirve que el ma carga datos Digamos si si está nulo verdad yo estoy probando aquí el caso positivo estoy probando el primer caso Apenas lo ves debería cargar usuarios
+Si me sigue ahí Alberto.
+
+ALBERT DAYAN BRENES CARPIO   1:28:42
+Sí, yo lo decía como di cómo vas a hacer el cosito ese, como el MOOC y no hay como un file name. Pensé que lo podía pasar como nuro porque no había como una ruta, pero voy a esperarme para ver cómo lo haces.
+
+LUIS FELIPE MORA UMAÑA   1:28:50
+Mhm.
+Es que aquí es donde está el detalle, porque aquí es donde empezamos a trabajar con fantasmas, por decirlo así, o con el objeto Dummy.
+Ya voy a ir. este.
+Mhm.
+Y aquí este, no sé, este.
+Hacer punto.
+Ahí cuál vamos a agregar 2 usuarios.
+Okay.
+Y aquí es donde viene la magia, vea este.
+Voy a hacer par controller.
+Va a ser igual a.
+new user controller Okay para este ma necesito un este data Hunt de verdad de tipo usuario entonces aquí voy a poner
+Mock.
+Mocktel.
+Puedo hacer los 2, pero es más tuanis cuando uno trabaja con mocks, es más fácil trabajar con mocks de interfaces que con mocks de objetos compuestos.
+Porque los mocks de objetos compuestos no se ven tanto años, digamos, son tanto años de de Mokar y se pone un poco de onda y el absoluto. Ok, si ustedes ven, ya desaparecieron estos baros y aquí todo bien, entonces aquí es donde voy a gastar el Bok. Entonces aquí nada más hago este bar.
+Ok, ta ta antler.
+es igual a un nuevo mock de iData handler que recibe un usuario aquí me dice que tiene un errorcillo pero eso es porque necesito este esto y necesito los modelos y necesito el mock
+Lo que sale marketing.
+Vamos a ver si necesitado.
+Okay listo qué fue lo que hicimos ahí ven que aquí hay un check Eso es porque cambió ahí instalamos mock
+Sí, aquí hay un toque ahí medio clic, todavía no lo todavía no lo voy a todavía no lo voy a arreglar.
+Vea, porque aquí es donde, bueno, no sé, hablémosle de una vez. este.
+si ustedes ven esto dice que no pueden convertir de mock de este tipo a el Data handler verdad que lo que está esperando él porque tampoco el control eres tonto verdad y se va a dejar engañar dice Maya necesito un Data handler me estás mandando un objeto de tipo mock verdad solo aquí simplemente le ponemos
+Punto object.
+Y este object es de tipo T, que es del tipo este más cinto.
+Vale.
+De cheque está Floyd de tipo T, pues me va a retornar un objeto.
+Embases.
+Estialized.
+Entonces el object es lo que mandamos vale ahora este vamos a retornar estos usuarios varios ser uno
+Es igual a new user.
+Y le vamos a decir este mira, yo creo que he hecho lo puedo mandar desde aquí.
+There are ningún consultor basier.
+Este, lo quiero este.
+Quiero este, entonces este.
+No sé.
+China.
+Quiero hacer uno.
+Este.
+¿Y es el uno?
+Password total.
+Email uno.
+Y 50.
+I'm not taste of three.
+Cuenta.
+Cake E-list.
+Usar control D.
+Y el que agujero este 20.
+y se va a llamar usertos tenemos los dos usuarios fantasma que vamos a devolver Okay recuerda aquí yo le digo a él que responder
+Verdad.
+Porque es el objeto que es mi objeto domin.
+Okay.
+entonces aquí es donde viene la ciencia vean para que este tema interactúe y haga algo yo le tengo que decir haga algo verdad Esta esta librería de moc tiene una bar Aquí muy interesante lo ven que este tiene varios metas
+el método que me interesa a mí está bueno tiene el object verdad tiene name este tiene moc verdad tiene raíz que es que simplemente me ejecuto en acción verdad como pueden ver recibe un acción tiene un Setup 90 y qué dice el Setup dice que especifica un Setup
+del tipo moqueado para la llamada aumento la expresión que especifica verdad el método que vamos a invocar y este todo estaba aquí verdad
+Y aquí está más o menos un ejemplito, verdad tenemos un mod de esta bar aquí y hacemos un setup.
+Sí.
+Este maestro llama.
+Este setup tiene ahí otras cositas por ahí interesantes. Bueno, es una interfaz ahí que tiene algunas cositas ahí como. Como interesantes, pero eso no lo vamos a ver todavía. Okay, entonces yo le digo a este este.
+Mock data handler punto setup y aquí le mando la acción ¿Verdad? Entonces le digo X tal que X punto y si le doy punto en tengo exactamente lo mismo.
+¿Que tengo en el otro maecito, verdad?
+¿Que tengo en el objeto, verdad?
+Entonces este punto load.
+De este.
+¿Qué le iba a decir y aquí es donde le respondo a la pregunta a Albert, si no me equivoco, qué me decía?
+Punto txt.
+Aquí le estoy diciendo que cuando se llame.
+Con este load.
+con este parámetro pero solamente va a servir para este parámetro hay una forma de decirle que funcione con cualquier parámetro pero me interesa con este parámetro Por qué Porque a veces uno tiene que definir como condiciones específicas verdad de ciertos mocks entonces para centrarlo un poquito Okay
+Pero esto no basta, verdad que simplemente estoy interceptando el llamado.
+Ahora lo que estoy haciendo es esta parte de aquí.
+Es esta intersección del llamado.
+Y aquí es donde me vengo y le digo, OK, cuando se lo llamen.
+Cuando se le hagan este llamado en específico.
+Con este parámetro para este método.
+Yo voy a hacerle aquí punto y aquí hay un montón de cosas.
+¿Puedo tirar una excepción, verdad? En el caso de que sean uno, puedo este no sé ton de cosas, returns ahí está.
+Sí, porque recuerden que este MOOC se tiene que comportar lo más similar a lo que yo esperaría de la base de datos. ¿Por qué? Porque el día de mañana cambia el API y los test no sirven de documentación.
+Ok, entonces aquí yo simplemente retorno una nueva lista con el usuario uno de los usuarios.
+Yeah.
+Y ya tengo este moc, ya tengo el setup, le paso el objeto y ahora voy a llamar.
+Preguntas hasta acá o pasamos a la parte de ejecución.
+
+ALBERT DAYAN BRENES CARPIO   1:37:37
+Ese setup sí o sí tiene que llevar esa estructura, o sea, no hay alguna forma un poco más sencilla como de.
+
+LUIS FELIPE MORA UMAÑA   1:37:42
+Sí.
+
+ALBERT DAYAN BRENES CARPIO   1:37:46
+De hacerlo como para verlo diferente.
+
+LUIS FELIPE MORA UMAÑA   1:37:48
+No.
+
+ALBERT DAYAN BRENES CARPIO   1:37:50
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:37:50
+Sorry.
+Porque si usted se pone a ver, sí, sorry, es que no hay mucho que decirle si usted el mar recibe un expression, ¿no ves?
+
+ALBERT DAYAN BRENES CARPIO   1:37:52
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:38:00
+Es una función.
+¿Y estos expression day son expresiones, verdad? Son actions al final.
+Todo esto es un Lambda Expression.
+¿Y estos son Landa, verdad? Un X tal qué tal cosa.
+Ahí sí, no hay mucho quito.
+¿Qué más preguntas?
+Vámonos a jugar este mae.
+Y lo voy a buguear desde el.
+casi que desde el punto inicial aquí no hay mucha ciencia digamos simplemente va a aclarar un objeto otro objeto otro objeto este setup no lo puedo buguear verdad Pero si ustedes Ven aquí lo ven tengo un mooc del controller que recibe un Data handler el objeto
+Yes.
+Un fantasma, por eso es medio camaleónico este mae, entonces yo le doy F 11 aquí.
+Tengo que sí.
+F DS lo M.
+Porque el maicito es de este tipo ahí, que es un proxy ahí medio fantasma, es un patrón de diseño también el proxy, pero bueno, lo ven y también tengo el interceptor.
+O en que ese es el maestro ahí que me me dice todos los todos los setups.
+¿Lo ven? Y aquí tengo la colección de setups. ¿Cuál es el setup que tengo aquí? El setup que yo metí hace un rato.
+Esto es un poquito, ya un poquito más denso de ver, pero al final es el mismo setup.
+Going.
+by name tipo listo
+Sí.
+Entonces yo voy a declarar.
+But the handler.
+No está Android, tiene algo, bueno.
+Entonces aquí es donde vengo ahora.
+Voy a darle F 11 y aquí es donde voy a darle F 11. ¿Por qué? Porque este data handler cuando venga con file name lo ven.
+Es cuando él va a interceptar, va a interceder y por más que yo le dé aquí.
+él no va a entrar porque el setup él va a ejecutar por debajo la acción, por eso recibe un action, por eso recibe una expresión, porque cuando yo ejecute esto, verdad, me va a retornar esto otro y como podemos ver aquí tenemos los dos usuarios usuario uno
+He was like us.
+Entonces yo usé mi objeto fantasma, mi objeto tonto, mi mock, verdad? Como quieran decir la general es un mock. Yo usé mi mock para decirle cuando llamen a tal usted responderé, usted se va a hacer pasar por él y usted va a responder esto. Punto. Okay. Y ya aquí este donde hacer seteo, verdad? No está nulo seteo los users. Vámonos.
+verdad y este punto com son dos porque esto me retornaba la lista de los de los users
+¿Y si vamos al controller?
+El controller tiene lo mismo todo usuario.
+Sí.
+Entonces ya yo sé que mi load le sirve, por lo menos tiene que ver shine.
+Y aquí sigue debutando y va a seguir.
+Y el test que a ver.
+¿Qué tal Erick compañeros?
+Ya lo vi, Adrián.
+
+DANNEL ROBERTO QUESADA SOLANO   1:42:04
+Entonces, el mock es el mock está hecho para prácticamente un bypass.
+
+LUIS FELIPE MORA UMAÑA   1:42:11
+No es un bypass porque no es un bypass, como no es que simplemente estoy skipeando el mae, estoy reemplazándolo.
+
+TAYRON ALONSO SALAS NUÑEZ   1:42:21
+Como haciéndole pasar por el método inicial para.
+
+LUIS FELIPE MORA UMAÑA   1:42:24
+Exacto, me estoy haciendo.
+
+TAYRON ALONSO SALAS NUÑEZ   1:42:25
+Para que no haga nada.
+Vamos por debajo.
+
+LUIS FELIPE MORA UMAÑA   1:42:29
+Exacto.
+Okay.
+Por ahí Anel, poco más claro.
+
+DANNEL ROBERTO QUESADA SOLANO   1:42:42
+Sí, sí, sí.
+Bastante desbloqueo para mí, porque digamos, testeo el código no.
+Es algo.
+Que haya hecho nunca.
+Si no, ya.
+En directamente en software terminado, pues sí, está muy interesante.
+
+LUIS FELIPE MORA UMAÑA   1:43:07
+Swing, cheesing.
+Ok Adrián, sí quería ejecutar.
+Hasta luego.
+No lo escuché.
+
+Adrian Vinicio Chaves Marin   1:43:30
+Sí, ahí me escuchas, sí.
+
+LUIS FELIPE MORA UMAÑA   1:43:32
+sí, señor.
+
+Adrian Vinicio Chaves Marin   1:43:34
+Es que no se queda pegado el Internet, creo. Este no está súper bien interesante, profe.
+
+LUIS FELIPE MORA UMAÑA   1:43:43
+Vean, imaginemos esto, no imaginemos porque si es algo que realmente pasa.
+Yo tengo un método que llama otro método.
+llamo otro método que este método va a la base de datos y yo necesito probar que toda la cadena funcione de nuevo yo controlo
+Lo voy a poner aquí perdicito.
+Vamos a comer de tecito.
+Yo controlo esto.
+Yo no controlo.
+Esto de nuevo, porque puede ser una librería, puede ser un llamado a una base de datos. Yo no voy a ir a chapear la base de datos, ¿verdad? No sé. Entonces yo necesito saber que la lógica que sigue mi software funciona.
+¿Que este segmento de código?
+Dentro de todo mi universo es código.
+Que por ejemplo, si tengo esto aquí.
+Tengo esto aquí.
+Tengo esto aquí.
+Tengo esto aquí y que esto es esto que llama esto que llama esto que llama esto.
+Verdad?
+Yo necesito validar que esto funcione.
+O incluso que tengo función aquí que llama esta.
+verdad y que esta
+Para llamar a esta.
+Yo necesito saber que este flujo, yo necesito demostrar y garantizar que este flujo funciona.
+verdad Porque si el día de mañana se rompe algo yo puedo saber qué fue lo que rápidamente sí
+Entonces, para saber cuál es la capa que se rompió, por eso probamos multicapa, hay un test que prueba esto, hay un test que prueba esto otro, hay un test que prueba esto otro, hay un test que prueba esto otro y hay un test que va a probar esto, entonces dependiendo del test que se caiga.
+Yo puedo ver cuál fue la capa que se rompió, cuál fue el método que se rompió y llegarle rápidamente a ver cuál fue el error.
+K.
+Ahorita este porque está pequeño, ¿verdad? Solamente tenemos esto.
+Pero déjame ver una cosa por aquí.
+Este.
+Podemos tener test, digamos, donde necesitamos un montón de cosas que funcionen así como perfectas para que todo sirve para verdad. Entonces, para eso necesitamos este moquear bastantes cosas, perdón.
+Vamos a ver si está la caca.
+porque por ejemplo de hecho nos nos ha pasado mucho digamos principalmente con con esta herramienta como tal en específico
+Porque cuando este cuando usted tiene muchas piezas que se mueven y son piezas muy específicas.
+Este hasta el mismo clot alucina y todos de estos que usted tiene que sentarse a hacerlo zapatica.
+Pero para él.
+Eso no es tan feo.
+Esto es tan feo, lo ven, por ejemplo, aquí yo puedo hacer un mock.
+Del file system. Si yo necesito como ir a validar que que se crea un archivo o que se generó un archivo o que tal cosa y no estar llenando el archivo de memorias en la memoria de archivos, verdad? Lo mismo, yo simplemente creo un mooc del de los archivos, pero es otra que quiere decir que es más bonito.
+Este.
+Es, sí, yo creo.
+vean por ejemplo así que bonito vean Este es un test
+¿Que agarra esto?
+Y lo convierte en esto.
+¿Tan bonito como esto, verdad? Aquí somos BD, entonces este viven cuenten.
+Entonces aquí simplemente ejecutamos estos cinco pasitos de aquí, seis pasitos de aquí y listo. Tenemos por arte de magia todo esto, pero lo que no estamos viendo.
+Es todo esto que te das.
+Bueno, este no es tanto, este no es tan waves, el que es feo realmente.
+Es este y este.
+Por ejemplo, este setup context.
+Todos estos son los mocks que ocupo.
+Ocupo exception exception handler sort.
+Necesito este un mock del de este necesito un mock de este otro mae. Necesito este moquear esto. Necesito este obtener ahí un macito el del escenario necesito un moqueo necesito otro moqueo necesito par de setups. Y así sucesivamente.
+Y aquí necesito seguir moqueando cosas y todo eso entre una estructura. Por ejemplo, esta esta estaba bonita, pero un símbolo y el símbolo tiene un montón de cosas.
+Joan.
+Necesito el symbol Data, necesito el mooc del symbolic information, necesito este otro mooc, necesito hacer un setup, otro setup, ven, esto es cuando yo no me importa el parámetro que sea.
+Cualquier cosa que sea bulleado páselo por aquí.
+Cualquier cosa que sea una clase, pásela por aquí.
+Get symboliz otra vez hacemos otro setup, otro mock, otro mock, otro mock, que a partir de mocks convertimos un objeto como, hacemos un objeto compuesto igual. Y al final llegamos a eso.
+Okay.
+Preguntas.
+
+Adrian Vinicio Chaves Marin   1:50:21
+Profe, para el proyecto solo tenemos que usar un ejemplo para, digamos, para esta parte del testing, solo un caso.
+
+LUIS FELIPE MORA UMAÑA   1:50:23
+New.
+¿Cómo son un caso?
+
+Adrian Vinicio Chaves Marin   1:50:34
+Pero como.
+Como les explico, tenemos que probar, digamos, a la hora de probar el testing en el proyecto, ¿verdad? Digamos, podemos decir que vamos a probar tal cosa nada más, pero solo una cosa. Tenemos que probar varias cosas.
+
+LUIS FELIPE MORA UMAÑA   1:50:44
+Mhm.
+De este tiene que probar toda la lógica de negocios.
+Toda la parte de los controles o toda la parte intermedia, todo lo que no sean modelos y views tiene que llevar test.
+¿Me sigue por ahí?
+
+Adrian Vinicio Chaves Marin   1:51:24
+Sí, bro.
+
+LUIS FELIPE MORA UMAÑA   1:51:26
+y a partir de eso ahí por ejemplo este para el para el login que necesito para el login necesito un use el controller Entonces ya ustedes definen si este lo hacen este moqueado o lo que moquean es el data handler verdad que el data handler si lo van a tener que moquear a huevo
+entonces este de aquí no quedan esto está hacer el mismo note va a ejecutar Exactamente lo mismo este va a ser el login va a hacer exactamente lo mismo lo ven entera sobre el sobre los los usuarios que yo ya obtuve moqueados lo ven por eso les digo que es un método que llama otro método que llama otro método eso
+Que me aler.
+
+ALBERT DAYAN BRENES CARPIO   1:52:13
+Profe, digamos si varios métodos, por ejemplo, usaran un data data handler.
+Hay forma de usar solo uno para todos esos métodos como para todas esas pruebas.
+
+LUIS FELIPE MORA UMAÑA   1:52:28
+Sí, señor.
+
+ALBERT DAYAN BRENES CARPIO   1:52:29
+Con compartirlo, digamos, para no estar haciendo como el MOOC del data handler en cada uno, digamos.
+
+LUIS FELIPE MORA UMAÑA   1:52:35
+Sí, señor, que haces el mock.
+Este Handler punto setup.
+Perdón, no sé.
+Pues aquí.
+Yeah.
+Oh, I'm not a quest.
+Este no sé.
+Me tengo aquí para hacer varias etapas.
+
+ALBERT DAYAN BRENES CARPIO   1:53:10
+sí, supongo, digamos, para no estar como repitiendo.
+Tanto código, supongo, digamos.
+
+LUIS FELIPE MORA UMAÑA   1:53:18
+Sí.
+Aquí se tira el update y tiene el punto retrans.
+No, y así, o sea, va llenando esto.
+Sí, yo creo que prepara decir, porque también puede que ande su pregunta por ahí.
+Hay una cosa que eso no es tan recomendado.
+Que de hecho lo hacen mucho y ahí es donde yo me di cuenta que para hacer los test.
+¿Que hacen esto, este prime by it?
+Otra ley donde no era, este clavo me mata a mí.
+Private mo, private moke moke the data handler.
+Bueno, y aquí este no sé.
+Mete un montón de cosas ahí en el mar.
+Esto para ejercicios tan pequeños o para cosas tan pequeñas no es necesario.
+y ha hecho es una mala práctica
+Esto solamente es requerido cuando yo necesito hacer un CT o inicial.
+De los mares en específico.
+Por ejemplo, este.
+Me quitar este.
+Véalo así, claro, este yo hago aquí.
+inicialize verdad para que se inicialice siempre entonces este voy Setup le tiro esta aquí
+El inicial siempre se ejecuta antes de todos los test, antes de cada uno de los test.
+So your name was stuck in that was to play.
+Okay.
+Eso es lo que me decía.
+
+ALBERT DAYAN BRENES CARPIO   1:55:25
+Y.
+Sí, no sé, yo digamos, yo de la forma en la que lo veía era como tener, por ejemplo, una clase. y que.
+
+LUIS FELIPE MORA UMAÑA   1:55:29
+Of...
+
+ALBERT DAYAN BRENES CARPIO   1:55:38
+Varios, Varias clases, digamos de test, agarrarán como el MOOC de ahí. Algo así es como lo visualizaba, digamos, como para no repetir tanto un método o algo así. Por eso hacía como la pregunta a ver si había forma como de.
+
+LUIS FELIPE MORA UMAÑA   1:55:49
+So.
+¿Sabes lo que pasa? Eso depende mucho de qué tan homogéneo sea su.
+Sea la estructura que usted necesita.
+
+ALBERT DAYAN BRENES CARPIO   1:56:00
+Sí, como que se aplique para varios métodos, el mismo MOOC.
+
+LUIS FELIPE MORA UMAÑA   1:56:03
+que se aplique por eso que Exacto que sea un Setup muy específico por ejemplo el Setup del file System como vimos ahí en el ejemplo anterior ese file System siempre va a ser el mismo siempre va a tener los mismos archivos siempre va a tener las mismas cosas Entonces si siempre va a ser así entonces ahí si metemos una clasecita base que tenga un Setup
+¿Verdad? Donde seteamos todas esas cosas, pero que he visto que me hacen mucho y que me están haciendo mucho últimamente cuando reviso los proyectos meten esto.
+y después vuelven a hacer esto otra vez porque por ejemplo aquí tienen que probar varios escenarios verdad que cargue con usuarios que cargue sin usuarios no sé un montón de cosas entonces vienen y meten esto aquí
+Y lo vuelve a meter aquí.
+Nada más y aquí le ponen este 3 y cuatro.
+Esto no tiene sentido, esto no tiene ningún sentido en ese caso. ¿Por qué? Porque esto va a ser un cambio, esto va a ser cambiando constantemente entre cada uno de los escenarios. Este man no va a ser un objeto genérico.
+Que no va a ser una vara general, no es un setup general para todo eso. Ok, entonces este si van a plagiar ustedes, por lo menos plagielo bien, verdad?
+Pues si los voy a cuestionar bastante sobre el uso de esas variables porque para que están seteando cosas que no van a utilizar Y por qué les digo esto vean uno tiene que tener mucho cuidado cuando hace estas cosas
+Porque cuando uno escribe test.
+Tiene que ser bien óptimos en ese sentido, en muchos sentidos, un test plan.
+Bien escrito, no sé, 10000 test pueden durar 5 minutos ejecutándose.
+Un test plan.
+De no sé, el primero era con 10000 un test plan de.
+no sé 3000 test mal utilizados mal implementados puede durar 25 minutos ejecutándose puede tener estabilidad puede tener puede tener ser altamente inestable que es inestable que me pasa una vez sí y otra vez no
+Entonces pierde credibilidad, ustedes pierden credibilidad, imagínense ustedes todo lo que dura haciendo el Bill, no se ponga 5 minutos de Bill más 5 minutos de 3 son 10 minutos esperando un Bill para poder completar un público es ahora.
+Imagínense ustedes este tiene que esperar ustedes esos 25 minutos, ¿verdad? Porque si usted es plan dura 15 minutos porque está mal implementado y utiliza mal la memoria.
+y este de tener que esperar cada 20 minutos para hacer un para hacer un público decir que hay un comentario subir si usted ya sabe que tiene que esperar otros 20 minutos y eso para 3000 test ahora me dice para 5000 no sé 20000 test que no es un número descabellado muchachos 20000 o 10000 test
+No es un número nada descabellado, por ejemplo, este man tiene.
+pero si me sale aquí aquí está y
+Pero no está cargando.
+Like in some projects.
+Yo no sé por qué aquí están, sí, yo no sé por qué mi Visual Studio a cada rato. este.
+Me desconectas tus más.
+Hotel.
+Like.
+Está.
+O sea, en estos son.
+700 900 1000.
+10000 por ahí números más números más no son tantos no son tan pocos
+Pero si cada uno dura 10 segundos ejecutándose.
+El mot chory house.
+Ahora imagínese 1 minuto porque están mal implementados.
+¿Va a hacer un montón de tiempo, OK, ustedes deberían ser ratos, esto es una herramienta, esto no es un lastre, OK?
+Más preguntas.
+Esto es muy cajoneros, pero te esto que cajoneros este.
+Vamos a ver, ahora quiero ser para el update score.
+¿Se me siento, entonces este?
+Esto lo puedo mantener igual.
+Es que hago el otro, eso lo puedo mantener igual o lo puedo setear, no sé, ahí después lo vemos.
+Esto quita.
+Este.
+esto aquí este resulto no va a servir para nada entonces lo voy a poner aquí es otra cosa que me moleste no sé por qué ahora la gente hace esto
+No tiene sentido verlo así, digamos, con sus sabores sintácticos ahí plan.
+Entonces, este su.
+Es igual a.
+Ellos 01 hora 3 100.
+Y este aquí es donde viene el detalle, vea.
+Este de hecho creo que esto sí lo voy a ocupar.
+No.
+Este para si tú ya no es igual.
+Extru.
+Is there a result?
+Y no solamente me basta con eso, verdad? Pero necesito saber que la lógica que se trabajo realmente hizo el cambio que necesitaba. Entonces hacer punto. Al igual.
+De 100 coma.
+Este.
+Well, letter.
+Uteusers.
+Cero.
+Punto score.
+Eastern.
+¿Qué es lo que hago aquí? Lo que estoy probando es toda esta lógica.
+De este mancito.
+Loan.
+Creo que por aquí se cruza usted test. Ah, mira, sí, ah no es privado.
+tengo que setearlo así pero hay una vara ya es un despiche ahí que yo puedo hacer este más interno y que este vea este esa propiedad pero ya es otro espiche para todavía
+Entonces aquí yo vengo, ejecuto.
+Y mitad pasó, si yo quiero reutilizar código.
+Aquí simplemente hago este porque también no todo tiene que estar en el TED, ¿verdad? Este es.
+People users.
+Get it.
+Default.
+Correct, users.
+King.
+Sí.
+Sí.
+Ay.
+Esto.
+Esto comas.
+Come on.
+Punto.
+¿Qué me bueno esto?
+We keep get default correct users.
+Por el estático.
+Y creo que vamos a estar viendo.
+Listo.
+Listo.
+Sí, si yo utilizo, por eso les digo que no utilicen la misma instancia del MOOC.
+Porque si yo tengo otro test donde no debería actualizar el score y tengo este test donde actualiza el score.
+y los dos se ejecutan primero se ejecuta este y luego se ejecuta el otro y está ejecutando sobre la misma instancia se va a hacer un despiche créanme que eso es un despiche y vieran lo que cuesta sentarse a ver uno este que alguien metió las patas así una tontera así más en múltiples capas verdad Entonces se vuelve un poco más sedionto
+Sí.
+Preguntas.
+Of to all muchachos.
+
+TAYRON ALONSO SALAS NUÑEZ   2:06:39
+Bueno, para mí creo que lo complicado será utilizarla bien.
+Eso es algo que nunca nunca en la vida había visto.
+
+LUIS FELIPE MORA UMAÑA   2:06:48
+Hágalo pasito a paso, paso a paso, paso a paso, uno a uno. Lo importante es que usted sepa que está haciendo. Este...
+Más preguntas.
+Nada, estamos.
+¿Qué este?
+
+DANNEL ROBERTO QUESADA SOLANO   2:07:16
+Hasta que empecemos con el testeo a surgirlas.
+Todos los puntillos.
+
+LUIS FELIPE MORA UMAÑA   2:07:23
+A eso vamos.
+A eso vamos, este quiz.
+Este usualmente pongo los quizes para que me los manden el mismo día, pero lo pueden mandar de entre hoy y mañana porque voy a descansar un rato.
+No debería tomarle más de 20 minutos de este quiz que es el tiempo que nos toma clase, pero bueno.
+Este quiz, ahí para que tenga un ratito más de tiempo.
+Tenemos esta clase, tenemos este test, tenemos este test ya hecho.
+Tenemos estos macitos que, pero no hemos probado.
+Ni este ni este.
+Nest.
+King.
+Tonces este.
+Le agregué por lo menos 2 test a cada uno tiene que agregar uno a este porque yo ya les agregué uno.
+Otra este.
+Y otra este.
+Sí, entonces 222 y solo el primero uno.
+¿Qué voy a tener 8 test?
+Okay.
+Preguntas.
+
+ALBERT DAYAN BRENES CARPIO   2:08:43
+Sí, digamos 2 test. ¿Cómo? Porque digamos ese de minmax y yo puedo hacer un test, digamos, validando que me devuelva, digamos, di el mínimo y el máximo, pero que otro test.
+¿Se puede hacer?
+No se me ocurre nada, digamos, y como.
+No sé.
+
+LUIS FELIPE MORA UMAÑA   2:09:08
+Ya vi el detalle.
+¿Es que eso está aquí?
+La idea era este que teníamos que probar si es cierto.
+Muy buena pregunta, este es el que tenemos que probar.
+Entonces aquí, por ejemplo, vamos a tener uno donde la retorna menos uno.
+Y aquí uno donde lo retorné uno, ¿verdad? O no sé, al final es lo mismo, digamos. Al final es lo mismo, por ejemplo, este el charco, digamos. ¿Qué pasa si yo pongo este de ahí un un un string vacío, verdad? Debería retornar cero. ¿Qué pasa si pongo un string con algo?
+Este este aquí get index. ¿Qué pasa si está dentro de la lista? ¿Qué pasa si no está dentro de la lista, verdad? Porque si no está dentro de la lista, si está dentro de la lista, este va a ser alcanzable. Si no, este no va a ser alcanzable.
+Lo mismo aquí con mi Max.
+No sé, le pasan varias listas ahí lo de listas que le pasen ahí 2 test diferentes.
+Y aquí en la forma de elementos.
+No sé, 2 escenarios diferentes, si quieren probar.
+
+ALBERT DAYAN BRENES CARPIO   2:10:32
+Pero si, por ejemplo, en la de suma elementos hago 2 test que nada más pruebo 2 resultados diferentes con esa cuenta el test o quiere que sean diferentes lo que esté testeando.
+
+LUIS FELIPE MORA UMAÑA   2:10:48
+Ven este con que sean 2 elementos diferentes.
+No result of events doing.
+
+ALBERT DAYAN BRENES CARPIO   2:10:53
+Sí.
+Okey.
+Listo, por allá.
+
+LUIS FELIPE MORA UMAÑA   2:11:00
+Sí, la vez que practique un poquito, por lo menos ahí con los ejercitos, Paco y Lola.
+¿Qué más preguntas?
+
+ALBERT DAYAN BRENES CARPIO   2:11:17
+Y que le subimos un pantallazo de los.
+O cómo quiere que se resomamos.
+
+LUIS FELIPE MORA UMAÑA   2:11:21
+Eso suena muy, no batallazo, no está muy seco, eso este vean.
+vas a agarrar este archivo de aquí va a agarrar este archivo de aquí le van a cambiar el nombre le van a poner su nombre al final
+Albert.
+examples test Albert y ese es el archivo que suben así yo los meto aquí yo corro todos al mismo tiempo y regreso todos de una vez
+Okay solo suben el archivo C
+Más preguntas.
+
+JUAN FELIPE PEREZ	BEJARANO   2:12:16
+Profe, una consulta y ese archivo usted lo sube.
+
+LUIS FELIPE MORA UMAÑA   2:12:21
+He's adjusting it.
+
+JUAN FELIPE PEREZ	BEJARANO   2:12:22
+Okay.
+
+LUIS FELIPE MORA UMAÑA   2:12:33
+Sí, de hecho ya se subieron después de los últimos cambios.
+Sí, ya están los últimos cambios de red.
+
+JUAN FELIPE PEREZ	BEJARANO   2:12:41
+Okay, okay.
+
+LUIS FELIPE MORA UMAÑA   2:12:44
+Yes.
+Más preguntas, estamos, vamos la próxima semana.
+Sí.
+
+Kaik Andy Yocks Sandoval   2:13:04
+Profe, una consultita y solamente para confirmar las instrucciones. Bueno, sé que ya las dijo, pero las instrucciones, bueno, sabemos que es el de su y resta es el de máximo y mínimo.
+
+LUIS FELIPE MORA UMAÑA   2:13:07
+Yeah.
+Mhm.
+
+Kaik Andy Yocks Sandoval   2:13:22
+Pero eso es va, se lo va a poner en módulo es crédito o así como que usted lo dijo o.
+
+LUIS FELIPE MORA UMAÑA   2:13:27
+Sí, señor, sí, señor, tomamos.
+
+Kaik Andy Yocks Sandoval   2:13:30
+Ajá, okay, okay, okay.
+Eso era, nada más, gracias.
+
+LUIS FELIPE MORA UMAÑA   2:13:36
+Okay, que gusto.
+que estamos muchachos este nos vemos la próxima semana practiquen bastante la presentación póngale con el proyecto y este que pasen una feliz semana y aún más feliz fin de semana ya empieza a oler
+Nos vemos.
+
+DANNEL ROBERTO QUESADA SOLANO   2:14:01
+Buenas noches, gracias.
+
+LUIS FELIPE MORA UMAÑA   2:14:03
+Oh yeah, buenas noches.
+
+LUIS ALONSO ESPINOZA BONILLA   2:14:05
+Not not just.
+
+KENDALL JOSUE MATA SANCHEZ   2:14:06
+Buenas noches, hasta luego.
+
+TAYRON ALONSO SALAS NUÑEZ   2:14:07
+Just for this.
+
+LUIS FELIPE MORA UMAÑA   2:14:08
+Luego.
+
+JUAN FELIPE PEREZ	BEJARANO   2:14:09
+Buenas noches, brother.
+
+LUIS FELIPE MORA UMAÑA   2:14:11
+Oh yeah.
+
+Kaik Andy Yocks Sandoval   2:14:12
+Profe.
+
+DAVID MOISES GOMEZ MORA   2:14:13
+Bueno, profe, buenas noches.
+
+LUIS FELIPE MORA UMAÑA   2:14:15
+Hello, buenas noches.
+
+Kaik Andy Yocks Sandoval   2:14:18
+una consultita rápida en el caso esto consigo con ese problema de no sé por qué el factor de la autentificación que cómo es que se averigua eso solamente como usted me había enseñado con recovery code y
+
+LUIS FELIPE MORA UMAÑA   2:14:18
+Do you have a cake?
+Mhm.
+De ahí sí sí es que ya es autenticación de la página como lo maneja la página si quiere lo que puedo hacer Mientras tanto hágase una nueva cuenta con el correo de la u una ahora sí
+
+Kaik Andy Yocks Sandoval   2:14:45
+Okay, okay, okay.
+Okay, okay, bueno.
+Eso era más que todo, sí, bueno, gracias porfa.
+
+LUIS FELIPE MORA UMAÑA   2:14:54
+El que maneja el reto, sí.
+Bueno, ya cae, buenas noches.
+No.
+
+LUIS FELIPE MORA UMAÑA stopped transcription

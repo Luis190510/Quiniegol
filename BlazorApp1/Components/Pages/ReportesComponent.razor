@@ -1,0 +1,160 @@
+@page "/reportes"
+@attribute [Authorize]
+@inject ReporteWebService Reportes
+@inject SesionUsuarioService Sesion
+@inject IJSRuntime JavaScript
+
+<PageTitle>Reportes</PageTitle>
+
+<div class="container-fluid">
+    <div class="mb-4">
+        <h1 class="mb-1">
+            @(Sesion.EsAdministrador
+                ? "Reportes del administrador"
+                : "Mis reportes")
+        </h1>
+        <p class="text-secondary mb-0">
+            Genera el reporte correspondiente a tu rol y descárgalo.
+        </p>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje" role="alert">@Mensaje</div>
+    }
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row g-3 align-items-end">
+                <div class="col-12 col-md-4">
+                    <label for="reporteDesde" class="form-label">Desde</label>
+                    <input id="reporteDesde"
+                           type="date"
+                           class="form-control"
+                           @bind="Desde" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="reporteHasta" class="form-label">Hasta</label>
+                    <input id="reporteHasta"
+                           type="date"
+                           class="form-control"
+                           @bind="Hasta" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <button type="button"
+                            class="btn btn-primary w-100"
+                            @onclick="GenerarReporte">
+                        Generar reporte
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (Reporte.Count > 0)
+    {
+        <div class="d-flex flex-wrap gap-2 mb-3">
+            <button type="button"
+                    class="btn btn-outline-success"
+                    @onclick="DescargarCsv">
+                Descargar CSV
+            </button>
+            <button type="button"
+                    class="btn btn-outline-secondary"
+                    @onclick="DescargarTxt">
+                Descargar TXT
+            </button>
+            <button type="button"
+                    class="btn btn-outline-danger"
+                    @onclick="DescargarPdf">
+                Descargar PDF
+            </button>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Reporte</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (EstadisticaItem item in Reporte)
+                        {
+                            <tr>
+                                <td class="fw-semibold">@item.Estadistica</td>
+                                <td>@item.Resultado</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private DateTime Desde { get; set; } = new(2026, 6, 1);
+    private DateTime Hasta { get; set; } = new(2026, 7, 31);
+    private List<EstadisticaItem> Reporte { get; set; } = [];
+    private string Mensaje { get; set; } = string.Empty;
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    private void GenerarReporte()
+    {
+        try
+        {
+            Reporte = Reportes.Generar(Desde, Hasta);
+            ClaseMensaje = "alert-success";
+            Mensaje = "El reporte fue generado correctamente.";
+        }
+        catch (ArgumentException ex)
+        {
+            Reporte = [];
+            ClaseMensaje = "alert-danger";
+            Mensaje = ex.Message;
+        }
+    }
+
+    private async Task Descargar(string formato)
+    {
+        if (Reporte.Count == 0)
+        {
+            return;
+        }
+
+        byte[] contenido;
+        string tipo;
+        if (formato == "csv")
+        {
+            contenido = ReporteDescargaWebService.GenerarCsv(Reporte);
+            tipo = "text/csv;charset=utf-8";
+        }
+        else if (formato == "pdf")
+        {
+            contenido = ReporteDescargaWebService.GenerarPdf(Reporte);
+            tipo = "application/pdf";
+        }
+        else
+        {
+            contenido = ReporteDescargaWebService.GenerarTxt(Reporte);
+            tipo = "text/plain;charset=utf-8";
+        }
+
+        string rol = Sesion.EsAdministrador ? "administrador" : "usuario";
+        string nombre = $"reporte_{rol}_{DateTime.Now:yyyyMMdd}.{formato}";
+        await JavaScript.InvokeVoidAsync(
+            "quiniegol.descargar",
+            nombre,
+            tipo,
+            Convert.ToBase64String(contenido));
+    }
+
+    private Task DescargarCsv() => Descargar("csv");
+
+    private Task DescargarTxt() => Descargar("txt");
+
+    private Task DescargarPdf() => Descargar("pdf");
+}

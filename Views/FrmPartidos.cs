@@ -3,6 +3,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
@@ -13,6 +14,7 @@ namespace Quiniegol.Views
 
         public FrmPartidos()
         {
+            SesionUsuarioService.ExigirAdministrador();
             InitializeComponent();
 
             _partidoController = new PartidoController();
@@ -45,15 +47,17 @@ namespace Quiniegol.Views
             dgvPartidos.DataSource =
                 _partidoController.ObtenerPartidos();
 
-            if (dgvPartidos.Columns["FechaHora"] != null)
+            if (dgvPartidos.Columns["FechaHora"]
+                is DataGridViewColumn columnaFecha)
             {
-                dgvPartidos.Columns["FechaHora"]
-                    .DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
+                columnaFecha.DefaultCellStyle.Format =
+                    "dd/MM/yyyy HH:mm";
             }
 
-            if (dgvPartidos.Columns["Anotadores"] != null)
+            if (dgvPartidos.Columns["Anotadores"]
+                is DataGridViewColumn columnaAnotadores)
             {
-                dgvPartidos.Columns["Anotadores"].Visible = false;
+                columnaAnotadores.Visible = false;
             }
         }
 
@@ -218,9 +222,5 @@ namespace Quiniegol.Views
             }
         }
 
-        private void dtpFechaHora_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

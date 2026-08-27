@@ -3,6 +3,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
@@ -26,6 +27,10 @@ namespace Quiniegol.Views
 
             CargarUsuarios();
             CargarQuinielas();
+            CargarQuinielasDisponibles();
+
+            grpUnirse.Visible =
+                !SesionUsuarioService.EsAdministrador;
         }
 
         private void CargarUsuarios()
@@ -33,6 +38,8 @@ namespace Quiniegol.Views
             var usuarios =
                 _usuarioController
                     .ObtenerUsuarios()
+                    .Where(usuario =>
+                        usuario.Rol == RolUsuario.Usuario)
                     .OrderBy(usuario =>
                         usuario.Nombre
                     )
@@ -71,6 +78,58 @@ namespace Quiniegol.Views
                 ComboBoxStyle.DropDownList;
 
             dgvIntegrantes.DataSource = null;
+            ConfigurarPermisosQuiniela();
+        }
+
+        private void cmbQuiniela_SelectedIndexChanged(
+            object sender,
+            EventArgs e)
+        {
+            ConfigurarPermisosQuiniela();
+        }
+
+        private void ConfigurarPermisosQuiniela()
+        {
+            bool puedeAdministrar =
+                SesionUsuarioService.EsAdministrador ||
+                (cmbQuiniela.SelectedItem is Quiniela quiniela &&
+                 quiniela.CreadorUsuarioId ==
+                 SesionUsuarioService.UsuarioActual.Id);
+
+            cmbUsuarioIntegrante.Enabled = puedeAdministrar;
+            btnAgregarIntegrante.Enabled = puedeAdministrar;
+            btnQuitarIntegrante.Enabled = puedeAdministrar;
+
+            if (SesionUsuarioService.EsAdministrador)
+            {
+                grpIntegrantes.Text = "Administrar integrantes";
+            }
+            else
+            {
+                grpIntegrantes.Text = puedeAdministrar
+                    ? "Mis quinielas privadas (puede administrar esta)"
+                    : "Mis quinielas privadas";
+            }
+        }
+
+        private void CargarQuinielasDisponibles()
+        {
+            var disponibles = _quinielaController
+                .ObtenerQuinielasDisponibles();
+
+            cmbQuinielaDisponible.DataSource = null;
+            cmbQuinielaDisponible.DataSource = disponibles;
+            cmbQuinielaDisponible.DisplayMember = "Nombre";
+            cmbQuinielaDisponible.ValueMember = "QuinielaId";
+            cmbQuinielaDisponible.DropDownStyle =
+                ComboBoxStyle.DropDownList;
+
+            bool hayDisponibles = disponibles.Count > 0;
+            cmbQuinielaDisponible.Enabled = hayDisponibles;
+            btnUnirse.Enabled = hayDisponibles;
+            lblNombreQuinielaUnirse.Text = hayDisponibles
+                ? "Seleccione una quiniela disponible:"
+                : "No hay quinielas disponibles para unirse.";
         }
 
         private void btnCrearQuiniela_Click(
@@ -153,22 +212,26 @@ namespace Quiniegol.Views
 
                 var integrantes =
                     _quinielaController
-                        .ObtenerIntegrantes(
+                        .ObtenerResumenIntegrantes(
                             quiniela.Id
                         );
 
                 dgvIntegrantes.DataSource = null;
 
-                dgvIntegrantes.DataSource =
-                    integrantes
-                        .Select(usuario => new
-                        {
-                            usuario.Id,
-                            usuario.Nombre,
-                            usuario.PaisPreferido,
-                            usuario.Puntos
-                        })
-                        .ToList();
+                dgvIntegrantes.DataSource = integrantes;
+
+                if (dgvIntegrantes.Columns["PronosticosConGoleadores"]
+                    is DataGridViewColumn columnaGoleadores)
+                {
+                    columnaGoleadores.HeaderText =
+                        "Pronósticos con goleadores";
+                }
+
+                if (dgvIntegrantes.Columns["PaisPreferido"]
+                    is DataGridViewColumn columnaPais)
+                {
+                    columnaPais.HeaderText = "País preferido";
+                }
 
                 if (integrantes.Count == 0)
                 {
@@ -313,6 +376,43 @@ namespace Quiniegol.Views
 
                     break;
                 }
+            }
+        }
+
+        private void btnUnirse_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbQuinielaDisponible.SelectedItem
+                    is not QuinielaDisponibleItem quiniela)
+                {
+                    throw new InvalidOperationException(
+                        "Debe seleccionar una quiniela disponible."
+                    );
+                }
+
+                _quinielaController.UnirseAQuiniela(
+                    quiniela.QuinielaId
+                );
+
+                MessageBox.Show(
+                    "Ahora pertenece a la quiniela privada.",
+                    "Inscripción completada",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                CargarQuinielas();
+                CargarQuinielasDisponibles();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "No se pudo completar la inscripción",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
             }
         }
 

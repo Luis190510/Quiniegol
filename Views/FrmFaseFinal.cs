@@ -66,12 +66,10 @@ namespace Quiniegol.Views
 
         private void OcultarIds()
         {
-            if (dgvClasificados
-                    .Columns["SeleccionId"] != null)
+            if (dgvClasificados.Columns["SeleccionId"]
+                is DataGridViewColumn columna)
             {
-                dgvClasificados
-                    .Columns["SeleccionId"]
-                    .Visible = false;
+                columna.Visible = false;
             }
         }
 

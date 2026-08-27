@@ -6,20 +6,28 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DefaultItemExcludes>$(DefaultItemExcludes);BlazorApp1\**</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Data\partidos.json" />
+    <None Remove="Data\goleadores2026.json" />
     <None Remove="Data\pronosticos.json" />
     <None Remove="Data\quinielas.json" />
     <None Remove="Data\resultados2026.json" />
     <None Remove="Data\selecciones.json" />
     <None Remove="Data\usuarios.json" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="Tests\**" />
     <None Remove="Images\Banderas\*.png" />
+    <None Remove="Tests\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Data\partidos.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\goleadores2026.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\pronosticos.json">
@@ -43,6 +51,14 @@
   <ItemGroup>
     <Folder Include="Evidences\" />
     <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDFsharp-MigraDoc-GDI" Version="6.2.4" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="10.33.0.1635">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

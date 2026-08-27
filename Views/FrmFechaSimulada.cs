@@ -8,6 +8,7 @@ namespace Quiniegol.Views
 
         public FrmFechaSimulada()
         {
+            SesionUsuarioService.ExigirAdministrador();
             InitializeComponent();
 
             _fechaService = FechaSimuladaService.Instancia;
@@ -30,6 +31,8 @@ namespace Quiniegol.Views
             _fechaService.CambiarFecha(
                 dtpFechaSimulada.Value
             );
+
+            new InsigniaService().RecalcularInsignias();
 
             MostrarFechaActual();
 

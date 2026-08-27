@@ -1,159 +1,215 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using Quiniegol.Views;
+using Quiniegol.Controllers;
+using Quiniegol.Models;
+using Quiniegol.Services;
 
 namespace Quiniegol.Views
 {
+    /// <summary>Presenta las opciones permitidas para la sesión actual.</summary>
     public partial class FrmPrincipal : Form
     {
+        /// <summary>Indica que la persona eligió volver a la pantalla de acceso.</summary>
+        public bool SolicitoCerrarSesion { get; private set; }
+
         public FrmPrincipal()
         {
             InitializeComponent();
+            ConfigurarSesion();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void ConfigurarSesion()
         {
+            Usuario usuario = SesionUsuarioService.UsuarioActual;
+            bool esAdministrador = SesionUsuarioService.EsAdministrador;
+
+            lblSesion.Text = esAdministrador
+                ? "Usuario Administrador"
+                : $"Usuario: {usuario.Nombre}";
+            lblFechaSimulada.Text =
+                $"Fecha simulada: " +
+                $"{FechaSimuladaService.Instancia.FechaActual:dd/MM/yyyy HH:mm}";
+            grpAdministracion.Visible = esAdministrador;
+            btnFechaSimulada.Visible = esAdministrador;
+            btnPronosticos.Visible = !esAdministrador;
+            grpNotificaciones.Visible = !esAdministrador;
+            grpInsignias.Visible = !esAdministrador;
+
+            if (!esAdministrador)
+            {
+                List<NotificacionPronosticoItem> notificaciones =
+                    new NotificacionPronosticoController()
+                        .ObtenerPendientes(usuario);
+                txtNotificaciones.Text =
+                    FormatearNotificaciones(notificaciones);
+
+                List<string> insignias = new InsigniaService()
+                    .ObtenerInsigniasDeUsuario(usuario.Id);
+                txtInsignias.Text = FormatearInsignias(insignias);
+            }
+
+            ReorganizarSecciones(esAdministrador);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private static string FormatearNotificaciones(
+            IReadOnlyCollection<NotificacionPronosticoItem> notificaciones)
         {
+            if (notificaciones.Count == 0)
+            {
+                return "No tiene partidos sin pronosticar en las próximas 24 horas.";
+            }
+
+            return string.Join(
+                Environment.NewLine,
+                notificaciones.Select(notificacion =>
+                    $"{notificacion.FechaHora:dd/MM/yyyy HH:mm} - " +
+                    notificacion.Partido));
+        }
+
+        private static string FormatearInsignias(IEnumerable<string> insignias)
+        {
+            List<string> globales = VisibilidadInsigniasService
+                .ObtenerGlobales(insignias)
+                .ToList();
+            List<string> privadas = VisibilidadInsigniasService
+                .ObtenerPrivadas(insignias)
+                .ToList();
+
+            return $"Globales: {FormatearGrupo(globales)}" +
+                Environment.NewLine +
+                $"Privadas: {FormatearGrupo(privadas)}";
+        }
+
+        private static string FormatearGrupo(IReadOnlyCollection<string> insignias)
+        {
+            return insignias.Count == 0
+                ? "Ninguna todavía"
+                : string.Join(" | ", insignias);
+        }
+
+        private void ReorganizarSecciones(bool esAdministrador)
+        {
+            const int margenSuperior = 92;
+            const int separacion = 14;
+            int siguientePosicion = margenSuperior;
+
+            if (esAdministrador)
+            {
+                grpAdministracion.Top = siguientePosicion;
+                siguientePosicion = grpAdministracion.Bottom + separacion;
+            }
+
+            grpParticipacion.Top = siguientePosicion;
+            siguientePosicion = grpParticipacion.Bottom + separacion;
+
+            if (!esAdministrador)
+            {
+                grpNotificaciones.Top = siguientePosicion;
+                siguientePosicion = grpNotificaciones.Bottom + separacion;
+
+                grpInsignias.Top = siguientePosicion;
+                siguientePosicion = grpInsignias.Bottom + separacion;
+            }
+
+            grpTorneo.Top = siguientePosicion;
+            ClientSize = new Size(920, grpTorneo.Bottom + 24);
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            using (FrmUsuarios formulario = new FrmUsuarios())
-            {
-                formulario.ShowDialog();
-            }
+            using FrmUsuarios formulario = new();
+            formulario.ShowDialog();
         }
 
         private void btnSelecciones_Click(object sender, EventArgs e)
         {
-            using (FrmSelecciones formulario = new FrmSelecciones())
-            {
-                formulario.ShowDialog();
-            }
+            using FrmSelecciones formulario = new();
+            formulario.ShowDialog();
         }
 
         private void btnPartidos_Click(object sender, EventArgs e)
         {
-            using (FrmPartidos formulario = new FrmPartidos())
-            {
-                formulario.ShowDialog();
-            }
+            using FrmPartidos formulario = new();
+            formulario.ShowDialog();
         }
 
         private void btnFechaSimulada_Click(object sender, EventArgs e)
         {
-            using (
-       FrmFechaSimulada formulario =
-           new FrmFechaSimulada()
-        )
-            {
-                formulario.ShowDialog();
-            }
+            SesionUsuarioService.ExigirAdministrador();
+            using FrmFechaSimulada formulario = new();
+            formulario.ShowDialog();
+
+            ConfigurarSesion();
         }
 
         private void btnPronosticos_Click(object sender, EventArgs e)
         {
-            using (
-                FrmPronosticos formulario =
-                    new FrmPronosticos()
-            )
-            {
-                formulario.ShowDialog();
-            }
+            using FrmPronosticos formulario = new();
+            formulario.ShowDialog();
         }
 
         private void btnRanking_Click(object sender, EventArgs e)
         {
-            using FrmRanking formulario =
-                new FrmRanking();
-
+            using FrmRanking formulario = new();
             formulario.ShowDialog();
         }
 
         private void btnHistorialPronosticos_Click(object sender, EventArgs e)
         {
-            using FrmHistorialPronosticos formulario =
-                new FrmHistorialPronosticos();
-
+            using FrmHistorialPronosticos formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnQuinielas_Click(
-            object sender,
-            EventArgs e)
+        private void btnQuinielas_Click(object sender, EventArgs e)
         {
-            using FrmQuinielas formulario =
-                new FrmQuinielas();
-
+            using FrmQuinielas formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnRankingPrivado_Click(
-            object sender,
-            EventArgs e)
+        private void btnRankingPrivado_Click(object sender, EventArgs e)
         {
-            using FrmRankingPrivado formulario =
-                new FrmRankingPrivado();
-
+            using FrmRankingPrivado formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnEstadisticas_Click(
-            object sender,
-            EventArgs e)
+        private void btnEstadisticas_Click(object sender, EventArgs e)
         {
-            using FrmEstadisticas formulario =
-                new FrmEstadisticas();
-
+            using FrmEstadisticas formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnInformacionPartidos_Click(
-            object sender,
-            EventArgs e)
+        private void btnInformacionPartidos_Click(object sender, EventArgs e)
         {
-            using FrmInformacionPartidos formulario =
-                new FrmInformacionPartidos();
-
+            using FrmInformacionPartidos formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnDetallePartido_Click(
-            object sender,
-            EventArgs e)
+        private void btnDetallePartido_Click(object sender, EventArgs e)
         {
-            using FrmDetallePartido formulario =
-                new FrmDetallePartido();
-
+            using FrmDetallePartido formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnTablaGrupos_Click(
-            object sender,
-            EventArgs e)
+        private void btnTablaGrupos_Click(object sender, EventArgs e)
         {
-            using FrmTablaGrupos formulario =
-                new FrmTablaGrupos();
-
+            using FrmTablaGrupos formulario = new();
             formulario.ShowDialog();
         }
 
-        private void btnFaseFinal_Click(
-            object sender,
-            EventArgs e)
+        private void btnFaseFinal_Click(object sender, EventArgs e)
         {
-            using FrmFaseFinal formulario =
-                new FrmFaseFinal();
-
+            using FrmFaseFinal formulario = new();
             formulario.ShowDialog();
+        }
+
+        private void btnTimeline_Click(object sender, EventArgs e)
+        {
+            using FrmTimeline formulario = new();
+            formulario.ShowDialog();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            SolicitoCerrarSesion = true;
+            Close();
         }
     }
 }

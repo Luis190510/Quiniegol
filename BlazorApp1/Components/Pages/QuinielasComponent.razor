@@ -1,0 +1,209 @@
+﻿@page "/quinielas"
+@attribute [Authorize]
+
+<PageTitle>Quinielas</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado de la página *@
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+
+        <div>
+            <h1 class="mb-1">Quinielas</h1>
+
+            <p class="text-secondary mb-0">
+                Participa en quinielas y compite con otros usuarios.
+            </p>
+        </div>
+
+        <button type="button"
+                class="btn btn-primary"
+                @onclick="CrearQuiniela">
+            Crear quiniela
+        </button>
+
+    </div>
+
+    @* Mensajes generados por los botones *@
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert alert-info alert-dismissible fade show"
+             role="alert">
+
+            @Mensaje
+
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarMensaje">
+            </button>
+
+        </div>
+    }
+
+    @* Listado de quinielas *@
+    <div class="row g-4">
+
+        @foreach (var quiniela in QuinielasDisponibles)
+        {
+            <div class="col-12 col-md-6 col-xl-4">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header d-flex justify-content-between align-items-center">
+
+                        <span class="fw-semibold">
+                            @quiniela.Nombre
+                        </span>
+
+                        <span class="badge @ObtenerClaseEstado(quiniela.Estado)">
+                            @quiniela.Estado
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="card-text">
+                            @quiniela.Descripcion
+                        </p>
+
+                        <hr />
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Administrador:</span>
+                            <span>@quiniela.Administrador</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Participantes:</span>
+                            <span>@quiniela.Participantes</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">Código:</span>
+
+                            <span class="font-monospace">
+                                @quiniela.Codigo
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer bg-white">
+
+                        <div class="d-grid gap-2">
+
+                            <button type="button"
+                                    class="btn btn-outline-primary"
+                                    @onclick="() => VerQuiniela(quiniela)">
+                                Ver quiniela
+                            </button>
+
+                            @if (quiniela.Estado == "Disponible")
+                            {
+                                <button type="button"
+                                        class="btn btn-success"
+                                        @onclick="() => UnirseAQuiniela(quiniela)">
+                                    Unirse
+                                </button>
+                            }
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+@* Datos temporales para probar la interfaz.
+   Posteriormente se cargarán desde quinielas.json *@
+@code {
+    private string Mensaje { get; set; } = string.Empty;
+
+    private List<QuinielaVista> QuinielasDisponibles { get; set; } =
+    [
+        new()
+        {
+            Nombre = "Amigos Mundialistas",
+            Descripcion = "Quiniela para competir entre amigos.",
+            Administrador = "Daniel",
+            Participantes = 8,
+            Codigo = "AM2026",
+            Estado = "Disponible"
+        },
+        new()
+        {
+            Nombre = "Familia Quesada",
+            Descripcion = "Quiniela privada para la familia.",
+            Administrador = "Luis",
+            Participantes = 12,
+            Codigo = "FQ2026",
+            Estado = "Inscrito"
+        },
+        new()
+        {
+            Nombre = "Expertos del Fútbol",
+            Descripcion = "Competencia para aficionados del fútbol internacional.",
+            Administrador = "Carlos",
+            Participantes = 20,
+            Codigo = "EF2026",
+            Estado = "Disponible"
+        }
+    ];
+
+    private void CrearQuiniela()
+    {
+        Mensaje = "La pantalla para crear una quiniela se agregará posteriormente.";
+    }
+
+    private void VerQuiniela(QuinielaVista quiniela)
+    {
+        Mensaje = $"Seleccionaste la quiniela: {quiniela.Nombre}.";
+    }
+
+    private void UnirseAQuiniela(QuinielaVista quiniela)
+    {
+        quiniela.Estado = "Inscrito";
+        quiniela.Participantes++;
+
+        Mensaje = $"Te uniste correctamente a la quiniela: {quiniela.Nombre}.";
+    }
+
+    private void CerrarMensaje()
+    {
+        Mensaje = string.Empty;
+    }
+
+    private static string ObtenerClaseEstado(string estado)
+    {
+        return estado switch
+        {
+            "Disponible" => "text-bg-success",
+            "Inscrito" => "text-bg-primary",
+            "Cerrada" => "text-bg-secondary",
+            _ => "text-bg-dark"
+        };
+    }
+
+    private sealed class QuinielaVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public string Descripcion { get; set; } = string.Empty;
+
+        public string Administrador { get; set; } = string.Empty;
+
+        public int Participantes { get; set; }
+
+        public string Codigo { get; set; } = string.Empty;
+
+        public string Estado { get; set; } = string.Empty;
+    }
+}

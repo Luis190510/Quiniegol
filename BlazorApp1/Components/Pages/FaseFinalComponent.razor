@@ -1,0 +1,397 @@
+﻿@page "/fase-final"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Fase final</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Fase final
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Consulta los cruces de eliminación directa del Mundial 2026.
+        </p>
+
+    </div>
+
+    @* Campeón *@
+    @if (!string.IsNullOrWhiteSpace(Campeon))
+    {
+        <div class="alert alert-warning text-center shadow-sm mb-4"
+             role="alert">
+
+            <div style="font-size: 2.5rem;">
+                🏆
+            </div>
+
+            <h4 class="mb-1">
+                Campeón
+            </h4>
+
+            <p class="fs-4 fw-bold mb-0">
+                @Campeon
+            </p>
+
+        </div>
+    }
+
+    @* Rondas de la fase final *@
+    <div class="row g-4">
+
+        @foreach (var ronda in Rondas)
+        {
+            <div class="col-12 col-lg-6 col-xxl-3">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header text-center">
+
+                        <h5 class="mb-0">
+                            @ronda.Nombre
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="d-flex flex-column gap-3">
+
+                            @foreach (var partido in ronda.Partidos)
+                            {
+                                <button type="button"
+                                        class="card text-start w-100 @ObtenerClasePartido(partido)"
+                                        @onclick="() => SeleccionarPartido(partido)">
+
+                                    <span class="card-body w-100">
+
+                                        <span class="d-flex justify-content-between align-items-center mb-2">
+
+                                            <span class="@ObtenerClaseEquipo(
+                                                                                                partido,
+                                                                                                partido.EquipoLocal)">
+
+                                                @partido.EquipoLocal
+
+                                            </span>
+
+                                            <span class="fw-bold">
+                                                @ObtenerMarcador(
+                                                    partido.GolesLocal)
+                                            </span>
+
+                                        </span>
+
+                                        <span class="d-flex justify-content-between align-items-center">
+
+                                            <span class="@ObtenerClaseEquipo(
+                                                                                                partido,
+                                                                                                partido.EquipoVisitante)">
+
+                                                @partido.EquipoVisitante
+
+                                            </span>
+
+                                            <span class="fw-bold">
+                                                @ObtenerMarcador(
+                                                    partido.GolesVisitante)
+                                            </span>
+
+                                        </span>
+
+                                        <span class="d-block text-center text-secondary mt-3">
+
+                                            @if (partido.Finalizado)
+                                            {
+                                                <small>
+                                                    Finalizado
+                                                </small>
+                                            }
+                                            else
+                                            {
+                                                <small>
+                                                    @partido.Fecha.ToString(
+                                                        "dd/MM/yyyy HH:mm")
+                                                </small>
+                                            }
+
+                                        </span>
+
+                                    </span>
+
+                                </button>
+                            }
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+    @* Detalle del partido seleccionado *@
+    @if (PartidoSeleccionado is not null)
+    {
+        <div class="card shadow-sm mt-4">
+
+            <div class="card-header d-flex justify-content-between align-items-center">
+
+                <h5 class="mb-0">
+                    Detalle del partido
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        aria-label="Cerrar"
+                        @onclick="CerrarDetalle">
+                </button>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="row align-items-center text-center g-3">
+
+                    <div class="col">
+
+                        <h4>
+                            @PartidoSeleccionado.EquipoLocal
+                        </h4>
+
+                        <p class="display-6 mb-0">
+                            @ObtenerMarcador(
+                                PartidoSeleccionado.GolesLocal)
+                        </p>
+
+                    </div>
+
+                    <div class="col-auto">
+
+                        <span class="fw-bold">
+                            VS
+                        </span>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h4>
+                            @PartidoSeleccionado.EquipoVisitante
+                        </h4>
+
+                        <p class="display-6 mb-0">
+                            @ObtenerMarcador(
+                                PartidoSeleccionado.GolesVisitante)
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div class="row text-center">
+
+                    <div class="col-12 col-md-4">
+
+                        <p class="text-secondary mb-1">
+                            Fecha
+                        </p>
+
+                        <p class="fw-semibold">
+                            @PartidoSeleccionado.Fecha.ToString(
+                                "dd/MM/yyyy HH:mm")
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <p class="text-secondary mb-1">
+                            Estadio
+                        </p>
+
+                        <p class="fw-semibold">
+                            @PartidoSeleccionado.Estadio
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <p class="text-secondary mb-1">
+                            Estado
+                        </p>
+
+                        <p>
+
+                            @if (PartidoSeleccionado.Finalizado)
+                            {
+                                <span class="badge text-bg-secondary">
+                                    Finalizado
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge text-bg-success">
+                                    Próximo
+                                </span>
+                            }
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+@* Datos temporales para representar el cuadro de eliminación.
+   Posteriormente se calcularán con los resultados reales. *@
+@code {
+    private PartidoFaseFinalVista? PartidoSeleccionado { get; set; }
+
+    private List<RondaVista> Rondas { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Rondas = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Where(partido => partido.Id > 72)
+            .GroupBy(partido => partido.Fase)
+            .Select(grupo => new RondaVista
+            {
+                Nombre = grupo.Key,
+                Partidos = grupo
+                    .Select(partido => new PartidoFaseFinalVista
+                    {
+                        EquipoLocal = partido.EquipoLocal,
+                        EquipoVisitante = partido.EquipoVisitante,
+                        GolesLocal = partido.GolesLocal,
+                        GolesVisitante = partido.GolesVisitante,
+                        Fecha = partido.Fecha,
+                        Estadio = "No registrado",
+                        Finalizado = partido.Finalizado
+                    })
+                    .ToList()
+            })
+            .ToList();
+    }
+
+    private string Campeon
+    {
+        get
+        {
+            var final = Rondas
+                .FirstOrDefault(ronda =>
+                    ronda.Nombre == "Final")
+                ?.Partidos
+                .FirstOrDefault();
+
+            if (final is null ||
+                !final.Finalizado)
+            {
+                return string.Empty;
+            }
+
+            return ObtenerGanador(final);
+        }
+    }
+
+    private void SeleccionarPartido(
+        PartidoFaseFinalVista partido)
+    {
+        PartidoSeleccionado = partido;
+    }
+
+    private void CerrarDetalle()
+    {
+        PartidoSeleccionado = null;
+    }
+
+    private string ObtenerClasePartido(
+        PartidoFaseFinalVista partido)
+    {
+        return ReferenceEquals(
+            PartidoSeleccionado,
+            partido)
+                ? "border-primary"
+                : string.Empty;
+    }
+
+    private static string ObtenerMarcador(int? goles)
+    {
+        return goles.HasValue
+            ? goles.Value.ToString()
+            : "-";
+    }
+
+    private static string ObtenerGanador(
+        PartidoFaseFinalVista partido)
+    {
+        if (!partido.GolesLocal.HasValue ||
+            !partido.GolesVisitante.HasValue)
+        {
+            return string.Empty;
+        }
+
+        if (partido.GolesLocal > partido.GolesVisitante)
+        {
+            return partido.EquipoLocal;
+        }
+
+        if (partido.GolesVisitante > partido.GolesLocal)
+        {
+            return partido.EquipoVisitante;
+        }
+
+        return string.Empty;
+    }
+
+    private static string ObtenerClaseEquipo(
+        PartidoFaseFinalVista partido,
+        string equipo)
+    {
+        return ObtenerGanador(partido) == equipo
+            ? "fw-bold text-success"
+            : string.Empty;
+    }
+
+    private sealed class RondaVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public List<PartidoFaseFinalVista> Partidos { get; set; } = [];
+    }
+
+    private sealed class PartidoFaseFinalVista
+    {
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public int? GolesLocal { get; set; }
+
+        public int? GolesVisitante { get; set; }
+
+        public DateTime Fecha { get; set; }
+
+        public string Estadio { get; set; } = string.Empty;
+
+        public bool Finalizado { get; set; }
+    }
+}

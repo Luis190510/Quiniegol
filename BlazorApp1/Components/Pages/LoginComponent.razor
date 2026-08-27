@@ -1,0 +1,120 @@
+﻿@inject LoginController LoginController
+@inject SesionUsuarioService Sesion
+@inject NavigationManager Navigation
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+
+            <div class="card shadow">
+                <div class="card-body p-4">
+
+                    <h3 class="text-center mb-4">
+                        Iniciar sesión
+                    </h3>
+
+                    <form @onsubmit="Login" @onsubmit:preventDefault>
+                    <div class="form-floating mb-3">
+                        <input type="text"
+                               class="form-control"
+                               id="floatingUsuario"
+                               name="usuario"
+                               autocomplete="username"
+                               placeholder="Usuario"
+                               @bind="Nombre"
+                               @bind:event="oninput" />
+
+                        <label for="floatingUsuario">
+                            Usuario
+                        </label>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <input type="password"
+                               class="form-control"
+                               id="floatingPassword"
+                               name="contrasena"
+                               autocomplete="current-password"
+                               placeholder="Contraseña"
+                               @bind="Password"
+                               @bind:event="oninput" />
+
+                        <label for="floatingPassword">
+                            Contraseña
+                        </label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit"
+                                class="btn btn-primary btn-lg">
+                            Iniciar sesión
+                        </button>
+
+                        @if (!string.IsNullOrWhiteSpace(Mensaje))
+                        {
+                            <div class="alert @ClaseMensaje mt-3" role="alert">
+                                @Mensaje
+                            </div>
+                        }
+
+                        <hr class="my-4" />
+
+                        <p class="text-center mb-0">
+                            ¿No tienes una cuenta?
+
+                            <NavLink href="registro">
+                                Crear cuenta
+                            </NavLink>
+                        </p>
+
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string Nombre { get; set; } = string.Empty;
+
+    private string Password { get; set; } = string.Empty;
+
+    private string Mensaje { get; set; } = string.Empty;
+
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    private void Login()
+    {
+        if (string.IsNullOrWhiteSpace(Nombre) ||
+            string.IsNullOrWhiteSpace(Password))
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "Debe ingresar el usuario y la contraseña.";
+            return;
+        }
+
+        Usuario? usuario = LoginController.Autenticar(Nombre, Password);
+        Password = string.Empty;
+
+        if (usuario is null)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "El usuario, correo o contraseña no son válidos.";
+            return;
+        }
+
+        if (usuario.DebeCambiarContrasena)
+        {
+            Sesion.IniciarCambioObligatorio(usuario);
+            Navigation.NavigateTo("/cambiar-contrasena");
+            return;
+        }
+
+        Sesion.IniciarSesion(usuario);
+        Navigation.NavigateTo("/partidos");
+    }
+}

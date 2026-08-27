@@ -1,0 +1,2474 @@
+Clase-20260805_160243-Meeting Recording 1
+August 5, 2026, 2:02AM
+1h 35m 5s
+
+LUIS FELIPE MORA UMAÑA   0:04
+Sinquent.
+Bing.
+Y vamos a poner.
+
+ERICK ANDRES DELGADO ARAYA   0:08
+A poco real flexbox.
+
+LUIS FELIPE MORA UMAÑA   0:10
+sí, un toque, la verdad.
+Hello.
+Es que yo soy la peor persona que se puede poner a diseñar.
+Bueno, entonces aquí está el mancito, está bien bonito.
+Manuel C50.
+Imagine right, imagine left, vámonos.
+Y supuestamente con esto.
+Copy.
+Yo me lo traigo aquí, pego.
+Ajá.
+¿Qué prefieres salir?
+Pero buenoel.es que ves, si ustedes ven ya después ponerse una detallar mucho las varas, digamos, y todo y ponerle ahí como más bonito, pero este.
+De ahí si ustedes ven agregar esta pantalla en Razor, no me tomo que 10 minutos, digamos 5.
+Ahí con el servicio y toda la vara y ya para ver esto.
+
+TAYRON ALONSO SALAS NUÑEZ   1:33
+Una consulta para ver resultados a la fuerza hay que detenerlo, cambiar, guardar y volverlo a correr. No se puede hacer como simplemente refrescar la página.
+
+LUIS FELIPE MORA UMAÑA   1:35
+Mhm.
+No, yo podría, digamos, no sabes qué quiere cambiar.
+
+TAYRON ALONSO SALAS NUÑEZ   1:49
+Digamos como esto que hizo ahorita de de moverlo, simplemente hablaba como el refresh para darle el resultado y tenerlo que volver a correr.
+
+LUIS FELIPE MORA UMAÑA   1:57
+Hola, quiero ser.
+Ponerle 100 aquí.
+Ok, este vamos a estar para acá.
+Este otro masito que me queda aquí y le voy a hijo de ****, se me escondió.
+¿Este sabes que me quedó pegar a la máquina?
+Y lo guardé así, voy a guardarlo por si acaso.
+Nombre de aquí.
+Y entre el me toca refrescar, no es que.
+Yes.
+Ya recargué en 50.
+Es the king.
+O de esa más pequeña.
+Ponerle cientos 200.
+No, va a ser lo más bonito.
+25%
+Hey, para hacerlo y responsive.
+¿Qué guardo aquí?
+Yes.
+Te reglas que hay.
+Es que yo no, ya salgo ahí muy mío, digamos, yo no confío mucho en este reloj, pero.
+Lo peor que pasa es que tienen que volver a blancar la aplicación, digamos.
+No sé, varos de mi hermana.
+¿Man, ya me quedé ahí el mae está ahí de responsive ahí con las con el maestro, verdad?
+No sé qué más quieren ver, quieren ver algo en otra pantalla, quieren ver algo más específico.
+Por ejemplo, esto este.
+Estar aquí, si no me equivoco.
+Había un maecito donde yo lo podía meter.
+A site at a site.
+Pues ya estar aquí, si no me equivoco, debería quedar al lado.
+Creo, no me acuerdo.
+No, lo quedó al lado, eso es lo que le dio la gana.
+¿Eras ahí que era entonces?
+¿Quieres hacer aside?
+She is a site.
+Para que tengo que meter este mal aquí.
+Pero una etiqueta de Boris.
+A ver si le da la gana.
+No, no.
+Ay, cuando me acuerde cómo meter estaba aquí.
+I guess.
+Lo agrego.
+Todavía aquí para agregar los macitos, ahora los hyperlink.
+O sea, vamos a ponerle aquí este.
+Ranking.
+Y aquí este.
+Ranking, no me acuerdo que era sido ahora con el slash.
+Ya nos daremos cuenta.
+Ahí está, bye.
+Gracias.
+Pues sí, eso sería muchachos.
+¿Qué más quieren ver?
+Vamos a ver, el otro que teníamos era el de Maintenas.
+Entonces, el mantener los controller necesito yo ser controller.
+Y por aquí está el program.
+So I got him.
+De hecho, este la verdad es que.
+Aquí estoy desperdiciando memoria.
+Porque ninguno guarda así como.
+Como gran cosa, digamos, este lo único que importa de verdad es realmente lo único que realmente importa es este, que se mantenga como un singleton, pero bueno.
+Los hablo así para que tenga el ejemplito, entonces este este mae tenía update score.
+Okay.
+Y aquí.
+Lo voy a hacer un pelín diferente.
+Stay at.
+Este.
+This is man.
+Bueno.
+Component.
+Monterrey.
+Y no hay mucho aquí.
+Nos traemos estos 3, voy a traerme estos.
+Estos cuatro con template.
+Voy a poner aquí.
+Score.
+I know.
+Y voy a usar el aquí.
+Sí, vean este par de.
+Este es de aquí.
+Iba a meter otro tif aquí.
+What is the best style?
+Y a meter un tercer DIF.
+De hecho, digamos, y ahí voy a voy a auto regañarme.
+Si yo me sentara.
+Y planificar a la ventana desde antes.
+Sería más fácil ver cuáles cajitas ocupa y cuáles no.
+Y hago el moxito ahí para que lo puedan hacer ustedes.
+Este como 3, ajá.
+Ocupation label.
+¿Qué voy a decir este big?
+Big the user.
+Game.
+Aquí.
+Voy a hacer un label.
+Entre Discore.
+Tontos.
+Y aquí va a ser un.
+Input.
+Y ese input le va a hacer un buen value.
+De score y va a ser un tipo número, aquí es fácil, digamos, aquí no se complica uno mucho.
+Y por último.
+Meter un botoncito aquí.
+¿Qué es a llamar update score?
+Entonces aquí voy a necesitar este el score.
+Que va a ser cero.
+Y aquí es la piecita que me falta.
+I go score.
+Y va a ser aquí.
+Private in a private stream.
+Username.
+Get set, so important.
+Estoy aquí.
+Aquí this punto.
+Maintenance controller, punto update score.
+West Macit.
+Ok, después vamos a ver qué más, ya me acordé que me falta, me falta aquí el.
+Mar que se llamaba este era un choice era.
+No era un choice, es un choice en Blazer.
+Pero siempre se me olvida esta cochinada en.
+En HTML.
+Por eso les digo, siempre es más fácil este.
+Siempre es más fácil con algunos componentes y es que no sé.
+Vamos a ver, ya tengo los tables y me faltan los que me llaman estas varas.
+Elements.
+No.
+Una que se llama es que hasta eso tiene un nombre diferente, los benditos dropdowns.
+Or elements.
+Y sí, option es que se llama eran, no porque option son los.
+¿La opción son estos más los cómo llama esta ahora?
+Jesús select, este es el maestro que yo necesito.
+que este aquí es el que yo necesito pero para ver si es el que yo necesito estoy bien sí correcto este es el que yo necesito
+A mí todo se me olvida, muchachos, yo no todo se me olvida siempre, este no ocupo ID.
+No componen, la verdad es que no le voy a meter CSS, pero sí le voy a hacer un arroba Bind Value.
+And that all I list to my.
+Hey Sharon no tiene balas.
+¿Qué tienes tu mar?
+De.
+Name Sarah.
+Hola.
+Mind.
+Pero tiene vale huevón.
+Ya se nos be all.
+Stooching.
+No, porque si la India Nain va a ser este mae, debe ser un value.
+Pro a username.
+Mhm.
+Es que no hay un.
+Just the market tiene.
+¿Donde guarda la madre?
+La verdad es que solo el de Teleric, el de Teleric.
+You know, este.
+opción era.
+Microsoft.
+Ay, no sé, se volvió.
+Bueno, puntos que se agrega aquí agrega el si este mae tuviera un ******* value.
+Vamos a venderlo así a ver qué pasa.
+Y este mae vamos a ponerlo aquí como porque yo sé que va a reventar.
+Un object.
+Hello.
+Esto lo vamos a comentar de momento porque quiero ver qué está pasando aquí.
+A ver qué me viene aquí en esta pieza aquí.
+Entonces aquí es tan simple como hacer un.
+Voy a guardarme uno, yo sé que se me va a olvidar.
+Este Roban.
+British.
+Bueno.
+Yo ser in.
+Maintenance.get users.
+No.
+Porque eso no está en.
+Eso no está aquí, este man tiene poco.
+Este man no tiene update score.
+Y vámonos realmente el que lo tiene es User Controller.
+Lo va a necesitar inyectar.
+Rot inject.
+Y hacer controller.
+Y hacer controller.
+Y este maicito sí lo va a obtener.
+Y user controller punto.
+Y yo, sir.
+Y aquí vamos a ver arroba, yo es el punto.
+Time.
+Sierra, trae igual.
+No sé este paréntesis aquí.
+Cerramos el select.
+Y vamos a ver, porque la verdad sí, ahí me disculpa, muchachos, no me acuerdo.
+Bueno, que se jala hasta el orden de esta cochinada de HTML.
+Pero lo puedo ver igual, mira que pollo.
+Este.
+Mainly out.
+Score.
+Dinos.
+He aquí, she's not able to get.
+And it's casing.
+No sé qué hizo mi máquina que está pegadísima.
+Y vámonos.
+¿Qué ahora que yo hace ratillo, bastante ratillo ya?
+No toco HTML, ven, ajá.
+Dice que existe un punto object no tiene un type converter que soporte este atributo correcto y eso es por el bind.
+Que metí porque el baint que metí no es este.
+No es este como está ahora.
+Este.
+No tiene, no lo está agarrando, digamos, no está agarrando el tipo para convertirlo. Entonces llego aquí a CP Net, Blazor, este options.
+Y me voy a lo saico.
+Claro, sí, trata.
+Hijo de ****, se male el de a uno ahora el.
+El bendito drop down.
+No, hombres.
+Oh, he's still young.
+Select a row, selected options.
+I don't stream.
+Esta ahora dice que debe hacer un stream.
+Okay.
+Entonces, aparentemente solamente el aquí.
+Sí, lo tenía bien.
+No, muchachos, por eso la duda es el origen de todos los males.
+No estaba tan bateando.
+Que yo no le hago mucho caso, pero bueno.
+Pero el sistema es que ahora sí, excelente, lo ven y tengo mis cuatro usuarios.
+Yo le digo que es más, vámonos al ranking.
+Dice el ranking que Kendall tiene, mira, me falta uno aquí.
+Me han dicho, tengo una pulguilla ahí, bueno, dice que Kandal tiene este 5.
+105.
+To the Kendall.
+Vamos a hacer un Don Grey, la vamos a poner este.
+30.
+Completo score, si ya tu completo score no hacía nada.
+Y había los saicos capearlo bien, pero bueno.
+Este Kendall.
+30.
+Debería ser algo aquí, usted sabe como mostrar algún mensaje o algo.
+O redireccionar algún lado.
+Ma.
+Y no pasa nada, claro.
+¿Cómo será porque es cuál nombre del usuario?
+Dice que dice el controller.
+¿Es correcto? Update score es como el líder name.
+Todo es tan fácil como venir aquí.
+Container component.
+Y le digo, mano, lo haces con.
+Yo ser parado con él.
+Username.
+Dale caso Tyron, ahí que dice que seamos esta.
+Esa funcioncita tan linda, entonces este aquí tenemos a Kendall 105.
+Este Kendall.
+Ahora va a tener 10, no de intescora.
+Ranking y no le dio la gana.
+Vamos a ver.
+50.
+Una tontera estoy haciendo aquí.
+A ver, dice que.
+Ajá.
+Going.
+Este maecito de aquí es este.
+Qué raro, porque debería ser un.
+Debería ser un esquema entonces.
+Your name is a string, your name is a user.
+Es más que tengo que inicializar.
+Isername punto.
+No.
+Oh.
+Okay, surname, ahora see.
+No, no se rompió.
+Ah.
+Nos queda terrible, solamente en la delexia me anda ganando hoy.
+Pero si ahora si le da la gana, ahora me va a decir otra vez que el ma este no le gusta.
+Sí, no le gusta, jaja, qué curioso.
+Y tengo que meterle este atributo, que parece meterle este atributo.
+Bueno, ahí después tuneo este mae para que me reciba el.
+El maecito.
+Unless.
+Hola.
+Selection change.
+Es igual a.
+User service exchange.
+Y aquí le puedo meter el lentico ahí, pero no sé más brett.
+Pero sí.
+En fin, es el detalle, es el dilema.
+Todo eso ahora todo está streaming.
+Voy a hacer algo que no deberían hacer ustedes, pero ahí es.
+Las limitaciones.
+¿Hay limitaciones?
+Con Teleri que es más tonis, vieran usted, nada más aquí declara el dropdown le manda la lista.
+Le manda cuál es el campo que quiera mostrar.
+Y este el marito agarra, pero la verdad es que no va a meterle telérica sola.
+Porque si le meto Telérica ustedes van a tener que usar Telérica.
+¿Entonces, para validar esto?
+Break paint.
+No.
+Es este man, entonces username, yo voy a darle aquí.
+Sí, F 9.
+Y como el más saico.
+Voy a poner aquí.
+Kendall punto.
+Map.
+Y ahora que voy a actualizar.
+Pero vamos al ranking, mira es que se está comiendo el último.
+Qué curioso.
+Bueno, pues ya esos son detalles ahí de implementación, no es que me hizo falta un TR ahí de meter.
+Tengo what name is Core, tengo este.
+Tengo ese otro, tengo a Ariani, tengo a Glen, me faltó uno ahí en el foro, pero bueno.
+Ahí está muchachos, aparte de las limitaciones con esto, dudas.
+Ya durmieron, ya se despertaron.
+
+JUAN FELIPE PEREZ	BEJARANO   29:34
+De ahí por ahora no, profe.
+
+DANNEL ROBERTO QUESADA SOLANO   29:35
+Y viendo a ver qué sorpresitas van a salir después.
+
+LUIS FELIPE MORA UMAÑA   29:40
+sí, vamos a ver este, bueno, ahí.
+Si uno le metes SS, ya se ve un poquito más bonito, pero y con las limitaciones con este hijo de **** que no quiso funcionar. este.
+¿Será esto lo que no hace rato?
+Sería muy molesto.
+Yes, to pass.
+Y que ahora sí funcione.
+Pero bueno.
+Vamos a ver, es que solo tiene el top 3.
+Tina.
+Bueno, está bien, metodito.
+Pues aquí este arranque en punto.
+Hey.
+China.
+Este es el que ocupaba llamar.
+Vamos de cuando, yo estoy con el clavo.
+Que me decían el perdón.
+
+DANNEL ROBERTO QUESADA SOLANO   30:46
+¿Que a ver qué es lo que van a salir ya cuando está uno haciendo esto ahora?
+
+LUIS FELIPE MORA UMAÑA   30:51
+Si ustedes lo ven, aparte de mis limitaciones con esta cochinada del.
+Del.
+De 7 ML, ¿verdad? Y auto zancadillas como la del top 3 que me metí.
+Ya me acordé, porque se va a poner un toque.
+bueno.
+Desde que lo está grabando igual.
+ahí cuando venga el código comiteado Ahí va con el cambio Pero si ustedes ven de los controles funcionan igual toda la capa de la capa lógica sigue funcionando Exactamente igual con los mismos parámetros la misma vara y todo se mantiene verdad Entonces no hay mucho Digamos como que como que cambiar por ahí por eso es importante y eso lo
+Importancia vital del MVC, ¿verdad?
+¿Qué tal lo ven?
+¿Eric, qué tal lo es?
+
+ERICK ANDRES DELGADO ARAYA   32:00
+Pero sí, el momento todo claro, igual como dice el compañero, él ya cuando uno comienza a trabajar.
+Y nada más saber cómo adaptarlo, tener cuidadito, sí.
+
+LUIS FELIPE MORA UMAÑA   32:13
+Pero si ustedes ven este los controles funcionan igual los controles son exactamente los mismos la base es exactamente lo mismo lo único que cambia es el view Y si ustedes ven el view de por ejemplo el ranking fue facilísimo de hacer este no me quiso salir pero algún día me saldrá
+¿Este entonces este ahí está el ahí están los detalles, verdad? Son detallitos ahí que pulir, pero sí del controller va a funcionar igual. Todas las interacciones van a funcionar exactamente igual si ustedes lo programaron, verdad, para que funcione exactamente igual, para que sea, digamos, para que sea agnóstico de qué VIU viene, simplemente se llama y va y viene, verdad? Al final exactamente lo mismo.
+Pero por ahí va.
+Sí, preguntas.
+Luis Alonso, to us.
+
+LUIS ALONSO ESPINOZA BONILLA   33:11
+Bueno, por ahora no, ya habrá a ver a la hora decide este estar ejecutándolo. Bueno, realizándolo, pero sí, por ahora todo bien.
+
+LUIS FELIPE MORA UMAÑA   33:21
+¿Qué dudas con lo de los servicios? Esto es importante.
+Alguien que no le ha llegado claro, digamos, toda la parte de los servicios. ¿Por qué los inyecto? ¿Por qué los meto en un pool quedan globales? O todo claro, por ahí me confirma, porfa.
+Sí, no, tal vez mañana.
+
+Kaik Andy Yocks Sandoval   33:48
+Sí, profe.
+
+LUIS FELIPE MORA UMAÑA   33:49
+Sí.
+
+Kaik Andy Yocks Sandoval   33:50
+No entendiles, lo que pasa sería más cierto como el volver a repasarla.
+
+Adrian Vinicio Chaves Marin   33:50
+Keeper.
+
+LUIS FELIPE MORA UMAÑA   33:56
+Sí, sí, ahí les queda el códiguito, ahora el caballo lo arreglo ahí lo subo, es una tontera, ahí debe ser una tontera, pero bueno, capa 8 y violento, pero por ahí va este, si no le meto el de el de SPnet, más twan es el DCPnet y ahí ven por lo menos un ejemplo el DCPnet, pero bueno.
+
+Kaik Andy Yocks Sandoval   33:57
+Sí.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   34:15
+este bueno muchachos si no hay más dudas si no hay preguntas este yo creo que ya tienen lo que necesitan de la clase de hoy es ahí pueden navegar entre más entre ventanas Mostrar mensajes y lavar y estamos este nos vemos el próximo miércoles el próximo miércoles ahí
+Quiz, entonces no hemos hecho quiz. Entonces vamos a meter un quizito ahí el próximo miércoles. Vamos a ver si hay dudas del proyecto y este no, yo creo que estaríamos.
+
+JUAN FELIPE PEREZ	BEJARANO   34:49
+Permiso, profe.
+
+Kaik Andy Yocks Sandoval   34:49
+El profe, okey, dale el compañero del.
+
+LUIS FELIPE MORA UMAÑA   34:52
+Vale Juan.
+
+JUAN FELIPE PEREZ	BEJARANO   34:53
+¿Este para confirmar lo del paper es para el 19, cierto?
+
+LUIS FELIPE MORA UMAÑA   34:57
+El paper es para dentro de 15 días.
+Sí, señor, 19.
+
+JUAN FELIPE PEREZ	BEJARANO   35:02
+Okay, pura vida, profe.
+
+LUIS FELIPE MORA UMAÑA   35:04
+Sí.
+Este.
+¿Qué más, qué más?
+
+Kaik Andy Yocks Sandoval   35:09
+Profe, el lo del lo del quiz más va a ser de la clase de hoy o en sí o va a poner un ejemplito testing o k.
+
+LUIS FELIPE MORA UMAÑA   35:17
+Vesting.
+Testing, practical test, practical test.
+
+Kaik Andy Yocks Sandoval   35:26
+¿No, verá, no puede buscar prácticas y cosas así, verdad?
+
+LUIS FELIPE MORA UMAÑA   35:31
+Sí, puedes practicar, ahí puede practicar con todo lo que tenemos aquí ahorita.
+
+Kaik Andy Yocks Sandoval   35:32
+Okay, okay.
+Ok, listo, listo.
+
+LUIS FELIPE MORA UMAÑA   35:38
+Yeah.
+Bye.
+Sin más, este, bueno, nos vemos muchachos, que tengan una feliz semana, que tengan un más feliz fin de semana, ya huele, ya huele a fin de semana, entonces este, nos vemos, que descansen, vayan a comer, a ver la Super CONCACAF Champions Cup.
+
+DANNEL ROBERTO QUESADA SOLANO   36:02
+Pura vida, buenas noches.
+
+ERICK ANDRES DELGADO ARAYA   36:03
+O de Mariano, profe.
+
+LUIS FELIPE MORA UMAÑA   36:05
+Oh.
+
+ERICK ANDRES DELGADO ARAYA   36:07
+Golsito de Mariano ya.
+
+LUIS FELIPE MORA UMAÑA   36:08
+Pero el de Mariano ya, pero no es que esa copa no valía, que no importaba.
+
+ERICK ANDRES DELGADO ARAYA   36:13
+No, profe, ¿cómo va a decir eso? No vale si la gana la liga.
+
+LUIS FELIPE MORA UMAÑA   36:15
+Eso es lo que dice Mariano, eso es lo que dice Mariano, eso ni él se lo cree, a mí lo que me hace gracia es que salió diciendo que esa copa solamente sirve para clasificarse a la copa que de verdad importa y no clasificaron.
+
+ERICK ANDRES DELGADO ARAYA   36:20
+Hey.
+
+LUIS FELIPE MORA UMAÑA   36:29
+Qué bonito por ahí.
+
+ERICK ANDRES DELGADO ARAYA   36:31
+Pero no entenderemos por hoy.
+
+LUIS FELIPE MORA UMAÑA   36:34
+No de siempre, bien rechoteo, vaya, vaya, vaya, disfrute mientras todavía están. Supuestamente este año sí le van a poner huevos a la copa. Entonces de este año sí le van a disfrutar. Vamos a ver cómo les va con el Estelí, si escapan del Estelí.
+
+ERICK ANDRES DELGADO ARAYA   36:35
+Que descanse.
+Ja.
+Está bien, brother, muchas gracias, que descanse.
+
+LUIS FELIPE MORA UMAÑA   36:53
+Vale, Eric, buenas noches, igualmente.
+
+Kaik Andy Yocks Sandoval   36:56
+Profe.
+
+DAVID MOISES GOMEZ MORA   36:56
+Bueno, profe, buenas noches.
+
+LUIS FELIPE MORA UMAÑA   36:58
+Buenas noches, David, vemos.
+Dígame, Andy.
+
+Kaik Andy Yocks Sandoval   37:03
+¿Cómo está?
+
+LUIS FELIPE MORA UMAÑA   37:05
+Oy, you said como to?
+
+Kaik Andy Yocks Sandoval   37:07
+Lo horrible, me tengo que bañar con agua bendita.
+
+LUIS FELIPE MORA UMAÑA   37:10
+Sí, es que no fuiste romería el 2 de agosto.
+
+Kaik Andy Yocks Sandoval   37:11
+Sí.
+Pues no sé, es que mi familia no practica eso, pero parece sí tengo que hacer.
+
+LUIS FELIPE MORA UMAÑA   37:16
+sí, dejo abajo de sarcasmo ahí.
+
+Kaik Andy Yocks Sandoval   37:20
+Sí, o sea, literalmente nunca me había pasado, pero bueno, no. O sea, sí, pero era el carro de mi hermano y pues o sea, pues mi hermano lo prestó y imagínate, se emputó él, pero es que yo no tuve la culpa.
+
+LUIS FELIPE MORA UMAÑA   37:26
+Pero eso está ahí, sí.
+The same.
+
+Kaik Andy Yocks Sandoval   37:38
+Yo no tuve culpa porque yo estaba metiendo, o sea, la guacamaya.
+
+LUIS FELIPE MORA UMAÑA   37:42
+Sí, señor, cuál de todas.
+
+Kaik Andy Yocks Sandoval   37:44
+Por donde la rotonda para ir para, ajá, exacto.
+
+LUIS FELIPE MORA UMAÑA   37:47
+Es ansioso.
+Ajá.
+
+Kaik Andy Yocks Sandoval   37:50
+entonces me metí normal verdad Pero mi papá siempre me ha dicho que eso es como una jungla verdad Entonces yo me metí y salí normal pero cuando estaba saliendo pues alguien como que se me adelantó y pues Ajá pues llamaron al tránsito toda la cosa y pues obviamente mi papá siempre dice que el que está atrás el que tiene la culpa
+
+LUIS FELIPE MORA UMAÑA   37:57
+Mhm.
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   38:13
+Pero divinen, llegó él, mi papá y mi hermano y todo el asunto. Y pues ahí fue lo que pasó, pero sí salió porque salió cariño su novio, el retrovisor.
+
+LUIS FELIPE MORA UMAÑA   38:27
+no vi el no vi la foto bien, nada más bien, me sabe que no ibas a poder llegar.
+
+Kaik Andy Yocks Sandoval   38:27
+Y el bumper.
+No, el no, pero y el video no vio el video, pero el.
+
+LUIS FELIPE MORA UMAÑA   38:34
+No sé si están classes.
+
+Kaik Andy Yocks Sandoval   38:37
+sí, ahí se lo mandé, fue todo el bumper y el retrovisor.
+
+LUIS FELIPE MORA UMAÑA   38:42
+Ya, perro, sí, qué pichazo.
+
+Kaik Andy Yocks Sandoval   38:43
+Sí, profe, entonces, bueno, yo como lo vi, yo me metí tipo 6 y 45, pero lo vi que estaba emponchado y si me dio vergüenza decirle interrumpirlo, cosas así. Usted sabe que pues soy más.
+
+LUIS FELIPE MORA UMAÑA   38:53
+Mhm.
+
+Kaik Andy Yocks Sandoval   39:03
+Pero cuando usted no sé por qué.
+
+LUIS FELIPE MORA UMAÑA   39:06
+Una buena pregunta.
+
+Kaik Andy Yocks Sandoval   39:06
+Pero sí, la verdad, o sea, o sea, suena feo y espero que no me coja como que no me ponga el ojo, pero yo lo veo, yo lo veo este como el jefe final, como no sé, como el mismísimo, no es que con el trimestre pasado y este no, niño.
+
+LUIS FELIPE MORA UMAÑA   39:19
+Hello, muchachos.
+
+Kaik Andy Yocks Sandoval   39:26
+Pero le tengo miedo, sé que prefiero como que contestarle lo necesario.
+
+LUIS FELIPE MORA UMAÑA   39:33
+No, yo los profes que tenía así en la U y ahora yo los uno vea, véalo así el día de mañana. Usted se va a acordar de mí en buena manera. Mira, este profe odia mucho con esta vara de ahí, vea. Mira cuando le diga, mira, usted sabía usar otra cosa así. Ay, me enseñó, la vi con este con ese mae, era un necio, pero ahí algo aprendí.
+
+Kaik Andy Yocks Sandoval   39:42
+Ajá.
+Up!
+
+LUIS FELIPE MORA UMAÑA   39:54
+Algo se me quedó.
+
+Kaik Andy Yocks Sandoval   39:56
+Ya, como dice el dicho, mete Albert.
+
+LUIS FELIPE MORA UMAÑA   39:59
+sí, de ahí un poquito ahí estaba el.
+Del cómo se llama este el síndrome de.
+De Estocolmo, poquito ahí.
+
+Kaik Andy Yocks Sandoval   40:10
+sí, entonces no sé si, bueno, no sé si usted está muy cansado o que o que le.
+
+LUIS FELIPE MORA UMAÑA   40:24
+Este está listo.
+
+Kaik Andy Yocks Sandoval   40:26
+Sí, yo lo bueno, sí.
+
+LUIS FELIPE MORA UMAÑA   40:28
+Yo no sé listo, dígame.
+
+Kaik Andy Yocks Sandoval   40:29
+Sí, yo nací, bueno, sí, listo, listo para ir al pues al caldero, como dice el dicho.
+
+LUIS FELIPE MORA UMAÑA   40:38
+No hay caldera, démoslo de una vez para.
+Para salir con esto.
+
+Kaik Andy Yocks Sandoval   40:44
+Okey, el que quiere llegar primero, bueno, tengo todo abierto.
+
+LUIS FELIPE MORA UMAÑA   40:48
+I don't know, I don't under.
+
+Kaik Andy Yocks Sandoval   40:51
+Pero yo tengo todavía esto, mire, tengo todo.
+
+LUIS FELIPE MORA UMAÑA   40:52
+No, Andy.
+
+Kaik Andy Yocks Sandoval   40:55
+Tengo todo y esto, no.
+
+LUIS FELIPE MORA UMAÑA   40:59
+¿Qué es lo primero que revisamos siempre?
+
+Kaik Andy Yocks Sandoval   41:02
+Okey, documento final, luego Trello, luego preguntas, no.
+
+LUIS FELIPE MORA UMAÑA   41:04
+No, señora, no, señora.
+
+Kaik Andy Yocks Sandoval   41:08
+El Deep up.
+
+LUIS FELIPE MORA UMAÑA   41:10
+Nothing Adam.
+
+Kaik Andy Yocks Sandoval   41:11
+Yo sé el código.
+
+LUIS FELIPE MORA UMAÑA   41:14
+Que fue lo primero que entregó.
+
+Kaik Andy Yocks Sandoval   41:17
+El documento final es.
+
+LUIS FELIPE MORA UMAÑA   41:19
+No, señor.
+
+Kaik Andy Yocks Sandoval   41:20
+El primer documento.
+
+LUIS FELIPE MORA UMAÑA   41:22
+Sí, señor.
+
+Kaik Andy Yocks Sandoval   41:23
+Okey, déjamelo hablo entonces.
+
+TAYRON ALONSO SALAS NUÑEZ   41:24
+No.
+
+Kaik Andy Yocks Sandoval   41:27
+Espérate, espérate.
+
+LUIS FELIPE MORA UMAÑA   41:28
+Este lo tiene en el repo.
+
+Kaik Andy Yocks Sandoval   41:31
+Repo, sí, o sea, sí lo tengo, pero pasaron cositas.
+
+LUIS FELIPE MORA UMAÑA   41:36
+KK.
+
+Kaik Andy Yocks Sandoval   41:38
+Pasaron cositas, profe.
+
+LUIS FELIPE MORA UMAÑA   41:42
+¿Qué pasó?
+
+Kaik Andy Yocks Sandoval   41:43
+No sé por qué.
+Realmente mire, pero pues ajá, no importa, pues tú sabes perder los puntos, pero pues ajá, aquí mira lo que me dice hice uno nuevo porque dije ser aquí aquí.
+Mire, me pides como doble verificación a saber por qué, pero no sé por qué me pido las verificaciones. Entonces, pues, pero no sé qué poner.
+
+LUIS FELIPE MORA UMAÑA   42:09
+Eso es normal.
+No le llegó algo al correo.
+
+Kaik Andy Yocks Sandoval   42:15
+pues no O sea literalmente bueno ya he estado revisando verdad Este es el de mi mamá eso no lo veo el mío Mira ya lo he mandado varias veces Mira 20 20 20 20 y pues nada hasta pedir
+
+LUIS FELIPE MORA UMAÑA   42:32
+En dale atrás.
+
+Kaik Andy Yocks Sandoval   42:33
+Pedí, pedí, pedí con cambiar contraseña y no, y que.
+
+LUIS FELIPE MORA UMAÑA   42:38
+Darle notificaciones.
+
+Kaik Andy Yocks Sandoval   42:41
+Notificación.
+Where is it? Where is it?
+
+LUIS FELIPE MORA UMAÑA   42:45
+Dale spam, primero regresamos spam ahora que hacemos spam ahí.
+
+Kaik Andy Yocks Sandoval   42:49
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   42:51
+Okay.
+No vamos de nuevo al home.
+Vea arriba dice principal, lo es promociones social, notificaciones, no promociones no, porque son promociones. Vamos a notificaciones.
+
+Kaik Andy Yocks Sandoval   43:03
+Ajá, okey, promociones, sí.
+No sé, okey, notificaciones, aquí está, no, es que no sé qué pasó, la verdad, y pues.
+
+LUIS FELIPE MORA UMAÑA   43:11
+O K o K, dame un toque, este vámonos ahí arriba al aquí, vamos aquí, porfa.
+
+Kaik Andy Yocks Sandoval   43:17
+A.
+Aquí.
+
+LUIS FELIPE MORA UMAÑA   43:21
+Ajá, de ley donde es este.
+
+Kaik Andy Yocks Sandoval   43:21
+Ajá, sí, aquí le tocó aquí, ya le toqué y luego le volví aquí.
+
+LUIS FELIPE MORA UMAÑA   43:26
+No, pero ese no.
+So, no te ahí, ajá, begin account or email recovery.
+
+Kaik Andy Yocks Sandoval   43:32
+Ajá, pues sí, entonces creo que aquí pues me manda esto.
+
+LUIS FELIPE MORA UMAÑA   43:39
+What is next to Paul will review your account request one or three días?
+
+Kaik Andy Yocks Sandoval   43:44
+Yes.
+O sea, como te digo, pues no tengo pedo porque al final de cuentas, si no se puede ingresar, no puede calificar, obviamente es lógico, pero es para que vea que no sé qué pasó, la verdad. Yo estuve intentando, o sea, a ver, sí, o sea, me dio este fue el único que me dio lo metí.
+
+LUIS FELIPE MORA UMAÑA   43:58
+¿Pero usted está, usted ha estado pochando en la vara?
+Uh-huh.
+
+Kaik Andy Yocks Sandoval   44:05
+Pero me mandó aquí, ya no lo metí y luego toqué.
+
+LUIS FELIPE MORA UMAÑA   44:08
+Desvía le metiste el reporte.
+
+Kaik Andy Yocks Sandoval   44:11
+Y no sé.
+
+LUIS FELIPE MORA UMAÑA   44:11
+Ahora tiene que esperar a que salga el reporte.
+
+Kaik Andy Yocks Sandoval   44:13
+Entonces sí, bueno, pero pues ajá, bueno, x entonces por esa parte, pues como le digo, no tengo, pues sí hay problema, pero pues si no hay nada que hacer, pues.
+
+LUIS FELIPE MORA UMAÑA   44:23
+Talk.
+Vea, bájalo de mall, ese bajémoslo de mall.
+
+Kaik Andy Yocks Sandoval   44:26
+No, eso no es.
+Modulo módulo, ¿cómo es? Wait, me perdí.
+
+LUIS FELIPE MORA UMAÑA   44:34
+¿Sí, de modo, usted entregó el entregable uno en modo, verdad?
+Ok, pero si eso git.
+
+Kaik Andy Yocks Sandoval   44:41
+Es que sí.
+
+LUIS FELIPE MORA UMAÑA   44:44
+Okay.
+Okay.
+
+Kaik Andy Yocks Sandoval   44:49
+Pero usado, o sea, usted sabe que a mí me cuesta la el git y no sé por qué me mandó eso.
+No, it is.
+
+LUIS FELIPE MORA UMAÑA   44:57
+Yeah.
+
+Kaik Andy Yocks Sandoval   45:03
+¿Cuál?
+
+LUIS FELIPE MORA UMAÑA   45:04
+Halo.
+No sé cuál es el curso que está llevando.
+
+Kaik Andy Yocks Sandoval   45:07
+Sí, perdón, la no es que es mira, ya estoy, pero como dice el dicho, ****** fuera del tarro.
+Contenido el curso aquí entregable uno ahora es.
+
+LUIS FELIPE MORA UMAÑA   45:17
+Vamos arriba, ajá.
+Mhm.
+¿Es correcto?
+
+Kaik Andy Yocks Sandoval   45:23
+Okay.
+I have a gmail in list.
+Aquí y pues escritorio y aquí es.
+
+LUIS FELIPE MORA UMAÑA   45:37
+Sí, señor.
+
+Kaik Andy Yocks Sandoval   45:38
+Ay, aquí listo.
+
+LUIS FELIPE MORA UMAÑA   45:42
+Y ahí va bajando ahí.
+
+Kaik Andy Yocks Sandoval   45:42
+Entonces.
+Chao.
+
+LUIS FELIPE MORA UMAÑA   45:48
+Bien.
+
+Kaik Andy Yocks Sandoval   45:56
+Sí, bueno, sí utilicé bastante verdad de aquí, pero sí hice como una actualización porque me hice, me hice un colocho, la verdad, ahorita se lo va a ver.
+
+LUIS FELIPE MORA UMAÑA   46:04
+Okay.
+O K, ya la moda porque ya no estoy leyendo tan rápido, ya estar tan acelerado, me ganó la dislexia en la clase.
+
+Kaik Andy Yocks Sandoval   46:12
+Okay, okay, okay, okay.
+Ok.
+
+LUIS FELIPE MORA UMAÑA   46:18
+Ya tengo como amerito también.
+
+Kaik Andy Yocks Sandoval   46:19
+Sí, yo no, fíjense, o sea.
+Yo no he almorzado, no he hecho nada, no he hecho nada y mañana también tengo clases a las 8:00 toda una belleza.
+
+LUIS FELIPE MORA UMAÑA   46:30
+Ahora sí, sigue bajando ahí, porfa.
+
+Kaik Andy Yocks Sandoval   46:35
+Yeah.
+
+LUIS FELIPE MORA UMAÑA   46:39
+Bien, todo bien.
+Vamos a ver, ajá.
+
+Kaik Andy Yocks Sandoval   46:46
+Eso, bueno, si quieres se lo se lo explico esa parte o no.
+
+LUIS FELIPE MORA UMAÑA   46:49
+Cuéntame.
+
+Kaik Andy Yocks Sandoval   46:50
+Ok ahí usted ahorita lo va a ver pero yo preferí para hacerlo más ordenado como usted está viendo en carpetas en carpetas y para que no me perdiera y que usted pudiera tener de fase de fácil acceso y poderlo ver de mayor de forma más accesible en lugar de meterlo todo todo en uno solo
+
+LUIS FELIPE MORA UMAÑA   46:56
+Mhm.
+Hey.
+
+Kaik Andy Yocks Sandoval   47:13
+Pues por eso hice, pues por eso había hecho eso.
+
+LUIS FELIPE MORA UMAÑA   47:13
+Se van bajando.
+Mhm.
+Okay, muy bien.
+
+Kaik Andy Yocks Sandoval   47:30
+Ese niño.
+
+LUIS FELIPE MORA UMAÑA   47:37
+Mhm.
+
+Kaik Andy Yocks Sandoval   47:37
+o sea lo vuelvo a repetir este pues verdad Esta era la vida pero pasaron cositas y pues sí se hizo como un cambio así como que un poquito radical Bueno ahí no sé por qué se hizo así la verdad O sea sí no sé no sé yo solo
+
+LUIS FELIPE MORA UMAÑA   47:47
+Todo bien, normal.
+Sí.
+Chelo, si tuli ellos ahí quedaron abajo, verdad.
+
+Kaik Andy Yocks Sandoval   47:57
+Yo usualmente siempre los pongo, pues normal, ¿verdad? Pero no sé, usualmente dicen, dicen, cuenta la leyenda que el PDF o cosas así que los desole, no sé yo, pero.
+
+LUIS FELIPE MORA UMAÑA   48:06
+El formato es diferente, tenés que revisar y meter un par de cambios de líneas más.
+
+Kaik Andy Yocks Sandoval   48:11
+Okey, okey, bueno, pero pues ajá, sigo bajando, bueno.
+
+LUIS FELIPE MORA UMAÑA   48:15
+Era bueno, ahí como también como meterle un par de bolecitos ahí para que sea más bonito.
+
+Kaik Andy Yocks Sandoval   48:19
+Es que eso fue lo es que eso fue lo que yo le dije. O sea, ahorita cuando con el nuevo que usted va a ver, va a tener más como que yo no más contexto, contexto y toda la cosa. Dios mío, estoy como Chihuahua.
+
+LUIS FELIPE MORA UMAÑA   48:27
+Game.
+Okay.
+Mhm.
+
+Kaik Andy Yocks Sandoval   48:36
+Y.
+Algunas cosas sí se cumplieron con otras cosas de plano verdad para que vayas sabiendo Pues sí me costaron bastante otras cositas que no se pudieron hacer pero pues que sí se
+Si se piensan a hacer ya después, porque obviamente esto yo lo sé, esto es como que digamos que la base para lo que usted está explicando, pues tanto hoy como mañana y así.
+
+LUIS FELIPE MORA UMAÑA   49:06
+Mhm.
+
+Kaik Andy Yocks Sandoval   49:07
+¿Pregunta, siempre vamos a usar un blazer o no?
+
+LUIS FELIPE MORA UMAÑA   49:10
+Sí, señor, revise los primeros minutos de la.
+
+Kaik Andy Yocks Sandoval   49:13
+Sí, es que yo no estoy, pero sí en el o K o K o K.
+
+LUIS FELIPE MORA UMAÑA   49:14
+De la clase, estuvimos hablando un poco del proyecto, échele un ojillo ahí. y.
+Échele un ojillo ahí, cualquier duda del proyecto que tenga me avisa igual yo les esposo el proyecto ahora.
+
+Kaik Andy Yocks Sandoval   49:24
+Sí, señor, y listo, entonces ahí sigamos.
+
+LUIS FELIPE MORA UMAÑA   49:31
+Mhm.
+K.
+
+Kaik Andy Yocks Sandoval   49:39
+Okay.
+
+LUIS FELIPE MORA UMAÑA   49:40
+Desde allí, yo ahí se le falta como amor, verdad, poquito de amor.
+
+Kaik Andy Yocks Sandoval   49:42
+Sí o sea este fue como que pues Ajá verdad como que el primer sencillo este segundo que dice siento que sí le puse en con base creo que sí es así con base a al pesar a lo que fui haciendo verdad obviamente
+
+LUIS FELIPE MORA UMAÑA   49:54
+Mhm.
+Porque el contenido no está mal.
+
+Kaik Andy Yocks Sandoval   50:01
+¿No, pero o sea, hay me cien, pues tú sabes, verdad? Siento que como se dice más como que algunas pictures o ejemplos.
+
+LUIS FELIPE MORA UMAÑA   50:11
+¿No necesariamente imágenes o ejemplos, sino también los títulos son títulos, verdad?
+
+Kaik Andy Yocks Sandoval   50:16
+Sí, no sé por qué pasó esto, la verdad, pero bueno, sí, hay una disc, una disculpilla y no sé qué es de verdad, como usted me está diciendo, seguro tuve que darle unos unos taps para que se que se que se viera.
+
+LUIS FELIPE MORA UMAÑA   50:20
+Yeah.
+No solamente eso de los sitios, sino que los títulos son títulos, digamos, aquí salen muy planos, digamos.
+
+Kaik Andy Yocks Sandoval   50:37
+No te se refiere como like más grandes.
+
+LUIS FELIPE MORA UMAÑA   50:40
+De títulos son títulos, son títulos, no?
+
+Kaik Andy Yocks Sandoval   50:43
+Ay.
+
+LUIS FELIPE MORA UMAÑA   50:45
+¿Cómo lo ¿Cómo lo destaca usted? Por ejemplo, hay criterios de aceptación. ¿Cómo destaca usted que no es un párrafo más del texto que ya está viendo, verdad?
+
+Kaik Andy Yocks Sandoval   50:45
+Okay, okay.
+Okay.
+O K.
+
+LUIS FELIPE MORA UMAÑA   50:58
+Para eso son los títulos, subtítulos, todas esas cosas ahí de.
+
+Kaik Andy Yocks Sandoval   51:03
+Sí, en español.
+
+LUIS FELIPE MORA UMAÑA   51:05
+Exacto.
+
+Kaik Andy Yocks Sandoval   51:06
+sí, entonces bueno, lo tomaré en consideración y buscaré acerca a ellos.
+Me llega, me llega hoy literalmente en el correo en donde me llega un correo diciendo inscríbete hoy es el último día para el TCU y yo como que es eso y me pongo a leer y ya me inscribí y me y me sale como eso sí tiene que ir a probar
+
+LUIS FELIPE MORA UMAÑA   51:18
+Sí.
+
+Kaik Andy Yocks Sandoval   51:32
+Las últimas, las últimas materias y yo la chingada madre, no, mira, yo manifiesto que es que le paso, le paso, esta vez sí le paso.
+
+LUIS FELIPE MORA UMAÑA   51:44
+Está así.
+
+Kaik Andy Yocks Sandoval   51:45
+Oye, esperemos que sí, si no sé qué voy a hacer.
+
+LUIS FELIPE MORA UMAÑA   51:50
+Hey, to está sus manos.
+
+Kaik Andy Yocks Sandoval   51:52
+sí, obvio.
+Y.
+Messius.
+
+LUIS FELIPE MORA UMAÑA   52:01
+Aquí todavía vamos a ver aquí arriba si vamos a hablar decisiones de diseño.
+
+Kaik Andy Yocks Sandoval   52:03
+Ajá.
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   52:07
+Hablamos de decisión del diseño. este.
+¿De previo, verdad? Digamos, no tanto no tan técnico. Recuerde que ese documento no era tan técnico.
+
+Kaik Andy Yocks Sandoval   52:17
+Ajá, sí, señor.
+
+LUIS FELIPE MORA UMAÑA   52:18
+Documento administrativo.
+
+Kaik Andy Yocks Sandoval   52:20
+Okay, okay, okay.
+Pues o sea, yo fue como que le puse así como que la idea de como si fuera planeando las conclusiones. Pero como le digo, si fue como un cambio porque siempre, o sea, a ver, contexto lo que pasó. Me confundí y como para no echar a perder.
+Todo lo que tenía porque me era bastante lo que tenía, pues hice como que pues la idea que usted había comentado en una de las clases ahorita se va a dar cuenta y cuando se los ponga, pero sí, entonces pues por eso esto cambia un poquitico.
+
+LUIS FELIPE MORA UMAÑA   52:49
+Mhm.
+MM.
+Okay.
+
+Kaik Andy Yocks Sandoval   53:03
+Listo.
+
+LUIS FELIPE MORA UMAÑA   53:04
+Listen.
+
+Kaik Andy Yocks Sandoval   53:05
+¿Ajá, qué más le enseño el qué más el trillo?
+
+LUIS FELIPE MORA UMAÑA   53:09
+Hagamos algo, sí, por favor, demostralo.
+
+Kaik Andy Yocks Sandoval   53:10
+Dime.
+Ajá, o k, le decía, voy a cerrar es, ajá, ahora sí, espérese, listo.
+Aquí está.
+Aquí, listo, voy a subir.
+
+LUIS FELIPE MORA UMAÑA   53:27
+Okey, vamos a ver.
+
+Kaik Andy Yocks Sandoval   53:29
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   53:31
+Aparentemente todo está listo, menos notificaciones y estadísticas.
+
+Kaik Andy Yocks Sandoval   53:34
+Sí, lo último, sí, no lo puedo hacer.
+Sí, ¿en qué nos referimos con notificaciones? En la parte de registro de notificaciones me faltó y visualización de timeline me se refiere al relojito que vi antes de irme, que un compañero lo tenía. Eso sería y estadísticas del sistema que sí me hizo falta.
+
+LUIS FELIPE MORA UMAÑA   53:55
+Mhm.
+
+Kaik Andy Yocks Sandoval   53:59
+Porque pues verdad, pues ya no, pues no me, o sea, por más que me usted sabe que me organicé desde el mismo día, pero sí sé, o sea, como le digo, si con ese con ese problema que sí se me hizo, se me extendió un poquitico más de las cosas y se me hizo no un colocho.
+
+LUIS FELIPE MORA UMAÑA   54:09
+Mhm.
+
+Kaik Andy Yocks Sandoval   54:18
+Pero sí se me hizo un problema, entonces traté de hacer ese problema como una solución y al final pues me hizo falta tiempo. Y eso que o sea, y tú dirás, bueno, pero pues a fin de semana, o sea, sí lo hacía, pero pues más que lo intenté y eso que llegué 2 días, estuve 48 horas sin dormir arreglando esto, o sea.
+
+LUIS FELIPE MORA UMAÑA   54:26
+En.
+
+Kaik Andy Yocks Sandoval   54:37
+Todo el terminan lo com todo completo.
+
+LUIS FELIPE MORA UMAÑA   54:41
+Perfect.
+
+Kaik Andy Yocks Sandoval   54:41
+Bueno, y pues ajá.
+
+LUIS FELIPE MORA UMAÑA   54:43
+Okay, but it's the...
+Vamos a ver.
+
+Kaik Andy Yocks Sandoval   54:53
+Sí.
+
+LUIS FELIPE MORA UMAÑA   54:54
+Vamos a avisar el estudio.
+
+Kaik Andy Yocks Sandoval   54:56
+My visual is to you orchestra.
+
+LUIS FELIPE MORA UMAÑA   54:59
+Diseñar.
+
+Kaik Andy Yocks Sandoval   55:00
+El cierro esto para que usted pueda ver, okay, mira, así fue como.
+
+LUIS FELIPE MORA UMAÑA   55:03
+O K para ver una cosa ahí rápido, este dale ahí donde dice git arriba.
+
+Kaik Andy Yocks Sandoval   55:05
+Ajá.
+Aquí, git compilot.
+
+LUIS FELIPE MORA UMAÑA   55:12
+No arriba a la izquierda.
+
+Kaik Andy Yocks Sandoval   55:14
+Okay.
+
+LUIS FELIPE MORA UMAÑA   55:15
+Ha.
+
+Kaik Andy Yocks Sandoval   55:19
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   55:19
+No lo tienes ligado a un repositorio.
+
+Kaik Andy Yocks Sandoval   55:23
+Sí, yo no le había puesto, pues técnicas de programación 2026.
+
+LUIS FELIPE MORA UMAÑA   55:30
+Pero no estamos repo, vamos a la carpeta.
+
+Kaik Andy Yocks Sandoval   55:30
+Okay.
+Oh, si es que, como le digo, si eso me sigue costando, entonces nos.
+No, entonces seguro si no lo no lo puse, no el positorio, sí lo metí, pero o sea, lo metí las primeras veces y todas las las hacía push, pero seguro no sé, o sea.
+
+LUIS FELIPE MORA UMAÑA   55:44
+No lo metiste.
+Por eso vamos a la carpeta.
+
+Kaik Andy Yocks Sandoval   55:56
+Carpeta.
+
+LUIS FELIPE MORA UMAÑA   55:58
+Del File Explorer.
+
+Kaik Andy Yocks Sandoval   56:00
+Ah, check, that makes sense.
+
+LUIS FELIPE MORA UMAÑA   56:04
+Hey, dónde está?
+
+Kaik Andy Yocks Sandoval   56:04
+Pues eso es lo que yo lo que he estado haciendo.
+
+LUIS FELIPE MORA UMAÑA   56:08
+Dale click derecho atrás dale atrás.
+
+Kaik Andy Yocks Sandoval   56:11
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   56:12
+Dale clic derecho ahí.
+
+Kaik Andy Yocks Sandoval   56:14
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   56:16
+Este abrir Get Bash.
+
+Kaik Andy Yocks Sandoval   56:21
+Y.
+Open git bash aquí.
+
+LUIS FELIPE MORA UMAÑA   56:25
+Uh-huh.
+
+Kaik Andy Yocks Sandoval   56:26
+Ajá, listo.
+
+LUIS FELIPE MORA UMAÑA   56:30
+Ok, este sede espacio, punto, punto.
+
+Kaik Andy Yocks Sandoval   56:34
+CD espacio, punto, punto.
+
+LUIS FELIPE MORA UMAÑA   56:39
+Enter.
+Este get status.
+
+Kaik Andy Yocks Sandoval   56:47
+Estatus.
+¿Y espacio enter, verdad?
+
+LUIS FELIPE MORA UMAÑA   56:51
+Unterson.
+
+Kaik Andy Yocks Sandoval   56:53
+A.
+
+LUIS FELIPE MORA UMAÑA   56:54
+Que dice que no estás asociado a ningún repositorio.
+
+Kaik Andy Yocks Sandoval   56:54
+no sé en repositorio Sí entonces seguro no sé como le digo sí pero pues como pasaron esos detalles pero no pues como le digo si no aparece no importa no tengo problema ya después más adelante yaca no termina la
+
+LUIS FELIPE MORA UMAÑA   57:00
+Está la carpeta.
+
+Kaik Andy Yocks Sandoval   57:13
+Se me Se me pasan los 3 días, ya se lo muestro sin la clasificación, pero para que vea que sí lo hice, pero no importa ahorita x tranquilidad, yo sé cómo es usted.
+
+LUIS FELIPE MORA UMAÑA   57:22
+Su repositor es público.
+
+Kaik Andy Yocks Sandoval   57:25
+Creo siendo mal, sí, no sé, no, profe, déjelo así.
+
+LUIS FELIPE MORA UMAÑA   57:30
+Váyase a la, regresemos, regresemos, tenga paz, tenga paz. No quiero que pierda el proyecto por una tontera. Okay, entonces este usted subió el link de del repositorio a módulos, ¿verdad? Ajá, busques ese link donde sea que lo tenga.
+
+Kaik Andy Yocks Sandoval   57:44
+Ajá.
+Eh.
+Pues en muros, me lo se refiere o cómo.
+
+LUIS FELIPE MORA UMAÑA   57:57
+Donde sea que lo tenga, se lo tiene abajo descargado, lo tiene descargado, pero puede ser el link del repositorio.
+
+Kaik Andy Yocks Sandoval   58:06
+It's.
+
+LUIS FELIPE MORA UMAÑA   58:06
+A ver si es público.
+
+Kaik Andy Yocks Sandoval   58:09
+Es.
+Así es.
+Sí, sin modo, pues.
+No, yo creo que no lo tengo, profe, porque no los no nos ha pedido usted, pues actualizando nada, sí.
+
+LUIS FELIPE MORA UMAÑA   58:20
+Sí, señor.
+Sí, señora.
+
+Kaik Andy Yocks Sandoval   58:26
+Entonces.
+
+LUIS FELIPE MORA UMAÑA   58:26
+¿Qué era lo que tenía que entregar?
+
+Kaik Andy Yocks Sandoval   58:29
+Pues lo entregable uno.
+
+LUIS FELIPE MORA UMAÑA   58:32
+No, señor, proyecto uno.
+
+Kaik Andy Yocks Sandoval   58:34
+Así, pero el proyecto fue pues miércoles, o sea.
+
+LUIS FELIPE MORA UMAÑA   58:37
+Sí, señor, pero dale ahí.
+
+Kaik Andy Yocks Sandoval   58:40
+No, yo no lo envié porque recuerdo que yo me fui, pues apenas.
+
+LUIS FELIPE MORA UMAÑA   58:44
+Pura vida.
+
+Kaik Andy Yocks Sandoval   58:46
+No, pero pues son 10 puntos, no importa ya que XD.
+
+LUIS FELIPE MORA UMAÑA   58:50
+Más o menos, es que vamos a ver dónde es que.
+
+Kaik Andy Yocks Sandoval   58:55
+No, pues no.
+
+LUIS FELIPE MORA UMAÑA   58:58
+Da un toque para ver algo, da un toque para ver algo.
+
+Kaik Andy Yocks Sandoval   58:58
+No sé, ajá.
+
+LUIS FELIPE MORA UMAÑA   59:01
+Este manténgame la cordura, 2 segundos.
+
+Kaik Andy Yocks Sandoval   59:04
+Okay, pero.
+
+LUIS FELIPE MORA UMAÑA   59:05
+Es todo bien, es joda, joda, vamos a ver.
+Este GitHub.
+So.
+Tiene que cuidar sus cuentos, muchacho.
+
+Kaik Andy Yocks Sandoval   59:24
+O sea, no sé qué pasó, porque me pide esa doble verificación si no sé dónde me salió eso, la verdad.
+
+LUIS FELIPE MORA UMAÑA   59:30
+¿Cuál es usuario?
+
+Kaik Andy Yocks Sandoval   59:32
+Pues mi correo electrónico.
+
+LUIS FELIPE MORA UMAÑA   59:35
+No, su usuario de Git.
+
+Kaik Andy Yocks Sandoval   59:37
+Aquí entro con el correo electrónico, profe.
+
+LUIS FELIPE MORA UMAÑA   59:40
+Sí, pero tenés que tener un usuario de git.
+
+Kaik Andy Yocks Sandoval   59:43
+Sí.
+Pero no me lo no me lo aprendí. Es que no. O sea, literalmente entro con el correo. No, no, solo lo creé, pero ya sin más, no.
+
+LUIS FELIPE MORA UMAÑA   59:56
+What is the corrom?
+
+Kaik Andy Yocks Sandoval   59:58
+Es bueno, se lo escribo o se lo digo. Bueno, Andy o K Andy Y o CKS.
+
+LUIS FELIPE MORA UMAÑA   1:00:02
+Well, listen.
+O CKS, ajá.
+
+Kaik Andy Yocks Sandoval   1:00:11
+Arroba.
+
+LUIS FELIPE MORA UMAÑA   1:00:13
+Oh gmail.com.
+
+Kaik Andy Yocks Sandoval   1:00:14
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:00:16
+Sí, bote, no me salís.
+
+Kaik Andy Yocks Sandoval   1:00:19
+Imagínate.
+Imagínate.
+
+LUIS FELIPE MORA UMAÑA   1:00:22
+A. Ndy.
+
+Kaik Andy Yocks Sandoval   1:00:26
+Ajá, o CKS.
+
+LUIS FELIPE MORA UMAÑA   1:00:28
+No se cae solo una ahí.
+
+Kaik Andy Yocks Sandoval   1:00:30
+Sí.
+Sí, o sea, menos aquí.
+
+LUIS FELIPE MORA UMAÑA   1:00:32
+Que vamos a ver.
+Users, dice que hay 2 usuarios, Andy Jox y Andy Jox 123 guión.
+
+Kaik Andy Yocks Sandoval   1:00:40
+Así este fue el que me lo creía ahorita porque pues dije, pues no sé, a ver si este sí, el mío.
+
+LUIS FELIPE MORA UMAÑA   1:00:45
+What is on the jokes?
+Ok, dice que no tener repositorios públicos.
+
+Kaik Andy Yocks Sandoval   1:00:50
+¿Dónde metes?
+
+LUIS FELIPE MORA UMAÑA   1:00:57
+Y en el otro salario tampoco tener repositores públicos.
+
+Kaik Andy Yocks Sandoval   1:00:59
+No, porque se me lo quería hacer 2 segundos.
+
+LUIS FELIPE MORA UMAÑA   1:01:05
+Bueno, ahí vamos a la carpeta.
+
+Kaik Andy Yocks Sandoval   1:01:08
+Bueno, carpeta, carpeta aquí.
+
+LUIS FELIPE MORA UMAÑA   1:01:11
+Sí, señor, sí, señor.
+Nada más de revisamos que bueno, ahí la carpeta no se ha actualizado.
+
+Kaik Andy Yocks Sandoval   1:01:18
+Hey.
+Pues sí.
+
+LUIS FELIPE MORA UMAÑA   1:01:21
+Okey, regresemos la boca.
+
+Kaik Andy Yocks Sandoval   1:01:23
+¿Es de oscura la nueva, verdad?
+
+LUIS FELIPE MORA UMAÑA   1:01:26
+Ahí mismo revisamos ahí, debería estar ahí mismo.
+
+Kaik Andy Yocks Sandoval   1:01:29
+¿Qué?
+
+LUIS FELIPE MORA UMAÑA   1:01:30
+Ok, vamos a ver, este esa no me sirve porque está en Word. Tenemos que revisar un PDF con fecha de antes de la entrega.
+
+Kaik Andy Yocks Sandoval   1:01:41
+Oh.
+Oh.
+
+LUIS FELIPE MORA UMAÑA   1:01:43
+Porque la documentación se entrega en PDF.
+
+Kaik Andy Yocks Sandoval   1:01:45
+En PDF se me olvidó, bueno.
+
+LUIS FELIPE MORA UMAÑA   1:01:48
+Sí, señora.
+No está en PDF.
+
+Kaik Andy Yocks Sandoval   1:01:53
+No, es que se me olvidó, profe, se me olvidó. Bueno, no importa. Entonces esto lo cierro, que no.
+
+LUIS FELIPE MORA UMAÑA   1:01:57
+Ring.
+Okay.
+No hay mucho que revisar ahí, bueno, echémoslo ahí nada más para ver más o menos cómo está el sistema, pero.
+
+Kaik Andy Yocks Sandoval   1:02:10
+Ahh.
+
+LUIS FELIPE MORA UMAÑA   1:02:11
+Pero sí, no hay mucho que hacer. Es que eso debería estar en PDF con fecha del con la fecha de la entrega. ¿Es correcto?
+
+Kaik Andy Yocks Sandoval   1:02:15
+En PDF.
+Del miércoles pasado.
+Bye.
+
+LUIS FELIPE MORA UMAÑA   1:02:22
+Ya que no está en git.
+
+Kaik Andy Yocks Sandoval   1:02:24
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:02:25
+Estoy siendo muy flexible, como que no estoy usando git.
+
+Kaik Andy Yocks Sandoval   1:02:27
+Sí yo sé yo lo sé yo lo sé más bien bueno bueno le muestro se utilizó pues Ajá esto aquí utilicé pues la arquitectura de sistema se utilizó varios tipos de de modelos verdad
+El modelo es este los controladores que usted va a ver va a ir viendo fue lo que los fui metiendo la lógica necesaria verdad de los registros de las consultas las vistas las views que es donde.
+
+LUIS FELIPE MORA UMAÑA   1:02:59
+Bueno, aquí sí hay titulitos.
+
+Kaik Andy Yocks Sandoval   1:03:01
+Es que sí, o sea, como le digo, eso lo hice, pues más bonito, más ajá, pero se me olvidó que era en PDF.
+Bueno, aquí aquí le sigo contando, timeloki aquí fue el membroche porque ajá, estás haciendo solo un menú y luego cuando llegué a.
+
+LUIS FELIPE MORA UMAÑA   1:03:12
+Okay.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:03:25
+Pronósticos, creo que es pronósticos. ¿Qué se le hice? Pues me di cuenta que pues no, verdad, porque como es así, iba a ser ta ta ta. Entonces tuve que hacer 2 menús para hacerlo como usted, como usted nos había dicho que usted dijo, mira, se puede hacer ta ta ta, pero pues ajá, ya eso es cosa así.
+
+LUIS FELIPE MORA UMAÑA   1:03:43
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:03:44
+Eso es lo que me refiero Esta es la parte pues administrativa de gestión de usuarios verdad se mete el usuario ta ta ta tiene un botón de guardar editar eliminar
+etcétera gestión de selecciones a qué nos referimos aún seguimos en la parte de de administrativo usted selecciona el país puede seleccionar el ranking que usted desea la insignia la insignia es el es el
+
+LUIS FELIPE MORA UMAÑA   1:04:05
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:04:15
+el emblema del del equipo verdad y usted le toca aquí seleccionar imagen y al final usted le toca guardar Bueno ahorita usted lo se los muestro se lo muestro aquí visualización de selecciones Ahí está la parte que pues ya me di cuenta y dijo okay
+Pues tenemos que verla hacerlo de otra forma, selecciones, selecciones disponibles. Entonces aquí solamente el jugador va a ver las selecciones, gestión de partidos. ¿A qué nos referimos? El equipo local, equipo visitante, fecha time. A esto nos referimos con esta parte.
+
+LUIS FELIPE MORA UMAÑA   1:04:38
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:04:54
+Pero sin que el jugador lo pueda ver.
+¿Que sería aquí? ¿Ves? Esa es la parte administrativa, o sea.
+entonces me equivoqué pues traté como que unir los dos para que no fuera tan tan caótico la selección local usted selección local usted elige el país se le va a desplegar los países fecha del partido usted Escoge la fecha del partido estadio se pone el estadio verdad el magistrativo pone sabe nacional estadio
+
+LUIS FELIPE MORA UMAÑA   1:05:11
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:05:28
+Diego Chiapata, tata, gole local, golevistantes.
+
+LUIS FELIPE MORA UMAÑA   1:05:31
+Mhm.
+¿Recuerda que esa información ya precargada, verdad? No había un cruz de partidos.
+
+Kaik Andy Yocks Sandoval   1:05:36
+See just.
+Pues sí, o sea, es que fue que.
+
+LUIS FELIPE MORA UMAÑA   1:05:41
+Pero ya los partidos existen.
+
+Kaik Andy Yocks Sandoval   1:05:43
+Sí, pero es que os lo hice en la parte de del cliente. Es que, como le digo, me confundí bien feo, la verdad. Entonces, pues de ahí.
+
+LUIS FELIPE MORA UMAÑA   1:05:54
+Y no preguntaste nada.
+
+Kaik Andy Yocks Sandoval   1:05:56
+¿Cómo? Ay, sí, o sea, fue no. Sí, fue la penúltima, la penúltima, cuando cuando usted estaba diciendo de después de lo del ranking fue.
+
+LUIS FELIPE MORA UMAÑA   1:06:10
+Okay.
+
+Kaik Andy Yocks Sandoval   1:06:10
+Y pues ya.
+¿Y para las paras realizadas, verdad? Pues ahorita que se las muestro, registro de usuario, registro de selecciones, generación, señor, ajá.
+
+LUIS FELIPE MORA UMAÑA   1:06:19
+Um.
+Sería bueno que vamos a ver.
+Sería bueno que este señorito este.
+
+Kaik Andy Yocks Sandoval   1:06:26
+Señorito, perdón. me.
+
+LUIS FELIPE MORA UMAÑA   1:06:28
+¿No, no, jo, jo, he sacado este sería bueno que este si le va a meter este pruebas que son pruebas manuales, pusieras ahí una captura de pantalla, verdad? Porque cómo comprobas este que de verdad hace el check, verdad? ¿O cómo entiende?
+
+Kaik Andy Yocks Sandoval   1:06:35
+Ajá.
+Okay, sí, como okay, okay, listo ya, bueno, okay, listo, pues generación de ranking. Pues sí, eso como usted me está diciendo, las dificultades encontradas, me dio algunas veces bastante guerra, el data view, a veces se me hacían los el clic.
+
+LUIS FELIPE MORA UMAÑA   1:06:44
+Mhm.
+Okay.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:07:02
+me dio bastante me da el clic en el me dio bastante me mandaba como un error menos uno pues trataba de averiguarlo me trataba de averiguarlo en algunos casos sí lo pude hacer en otros si tuve que ya Buscar por otros medios buscando información Cómo
+
+LUIS FELIPE MORA UMAÑA   1:07:05
+Mm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:07:23
+Se podría hacer para no utilizar eso también, porque sino imagínate, pero resultados obtenidos sería los administrar selecciones insignias, quinielas, pronósticos, visualización de resultados, la generación de rankings basados en los en los aciertos de las personas que hacen que.
+que esté en ese momento y una Pues siento que sí fue una solución funcional y sí estaba bueno A mi parecer organizada y como conclusión y puse conclusión recomendaciones más que todo que sería como
+
+LUIS FELIPE MORA UMAÑA   1:07:46
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:08:02
+el desarrollo permitido para la aplicación de las de la planificación de trello que me facilitó Bueno más que todo como como organizarme y separar las cosas en carpetas como lo estaba comentando y las recomendaciones sería como Eh pues más eh control de administrativos tanto administrativos jugadores no tanto administrativos porque sé que no pedía pero me
+cuenta muy tarde entonces pues Ajá sí entonces actualización dinámicas pues más dinámicas o sea como le digo esta vez sí no le puse tanto color lo hice como que para que funcionara pero a lo mejor tal vez me pues ya para la segunda parte hacerlo poquitico No mucho más estético pero sí ponerle algo más de cariñito pero
+
+LUIS FELIPE MORA UMAÑA   1:08:27
+Un Tokio.
+
+Kaik Andy Yocks Sandoval   1:08:50
+Pero funciona y ya ella sucedía.
+No sé.
+
+LUIS FELIPE MORA UMAÑA   1:08:57
+Hey.
+
+Kaik Andy Yocks Sandoval   1:09:00
+¿Qué más vamos al a esto?
+
+LUIS FELIPE MORA UMAÑA   1:09:06
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:09:07
+¿Okey, qué quiere que le muestre primero?
+
+LUIS FELIPE MORA UMAÑA   1:09:11
+Okay.
+De lo ideal sería comprobar que no hubieran cambios de la última semana.
+Pero ejecutamos.
+
+Kaik Andy Yocks Sandoval   1:09:20
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:09:21
+En la carpeta ahí.
+
+Kaik Andy Yocks Sandoval   1:09:23
+Sí, aquí está, o sea.
+
+LUIS FELIPE MORA UMAÑA   1:09:25
+No, la carpeta es el suyo.
+
+Kaik Andy Yocks Sandoval   1:09:28
+Carpeta carpeta se refiere.
+
+LUIS FELIPE MORA UMAÑA   1:09:30
+El File Explorer.
+
+Kaik Andy Yocks Sandoval   1:09:33
+Bye.
+
+LUIS FELIPE MORA UMAÑA   1:09:35
+Abajo, para abajo.
+
+Kaik Andy Yocks Sandoval   1:09:38
+A ver.
+
+LUIS FELIPE MORA UMAÑA   1:09:38
+Oh.
+Ajá, esa.
+
+Kaik Andy Yocks Sandoval   1:09:42
+aquí.
+
+LUIS FELIPE MORA UMAÑA   1:09:43
+Ajá, a la izquierda.
+A la izquierda, más izquierda.
+
+Kaik Andy Yocks Sandoval   1:09:48
+No esto.
+
+LUIS FELIPE MORA UMAÑA   1:09:49
+A menos izquierda de la izquierda de ese.
+
+Kaik Andy Yocks Sandoval   1:09:54
+Einstein.
+
+LUIS FELIPE MORA UMAÑA   1:09:55
+Ese es el File Explorer, correcto.
+
+Kaik Andy Yocks Sandoval   1:09:56
+¿No, sí, perdón, yo le digo que a tu está chido o ky qué quieres que le busco el documento?
+
+LUIS FELIPE MORA UMAÑA   1:10:00
+Venga.
+Búscame un repositorio, porfa, para ver hace cuánto no cambian los archivos.
+
+Kaik Andy Yocks Sandoval   1:10:07
+Okey, déjeme, déjeme buscarlo, okey, ajá.
+
+LUIS FELIPE MORA UMAÑA   1:10:10
+Mientras tanto, utiliza algún patrón.
+
+Kaik Andy Yocks Sandoval   1:10:14
+El patrón que utilicé fue más que todo.
+di como le di fue como okay okay le sigo contando aquí yo los tengo bueno todos los trabajos los tengo aquí en nuevo cuatri y aquí ves O sea yo lo saqué aquí o sea Ese fue una una un
+
+LUIS FELIPE MORA UMAÑA   1:10:23
+Siga buscando la carpetita.
+Okay.
+
+Kaik Andy Yocks Sandoval   1:10:40
+Con vaca, pero no tiene nada.
+
+LUIS FELIPE MORA UMAÑA   1:10:43
+Sí.
+
+Kaik Andy Yocks Sandoval   1:10:44
+Y ya sé esto, profe, o sea.
+
+LUIS FELIPE MORA UMAÑA   1:10:45
+Ajá, ahora lo es, ajá.
+
+Kaik Andy Yocks Sandoval   1:10:48
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:10:48
+Este abre la carpeta.
+Revisemos okay.
+Dale controllers para ver una cosa.
+
+Kaik Andy Yocks Sandoval   1:11:00
+Control, este controllers.
+
+LUIS FELIPE MORA UMAÑA   1:11:03
+Susanor.
+
+Kaik Andy Yocks Sandoval   1:11:05
+Uh-huh.
+
+LUIS FELIPE MORA UMAÑA   1:11:06
+O K, dice que hay unos que cambiaron ayer y antier.
+
+Kaik Andy Yocks Sandoval   1:11:14
+Uh-huh.
+
+LUIS FELIPE MORA UMAÑA   1:11:15
+Ja, y eso entregaba el 29.
+
+Kaik Andy Yocks Sandoval   1:11:18
+Sí, sí, sí. I think you know.
+
+LUIS FELIPE MORA UMAÑA   1:11:20
+Okay.
+Pero cambiaron ayer y antier y no tenemos forma de resetearlo porque no tienes git.
+
+Kaik Andy Yocks Sandoval   1:11:26
+Sí, entonces sí.
+
+LUIS FELIPE MORA UMAÑA   1:11:28
+¿Qué meter I know?
+
+Kaik Andy Yocks Sandoval   1:11:30
+lo que lo único lo que metí fue solamente fue los botones de salir que que mencionó que me hicieron falta pues dije pues si la hace o ese profesor dice Mira toca el botón de salir pero no sé si
+No.
+
+LUIS FELIPE MORA UMAÑA   1:11:47
+Ok, vámonos atrás, pero en el controller, el botón de salir en el controller.
+
+Kaik Andy Yocks Sandoval   1:11:49
+Ajá.
+Es que sí, ahorita esto lo va a ver.
+
+LUIS FELIPE MORA UMAÑA   1:11:56
+En el controller.
+
+Kaik Andy Yocks Sandoval   1:11:58
+Sí, o sea.
+
+LUIS FELIPE MORA UMAÑA   1:12:00
+Porque él saliera en el controller.
+
+Kaik Andy Yocks Sandoval   1:12:02
+No, en el control, no en el.
+
+LUIS FELIPE MORA UMAÑA   1:12:04
+Por eso, ¿qué fue lo que cambió ayer y antier en el controller?
+
+Kaik Andy Yocks Sandoval   1:12:07
+no lo que cambié aquí en el control fue más que todo el lobby que que fue Ajá
+
+LUIS FELIPE MORA UMAÑA   1:12:15
+No, no, bad, don't do what about.
+¿Ve la fecha de modificación? ¿Lo ves? Ajá. Hay 2 que cambiaron cuatro y 5. Ajá.
+
+Kaik Andy Yocks Sandoval   1:12:21
+sí Ajá cuatro y cinco partido de controles y quinelas a la quinelas lo que hice sí a la quiniela lo que hizo fue que hiciera como que quisiera como que la la Ay cómo se le explicó que tanto la la las
+
+LUIS FELIPE MORA UMAÑA   1:12:26
+¿Qué cambió en los archivos?
+
+Kaik Andy Yocks Sandoval   1:12:40
+Las predicciones, como los resultados, se hicieran todos en un solo en un solo documento, que sería la quine en una sola quiniela.
+¿Y el partido? Pues es lo que le estaba comentando, que pues los hice partidos solamente visibles y que solamente les cambié algunas algunas cosas. O sea, que en lugar de que se viera en forma de Excel, que se viera solamente, o sea, como una.
+
+LUIS FELIPE MORA UMAÑA   1:12:51
+Okay.
+
+Kaik Andy Yocks Sandoval   1:13:10
+Una tabla en sí.
+Y ahí fue donde cambié el dar el dar a Group y lo cambié ahí.
+
+LUIS FELIPE MORA UMAÑA   1:13:14
+Pero en el controller.
+
+Kaik Andy Yocks Sandoval   1:13:17
+Sí, en el control del partido ahí.
+
+LUIS FELIPE MORA UMAÑA   1:13:20
+Por eso en el controller cambiaste el view.
+
+Kaik Andy Yocks Sandoval   1:13:23
+Así un poquitico.
+
+LUIS FELIPE MORA UMAÑA   1:13:25
+Por qué el control es el control, no debería tener nada que ver con el view.
+
+Kaik Andy Yocks Sandoval   1:13:25
+Pero sí.
+Sí, yo sé, sí, yo sé. Entonces eso fue lo que di también nada más.
+
+LUIS FELIPE MORA UMAÑA   1:13:36
+Está durante, está muy duro.
+Que este vamos atrás.
+Vamos a ver, dice que jugador cambió, qué modelos cambió, qué partidos cambió, qué pronósticos cambió.
+
+Kaik Andy Yocks Sandoval   1:13:55
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:13:56
+Básicamente todo cambió hoy.
+
+Kaik Andy Yocks Sandoval   1:14:09
+Entonces sí, nos no sé, o sea, solamente eso fue lo los que hice y lo cerró y López, los errores que había que tenía el de hacer el click y ya, pero.
+Nada más, no alquiere más, pero bueno, entonces.
+
+LUIS FELIPE MORA UMAÑA   1:14:22
+Okay.
+De maladera.
+A ver qué pasa, vamos a ver.
+
+Kaik Andy Yocks Sandoval   1:14:29
+Ajá.
+Okay, but.
+
+LUIS FELIPE MORA UMAÑA   1:14:38
+Complicación, tu eres, nada más, dele que sí, dele que sí, dale que sí.
+
+Kaik Andy Yocks Sandoval   1:14:39
+No puede ser, qué bien.
+No sé por qué me a bueno.
+Entonces, pues aquí yo había puesto.
+
+LUIS FELIPE MORA UMAÑA   1:14:52
+No hay registro.
+
+Kaik Andy Yocks Sandoval   1:14:55
+Sí, o sea.
+el registro es o sea aquí usted se mete en esta en la aplicación mía es es esta forma y usted elige y cómo quiere si quiere seleccione Cómo desea ingresar
+
+LUIS FELIPE MORA UMAÑA   1:15:06
+No.
+No, pero si yo soy si yo soy un usuario nuevo, ¿cómo me registro?
+
+Kaik Andy Yocks Sandoval   1:15:17
+Cierto, tienes razón.
+
+LUIS FELIPE MORA UMAÑA   1:15:20
+Okay.
+Sí, vamos a ver.
+
+Kaik Andy Yocks Sandoval   1:15:25
+¿Qué jugador o qué quiere ver primero?
+
+LUIS FELIPE MORA UMAÑA   1:15:27
+¿De cómo están su sistema?
+
+Kaik Andy Yocks Sandoval   1:15:30
+Bueno, pues si fuera administrador de mi parte, pues entonces usted se mete aquí y como le había comentado, usuarios, entonces aquí la gestión de usuarios, que es el registro, entre comillas, pues una pone un ejemplo, pone.
+
+LUIS FELIPE MORA UMAÑA   1:15:38
+Mhm.
+Van a salir los usuarios ahí.
+
+Kaik Andy Yocks Sandoval   1:15:47
+Los usuarios guardados, sí.
+
+LUIS FELIPE MORA UMAÑA   1:15:49
+A la par a la derecha.
+Sí, y no sale.
+
+Kaik Andy Yocks Sandoval   1:15:55
+Sí, salen, profesor, déjeme terminar de poner.
+
+LUIS FELIPE MORA UMAÑA   1:15:59
+No, pronto si se deberían ver ya.
+
+Kaik Andy Yocks Sandoval   1:16:02
+No, yo lo es que no les tocó guardar. Bueno, así fue como yo lo puse, no sé.
+
+LUIS FELIPE MORA UMAÑA   1:16:07
+Porque no tenemos, pero es que tienen que tener usuarios.
+
+Kaik Andy Yocks Sandoval   1:16:12
+Pero es, o sea, esa es la parte de administración, o sea, cuando usted vaya metiendo.
+
+LUIS FELIPE MORA UMAÑA   1:16:16
+Sí.
+Sí, vamos a ver.
+
+Kaik Andy Yocks Sandoval   1:16:17
+No sé, ya que sí.
+Yo creo que sí.
+
+LUIS FELIPE MORA UMAÑA   1:16:21
+O sea, en el a lo que hoy es que digamos en si es una gestión de usuarios, yo debería poder ver todos los usuarios, ¿verdad?
+
+Kaik Andy Yocks Sandoval   1:16:28
+Sí, pero es que o sea, como no hay ahorita usuarios, sí me entiende. O sea, usted se los va metiendo, o sea, usted lo va guardando, o sea, un ejemplo.
+
+LUIS FELIPE MORA UMAÑA   1:16:32
+¿Y cómo nadie sabes?
+Deberían haber 50 usuarios, verdad o 40 usuarios, no recuerdo cuánto les pedí.
+
+Kaik Andy Yocks Sandoval   1:16:43
+Sí, pero es que, o sea, yo los voy metiendo manualmente, o sea, los la o sea, la persona que va llegando, la aplicación se gestión de usuario, se registra y le toca guardar y se queda en la base, o sea, en una base de datos, es aquí.
+
+LUIS FELIPE MORA UMAÑA   1:16:54
+Ya verían están los usuarios.
+
+Kaik Andy Yocks Sandoval   1:16:58
+¿Ya deberían de usted se refiere que ya deberían de estar ya hecho o k sí?
+
+LUIS FELIPE MORA UMAÑA   1:16:59
+Sí, señor.
+Ya verían a ver los usuarios, deberíamos para registrar uno nuevo, pero ya los demás ya deberían existir, que son los que están jugando. ¿Se acuerda que lo hablamos?
+
+Kaik Andy Yocks Sandoval   1:17:11
+Sí, sí, o sea, entonces sí, bueno.
+
+LUIS FELIPE MORA UMAÑA   1:17:14
+¿Qué?
+
+Kaik Andy Yocks Sandoval   1:17:16
+Bueno, voy a terminar.
+
+LUIS FELIPE MORA UMAÑA   1:17:18
+Vale, continue.
+
+Kaik Andy Yocks Sandoval   1:17:23
+Bueno, entonces aquí y entonces ahí se fían metiendo y para cosas y pues si quieren meter otro, pues de igual forma se se mete.
+
+LUIS FELIPE MORA UMAÑA   1:17:32
+No, todavía demoslo, cómo no sigamos.
+
+Kaik Andy Yocks Sandoval   1:17:34
+Y si por a por B usted quisiera cambiar algo, pues se le soluciona, pone aquí esto y le toca editar y se edita.
+
+LUIS FELIPE MORA UMAÑA   1:17:44
+Okay.
+Mhm.
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:17:50
+Del palé, entonces solamente lo selecciona y le toca eliminar y se elimina.
+
+LUIS FELIPE MORA UMAÑA   1:17:58
+Y.
+
+Kaik Andy Yocks Sandoval   1:18:00
+Y.
+De igual forma, aquí con los partidos, usted se ve aquí, como le había comentado, si coge los partidos. los.
+Es component.
+Y entonces aquí un ejemplo, si fuera por vez y yo fuera al administrador, entonces aquí, tuki.
+Por el local aquí allá, como para que ir actualizando y que los las los jugadores vayan sabiendo también de igual forma.
+O sí, de igual forma, lo mismo, meditar, se puede tocar aquí.
+Y pues verita, pero pues.
+Y así sucesivamente con eso, si ya no los ocupa, entonces eliminar.
+
+LUIS FELIPE MORA UMAÑA   1:18:50
+Alright.
+
+Kaik Andy Yocks Sandoval   1:18:54
+Y bueno, en selecciones, selecciones te va.
+Estaba tocando aquí.
+Entonces cuando el ranking.
+Seleccionar imagen.
+Y así sucesivamente.
+
+LUIS FELIPE MORA UMAÑA   1:19:15
+Earning.
+
+Kaik Andy Yocks Sandoval   1:19:15
+Es y entonces ya es un ejemplo, quisiera editar. De igual forma se hace la misma forma, pero esto esto se va a ver en la forma, en la forma de.
+¿De jugadores, aquí le tocaba que sí, verdad?
+
+LUIS FELIPE MORA UMAÑA   1:19:33
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:19:34
+Okay.
+Ah, bueno, y también lo había puesto aquí un ejemplo, se ha parado por ve, pone la cuenta, sí, pues de igual forma ya salí, es como ser incorrecto, ta ta ta, entonces era algo como que en general.
+Pero bueno, aquí nos vamos a jurador, es ver partidos y aquí están los partidos que están disponibles.
+Ver selecciones, pues a esto me refería con las selecciones.
+
+LUIS FELIPE MORA UMAÑA   1:20:05
+Mhm.
+
+Kaik Andy Yocks Sandoval   1:20:07
+And.
+Okey, pronósticos, entonces un ejemplo, usted que selecciona aquí y usted es el jugador, entonces usted dice okey, Alemania, Argentina, tuki, tuki.
+Y Brasil, Bélgica, uno, uno.
+Y así sucesivamente, pero dejémoslo, dejémoslo así.
+y lo tocamos guardar pronóstico guardados correctamente entonces aquí Perdón aquí entonces ustedes se va al ranking y este va a ver aquí va viendo que Quién ganó si ganó o no Y si ganó puntos total de puntos tres
+
+LUIS FELIPE MORA UMAÑA   1:20:56
+Okay.
+
+Kaik Andy Yocks Sandoval   1:20:57
+Y.
+Y.
+Los pronósticos tuki tuki y las los resultados, verdad que lo que lo había comentado y las estadísticas, que fue lo que me hizo falta y pues el botón de salir, que fue esto.
+Y ya eso, bueno, de mi parte, eso sería, no sé, ahora sí, no se quiere quién dónde quiere que le que le que le enseñe.
+
+LUIS FELIPE MORA UMAÑA   1:21:24
+Le echemos oído el código.
+
+Kaik Andy Yocks Sandoval   1:21:26
+¿Y qué cuál quiere?
+
+LUIS FELIPE MORA UMAÑA   1:21:28
+Digamos sé que me quieren enseñar.
+
+Kaik Andy Yocks Sandoval   1:21:31
+Ok, pues si quiere, pues le muestro los los laviews, que es donde yo tenía pues como los menús, tanto el menú de jugador como el menú principal. ¿Cuál quiere ver usted?
+
+LUIS FELIPE MORA UMAÑA   1:21:44
+Damos del del jugador.
+
+Kaik Andy Yocks Sandoval   1:21:50
+Ay, pero.
+Sí.
+A.
+¿O sea, y antes que usted me dice, qué? Porque yo sé que usted es solamente estás a estas preguntas y que tanto de su autoridad es, pues sí, es mía, ¿verdad? Pero sí me guíe bastante con ayuda, ¿verdad? De del video, YouTube y cosas por ese estilo.
+Pero sí, pero para que sepa, para que no se diga qué tanto, pues mejor para ir adelante.
+
+LUIS FELIPE MORA UMAÑA   1:22:25
+Mhm.
+Les damos los controles.
+
+Kaik Andy Yocks Sandoval   1:22:34
+Okey, controles.
+cual cual la o k sí.
+
+LUIS FELIPE MORA UMAÑA   1:22:44
+What kill him?
+¿Me la login, verdad?
+Bing.
+Dale F 12 a obtener tos.
+
+Kaik Andy Yocks Sandoval   1:23:01
+O KF 2 dame un casito.
+Eh.
+
+LUIS FELIPE MORA UMAÑA   1:23:07
+No obtener tos, primero ponerte en obtener tos.
+
+Kaik Andy Yocks Sandoval   1:23:08
+F.
+Ah, obtener dos.
+
+LUIS FELIPE MORA UMAÑA   1:23:13
+Línea 19, ajá.
+
+Kaik Andy Yocks Sandoval   1:23:15
+Y.
+Obtener, no obtener todos aquí.
+
+LUIS FELIPE MORA UMAÑA   1:23:20
+Ajá, abajo, línea 19.
+
+Kaik Andy Yocks Sandoval   1:23:23
+aquí.
+
+LUIS FELIPE MORA UMAÑA   1:23:23
+Menos, ajá, está obtener 2.
+
+Kaik Andy Yocks Sandoval   1:23:26
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:23:27
+Vale F 12.
+
+Kaik Andy Yocks Sandoval   1:23:30
+Right.
+¿Qué más?
+
+LUIS FELIPE MORA UMAÑA   1:23:40
+Bueno, es que usted no tiene los usuarios cargados, se los va obteniendo ahí si es cierto.
+
+Kaik Andy Yocks Sandoval   1:23:43
+Sí, es que.
+
+LUIS FELIPE MORA UMAÑA   1:23:46
+Sí.
+
+Kaik Andy Yocks Sandoval   1:23:48
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:23:50
+¿Qué lo que se lo que vamos a algún modelo?
+
+Kaik Andy Yocks Sandoval   1:23:54
+Modelo models.
+Eh.
+Partido, quiniela, selección, usuarios.
+
+LUIS FELIPE MORA UMAÑA   1:24:02
+Rochetta.
+
+Kaik Andy Yocks Sandoval   1:24:06
+Aquí.
+
+LUIS FELIPE MORA UMAÑA   1:24:08
+Okay.
+¿Pero es que falta documentación, verdad?
+
+Kaik Andy Yocks Sandoval   1:24:20
+Mm.
+¿En el aspecto de pues de especificar más puntos o cómo?
+
+LUIS FELIPE MORA UMAÑA   1:24:29
+¿Qué se ¿Qué se comenta?
+
+Kaik Andy Yocks Sandoval   1:24:33
+Yes.
+Documentación o K o K, ya sí, pues sí, profe, no sé, la verdad.
+
+LUIS FELIPE MORA UMAÑA   1:24:36
+Ajá.
+Boom.
+
+Kaik Andy Yocks Sandoval   1:24:44
+La media co.
+
+LUIS FELIPE MORA UMAÑA   1:24:44
+No, vea, póngase ahí en la línea 19.
+
+Kaik Andy Yocks Sandoval   1:24:47
+Yes, Nina.
+
+LUIS FELIPE MORA UMAÑA   1:24:48
+A del enter.
+
+Kaik Andy Yocks Sandoval   1:24:50
+Enter.
+
+LUIS FELIPE MORA UMAÑA   1:24:51
+Dele 3 slash.
+
+Kaik Andy Yocks Sandoval   1:24:54
+Sí, lo las los ay, voy, los comentarios se refieren.
+
+LUIS FELIPE MORA UMAÑA   1:25:00
+Sí, señor, esta.
+Nada más incomodar eso conforme vas desarrollando.
+
+Kaik Andy Yocks Sandoval   1:25:05
+O K o K, ya sí, usual ajá, sí, o K, ya sé a qué se refiere usted yo.
+
+LUIS FELIPE MORA UMAÑA   1:25:08
+Eso lo vemos en clases, ¿verdad?
+Todo lo público se comenta.
+
+Kaik Andy Yocks Sandoval   1:25:20
+Okey, sí, entonces.
+Sí, falta otro, falta los comentarios, sí, ya sé.
+
+LUIS FELIPE MORA UMAÑA   1:25:29
+Sí.
+
+Kaik Andy Yocks Sandoval   1:25:30
+Ajá, sí.
+
+LUIS FELIPE MORA UMAÑA   1:25:31
+Okay.
+
+Kaik Andy Yocks Sandoval   1:25:32
+Una disculpa.
+
+LUIS FELIPE MORA UMAÑA   1:25:33
+Oh, thank you.
+
+Kaik Andy Yocks Sandoval   1:25:35
+Donce.
+
+LUIS FELIPE MORA UMAÑA   1:25:36
+King.
+Estamos Andy.
+
+Kaik Andy Yocks Sandoval   1:25:39
+Sí.
+hay una disculpa más bien pues me confundí o sea intenté pues hacer como el ejemplo que la la no El ejemplo o sea lo que usted había dicho o que sí pueden hacer ustedes tanto administrativos como jugadores pero siento que más bien
+
+LUIS FELIPE MORA UMAÑA   1:25:58
+Sí, pero te enfocaste en eso. Recuerde que yo le dije, enfóquese en lo prioritario, ¿verdad? Deje una cosa es dejar una prevista, que fue lo que yo les dije, de diseñar el hacer el diseño con previsión.
+
+Kaik Andy Yocks Sandoval   1:26:00
+Sí.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:26:13
+¿A eso verdad que eso es el open close, verdad? Eso es como cuando se está construyendo una casa.
+
+Kaik Andy Yocks Sandoval   1:26:16
+Mhm.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:26:19
+Y usted dice, bueno, yo aquí quiero hacer un baño, pero no me alcanza para comprar el blog, ni el baño, ni esto, ni lo otro y eso. Voy a dejar la toma del tubo lista. Entonces, en un año que me cae plata, yo ya pongo todo eso y no tengo que romper.
+
+Kaik Andy Yocks Sandoval   1:26:24
+Ajá.
+Ms.
+
+LUIS FELIPE MORA UMAÑA   1:26:39
+Todo el cemento verdad para tirar un hipo tattoo.
+
+Kaik Andy Yocks Sandoval   1:26:42
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:26:43
+Yo ya dejé la prevista y dejas ahí el conito ahí con el cómo se llama esta ahora con el con el codo, verdad? Y ya queda esa vara lista, verdad? Entonces el día de mañana nada más quitas el tapón y sigue tirando el pone una unión y ya termina de hacer el bañito que usted quiere hacer, verdad? Eso es previsión en diseño.
+
+Kaik Andy Yocks Sandoval   1:26:47
+Okay.
+Okay.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:27:01
+No es meterse a dejarlo todo en obra gris y dejar 1/4 ahí pelado y decir, mira, el día de mañana quiero ir a un baño.
+Ya.
+
+Kaik Andy Yocks Sandoval   1:27:09
+¿O K pregunta, verdad? Bueno, sé que si no me acuerdo del cuatrimestre pasado, usted nos pedía como que correcciones.
+
+LUIS FELIPE MORA UMAÑA   1:27:23
+Uh-huh.
+
+Kaik Andy Yocks Sandoval   1:27:23
+O K es, o sea, todo lo que todas las correcciones que tengo que hacer, que bueno, ya al menos usted me dijo una, ¿verdad que son los comentarios, verdad? ¿Quiere que le quite el pues la parte de administrador o qué quiere que la?
+
+LUIS FELIPE MORA UMAÑA   1:27:40
+Yeah.
+Hagamos algo, vea este revise el principio de la clase donde hablamos del proyecto, leas el documento.
+
+Kaik Andy Yocks Sandoval   1:27:42
+Aquí, ajá.
+Mhm.
+Ajá.
+K.
+
+LUIS FELIPE MORA UMAÑA   1:27:55
+Te faltan datos.
+
+Kaik Andy Yocks Sandoval   1:27:56
+Sí, los los sí.
+
+LUIS FELIPE MORA UMAÑA   1:27:57
+Verdad, este todas esas cosas.
+
+Kaik Andy Yocks Sandoval   1:28:00
+Los 50, las 50, o sea, sí, eso.
+
+LUIS FELIPE MORA UMAÑA   1:28:02
+Sí, los partidos, verdad, y todo el sistema de funciones, verdad? En la forma quería funcionar, pues ya tienes datos para validar, verdad? Entonces agregue los daticos, agregue este de métale documentación al código, este termine de hacer las cosas que tiene que hacer, verdad?
+
+Kaik Andy Yocks Sandoval   1:28:10
+Ajá.
+Ajá.
+Ajá, las estadísticas y eso que usted me está diciendo, exacto.
+
+LUIS FELIPE MORA UMAÑA   1:28:22
+Oh.
+¿Los rankings ahí las cómo usara, las insignias, verdad? Y no tenés y si no tienes datos, no tienes insignias.
+
+Kaik Andy Yocks Sandoval   1:28:32
+Las insignias, pues son esas las imágenes que usted que usted vio o esas no, esas sí, eso sí está bien, o sea, o.
+
+LUIS FELIPE MORA UMAÑA   1:28:37
+Mhm, sí, pero meter, digamos, también como que se que se vean con la información, ¿verdad?
+
+Kaik Andy Yocks Sandoval   1:28:44
+O K, o sea, se refiere a que se o sea para dejarlo ir. O sea, yo lo puse como la insignia y el nombre del país, o sea, por ejemplo, Costa Rica y la insignia de Costa Rica.
+
+LUIS FELIPE MORA UMAÑA   1:28:44
+Bueno, okey.
+no, ese es el escudo de Costa Rica.
+Recuerde que teníamos insignias, se acuerda el ma que no había acertado nada o el ma que va de último. Entonces le ponemos una insignia ahí de este.
+
+Kaik Andy Yocks Sandoval   1:29:07
+Okey, okey, listo, listo, ya como la ajá, como quién va ganando y quién va peleando las estrellitas. Okey, listo.
+
+LUIS FELIPE MORA UMAÑA   1:29:12
+¿Ajá, quién va ganando la quiniela, las estrellitas, ahí lo fue, no sé, lo que quiera ponerle ahí?
+
+Kaik Andy Yocks Sandoval   1:29:16
+Okey, listo, mhm, mhm, okey, okey, okey.
+
+LUIS FELIPE MORA UMAÑA   1:29:19
+Ok, léase el proyecto uno, léase el proyecto dos, analícelo, estabilice su git, empiece a bretear en git, por favor.
+
+Kaik Andy Yocks Sandoval   1:29:23
+Ajá.
+Ajá.
+Sí, sí.
+Sí, yo también, y que no recupere eso, sí, lo voy a hacer también. Lo voy a poner público. Sí, lo voy a poner público porque seguro fue en privado baboso.
+
+LUIS FELIPE MORA UMAÑA   1:29:33
+¿Y este?
+Sí, y si no, hágase una cuenta nueva, pues sí.
+Sí, entonces este va a ver si le quita mucho tiempo a eso y crees una cuenta nueva. Ahí tiene el correo de la U, se puede hacer un correo, una cuenta con el correo de la U, pero lo importante es que use Git, ¿verdad? Empezás a usar Git este de no y póngale.
+
+Kaik Andy Yocks Sandoval   1:29:51
+Okay, sí, okay, okay.
+Ajá.
+Sí, okey, está bien y para ver que bueno, el se lo voy a sacar bien y lo que venga.
+
+LUIS FELIPE MORA UMAÑA   1:30:04
+Dele dele, póngale bastante.
+
+Kaik Andy Yocks Sandoval   1:30:07
+Okay muchísimas gracias y una disculpita y pues una disculpa Ah bueno bueno como ya vio verdad eso todo pues todo ya no hace falta que pues verdad les van a pelar
+
+LUIS FELIPE MORA UMAÑA   1:30:11
+Right hand.
+Mhm.
+Bueno, ya perdí esos puntos.
+¿Los de los de esos, verdad? Los de la entrega ahí, que no los del proyecto, los de la entrega.
+
+Kaik Andy Yocks Sandoval   1:30:35
+Okey, okey, okey.
+
+LUIS FELIPE MORA UMAÑA   1:30:37
+King.
+
+Kaik Andy Yocks Sandoval   1:30:38
+Listo, bueno, la ajá.
+
+LUIS FELIPE MORA UMAÑA   1:30:39
+Vea, ponme atención, lo voy a dar un consejo personal, ¿verdad? por?
+
+Kaik Andy Yocks Sandoval   1:30:43
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:30:46
+Este.
+Trabaje con listas.
+Sí, hágase una listica entonces, porque, por ejemplo, yo lo a usar en eso y le hablo desde mi punto de vista personal, yo tiendo a ser un poco desordenado.
+
+Kaik Andy Yocks Sandoval   1:30:52
+Okay.
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:31:02
+Y a mí se me olvidan cosas.
+
+Kaik Andy Yocks Sandoval   1:31:04
+Mhm.
+
+LUIS FELIPE MORA UMAÑA   1:31:05
+¿Verdad? Pero, por ejemplo, yo no sé, hace 15 días tenía 22 personas a cargo y tenía 3 proyectos corriendo.
+Bueno, estaba supervisando 3 proyectos que estaban corriendo.
+Entonces, imagínese si a mí se me empiezan a olvidar las cosas, ¿verdad?
+Entonces yo sé que yo soy muy desordenado, yo sé que a mí se me olvidan cosas, entonces ¿qué empecé a hacer yo? Empecé a hacer listicas todo lo apunto, todo lo apunto, aquí ta esto, esto, esto, esto, esto, esto. Entonces todos los días yo reviso mi checklist, verdad? Hay checklist diarios, hay checklist por ejemplo para el proyecto, tengo que hacer esto.
+Tengo que subirlo, tengo que hacer esto aquí, tengo que hacer esto ya o k tengo eso listo.
+Ok, check, check, check, check. Ok, estoy tranquilo de que nada se me olvidó. ¿Por qué? Porque por ejemplo, no sé, el detalle del PDF. ¿Usted se acuerda que era en PDF, verdad? Pero no lo subió en PDF, pero no lo tenía en PDF. Entonces simplemente usted va a la lista y dice, bueno, ok, el documento tiene que estar en PDF. Check.
+
+Kaik Andy Yocks Sandoval   1:32:04
+Sí.
+
+LUIS FELIPE MORA UMAÑA   1:32:09
+Listo, OK, si le sirve, tal vez si le sirve, tal vez no le sirve, verdad, pero.
+
+Kaik Andy Yocks Sandoval   1:32:11
+Mhm.
+Sí, no, sí, pues no, sí, por supuesto, la verdad, pero pues una, pues una, me imagino que en cuaderno solo hace o qué, es que en bloc de notas. Fíjese que la relación de la sincera no me no me acuerdo, la verdad.
+
+LUIS FELIPE MORA UMAÑA   1:32:26
+Yeah.
+Eso es muy independiente de cada una de las personas.
+
+Kaik Andy Yocks Sandoval   1:32:31
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:32:32
+Hay personas que todo lo manejan en el calendario de Google, porque el calendario de Google tiene formas de agregar checks. Bien por ellos, hay gente que lo hace.
+
+Kaik Andy Yocks Sandoval   1:32:41
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:32:45
+En el teléfono, en la lista, que no sé qué tiene usted, si tiene Android, tiene iPhone. Android, bueno, en iPhone. Probablemente en Android también, no sé. Usted agrega una nota y a la nota usted le puede agregar los checks, ta ta ta ta ta de meterle checks. Y si no, hágalo fácil, hágase una aplicacioncita con ella ahí ta y así aprendo y practica un poquito.
+
+Kaik Andy Yocks Sandoval   1:32:46
+Ajá.
+Andre.
+Ajá.
+Okay.
+Ajá.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:33:08
+Ocupo una aplicación para gestionar esto, necesito que tenga esto y la empezar a desarrollar. Eso lo puedo hacer en vacaciones, pero entonces usted tiene su aplicacioncita para lavar y si no fijo en el marketplace tiene que haber una aplicación de todos o en el o en el mundo de la web tiene una aplicación de todos.
+
+Kaik Andy Yocks Sandoval   1:33:14
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:33:27
+Entonces este maneja su checklist, se ordena un poquito más y créame que le va a ayudar bastante.
+
+Kaik Andy Yocks Sandoval   1:33:27
+O K.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:33:35
+Porque a veces uno ve cosas y uno dice, ay hijo de ****, tenía que hacer esto, ta listo. Por ejemplo, yo sé, yo entro en mi desorden, yo me ordeno. Entonces, por ejemplo, yo tengo Snowpad++, hay un.
+Notepad, ahí digamos, donde tengo ahí un texto ahí y conforme voy haciendo las cosas las voy borrando. Mira que tal cliente dijo que había que revisar esto, que la reviso al inicio del día, la reviso al mediados del día y la reviso al final del día.
+
+Kaik Andy Yocks Sandoval   1:33:52
+Mhm.
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:34:03
+Entonces borro lo que voy haciendo, mira que tenía que mandarle esto a tal que lo mandé, que tenía que subir esto, ya lo subí, que tiene que hacer esto. Entonces este cuando uno cuando uno le pasan ese tipo de cosas.
+La única solución de por lo menos la que yo encontré es volverse uno metódico.
+
+Kaik Andy Yocks Sandoval   1:34:20
+Ajá.
+
+LUIS FELIPE MORA UMAÑA   1:34:23
+Entonces, conforme uno se va volviendo metódico, le va ayudando, digamos, a ordenarse uno de esos aspectos.
+
+Kaik Andy Yocks Sandoval   1:34:24
+Ajá.
+Okay.
+
+LUIS FELIPE MORA UMAÑA   1:34:32
+Okay.
+
+Kaik Andy Yocks Sandoval   1:34:33
+Listo, muchísimas gracias, profe.
+
+LUIS FELIPE MORA UMAÑA   1:34:35
+I love you and the.
+
+Kaik Andy Yocks Sandoval   1:34:36
+Bueno, la menos si mal no me acuerdo, me equivoco, la nota la envía apenas terminamos la clase o dentro entre. Ah, bueno, okay, bueno, se lo voy a enviar ya para saber y gracias, buenas noches.
+
+LUIS FELIPE MORA UMAÑA   1:34:44
+Mandamos ahí, yo ya lo tengo.
+sí.
+Buenas noches, que descanse.
+
+Kaik Andy Yocks Sandoval   1:34:55
+Chao, chao, igual.
+
+LUIS FELIPE MORA UMAÑA stopped transcription

@@ -1,0 +1,311 @@
+﻿@page "/tabla-grupos"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Tabla de grupos</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Tabla de grupos
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Consulta las posiciones de las selecciones durante la fase de grupos.
+        </p>
+
+    </div>
+
+    @* Selector de grupo *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <h5 class="mb-3">
+                Seleccionar grupo
+            </h5>
+
+            <div class="d-flex flex-wrap gap-2">
+
+                @foreach (var grupo in Grupos)
+                {
+                    <button type="button"
+                            class="btn @ObtenerClaseBotonGrupo(grupo.Nombre)"
+                            @onclick="() => SeleccionarGrupo(grupo.Nombre)">
+                        Grupo @grupo.Nombre
+                    </button>
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Información del grupo seleccionado *@
+    @if (GrupoActual is not null)
+    {
+        <div class="card shadow-sm">
+
+            <div class="card-header d-flex justify-content-between align-items-center">
+
+                <h5 class="mb-0">
+                    Grupo @GrupoActual.Nombre
+                </h5>
+
+                <span class="badge text-bg-primary">
+                    @GrupoActual.Selecciones.Count selecciones
+                </span>
+
+            </div>
+
+            <div class="card-body p-0">
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle mb-0">
+
+                        <thead class="table-dark">
+
+                            <tr>
+                                <th class="text-center">
+                                    Posición
+                                </th>
+
+                                <th>
+                                    Selección
+                                </th>
+
+                                <th class="text-center">
+                                    PJ
+                                </th>
+
+                                <th class="text-center">
+                                    PG
+                                </th>
+
+                                <th class="text-center">
+                                    PE
+                                </th>
+
+                                <th class="text-center">
+                                    PP
+                                </th>
+
+                                <th class="text-center">
+                                    GF
+                                </th>
+
+                                <th class="text-center">
+                                    GC
+                                </th>
+
+                                <th class="text-center">
+                                    DG
+                                </th>
+
+                                <th class="text-center">
+                                    Puntos
+                                </th>
+
+                                <th class="text-center">
+                                    Estado
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @{
+                                var posicion = 1;
+                            }
+
+                            @foreach (var seleccion in SeleccionesOrdenadas)
+                            {
+                                <tr class="@ObtenerClaseFila(posicion)">
+
+                                    <td class="text-center fw-semibold">
+                                        @posicion
+                                    </td>
+
+                                    <td class="fw-semibold">
+                                        @seleccion.Nombre
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.PartidosJugados
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.Victorias
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.Empates
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.Derrotas
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.GolesFavor
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.GolesContra
+                                    </td>
+
+                                    <td class="text-center">
+                                        @seleccion.DiferenciaGoles
+                                    </td>
+
+                                    <td class="text-center fw-bold">
+                                        @seleccion.Puntos
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        @if (posicion <= 2)
+                                        {
+                                            <span class="badge text-bg-success">
+                                                Clasifica
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge text-bg-secondary">
+                                                No clasifica
+                                            </span>
+                                        }
+
+                                    </td>
+
+                                </tr>
+
+                                posicion++;
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="card-footer bg-white">
+
+                <small class="text-secondary">
+                    Los primeros dos lugares clasifican a la siguiente fase.
+                </small>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+@* Datos temporales para probar la tabla.
+   Posteriormente se calcularán utilizando partidos.json. *@
+@code {
+    private string GrupoSeleccionado { get; set; } = "A";
+
+    private List<GrupoVista> Grupos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Grupos = DatosMundial
+            .ObtenerEstadisticas(FechaSimulada.FechaActual, soloFaseGrupos: true)
+            .GroupBy(estadistica => estadistica.Grupo)
+            .OrderBy(grupo => grupo.Key)
+            .Select(grupo => new GrupoVista
+            {
+                Nombre = grupo.Key,
+                Selecciones = grupo
+                    .Select(estadistica => new SeleccionGrupoVista
+                    {
+                        Nombre = estadistica.Seleccion,
+                        PartidosJugados = estadistica.PartidosJugados,
+                        Victorias = estadistica.Victorias,
+                        Empates = estadistica.Empates,
+                        Derrotas = estadistica.Derrotas,
+                        GolesFavor = estadistica.GolesFavor,
+                        GolesContra = estadistica.GolesContra
+                    })
+                    .ToList()
+            })
+            .ToList();
+    }
+
+    private GrupoVista? GrupoActual =>
+        Grupos.FirstOrDefault(grupo =>
+            grupo.Nombre == GrupoSeleccionado);
+
+    private List<SeleccionGrupoVista> SeleccionesOrdenadas =>
+        GrupoActual?.Selecciones
+            .OrderByDescending(seleccion =>
+                seleccion.Puntos)
+            .ThenByDescending(seleccion =>
+                seleccion.DiferenciaGoles)
+            .ThenByDescending(seleccion =>
+                seleccion.GolesFavor)
+            .ToList()
+        ??
+        [];
+
+    private void SeleccionarGrupo(string grupo)
+    {
+        GrupoSeleccionado = grupo;
+    }
+
+    private string ObtenerClaseBotonGrupo(string grupo)
+    {
+        return grupo == GrupoSeleccionado
+            ? "btn-primary"
+            : "btn-outline-primary";
+    }
+
+    private static string ObtenerClaseFila(int posicion)
+    {
+        return posicion <= 2
+            ? "table-success"
+            : string.Empty;
+    }
+
+    private sealed class GrupoVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public List<SeleccionGrupoVista> Selecciones { get; set; } = [];
+    }
+
+    private sealed class SeleccionGrupoVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public int PartidosJugados { get; set; }
+
+        public int Victorias { get; set; }
+
+        public int Empates { get; set; }
+
+        public int Derrotas { get; set; }
+
+        public int GolesFavor { get; set; }
+
+        public int GolesContra { get; set; }
+
+        public int DiferenciaGoles =>
+            GolesFavor - GolesContra;
+
+        public int Puntos =>
+            (Victorias * 3) + Empates;
+    }
+}

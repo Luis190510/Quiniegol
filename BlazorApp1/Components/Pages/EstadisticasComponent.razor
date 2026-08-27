@@ -1,0 +1,410 @@
+﻿@page "/estadisticas"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Estadísticas</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+
+        <div>
+            <h1 class="mb-1">Estadísticas</h1>
+
+            <p class="text-secondary mb-0">
+                Consulta el rendimiento de las selecciones del Mundial 2026.
+            </p>
+        </div>
+
+        <button type="button"
+                class="btn btn-primary"
+                @onclick="ActualizarEstadisticas">
+            Actualizar estadísticas
+        </button>
+
+    </div>
+
+    @* Mensajes de la página *@
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert alert-info alert-dismissible fade show"
+             role="alert">
+
+            @Mensaje
+
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarMensaje">
+            </button>
+
+        </div>
+    }
+
+    @* Tarjetas de resumen *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-12 col-sm-6 col-xl-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Selecciones
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Estadisticas.Count
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Partidos jugados
+                    </p>
+
+                    <h2 class="mb-0">
+                        @TotalPartidos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Total de goles
+                    </p>
+
+                    <h2 class="mb-0">
+                        @TotalGoles
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Promedio de goles
+                    </p>
+
+                    <h2 class="mb-0">
+                        @PromedioGoles.ToString("0.00")
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Filtros *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row g-3 align-items-end">
+
+                <div class="col-12 col-md-6">
+
+                    <label for="buscarSeleccion"
+                           class="form-label">
+                        Buscar selección
+                    </label>
+
+                    <input id="buscarSeleccion"
+                           type="text"
+                           class="form-control"
+                           placeholder="Ejemplo: México"
+                           @bind="SeleccionBuscada"
+                           @bind:event="oninput" />
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <label for="ordenEstadisticas"
+                           class="form-label">
+                        Ordenar por
+                    </label>
+
+                    <select id="ordenEstadisticas"
+                            class="form-select"
+                            @bind="OrdenSeleccionado">
+
+                        <option value="puntos">Puntos</option>
+                        <option value="goles">Goles</option>
+                        <option value="victorias">Victorias</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <button type="button"
+                            class="btn btn-outline-secondary w-100"
+                            @onclick="LimpiarFiltros">
+                        Limpiar filtro
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Tabla de estadísticas *@
+    @if (EstadisticasFiltradas.Count == 0)
+    {
+        <div class="alert alert-warning"
+             role="alert">
+            No se encontraron estadísticas para la selección indicada.
+        </div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+
+            <div class="card-body p-0">
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle mb-0">
+
+                        <thead class="table-dark">
+
+                            <tr>
+                                <th>Posición</th>
+                                <th>Selección</th>
+                                <th class="text-center">PJ</th>
+                                <th class="text-center">PG</th>
+                                <th class="text-center">PE</th>
+                                <th class="text-center">PP</th>
+                                <th class="text-center">GF</th>
+                                <th class="text-center">GC</th>
+                                <th class="text-center">DG</th>
+                                <th class="text-center">Puntos</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @{
+                                var posicion = 1;
+                            }
+
+                            @foreach (var estadistica in EstadisticasFiltradas)
+                            {
+                                <tr>
+
+                                    <td>
+                                        <span class="badge text-bg-secondary">
+                                            @posicion
+                                        </span>
+                                    </td>
+
+                                    <td class="fw-semibold">
+                                        @estadistica.Seleccion
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.PartidosJugados
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.Victorias
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.Empates
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.Derrotas
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.GolesFavor
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.GolesContra
+                                    </td>
+
+                                    <td class="text-center">
+                                        @estadistica.DiferenciaGoles
+                                    </td>
+
+                                    <td class="text-center fw-bold">
+                                        @estadistica.Puntos
+                                    </td>
+
+                                </tr>
+
+                                posicion++;
+                            }
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+@* Datos temporales para construir la interfaz.
+   Posteriormente se cargarán desde los archivos JSON. *@
+@code {
+    private string SeleccionBuscada { get; set; } = string.Empty;
+
+    private string OrdenSeleccionado { get; set; } = "puntos";
+
+    private string Mensaje { get; set; } = string.Empty;
+
+    private List<EstadisticaVista> Estadisticas { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        CargarEstadisticas();
+    }
+
+    private int TotalPartidos =>
+        Estadisticas.Sum(estadistica => estadistica.PartidosJugados) / 2;
+
+    private int TotalGoles =>
+        Estadisticas.Sum(estadistica => estadistica.GolesFavor);
+
+    private double PromedioGoles =>
+        TotalPartidos == 0
+            ? 0
+            : (double)TotalGoles / TotalPartidos;
+
+    private List<EstadisticaVista> EstadisticasFiltradas
+    {
+        get
+        {
+            var consulta = Estadisticas
+                .Where(estadistica =>
+                    string.IsNullOrWhiteSpace(SeleccionBuscada)
+                    ||
+                    estadistica.Seleccion.Contains(
+                        SeleccionBuscada,
+                        StringComparison.OrdinalIgnoreCase));
+
+            consulta = OrdenSeleccionado switch
+            {
+                "goles" => consulta
+                    .OrderByDescending(estadistica =>
+                        estadistica.GolesFavor),
+
+                "victorias" => consulta
+                    .OrderByDescending(estadistica =>
+                        estadistica.Victorias),
+
+                _ => consulta
+                    .OrderByDescending(estadistica =>
+                        estadistica.Puntos)
+            };
+
+            return consulta.ToList();
+        }
+    }
+
+    private void ActualizarEstadisticas()
+    {
+        CargarEstadisticas();
+        Mensaje =
+            $"Estadísticas actualizadas a las {FechaSimulada.FechaActual:HH:mm:ss}.";
+    }
+
+    private void CargarEstadisticas()
+    {
+        Estadisticas = DatosMundial
+            .ObtenerEstadisticas(FechaSimulada.FechaActual)
+            .Select(estadistica => new EstadisticaVista
+            {
+                Seleccion = estadistica.Seleccion,
+                PartidosJugados = estadistica.PartidosJugados,
+                Victorias = estadistica.Victorias,
+                Empates = estadistica.Empates,
+                Derrotas = estadistica.Derrotas,
+                GolesFavor = estadistica.GolesFavor,
+                GolesContra = estadistica.GolesContra
+            })
+            .ToList();
+    }
+
+    private void LimpiarFiltros()
+    {
+        SeleccionBuscada = string.Empty;
+        OrdenSeleccionado = "puntos";
+        Mensaje = "El filtro fue eliminado.";
+    }
+
+    private void CerrarMensaje()
+    {
+        Mensaje = string.Empty;
+    }
+
+    private sealed class EstadisticaVista
+    {
+        public string Seleccion { get; set; } = string.Empty;
+
+        public int PartidosJugados { get; set; }
+
+        public int Victorias { get; set; }
+
+        public int Empates { get; set; }
+
+        public int Derrotas { get; set; }
+
+        public int GolesFavor { get; set; }
+
+        public int GolesContra { get; set; }
+
+        public int DiferenciaGoles =>
+            GolesFavor - GolesContra;
+
+        public int Puntos =>
+            (Victorias * 3) + Empates;
+    }
+}

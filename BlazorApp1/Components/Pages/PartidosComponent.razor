@@ -1,0 +1,135 @@
+﻿@page "/partidos"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Partidos</PageTitle>
+
+<div class="container-fluid">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="mb-1">Partidos</h1>
+            <p class="text-secondary mb-0">
+                Consulta los próximos partidos del Mundial 2026.
+            </p>
+        </div>
+
+        <button type="button"
+                class="btn btn-primary"
+                @onclick="ActualizarPartidos">
+            Recargar lista
+        </button>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert alert-info" role="alert">
+            @Mensaje
+        </div>
+    }
+
+    <div class="row g-4">
+
+        @foreach (var partido in PartidosDisponibles)
+        {
+            <div class="col-12 col-md-6 col-xl-4">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header d-flex justify-content-between">
+                        <span>@partido.Fase</span>
+                        <span class="badge text-bg-primary">
+                            @partido.Estado
+                        </span>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="text-center text-secondary">
+                            @partido.Fecha.ToString("dd/MM/yyyy HH:mm")
+                        </p>
+
+                        <div class="row align-items-center text-center">
+
+                            <div class="col">
+                                <h5>@partido.EquipoLocal</h5>
+                            </div>
+
+                            <div class="col-auto">
+                                <span class="fw-bold">VS</span>
+                            </div>
+
+                            <div class="col">
+                                <h5>@partido.EquipoVisitante</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer bg-white">
+                        <NavLink class="btn btn-outline-primary w-100"
+                                 href="@($"/partidos/{partido.Id}")">
+                            Ver detalle
+                        </NavLink>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+@*data para probar la interfaz, se debe de reemplazar con .jason*@
+
+@code {
+    private string Mensaje { get; set; } = string.Empty;
+
+    private List<PartidoVista> PartidosDisponibles { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        CargarPartidos();
+    }
+
+    private void ActualizarPartidos()
+    {
+        CargarPartidos();
+        Mensaje = $"Partidos actualizados a las {FechaSimulada.FechaActual:HH:mm:ss}.";
+    }
+
+    private void CargarPartidos()
+    {
+        PartidosDisponibles = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new PartidoVista
+            {
+                Id = partido.Id,
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Estado = partido.Estado
+            })
+            .ToList();
+    }
+
+    private sealed class PartidoVista
+    {
+        public int Id { get; set; }
+
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public string Fase { get; set; } = string.Empty;
+
+        public string Estado { get; set; } = string.Empty;
+    }
+}

@@ -1,157 +1,88 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Quiniegol.Models;
 using Quiniegol.Repositories;
 using Quiniegol.Services;
 
 namespace Quiniegol.Controllers
 {
+    /// <summary>Consulta partidos anteriores y próximos con nombres legibles.</summary>
     public class InformacionPartidosController
     {
-        private readonly PartidoController
-            _partidoController;
-
-        private readonly JsonRepository<Seleccion>
-            _seleccionRepository;
-
-        private readonly FechaSimuladaService
-            _fechaService;
+        private readonly PartidoController _partidoController;
+        private readonly JsonRepository<Seleccion> _seleccionRepository;
+        private readonly FechaSimuladaService _fechaService;
 
         public InformacionPartidosController()
         {
-            _partidoController =
-                new PartidoController();
-
-            _seleccionRepository =
-                new JsonRepository<Seleccion>(
-                    RutaDatosService.ObtenerRuta(
-                        "selecciones.json"
-                    )
-                );
-
-            _fechaService =
-                FechaSimuladaService.Instancia;
+            _partidoController = new PartidoController();
+            _seleccionRepository = new JsonRepository<Seleccion>(
+                RutaDatosService.ObtenerRuta("selecciones.json"));
+            _fechaService = FechaSimuladaService.Instancia;
         }
 
-        public List<PartidoInformacionItem>
-            ObtenerUltimosCinco()
+        /// <summary>Obtiene los cinco encuentros finalizados más recientes.</summary>
+        public List<PartidoInformacionItem> ObtenerUltimosCinco()
         {
-            List<Partido> partidos =
-                _partidoController.ObtenerPartidos();
+            Dictionary<int, string> nombres = ObtenerNombresSelecciones();
 
-            List<Seleccion> selecciones =
-                _seleccionRepository.ObtenerTodos();
-
-            return partidos
+            return _partidoController.ObtenerPartidos()
                 .Where(partido =>
-                    partido.Estado ==
-                    "Finalizado" &&
-                    partido.FechaHora <=
-                    _fechaService.FechaActual
-                )
-                .OrderByDescending(partido =>
-                    partido.FechaHora
-                )
+                    partido.Estado == "Finalizado" &&
+                    partido.FechaHora <= _fechaService.FechaActual)
+                .OrderByDescending(partido => partido.FechaHora)
                 .Take(5)
-                .Select(partido =>
-                    CrearItem(
-                        partido,
-                        selecciones
-                    )
-                )
+                .Select(partido => CrearItem(partido, nombres))
                 .ToList();
         }
 
-        public List<PartidoInformacionItem>
-            ObtenerProximos24Horas()
+        /// <summary>Obtiene los encuentros programados durante las próximas 24 horas.</summary>
+        public List<PartidoInformacionItem> ObtenerProximos24Horas()
         {
-            DateTime fechaInicial =
-                _fechaService.FechaActual;
+            DateTime desde = _fechaService.FechaActual;
+            DateTime hasta = desde.AddHours(24);
+            Dictionary<int, string> nombres = ObtenerNombresSelecciones();
 
-            DateTime fechaFinal =
-                fechaInicial.AddHours(24);
-
-            List<Partido> partidos =
-                _partidoController.ObtenerPartidos();
-
-            List<Seleccion> selecciones =
-                _seleccionRepository.ObtenerTodos();
-
-            return partidos
-                .Where(partido =>
-                    partido.FechaHora >
-                    fechaInicial &&
-                    partido.FechaHora <=
-                    fechaFinal
-                )
-                .OrderBy(partido =>
-                    partido.FechaHora
-                )
-                .Select(partido =>
-                    CrearItem(
-                        partido,
-                        selecciones
-                    )
-                )
+            return _partidoController.ObtenerPartidos()
+                .Where(partido => partido.FechaHora > desde && partido.FechaHora <= hasta)
+                .OrderBy(partido => partido.FechaHora)
+                .Select(partido => CrearItem(partido, nombres))
                 .ToList();
         }
 
-        public DateTime ObtenerFechaSimulada()
+        public DateTime ObtenerFechaSimulada() => _fechaService.FechaActual;
+
+        private Dictionary<int, string> ObtenerNombresSelecciones()
         {
-            return _fechaService.FechaActual;
+            return _seleccionRepository.ObtenerTodos()
+                .ToDictionary(seleccion => seleccion.Id, seleccion => seleccion.Nombre);
         }
 
-        private PartidoInformacionItem CrearItem(
+        private static PartidoInformacionItem CrearItem(
             Partido partido,
-            List<Seleccion> selecciones)
+            IReadOnlyDictionary<int, string> nombres)
         {
-            string local =
-                ObtenerNombreSeleccion(
-                    selecciones,
-                    partido.SeleccionLocalId
-                );
-
-            string visitante =
-                ObtenerNombreSeleccion(
-                    selecciones,
-                    partido.SeleccionVisitanteId
-                );
-
-            string marcador = "Pendiente";
-
-            if (partido.GolesLocal.HasValue &&
-                partido.GolesVisitante.HasValue)
-            {
-                marcador =
-                    $"{partido.GolesLocal} - " +
-                    $"{partido.GolesVisitante}";
-            }
+            string local = ObtenerNombre(nombres, partido.SeleccionLocalId);
+            string visitante = ObtenerNombre(nombres, partido.SeleccionVisitanteId);
+            string marcador = partido.GolesLocal.HasValue && partido.GolesVisitante.HasValue
+                ? $"{partido.GolesLocal} - {partido.GolesVisitante}"
+                : "Pendiente";
 
             return new PartidoInformacionItem
             {
                 PartidoId = partido.Id,
                 FechaHora = partido.FechaHora,
-                Partido =
-                    $"{local} vs {visitante}",
+                Partido = $"{local} vs {visitante}",
                 Estado = partido.Estado,
                 Marcador = marcador
             };
         }
 
-        private string ObtenerNombreSeleccion(
-            List<Seleccion> selecciones,
+        private static string ObtenerNombre(
+            IReadOnlyDictionary<int, string> nombres,
             int seleccionId)
         {
-            Seleccion? seleccion =
-                selecciones.FirstOrDefault(
-                    elemento =>
-                        elemento.Id ==
-                        seleccionId
-                );
-
-            return seleccion?.Nombre
-                ?? $"Selección {seleccionId}";
+            return nombres.TryGetValue(seleccionId, out string? nombre)
+                ? nombre
+                : $"Selección {seleccionId}";
         }
     }
 }

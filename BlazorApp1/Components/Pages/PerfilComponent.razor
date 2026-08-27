@@ -1,0 +1,492 @@
+﻿@page "/perfil"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
+
+<PageTitle>Mi perfil</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado del perfil *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-auto">
+
+                    <div class="rounded-circle bg-primary text-white
+                        d-flex align-items-center justify-content-center"
+                         style="width: 90px; height: 90px; font-size: 2rem;">
+
+                        @Iniciales
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h1 class="mb-1">
+                        @NombreCompleto
+                    </h1>
+
+                    <p class="text-secondary mb-2">
+                        @NombreUsuario
+                    </p>
+
+                    <span class="badge text-bg-primary me-2">
+                        @Rol
+                    </span>
+
+                    <span class="badge text-bg-success">
+                        Cuenta activa
+                    </span>
+
+                </div>
+
+                <div class="col-12 col-md-auto">
+
+                    <NavLink class="btn btn-outline-primary"
+                             href="configuracion">
+                        Editar configuración
+                    </NavLink>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Estadísticas del usuario *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <p class="text-secondary mb-2">
+                        Posición
+                    </p>
+
+                    <h2 class="mb-0">
+                        #@PosicionRanking
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <p class="text-secondary mb-2">
+                        Puntos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Puntos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <p class="text-secondary mb-2">
+                        Pronósticos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Pronosticos.Count
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 col-lg-3">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <p class="text-secondary mb-2">
+                        Efectividad
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Efectividad.ToString("0")%
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row g-4">
+
+        @* Información personal *@
+        <div class="col-12 col-xl-5">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Información personal
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <dl class="row mb-0">
+
+                        <dt class="col-sm-5">
+                            Correo
+                        </dt>
+
+                        <dd class="col-sm-7">
+                            @Correo
+                        </dd>
+
+                        <dt class="col-sm-5">
+                            Selección favorita
+                        </dt>
+
+                        <dd class="col-sm-7">
+                            @SeleccionFavorita
+                        </dd>
+
+                        <dt class="col-sm-5">
+                            Quinielas
+                        </dt>
+
+                        <dd class="col-sm-7">
+                            @CantidadQuinielas
+                        </dd>
+
+                    </dl>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        @* Insignias *@
+        <div class="col-12 col-xl-7">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        Mis insignias
+                    </h5>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="row g-3">
+
+                        @foreach (var insignia in Insignias)
+                        {
+                            <div class="col-12 col-md-6">
+
+                                <div class="border rounded p-3 h-100">
+
+                                    <div class="d-flex align-items-center gap-3">
+
+                                        <span style="font-size: 2rem;">
+                                            @insignia.Icono
+                                        </span>
+
+                                        <div>
+
+                                            <h6 class="mb-1">
+                                                @insignia.Nombre
+                                            </h6>
+
+                                            <small class="text-secondary">
+                                                @insignia.Descripcion
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        @* Pronósticos recientes *@
+        <div class="col-12">
+
+            <div class="card shadow-sm">
+
+                <div class="card-header d-flex justify-content-between align-items-center">
+
+                    <h5 class="mb-0">
+                        Pronósticos recientes
+                    </h5>
+
+                    <AuthorizeView Roles="Usuario">
+                        <Authorized>
+                            <NavLink class="btn btn-sm btn-outline-primary"
+                                     href="pronosticos">
+                                Ver todos
+                            </NavLink>
+                        </Authorized>
+                    </AuthorizeView>
+
+                </div>
+
+                <div class="card-body p-0">
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover align-middle mb-0">
+
+                            <thead class="table-dark">
+
+                                <tr>
+                                    <th>Partido</th>
+                                    <th class="text-center">Pronóstico</th>
+                                    <th class="text-center">Resultado</th>
+                                    <th class="text-center">Puntos</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var pronostico in Pronosticos)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @pronostico.EquipoLocal
+                                            contra
+                                            @pronostico.EquipoVisitante
+                                        </td>
+
+                                        <td class="text-center">
+                                            @pronostico.GolesLocalPronosticados
+                                            -
+                                            @pronostico.GolesVisitantePronosticados
+                                        </td>
+
+                                        <td class="text-center">
+
+                                            @if (pronostico.PartidoFinalizado)
+                                            {
+                                                <span>
+                                                    @pronostico.GolesLocalReal
+                                                    -
+                                                    @pronostico.GolesVisitanteReal
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge text-bg-warning">
+                                                    Pendiente
+                                                </span>
+                                            }
+
+                                        </td>
+
+                                        <td class="text-center fw-bold">
+                                            @pronostico.Puntos
+                                        </td>
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@* Información temporal del usuario.
+   Posteriormente se obtendrá de la sesión y los archivos JSON. *@
+@code {
+    private string NombreCompleto { get; set; } =
+        string.Empty;
+
+    private string NombreUsuario { get; set; } =
+        string.Empty;
+
+    private string Correo { get; set; } =
+        string.Empty;
+
+    private string Rol { get; set; } =
+        string.Empty;
+
+    private string SeleccionFavorita { get; set; } =
+        string.Empty;
+
+    private int PosicionRanking { get; set; }
+
+    private int Puntos { get; set; }
+
+    private int CantidadQuinielas { get; set; }
+
+    private string Iniciales
+    {
+        get
+        {
+            var partes = NombreCompleto
+                .Split(
+                    ' ',
+                    StringSplitOptions.RemoveEmptyEntries);
+
+            return string.Concat(
+                partes
+                    .Take(2)
+                    .Select(parte =>
+                        char.ToUpperInvariant(parte[0])));
+        }
+    }
+
+    private double Efectividad
+    {
+        get
+        {
+            if (Pronosticos.Count == 0)
+            {
+                return 0;
+            }
+
+            var pronosticosConPuntos =
+                Pronosticos.Count(pronostico =>
+                    pronostico.Puntos > 0);
+
+            return (double)pronosticosConPuntos
+                / Pronosticos.Count
+                * 100;
+        }
+    }
+
+    private List<InsigniaVista> Insignias { get; set; } = [];
+
+    private List<PronosticoPerfilVista> Pronosticos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Usuario usuario = Sesion.UsuarioActual;
+        NombreCompleto = usuario.Nombre;
+        NombreUsuario = usuario.NombreUsuario;
+        Correo = usuario.Correo;
+        Rol = usuario.Rol == RolUsuario.Administrador
+            ? "Administrador"
+            : "Usuario";
+        SeleccionFavorita = usuario.PaisPreferido;
+        PosicionRanking = DatosMundial.ObtenerPosicionUsuario(usuario.Id);
+        Puntos = usuario.Puntos;
+        CantidadQuinielas = DatosMundial.ObtenerCantidadQuinielas(usuario.Id);
+
+        Insignias = usuario.Insignias
+            .Select(nombre => new InsigniaVista
+            {
+                Nombre = nombre,
+                Descripcion = "Insignia obtenida por tu participación en Quiniegol.",
+                Icono = "🏅"
+            })
+            .ToList();
+
+        Dictionary<int, PartidoMundialItem> partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .ToDictionary(partido => partido.Id);
+
+        Pronosticos = DatosMundial
+            .ObtenerPronosticos(usuario.Id)
+            .Where(pronostico => partidos.ContainsKey(pronostico.PartidoId))
+            .Take(5)
+            .Select(pronostico =>
+            {
+                PartidoMundialItem partido = partidos[pronostico.PartidoId];
+                return new PronosticoPerfilVista
+                {
+                    EquipoLocal = partido.EquipoLocal,
+                    EquipoVisitante = partido.EquipoVisitante,
+                    GolesLocalPronosticados = pronostico.GolesLocalPronosticados,
+                    GolesVisitantePronosticados = pronostico.GolesVisitantePronosticados,
+                    GolesLocalReal = partido.GolesLocal ?? 0,
+                    GolesVisitanteReal = partido.GolesVisitante ?? 0,
+                    PartidoFinalizado = partido.Finalizado,
+                    Puntos = pronostico.PuntosObtenidos ?? 0
+                };
+            })
+            .ToList();
+    }
+
+    private sealed class InsigniaVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public string Descripcion { get; set; } = string.Empty;
+
+        public string Icono { get; set; } = string.Empty;
+    }
+
+    private sealed class PronosticoPerfilVista
+    {
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public int GolesLocalPronosticados { get; set; }
+
+        public int GolesVisitantePronosticados { get; set; }
+
+        public int GolesLocalReal { get; set; }
+
+        public int GolesVisitanteReal { get; set; }
+
+        public bool PartidoFinalizado { get; set; }
+
+        public int Puntos { get; set; }
+    }
+}

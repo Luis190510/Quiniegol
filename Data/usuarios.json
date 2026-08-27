@@ -2,15 +2,30 @@
   {
     "Id": 1,
     "Nombre": "Luis Alonso",
+    "NombreUsuario": "luis.alonso",
+    "Correo": "luis.alonso@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$MCLYuF3OU4IWKyOkKH6hUw==$08AQukM0AG2ASqyAkS3aDqEW2xfN0Ee49CaKcxrqvYY=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 8,
-    "Insignias": []
+    "Puntos": 39,
+    "Insignias": [
+      "Precisi\u00F3n goleadora",
+      "Precisi\u00F3n goleadora de quiniela: Amigos del Mundial"
+    ]
   },
   {
     "Id": 2,
     "Nombre": "Alberto Porras",
+    "NombreUsuario": "alberto.porras",
+    "Correo": "alberto.porras@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$vmYKq3gexazIE1/5pQAesw==$r4yVAxo0O1cPPOc8\u002BQCnCmAng6bLCoez7W6EFdiJ2FQ=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Brasil",
-    "Puntos": 15,
+    "Puntos": 58,
     "Insignias": [
       "L\u00EDder de quiniela: Room 1",
       "L\u00EDder de quiniela: Amigos del Mundial"
@@ -19,150 +34,269 @@
   {
     "Id": 3,
     "Nombre": "Marco Porras",
+    "NombreUsuario": "marco.porras",
+    "Correo": "marco.porras@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$6Yp5F1OgHV\u002Bk\u002BNIvvLm9ng==$ZSNOFOCzPcsGKBwWX/BoB8Sw\u002Bav3c4QIlknaf\u002BDqyE0=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Cabo Verde",
-    "Puntos": 12,
+    "Puntos": 36,
     "Insignias": []
   },
   {
     "Id": 4,
     "Nombre": "Xavi Hernandes",
+    "NombreUsuario": "xavi.hernandes",
+    "Correo": "xavi.hernandes@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$xcKvfcjYsPc4IrZQ5Vkuzg==$scOMXecjugM26fGLVmBUCDIKKdff5TRztlkDu6Bs4eU=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 11,
+    "Puntos": 43,
     "Insignias": []
   },
   {
     "Id": 5,
     "Nombre": "Oscar Ulate",
+    "NombreUsuario": "oscar.ulate",
+    "Correo": "oscar.ulate@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$C37LhcFSeVfT9p0/pK1mwA==$i/7LdihuweyS96w0S9M149xX5m9OegiZdn7ZkcBdzUQ=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 4,
+    "Puntos": 35,
     "Insignias": [
-      "Peor de quiniela: Room 1"
+      "Peor de quiniela: Room 1",
+      "Precisi\u00F3n goleadora de quiniela: Room 1"
     ]
   },
   {
     "Id": 6,
     "Nombre": "Fabiola Carvajal",
+    "NombreUsuario": "fabiola.carvajal",
+    "Correo": "fabiola.carvajal@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$yQsWEZFs5CWj5OPsG5N//Q==$sHajgl\u002BFS7kQH5BNR9mDAkmYdN9xcrEcPJvLykQKzZo=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Austria",
-    "Puntos": 6,
+    "Puntos": 49,
     "Insignias": []
   },
   {
     "Id": 7,
     "Nombre": "Oliver Atom",
+    "NombreUsuario": "oliver.atom",
+    "Correo": "oliver.atom@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$hooDZZ4575MR/fOd3z3VgQ==$5Mjiotl2Wf3eyEF/MIT1Q6Nn\u002BPdwPS6h0I1r9M70wZY=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 13,
+    "Puntos": 37,
     "Insignias": []
   },
   {
     "Id": 8,
     "Nombre": "Bruno Salazar",
+    "NombreUsuario": "bruno.salazar",
+    "Correo": "bruno.salazar@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$H1evbNZ69VVZyBz8HrvU5A==$6FBoO59NS4EivCsXS\u002Bb0l6JzgKtj8T/M\u002B2DAWbIv0sY=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 7,
-    "Insignias": []
+    "Puntos": 39,
+    "Insignias": [
+      "Cazagoleadores",
+      "Cazagoleadores de quiniela: Room 1",
+      "Cazagoleadores de quiniela: Amigos del Mundial",
+      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 9,
     "Nombre": "Camila Rodr\u00EDguez",
+    "NombreUsuario": "camila.rodriguez",
+    "Correo": "camila.rodriguez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$fCpo7UAaC1eMYqtOIcT\u002BrQ==$DTu2agckDTACcJ285qdYcTXAmHovpnEletcWOjSJ5uo=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": false,
     "PaisPreferido": "Canad\u00E1",
-    "Puntos": 4,
+    "Puntos": 35,
     "Insignias": []
   },
   {
     "Id": 10,
     "Nombre": "Mateo Gonz\u00E1lez",
+    "NombreUsuario": "mateo.gonzalez",
+    "Correo": "mateo.gonzalez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$O\u002BTtTIASoLHa7RhbbCFDww==$sxHI3eEnUbJZRAtNw3OHCnqa0ujdElZ0WxKwF2w4Lzs=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Colombia",
-    "Puntos": 2,
+    "Puntos": 45,
     "Insignias": []
   },
   {
     "Id": 11,
     "Nombre": "Valentina Mart\u00EDnez",
+    "NombreUsuario": "valentina.martinez",
+    "Correo": "valentina.martinez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$dwSeOynr4eqSEIcpDbKPlw==$ZTJLoBVl9bZb20vlLLIEV48IH\u002B3GF0ASnJjCvB9Zg0k=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Congo DR",
-    "Puntos": 6,
-    "Insignias": []
-  },
-  {
-    "Id": 12,
-    "Nombre": "Santiago L\u00F3pez",
-    "PaisPreferido": "Corea del Sur",
-    "Puntos": 0,
+    "Puntos": 30,
     "Insignias": [
-      "Peor del ranking global",
       "Peor de quiniela: Amigos del Mundial",
       "Peor de quiniela: Expertos del F\u00FAtbol"
     ]
   },
   {
+    "Id": 12,
+    "Nombre": "Santiago L\u00F3pez",
+    "NombreUsuario": "santiago.lopez",
+    "Correo": "santiago.lopez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$l3bwGNIx/FtgT5u5YL3jpg==$EIgb92HnHMyn6vNPCMuBTJJkPBLyARQ7iGImXM6cjFo=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
+    "PaisPreferido": "Corea del Sur",
+    "Puntos": 32,
+    "Insignias": []
+  },
+  {
     "Id": 13,
     "Nombre": "Sof\u00EDa Hern\u00E1ndez",
+    "NombreUsuario": "sofia.hernandez",
+    "Correo": "sofia.hernandez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$S/mtre7\u002BEf2onbUG0b4Qlg==$JdSDHoD23KKOq7PR/q4Q8rInqM\u002BhnbGq9iervNAY1eM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Costa de Marfil",
-    "Puntos": 8,
+    "Puntos": 39,
     "Insignias": []
   },
   {
     "Id": 14,
     "Nombre": "Sebasti\u00E1n P\u00E9rez",
+    "NombreUsuario": "sebastian.perez",
+    "Correo": "sebastian.perez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$HRFdXrfDgNfDzcXn9XpV5g==$lasgP/j6e//L9OrXcrmbUW9csBKa8SVKzj7F6emTyc8=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Croacia",
-    "Puntos": 10,
-    "Insignias": []
+    "Puntos": 53,
+    "Insignias": [
+      "L\u00EDder de quiniela: Expertos del F\u00FAtbol"
+    ]
   },
   {
     "Id": 15,
     "Nombre": "Isabella Garc\u00EDa",
+    "NombreUsuario": "isabella.garcia",
+    "Correo": "isabella.garcia@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$yMxRbhWrS8jCPheFvr83wQ==$U3X4R\u002BLYJnh/wYTXmzSi5\u002BPn8sapgEeLi9AiVktApL4=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Curazao",
-    "Puntos": 21,
-    "Insignias": [
-      "L\u00EDder global",
-      "L\u00EDder de quiniela: Expertos del F\u00FAtbol",
-      "L\u00EDder de quiniela: Quiniela Tica"
-    ]
+    "Puntos": 45,
+    "Insignias": []
   },
   {
     "Id": 16,
     "Nombre": "Nicol\u00E1s S\u00E1nchez",
+    "NombreUsuario": "nicolas.sanchez",
+    "Correo": "nicolas.sanchez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$uFj7e3g\u002B\u002BscxEHopJPNl9A==$UvywSN9bgukz6aRNn\u002BiqIESGltyufAOoOeygU1XU3RU=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Ecuador",
-    "Puntos": 6,
-    "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
-    ]
+    "Puntos": 38,
+    "Insignias": []
   },
   {
     "Id": 17,
     "Nombre": "Mariana Ram\u00EDrez",
+    "NombreUsuario": "mariana.ramirez",
+    "Correo": "mariana.ramirez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$nSE3C56B33nu75LOB31fwA==$C5ZStfuEhZTwtrRQlQQ1\u002B66TKArsmF4fcH6eMW\u002BEZlM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Egipto",
-    "Puntos": 6,
+    "Puntos": 37,
     "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
+      "Precisi\u00F3n goleadora de quiniela: Expertos del F\u00FAtbol"
     ]
   },
   {
     "Id": 18,
     "Nombre": "Diego Torres",
+    "NombreUsuario": "diego.torres",
+    "Correo": "diego.torres@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$QSqO3TaqAhyq3hiryXm4lg==$TdcZpEMltlHyVtLwWA9Oy5Lsv4Et\u002BjXre0G/lG2YhbQ=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Escocia",
-    "Puntos": 6,
+    "Puntos": 49,
     "Insignias": [
-      "Peor de quiniela: Quiniela Tica"
+      "Cazagoleadores",
+      "Cazagoleadores de quiniela: Expertos del F\u00FAtbol",
+      "Cazagoleadores de quiniela: Quiniela Tica"
     ]
   },
   {
     "Id": 19,
     "Nombre": "Luciana Flores",
+    "NombreUsuario": "luciana.flores",
+    "Correo": "luciana.flores@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$97V6ppC91KtkUA0fGzW4Vg==$K0LgUB//ccSnPJFPTW4sFkOCTsxvz2M75wvIPq5DkEM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Eslovaquia",
-    "Puntos": 10,
-    "Insignias": []
+    "Puntos": 34,
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 20,
     "Nombre": "Alejandro Vargas",
+    "NombreUsuario": "alejandro.vargas",
+    "Correo": "alejandro.vargas@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$gXUPU/esAPc91PniSPOJxQ==$RPtXxu54nusBe4\u002B5ISxnC5uxrJ6HGWyfSPrk5KQTXDo=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Espa\u00F1a",
-    "Puntos": 19,
+    "Puntos": 51,
     "Insignias": []
   },
   {
     "Id": 21,
     "Nombre": "Gabriela Castillo",
+    "NombreUsuario": "gabriela.castillo",
+    "Correo": "gabriela.castillo@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$xsjDCsz2Q5bB4M4Vzvve7w==$vCQSzOsGFqCozi3/Sju9x89zhPmhd7Qa\u002B9IFA6BsZDw=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Estados Unidos",
-    "Puntos": 15,
+    "Puntos": 46,
     "Insignias": [
       "Rey de los empates"
     ]
@@ -170,124 +304,237 @@
   {
     "Id": 22,
     "Nombre": "Daniel Romero",
+    "NombreUsuario": "daniel.romero",
+    "Correo": "daniel.romero@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$UDwQX3fsi8MEiP2zOxz9ZQ==$Im1ntug0y0lpiQ9l/rITirJfKHGo1IGTLYACi266Zxw=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Francia",
-    "Puntos": 12,
-    "Insignias": []
+    "Puntos": 55,
+    "Insignias": [
+      "Cazagoleadores",
+      "L\u00EDder de quiniela: Quiniela Tica",
+      "Cazagoleadores de quiniela: Quiniela Tica",
+      "L\u00EDder de quiniela: Fan\u00E1ticos 2026",
+      "Cazagoleadores de quiniela: Fan\u00E1ticos 2026"
+    ]
   },
   {
     "Id": 23,
     "Nombre": "Paula Mendoza",
+    "NombreUsuario": "paula.mendoza",
+    "Correo": "paula.mendoza@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$ztmmk8dgGJeJ7SsGNwEujg==$nlzjxQTNPQ2EXrL6Z0ACFoqZggQy7b8khi/3hgS5zFM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Gales",
-    "Puntos": 10,
-    "Insignias": []
+    "Puntos": 34,
+    "Insignias": [
+      "Peor de quiniela: Quiniela Tica"
+    ]
   },
   {
     "Id": 24,
     "Nombre": "Andr\u00E9s Silva",
+    "NombreUsuario": "andres.silva",
+    "Correo": "andres.silva@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$oeX48ApWpTRxUhtnKytIwQ==$\u002B6rByLjJn3WkEB9aq7jlePtgEHngW3CHANSodOOPfpM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Ghana",
-    "Puntos": 9,
+    "Puntos": 41,
     "Insignias": []
   },
   {
     "Id": 25,
     "Nombre": "Natalia Herrera",
+    "NombreUsuario": "natalia.herrera",
+    "Correo": "natalia.herrera@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$DPG8sTAz8gWb46bne2VRDQ==$Qyws5hHfmGwxPOpxwPlO0SRwF\u002BYjBWdkMamSkQ\u002Bddy4=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Hait\u00ED",
-    "Puntos": 18,
+    "Puntos": 49,
     "Insignias": [
-      "L\u00EDder de quiniela: Fan\u00E1ticos 2026"
+      "Precisi\u00F3n goleadora",
+      "Precisi\u00F3n goleadora de quiniela: Quiniela Tica",
+      "Precisi\u00F3n goleadora de quiniela: Fan\u00E1ticos 2026"
     ]
   },
   {
     "Id": 26,
     "Nombre": "Javier Morales",
+    "NombreUsuario": "javier.morales",
+    "Correo": "javier.morales@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$t18HK5uun3uwLhmA8sZiCQ==$9H2TQZX4OOuy\u002ByXbnHweQR3SyC/hEAMwpJwS0YL5rIA=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Inglaterra",
-    "Puntos": 7,
+    "Puntos": 50,
     "Insignias": []
   },
   {
     "Id": 27,
     "Nombre": "Carolina Rojas",
+    "NombreUsuario": "carolina.rojas",
+    "Correo": "carolina.rojas@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$nrtN8HcsK\u002B7Wg9dyoQG2Dg==$l/ENP2YCJhNx00a87CWpJ8CMIV19RtItE7Vz26\u002BZKJ8=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Ir\u00E1n",
-    "Puntos": 2,
+    "Puntos": 26,
     "Insignias": [
+      "Peor del ranking global",
       "Peor de quiniela: Fan\u00E1ticos 2026"
     ]
   },
   {
     "Id": 28,
     "Nombre": "Fernando Castro",
+    "NombreUsuario": "fernando.castro",
+    "Correo": "fernando.castro@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$VIlGZVYsLFRjvY4AuDAWTg==$p5//Gf8bFymgMvJK4s\u002BhGSdk3Z68mxcY5cMQhTvkJ/8=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Irak",
-    "Puntos": 4,
+    "Puntos": 36,
     "Insignias": []
   },
   {
     "Id": 29,
     "Nombre": "Andrea Ortiz",
+    "NombreUsuario": "andrea.ortiz",
+    "Correo": "andrea.ortiz@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$vzmAAvxn0dessdIBokpjUg==$kNpne0R1ovMFeJUYQ6cq1q940xekAGZF2adntFFD444=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Jap\u00F3n",
-    "Puntos": 7,
+    "Puntos": 38,
     "Insignias": []
   },
   {
     "Id": 30,
     "Nombre": "Ricardo Navarro",
+    "NombreUsuario": "ricardo.navarro",
+    "Correo": "ricardo.navarro@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$W1\u002BQaR4dsTnylcuOW6vlbQ==$8q5twrDOx/VQIrNjX5TtbkR8vPdWKmDKNaEZNV\u002B89f0=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Jordania",
-    "Puntos": 10,
+    "Puntos": 53,
     "Insignias": []
   },
   {
     "Id": 31,
     "Nombre": "Daniela Medina",
+    "NombreUsuario": "daniela.medina",
+    "Correo": "daniela.medina@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$ULK\u002BTmyE8mYoU1dH2cHM8A==$lLbHfnlp6TdX96sZ9vThWp7DGJXnCk3Mn5/B4EQuJmU=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Marruecos",
-    "Puntos": 10,
+    "Puntos": 34,
     "Insignias": []
   },
   {
     "Id": 32,
     "Nombre": "Emiliano Cruz",
+    "NombreUsuario": "emiliano.cruz",
+    "Correo": "emiliano.cruz@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$xuNN6nSOJxbeqUOksBC3TA==$9zNVwUPlwDug4RhEcJ62inLhffY\u002BpN7COfTmZIWMvP0=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "M\u00E9xico",
-    "Puntos": 14,
+    "Puntos": 46,
     "Insignias": []
   },
   {
     "Id": 33,
     "Nombre": "Renata Jim\u00E9nez",
+    "NombreUsuario": "renata.jimenez",
+    "Correo": "renata.jimenez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$sDa51jOEgMdQfkrxVVaNPA==$LTFZ8VLeOS/1COmzlvlZK0QpHdQD20SsGDa\u002BcXvYzRc=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Noruega",
-    "Puntos": 7,
+    "Puntos": 38,
     "Insignias": []
   },
   {
     "Id": 34,
     "Nombre": "Tom\u00E1s Cabrera",
+    "NombreUsuario": "tomas.cabrera",
+    "Correo": "tomas.cabrera@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$lDjZU8sW8oomjZ7NaEswdA==$kT//5g735dsVCgZXNOuJJ2o3sGMRyFGQ/3IXcyA5HsU=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Nueva Zelanda",
-    "Puntos": 8,
+    "Puntos": 51,
     "Insignias": []
   },
   {
     "Id": 35,
     "Nombre": "Julieta \u00C1lvarez",
+    "NombreUsuario": "julieta.alvarez",
+    "Correo": "julieta.alvarez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$8CzltAOTKr23Fx38UNHB7A==$xB/aMUGZY7qRxDf3BqrBpoPzMtl0EIBteCABP\u002BpS5rQ=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Pa\u00EDses Bajos",
-    "Puntos": 8,
+    "Puntos": 32,
     "Insignias": []
   },
   {
     "Id": 36,
     "Nombre": "Felipe Acosta",
+    "NombreUsuario": "felipe.acosta",
+    "Correo": "felipe.acosta@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$X6Xvh4rC87ZgOfsEMJ8BSg==$PRGODfKX2gvPevpkMyFgZZlNGvErgYMDZrCW2Cl7HeI=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Panam\u00E1",
-    "Puntos": 6,
+    "Puntos": 38,
     "Insignias": []
   },
   {
     "Id": 37,
     "Nombre": "Martina Reyes",
+    "NombreUsuario": "martina.reyes",
+    "Correo": "martina.reyes@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$M0JHFXFZs0lmGoufCFMWUg==$BxB2qC5Etna3SbKKs9ipLXa47LGuHLaBUiiW1zLJDbA=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Paraguay",
-    "Puntos": 6,
+    "Puntos": 37,
     "Insignias": []
   },
   {
     "Id": 38,
     "Nombre": "Juan Salazar",
+    "NombreUsuario": "juan.salazar",
+    "Correo": "juan.salazar@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$9\u002Bu5ZM79neKvFW6UvpgK4A==$u8jdYXiLJLZcCpFrXX8J8xfOUvCPAVbGdnBwzdUScSM=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Portugal",
-    "Puntos": 21,
+    "Puntos": 64,
     "Insignias": [
       "L\u00EDder global"
     ]
@@ -295,17 +542,53 @@
   {
     "Id": 39,
     "Nombre": "Elena Fuentes",
+    "NombreUsuario": "elena.fuentes",
+    "Correo": "elena.fuentes@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$GtQ6bFDCRwkoskLxwb2Lyw==$gDok\u002BISoYzG6AqTTnVzWRvN0zwLIXWnRKmIdfXCpP\u002Bg=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Qatar",
-    "Puntos": 6,
+    "Puntos": 30,
     "Insignias": []
   },
   {
     "Id": 40,
     "Nombre": "Miguel Dom\u00EDnguez",
+    "NombreUsuario": "miguel.dominguez",
+    "Correo": "miguel.dominguez@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$8CNF\u002B/6fpfBZC3i/wmJiMw==$Id0nZX1KUCPMUiEBRBBachlbmpY5ViBFLlGRg4kksTc=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": true,
     "PaisPreferido": "Rep\u00FAblica Checa",
     "Puntos": 0,
-    "Insignias": [
-      "Peor del ranking global"
-    ]
+    "Insignias": []
+  },
+  {
+    "Id": 41,
+    "Nombre": "Administrador",
+    "NombreUsuario": "admin",
+    "Correo": "admin@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$wwJjgXDCxSc9lgDU5gaLqA==$iECJLngC0xRZweDoP0B5KAxfuBnIHJ7O6GYBHhgWyyo=",
+    "Rol": "Administrador",
+    "Activo": true,
+    "DebeCambiarContrasena": false,
+    "PaisPreferido": "Sin definir",
+    "Puntos": 0,
+    "Insignias": []
+  },
+  {
+    "Id": 42,
+    "Nombre": "Daniel Espinoza",
+    "NombreUsuario": "daniel.espinoza",
+    "Correo": "daniel.espinoza@gmail.com",
+    "ContrasenaHash": "PBKDF2-SHA256$100000$lSF72bDyEBbqctbajvT3Ew==$RbYE0DqGIwf5cS0RDEPC6xWi04E83qcB64toUuO4Drk=",
+    "Rol": "Usuario",
+    "Activo": true,
+    "DebeCambiarContrasena": false,
+    "PaisPreferido": "Cabo Verde",
+    "Puntos": 0,
+    "Insignias": []
   }
 ]

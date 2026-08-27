@@ -1,0 +1,407 @@
+﻿@page "/partidos/{Id:int}"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Detalle del partido</PageTitle>
+
+<div class="container-fluid">
+
+    @if (Partido is null)
+    {
+        <div class="alert alert-warning"
+             role="alert">
+
+            <h4 class="alert-heading">
+                Partido no encontrado
+            </h4>
+
+            <p>
+                No existe un partido con el identificador @Id.
+            </p>
+
+            <NavLink class="btn btn-outline-primary"
+                     href="partidos">
+                Volver a partidos
+            </NavLink>
+
+        </div>
+    }
+    else
+    {
+        @* Navegación de regreso *@
+        <div class="mb-4">
+
+            <NavLink class="btn btn-outline-secondary"
+                     href="partidos">
+                ← Volver a partidos
+            </NavLink>
+
+        </div>
+
+        @* Encabezado del partido *@
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-header d-flex justify-content-between align-items-center">
+
+                <span>
+                    @Partido.Fase
+                </span>
+
+                <span class="badge @ObtenerClaseEstado()">
+                    @Partido.Estado
+                </span>
+
+            </div>
+
+            <div class="card-body py-5">
+
+                <p class="text-center text-secondary">
+                    @Partido.Fecha.ToString("dddd, dd MMMM yyyy · HH:mm")
+                </p>
+
+                <div class="row align-items-center text-center g-4">
+
+                    <div class="col">
+
+                        <div style="font-size: 3rem;">
+                            @Partido.IconoLocal
+                        </div>
+
+                        <h2 class="mt-2">
+                            @Partido.EquipoLocal
+                        </h2>
+
+                    </div>
+
+                    <div class="col-auto">
+
+                        @if (Partido.Finalizado)
+                        {
+                            <div class="display-5 fw-bold">
+
+                                @Partido.GolesLocal
+                                -
+                                @Partido.GolesVisitante
+
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="display-6 fw-bold">
+                                VS
+                            </div>
+                        }
+
+                    </div>
+
+                    <div class="col">
+
+                        <div style="font-size: 3rem;">
+                            @Partido.IconoVisitante
+                        </div>
+
+                        <h2 class="mt-2">
+                            @Partido.EquipoVisitante
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            @* Información general *@
+            <div class="col-12 col-xl-6">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header">
+
+                        <h5 class="mb-0">
+                            Información general
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <dl class="row mb-0">
+
+                            <dt class="col-sm-5">
+                                Fecha
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Fecha.ToString("dd/MM/yyyy")
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                Hora
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Fecha.ToString("HH:mm")
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                Estadio
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Estadio
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                Ciudad
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Ciudad
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                Fase
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Fase
+                            </dd>
+
+                            <dt class="col-sm-5">
+                                Grupo
+                            </dt>
+
+                            <dd class="col-sm-7">
+                                @Partido.Grupo
+                            </dd>
+
+                        </dl>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            @* Estadísticas del partido *@
+            <div class="col-12 col-xl-6">
+
+                <div class="card shadow-sm h-100">
+
+                    <div class="card-header">
+
+                        <h5 class="mb-0">
+                            Estadísticas
+                        </h5>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        @if (Partido.Estadisticas.Count == 0)
+                        {
+                            <p class="text-secondary mb-0">
+                                No hay estadísticas adicionales registradas para este partido.
+                            </p>
+                        }
+                        else
+                        {
+                            @foreach (var estadistica in Partido.Estadisticas)
+                            {
+                            <div class="mb-4">
+
+                                <div class="d-flex justify-content-between mb-2">
+
+                                    <span class="fw-semibold">
+                                        @estadistica.ValorLocal
+                                    </span>
+
+                                    <span class="text-secondary">
+                                        @estadistica.Nombre
+                                    </span>
+
+                                    <span class="fw-semibold">
+                                        @estadistica.ValorVisitante
+                                    </span>
+
+                                </div>
+
+                                <div class="progress"
+                                     style="height: 8px;">
+
+                                    <div class="progress-bar"
+                                         role="progressbar"
+                                         style="width: @CalcularPorcentajeLocal(estadistica)%">
+                                    </div>
+
+                                    <div class="progress-bar bg-secondary"
+                                         role="progressbar"
+                                         style="width: @CalcularPorcentajeVisitante(estadistica)%">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            }
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            @* Acciones disponibles *@
+            <div class="col-12">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                            <AuthorizeView Roles="Usuario">
+                                <Authorized>
+                                    @if (!Partido.Finalizado)
+                                    {
+                                        <NavLink class="btn btn-primary"
+                                                 href="pronosticos">
+                                            Crear pronóstico
+                                        </NavLink>
+                                    }
+                                </Authorized>
+                            </AuthorizeView>
+
+                            <NavLink class="btn btn-outline-primary"
+                                     href="timeline">
+                                Ver timeline
+                            </NavLink>
+
+                            <NavLink class="btn btn-outline-secondary"
+                                     href="tabla-grupos">
+                                Ver tabla de grupos
+                            </NavLink>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>
+
+@* El identificador se recibe desde la URL.
+   Posteriormente el partido se buscará en partidos.json. *@
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private PartidoDetalleVista? Partido { get; set; }
+
+    private List<PartidoDetalleVista> PartidosTemporales { get; set; } = [];
+
+    protected override void OnParametersSet()
+    {
+        PartidoMundialItem? datos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .FirstOrDefault(partido => partido.Id == Id);
+
+        Partido = datos is null
+            ? null
+            : new PartidoDetalleVista
+            {
+                Id = datos.Id,
+                EquipoLocal = datos.EquipoLocal,
+                EquipoVisitante = datos.EquipoVisitante,
+                IconoLocal = "⚽",
+                IconoVisitante = "⚽",
+                Fecha = datos.Fecha,
+                Estadio = "No registrado",
+                Ciudad = "No registrada",
+                Fase = datos.Fase,
+                Grupo = datos.Grupo,
+                Estado = datos.Estado,
+                Finalizado = datos.Finalizado,
+                GolesLocal = datos.GolesLocal ?? 0,
+                GolesVisitante = datos.GolesVisitante ?? 0
+            };
+    }
+
+    private string ObtenerClaseEstado()
+    {
+        return Partido?.Finalizado == true
+            ? "text-bg-secondary"
+            : "text-bg-success";
+    }
+
+    private static double CalcularPorcentajeLocal(
+        EstadisticaPartidoVista estadistica)
+    {
+        var total =
+            estadistica.ValorLocal +
+            estadistica.ValorVisitante;
+
+        return total == 0
+            ? 50
+            : estadistica.ValorLocal * 100.0 / total;
+    }
+
+    private static double CalcularPorcentajeVisitante(
+        EstadisticaPartidoVista estadistica)
+    {
+        return 100 -
+            CalcularPorcentajeLocal(estadistica);
+    }
+
+    private sealed class PartidoDetalleVista
+    {
+        public int Id { get; set; }
+
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public string IconoLocal { get; set; } = string.Empty;
+
+        public string IconoVisitante { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public string Estadio { get; set; } = string.Empty;
+
+        public string Ciudad { get; set; } = string.Empty;
+
+        public string Fase { get; set; } = string.Empty;
+
+        public string Grupo { get; set; } = string.Empty;
+
+        public string Estado { get; set; } = string.Empty;
+
+        public bool Finalizado { get; set; }
+
+        public int GolesLocal { get; set; }
+
+        public int GolesVisitante { get; set; }
+
+        public List<EstadisticaPartidoVista> Estadisticas { get; set; } = [];
+    }
+
+    private sealed class EstadisticaPartidoVista
+    {
+        public string Nombre { get; set; } = string.Empty;
+
+        public int ValorLocal { get; set; }
+
+        public int ValorVisitante { get; set; }
+    }
+}

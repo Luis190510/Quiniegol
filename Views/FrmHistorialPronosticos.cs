@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using Quiniegol.Controllers;
 using Quiniegol.Models;
 
+using Quiniegol.Services;
+
 namespace Quiniegol.Views
 {
     public partial class FrmHistorialPronosticos : Form
@@ -34,13 +36,15 @@ namespace Quiniegol.Views
 
         private void CargarUsuarios()
         {
-            var usuarios =
-                _usuarioController
+            var usuarios = SesionUsuarioService.EsAdministrador
+                ? _usuarioController
                     .ObtenerUsuarios()
-                    .OrderBy(usuario =>
-                        usuario.Nombre
-                    )
-                    .ToList();
+                    .OrderBy(usuario => usuario.Nombre)
+                    .ToList()
+                : new List<Usuario>
+                {
+                    SesionUsuarioService.UsuarioActual
+                };
 
             cmbUsuario.DataSource = null;
             cmbUsuario.DataSource = usuarios;
@@ -48,6 +52,9 @@ namespace Quiniegol.Views
             cmbUsuario.ValueMember = "Id";
             cmbUsuario.DropDownStyle =
                 ComboBoxStyle.DropDownList;
+
+            cmbUsuario.Enabled =
+                SesionUsuarioService.EsAdministrador;
         }
 
         private void btnConsultar_Click(
@@ -103,46 +110,27 @@ namespace Quiniegol.Views
 
         private void ConfigurarColumnas()
         {
-            if (dgvHistorial.Columns["PronosticoId"] != null)
+            if (dgvHistorial.Columns["PronosticoId"]
+                is DataGridViewColumn columnaId)
             {
-                dgvHistorial.Columns["PronosticoId"]
-                    .Visible = false;
+                columnaId.Visible = false;
             }
 
-            if (dgvHistorial.Columns["FechaRegistro"] != null)
-            {
-                dgvHistorial.Columns["FechaRegistro"]
-                    .HeaderText = "Fecha del pronóstico";
-            }
+            CambiarTitulo("FechaRegistro", "Fecha del pronóstico");
+            CambiarTitulo("Partido", "Partido");
+            CambiarTitulo("MarcadorPronosticado", "Pronóstico");
+            CambiarTitulo("GoleadoresPronosticados", "Goleadores elegidos");
+            CambiarTitulo("ResultadoReal", "Resultado real");
+            CambiarTitulo("Estado", "Estado");
+            CambiarTitulo("Puntos", "Puntos");
+        }
 
-            if (dgvHistorial.Columns["Partido"] != null)
+        private void CambiarTitulo(string nombre, string titulo)
+        {
+            if (dgvHistorial.Columns[nombre]
+                is DataGridViewColumn columna)
             {
-                dgvHistorial.Columns["Partido"]
-                    .HeaderText = "Partido";
-            }
-
-            if (dgvHistorial.Columns["MarcadorPronosticado"] != null)
-            {
-                dgvHistorial.Columns["MarcadorPronosticado"]
-                    .HeaderText = "Pronóstico";
-            }
-
-            if (dgvHistorial.Columns["ResultadoReal"] != null)
-            {
-                dgvHistorial.Columns["ResultadoReal"]
-                    .HeaderText = "Resultado real";
-            }
-
-            if (dgvHistorial.Columns["Estado"] != null)
-            {
-                dgvHistorial.Columns["Estado"]
-                    .HeaderText = "Estado";
-            }
-
-            if (dgvHistorial.Columns["Puntos"] != null)
-            {
-                dgvHistorial.Columns["Puntos"]
-                    .HeaderText = "Puntos";
+                columna.HeaderText = titulo;
             }
         }
 

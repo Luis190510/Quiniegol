@@ -1,0 +1,95 @@
+@page "/fecha-simulada"
+@attribute [Authorize(Roles = "Administrador")]
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
+@using System.Globalization
+
+<PageTitle>Fecha simulada</PageTitle>
+
+<div class="container-fluid">
+    <div class="mb-4">
+        <h1 class="mb-1">Fecha simulada</h1>
+        <p class="text-secondary mb-0">
+            Cambia la fecha utilizada para habilitar pronósticos y mostrar resultados.
+        </p>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje" role="alert">@Mensaje</div>
+    }
+
+    <div class="card shadow-sm" style="max-width: 650px;">
+        <div class="card-body">
+            <p>
+                <strong>Fecha actual del sistema:</strong>
+                @FechaMostrada.ToString("dd/MM/yyyy HH:mm")
+            </p>
+
+            <label for="nuevaFecha" class="form-label">Nueva fecha y hora</label>
+            <input id="nuevaFecha"
+                   type="datetime-local"
+                   class="form-control mb-3"
+                   value="@NuevaFechaTexto"
+                   @oninput="ActualizarFechaIngresada" />
+
+            <button type="button"
+                    class="btn btn-primary"
+                    @onclick="GuardarFecha">
+                Cambiar fecha simulada
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private DateTime FechaMostrada { get; set; }
+    private string NuevaFechaTexto { get; set; } = string.Empty;
+    private string Mensaje { get; set; } = string.Empty;
+    private string ClaseMensaje { get; set; } = "alert-info";
+
+    protected override void OnInitialized()
+    {
+        FechaMostrada = FechaSimulada.FechaActual;
+        NuevaFechaTexto = FormatearParaControl(FechaMostrada);
+    }
+
+    private void ActualizarFechaIngresada(ChangeEventArgs evento)
+    {
+        NuevaFechaTexto = evento.Value?.ToString() ?? string.Empty;
+    }
+
+    private void GuardarFecha()
+    {
+        if (!DateTime.TryParseExact(
+                NuevaFechaTexto,
+                "yyyy-MM-ddTHH:mm",
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out DateTime nuevaFecha))
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = "Debe seleccionar una fecha y una hora válidas.";
+            return;
+        }
+
+        try
+        {
+            FechaSimulada.CambiarFecha(nuevaFecha, Sesion);
+            FechaMostrada = FechaSimulada.FechaActual;
+            NuevaFechaTexto = FormatearParaControl(FechaMostrada);
+            ClaseMensaje = "alert-success";
+            Mensaje = $"Fecha simulada actualizada a {FechaMostrada:dd/MM/yyyy HH:mm}.";
+        }
+        catch (UnauthorizedAccessException ex)
+        {
+            ClaseMensaje = "alert-danger";
+            Mensaje = ex.Message;
+        }
+    }
+
+    private static string FormatearParaControl(DateTime fecha)
+    {
+        return fecha.ToString("yyyy-MM-ddTHH:mm", CultureInfo.InvariantCulture);
+    }
+}

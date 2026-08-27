@@ -62,7 +62,7 @@
             btnCerrar.TabIndex = 2;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
-            btnCerrar.Click += btnCerrar_Click_1;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // FrmSelecciones
             // 

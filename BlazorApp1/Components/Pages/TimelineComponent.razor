@@ -1,0 +1,460 @@
+﻿@page "/timeline"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Timeline de partidos</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Timeline de partidos
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Consulta cronológicamente los partidos del Mundial 2026.
+        </p>
+
+    </div>
+
+    @* Filtros principales *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row g-3 align-items-end">
+
+                <div class="col-12 col-md-4">
+
+                    <label for="estadoTimeline"
+                           class="form-label">
+                        Estado
+                    </label>
+
+                    <select id="estadoTimeline"
+                            class="form-select"
+                            @bind="EstadoSeleccionado">
+
+                        <option value="todos">
+                            Todos los partidos
+                        </option>
+
+                        <option value="proximos">
+                            Próximos
+                        </option>
+
+                        <option value="finalizados">
+                            Finalizados
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <label for="faseTimeline"
+                           class="form-label">
+                        Fase
+                    </label>
+
+                    <select id="faseTimeline"
+                            class="form-select"
+                            @bind="FaseSeleccionada">
+
+                        <option value="todas">
+                            Todas las fases
+                        </option>
+
+                        <option value="Fase de grupos">
+                            Fase de grupos
+                        </option>
+
+                        <option value="Octavos de final">
+                            Octavos de final
+                        </option>
+
+                        <option value="Cuartos de final">
+                            Cuartos de final
+                        </option>
+
+                        <option value="Semifinal">
+                            Semifinal
+                        </option>
+
+                        <option value="Final">
+                            Final
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <button type="button"
+                            class="btn btn-outline-secondary w-100"
+                            @onclick="LimpiarFiltros">
+                        Limpiar filtros
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Resumen *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Partidos mostrados
+                    </p>
+
+                    <h2 class="mb-0">
+                        @PartidosFiltrados.Count
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Próximos
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadProximos
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Finalizados
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadFinalizados
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Timeline *@
+    @if (PartidosAgrupados.Count == 0)
+    {
+        <div class="alert alert-info"
+             role="alert">
+            No hay partidos para los filtros seleccionados.
+        </div>
+    }
+    else
+    {
+        <div class="d-flex flex-column gap-4">
+
+            @foreach (var grupoFecha in PartidosAgrupados)
+            {
+                <section>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+
+                        <span class="badge text-bg-primary fs-6">
+                            @grupoFecha.Fecha.ToString("dd")
+                        </span>
+
+                        <h4 class="mb-0">
+                            @grupoFecha.Fecha.ToString("MMMM yyyy")
+                        </h4>
+
+                    </div>
+
+                    <div class="row g-3">
+
+                        @foreach (var partido in grupoFecha.Partidos)
+                        {
+                            <div class="col-12 col-xl-6">
+
+                                <div class="card shadow-sm h-100">
+
+                                    <div class="card-header d-flex justify-content-between">
+
+                                        <span>
+                                            @partido.Fase
+                                        </span>
+
+                                        <span class="badge @ObtenerClaseEstado(partido)">
+                                            @ObtenerTextoEstado(partido)
+                                        </span>
+
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <p class="text-center text-secondary">
+                                            @partido.Fecha.ToString("HH:mm")
+                                            ·
+                                            @partido.Estadio
+                                        </p>
+
+                                        <div class="row align-items-center text-center">
+
+                                            <div class="col">
+
+                                                <h5>
+                                                    @partido.EquipoLocal
+                                                </h5>
+
+                                            </div>
+
+                                            <div class="col-auto">
+
+                                                @if (partido.Finalizado)
+                                                {
+                                                    <span class="badge text-bg-dark fs-5">
+                                                        @partido.GolesLocal
+                                                        -
+                                                        @partido.GolesVisitante
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="fw-bold">
+                                                        VS
+                                                    </span>
+                                                }
+
+                                            </div>
+
+                                            <div class="col">
+
+                                                <h5>
+                                                    @partido.EquipoVisitante
+                                                </h5>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-footer bg-white">
+
+                                        <button type="button"
+                                                class="btn btn-outline-primary w-100"
+                                                @onclick="() => SeleccionarPartido(partido)">
+                                            Ver información
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        }
+
+                    </div>
+
+                </section>
+            }
+
+        </div>
+    }
+
+    @* Información seleccionada *@
+    @if (PartidoSeleccionado is not null)
+    {
+        <div class="alert alert-info alert-dismissible fade show mt-4"
+             role="alert">
+
+            <strong>
+                @PartidoSeleccionado.EquipoLocal
+                contra
+                @PartidoSeleccionado.EquipoVisitante
+            </strong>
+
+            <br />
+
+            @PartidoSeleccionado.Fecha.ToString("dd/MM/yyyy HH:mm")
+            ·
+            @PartidoSeleccionado.Estadio
+
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarInformacion">
+            </button>
+
+        </div>
+    }
+
+</div>
+
+@* Datos temporales para representar la cronología.
+   Posteriormente se cargarán desde partidos.json. *@
+@code {
+    private string EstadoSeleccionado { get; set; } = "todos";
+
+    private string FaseSeleccionada { get; set; } = "todas";
+
+    private PartidoTimelineVista? PartidoSeleccionado { get; set; }
+
+    private List<PartidoTimelineVista> Partidos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new PartidoTimelineVista
+            {
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Estadio = "No registrado",
+                Finalizado = partido.Finalizado,
+                GolesLocal = partido.GolesLocal ?? 0,
+                GolesVisitante = partido.GolesVisitante ?? 0
+            })
+            .ToList();
+    }
+
+    private List<PartidoTimelineVista> PartidosFiltrados =>
+        Partidos
+            .Where(CoincideConEstado)
+            .Where(CoincideConFase)
+            .OrderBy(partido =>
+                partido.Fecha)
+            .ToList();
+
+    private List<GrupoFechaVista> PartidosAgrupados =>
+        PartidosFiltrados
+            .GroupBy(partido =>
+                partido.Fecha.Date)
+            .Select(grupo =>
+                new GrupoFechaVista
+                {
+                    Fecha = grupo.Key,
+                    Partidos = grupo.ToList()
+                })
+            .ToList();
+
+    private int CantidadProximos =>
+        PartidosFiltrados.Count(partido =>
+            !partido.Finalizado);
+
+    private int CantidadFinalizados =>
+        PartidosFiltrados.Count(partido =>
+            partido.Finalizado);
+
+    private bool CoincideConEstado(
+        PartidoTimelineVista partido)
+    {
+        return EstadoSeleccionado switch
+        {
+            "proximos" => !partido.Finalizado,
+            "finalizados" => partido.Finalizado,
+            _ => true
+        };
+    }
+
+    private bool CoincideConFase(
+        PartidoTimelineVista partido)
+    {
+        return FaseSeleccionada == "todas"
+            ||
+            partido.Fase == FaseSeleccionada;
+    }
+
+    private void LimpiarFiltros()
+    {
+        EstadoSeleccionado = "todos";
+        FaseSeleccionada = "todas";
+    }
+
+    private void SeleccionarPartido(
+        PartidoTimelineVista partido)
+    {
+        PartidoSeleccionado = partido;
+    }
+
+    private void CerrarInformacion()
+    {
+        PartidoSeleccionado = null;
+    }
+
+    private static string ObtenerClaseEstado(
+        PartidoTimelineVista partido)
+    {
+        return partido.Finalizado
+            ? "text-bg-secondary"
+            : "text-bg-success";
+    }
+
+    private static string ObtenerTextoEstado(
+        PartidoTimelineVista partido)
+    {
+        return partido.Finalizado
+            ? "Finalizado"
+            : "Próximo";
+    }
+
+    private sealed class GrupoFechaVista
+    {
+        public DateTime Fecha { get; set; }
+
+        public List<PartidoTimelineVista> Partidos { get; set; } = [];
+    }
+
+    private sealed class PartidoTimelineVista
+    {
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public string Fase { get; set; } = string.Empty;
+
+        public string Estadio { get; set; } = string.Empty;
+
+        public bool Finalizado { get; set; }
+
+        public int GolesLocal { get; set; }
+
+        public int GolesVisitante { get; set; }
+    }
+}

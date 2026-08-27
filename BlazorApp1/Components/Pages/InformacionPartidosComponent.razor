@@ -1,0 +1,303 @@
+﻿@page "/informacion-partidos"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+
+<PageTitle>Información de partidos</PageTitle>
+
+<div class="container-fluid">
+
+    <div class="mb-4">
+
+        <h1 class="mb-1">
+            Información de partidos
+        </h1>
+
+        <p class="text-secondary mb-0">
+            Consulta estadios, horarios y otros detalles de los partidos.
+        </p>
+
+    </div>
+
+    @* Filtros *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row g-3 align-items-end">
+
+                <div class="col-12 col-md-5">
+
+                    <label for="buscarPartidoInformacion"
+                           class="form-label">
+                        Buscar equipo
+                    </label>
+
+                    <input id="buscarPartidoInformacion"
+                           type="text"
+                           class="form-control"
+                           placeholder="Ejemplo: México"
+                           @bind="EquipoBuscado"
+                           @bind:event="oninput" />
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <label for="faseInformacion"
+                           class="form-label">
+                        Fase
+                    </label>
+
+                    <select id="faseInformacion"
+                            class="form-select"
+                            @bind="FaseSeleccionada">
+
+                        <option value="todas">
+                            Todas
+                        </option>
+
+                        <option value="Fase de grupos">
+                            Fase de grupos
+                        </option>
+
+                        <option value="Ronda de 32">Ronda de 32</option>
+                        <option value="Octavos de final">Octavos de final</option>
+
+                        <option value="Cuartos de final">
+                            Cuartos de final
+                        </option>
+
+                        <option value="Semifinal">
+                            Semifinal
+                        </option>
+
+                        <option value="Final">
+                            Final
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <button type="button"
+                            class="btn btn-outline-secondary w-100"
+                            @onclick="LimpiarFiltros">
+                        Limpiar filtros
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @if (PartidosFiltrados.Count == 0)
+    {
+        <div class="alert alert-info"
+             role="alert">
+            No se encontraron partidos.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+
+            @foreach (var partido in PartidosFiltrados)
+            {
+                <div class="col-12 col-lg-6">
+
+                    <div class="card shadow-sm h-100">
+
+                        <div class="card-header d-flex justify-content-between">
+
+                            <span>
+                                @partido.Fase
+                            </span>
+
+                            <span class="badge text-bg-primary">
+                                @partido.Grupo
+                            </span>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="text-center mb-4">
+
+                                <h4>
+                                    @partido.EquipoLocal
+                                    contra
+                                    @partido.EquipoVisitante
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    @partido.Fecha.ToString("dd/MM/yyyy HH:mm")
+                                </p>
+
+                            </div>
+
+                            <dl class="row mb-0">
+
+                                <dt class="col-sm-5">
+                                    Estadio
+                                </dt>
+
+                                <dd class="col-sm-7">
+                                    @partido.Estadio
+                                </dd>
+
+                                <dt class="col-sm-5">
+                                    Ciudad
+                                </dt>
+
+                                <dd class="col-sm-7">
+                                    @partido.Ciudad
+                                </dd>
+
+                                <dt class="col-sm-5">
+                                    Capacidad
+                                </dt>
+
+                                <dd class="col-sm-7">
+                                    @(partido.Capacidad > 0
+                                        ? $"{partido.Capacidad:N0} personas"
+                                        : "No registrada")
+                                </dd>
+
+                                <dt class="col-sm-5">
+                                    Árbitro
+                                </dt>
+
+                                <dd class="col-sm-7">
+                                    @partido.Arbitro
+                                </dd>
+
+                                <dt class="col-sm-5">
+                                    Transmisión
+                                </dt>
+
+                                <dd class="col-sm-7">
+                                    @partido.Transmision
+                                </dd>
+
+                            </dl>
+
+                        </div>
+
+                        <div class="card-footer bg-white">
+
+                            <NavLink class="btn btn-outline-primary w-100"
+                                     href="@($"/partidos/{partido.Id}")">
+                                Abrir detalle completo
+                            </NavLink>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    }
+
+</div>
+
+@* Información temporal.
+   Posteriormente se obtendrá de partidos.json. *@
+@code {
+    private string EquipoBuscado { get; set; } = string.Empty;
+
+    private string FaseSeleccionada { get; set; } = "todas";
+
+    private List<InformacionPartidoVista> Partidos { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        Partidos = DatosMundial
+            .ObtenerPartidos(FechaSimulada.FechaActual)
+            .Select(partido => new InformacionPartidoVista
+            {
+                Id = partido.Id,
+                EquipoLocal = partido.EquipoLocal,
+                EquipoVisitante = partido.EquipoVisitante,
+                Fecha = partido.Fecha,
+                Fase = partido.Fase,
+                Grupo = partido.Grupo,
+                Estadio = "No registrado",
+                Ciudad = "No registrada",
+                Arbitro = "No registrado",
+                Transmision = "No registrada"
+            })
+            .ToList();
+    }
+
+    private List<InformacionPartidoVista> PartidosFiltrados =>
+        Partidos
+            .Where(CoincideConEquipo)
+            .Where(CoincideConFase)
+            .OrderBy(partido =>
+                partido.Fecha)
+            .ToList();
+
+    private bool CoincideConEquipo(
+        InformacionPartidoVista partido)
+    {
+        if (string.IsNullOrWhiteSpace(EquipoBuscado))
+        {
+            return true;
+        }
+
+        return partido.EquipoLocal.Contains(
+                   EquipoBuscado,
+                   StringComparison.OrdinalIgnoreCase)
+               ||
+               partido.EquipoVisitante.Contains(
+                   EquipoBuscado,
+                   StringComparison.OrdinalIgnoreCase);
+    }
+
+    private bool CoincideConFase(
+        InformacionPartidoVista partido)
+    {
+        return FaseSeleccionada == "todas"
+            ||
+            partido.Fase == FaseSeleccionada;
+    }
+
+    private void LimpiarFiltros()
+    {
+        EquipoBuscado = string.Empty;
+        FaseSeleccionada = "todas";
+    }
+
+    private sealed class InformacionPartidoVista
+    {
+        public int Id { get; set; }
+
+        public string EquipoLocal { get; set; } = string.Empty;
+
+        public string EquipoVisitante { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public string Fase { get; set; } = string.Empty;
+
+        public string Grupo { get; set; } = string.Empty;
+
+        public string Estadio { get; set; } = string.Empty;
+
+        public string Ciudad { get; set; } = string.Empty;
+
+        public int Capacidad { get; set; }
+
+        public string Arbitro { get; set; } = string.Empty;
+
+        public string Transmision { get; set; } = string.Empty;
+    }
+}

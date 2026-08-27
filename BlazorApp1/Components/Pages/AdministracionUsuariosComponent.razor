@@ -1,0 +1,209 @@
+@page "/administracion-usuarios"
+@attribute [Authorize(Roles = "Administrador")]
+@inject UsuarioController UsuarioController
+@inject SesionUsuarioService Sesion
+
+<PageTitle>Administración de usuarios</PageTitle>
+
+<div class="container-fluid">
+    <div class="mb-4">
+        <h1 class="mb-1">Administración de usuarios</h1>
+        <p class="text-secondary mb-0">
+            Restablece contraseñas y activa o desactiva cuentas registradas.
+        </p>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Mensaje))
+    {
+        <div class="alert @ClaseMensaje alert-dismissible fade show" role="alert">
+            @Mensaje
+            <button type="button"
+                    class="btn-close"
+                    aria-label="Cerrar"
+                    @onclick="CerrarMensaje">
+            </button>
+        </div>
+    }
+
+    <div class="row g-4 mb-4">
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Usuarios</p>
+                    <h2 class="mb-0">@Usuarios.Count</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Activos</p>
+                    <h2 class="mb-0">@Usuarios.Count(usuario => usuario.Activo)</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Inactivos</p>
+                    <h2 class="mb-0">@Usuarios.Count(usuario => !usuario.Activo)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <label for="buscarUsuario" class="form-label">Buscar usuario</label>
+            <input id="buscarUsuario"
+                   type="text"
+                   class="form-control"
+                   placeholder="Nombre, usuario o correo"
+                   @bind="TextoBusqueda"
+                   @bind:event="oninput" />
+        </div>
+    </div>
+
+    @if (UsuariosFiltrados.Count == 0)
+    {
+        <div class="alert alert-info">No se encontraron usuarios.</div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Usuario</th>
+                                <th>Correo</th>
+                                <th>Rol</th>
+                                <th class="text-center">Estado</th>
+                                <th class="text-center">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Usuario usuario in UsuariosFiltrados)
+                            {
+                                <tr>
+                                    <td>@usuario.Nombre</td>
+                                    <td class="fw-semibold">@usuario.NombreUsuario</td>
+                                    <td>@usuario.Correo</td>
+                                    <td>@ObtenerNombreRol(usuario.Rol)</td>
+                                    <td class="text-center">
+                                        <span class="badge @(usuario.Activo
+                                            ? "text-bg-success"
+                                            : "text-bg-secondary")">
+                                            @(usuario.Activo ? "Activo" : "Inactivo")
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                                            <button type="button"
+                                                    class="btn btn-sm btn-outline-primary"
+                                                    @onclick="() => RestablecerContrasena(usuario)">
+                                                Restablecer contraseña
+                                            </button>
+
+                                            <button type="button"
+                                                    class="btn btn-sm @(usuario.Activo
+                                                        ? "btn-outline-danger"
+                                                        : "btn-outline-success")"
+                                                    disabled="@(usuario.Id == Sesion.UsuarioActual.Id)"
+                                                    @onclick="() => CambiarEstado(usuario)">
+                                                @(usuario.Activo
+                                                    ? "Desactivar acceso"
+                                                    : "Activar cuenta")
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string TextoBusqueda { get; set; } = string.Empty;
+    private string Mensaje { get; set; } = string.Empty;
+    private string ClaseMensaje { get; set; } = "alert-info";
+    private List<Usuario> Usuarios { get; set; } = [];
+
+    private List<Usuario> UsuariosFiltrados =>
+        Usuarios
+            .Where(usuario =>
+                string.IsNullOrWhiteSpace(TextoBusqueda) ||
+                usuario.Nombre.Contains(TextoBusqueda, StringComparison.OrdinalIgnoreCase) ||
+                usuario.NombreUsuario.Contains(TextoBusqueda, StringComparison.OrdinalIgnoreCase) ||
+                usuario.Correo.Contains(TextoBusqueda, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(usuario => usuario.Nombre)
+            .ToList();
+
+    protected override void OnInitialized()
+    {
+        CargarUsuarios();
+    }
+
+    private void CargarUsuarios()
+    {
+        Usuarios = UsuarioController.ObtenerUsuariosParaAdministracion();
+    }
+
+    private void RestablecerContrasena(Usuario usuario)
+    {
+        EjecutarAccion(() =>
+        {
+            string temporal = UsuarioController.RestablecerContrasena(usuario.Id);
+            return $"Contraseña restablecida para {usuario.NombreUsuario}. " +
+                $"Contraseña temporal: {temporal}";
+        });
+    }
+
+    private void CambiarEstado(Usuario usuario)
+    {
+        EjecutarAccion(() =>
+        {
+            bool activar = !usuario.Activo;
+            UsuarioController.CambiarEstadoCuenta(usuario.Id, activar);
+            CargarUsuarios();
+            return activar
+                ? $"La cuenta {usuario.NombreUsuario} fue activada."
+                : $"La cuenta {usuario.NombreUsuario} fue desactivada.";
+        });
+    }
+
+    private void EjecutarAccion(Func<string> accion)
+    {
+        try
+        {
+            Mensaje = accion();
+            ClaseMensaje = "alert-success";
+        }
+        catch (Exception ex) when (
+            ex is ArgumentException or
+            InvalidOperationException or
+            UnauthorizedAccessException)
+        {
+            Mensaje = ex.Message;
+            ClaseMensaje = "alert-danger";
+        }
+    }
+
+    private static string ObtenerNombreRol(RolUsuario rol)
+    {
+        return rol == RolUsuario.Administrador
+            ? "Administrador"
+            : "Usuario";
+    }
+
+    private void CerrarMensaje()
+    {
+        Mensaje = string.Empty;
+    }
+}

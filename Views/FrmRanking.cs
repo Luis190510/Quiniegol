@@ -59,40 +59,19 @@ namespace Quiniegol.Views
 
         private void ConfigurarColumnas()
         {
-            if (dgvRanking.Columns["Posicion"] != null)
-            {
-                dgvRanking.Columns["Posicion"]
-                    .HeaderText = "Posición";
-            }
+            CambiarTitulo("Posicion", "Posición");
+            CambiarTitulo("UsuarioId", "ID");
+            CambiarTitulo("Nombre", "Usuario");
+            CambiarTitulo("PaisPreferido", "País preferido");
+            CambiarTitulo("Puntos", "Puntos");
+            CambiarTitulo("Insignias", "Insignias");
+        }
 
-            if (dgvRanking.Columns["UsuarioId"] != null)
+        private void CambiarTitulo(string nombre, string titulo)
+        {
+            if (dgvRanking.Columns[nombre] is DataGridViewColumn columna)
             {
-                dgvRanking.Columns["UsuarioId"]
-                    .HeaderText = "ID";
-            }
-
-            if (dgvRanking.Columns["Nombre"] != null)
-            {
-                dgvRanking.Columns["Nombre"]
-                    .HeaderText = "Usuario";
-            }
-
-            if (dgvRanking.Columns["PaisPreferido"] != null)
-            {
-                dgvRanking.Columns["PaisPreferido"]
-                    .HeaderText = "País preferido";
-            }
-
-            if (dgvRanking.Columns["Puntos"] != null)
-            {
-                dgvRanking.Columns["Puntos"]
-                    .HeaderText = "Puntos";
-            }
-
-            if (dgvRanking.Columns["Insignias"] != null)
-            {
-                dgvRanking.Columns["Insignias"]
-                    .HeaderText = "Insignias";
+                columna.HeaderText = titulo;
             }
         }
 

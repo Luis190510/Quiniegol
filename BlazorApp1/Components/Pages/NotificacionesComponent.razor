@@ -1,0 +1,387 @@
+﻿@page "/notificaciones"
+@attribute [Authorize]
+@inject DatosMundialService DatosMundial
+@inject FechaSimuladaService FechaSimulada
+@inject SesionUsuarioService Sesion
+
+<PageTitle>Notificaciones</PageTitle>
+
+<div class="container-fluid">
+
+    @* Encabezado *@
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+
+        <div>
+
+            <h1 class="mb-1">
+                Notificaciones
+            </h1>
+
+            <p class="text-secondary mb-0">
+                Consulta los avisos relacionados con partidos,
+                pronósticos y quinielas.
+            </p>
+
+        </div>
+
+        <button type="button"
+                class="btn btn-outline-primary"
+                disabled="@(CantidadNoLeidas == 0)"
+                @onclick="MarcarTodasComoLeidas">
+            Marcar todas como leídas
+        </button>
+
+    </div>
+
+    @* Resumen *@
+    <div class="row g-4 mb-4">
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Total
+                    </p>
+
+                    <h2 class="mb-0">
+                        @Notificaciones.Count
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        No leídas
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadNoLeidas
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body">
+
+                    <p class="text-secondary mb-2">
+                        Leídas
+                    </p>
+
+                    <h2 class="mb-0">
+                        @CantidadLeidas
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Filtro *@
+    <div class="card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="row align-items-end g-3">
+
+                <div class="col-12 col-md-6">
+
+                    <label for="filtroNotificaciones"
+                           class="form-label">
+                        Mostrar
+                    </label>
+
+                    <select id="filtroNotificaciones"
+                            class="form-select"
+                            @bind="FiltroSeleccionado">
+
+                        <option value="todas">
+                            Todas las notificaciones
+                        </option>
+
+                        <option value="no-leidas">
+                            Solo no leídas
+                        </option>
+
+                        <option value="leidas">
+                            Solo leídas
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <label for="tipoNotificacion"
+                           class="form-label">
+                        Tipo
+                    </label>
+
+                    <select id="tipoNotificacion"
+                            class="form-select"
+                            @bind="TipoSeleccionado">
+
+                        <option value="todos">
+                            Todos los tipos
+                        </option>
+
+                        <option value="Partido">
+                            Partidos
+                        </option>
+
+                        <option value="Pronóstico">
+                            Pronósticos
+                        </option>
+
+                        <option value="Quiniela">
+                            Quinielas
+                        </option>
+
+                        <option value="Sistema">
+                            Sistema
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @* Listado de notificaciones *@
+    @if (NotificacionesFiltradas.Count == 0)
+    {
+        <div class="alert alert-info"
+             role="alert">
+            No hay notificaciones para los filtros seleccionados.
+        </div>
+    }
+    else
+    {
+        <div class="d-flex flex-column gap-3">
+
+            @foreach (var notificacion in NotificacionesFiltradas)
+            {
+                <div class="card shadow-sm @ObtenerClaseNotificacion(notificacion)">
+
+                    <div class="card-body">
+
+                        <div class="d-flex gap-3">
+
+                            <div style="font-size: 2rem;">
+                                @ObtenerIcono(notificacion.Tipo)
+                            </div>
+
+                            <div class="flex-grow-1">
+
+                                <div class="d-flex flex-wrap justify-content-between gap-2">
+
+                                    <div>
+
+                                        <h5 class="mb-1">
+                                            @notificacion.Titulo
+                                        </h5>
+
+                                        <span class="badge text-bg-secondary">
+                                            @notificacion.Tipo
+                                        </span>
+
+                                        @if (!notificacion.Leida)
+                                        {
+                                            <span class="badge text-bg-primary ms-1">
+                                                Nueva
+                                            </span>
+                                        }
+
+                                    </div>
+
+                                    <small class="text-secondary">
+                                        @notificacion.Fecha.ToString("dd/MM/yyyy HH:mm")
+                                    </small>
+
+                                </div>
+
+                                <p class="mt-3 mb-3">
+                                    @notificacion.Mensaje
+                                </p>
+
+                                <div class="d-flex flex-wrap gap-2">
+
+                                    @if (!notificacion.Leida)
+                                    {
+                                        <button type="button"
+                                                class="btn btn-sm btn-outline-primary"
+                                                @onclick="() => MarcarComoLeida(notificacion)">
+                                            Marcar como leída
+                                        </button>
+                                    }
+
+                                    <button type="button"
+                                            class="btn btn-sm btn-outline-danger"
+                                            @onclick="() => EliminarNotificacion(notificacion)">
+                                        Eliminar
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    }
+
+</div>
+
+@* Las notificaciones son temporales.
+   Posteriormente se obtendrán del servicio de notificaciones. *@
+@code {
+    private string FiltroSeleccionado { get; set; } = "todas";
+
+    private string TipoSeleccionado { get; set; } = "todos";
+
+    private List<NotificacionVista> Notificaciones { get; set; } = [];
+
+    protected override void OnInitialized()
+    {
+        if (Sesion.EsAdministrador)
+        {
+            return;
+        }
+
+        Notificaciones = DatosMundial
+            .ObtenerProximosSinPronostico(
+                Sesion.UsuarioActual.Id,
+                FechaSimulada.FechaActual)
+            .Select(partido => new NotificacionVista
+            {
+                Titulo = "Pronóstico pendiente",
+                Mensaje =
+                    $"El partido {partido.EquipoLocal} contra " +
+                    $"{partido.EquipoVisitante} comienza el " +
+                    $"{partido.Fecha:dd/MM/yyyy HH:mm}.",
+                Tipo = "Pronóstico",
+                Fecha = FechaSimulada.FechaActual,
+                Leida = false
+            })
+            .ToList();
+    }
+
+    private int CantidadNoLeidas =>
+        Notificaciones.Count(notificacion =>
+            !notificacion.Leida);
+
+    private int CantidadLeidas =>
+        Notificaciones.Count(notificacion =>
+            notificacion.Leida);
+
+    private List<NotificacionVista> NotificacionesFiltradas =>
+        Notificaciones
+            .Where(CoincideConEstado)
+            .Where(CoincideConTipo)
+            .OrderByDescending(notificacion =>
+                notificacion.Fecha)
+            .ToList();
+
+    private bool CoincideConEstado(
+        NotificacionVista notificacion)
+    {
+        return FiltroSeleccionado switch
+        {
+            "no-leidas" => !notificacion.Leida,
+            "leidas" => notificacion.Leida,
+            _ => true
+        };
+    }
+
+    private bool CoincideConTipo(
+        NotificacionVista notificacion)
+    {
+        return TipoSeleccionado == "todos"
+            ||
+            notificacion.Tipo == TipoSeleccionado;
+    }
+
+    private void MarcarComoLeida(
+        NotificacionVista notificacion)
+    {
+        notificacion.Leida = true;
+    }
+
+    private void MarcarTodasComoLeidas()
+    {
+        foreach (var notificacion in Notificaciones)
+        {
+            notificacion.Leida = true;
+        }
+    }
+
+    private void EliminarNotificacion(
+        NotificacionVista notificacion)
+    {
+        Notificaciones.Remove(notificacion);
+    }
+
+    private static string ObtenerClaseNotificacion(
+        NotificacionVista notificacion)
+    {
+        return notificacion.Leida
+            ? string.Empty
+            : "border-primary";
+    }
+
+    private static string ObtenerIcono(string tipo)
+    {
+        return tipo switch
+        {
+            "Partido" => "⚽",
+            "Pronóstico" => "🎯",
+            "Quiniela" => "🏆",
+            "Sistema" => "ℹ️",
+            _ => "🔔"
+        };
+    }
+
+    private sealed class NotificacionVista
+    {
+        public string Titulo { get; set; } = string.Empty;
+
+        public string Mensaje { get; set; } = string.Empty;
+
+        public string Tipo { get; set; } = string.Empty;
+
+        public DateTime Fecha { get; set; }
+
+        public bool Leida { get; set; }
+    }
+}
